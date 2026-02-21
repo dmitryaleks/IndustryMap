@@ -505,6 +505,56 @@ Tasks Remaining:
   - Rebuild visualization with expanded network
   - Phase 5: Analytics
 [SESSION END]
+
+[SESSION START]
+Date: 2026-02-21 (continued)
+Agent: Claude Code (Opus 4.6)
+Current Phase: Wave 4 - Tokyo Seimitsu Deep Dive (JP/CN/KR/TW sources)
+Tasks Completed This Session:
+  - Deep multilingual research: Japanese, Chinese (Mandarin), Korean language sources
+  - Identified Tokyo Seimitsu (ACCRETECH) clients: 8 OSAT/foundry companies across 4 countries
+  - Identified Tokyo Seimitsu competitors: 4 companies from Taiwan, Korea, China
+  - Added 12 new companies (CMP-0063 to CMP-0074), total now 74
+  - Updated CMP-0001 (Tokyo Seimitsu) with 14 clients and full competitive landscape
+  - Updated graph.json: v3.0.0, 74 nodes, 208 edges (52 new edges)
+  - Updated database.json: v2.0.0, added wave4, 7 countries
+  - Rebuilt supply_chain.html visualization with all new data
+Wave 4 Companies Added:
+  Clients (OSAT):
+  - ASE Technology (3711.TW) - Taiwan, world #1 OSAT
+  - Amkor Technology (AMKR) - USA, world #2 OSAT
+  - JCET Group (600584.SS) - China, world #3 OSAT
+  - Tongfu Microelectronics (002156.SZ) - China #2 OSAT
+  - Tianshui Huatian (002185.SZ) - China #3 OSAT
+  - Powertech Technology (6239.TW) - Taiwan, memory OSAT
+  Clients (Foundry):
+  - SMIC (0981.HK) - China #1 foundry
+  - Hua Hong Semiconductor (1347.HK) - China #2 foundry
+  Competitors:
+  - MPI Corporation (6223.TW) - Taiwan, 10% global prober share
+  - Hanmi Semiconductor (042700.KS) - Korea, 71.2% HBM TC bonder share
+  - Sidea Semiconductor (301629.SZ) - China, 25.7% domestic prober share
+  - Guangli Technology/ADT (300480.SZ) - China/Israel, world #3 dicing
+Key Findings:
+  - ACCRETECH: 46% global prober share (world #1), 10% dicing share
+  - DISCO: 70% global dicing share (world #1)
+  - Hanmi: 71.2% HBM TC bonder market (critical for AI/HPC memory)
+  - Sidea: Breaking Japanese monopoly in Chinese domestic prober market
+  - Guangli/ADT: One of only two companies (with DISCO) making both saws and spindles
+  - ACCRETECH-Advantest: Joint die-level prober development (Dec 2025)
+  - China is 34% of Tokyo Seimitsu sales (geopolitical risk)
+  - Added China as new country (5 companies), total now 7 countries
+New Edge Types Added:
+  - 14 supplier edges: Tokyo Seimitsu → all 14 clients
+  - 6 supplier edges: DISCO → OSATs
+  - 6 supplier edges: TEL/Kokusai/ASML/Advantest → SMIC/Hua Hong/ASE/Amkor
+  - 3 supplier edges: Hanmi → SK Hynix/Micron/ASE
+  - 1 supplier edge: Powertech → Micron
+  - 10 competitor edges: ACCRETECH vs MPI/Sidea/Guangli/Hanmi, DISCO vs Guangli
+  - 2 partner edges: ACCRETECH ↔ Advantest
+  - 2 ecosystem edges: SMIC ↔ JCET
+  - 2 competitor edges: ASE vs Amkor, ASE vs JCET
+[SESSION END]
 ```
 
 ---
@@ -518,21 +568,22 @@ Tasks Remaining:
 | Phase 1: Foundation | [DONE] | 100% |
 | Phase 2: Wave 1 Data | [DONE] | 100% |
 | Phase 3: Wave 2+ Data | [DONE] | 100% |
-| Phase 4: Graph | [IN_PROGRESS] | 50% (needs Wave 3 update) |
+| Phase 4: Graph | [DONE] | 100% |
 | Phase 5: Analytics | [PENDING] | 0% |
 
-**Database Stats:** 62 companies, 51 Japanese, 5 countries, deep supply chain coverage
+**Database Stats:** 74 companies, 51 Japanese, 7 countries (added China), 208 relationships
 
 **Wave Summary:**
 - Wave 1: 16 Japanese seed companies
 - Wave 2: 12 global customers/suppliers
 - Wave 3: 34 Japanese vendors (deep research in Japanese)
+- Wave 4: 12 Tokyo Seimitsu deep dive - clients (OSAT/foundry) and competitors (JP/CN/KR/TW sources)
 
 **Graph Files:**
-- `data/graph.json` - Needs update with Wave 3 companies
-- `output/supply_chain.html` - Interactive D3.js visualization
+- `data/graph.json` - v3.0.0, 74 nodes, 208 edges (supplier/competitor/partner/ecosystem)
+- `output/supply_chain.html` - Interactive D3.js visualization (Wave 4 complete)
 
-**Next Action:** Update graph with Wave 3 companies, rebuild visualization, run analytics
+**Next Action:** Phase 5 - Analytics (supply chain risk analysis, concentration metrics, geopolitical exposure)
 
 ---
 

@@ -133,7 +133,7 @@ def build_node_js(graph, eval_map, comp_map):
         rd  = ev.get("researchData", {})
 
         score  = ev.get("finalScore")
-        conf   = ev.get("confidenceLabel", "")
+        conf   = ev.get("confidence", "")
         per    = rd.get("PER") or cp.get("PER")
         fo     = rd.get("foreignOwnership_pct") or cp.get("percentOfForeignOwnership")
         ticker = n.get("ticker") or cp.get("ticker") or ""
@@ -210,17 +210,19 @@ def build_detail_map(graph, eval_map, comp_map):
         cp  = comp_map.get(cid, {})
         rd  = ev.get("researchData", {})
 
-        # Score dimensions
+        # Score dimensions — read from ev["scores"][dim]
+        DIM_MAX = {"A": 30, "B": 25, "C": 15, "D": 10, "E": 10, "F": 10}
+        scores_data = ev.get("scores", {})
         dims = {}
         for dim in ["A", "B", "C", "D", "E", "F"]:
-            dkey = f"dim{dim}"
-            d = ev.get(dkey, {})
+            sd = scores_data.get(dim, {})
+            subs = {k: v for k, v in sd.items()
+                    if k not in ("total", "note") and v is not None}
             dims[dim] = {
-                "score":  d.get("score"),
-                "max":    d.get("maxPoints"),
-                "label":  d.get("label", ""),
-                "subs":   d.get("subScores", {}),
-                "notes":  d.get("notes", ""),
+                "score": sd.get("total"),
+                "max":   DIM_MAX[dim],
+                "subs":  subs,
+                "note":  sd.get("note", ""),
             }
 
         # Financial row helper – prefer research data then company file
@@ -242,8 +244,9 @@ def build_detail_map(graph, eval_map, comp_map):
             # Scores
             "finalScore":        ev.get("finalScore"),
             "rawComposite":      ev.get("rawComposite"),
-            "confidenceLabel":   ev.get("confidenceLabel", ""),
+            "confidence":        ev.get("confidence", ""),
             "confidenceMult":    ev.get("confidenceMultiplier"),
+            "dataCoverage":      ev.get("dataCoverage_pct"),
             "researchComplete":  ev.get("researchCompleteness_pct"),
             "dims":              dims,
             "investmentThesis":  ev.get("investmentThesis", ""),
@@ -261,12 +264,12 @@ def build_detail_map(graph, eval_map, comp_map):
             "revenueGrowth":     f("revenueGrowthYoY_pct"),
             "OPM":               f("operatingMargin_pct"),
             "foreignOwnership":  f("foreignOwnership_pct", "percentOfForeignOwnership"),
-            "chinaRevenue":      f("chinaRevenue_pct"),
+            "chinaRevenue":      f("chinaRevenue_pct_est"),
             "hasBuyback":        f("hasBuyback"),
-            "analystBuy":        f("analystRatings_buy"),
-            "analystHold":       f("analystRatings_hold"),
-            "analystSell":       f("analystRatings_sell"),
-            "forexSensitive":    f("isForexSensitive") if f("isForexSensitive") is not None else cp.get("ifForexSensitive"),
+            "analystBuy":        f("analystBuy"),
+            "analystHold":       f("analystHold"),
+            "analystSell":       f("analystSell"),
+            "forexSensitive":    f("isForexSensitive") if f("isForexSensitive") is not None else cp.get("isForexSensitive"),
             # Supply chain
             "suppliers":    adj[cid]["suppliers"],
             "clients":      adj[cid]["clients"],
@@ -362,11 +365,19 @@ body {{ font-family: 'Segoe UI', system-ui, sans-serif; background: #0f1117; col
 
 /* dim grid */
 .dim-grid {{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-top: 8px; }}
-.dim-cell {{ background: #1a1d27; border-radius: 6px; padding: 7px 8px; }}
+.dim-cell {{ background: #1a1d27; border-radius: 6px; padding: 7px 8px; cursor: default; }}
 .dim-cell .dim-label {{ font-size: 9px; color: #64748b; text-transform: uppercase;
                         letter-spacing: .07em; margin-bottom: 3px; }}
 .dim-cell .dim-score {{ font-size: 13px; font-weight: 700; color: #e2e8f0; }}
 .dim-cell .dim-max {{ font-size: 10px; color: #475569; }}
+.dim-bar-bg {{ height: 3px; background: #2d3148; border-radius: 2px; margin: 5px 0 6px; overflow: hidden; }}
+.dim-bar-fill {{ height: 100%; border-radius: 2px; transition: width .4s; }}
+.dim-subs {{ border-top: 1px solid #2d3148; margin-top: 4px; padding-top: 4px; }}
+.sub-row {{ display: flex; justify-content: space-between; align-items: center;
+            font-size: 9px; margin-bottom: 2px; gap: 4px; }}
+.sub-key {{ color: #475569; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+.sub-val {{ color: #94a3b8; font-weight: 700; flex-shrink: 0; }}
+.dim-note {{ font-size: 9px; color: #334155; margin-top: 4px; line-height: 1.4; font-style: italic; }}
 
 /* thesis */
 .thesis-text {{ font-size: 12px; color: #cbd5e1; line-height: 1.65; }}
@@ -739,29 +750,60 @@ function populateCard(d) {{
   const score = d.finalScore;
   const ringClr = score==null?'#6b7280':score>=62?'#f59e0b':score>=55?'#22c55e':score>=45?'#3b82f6':'#6b7280';
   const pct = score==null?0:Math.min(100,score);
-  const dimNames = {{A:'Valuation/30',B:'Moat/25',C:'Growth/15',D:'Ownership/10',E:'Catalysts/10',F:'Risk/10'}};
+
+  const DIM_META = {{
+    A:{{label:'Valuation', max:30}}, B:{{label:'Moat', max:25}},
+    C:{{label:'Growth',    max:15}}, D:{{label:'Ownership', max:10}},
+    E:{{label:'Catalysts', max:10}}, F:{{label:'Risk', max:10}}
+  }};
+  const SUB_LABELS = {{
+    A1_PER_discount:'PER Discount', A2_fwdPER_discount:'Fwd PER', A3_PBR_discount:'PBR Disc.',
+    A4_earningsYield:'Earn. Yield',
+    B1_marketShare:'Mkt Share', B2_switchingCosts:'Switch. Costs',
+    B3_techDiff:'Tech Diff.', B4_chainCentrality:'Chain Cent.',
+    C1_revenueGrowth:'Rev. Growth', C2_operatingMargin:'Op. Margin',
+    C3_ROE:'ROE', C4_AIexposure:'AI Exposure',
+    D1_foreignOwnershipGap:'Foreign Own. Gap', D2_floatDynamics:'Float Dyn.',
+    D3_priceVs52W:'Price vs 52W',
+    E1_analystConsensus:'Analyst Consens.', E2_capacityExpansion:'Capex Expan.',
+    E3_policyTailwinds:'Policy Tailwinds',
+    F1_forexSensitivity:'Forex Sensitiv.', F2_customerConcentration:'Cust. Concent.',
+    F3_geopoliticalRisk:'Geo. Risk'
+  }};
+
   let dimHtml = '<div class="dim-grid">';
-  for (const [k,lbl] of Object.entries(dimNames)) {{
-    const dim = d.dims[k]||{{}};
-    const ds = dim.score!=null ? dim.score.toFixed(1) : '—';
-    const dm = dim.max!=null ? '/'+dim.max : '';
-    dimHtml += `<div class="dim-cell">
-      <div class="dim-label">${{k}} ${{lbl.split('/')[0]}}</div>
-      <div class="dim-score">${{ds}}<span class="dim-max">${{dm}}</span></div>
+  for (const [k, meta] of Object.entries(DIM_META)) {{
+    const dim = d.dims[k] || {{}};
+    const ds  = dim.score != null ? (+dim.score).toFixed(1) : '—';
+    const barPct = dim.score != null ? Math.min(100, (dim.score / meta.max) * 100) : 0;
+    const barClr = dim.score == null ? '#334155'
+                 : barPct >= 70 ? '#22c55e' : barPct >= 40 ? '#3b82f6' : '#ef4444';
+    const subs = dim.subs || {{}};
+    const subRows = Object.entries(subs)
+      .filter(([,v]) => v != null)
+      .map(([k,v]) => `<div class="sub-row">
+        <span class="sub-key">${{SUB_LABELS[k]||k}}</span>
+        <span class="sub-val">${{v}}</span></div>`)
+      .join('');
+    dimHtml += `<div class="dim-cell" title="${{dim.note||''}}">
+      <div class="dim-label">${{k}} · ${{meta.label}}</div>
+      <div class="dim-score">${{ds}}<span class="dim-max">/${{meta.max}}</span></div>
+      <div class="dim-bar-bg"><div class="dim-bar-fill" style="width:${{barPct.toFixed(1)}}%;background:${{barClr}}"></div></div>
+      ${{subRows ? `<div class="dim-subs">${{subRows}}</div>` : ''}}
     </div>`;
   }}
   dimHtml += '</div>';
 
-  const confBadge = d.confidenceLabel
-    ? `<span class="conf-badge ${{confClass(d.confidenceLabel)}}">${{d.confidenceLabel}}</span>` : '';
+  const confBadge = d.confidence
+    ? `<span class="conf-badge ${{confClass(d.confidence)}}">${{d.confidence}}</span>` : '';
 
   const scoreHtml = `<div class="card-section">
     <h3>Investment Score</h3>
     <div class="score-bar-wrap">
       <div class="score-num" style="color:${{ringClr}}">${{score!=null?score.toFixed(1):'—'}}</div>
       <div class="score-meta">Raw composite: ${{d.rawComposite!=null?d.rawComposite.toFixed(1):'—'}} &nbsp;·&nbsp;
-        Confidence multiplier: ${{d.confidenceMult!=null?d.confidenceMult.toFixed(2):'—'}} &nbsp;·&nbsp;
-        Coverage: ${{d.researchComplete!=null?d.researchComplete.toFixed(0)+'%':'—'}}</div>
+        Conf. mult.: ${{d.confidenceMult!=null?d.confidenceMult.toFixed(2):'—'}} &nbsp;·&nbsp;
+        Data coverage: ${{d.dataCoverage!=null?d.dataCoverage.toFixed(0)+'%':(d.researchComplete!=null?d.researchComplete.toFixed(0)+'%':'—')}}</div>
       <div class="bar-bg"><div class="bar-fill" style="width:${{pct}}%;background:${{ringClr}}"></div></div>
       ${{confBadge}}
     </div>
@@ -771,7 +813,7 @@ function populateCard(d) {{
   // ── Thesis ──
   const thesisHtml = d.investmentThesis ? `<div class="card-section">
     <h3>Investment Thesis</h3>
-    <div class="thesis-text">${{d.investmentThesis.replace(/\n/g,'<br>')}}</div>
+    <div class="thesis-text">${{d.investmentThesis.replace(/\\n/g,'<br>')}}</div>
   </div>` : '';
 
   // ── Financials ──
