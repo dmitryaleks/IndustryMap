@@ -16,11 +16,16 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Intel (14 units)", "TSMC (9 units)", "Samsung (3 units)"],
+    "ecosystemPartners": ["ASML"],
+    "notes": "Near 100% global market share in EUV mask inspection. Products co-dependent with ASML EUV lithography systems."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CompaniesMarketCap, Japan IR",
+    "dataSource": "Yahoo Finance, CompaniesMarketCap, Japan IR, Senrigan",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "Key products: Actinic EUV patterned mask inspection, EUV pellicle inspection. Critical supplier to leading-edge chipmakers."
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "Key products: Actinic EUV patterned mask inspection, EUV pellicle inspection. Critical supplier to leading-edge chipmakers. High customer concentration risk."
   }
 }

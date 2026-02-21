@@ -16,11 +16,15 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Hospitals", "Medical research institutions"],
+    "notes": "Primarily a medical devices company (endoscopes, surgical devices). Scientific segment includes industrial microscopes and NDT equipment. Limited direct semiconductor supply chain involvement."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
     "dataSource": "Yahoo Finance, Stock Analysis, Investing.com",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "Founded 1919, HQ: Hachioji. 29,300 employees. EBITDA: 223.65B JPY, margin 25.32%. FY2026 target: 19% adjusted operating profit, 1% annual margin improvement."
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "Founded 1919, HQ: Hachioji. 29,300 employees. EBITDA: 223.65B JPY, margin 25.32%. FY2026 target: 19% adjusted operating profit, 1% annual margin improvement. Medical focus, less semiconductor exposure."
   }
 }

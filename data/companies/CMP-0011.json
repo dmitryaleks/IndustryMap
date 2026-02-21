@@ -16,11 +16,16 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Samsung Electronics", "TSMC", "Micron", "Intel", "SK Hynix", "CXMT (China)"],
+    "memoryClients": ["Kioxia (CMP-0014)", "Western Digital"],
+    "notes": "70% market share in batch ALD, 34% in batch CVD. TSMC is #2 customer. Serves all major 3D NAND makers."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, DataInsightsMarket",
+    "dataSource": "Yahoo Finance, CNBC, DataInsightsMarket, SemiAnalysis",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
+    "lastUpdated": "2026-02-21T14:00:00Z",
     "notes": "Q2 2025 revenue: 65.42B JPY (+33% YoY). 2024 revenue: 238.93B JPY (+32% YoY). CEO projects 20% NAND equipment demand growth, 15% DRAM growth."
   }
 }

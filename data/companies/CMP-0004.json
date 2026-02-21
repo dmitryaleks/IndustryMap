@@ -16,11 +16,17 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung Electronics", "Intel", "SK Hynix"],
+    "rdPartners": ["IBM"],
+    "majorSuppliers": ["Shin-Etsu Chemical", "SUMCO"],
+    "notes": "Works with 400+ suppliers. Key clients are world's top foundries and IDMs."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, TradingEconomics, Company IR",
+    "dataSource": "Yahoo Finance, TradingEconomics, Company IR, Nikkei",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "FY2026 forecast: Net sales 2.6T JPY (+6.9% YoY). EBITDA: 679B JPY, margin 31.24%. Dividend yield: 1.27%."
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "FY2026 forecast: Net sales 2.6T JPY (+6.9% YoY). EBITDA: 679B JPY, margin 31.24%. Dividend yield: 1.27%. China sales ~30% in 2025."
   }
 }

@@ -16,11 +16,17 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Foundries", "OSATs", "IDMs globally"],
+    "historicalClients": ["Texas Instruments (early adopter)"],
+    "competitors": ["Tokyo Seimitsu (CMP-0001)"],
+    "notes": "70%+ market share in dicing saws and grinders. DISCO + Tokyo Seimitsu = 90% of global dicing market."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, Bloomberg",
-    "confidenceLevel": "medium",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "52-week range: 22,640-76,890 JPY. Dividend yield: 0.57%. 12 analysts rate Buy."
+    "dataSource": "Yahoo Finance, CNBC, Bloomberg, SemiAnalysis",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "52-week range: 22,640-76,890 JPY. Dividend yield: 0.57%. 12 analysts rate Buy. Dominates niche for decades."
   }
 }

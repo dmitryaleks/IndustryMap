@@ -1,0 +1,148 @@
+{
+  "description": "Companies discovered during Wave 1 supplier/client research that need Wave 2 data collection",
+  "discoveredAt": "2026-02-21",
+  "totalDiscovered": 12,
+  "priorityLegend": {
+    "high": "Mentioned by 3+ seed companies, critical supply chain node",
+    "medium": "Mentioned by 2 seed companies",
+    "low": "Mentioned by 1 seed company or indirect relationship"
+  },
+  "discoveredCompanies": [
+    {
+      "name": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "country": "Taiwan",
+      "industry": "Semiconductor Foundry",
+      "ticker": "2330.TW",
+      "priority": "high",
+      "mentionedBy": ["CMP-0004", "CMP-0005", "CMP-0006", "CMP-0007", "CMP-0011", "CMP-0013", "CMP-0015", "CMP-0003"],
+      "relationship": "client",
+      "notes": "World's largest semiconductor foundry. Customer of almost all Japanese equipment/materials makers."
+    },
+    {
+      "name": "Samsung Electronics",
+      "country": "South Korea",
+      "industry": "Semiconductors/Electronics",
+      "ticker": "005930.KS",
+      "priority": "high",
+      "mentionedBy": ["CMP-0004", "CMP-0005", "CMP-0006", "CMP-0011", "CMP-0013", "CMP-0015"],
+      "relationship": "client",
+      "notes": "Major memory and foundry player. Key customer for deposition, test, and inspection equipment."
+    },
+    {
+      "name": "Intel Corporation",
+      "country": "USA",
+      "industry": "Semiconductors",
+      "ticker": "INTC",
+      "priority": "high",
+      "mentionedBy": ["CMP-0004", "CMP-0006", "CMP-0011", "CMP-0013", "CMP-0015"],
+      "relationship": "client",
+      "notes": "Major IDM. Largest installed base of Lasertec EUV inspection tools (14 units)."
+    },
+    {
+      "name": "SK Hynix",
+      "country": "South Korea",
+      "industry": "Memory Semiconductors",
+      "ticker": "000660.KS",
+      "priority": "medium",
+      "mentionedBy": ["CMP-0004", "CMP-0005", "CMP-0011", "CMP-0015"],
+      "relationship": "client",
+      "notes": "Major memory maker. Customer for HBM-related equipment."
+    },
+    {
+      "name": "Micron Technology",
+      "country": "USA",
+      "industry": "Memory Semiconductors",
+      "ticker": "MU",
+      "priority": "medium",
+      "mentionedBy": ["CMP-0005", "CMP-0011"],
+      "relationship": "client",
+      "notes": "Major memory maker."
+    },
+    {
+      "name": "Apple Inc.",
+      "country": "USA",
+      "industry": "Consumer Electronics",
+      "ticker": "AAPL",
+      "priority": "medium",
+      "mentionedBy": ["CMP-0014"],
+      "relationship": "client",
+      "notes": "Direct customer for Kioxia NAND flash. Indirect customer via TSMC."
+    },
+    {
+      "name": "Western Digital Corporation",
+      "country": "USA",
+      "industry": "Storage/Memory",
+      "ticker": "WDC",
+      "priority": "medium",
+      "mentionedBy": ["CMP-0014"],
+      "relationship": "partner",
+      "notes": "Manufacturing partner with Kioxia. Joint venture in Yokkaichi and Kitakami fabs."
+    },
+    {
+      "name": "Shin-Etsu Chemical Co., Ltd.",
+      "country": "Japan",
+      "industry": "Semiconductor Materials",
+      "ticker": "4063.T",
+      "priority": "medium",
+      "mentionedBy": ["CMP-0004"],
+      "relationship": "supplier",
+      "notes": "World's largest silicon wafer supplier. Supplies materials to equipment makers."
+    },
+    {
+      "name": "SUMCO Corporation",
+      "country": "Japan",
+      "industry": "Semiconductor Materials",
+      "ticker": "3436.T",
+      "priority": "medium",
+      "mentionedBy": ["CMP-0004"],
+      "relationship": "supplier",
+      "notes": "Major silicon wafer supplier. Together with Shin-Etsu, holds 90% of wafer market."
+    },
+    {
+      "name": "ASML Holding N.V.",
+      "country": "Netherlands",
+      "industry": "Semiconductor Equipment",
+      "ticker": "ASML",
+      "priority": "medium",
+      "mentionedBy": ["CMP-0006", "CMP-0015"],
+      "relationship": "partner",
+      "notes": "EUV lithography monopoly. Lasertec inspection tools are co-dependent with ASML systems. HOYA mask blanks are required for EUV."
+    },
+    {
+      "name": "Kyocera Corporation",
+      "country": "Japan",
+      "industry": "Semiconductor Components",
+      "ticker": "6971.T",
+      "priority": "low",
+      "mentionedBy": [],
+      "relationship": "supplier",
+      "notes": "Supplies ceramic components and packages for semiconductor equipment."
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "country": "USA",
+      "industry": "Semiconductors",
+      "ticker": "NVDA",
+      "priority": "low",
+      "mentionedBy": ["CMP-0005"],
+      "relationship": "indirect_client",
+      "notes": "Fabless. Uses TSMC for manufacturing. Drives demand for test equipment."
+    }
+  ],
+  "internalRelationshipsNoted": [
+    {
+      "from": "CMP-0014",
+      "to": "CMP-0011",
+      "type": "client",
+      "confidence": "medium",
+      "notes": "Kioxia likely uses Kokusai Electric batch deposition equipment for 3D NAND"
+    },
+    {
+      "from": "CMP-0001",
+      "to": "CMP-0002",
+      "type": "competitor",
+      "confidence": "high",
+      "notes": "Tokyo Seimitsu and DISCO compete in dicing. DISCO 80%, Tokyo Seimitsu 10% market share."
+    }
+  ]
+}

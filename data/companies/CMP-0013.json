@@ -16,11 +16,15 @@
   "isForexSensitive": false,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung Electronics", "Intel"],
+    "notes": "90% global market share in semiconductor CMP slurries. 50%+ of global production capacity. Proprietary ultra-high purity colloidal silica (total metal ions <1ppm)."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, Bloomberg",
-    "confidenceLevel": "medium",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "Founded 1952, HQ: Osaka. 930 employees. Key products: ultra-high purity colloidal silica for semiconductor polishing, organic acids for life sciences."
+    "dataSource": "Yahoo Finance, CNBC, Bloomberg, Digitimes",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "Founded 1952, HQ: Osaka. 930 employees. Key products: ultra-high purity colloidal silica for semiconductor polishing, organic acids for life sciences. Expanded production capacity 50% in 2022."
   }
 }

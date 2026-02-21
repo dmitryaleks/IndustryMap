@@ -16,11 +16,15 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Semiconductor equipment manufacturers", "FPD manufacturers"],
+    "notes": "Supplies vacuum seals, quartz products, ceramics, silicon products for semiconductor manufacturing equipment. Replacement demand grows with increased fab production."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, TradingView",
+    "dataSource": "Yahoo Finance, CNBC, TradingView, Ferrotec Global",
     "confidenceLevel": "medium",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "All-time high: 6,930 JPY (Jan 26, 2026). EBITDA: 50B JPY, margin 17.46%. Q4 net income: 3.63B JPY (+35.8% QoQ). Founded 1980."
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "All-time high: 6,930 JPY (Jan 26, 2026). EBITDA: 50B JPY, margin 17.46%. Q4 net income: 3.63B JPY (+35.8% QoQ). Founded 1980. Global supply system for small-diameter wafers."
   }
 }

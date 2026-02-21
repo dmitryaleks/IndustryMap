@@ -16,11 +16,16 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Samsung Electronics", "SK Hynix", "Micron", "TSMC ecosystem"],
+    "indirectClients": ["NVIDIA", "Apple (via foundries)"],
+    "notes": "60-70% share in memory test, 35-45% in SoC test. Deep relationships with Samsung, SK Hynix, Micron, and TSMC ecosystem."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, TradingView",
+    "dataSource": "Yahoo Finance, CNBC, TradingView, TSPA Semiconductor",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "Record 9-month results. FY March 2026 guidance: Net sales 1.07T JPY, Operating income 454B JPY. All-time high: 29,250 JPY (Jan 29, 2026)."
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "Record 9-month results. FY March 2026 guidance: Net sales 1.07T JPY, Operating income 454B JPY. All-time high: 29,250 JPY (Jan 29, 2026). Called 'ASML of test industry'."
   }
 }

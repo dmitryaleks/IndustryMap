@@ -16,11 +16,16 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Semiconductor manufacturers globally"],
+    "competitors": ["DISCO (CMP-0002)"],
+    "notes": "Competes with DISCO in dicing. DISCO 80% vs Tokyo Seimitsu 10% market share. Together they control 90% of global dicing market."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, TradingView",
+    "dataSource": "Yahoo Finance, CNBC, TradingView, Accretech",
     "confidenceLevel": "medium",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "Q3 2026 revenue: 35.9B JPY, net income: 4.5B JPY. 52-week range: 6,148-16,170 JPY."
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "Q3 2026 revenue: 35.9B JPY, net income: 4.5B JPY. 52-week range: 6,148-16,170 JPY. Brand name: ACCRETECH."
   }
 }

@@ -16,11 +16,18 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Intel", "Samsung", "SK Hynix"],
+    "indirectClients": ["Apple", "NVIDIA", "AMD", "Qualcomm (via foundries)"],
+    "ecosystemPartners": ["ASML"],
+    "competitors": ["AGC Inc."],
+    "notes": "60%+ share in photomask blanks globally, 75%+ in EUV blanks. Only maker with both EUV and optical products. EUV blanks lock-in customers for full technology generations."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, Morningstar, Investing.com",
+    "dataSource": "Yahoo Finance, Morningstar, Investing.com, SemiEngineering",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
+    "lastUpdated": "2026-02-21T14:00:00Z",
     "notes": "Founded 1941. Mask blanks business since 1974. IT segment higher margin than Life Care (60%+ of revenue). 52-week range: 14,345-28,000 JPY. 12 analysts rate Buy."
   }
 }

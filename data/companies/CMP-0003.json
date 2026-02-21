@@ -16,11 +16,16 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Foundries in China and North America"],
+    "rdPartners": ["imec", "IBM"],
+    "notes": "#1 global market share in semiconductor cleaning (single wafer, batch, spin scrubber). Cumulative shipments exceed 15,000 units."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, PitchBook",
-    "confidenceLevel": "medium",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "Q1 FY2026 net sales: 135.7B JPY (+1.2% YoY). Growth drivers: Lemotia PLP coater, LeVina direct-write system."
+    "dataSource": "Yahoo Finance, CNBC, PitchBook, SCREEN SPE",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "Q1 FY2026 net sales: 135.7B JPY (+1.2% YoY). Growth drivers: Lemotia PLP coater, LeVina direct-write system. Strong in China (mature nodes) and North America (advanced)."
   }
 }

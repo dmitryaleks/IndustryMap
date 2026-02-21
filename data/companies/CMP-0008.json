@@ -16,11 +16,16 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Semiconductor manufacturers globally", "Toyota/Denso (SiC)"],
+    "consortiumPartners": ["JOINT2 consortium (12 companies)"],
+    "notes": "Global #1 semiconductor materials supplier (excl. Si wafer). #1 in SiC epitaxial wafers. Pursuing 'open innovation' for next-gen semiconductors."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, Bloomberg",
+    "dataSource": "Yahoo Finance, CNBC, Bloomberg, Resonac IR",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "Name changed from Showa Denko K.K. in January 2023. 10 analysts rate Buy. Key segments: Semiconductor & Electronic Materials, Mobility, Innovation Enabling Materials."
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "Name changed from Showa Denko K.K. in January 2023. 10 analysts rate Buy. SiC epi-wafer adopted in Toyota LEXUS RZ. Formed from Showa Denko + Hitachi Chemical merger."
   }
 }

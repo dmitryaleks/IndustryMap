@@ -16,11 +16,15 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Intel"],
+    "notes": "18% market share in CMP slurry (2024). 50%+ share in polysilicon CMP for FEOL. Slurries widely adopted for 5nm/3nm processes by Taiwanese foundries."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, DataInsightsMarket, DCFModeling",
-    "confidenceLevel": "medium",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "FY2025 revenue growth: 21.5% from advanced logic semiconductor materials. Q1 FY2026 polishing slurry sales +18.9%. Founded 1950, HQ: Kiyosu, Japan."
+    "dataSource": "Yahoo Finance, DataInsightsMarket, DCFModeling, Nikkei",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "FY2025 revenue growth: 21.5% from advanced logic semiconductor materials. Q1 FY2026 polishing slurry sales +18.9%. Founded 1950, HQ: Kiyosu, Japan. 90%+ share in wafer polishing materials."
   }
 }

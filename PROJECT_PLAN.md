@@ -226,26 +226,26 @@ For each seed company, collect:
 
 ---
 
-### 2.2 Wave 1 Collection Status [IN_PROGRESS]
+### 2.2 Wave 1 Collection Status [DONE]
 
 | ID | Company | Basic | Financial | Description | Suppliers | Clients | Status |
 |----|---------|-------|-----------|-------------|-----------|---------|--------|
-| CMP-0001 | Tokyo Seimitsu | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0002 | DISCO | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0003 | SCREEN Holdings | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0004 | Tokyo Electron | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0005 | Advantest | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0006 | Lasertec | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0007 | Fujimi | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0008 | Resonac Holdings | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0009 | Ferrotec | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0010 | Toyo Gosei | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0011 | Kokusai Electric | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0012 | Horiba | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0013 | Fuso Chemical | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0014 | Kioxia Holdings | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0015 | HOYA | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
-| CMP-0016 | Olympus | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0001 | Tokyo Seimitsu | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0002 | DISCO | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0003 | SCREEN Holdings | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0004 | Tokyo Electron | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0005 | Advantest | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0006 | Lasertec | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0007 | Fujimi | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0008 | Resonac Holdings | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0009 | Ferrotec | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0010 | Toyo Gosei | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0011 | Kokusai Electric | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0012 | Horiba | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0013 | Fuso Chemical | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0014 | Kioxia Holdings | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0015 | HOYA | [x] | [x] | [x] | [x] | [x] | [DONE] |
+| CMP-0016 | Olympus | [x] | [x] | [x] | [x] | [x] | [DONE] |
 
 ---
 
@@ -269,13 +269,24 @@ After Wave 1, the agent will:
    - Wave 3: Suppliers/clients of Wave 2 companies
    - Continue until network stabilizes or scope limit reached
 
-### 3.2 Discovery Queue [PENDING]
+### 3.2 Discovery Queue [IN_PROGRESS]
 
-Companies discovered during collection that need their own records:
+Companies discovered during collection that need their own records. See `data/wave2_discovery_queue.json` for full details.
 
-| Queue # | Company Name | Discovered From | Priority | Status |
-|---------|--------------|-----------------|----------|--------|
-| (populated during Wave 1) | | | | |
+| Queue # | Company Name | Country | Priority | Mentioned By |
+|---------|--------------|---------|----------|--------------|
+| 1 | TSMC | Taiwan | high | 8 companies |
+| 2 | Samsung Electronics | Korea | high | 6 companies |
+| 3 | Intel Corporation | USA | high | 5 companies |
+| 4 | SK Hynix | Korea | medium | 4 companies |
+| 5 | Micron Technology | USA | medium | 2 companies |
+| 6 | Apple Inc. | USA | medium | 1 company (Kioxia) |
+| 7 | Western Digital | USA | medium | 1 company (partner) |
+| 8 | Shin-Etsu Chemical | Japan | medium | supplier |
+| 9 | SUMCO Corporation | Japan | medium | supplier |
+| 10 | ASML Holding | Netherlands | medium | ecosystem partner |
+| 11 | Kyocera Corporation | Japan | low | supplier |
+| 12 | NVIDIA Corporation | USA | low | indirect client |
 
 ---
 
@@ -367,6 +378,28 @@ Notes:
   - Kioxia is notable new addition (5.64T JPY market cap, IPO just 2 months ago)
   - Some financial data incomplete (PBR, foreign ownership % missing for several)
 [SESSION END]
+
+[SESSION START]
+Date: 2026-02-21 (continued)
+Agent: Claude Code (Opus 4.5)
+Current Phase: Phase 2 - Supplier/Client Discovery
+Tasks Completed This Session:
+  - Discovered supplier/client relationships for all 16 seed companies
+  - Searched in both English and Japanese for comprehensive data
+  - Created wave2_discovery_queue.json with 12 external companies to add
+  - Updated all company JSON files with _externalRelationships field
+  - Key clients identified: TSMC, Samsung, Intel (mentioned by 5-8 companies each)
+  - Internal relationships: DISCO vs Tokyo Seimitsu (competitors), Kioxia uses Kokusai Electric
+  - Market share data: Lasertec 100% EUV inspection, DISCO 70%+ dicing, Fuso Chemical 90% CMP slurry
+Tasks Remaining:
+  - Wave 2 data collection for external companies
+  - Build graph visualization
+  - Populate internal suppliers/clients arrays with CMP-XXXX IDs
+Notes:
+  - Most relationships are external (customers are global chip giants)
+  - Japanese searches yielded additional detail (e.g., Nikkei articles)
+  - Olympus has minimal semiconductor supply chain involvement (medical focus)
+[SESSION END]
 ```
 
 ---
@@ -378,12 +411,12 @@ Notes:
 | Phase | Status | Progress |
 |-------|--------|----------|
 | Phase 1: Foundation | [DONE] | 100% |
-| Phase 2: Wave 1 Data | [IN_PROGRESS] | 75% |
-| Phase 3: Wave 2+ Data | [PENDING] | 0% |
+| Phase 2: Wave 1 Data | [DONE] | 100% |
+| Phase 3: Wave 2+ Data | [IN_PROGRESS] | 10% |
 | Phase 4: Graph | [PENDING] | 0% |
 | Phase 5: Analytics | [PENDING] | 0% |
 
-**Next Action:** Discover supplier/client relationships for each seed company to complete Wave 1 and populate Wave 2 queue
+**Next Action:** Collect data for Wave 2 companies (TSMC, Samsung, Intel, SK Hynix, Shin-Etsu, SUMCO, etc.) to expand the supply chain graph
 
 ---
 

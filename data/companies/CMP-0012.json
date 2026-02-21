@@ -16,11 +16,15 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Semiconductor equipment manufacturers", "Foundries"],
+    "notes": "30%+ global market share in semiconductor mass flow controllers. Products used in deposition, etching, and other processes across the industry."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, TradingView, Bloomberg",
+    "dataSource": "Yahoo Finance, TradingView, Bloomberg, Horiba",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
-    "notes": "EBITDA: 65.22B JPY, margin 19.35%. Q4 net income: 8.24B JPY. 8,960 employees. Founded 1945 by Masao Horiba, HQ: Kyoto."
+    "lastUpdated": "2026-02-21T14:00:00Z",
+    "notes": "EBITDA: 65.22B JPY, margin 19.35%. Q4 net income: 8.24B JPY. 8,960 employees. Founded 1945 by Masao Horiba, HQ: Kyoto. Also serves automotive, medical, environmental markets."
   }
 }

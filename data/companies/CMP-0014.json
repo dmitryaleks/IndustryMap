@@ -16,11 +16,18 @@
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Apple", "Data center operators"],
+    "manufacturingPartners": ["Western Digital (Yokkaichi/Kitakami JV)"],
+    "equipmentSuppliers": ["Kokusai Electric (CMP-0011)"],
+    "competitors": ["Samsung Electronics", "SK Hynix", "Micron"],
+    "notes": "3rd largest NAND supplier (14% share). Apple agreed to 2x price increase for 2026 Q1. JV with Western Digital for manufacturing."
+  },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, Bloomberg, Perplexity Finance",
+    "dataSource": "Yahoo Finance, Bloomberg, Perplexity Finance, Nikkei",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T12:00:00Z",
+    "lastUpdated": "2026-02-21T14:00:00Z",
     "notes": "IPO: Dec 18, 2024. Formerly Toshiba Memory. All-time high: 21,610 JPY (Jan 30, 2026). 51% revenue from SSD NAND. 9 analysts rate Buy, target: 26,525 JPY."
   }
 }
