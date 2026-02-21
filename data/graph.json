@@ -1,0 +1,129 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-02-21T16:00:00Z",
+  "description": "Semiconductor supply chain graph - 28 companies, 5 countries",
+  "statistics": {
+    "totalNodes": 28,
+    "totalEdges": 68,
+    "edgeTypes": {
+      "supplier": 52,
+      "competitor": 4,
+      "partner": 4,
+      "ecosystem": 8
+    }
+  },
+  "nodes": [
+    {"id": "CMP-0001", "name": "Tokyo Seimitsu", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "7729.T", "marketCap": null},
+    {"id": "CMP-0002", "name": "DISCO", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6146.T", "marketCap": null},
+    {"id": "CMP-0003", "name": "SCREEN Holdings", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "7735.T", "marketCap": 1900000000000},
+    {"id": "CMP-0004", "name": "Tokyo Electron", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "8035.T", "marketCap": 19200000000000},
+    {"id": "CMP-0005", "name": "Advantest", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6857.T", "marketCap": 19650000000000},
+    {"id": "CMP-0006", "name": "Lasertec", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6920.T", "marketCap": 2800000000000},
+    {"id": "CMP-0007", "name": "Fujimi", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "5384.T", "marketCap": null},
+    {"id": "CMP-0008", "name": "Resonac Holdings", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4004.T", "marketCap": 1970000000000},
+    {"id": "CMP-0009", "name": "Ferrotec Holdings", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "6890.T", "marketCap": null},
+    {"id": "CMP-0010", "name": "Toyo Gosei", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4970.T", "marketCap": null},
+    {"id": "CMP-0011", "name": "Kokusai Electric", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6525.T", "marketCap": null},
+    {"id": "CMP-0012", "name": "Horiba", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6856.T", "marketCap": 842000000000},
+    {"id": "CMP-0013", "name": "Fuso Chemical", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4368.T", "marketCap": 143000000000},
+    {"id": "CMP-0014", "name": "Kioxia Holdings", "industry": "Semiconductors", "country": "Japan", "ticker": "285A.T", "marketCap": 5640000000000},
+    {"id": "CMP-0015", "name": "HOYA", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "7741.T", "marketCap": null},
+    {"id": "CMP-0016", "name": "Olympus", "industry": "Precision Instruments", "country": "Japan", "ticker": "7733.T", "marketCap": 2080000000000},
+    {"id": "CMP-0017", "name": "TSMC", "industry": "Semiconductor Foundry", "country": "Taiwan", "ticker": "2330.TW", "marketCapUSD": 1500000000000},
+    {"id": "CMP-0018", "name": "Samsung Electronics", "industry": "Semiconductors", "country": "South Korea", "ticker": "005930.KS", "marketCapUSD": 877000000000},
+    {"id": "CMP-0019", "name": "Intel", "industry": "Semiconductors", "country": "USA", "ticker": "INTC", "marketCapUSD": 234000000000},
+    {"id": "CMP-0020", "name": "SK Hynix", "industry": "Memory Semiconductors", "country": "South Korea", "ticker": "000660.KS", "marketCapUSD": 452000000000},
+    {"id": "CMP-0021", "name": "Micron", "industry": "Memory Semiconductors", "country": "USA", "ticker": "MU", "marketCapUSD": 469000000000},
+    {"id": "CMP-0022", "name": "Apple", "industry": "Consumer Electronics", "country": "USA", "ticker": "AAPL", "marketCapUSD": 3890000000000},
+    {"id": "CMP-0023", "name": "Western Digital", "industry": "Storage/Memory", "country": "USA", "ticker": "WDC", "marketCapUSD": 98400000000},
+    {"id": "CMP-0024", "name": "Shin-Etsu Chemical", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4063.T", "marketCap": 10300000000000},
+    {"id": "CMP-0025", "name": "SUMCO", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "3436.T", "marketCap": 538000000000},
+    {"id": "CMP-0026", "name": "ASML", "industry": "Semiconductor Equipment", "country": "Netherlands", "ticker": "ASML", "marketCapUSD": 562000000000},
+    {"id": "CMP-0027", "name": "Kyocera", "industry": "Semiconductor Components", "country": "Japan", "ticker": "6971.T", "marketCap": 3000000000000},
+    {"id": "CMP-0028", "name": "NVIDIA", "industry": "Semiconductors", "country": "USA", "ticker": "NVDA", "marketCapUSD": 4650000000000}
+  ],
+  "edges": [
+    {"source": "CMP-0024", "target": "CMP-0017", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0025", "target": "CMP-0017", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0004", "target": "CMP-0017", "type": "supplier", "label": "coater/developers, etch, CVD"},
+    {"source": "CMP-0003", "target": "CMP-0017", "type": "supplier", "label": "wafer cleaning"},
+    {"source": "CMP-0007", "target": "CMP-0017", "type": "supplier", "label": "CMP slurry"},
+    {"source": "CMP-0013", "target": "CMP-0017", "type": "supplier", "label": "CMP slurry"},
+    {"source": "CMP-0015", "target": "CMP-0017", "type": "supplier", "label": "photomask blanks"},
+    {"source": "CMP-0017", "target": "CMP-0022", "type": "supplier", "label": "chip manufacturing"},
+    {"source": "CMP-0017", "target": "CMP-0028", "type": "supplier", "label": "chip manufacturing"},
+
+    {"source": "CMP-0024", "target": "CMP-0018", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0025", "target": "CMP-0018", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0004", "target": "CMP-0018", "type": "supplier", "label": "deposition equipment"},
+    {"source": "CMP-0005", "target": "CMP-0018", "type": "supplier", "label": "test equipment"},
+    {"source": "CMP-0006", "target": "CMP-0018", "type": "supplier", "label": "EUV mask inspection"},
+    {"source": "CMP-0011", "target": "CMP-0018", "type": "supplier", "label": "batch deposition"},
+    {"source": "CMP-0015", "target": "CMP-0018", "type": "supplier", "label": "photomask blanks"},
+    {"source": "CMP-0013", "target": "CMP-0018", "type": "supplier", "label": "CMP slurry"},
+
+    {"source": "CMP-0024", "target": "CMP-0019", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0025", "target": "CMP-0019", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0004", "target": "CMP-0019", "type": "supplier", "label": "deposition equipment"},
+    {"source": "CMP-0006", "target": "CMP-0019", "type": "supplier", "label": "EUV mask inspection"},
+    {"source": "CMP-0011", "target": "CMP-0019", "type": "supplier", "label": "batch deposition"},
+    {"source": "CMP-0015", "target": "CMP-0019", "type": "supplier", "label": "photomask blanks"},
+    {"source": "CMP-0013", "target": "CMP-0019", "type": "supplier", "label": "CMP slurry"},
+
+    {"source": "CMP-0024", "target": "CMP-0020", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0025", "target": "CMP-0020", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0004", "target": "CMP-0020", "type": "supplier", "label": "deposition equipment"},
+    {"source": "CMP-0005", "target": "CMP-0020", "type": "supplier", "label": "test equipment"},
+    {"source": "CMP-0011", "target": "CMP-0020", "type": "supplier", "label": "batch deposition"},
+    {"source": "CMP-0015", "target": "CMP-0020", "type": "supplier", "label": "photomask blanks"},
+    {"source": "CMP-0020", "target": "CMP-0028", "type": "supplier", "label": "HBM memory"},
+
+    {"source": "CMP-0024", "target": "CMP-0021", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0025", "target": "CMP-0021", "type": "supplier", "label": "silicon wafers"},
+    {"source": "CMP-0005", "target": "CMP-0021", "type": "supplier", "label": "test equipment"},
+    {"source": "CMP-0011", "target": "CMP-0021", "type": "supplier", "label": "batch deposition"},
+
+    {"source": "CMP-0014", "target": "CMP-0022", "type": "supplier", "label": "NAND flash"},
+    {"source": "CMP-0011", "target": "CMP-0014", "type": "supplier", "label": "batch deposition"},
+
+    {"source": "CMP-0026", "target": "CMP-0017", "type": "supplier", "label": "EUV lithography"},
+    {"source": "CMP-0026", "target": "CMP-0018", "type": "supplier", "label": "EUV lithography"},
+    {"source": "CMP-0026", "target": "CMP-0019", "type": "supplier", "label": "EUV lithography"},
+    {"source": "CMP-0026", "target": "CMP-0020", "type": "supplier", "label": "EUV lithography"},
+    {"source": "CMP-0026", "target": "CMP-0021", "type": "supplier", "label": "EUV lithography"},
+
+    {"source": "CMP-0007", "target": "CMP-0019", "type": "supplier", "label": "CMP slurry"},
+    {"source": "CMP-0005", "target": "CMP-0017", "type": "supplier", "label": "test equipment"},
+    {"source": "CMP-0006", "target": "CMP-0017", "type": "supplier", "label": "EUV mask inspection"},
+
+    {"source": "CMP-0001", "target": "CMP-0002", "type": "competitor", "label": "dicing equipment"},
+    {"source": "CMP-0002", "target": "CMP-0001", "type": "competitor", "label": "dicing equipment"},
+    {"source": "CMP-0024", "target": "CMP-0025", "type": "competitor", "label": "silicon wafers"},
+    {"source": "CMP-0025", "target": "CMP-0024", "type": "competitor", "label": "silicon wafers"},
+
+    {"source": "CMP-0014", "target": "CMP-0023", "type": "partner", "label": "Yokkaichi/Kitakami JV"},
+    {"source": "CMP-0023", "target": "CMP-0014", "type": "partner", "label": "Yokkaichi/Kitakami JV"},
+    {"source": "CMP-0018", "target": "CMP-0020", "type": "competitor", "label": "memory"},
+    {"source": "CMP-0018", "target": "CMP-0021", "type": "competitor", "label": "memory"},
+
+    {"source": "CMP-0006", "target": "CMP-0026", "type": "ecosystem", "label": "EUV inspection + lithography"},
+    {"source": "CMP-0026", "target": "CMP-0006", "type": "ecosystem", "label": "EUV lithography + inspection"},
+    {"source": "CMP-0015", "target": "CMP-0026", "type": "ecosystem", "label": "EUV blanks + lithography"},
+    {"source": "CMP-0026", "target": "CMP-0015", "type": "ecosystem", "label": "EUV lithography + blanks"},
+
+    {"source": "CMP-0010", "target": "CMP-0017", "type": "supplier", "label": "photoresist materials"},
+    {"source": "CMP-0010", "target": "CMP-0018", "type": "supplier", "label": "photoresist materials"},
+    {"source": "CMP-0010", "target": "CMP-0019", "type": "supplier", "label": "photoresist materials"},
+
+    {"source": "CMP-0008", "target": "CMP-0017", "type": "supplier", "label": "semiconductor materials"},
+    {"source": "CMP-0008", "target": "CMP-0018", "type": "supplier", "label": "semiconductor materials"},
+    {"source": "CMP-0008", "target": "CMP-0019", "type": "supplier", "label": "semiconductor materials"}
+  ],
+  "criticalNodes": [
+    {"id": "CMP-0024", "reason": "42% of silicon wafer market - no alternative for leading-edge wafers"},
+    {"id": "CMP-0025", "reason": "20% of silicon wafer market - only alternative to Shin-Etsu"},
+    {"id": "CMP-0026", "reason": "100% EUV lithography monopoly - no alternative exists"},
+    {"id": "CMP-0006", "reason": "100% EUV mask inspection monopoly - essential for EUV process"},
+    {"id": "CMP-0017", "reason": "90%+ of advanced AI chips - NVIDIA, Apple depend on TSMC"}
+  ]
+}
