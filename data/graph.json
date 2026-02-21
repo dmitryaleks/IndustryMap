@@ -1,15 +1,15 @@
 {
-  "version": "1.0.0",
-  "generatedAt": "2026-02-21T16:00:00Z",
-  "description": "Semiconductor supply chain graph - 28 companies, 5 countries",
+  "version": "2.0.0",
+  "generatedAt": "2026-02-21T18:30:00Z",
+  "description": "Semiconductor supply chain graph - 62 companies, 5 countries (Wave 3 complete)",
   "statistics": {
-    "totalNodes": 28,
-    "totalEdges": 68,
+    "totalNodes": 62,
+    "totalEdges": 156,
     "edgeTypes": {
-      "supplier": 52,
-      "competitor": 4,
+      "supplier": 132,
+      "competitor": 8,
       "partner": 4,
-      "ecosystem": 8
+      "ecosystem": 12
     }
   },
   "nodes": [
@@ -40,7 +40,41 @@
     {"id": "CMP-0025", "name": "SUMCO", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "3436.T", "marketCap": 538000000000},
     {"id": "CMP-0026", "name": "ASML", "industry": "Semiconductor Equipment", "country": "Netherlands", "ticker": "ASML", "marketCapUSD": 562000000000},
     {"id": "CMP-0027", "name": "Kyocera", "industry": "Semiconductor Components", "country": "Japan", "ticker": "6971.T", "marketCap": 3000000000000},
-    {"id": "CMP-0028", "name": "NVIDIA", "industry": "Semiconductors", "country": "USA", "ticker": "NVDA", "marketCapUSD": 4650000000000}
+    {"id": "CMP-0028", "name": "NVIDIA", "industry": "Semiconductors", "country": "USA", "ticker": "NVDA", "marketCapUSD": 4650000000000},
+    {"id": "CMP-0029", "name": "Naigai Tech", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "3374.T", "marketCap": null},
+    {"id": "CMP-0030", "name": "Marumae", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6264.T", "marketCap": null},
+    {"id": "CMP-0031", "name": "Tocalo", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "3433.T", "marketCap": null},
+    {"id": "CMP-0032", "name": "Nippon Sanso", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4091.T", "marketCap": null},
+    {"id": "CMP-0033", "name": "Tokyo Ohka Kogyo", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4186.T", "marketCap": null},
+    {"id": "CMP-0034", "name": "JSR", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4185.T", "marketCap": null},
+    {"id": "CMP-0035", "name": "Maruzen Petrochemical", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4634.T", "marketCap": null},
+    {"id": "CMP-0036", "name": "Ebara", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6361.T", "marketCap": null},
+    {"id": "CMP-0037", "name": "NGK Insulators", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "5333.T", "marketCap": null},
+    {"id": "CMP-0038", "name": "Gun Ei Chemical", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4229.T", "marketCap": null},
+    {"id": "CMP-0039", "name": "Niterra", "industry": "Semiconductor Components", "country": "Japan", "ticker": "5334.T", "marketCap": null},
+    {"id": "CMP-0040", "name": "FUJIFILM Holdings", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4901.T", "marketCap": null},
+    {"id": "CMP-0041", "name": "Rorze", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6323.T", "marketCap": null},
+    {"id": "CMP-0042", "name": "PILLAR", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6490.T", "marketCap": null},
+    {"id": "CMP-0043", "name": "CKD", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6407.T", "marketCap": null},
+    {"id": "CMP-0044", "name": "Stella Chemifa", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4109.T", "marketCap": null},
+    {"id": "CMP-0045", "name": "Kanto Denka Kogyo", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4047.T", "marketCap": null},
+    {"id": "CMP-0046", "name": "Sumitomo Chemical", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4005.T", "marketCap": null},
+    {"id": "CMP-0047", "name": "TOPPAN Holdings", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "7911.T", "marketCap": null},
+    {"id": "CMP-0048", "name": "Ibiden", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4062.T", "marketCap": null},
+    {"id": "CMP-0049", "name": "Dai Nippon Printing", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "7912.T", "marketCap": null},
+    {"id": "CMP-0050", "name": "Nikon", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "7731.T", "marketCap": null},
+    {"id": "CMP-0051", "name": "Canon", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "7751.T", "marketCap": null},
+    {"id": "CMP-0052", "name": "Organo", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6368.T", "marketCap": null},
+    {"id": "CMP-0053", "name": "Nomura Micro Science", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6254.T", "marketCap": null},
+    {"id": "CMP-0054", "name": "Aval Data", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6918.T", "marketCap": null},
+    {"id": "CMP-0055", "name": "NHK Spring", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "5991.T", "marketCap": null},
+    {"id": "CMP-0056", "name": "Daifuku", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6383.T", "marketCap": null},
+    {"id": "CMP-0057", "name": "MEC Company", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "4971.T", "marketCap": null},
+    {"id": "CMP-0058", "name": "Nagase", "industry": "Semiconductor Materials", "country": "Japan", "ticker": "8012.T", "marketCap": null},
+    {"id": "CMP-0059", "name": "Shibaura Mechatronics", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6590.T", "marketCap": null},
+    {"id": "CMP-0060", "name": "Samco", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6387.T", "marketCap": null},
+    {"id": "CMP-0061", "name": "Ushio", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6925.T", "marketCap": null},
+    {"id": "CMP-0062", "name": "Tazmo", "industry": "Semiconductor Equipment", "country": "Japan", "ticker": "6266.T", "marketCap": null}
   ],
   "edges": [
     {"source": "CMP-0024", "target": "CMP-0017", "type": "supplier", "label": "silicon wafers"},
@@ -117,13 +151,136 @@
 
     {"source": "CMP-0008", "target": "CMP-0017", "type": "supplier", "label": "semiconductor materials"},
     {"source": "CMP-0008", "target": "CMP-0018", "type": "supplier", "label": "semiconductor materials"},
-    {"source": "CMP-0008", "target": "CMP-0019", "type": "supplier", "label": "semiconductor materials"}
+    {"source": "CMP-0008", "target": "CMP-0019", "type": "supplier", "label": "semiconductor materials"},
+
+    {"source": "CMP-0029", "target": "CMP-0004", "type": "supplier", "label": "precision machining parts (80% sales)"},
+    {"source": "CMP-0030", "target": "CMP-0004", "type": "supplier", "label": "aluminum vacuum chambers"},
+    {"source": "CMP-0030", "target": "CMP-0003", "type": "supplier", "label": "aluminum vacuum chambers"},
+    {"source": "CMP-0031", "target": "CMP-0004", "type": "supplier", "label": "thermal spray coating"},
+    {"source": "CMP-0031", "target": "CMP-0003", "type": "supplier", "label": "thermal spray coating"},
+
+    {"source": "CMP-0032", "target": "CMP-0017", "type": "supplier", "label": "specialty gases"},
+    {"source": "CMP-0032", "target": "CMP-0018", "type": "supplier", "label": "specialty gases"},
+    {"source": "CMP-0032", "target": "CMP-0019", "type": "supplier", "label": "specialty gases"},
+    {"source": "CMP-0032", "target": "CMP-0020", "type": "supplier", "label": "specialty gases"},
+    {"source": "CMP-0032", "target": "CMP-0021", "type": "supplier", "label": "specialty gases"},
+
+    {"source": "CMP-0033", "target": "CMP-0017", "type": "supplier", "label": "photoresist (25% world share)"},
+    {"source": "CMP-0033", "target": "CMP-0018", "type": "supplier", "label": "photoresist"},
+    {"source": "CMP-0033", "target": "CMP-0019", "type": "supplier", "label": "photoresist"},
+    {"source": "CMP-0034", "target": "CMP-0017", "type": "supplier", "label": "EUV photoresist"},
+    {"source": "CMP-0034", "target": "CMP-0018", "type": "supplier", "label": "EUV photoresist"},
+    {"source": "CMP-0034", "target": "CMP-0019", "type": "supplier", "label": "EUV photoresist"},
+
+    {"source": "CMP-0035", "target": "CMP-0034", "type": "supplier", "label": "high-purity aromatics"},
+    {"source": "CMP-0035", "target": "CMP-0033", "type": "supplier", "label": "high-purity aromatics"},
+
+    {"source": "CMP-0036", "target": "CMP-0017", "type": "supplier", "label": "CMP systems, vacuum pumps"},
+    {"source": "CMP-0036", "target": "CMP-0018", "type": "supplier", "label": "CMP systems, vacuum pumps"},
+    {"source": "CMP-0036", "target": "CMP-0019", "type": "supplier", "label": "CMP systems, vacuum pumps"},
+
+    {"source": "CMP-0037", "target": "CMP-0017", "type": "supplier", "label": "ceramic electrostatic chucks"},
+    {"source": "CMP-0037", "target": "CMP-0018", "type": "supplier", "label": "ceramic electrostatic chucks"},
+    {"source": "CMP-0038", "target": "CMP-0033", "type": "supplier", "label": "photosensitive resin materials"},
+    {"source": "CMP-0038", "target": "CMP-0034", "type": "supplier", "label": "photosensitive resin materials"},
+
+    {"source": "CMP-0039", "target": "CMP-0017", "type": "supplier", "label": "IC package substrates"},
+    {"source": "CMP-0039", "target": "CMP-0018", "type": "supplier", "label": "IC package substrates"},
+
+    {"source": "CMP-0040", "target": "CMP-0017", "type": "supplier", "label": "CMP slurry, photoresist"},
+    {"source": "CMP-0040", "target": "CMP-0018", "type": "supplier", "label": "CMP slurry, photoresist"},
+
+    {"source": "CMP-0041", "target": "CMP-0004", "type": "supplier", "label": "wafer transfer robots"},
+    {"source": "CMP-0041", "target": "CMP-0003", "type": "supplier", "label": "wafer transfer robots"},
+    {"source": "CMP-0041", "target": "CMP-0017", "type": "supplier", "label": "wafer handling systems"},
+
+    {"source": "CMP-0042", "target": "CMP-0004", "type": "supplier", "label": "mechanical seals, bellows"},
+    {"source": "CMP-0042", "target": "CMP-0003", "type": "supplier", "label": "mechanical seals, bellows"},
+
+    {"source": "CMP-0043", "target": "CMP-0004", "type": "supplier", "label": "pneumatic valves"},
+    {"source": "CMP-0043", "target": "CMP-0003", "type": "supplier", "label": "pneumatic valves"},
+    {"source": "CMP-0043", "target": "CMP-0011", "type": "supplier", "label": "pneumatic valves"},
+
+    {"source": "CMP-0044", "target": "CMP-0017", "type": "supplier", "label": "12-nine purity HF acid"},
+    {"source": "CMP-0044", "target": "CMP-0018", "type": "supplier", "label": "12-nine purity HF acid"},
+    {"source": "CMP-0044", "target": "CMP-0019", "type": "supplier", "label": "ultra-high purity HF"},
+    {"source": "CMP-0044", "target": "CMP-0020", "type": "supplier", "label": "ultra-high purity HF"},
+    {"source": "CMP-0044", "target": "CMP-0021", "type": "supplier", "label": "ultra-high purity HF"},
+
+    {"source": "CMP-0045", "target": "CMP-0017", "type": "supplier", "label": "specialty fluorine gases"},
+    {"source": "CMP-0045", "target": "CMP-0018", "type": "supplier", "label": "specialty fluorine gases"},
+
+    {"source": "CMP-0046", "target": "CMP-0017", "type": "supplier", "label": "photoresist (via Sumitomo Bakelite)"},
+    {"source": "CMP-0046", "target": "CMP-0018", "type": "supplier", "label": "photoresist"},
+
+    {"source": "CMP-0047", "target": "CMP-0017", "type": "supplier", "label": "EUV photomasks (with Mitsui)"},
+    {"source": "CMP-0047", "target": "CMP-0026", "type": "ecosystem", "label": "EUV photomask production"},
+    {"source": "CMP-0026", "target": "CMP-0047", "type": "ecosystem", "label": "EUV lithography + masks"},
+
+    {"source": "CMP-0048", "target": "CMP-0028", "type": "supplier", "label": "AI server IC substrates (50%+)"},
+    {"source": "CMP-0048", "target": "CMP-0017", "type": "supplier", "label": "high-end FC-BGA substrates"},
+
+    {"source": "CMP-0049", "target": "CMP-0026", "type": "supplier", "label": "nanoimprint lithography"},
+    {"source": "CMP-0049", "target": "CMP-0017", "type": "supplier", "label": "photomask production"},
+    {"source": "CMP-0049", "target": "CMP-0026", "type": "ecosystem", "label": "EUV photomask partnership"},
+    {"source": "CMP-0026", "target": "CMP-0049", "type": "ecosystem", "label": "nanoimprint partnership"},
+
+    {"source": "CMP-0050", "target": "CMP-0017", "type": "supplier", "label": "i-line/KrF steppers"},
+    {"source": "CMP-0050", "target": "CMP-0018", "type": "supplier", "label": "lithography equipment"},
+    {"source": "CMP-0050", "target": "CMP-0026", "type": "competitor", "label": "lithography equipment"},
+    {"source": "CMP-0026", "target": "CMP-0050", "type": "competitor", "label": "lithography equipment"},
+
+    {"source": "CMP-0051", "target": "CMP-0017", "type": "supplier", "label": "i-line/KrF steppers"},
+    {"source": "CMP-0051", "target": "CMP-0018", "type": "supplier", "label": "lithography equipment"},
+    {"source": "CMP-0051", "target": "CMP-0019", "type": "supplier", "label": "nanoimprint lithography"},
+    {"source": "CMP-0051", "target": "CMP-0026", "type": "competitor", "label": "lithography equipment"},
+    {"source": "CMP-0026", "target": "CMP-0051", "type": "competitor", "label": "lithography equipment"},
+
+    {"source": "CMP-0052", "target": "CMP-0017", "type": "supplier", "label": "ultrapure water systems"},
+    {"source": "CMP-0052", "target": "CMP-0018", "type": "supplier", "label": "ultrapure water systems"},
+    {"source": "CMP-0053", "target": "CMP-0017", "type": "supplier", "label": "ultrapure water systems"},
+    {"source": "CMP-0053", "target": "CMP-0020", "type": "supplier", "label": "ultrapure water systems"},
+
+    {"source": "CMP-0054", "target": "CMP-0005", "type": "supplier", "label": "tester boards/probes"},
+    {"source": "CMP-0054", "target": "CMP-0018", "type": "supplier", "label": "test equipment components"},
+
+    {"source": "CMP-0055", "target": "CMP-0005", "type": "supplier", "label": "probe card springs"},
+    {"source": "CMP-0055", "target": "CMP-0017", "type": "supplier", "label": "HDD suspension (50% share)"},
+
+    {"source": "CMP-0056", "target": "CMP-0017", "type": "supplier", "label": "cleanroom AMHS"},
+    {"source": "CMP-0056", "target": "CMP-0018", "type": "supplier", "label": "cleanroom AMHS"},
+    {"source": "CMP-0056", "target": "CMP-0019", "type": "supplier", "label": "cleanroom AMHS"},
+
+    {"source": "CMP-0057", "target": "CMP-0048", "type": "supplier", "label": "copper surface treatment"},
+    {"source": "CMP-0057", "target": "CMP-0017", "type": "supplier", "label": "PCB surface treatment"},
+
+    {"source": "CMP-0058", "target": "CMP-0033", "type": "supplier", "label": "chemical distribution"},
+    {"source": "CMP-0058", "target": "CMP-0034", "type": "supplier", "label": "chemical distribution"},
+    {"source": "CMP-0058", "target": "CMP-0017", "type": "supplier", "label": "electronic chemicals"},
+
+    {"source": "CMP-0059", "target": "CMP-0017", "type": "supplier", "label": "plasma processing equipment"},
+    {"source": "CMP-0059", "target": "CMP-0018", "type": "supplier", "label": "plasma processing equipment"},
+
+    {"source": "CMP-0060", "target": "CMP-0017", "type": "supplier", "label": "plasma CVD equipment"},
+    {"source": "CMP-0060", "target": "CMP-0018", "type": "supplier", "label": "dry etching equipment"},
+
+    {"source": "CMP-0061", "target": "CMP-0050", "type": "supplier", "label": "i-line UV lamps (75% share)"},
+    {"source": "CMP-0061", "target": "CMP-0051", "type": "supplier", "label": "i-line UV lamps"},
+
+    {"source": "CMP-0062", "target": "CMP-0017", "type": "supplier", "label": "coater/developer equipment"},
+    {"source": "CMP-0062", "target": "CMP-0018", "type": "supplier", "label": "coating equipment"}
   ],
   "criticalNodes": [
     {"id": "CMP-0024", "reason": "42% of silicon wafer market - no alternative for leading-edge wafers"},
     {"id": "CMP-0025", "reason": "20% of silicon wafer market - only alternative to Shin-Etsu"},
     {"id": "CMP-0026", "reason": "100% EUV lithography monopoly - no alternative exists"},
     {"id": "CMP-0006", "reason": "100% EUV mask inspection monopoly - essential for EUV process"},
-    {"id": "CMP-0017", "reason": "90%+ of advanced AI chips - NVIDIA, Apple depend on TSMC"}
+    {"id": "CMP-0017", "reason": "90%+ of advanced AI chips - NVIDIA, Apple depend on TSMC"},
+    {"id": "CMP-0044", "reason": "World monopoly in 12-nine purity HF acid - essential for advanced etching"},
+    {"id": "CMP-0048", "reason": "50%+ AI server IC package substrates - NVIDIA H100/H200 depend on Ibiden"},
+    {"id": "CMP-0052", "reason": "Near-exclusive TSMC ultrapure water supplier - fab cannot operate without"},
+    {"id": "CMP-0033", "reason": "World #1 photoresist (25% share) - essential for lithography"},
+    {"id": "CMP-0056", "reason": "Near-monopoly in advanced cleanroom automation - no alternative for 300mm fabs"},
+    {"id": "CMP-0061", "reason": "75% global share in i-line UV lamps - Nikon/Canon lithography depends on"}
   ]
 }
