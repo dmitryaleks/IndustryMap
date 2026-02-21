@@ -1,0 +1,7 @@
+{
+  "$schema": "../schema/company.schema.json",
+  "version": "1.0.0",
+  "lastUpdated": null,
+  "totalCompanies": 0,
+  "companies": []
+}

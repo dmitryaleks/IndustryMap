@@ -1,0 +1,135 @@
+{
+  "description": "Seed companies for initial data collection - derived from CLAUDE.md",
+  "createdAt": "2025-02-21",
+  "totalSeeds": 16,
+  "seeds": [
+    {
+      "inputName": "Tokyo Seimitsu",
+      "resolvedName": null,
+      "ticker": "7729.T",
+      "assignedId": "CMP-0001",
+      "status": "pending",
+      "notes": "Semiconductor precision measurement equipment"
+    },
+    {
+      "inputName": "Disco",
+      "resolvedName": null,
+      "ticker": "6146.T",
+      "assignedId": "CMP-0002",
+      "status": "pending",
+      "notes": "Precision cutting, grinding, polishing equipment"
+    },
+    {
+      "inputName": "Screen",
+      "resolvedName": null,
+      "ticker": "7735.T",
+      "assignedId": "CMP-0003",
+      "status": "pending",
+      "notes": "SCREEN Holdings - semiconductor and display equipment"
+    },
+    {
+      "inputName": "Tokyo Electron",
+      "resolvedName": null,
+      "ticker": "8035.T",
+      "assignedId": "CMP-0004",
+      "status": "pending",
+      "notes": "Major semiconductor production equipment maker"
+    },
+    {
+      "inputName": "Advantest",
+      "resolvedName": null,
+      "ticker": "6857.T",
+      "assignedId": "CMP-0005",
+      "status": "pending",
+      "notes": "Semiconductor test equipment"
+    },
+    {
+      "inputName": "Lasertech",
+      "resolvedName": null,
+      "ticker": "6920.T",
+      "assignedId": "CMP-0006",
+      "status": "pending",
+      "notes": "Lasertec - mask inspection and metrology"
+    },
+    {
+      "inputName": "Fujimi",
+      "resolvedName": null,
+      "ticker": "5384.T",
+      "assignedId": "CMP-0007",
+      "status": "pending",
+      "notes": "Polishing materials and compounds"
+    },
+    {
+      "inputName": "4004.T",
+      "resolvedName": null,
+      "ticker": "4004.T",
+      "assignedId": "CMP-0008",
+      "status": "pending",
+      "notes": "Ticker only - needs company name resolution (likely Resonac/Showa Denko)"
+    },
+    {
+      "inputName": "6890.T",
+      "resolvedName": null,
+      "ticker": "6890.T",
+      "assignedId": "CMP-0009",
+      "status": "pending",
+      "notes": "Ticker only - needs company name resolution (likely Ferrotec)"
+    },
+    {
+      "inputName": "4970.T",
+      "resolvedName": null,
+      "ticker": "4970.T",
+      "assignedId": "CMP-0010",
+      "status": "pending",
+      "notes": "Ticker only - needs company name resolution"
+    },
+    {
+      "inputName": "6525.T (Kokusai)",
+      "resolvedName": null,
+      "ticker": "6525.T",
+      "assignedId": "CMP-0011",
+      "status": "pending",
+      "notes": "Kokusai Electric - deposition equipment"
+    },
+    {
+      "inputName": "6856.T",
+      "resolvedName": null,
+      "ticker": "6856.T",
+      "assignedId": "CMP-0012",
+      "status": "pending",
+      "notes": "Ticker only - needs company name resolution (likely Horiba)"
+    },
+    {
+      "inputName": "4368.T",
+      "resolvedName": null,
+      "ticker": "4368.T",
+      "assignedId": "CMP-0013",
+      "status": "pending",
+      "notes": "Ticker only - needs company name resolution"
+    },
+    {
+      "inputName": "285A",
+      "resolvedName": null,
+      "ticker": "285A.T",
+      "assignedId": "CMP-0014",
+      "status": "pending",
+      "notes": "New listing format - requires research for company identification"
+    },
+    {
+      "inputName": "Hoya (7741.T)",
+      "resolvedName": null,
+      "ticker": "7741.T",
+      "assignedId": "CMP-0015",
+      "status": "pending",
+      "notes": "HOYA - mask blanks, optical products"
+    },
+    {
+      "inputName": "Olympus (7733.T)",
+      "resolvedName": null,
+      "ticker": "7733.T",
+      "assignedId": "CMP-0016",
+      "status": "pending",
+      "notes": "Olympus - precision instruments, medical devices"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "company.schema.json",
+  "title": "Company",
+  "description": "A company node in the supply chain graph",
+  "type": "object",
+  "required": ["id", "companyName", "industryCode"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (format: CMP-XXXX)",
+      "pattern": "^CMP-[0-9]{4}$"
+    },
+    "companyName": {
+      "type": "string",
+      "description": "Company name in English"
+    },
+    "companyNameJapanese": {
+      "type": ["string", "null"],
+      "description": "Company name in Japanese (for reference)"
+    },
+    "industryCode": {
+      "type": "string",
+      "description": "Short industry name in English",
+      "examples": ["Semiconductors", "Semiconductor Equipment", "Chemicals", "Precision Instruments"]
+    },
+    "ticker": {
+      "type": ["string", "null"],
+      "description": "Stock ticker symbol (e.g., 8035.T for Tokyo Stock Exchange)"
+    },
+    "description": {
+      "type": ["string", "null"],
+      "description": "Key products and business focus"
+    },
+    "marketCapInYen": {
+      "type": ["number", "null"],
+      "description": "Market capitalization in Japanese Yen"
+    },
+    "PER": {
+      "type": ["number", "null"],
+      "description": "Price to Earnings Ratio"
+    },
+    "PBR": {
+      "type": ["number", "null"],
+      "description": "Price to Book Ratio"
+    },
+    "EPS": {
+      "type": ["number", "null"],
+      "description": "Earnings Per Share in JPY"
+    },
+    "website": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Company website URL"
+    },
+    "percentOfForeignOwnership": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Percentage of foreign institutional ownership"
+    },
+    "percentOfCirculatingEquity": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Percentage of shares in public circulation"
+    },
+    "latestPriceYen": {
+      "type": ["number", "null"],
+      "description": "Latest stock price in JPY"
+    },
+    "isForexSensitive": {
+      "type": ["boolean", "null"],
+      "description": "Whether company revenue is significantly affected by USD/JPY exchange rate"
+    },
+    "suppliers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CMP-[0-9]{4}$"
+      },
+      "description": "Array of supplier company IDs",
+      "default": []
+    },
+    "clients": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CMP-[0-9]{4}$"
+      },
+      "description": "Array of client company IDs",
+      "default": []
+    },
+    "_metadata": {
+      "type": "object",
+      "description": "Collection metadata for data provenance",
+      "properties": {
+        "dataCollectedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when data was collected"
+        },
+        "dataSource": {
+          "type": "string",
+          "description": "Sources used for data collection"
+        },
+        "confidenceLevel": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Confidence in data accuracy"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Additional notes about the data"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
