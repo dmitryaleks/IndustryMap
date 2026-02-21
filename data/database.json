@@ -1,31 +1,67 @@
 {
   "$schema": "../schema/company.schema.json",
-  "version": "1.0.0",
-  "lastUpdated": "2026-02-21T12:00:00Z",
-  "totalCompanies": 16,
+  "version": "1.1.0",
+  "lastUpdated": "2026-02-21T15:30:00Z",
+  "totalCompanies": 28,
+  "waves": {
+    "wave1": {"count": 16, "status": "complete"},
+    "wave2": {"count": 12, "status": "complete"}
+  },
   "industryBreakdown": {
-    "Semiconductor Equipment": 8,
-    "Semiconductor Materials": 5,
-    "Semiconductors": 1,
+    "Semiconductor Equipment": 9,
+    "Semiconductor Materials": 7,
+    "Semiconductors": 4,
+    "Memory Semiconductors": 3,
+    "Semiconductor Foundry": 1,
+    "Semiconductor Components": 1,
+    "Consumer Electronics": 1,
+    "Storage/Memory": 1,
     "Precision Instruments": 1
   },
+  "geographyBreakdown": {
+    "Japan": 17,
+    "USA": 5,
+    "South Korea": 2,
+    "Taiwan": 1,
+    "Netherlands": 1
+  },
   "companyIndex": [
-    {"id": "CMP-0001", "name": "Tokyo Seimitsu Co., Ltd.", "ticker": "7729.T"},
-    {"id": "CMP-0002", "name": "DISCO Corporation", "ticker": "6146.T"},
-    {"id": "CMP-0003", "name": "SCREEN Holdings Co., Ltd.", "ticker": "7735.T"},
-    {"id": "CMP-0004", "name": "Tokyo Electron Limited", "ticker": "8035.T"},
-    {"id": "CMP-0005", "name": "Advantest Corporation", "ticker": "6857.T"},
-    {"id": "CMP-0006", "name": "Lasertec Corporation", "ticker": "6920.T"},
-    {"id": "CMP-0007", "name": "Fujimi Incorporated", "ticker": "5384.T"},
-    {"id": "CMP-0008", "name": "Resonac Holdings Corporation", "ticker": "4004.T"},
-    {"id": "CMP-0009", "name": "Ferrotec Holdings Corporation", "ticker": "6890.T"},
-    {"id": "CMP-0010", "name": "Toyo Gosei Co., Ltd.", "ticker": "4970.T"},
-    {"id": "CMP-0011", "name": "Kokusai Electric Corporation", "ticker": "6525.T"},
-    {"id": "CMP-0012", "name": "Horiba, Ltd.", "ticker": "6856.T"},
-    {"id": "CMP-0013", "name": "Fuso Chemical Co., Ltd.", "ticker": "4368.T"},
-    {"id": "CMP-0014", "name": "Kioxia Holdings Corporation", "ticker": "285A.T"},
-    {"id": "CMP-0015", "name": "HOYA Corporation", "ticker": "7741.T"},
-    {"id": "CMP-0016", "name": "Olympus Corporation", "ticker": "7733.T"}
+    {"id": "CMP-0001", "name": "Tokyo Seimitsu Co., Ltd.", "ticker": "7729.T", "wave": 1},
+    {"id": "CMP-0002", "name": "DISCO Corporation", "ticker": "6146.T", "wave": 1},
+    {"id": "CMP-0003", "name": "SCREEN Holdings Co., Ltd.", "ticker": "7735.T", "wave": 1},
+    {"id": "CMP-0004", "name": "Tokyo Electron Limited", "ticker": "8035.T", "wave": 1},
+    {"id": "CMP-0005", "name": "Advantest Corporation", "ticker": "6857.T", "wave": 1},
+    {"id": "CMP-0006", "name": "Lasertec Corporation", "ticker": "6920.T", "wave": 1},
+    {"id": "CMP-0007", "name": "Fujimi Incorporated", "ticker": "5384.T", "wave": 1},
+    {"id": "CMP-0008", "name": "Resonac Holdings Corporation", "ticker": "4004.T", "wave": 1},
+    {"id": "CMP-0009", "name": "Ferrotec Holdings Corporation", "ticker": "6890.T", "wave": 1},
+    {"id": "CMP-0010", "name": "Toyo Gosei Co., Ltd.", "ticker": "4970.T", "wave": 1},
+    {"id": "CMP-0011", "name": "Kokusai Electric Corporation", "ticker": "6525.T", "wave": 1},
+    {"id": "CMP-0012", "name": "Horiba, Ltd.", "ticker": "6856.T", "wave": 1},
+    {"id": "CMP-0013", "name": "Fuso Chemical Co., Ltd.", "ticker": "4368.T", "wave": 1},
+    {"id": "CMP-0014", "name": "Kioxia Holdings Corporation", "ticker": "285A.T", "wave": 1},
+    {"id": "CMP-0015", "name": "HOYA Corporation", "ticker": "7741.T", "wave": 1},
+    {"id": "CMP-0016", "name": "Olympus Corporation", "ticker": "7733.T", "wave": 1},
+    {"id": "CMP-0017", "name": "Taiwan Semiconductor Manufacturing Company", "ticker": "2330.TW", "wave": 2},
+    {"id": "CMP-0018", "name": "Samsung Electronics Co., Ltd.", "ticker": "005930.KS", "wave": 2},
+    {"id": "CMP-0019", "name": "Intel Corporation", "ticker": "INTC", "wave": 2},
+    {"id": "CMP-0020", "name": "SK Hynix Inc.", "ticker": "000660.KS", "wave": 2},
+    {"id": "CMP-0021", "name": "Micron Technology, Inc.", "ticker": "MU", "wave": 2},
+    {"id": "CMP-0022", "name": "Apple Inc.", "ticker": "AAPL", "wave": 2},
+    {"id": "CMP-0023", "name": "Western Digital Corporation", "ticker": "WDC", "wave": 2},
+    {"id": "CMP-0024", "name": "Shin-Etsu Chemical Co., Ltd.", "ticker": "4063.T", "wave": 2},
+    {"id": "CMP-0025", "name": "SUMCO Corporation", "ticker": "3436.T", "wave": 2},
+    {"id": "CMP-0026", "name": "ASML Holding N.V.", "ticker": "ASML", "wave": 2},
+    {"id": "CMP-0027", "name": "Kyocera Corporation", "ticker": "6971.T", "wave": 2},
+    {"id": "CMP-0028", "name": "NVIDIA Corporation", "ticker": "NVDA", "wave": 2}
   ],
-  "notes": "Wave 1 data collection complete. Supplier/client relationships pending discovery."
+  "keyRelationships": {
+    "supplyChainCritical": [
+      "CMP-0024 (Shin-Etsu) + CMP-0025 (SUMCO) -> 90% of silicon wafers",
+      "CMP-0026 (ASML) -> 100% of EUV lithography",
+      "CMP-0006 (Lasertec) -> 100% of EUV mask inspection",
+      "CMP-0017 (TSMC) -> 90%+ of advanced AI chips"
+    ]
+  },
+  "notes": "Wave 1 (Japanese seed companies) and Wave 2 (global customers/suppliers) complete. Supply chain from wafer to consumer now mapped."
 }

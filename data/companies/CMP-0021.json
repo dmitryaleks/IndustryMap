@@ -1,0 +1,34 @@
+{
+  "id": "CMP-0021",
+  "companyName": "Micron Technology, Inc.",
+  "companyNameJapanese": "マイクロン・テクノロジー",
+  "industryCode": "Memory Semiconductors",
+  "ticker": "MU",
+  "description": "Major memory chip manufacturer producing DRAM and NAND flash products. Serves data center, PC, graphics, networking, automotive, industrial, and mobile markets. Products sold under Micron and Crucial brands.",
+  "marketCapInYen": null,
+  "marketCapUSD": 469000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.micron.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceUSD": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0005", "CMP-0011", "CMP-0024", "CMP-0025"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Data center operators", "PC OEMs", "Automotive companies"],
+    "majorSuppliers": ["Advantest (CMP-0005)", "Kokusai Electric (CMP-0011)", "Shin-Etsu (CMP-0024)", "SUMCO (CMP-0025)", "ASML (CMP-0026)"],
+    "competitors": ["Samsung Electronics (CMP-0018)", "SK Hynix (CMP-0020)"],
+    "notes": "World's 21st most valuable company. Market cap +40% in 12 months. Memory supercycle beneficiary."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T15:00:00Z",
+    "dataSource": "Yahoo Finance, CompaniesMarketCap, Stock Analysis",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T15:00:00Z",
+    "notes": "US-based memory maker. DRAM + NAND products. Serves diverse end markets."
+  }
+}

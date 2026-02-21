@@ -1,0 +1,33 @@
+{
+  "id": "CMP-0017",
+  "companyName": "Taiwan Semiconductor Manufacturing Company Limited",
+  "companyNameJapanese": "台湾積体電路製造",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": "2330.TW",
+  "description": "World's largest semiconductor foundry with 71% global market share and 90%+ of advanced chips for AI. Manufactures chips for Apple, NVIDIA, AMD, Qualcomm, and other fabless companies. Key products include 3nm and 2nm process nodes.",
+  "marketCapInYen": null,
+  "marketCapUSD": 1500000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.tsmc.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceTWD": 1915,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0024", "CMP-0025", "CMP-0004", "CMP-0003", "CMP-0007", "CMP-0013", "CMP-0015"],
+  "clients": ["CMP-0022", "CMP-0028"],
+  "_externalRelationships": {
+    "majorClients": ["Apple (20%+ of revenue)", "NVIDIA", "AMD", "Qualcomm", "MediaTek", "Broadcom"],
+    "majorSuppliers": ["Shin-Etsu (CMP-0024)", "SUMCO (CMP-0025)", "Tokyo Electron (CMP-0004)", "SCREEN (CMP-0003)", "ASML (CMP-0026)", "Fujimi (CMP-0007)", "Fuso Chemical (CMP-0013)", "HOYA (CMP-0015)"],
+    "notes": "Apple secured 50%+ of 2nm capacity for 2026. 2026 CapEx up to $56B. Revenue CAGR 25% through 2029. HPC chips 58% of revenue."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T15:00:00Z",
+    "dataSource": "Yahoo Finance, Stock Analysis, Motley Fool, Nikkei",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T15:00:00Z",
+    "notes": "Jan 2026 revenue NT$401B (+37% YoY). All-time high: 1,925 TWD (Feb 11, 2026). 700+ suppliers, 13 Japanese companies in top 30."
+  }
+}

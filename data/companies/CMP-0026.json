@@ -1,0 +1,33 @@
+{
+  "id": "CMP-0026",
+  "companyName": "ASML Holding N.V.",
+  "companyNameJapanese": "ASML",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "ASML",
+  "description": "World's only manufacturer of EUV (Extreme Ultraviolet) lithography systems, essential for advanced chip production below 7nm. Also produces DUV (Deep Ultraviolet) immersion and dry lithography systems.",
+  "marketCapInYen": null,
+  "marketCapUSD": 562000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.asml.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceUSD": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019", "CMP-0020", "CMP-0021"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC (CMP-0017)", "Samsung (CMP-0018)", "Intel (CMP-0019)", "SK Hynix (CMP-0020)", "Micron (CMP-0021)"],
+    "ecosystemPartners": ["Lasertec (CMP-0006)", "HOYA (CMP-0015)", "Zeiss (optics)"],
+    "notes": "EUV lithography monopoly. ASML systems require Lasertec mask inspection and HOYA mask blanks. 2026 sales outlook: €36.5B."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T15:00:00Z",
+    "dataSource": "Yahoo Finance, Stock Analysis, MacroTrends",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T15:00:00Z",
+    "notes": "Critical for AI chip manufacturing. Raised 2026 sales outlook. EUV systems cost $150M+ each. Dutch export controls affect China sales."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "CMP-0018",
+  "companyName": "Samsung Electronics Co., Ltd.",
+  "companyNameJapanese": "サムスン電子",
+  "industryCode": "Semiconductors",
+  "ticker": "005930.KS",
+  "description": "World's largest memory chip manufacturer and second-largest foundry. Produces DRAM, NAND flash, and provides foundry services. Leading in HBM (High Bandwidth Memory) for AI applications. Also manufactures smartphones and displays.",
+  "marketCapInYen": null,
+  "marketCapUSD": 877000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.samsung.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0004", "CMP-0005", "CMP-0006", "CMP-0011", "CMP-0024", "CMP-0025", "CMP-0015", "CMP-0013"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Tesla ($16.5B AI chip deal)", "Data center operators", "Smartphone OEMs"],
+    "majorSuppliers": ["Tokyo Electron (CMP-0004)", "Advantest (CMP-0005)", "Lasertec (CMP-0006)", "Kokusai Electric (CMP-0011)", "Shin-Etsu (CMP-0024)", "SUMCO (CMP-0025)", "HOYA (CMP-0015)", "ASML (CMP-0026)"],
+    "competitors": ["SK Hynix (memory)", "TSMC (foundry)", "Micron (memory)"],
+    "notes": "2nm GAA production started. HBM4 nearing NVIDIA certification. Feb 2026 HBM4 mass production. World's 14th most valuable company."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T15:00:00Z",
+    "dataSource": "Yahoo Finance, Perplexity Finance, TechI",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T15:00:00Z",
+    "notes": "Competing with TSMC for advanced foundry. Stock hit record high on HBM4 breakthrough. Memory + Foundry + Consumer electronics."
+  }
+}

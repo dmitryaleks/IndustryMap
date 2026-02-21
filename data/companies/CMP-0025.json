@@ -1,0 +1,31 @@
+{
+  "id": "CMP-0025",
+  "companyName": "SUMCO Corporation",
+  "companyNameJapanese": "株式会社SUMCO",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "3436.T",
+  "description": "World's second-largest silicon wafer manufacturer with 20% global market share. Founded 1999 as JV between Mitsubishi Materials and Sumitomo Metal Industries. Supplies wafers to all major semiconductor manufacturers.",
+  "marketCapInYen": 538000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.sumcosi.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 1424,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019", "CMP-0020", "CMP-0021"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC (CMP-0017)", "Samsung (CMP-0018)", "Intel (CMP-0019)", "Top 10 semiconductor companies are all customers"],
+    "competitors": ["Shin-Etsu Chemical (CMP-0024)"],
+    "notes": "Together with Shin-Etsu, controls 90% of advanced silicon wafer market. Only these two can make leading-edge wafers."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T15:00:00Z",
+    "dataSource": "Yahoo Finance, PitchBook, Deallab, Nikkei",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T15:00:00Z",
+    "notes": "Q1 2026 forecast: operating loss 6B JPY. Recovery expected after 2026. High depreciation from capacity investments. 52-week range: 745-1,790 JPY."
+  }
+}

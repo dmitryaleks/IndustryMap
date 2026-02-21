@@ -1,0 +1,35 @@
+{
+  "id": "CMP-0028",
+  "companyName": "NVIDIA Corporation",
+  "companyNameJapanese": "エヌビディア",
+  "industryCode": "Semiconductors",
+  "ticker": "NVDA",
+  "description": "World's leading AI chip company with 85-90% market share in AI accelerators. Designs GPUs for gaming, data centers, and AI training. Fabless - uses TSMC for manufacturing. Blackwell and upcoming Rubin architectures.",
+  "marketCapInYen": null,
+  "marketCapUSD": 4650000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.nvidia.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceUSD": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0017", "CMP-0020"],
+  "clients": [],
+  "_externalRelationships": {
+    "manufacturingPartner": ["TSMC (CMP-0017)"],
+    "hbmSupplier": ["SK Hynix (CMP-0020)"],
+    "majorClients": ["Microsoft", "Amazon AWS", "Google Cloud", "CoreWeave", "Meta"],
+    "testEquipment": ["Advantest (CMP-0005)"],
+    "notes": "World's first $5T company potential. 2026 revenue ~$500B projected. Rubin chips H2 2026. 71% earnings growth expected. $500B order backlog."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T15:00:00Z",
+    "dataSource": "Yahoo Finance, Seeking Alpha, CNN, Nasdaq",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T15:00:00Z",
+    "notes": "Fabless model - TSMC manufactures chips. SK Hynix supplies HBM. AI CapEx +50-60% YoY in 2026, 39% to GPUs. World's 2nd most valuable company."
+  }
+}

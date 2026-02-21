@@ -1,0 +1,31 @@
+{
+  "id": "CMP-0027",
+  "companyName": "Kyocera Corporation",
+  "companyNameJapanese": "京セラ株式会社",
+  "industryCode": "Semiconductor Components",
+  "ticker": "6971.T",
+  "description": "Japanese conglomerate manufacturing fine ceramics, semiconductor packages, crystal devices, and electronic components. Supplies ceramic packages and substrates for semiconductor industry since 1964.",
+  "marketCapInYen": 3000000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.kyocera.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 2583,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Semiconductor equipment manufacturers", "Semiconductor device makers"],
+    "products": ["Ceramic packages", "Organic packages", "Lead frames", "Substrate materials", "Crystal oscillators"],
+    "notes": "Core Components 28% of revenue, Electronic Components 18%, Solutions 54%. Fine ceramics for semiconductor processing equipment."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T15:00:00Z",
+    "dataSource": "Yahoo Finance, Morningstar, PitchBook",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T15:00:00Z",
+    "notes": "Diversified company - also makes solar cells, printers, mobile phones, cutting tools. Ceramic packages since 1964."
+  }
+}

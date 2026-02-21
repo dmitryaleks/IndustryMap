@@ -269,24 +269,24 @@ After Wave 1, the agent will:
    - Wave 3: Suppliers/clients of Wave 2 companies
    - Continue until network stabilizes or scope limit reached
 
-### 3.2 Discovery Queue [IN_PROGRESS]
+### 3.2 Discovery Queue [DONE]
 
-Companies discovered during collection that need their own records. See `data/wave2_discovery_queue.json` for full details.
+All 12 discovered companies have been collected. See `data/wave2_discovery_queue.json` for full details.
 
-| Queue # | Company Name | Country | Priority | Mentioned By |
-|---------|--------------|---------|----------|--------------|
-| 1 | TSMC | Taiwan | high | 8 companies |
-| 2 | Samsung Electronics | Korea | high | 6 companies |
-| 3 | Intel Corporation | USA | high | 5 companies |
-| 4 | SK Hynix | Korea | medium | 4 companies |
-| 5 | Micron Technology | USA | medium | 2 companies |
-| 6 | Apple Inc. | USA | medium | 1 company (Kioxia) |
-| 7 | Western Digital | USA | medium | 1 company (partner) |
-| 8 | Shin-Etsu Chemical | Japan | medium | supplier |
-| 9 | SUMCO Corporation | Japan | medium | supplier |
-| 10 | ASML Holding | Netherlands | medium | ecosystem partner |
-| 11 | Kyocera Corporation | Japan | low | supplier |
-| 12 | NVIDIA Corporation | USA | low | indirect client |
+| Queue # | Company Name | Country | ID | Status |
+|---------|--------------|---------|-----|--------|
+| 1 | TSMC | Taiwan | CMP-0017 | [DONE] |
+| 2 | Samsung Electronics | Korea | CMP-0018 | [DONE] |
+| 3 | Intel Corporation | USA | CMP-0019 | [DONE] |
+| 4 | SK Hynix | Korea | CMP-0020 | [DONE] |
+| 5 | Micron Technology | USA | CMP-0021 | [DONE] |
+| 6 | Apple Inc. | USA | CMP-0022 | [DONE] |
+| 7 | Western Digital | USA | CMP-0023 | [DONE] |
+| 8 | Shin-Etsu Chemical | Japan | CMP-0024 | [DONE] |
+| 9 | SUMCO Corporation | Japan | CMP-0025 | [DONE] |
+| 10 | ASML Holding | Netherlands | CMP-0026 | [DONE] |
+| 11 | Kyocera Corporation | Japan | CMP-0027 | [DONE] |
+| 12 | NVIDIA Corporation | USA | CMP-0028 | [DONE] |
 
 ---
 
@@ -400,6 +400,40 @@ Notes:
   - Japanese searches yielded additional detail (e.g., Nikkei articles)
   - Olympus has minimal semiconductor supply chain involvement (medical focus)
 [SESSION END]
+
+[SESSION START]
+Date: 2026-02-21 (continued)
+Agent: Claude Code (Opus 4.5)
+Current Phase: Phase 3 - Wave 2 Data Collection
+Tasks Completed This Session:
+  - Collected data for all 12 Wave 2 companies (CMP-0017 to CMP-0028)
+  - Created company JSON files for: TSMC, Samsung, Intel, SK Hynix, Micron, Apple,
+    Western Digital, Shin-Etsu Chemical, SUMCO, ASML, Kyocera, NVIDIA
+  - Searched in both English and Japanese for comprehensive financial and relationship data
+  - Updated database.json with 28 total companies across 5 countries
+  - Updated wave2_discovery_queue.json to mark collection as complete
+  - Identified key supply chain relationships and critical chokepoints
+Key Findings:
+  - TSMC: $1.1T market cap, 90%+ AI chip manufacturing, 64 Lasertec EUV tools
+  - Shin-Etsu + SUMCO: Control ~90% of global silicon wafer market
+  - ASML: 100% monopoly on EUV lithography systems
+  - NVIDIA: $4.65T company, fabless model using TSMC + SK Hynix HBM
+  - Intel: Largest Lasertec customer (14 EUV inspection tools)
+Geographic Distribution:
+  - Japan: 17 companies (60%)
+  - USA: 5 companies (18%)
+  - South Korea: 2 companies (7%)
+  - Taiwan: 1 company (4%)
+  - Netherlands: 1 company (4%)
+Tasks Remaining:
+  - Phase 4: Build interactive supply chain graph visualization
+  - Phase 5: Run analytics (concentration risk, financial correlation)
+  - Populate internal suppliers/clients arrays with cross-references
+Notes:
+  - Full supply chain now mapped: silicon wafers → equipment → foundries → end products
+  - Critical dependencies identified (single points of failure)
+  - Wave 3 expansion possible but scope complete for current objectives
+[SESSION END]
 ```
 
 ---
@@ -412,11 +446,13 @@ Notes:
 |-------|--------|----------|
 | Phase 1: Foundation | [DONE] | 100% |
 | Phase 2: Wave 1 Data | [DONE] | 100% |
-| Phase 3: Wave 2+ Data | [IN_PROGRESS] | 10% |
+| Phase 3: Wave 2+ Data | [DONE] | 100% |
 | Phase 4: Graph | [PENDING] | 0% |
 | Phase 5: Analytics | [PENDING] | 0% |
 
-**Next Action:** Collect data for Wave 2 companies (TSMC, Samsung, Intel, SK Hynix, Shin-Etsu, SUMCO, etc.) to expand the supply chain graph
+**Database Stats:** 28 companies, 5 countries, full supply chain from silicon wafers to consumer products
+
+**Next Action:** Build interactive supply chain graph visualization and begin analytics
 
 ---
 

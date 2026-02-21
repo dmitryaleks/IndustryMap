@@ -1,7 +1,10 @@
 {
-  "description": "Companies discovered during Wave 1 supplier/client research that need Wave 2 data collection",
+  "description": "Companies discovered during Wave 1 supplier/client research - Wave 2 data collection COMPLETE",
   "discoveredAt": "2026-02-21",
+  "collectedAt": "2026-02-21",
+  "status": "complete",
   "totalDiscovered": 12,
+  "totalCollected": 12,
   "priorityLegend": {
     "high": "Mentioned by 3+ seed companies, critical supply chain node",
     "medium": "Mentioned by 2 seed companies",
