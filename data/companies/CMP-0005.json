@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0005",
+  "companyName": "Advantest Corporation",
+  "companyNameJapanese": "株式会社アドバンテスト",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6857.T",
+  "description": "Leading manufacturer of semiconductor test equipment including automatic test equipment (ATE) for logic, memory, and mixed-signal devices. Strong growth in AI-related tester demand.",
+  "marketCapInYen": 19650000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.advantest.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 26795,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, TradingView",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "Record 9-month results. FY March 2026 guidance: Net sales 1.07T JPY, Operating income 454B JPY. All-time high: 29,250 JPY (Jan 29, 2026)."
+  }
+}

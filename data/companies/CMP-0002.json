@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0002",
+  "companyName": "DISCO Corporation",
+  "companyNameJapanese": "株式会社ディスコ",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6146.T",
+  "description": "Market leader in precision cutting, grinding, and polishing equipment for semiconductor manufacturing. Holds approximately 70% market share in slicing and dicing machines.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.disco.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 74070,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, Bloomberg",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "52-week range: 22,640-76,890 JPY. Dividend yield: 0.57%. 12 analysts rate Buy."
+  }
+}

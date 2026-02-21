@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0008",
+  "companyName": "Resonac Holdings Corporation",
+  "companyNameJapanese": "株式会社レゾナック・ホールディングス",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4004.T",
+  "description": "Comprehensive chemical company providing semiconductor materials including high-purity gases, functional chemicals, epoxy encapsulants, die bonding materials, and hard disks. Formerly Showa Denko K.K.",
+  "marketCapInYen": 1970000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.resonac.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 10860,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, Bloomberg",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "Name changed from Showa Denko K.K. in January 2023. 10 analysts rate Buy. Key segments: Semiconductor & Electronic Materials, Mobility, Innovation Enabling Materials."
+  }
+}

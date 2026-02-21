@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0001",
+  "companyName": "Tokyo Seimitsu Co., Ltd.",
+  "companyNameJapanese": "東京精密株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "7729.T",
+  "description": "Manufactures semiconductor production equipment and measuring instruments. Products include wafer dicing machines, probing machines, polish grinders, chemical mechanical planarizers, and precision dicing blades.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": 111.78,
+  "website": "https://www.accretech.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 15820,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, TradingView",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "Q3 2026 revenue: 35.9B JPY, net income: 4.5B JPY. 52-week range: 6,148-16,170 JPY."
+  }
+}

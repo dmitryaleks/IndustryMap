@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0011",
+  "companyName": "Kokusai Electric Corporation",
+  "companyNameJapanese": "株式会社KOKUSAI ELECTRIC",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6525.T",
+  "description": "Manufactures, sells, and maintains semiconductor manufacturing equipment. Main products include batch film deposition equipment for NAND and DRAM, treatment equipment for film quality improvement, and cleaning equipment.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": 37.64,
+  "website": "https://www.kokusai-electric.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 6243,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, DataInsightsMarket",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "Q2 2025 revenue: 65.42B JPY (+33% YoY). 2024 revenue: 238.93B JPY (+32% YoY). CEO projects 20% NAND equipment demand growth, 15% DRAM growth."
+  }
+}

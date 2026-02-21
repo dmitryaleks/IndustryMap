@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0013",
+  "companyName": "Fuso Chemical Co., Ltd.",
+  "companyNameJapanese": "扶桑化学工業株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4368.T",
+  "description": "Manufactures and sells life science and electronic material products. Electronic materials include ultra-high purity colloidal silica and high purity organo silica sol for semiconductor CMP processes.",
+  "marketCapInYen": 143000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.fusokk.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 5640,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, Bloomberg",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "Founded 1952, HQ: Osaka. 930 employees. Key products: ultra-high purity colloidal silica for semiconductor polishing, organic acids for life sciences."
+  }
+}

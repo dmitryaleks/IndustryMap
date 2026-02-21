@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0012",
+  "companyName": "Horiba, Ltd.",
+  "companyNameJapanese": "株式会社堀場製作所",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6856.T",
+  "description": "Designs, manufactures, and sells analytical and measuring instruments. Semiconductor segment includes mass flow controllers, chemical concentration monitors, reticle/mask particle detection systems, and residual gas analyzers.",
+  "marketCapInYen": 842000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.horiba.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 20240,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, TradingView, Bloomberg",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "EBITDA: 65.22B JPY, margin 19.35%. Q4 net income: 8.24B JPY. 8,960 employees. Founded 1945 by Masao Horiba, HQ: Kyoto."
+  }
+}

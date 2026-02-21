@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0004",
+  "companyName": "Tokyo Electron Limited",
+  "companyNameJapanese": "東京エレクトロン株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "8035.T",
+  "description": "Global supplier of semiconductor and flat panel display production equipment. Key products include coater/developers, etch systems, CVD equipment, and cleaning systems. One of the world's largest semiconductor equipment manufacturers.",
+  "marketCapInYen": 19200000000000,
+  "PER": 23.5,
+  "PBR": null,
+  "EPS": 1094.5,
+  "website": "https://www.tel.co.jp/",
+  "percentOfForeignOwnership": 45.0,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 42150,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, TradingEconomics, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "FY2026 forecast: Net sales 2.6T JPY (+6.9% YoY). EBITDA: 679B JPY, margin 31.24%. Dividend yield: 1.27%."
+  }
+}

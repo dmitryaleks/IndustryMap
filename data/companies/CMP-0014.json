@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0014",
+  "companyName": "Kioxia Holdings Corporation",
+  "companyNameJapanese": "キオクシアホールディングス株式会社",
+  "industryCode": "Semiconductors",
+  "ticker": "285A.T",
+  "description": "Global leader in NAND flash memory and SSDs. Third-largest NAND supplier globally with 14% market share. Products include BiCS FLASH, UFS, e-MMC for consumer/industrial/automotive, and XL-FLASH storage class memory.",
+  "marketCapInYen": 5640000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.kioxia.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 21250,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, Bloomberg, Perplexity Finance",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "IPO: Dec 18, 2024. Formerly Toshiba Memory. All-time high: 21,610 JPY (Jan 30, 2026). 51% revenue from SSD NAND. 9 analysts rate Buy, target: 26,525 JPY."
+  }
+}

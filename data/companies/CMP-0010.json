@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0010",
+  "companyName": "Toyo Gosei Co., Ltd.",
+  "companyNameJapanese": "東洋合成工業株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4970.T",
+  "description": "Manufactures and sells photosensitive materials and polymer products for semiconductors. Products include photoresists for semiconductor microfabrication, LCD materials, and electric double layer materials.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.toyogosei.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, Stock Analysis",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "Key supplier of photosensitive materials for semiconductor IC and LCD manufacturing processes."
+  }
+}

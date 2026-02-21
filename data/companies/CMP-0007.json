@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0007",
+  "companyName": "Fujimi Incorporated",
+  "companyNameJapanese": "株式会社フジミインコーポレーテッド",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "5384.T",
+  "description": "Manufactures and sells synthetic precision abrasives including CMP slurry for semiconductor device production, polishing materials for silicon wafers, and abrasives for hard disk drives.",
+  "marketCapInYen": null,
+  "PER": 17.92,
+  "PBR": null,
+  "EPS": 133.98,
+  "website": "https://www.fujimi.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, DataInsightsMarket, DCFModeling",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "FY2025 revenue growth: 21.5% from advanced logic semiconductor materials. Q1 FY2026 polishing slurry sales +18.9%. Founded 1950, HQ: Kiyosu, Japan."
+  }
+}

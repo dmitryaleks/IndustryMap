@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0009",
+  "companyName": "Ferrotec Holdings Corporation",
+  "companyNameJapanese": "フェローテックホールディングス株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "6890.T",
+  "description": "Develops, manufactures, and sells products for semiconductor and FPD manufacturing equipment including vacuum seals, quartz products, ceramics, silicon products, and wafer products. Also provides thermo-modules and magnetic fluids.",
+  "marketCapInYen": null,
+  "PER": 22.14,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.ferrotec.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 6320,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, TradingView",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "All-time high: 6,930 JPY (Jan 26, 2026). EBITDA: 50B JPY, margin 17.46%. Q4 net income: 3.63B JPY (+35.8% QoQ). Founded 1980."
+  }
+}

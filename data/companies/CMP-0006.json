@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0006",
+  "companyName": "Lasertec Corporation",
+  "companyNameJapanese": "レーザーテック株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6920.T",
+  "description": "Designs, manufactures, and sells inspection and measurement equipment for semiconductors. Specializes in EUV mask inspection systems, mask blanks inspection, and metrology equipment using optical application technology.",
+  "marketCapInYen": 2800000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.lasertec.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, CompaniesMarketCap, Japan IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "Key products: Actinic EUV patterned mask inspection, EUV pellicle inspection. Critical supplier to leading-edge chipmakers."
+  }
+}

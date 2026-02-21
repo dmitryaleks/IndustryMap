@@ -1,0 +1,26 @@
+{
+  "id": "CMP-0016",
+  "companyName": "Olympus Corporation",
+  "companyNameJapanese": "オリンパス株式会社",
+  "industryCode": "Precision Instruments",
+  "ticker": "7733.T",
+  "description": "Manufactures precision machinery and instruments including medical endoscopes, surgical devices, biological/industrial microscopes, and NDT equipment. Operates through Endoscopic Solutions, Therapeutic Solutions, and Scientific Solutions segments.",
+  "marketCapInYen": 2080000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.olympus.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 1975,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T12:00:00Z",
+    "dataSource": "Yahoo Finance, Stock Analysis, Investing.com",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T12:00:00Z",
+    "notes": "Founded 1919, HQ: Hachioji. 29,300 employees. EBITDA: 223.65B JPY, margin 25.32%. FY2026 target: 19% adjusted operating profit, 1% annual margin improvement."
+  }
+}

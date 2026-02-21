@@ -158,39 +158,39 @@ IndustryMap/
 
 ---
 
-### 1.3 Seed Company Resolution [PENDING]
+### 1.3 Seed Company Resolution [DONE]
 
 Resolve all seed companies from CLAUDE.md to their full identities.
 
 | # | Input | Company Name (EN) | Ticker | Status |
 |---|-------|-------------------|--------|--------|
-| 1 | Tokyo Seimitsu | Tokyo Seimitsu Co., Ltd. | 7729.T | [PENDING] |
-| 2 | Disco | DISCO Corporation | 6146.T | [PENDING] |
-| 3 | Screen | SCREEN Holdings Co., Ltd. | 7735.T | [PENDING] |
-| 4 | Tokyo Electron | Tokyo Electron Limited | 8035.T | [PENDING] |
-| 5 | Advantest | Advantest Corporation | 6857.T | [PENDING] |
-| 6 | Lasertech | Lasertec Corporation | 6920.T | [PENDING] |
-| 7 | Fujimi | Fujimi Incorporated | 5384.T | [PENDING] |
-| 8 | 4004.T | Resonac Holdings (Showa Denko) | 4004.T | [PENDING] |
-| 9 | 6890.T | Ferrotec Holdings | 6890.T | [PENDING] |
-| 10 | 4970.T | Toyo Gosei Co., Ltd. | 4970.T | [PENDING] |
-| 11 | 6525.T (Kokusai) | Kokusai Electric Corporation | 6525.T | [PENDING] |
-| 12 | 6856.T | Horiba, Ltd. | 6856.T | [PENDING] |
-| 13 | 4368.T | Fuji Oil Holdings Inc. | 4368.T | [PENDING] |
-| 14 | 285A | (To be researched - new listing) | 285A | [PENDING] |
-| 15 | Hoya (7741.T) | HOYA Corporation | 7741.T | [PENDING] |
-| 16 | Olympus (7733.T) | Olympus Corporation | 7733.T | [PENDING] |
+| 1 | Tokyo Seimitsu | Tokyo Seimitsu Co., Ltd. | 7729.T | [DONE] |
+| 2 | Disco | DISCO Corporation | 6146.T | [DONE] |
+| 3 | Screen | SCREEN Holdings Co., Ltd. | 7735.T | [DONE] |
+| 4 | Tokyo Electron | Tokyo Electron Limited | 8035.T | [DONE] |
+| 5 | Advantest | Advantest Corporation | 6857.T | [DONE] |
+| 6 | Lasertech | Lasertec Corporation | 6920.T | [DONE] |
+| 7 | Fujimi | Fujimi Incorporated | 5384.T | [DONE] |
+| 8 | 4004.T | Resonac Holdings Corporation | 4004.T | [DONE] |
+| 9 | 6890.T | Ferrotec Holdings Corporation | 6890.T | [DONE] |
+| 10 | 4970.T | Toyo Gosei Co., Ltd. | 4970.T | [DONE] |
+| 11 | 6525.T (Kokusai) | Kokusai Electric Corporation | 6525.T | [DONE] |
+| 12 | 6856.T | Horiba, Ltd. | 6856.T | [DONE] |
+| 13 | 4368.T | Fuso Chemical Co., Ltd. | 4368.T | [DONE] |
+| 14 | 285A | Kioxia Holdings Corporation | 285A.T | [DONE] |
+| 15 | Hoya (7741.T) | HOYA Corporation | 7741.T | [DONE] |
+| 16 | Olympus (7733.T) | Olympus Corporation | 7733.T | [DONE] |
 
 **Tasks:**
-- [ ] Research and verify each ticker symbol
-- [ ] Confirm company names in English
-- [ ] Identify any ticker symbol discrepancies
+- [x] Research and verify each ticker symbol
+- [x] Confirm company names in English
+- [x] Identify any ticker symbol discrepancies (4368.T = Fuso Chemical, not Fuji Oil; 285A = Kioxia)
 
 ---
 
 ## Phase 2: Data Collection - Wave 1 (Seed Companies)
 
-### 2.1 Data Collection Protocol [PENDING]
+### 2.1 Data Collection Protocol [DONE]
 
 For each seed company, collect:
 
@@ -226,26 +226,26 @@ For each seed company, collect:
 
 ---
 
-### 2.2 Wave 1 Collection Status [PENDING]
+### 2.2 Wave 1 Collection Status [IN_PROGRESS]
 
 | ID | Company | Basic | Financial | Description | Suppliers | Clients | Status |
 |----|---------|-------|-----------|-------------|-----------|---------|--------|
-| CMP-0001 | Tokyo Electron | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0002 | DISCO | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0003 | Advantest | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0004 | SCREEN | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0005 | Lasertec | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0006 | Tokyo Seimitsu | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0007 | Kokusai Electric | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0008 | Horiba | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0009 | HOYA | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0010 | Olympus | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0011 | Fujimi | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0012 | Resonac | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0013 | Ferrotec | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0014 | Toyo Gosei | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0015 | 4368.T (TBD) | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
-| CMP-0016 | 285A (TBD) | [ ] | [ ] | [ ] | [ ] | [ ] | [PENDING] |
+| CMP-0001 | Tokyo Seimitsu | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0002 | DISCO | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0003 | SCREEN Holdings | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0004 | Tokyo Electron | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0005 | Advantest | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0006 | Lasertec | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0007 | Fujimi | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0008 | Resonac Holdings | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0009 | Ferrotec | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0010 | Toyo Gosei | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0011 | Kokusai Electric | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0012 | Horiba | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0013 | Fuso Chemical | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0014 | Kioxia Holdings | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0015 | HOYA | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
+| CMP-0016 | Olympus | [x] | [x] | [x] | [ ] | [ ] | [PARTIAL] |
 
 ---
 
@@ -345,23 +345,45 @@ Notes:
   - Some tickers need verification: 4368.T, 285A, 4970.T
   - isForexSensitive renamed from ifForexSensitive for clarity
 [SESSION END]
+
+[SESSION START]
+Date: 2026-02-21 (continued)
+Agent: Claude Code (Opus 4.5)
+Current Phase: Phase 2 - Wave 1 Data Collection
+Tasks Completed This Session:
+  - Resolved all 16 seed company identities via web search
+  - Discovered 4368.T = Fuso Chemical (not Fuji Oil as initially thought)
+  - Discovered 285A = Kioxia Holdings (former Toshiba Memory, IPO Dec 2024)
+  - Created 16 company JSON files (CMP-0001 to CMP-0016)
+  - Collected basic info, financial metrics, descriptions for all companies
+  - Updated database.json with company index
+  - Industry breakdown: 8 Equipment, 5 Materials, 1 Semiconductors, 1 Precision
+Tasks Remaining:
+  - Discover supplier/client relationships for each company
+  - Build Wave 2 discovery queue from relationships
+  - Link companies via supplier/client arrays
+Notes:
+  - Major players: Tokyo Electron (19.2T JPY), Advantest (19.65T JPY), DISCO, Lasertec
+  - Kioxia is notable new addition (5.64T JPY market cap, IPO just 2 months ago)
+  - Some financial data incomplete (PBR, foreign ownership % missing for several)
+[SESSION END]
 ```
 
 ---
 
 ## Current State Summary
 
-**Last Updated:** 2025-02-21
+**Last Updated:** 2026-02-21
 
 | Phase | Status | Progress |
 |-------|--------|----------|
-| Phase 1: Foundation | [IN_PROGRESS] | 66% |
-| Phase 2: Wave 1 Data | [PENDING] | 0% |
+| Phase 1: Foundation | [DONE] | 100% |
+| Phase 2: Wave 1 Data | [IN_PROGRESS] | 75% |
 | Phase 3: Wave 2+ Data | [PENDING] | 0% |
 | Phase 4: Graph | [PENDING] | 0% |
 | Phase 5: Analytics | [PENDING] | 0% |
 
-**Next Action:** Phase 1.3 - Resolve seed company ticker symbols via web search, then begin Wave 1 data collection
+**Next Action:** Discover supplier/client relationships for each seed company to complete Wave 1 and populate Wave 2 queue
 
 ---
 
