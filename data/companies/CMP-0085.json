@@ -1,0 +1,44 @@
+{
+  "id": "CMP-0085",
+  "companyName": "NAURA Technology Group Co., Ltd.",
+  "companyNameJapanese": "北方華創科技集団股份有限公司",
+  "companyNameChinese": "北方华创",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "002371.SZ",
+  "description": "China's #1 and world's #6 semiconductor equipment company. Only domestic platform-type semi equipment maker covering etching, thin-film deposition (PVD/CVD), thermal processing, cleaning, coating/developing, CMP, ion implantation, and test equipment (test machines, sorters, probe stations). FY2024 revenue ~30B CNY, net profit 5.62B CNY (#1 profit in China semiconductor sector). Competes with ACCRETECH in CMP equipment and probe stations.",
+  "marketCapInYen": 7395000000000,
+  "PER": 32,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.naura.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceCNY": 486.12,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": ["CMP-0066", "CMP-0070"],
+  "_externalRelationships": {
+    "majorClients": [
+      "SMIC (CMP-0066) - etching, deposition, cleaning equipment",
+      "Hua Hong (CMP-0070) - process equipment",
+      "YMTC - process equipment",
+      "CXMT - process equipment",
+      "Major Chinese fabs and memory makers"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - CMP equipment, probe stations",
+      "Tokyo Electron (CMP-0004) - etching, coating/developing",
+      "Applied Materials - etching, deposition, CMP",
+      "Lam Research - etching, deposition",
+      "Huahai Qingke (CMP-0088) - CMP equipment"
+    ],
+    "notes": "Market cap ~352B CNY (~7.4T JPY). Stock price ~486 CNY (Feb 2026). China's semiconductor equipment national champion. 5 product lines: Etching (35% of revenue, ~6B CNY), Thin-film deposition (35%, ~6B CNY), Thermal/cleaning (18%, ~3B CNY), Solar/PV (12%), plus CMP and test equipment. Q1 2025: revenue 8.2B CNY (+37.9% YoY), net profit 1.58B CNY (+38.8%). Directly competes with ACCRETECH in CMP equipment segment (though CMP is small portion of NAURA revenue). Also developing probe stations and test equipment. Strong Buy consensus from 22 analysts."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Investing.com, SZSE, company website, 21Jingji, industry reports, Chinese language sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

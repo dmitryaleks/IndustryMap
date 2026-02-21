@@ -1,0 +1,36 @@
+{
+  "id": "CMP-0091",
+  "companyName": "Beijing Shuoke Jingwei Electronics Equipment Co., Ltd.",
+  "companyNameJapanese": "北京烁科精微電子装備有限公司",
+  "companyNameChinese": "烁科精微",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": null,
+  "description": "CETC (China Electronics Technology Group) subsidiary specializing in CMP equipment. Founded 2019 from CETC's CMP technology commercialization with diversified equity structure. Products: 200mm and 300mm CMP equipment, plus parent CETC Electronic Equipment Group products including ion implanters, ECD, lithography machines, dicing machines, thinning machines, and flip-chip bonders. Registered capital 166.5M CNY. Located in Beijing Economic-Technological Development Area.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://zbjt.cetc.com.cn/cemec/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - direct CMP equipment competitor",
+      "Huahai Qingke (CMP-0088) - primary domestic CMP competitor",
+      "Applied Materials - global CMP leader",
+      "Ebara Corporation (CMP-0036) - CMP equipment"
+    ],
+    "parentCompany": "CETC Electronic Equipment Group (中电科电子装备集团)",
+    "notes": "Private company (CETC subsidiary). One of only two significant CMP equipment manufacturers in China (alongside Huahai Qingke). Parent CETC Electronic Equipment Group established 2013 from three national research institutes with 2.45B CNY registered capital. Shuoke has complete CMP design, core technology, process R&D, system integration and manufacturing capabilities. 200mm CMP equipment shipments at new highs. 300mm CMP equipment entered international mainstream production lines for verification. Certifications: National High-Tech Enterprise, SEMI S23/S2/F47. Parent CETC also produces dicing machines (competing with ACCRETECH) and thinning machines - 12-inch wafer dicing machine achieved mass production."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "CETC website, Tianjin University, CSPengYuan reports, industry reports, Chinese language sources",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

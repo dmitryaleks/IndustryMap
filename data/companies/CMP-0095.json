@@ -1,0 +1,34 @@
+{
+  "id": "CMP-0095",
+  "companyName": "GTA Semiconductor Co., Ltd.",
+  "companyNameJapanese": "上海積塔半導体有限公司",
+  "companyNameChinese": "积塔半导体",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": null,
+  "description": "Shanghai-based specialty foundry focusing on automotive, industrial, and power semiconductor chips. State-owned (华大半导体/CEC subsidiary). Operates two fab sites: Lingang (临港) and Xuhui (徐汇), Shanghai. Total capacity 300K wafers/month (8-inch equivalent): 6-inch 70K, 8-inch 110K, 12-inch 50K, SiC 30K wafers/month. Certified IATF16949 for automotive. Specializes in MCU, analog, power devices, sensors. Unicorn valuation: 31B CNY (Hurun 2025, #212 globally).",
+  "marketCapInYen": 651000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.gtasemi.com.cn/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": ["CMP-0001"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - probing, dicing equipment for multi-size fabs",
+      "Domestic and imported semiconductor equipment suppliers"
+    ],
+    "competitors": ["Hua Hong (CMP-0070) - specialty foundry", "CR Micro (CMP-0084) - IDM", "CanSemi (CMP-0094) - analog foundry"],
+    "notes": "Valuation 31B CNY (~651B JPY). Private, not yet listed. Raised 13.5B CNY in mega round (2023) - one of China's largest semiconductor fundraises that year. Major investors include national funds, industry investors, and local government funds. SiC capacity of 30K wafers/month is significant - China's largest SiC foundry capacity. 12-inch fab at Lingang for advanced power devices. As a multi-size-wafer foundry (6/8/12 inch + SiC), requires diverse probing and dicing equipment. ACCRETECH serves Chinese foundries of all sizes. Focus on automotive chips positions GTA as critical in China's push for domestic automotive semiconductor self-sufficiency."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Company website, Baike Baidu, 36Kr, Hurun, QQ News, Chinese language sources",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

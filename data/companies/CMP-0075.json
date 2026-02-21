@@ -1,0 +1,34 @@
+{
+  "id": "CMP-0075",
+  "companyName": "DB HiTek Co., Ltd.",
+  "companyNameKorean": "DB하이텍",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": "000990.KS",
+  "description": "South Korea's #2 semiconductor foundry (after Samsung). Specializes in 200mm wafer fabrication for legacy/mature-node chips: power management ICs (PMICs), display driver ICs (DDIs), contact image sensors, and automotive semiconductors. Operates fabs in Bucheon and Sangwoo (Eumseong). Founded 1997 (originally Dongbu HiTek). Investing 1.2T KRW through 2030 for capacity expansion and equipment upgrades. Secured Tesla 10-year PMIC foundry contract. Benefiting from Samsung/TSMC retreat from legacy nodes.",
+  "marketCapInYen": 404590000000,
+  "PER": 18.04,
+  "PBR": 1.98,
+  "EPS": 5155,
+  "website": "https://www.dbhitek.com/",
+  "percentOfForeignOwnership": 33.12,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 93000,
+  "isForexSensitive": false,
+  "suppliers": ["CMP-0001"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing, dicing, CMP equipment for 200mm fab",
+      "Applied Materials - deposition, etch equipment",
+      "Tokyo Electron (CMP-0004) - photoresist coating, wet processing"
+    ],
+    "notes": "Korea's #2 foundry after Samsung. 2025 revenue: ~1.3T KRW (+19.1% YoY). Operates 200mm fabs only. Key customer segments: automotive, IoT, consumer electronics. As a foundry operating wafer probing and dicing, DB HiTek is a likely Accretech Korea customer for probers and dicers. Accretech Korea (based in Dongtan, Gyeonggi) supplies probers, back grinders, dicers, CMP equipment to Korean semiconductor manufacturers. Investing 250B KRW in Sangwoo fab cleanroom expansion through Oct 2027."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, Yahoo Finance, Herald Economy, THE ELEC, DB HiTek IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

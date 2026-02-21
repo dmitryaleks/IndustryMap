@@ -1,0 +1,35 @@
+{
+  "id": "CMP-0094",
+  "companyName": "CanSemi Technology Co., Ltd.",
+  "companyNameJapanese": "粤芯半導体技術股份有限公司",
+  "companyNameChinese": "粤芯半导体",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": null,
+  "description": "Greater Bay Area's (Guangdong-Hong Kong-Macao) only 12-inch wafer foundry in full production. Founded 2017 in Guangzhou, Guangdong. Specializes in analog chips, power management ICs, and power discrete devices. Three phases operational: Phase 1 (2019, 40K wafers/month), Phase 2 (2022, +20K wafers/month), Phase 3 (2024 end). Technology nodes: 180nm to 55nm. IPO application accepted by Shenzhen ChiNext Dec 2025, targeting 7.5B CNY fundraise. Latest valuation: 25.3B CNY.",
+  "marketCapInYen": 531000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.cansemitech.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": ["CMP-0001"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - probing, dicing, CMP equipment for 12-inch fab",
+      "Tokyo Electron (CMP-0004) - process equipment",
+      "Applied Materials - process equipment"
+    ],
+    "competitors": ["SMIC (CMP-0066)", "Hua Hong (CMP-0070)", "Nexchip (CMP-0083)", "CR Micro (CMP-0084)"],
+    "notes": "Valuation 25.3B CNY (~531B JPY). Not yet listed - ChiNext IPO accepted Dec 2025, targeting 7.5B CNY raise (3.5B for Phase 3 fab, 2.5B for R&D platform, 1.5B working capital). Revenue FY2024: 1.681B CNY. Cumulative losses of 8.936B CNY (2022-2025H1), profitability expected 2029. No controlling shareholder - largest holder 16.88%. Investors include Guangdong Semi Fund, GAC Capital, SAIC, BAIC (auto industry). Product yield >97%. Key customer for ACCRETECH probing and dicing equipment as a growing 12-inch foundry. Focused on automotive, industrial, and consumer analog/power chips."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "ESMChina, 21Jingji, 36Kr, Baike Baidu, company website, Chinese language sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

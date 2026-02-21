@@ -1,0 +1,31 @@
+{
+  "id": "CMP-0063",
+  "companyName": "ASE Technology Holding Co., Ltd.",
+  "companyNameJapanese": "日月光投資控股股份有限公司",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "3711.TW",
+  "description": "World's largest OSAT (Outsourced Semiconductor Assembly and Test) company. Provides semiconductor packaging, interconnect materials, front-end engineering testing, wafer probing, and final testing services. Formed in 2018 by combining ASE Group, Siliconware Precision Industries, and Universal Scientific Industrial.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.aseglobal.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002", "CMP-0004", "CMP-0005"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": ["ACCRETECH (dicing, probing)", "DISCO (dicing)", "Tokyo Electron", "Advantest (testing)"],
+    "majorClients": ["Apple", "Qualcomm", "MediaTek", "NVIDIA", "AMD"],
+    "competitors": ["Amkor (CMP-0064)", "JCET (CMP-0065)", "Powertech (CMP-0069)"],
+    "notes": "World #1 OSAT with ~30% global market share. HQ in Kaohsiung, Taiwan. NYSE ADR: ASX. Major buyer of dicing and probing equipment from ACCRETECH and DISCO. Also received Hanmi Semiconductor flip chip bonders."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T20:00:00Z",
+    "dataSource": "Yahoo Finance, Seeking Alpha, SEMI, TrendForce",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T20:00:00Z"
+  }
+}

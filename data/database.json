@@ -1,94 +1,638 @@
 {
   "$schema": "../schema/company.schema.json",
-  "version": "1.2.0",
-  "lastUpdated": "2026-02-21T18:00:00Z",
-  "totalCompanies": 62,
+  "version": "3.0.0",
+  "lastUpdated": "2026-02-21T23:00:00Z",
+  "totalCompanies": 96,
   "waves": {
-    "wave1": {"count": 16, "status": "complete", "description": "Japanese seed companies"},
-    "wave2": {"count": 12, "status": "complete", "description": "Global customers/suppliers"},
-    "wave3": {"count": 34, "status": "complete", "description": "Japanese vendors/suppliers to existing companies"}
+    "wave1": {
+      "count": 16,
+      "status": "complete",
+      "description": "Japanese seed companies"
+    },
+    "wave2": {
+      "count": 12,
+      "status": "complete",
+      "description": "Global customers/suppliers"
+    },
+    "wave3": {
+      "count": 34,
+      "status": "complete",
+      "description": "Japanese vendors/suppliers to existing companies"
+    },
+    "wave4": {
+      "count": 12,
+      "status": "complete",
+      "description": "Tokyo Seimitsu deep dive - clients (OSAT/foundry) and competitors from JP/CN/KR/TW sources"
+    },
+    "wave5": {
+      "count": 9,
+      "status": "complete",
+      "description": "Korean semiconductor ecosystem - OSAT clients, equipment competitors, and ecosystem players linked to Tokyo Seimitsu/Accretech"
+    },
+    "wave6": {
+      "count": 13,
+      "status": "complete",
+      "description": "Chinese semiconductor ecosystem - foundries, equipment makers, and memory/IC companies linked to existing supply chain nodes"
+    }
   },
   "industryBreakdown": {
-    "Semiconductor Equipment": 21,
-    "Semiconductor Materials": 21,
-    "Semiconductors": 4,
+    "Semiconductor Equipment": 39,
+    "Semiconductor Materials": 26,
+    "Semiconductor Packaging/OSAT": 10,
+    "Semiconductor Foundry": 7,
+    "Semiconductors": 6,
     "Memory Semiconductors": 3,
-    "Semiconductor Foundry": 1,
-    "Semiconductor Components": 1,
+    "Semiconductor Components": 2,
+    "Precision Instruments": 1,
     "Consumer Electronics": 1,
-    "Storage/Memory": 1,
-    "Precision Instruments": 1
+    "Storage/Memory": 1
   },
   "geographyBreakdown": {
-    "Japan": 51,
-    "USA": 5,
-    "South Korea": 2,
-    "Taiwan": 1,
+    "Japan": 53,
+    "China": 18,
+    "South Korea": 12,
+    "USA": 6,
+    "Taiwan": 4,
+    "Hong Kong": 2,
     "Netherlands": 1
   },
   "companyIndex": [
-    {"id": "CMP-0001", "name": "Tokyo Seimitsu Co., Ltd.", "ticker": "7729.T", "wave": 1},
-    {"id": "CMP-0002", "name": "DISCO Corporation", "ticker": "6146.T", "wave": 1},
-    {"id": "CMP-0003", "name": "SCREEN Holdings Co., Ltd.", "ticker": "7735.T", "wave": 1},
-    {"id": "CMP-0004", "name": "Tokyo Electron Limited", "ticker": "8035.T", "wave": 1},
-    {"id": "CMP-0005", "name": "Advantest Corporation", "ticker": "6857.T", "wave": 1},
-    {"id": "CMP-0006", "name": "Lasertec Corporation", "ticker": "6920.T", "wave": 1},
-    {"id": "CMP-0007", "name": "Fujimi Incorporated", "ticker": "5384.T", "wave": 1},
-    {"id": "CMP-0008", "name": "Resonac Holdings Corporation", "ticker": "4004.T", "wave": 1},
-    {"id": "CMP-0009", "name": "Ferrotec Holdings Corporation", "ticker": "6890.T", "wave": 1},
-    {"id": "CMP-0010", "name": "Toyo Gosei Co., Ltd.", "ticker": "4970.T", "wave": 1},
-    {"id": "CMP-0011", "name": "Kokusai Electric Corporation", "ticker": "6525.T", "wave": 1},
-    {"id": "CMP-0012", "name": "Horiba, Ltd.", "ticker": "6856.T", "wave": 1},
-    {"id": "CMP-0013", "name": "Fuso Chemical Co., Ltd.", "ticker": "4368.T", "wave": 1},
-    {"id": "CMP-0014", "name": "Kioxia Holdings Corporation", "ticker": "285A.T", "wave": 1},
-    {"id": "CMP-0015", "name": "HOYA Corporation", "ticker": "7741.T", "wave": 1},
-    {"id": "CMP-0016", "name": "Olympus Corporation", "ticker": "7733.T", "wave": 1},
-    {"id": "CMP-0017", "name": "Taiwan Semiconductor Manufacturing Company", "ticker": "2330.TW", "wave": 2},
-    {"id": "CMP-0018", "name": "Samsung Electronics Co., Ltd.", "ticker": "005930.KS", "wave": 2},
-    {"id": "CMP-0019", "name": "Intel Corporation", "ticker": "INTC", "wave": 2},
-    {"id": "CMP-0020", "name": "SK Hynix Inc.", "ticker": "000660.KS", "wave": 2},
-    {"id": "CMP-0021", "name": "Micron Technology, Inc.", "ticker": "MU", "wave": 2},
-    {"id": "CMP-0022", "name": "Apple Inc.", "ticker": "AAPL", "wave": 2},
-    {"id": "CMP-0023", "name": "Western Digital Corporation", "ticker": "WDC", "wave": 2},
-    {"id": "CMP-0024", "name": "Shin-Etsu Chemical Co., Ltd.", "ticker": "4063.T", "wave": 2},
-    {"id": "CMP-0025", "name": "SUMCO Corporation", "ticker": "3436.T", "wave": 2},
-    {"id": "CMP-0026", "name": "ASML Holding N.V.", "ticker": "ASML", "wave": 2},
-    {"id": "CMP-0027", "name": "Kyocera Corporation", "ticker": "6971.T", "wave": 2},
-    {"id": "CMP-0028", "name": "NVIDIA Corporation", "ticker": "NVDA", "wave": 2},
-    {"id": "CMP-0029", "name": "Naigai Tech Co., Ltd.", "ticker": "3374.T", "wave": 3},
-    {"id": "CMP-0030", "name": "Marumae Co., Ltd.", "ticker": "6264.T", "wave": 3},
-    {"id": "CMP-0031", "name": "Tocalo Co., Ltd.", "ticker": "3433.T", "wave": 3},
-    {"id": "CMP-0032", "name": "Nippon Sanso Holdings Corporation", "ticker": "4091.T", "wave": 3},
-    {"id": "CMP-0033", "name": "Tokyo Ohka Kogyo Co., Ltd.", "ticker": "4186.T", "wave": 3},
-    {"id": "CMP-0034", "name": "JSR Corporation", "ticker": "4185.T", "wave": 3},
-    {"id": "CMP-0035", "name": "Maruzen Petrochemical Co., Ltd.", "ticker": "4634.T", "wave": 3},
-    {"id": "CMP-0036", "name": "Ebara Corporation", "ticker": "6361.T", "wave": 3},
-    {"id": "CMP-0037", "name": "NGK Insulators, Ltd.", "ticker": "5333.T", "wave": 3},
-    {"id": "CMP-0038", "name": "Gun Ei Chemical Industry Co., Ltd.", "ticker": "4229.T", "wave": 3},
-    {"id": "CMP-0039", "name": "Niterra Co., Ltd.", "ticker": "5334.T", "wave": 3},
-    {"id": "CMP-0040", "name": "FUJIFILM Holdings Corporation", "ticker": "4901.T", "wave": 3},
-    {"id": "CMP-0041", "name": "Rorze Corporation", "ticker": "6323.T", "wave": 3},
-    {"id": "CMP-0042", "name": "PILLAR Corporation", "ticker": "6490.T", "wave": 3},
-    {"id": "CMP-0043", "name": "CKD Corporation", "ticker": "6407.T", "wave": 3},
-    {"id": "CMP-0044", "name": "Stella Chemifa Corporation", "ticker": "4109.T", "wave": 3},
-    {"id": "CMP-0045", "name": "Kanto Denka Kogyo Co., Ltd.", "ticker": "4047.T", "wave": 3},
-    {"id": "CMP-0046", "name": "Sumitomo Chemical Co., Ltd.", "ticker": "4005.T", "wave": 3},
-    {"id": "CMP-0047", "name": "TOPPAN Holdings Inc.", "ticker": "7911.T", "wave": 3},
-    {"id": "CMP-0048", "name": "Ibiden Co., Ltd.", "ticker": "4062.T", "wave": 3},
-    {"id": "CMP-0049", "name": "Dai Nippon Printing Co., Ltd.", "ticker": "7912.T", "wave": 3},
-    {"id": "CMP-0050", "name": "Nikon Corporation", "ticker": "7731.T", "wave": 3},
-    {"id": "CMP-0051", "name": "Canon Inc.", "ticker": "7751.T", "wave": 3},
-    {"id": "CMP-0052", "name": "Organo Corporation", "ticker": "6368.T", "wave": 3},
-    {"id": "CMP-0053", "name": "Nomura Micro Science Co., Ltd.", "ticker": "6254.T", "wave": 3},
-    {"id": "CMP-0054", "name": "Aval Data Corporation", "ticker": "6918.T", "wave": 3},
-    {"id": "CMP-0055", "name": "NHK Spring Co., Ltd.", "ticker": "5991.T", "wave": 3},
-    {"id": "CMP-0056", "name": "Daifuku Co., Ltd.", "ticker": "6383.T", "wave": 3},
-    {"id": "CMP-0057", "name": "MEC Company Ltd.", "ticker": "4971.T", "wave": 3},
-    {"id": "CMP-0058", "name": "Nagase & Co., Ltd.", "ticker": "8012.T", "wave": 3},
-    {"id": "CMP-0059", "name": "Shibaura Mechatronics Corporation", "ticker": "6590.T", "wave": 3},
-    {"id": "CMP-0060", "name": "Samco Inc.", "ticker": "6387.T", "wave": 3},
-    {"id": "CMP-0061", "name": "Ushio Inc.", "ticker": "6925.T", "wave": 3},
-    {"id": "CMP-0062", "name": "Tazmo Co., Ltd.", "ticker": "6266.T", "wave": 3}
+    {
+      "id": "CMP-0001",
+      "name": "Tokyo Seimitsu Co., Ltd.",
+      "ticker": "7729.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0002",
+      "name": "DISCO Corporation",
+      "ticker": "6146.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0003",
+      "name": "SCREEN Holdings Co., Ltd.",
+      "ticker": "7735.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0004",
+      "name": "Tokyo Electron Limited",
+      "ticker": "8035.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0005",
+      "name": "Advantest Corporation",
+      "ticker": "6857.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0006",
+      "name": "Lasertec Corporation",
+      "ticker": "6920.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0007",
+      "name": "Fujimi Incorporated",
+      "ticker": "5384.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0008",
+      "name": "Resonac Holdings Corporation",
+      "ticker": "4004.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0009",
+      "name": "Ferrotec Holdings Corporation",
+      "ticker": "6890.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0010",
+      "name": "Toyo Gosei Co., Ltd.",
+      "ticker": "4970.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0011",
+      "name": "Kokusai Electric Corporation",
+      "ticker": "6525.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0012",
+      "name": "Horiba, Ltd.",
+      "ticker": "6856.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0013",
+      "name": "Fuso Chemical Co., Ltd.",
+      "ticker": "4368.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0014",
+      "name": "Kioxia Holdings Corporation",
+      "ticker": "285A.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0015",
+      "name": "HOYA Corporation",
+      "ticker": "7741.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0016",
+      "name": "Olympus Corporation",
+      "ticker": "7733.T",
+      "wave": 1
+    },
+    {
+      "id": "CMP-0017",
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "ticker": "2330.TW",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0018",
+      "name": "Samsung Electronics Co., Ltd.",
+      "ticker": "005930.KS",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0019",
+      "name": "Intel Corporation",
+      "ticker": "INTC",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0020",
+      "name": "SK Hynix Inc.",
+      "ticker": "000660.KS",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0021",
+      "name": "Micron Technology, Inc.",
+      "ticker": "MU",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0022",
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0023",
+      "name": "Western Digital Corporation",
+      "ticker": "WDC",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0024",
+      "name": "Shin-Etsu Chemical Co., Ltd.",
+      "ticker": "4063.T",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0025",
+      "name": "SUMCO Corporation",
+      "ticker": "3436.T",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0026",
+      "name": "ASML Holding N.V.",
+      "ticker": "ASML",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0027",
+      "name": "Kyocera Corporation",
+      "ticker": "6971.T",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0028",
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "wave": 2
+    },
+    {
+      "id": "CMP-0029",
+      "name": "Naigai Tech Co., Ltd.",
+      "ticker": "3374.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0030",
+      "name": "Marumae Co., Ltd.",
+      "ticker": "6264.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0031",
+      "name": "Tocalo Co., Ltd.",
+      "ticker": "3433.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0032",
+      "name": "Nippon Sanso Holdings Corporation",
+      "ticker": "4091.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0033",
+      "name": "Tokyo Ohka Kogyo Co., Ltd.",
+      "ticker": "4186.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0034",
+      "name": "JSR Corporation",
+      "ticker": "4185.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0035",
+      "name": "Maruzen Petrochemical Co., Ltd.",
+      "ticker": "4634.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0036",
+      "name": "Ebara Corporation",
+      "ticker": "6361.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0037",
+      "name": "NGK Insulators, Ltd.",
+      "ticker": "5333.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0038",
+      "name": "Gun Ei Chemical Industry Co., Ltd.",
+      "ticker": "4229.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0039",
+      "name": "Niterra Co., Ltd.",
+      "ticker": "5334.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0040",
+      "name": "FUJIFILM Holdings Corporation",
+      "ticker": "4901.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0041",
+      "name": "Rorze Corporation",
+      "ticker": "6323.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0042",
+      "name": "PILLAR Corporation",
+      "ticker": "6490.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0043",
+      "name": "CKD Corporation",
+      "ticker": "6407.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0044",
+      "name": "Stella Chemifa Corporation",
+      "ticker": "4109.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0045",
+      "name": "Kanto Denka Kogyo Co., Ltd.",
+      "ticker": "4047.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0046",
+      "name": "Sumitomo Chemical Co., Ltd.",
+      "ticker": "4005.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0047",
+      "name": "TOPPAN Holdings Inc.",
+      "ticker": "7911.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0048",
+      "name": "Ibiden Co., Ltd.",
+      "ticker": "4062.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0049",
+      "name": "Dai Nippon Printing Co., Ltd.",
+      "ticker": "7912.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0050",
+      "name": "Nikon Corporation",
+      "ticker": "7731.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0051",
+      "name": "Canon Inc.",
+      "ticker": "7751.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0052",
+      "name": "Organo Corporation",
+      "ticker": "6368.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0053",
+      "name": "Nomura Micro Science Co., Ltd.",
+      "ticker": "6254.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0054",
+      "name": "Aval Data Corporation",
+      "ticker": "6918.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0055",
+      "name": "NHK Spring Co., Ltd.",
+      "ticker": "5991.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0056",
+      "name": "Daifuku Co., Ltd.",
+      "ticker": "6383.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0057",
+      "name": "MEC Company Ltd.",
+      "ticker": "4971.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0058",
+      "name": "Nagase & Co., Ltd.",
+      "ticker": "8012.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0059",
+      "name": "Shibaura Mechatronics Corporation",
+      "ticker": "6590.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0060",
+      "name": "Samco Inc.",
+      "ticker": "6387.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0061",
+      "name": "Ushio Inc.",
+      "ticker": "6925.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0062",
+      "name": "Tazmo Co., Ltd.",
+      "ticker": "6266.T",
+      "wave": 3
+    },
+    {
+      "id": "CMP-0063",
+      "name": "ASE Technology Holding Co., Ltd.",
+      "ticker": "3711.TW",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0064",
+      "name": "Amkor Technology, Inc.",
+      "ticker": "AMKR",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0065",
+      "name": "JCET Group Co., Ltd.",
+      "ticker": "600584.SS",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0066",
+      "name": "Semiconductor Manufacturing International Corporation",
+      "ticker": "0981.HK",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0067",
+      "name": "Tongfu Microelectronics Co., Ltd.",
+      "ticker": "002156.SZ",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0068",
+      "name": "Tianshui Huatian Technology Co., Ltd.",
+      "ticker": "002185.SZ",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0069",
+      "name": "Powertech Technology Inc.",
+      "ticker": "6239.TW",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0070",
+      "name": "Hua Hong Semiconductor Limited",
+      "ticker": "1347.HK",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0071",
+      "name": "MPI Corporation",
+      "ticker": "6223.TW",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0072",
+      "name": "Hanmi Semiconductor Co., Ltd.",
+      "ticker": "042700.KS",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0073",
+      "name": "Sidea Semiconductor Equipment (Shenzhen) Co., Ltd.",
+      "ticker": "301629.SZ",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0074",
+      "name": "Henan Guangli Technology Co., Ltd.",
+      "ticker": "300480.SZ",
+      "wave": 4
+    },
+    {
+      "id": "CMP-0075",
+      "name": "DB HiTek Co., Ltd.",
+      "ticker": "000990.KS",
+      "wave": 5
+    },
+    {
+      "id": "CMP-0076",
+      "name": "HANA Micron Inc.",
+      "ticker": "067310.KQ",
+      "wave": 5
+    },
+    {
+      "id": "CMP-0077",
+      "name": "Nepes Corporation",
+      "ticker": "033640.KQ",
+      "wave": 5
+    },
+    {
+      "id": "CMP-0078",
+      "name": "SFA Semicon Co., Ltd.",
+      "ticker": "036540.KQ",
+      "wave": 5
+    },
+    {
+      "id": "CMP-0079",
+      "name": "LB Semicon Co., Ltd.",
+      "ticker": "061970.KQ",
+      "wave": 5
+    },
+    {
+      "id": "CMP-0080",
+      "name": "Techwing Inc.",
+      "ticker": "089030.KQ",
+      "wave": 5
+    },
+    {
+      "id": "CMP-0081",
+      "name": "KCTech Co., Ltd.",
+      "ticker": "281820.KS",
+      "wave": 5
+    },
+    {
+      "id": "CMP-0082",
+      "name": "Leeno Industrial Inc.",
+      "ticker": "058470.KQ",
+      "wave": 5
+    },
+    {
+      "id": "CMP-0083",
+      "name": "Nexchip Semiconductor Corporation",
+      "ticker": "688249.SS",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0084",
+      "name": "China Resources Microelectronics Limited",
+      "ticker": "688396.SS",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0085",
+      "name": "NAURA Technology Group Co., Ltd.",
+      "ticker": "002371.SZ",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0086",
+      "name": "Hwatsing Technology Co., Ltd.",
+      "ticker": "688001.SS",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0087",
+      "name": "Hangzhou Changchuan Technology Co., Ltd.",
+      "ticker": "300604.SZ",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0088",
+      "name": "Hwatsing Technology Co., Ltd. (Huahai Qingke)",
+      "ticker": "688120.SS",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0089",
+      "name": "Shenyang Heyan Technology Co., Ltd.",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0090",
+      "name": "GigaDevice Semiconductor Inc.",
+      "ticker": "603986.SS",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0091",
+      "name": "Beijing Shuoke Jingwei Electronics Equipment Co., Ltd.",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0092",
+      "name": "Beijing TSD Semiconductor Equipment Co., Ltd.",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0093",
+      "name": "Yangtze Memory Technologies Co., Ltd.",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0094",
+      "name": "CanSemi Technology Co., Ltd.",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0095",
+      "name": "GTA Semiconductor Co., Ltd.",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0100",
+      "name": "SurplusGLOBAL Inc.",
+      "ticker": "140070.KQ",
+      "wave": 5
+    }
   ],
   "keyRelationships": {
     "supplyChainCritical": [
@@ -99,8 +643,53 @@
       "CMP-0033 (TOK) + CMP-0034 (JSR) -> 50% of photoresist market",
       "CMP-0044 (Stella) -> World #1 in ultra-high-purity HF acid",
       "CMP-0048 (Ibiden) -> 50%+ of AI server IC package substrates",
-      "CMP-0052 (Organo) -> Nearly exclusive TSMC ultrapure water supplier"
-    ]
+      "CMP-0052 (Organo) -> Nearly exclusive TSMC ultrapure water supplier",
+      "CMP-0001 (Tokyo Seimitsu) -> 46% of wafer probers (world #1), 10% of dicing",
+      "CMP-0072 (Hanmi) -> 71.2% of HBM TC bonders (world #1)"
+    ],
+    "tokyoSeimitsuSupplyChain": {
+      "clients": [
+        "CMP-0017 (TSMC) - probing, dicing, CMP",
+        "CMP-0018 (Samsung) - probing, dicing",
+        "CMP-0019 (Intel) - probing, dicing",
+        "CMP-0020 (SK Hynix) - probing, dicing",
+        "CMP-0021 (Micron) - probing, dicing",
+        "CMP-0014 (Kioxia) - probing, dicing",
+        "CMP-0063 (ASE) - dicing, probing (world #1 OSAT, Taiwan)",
+        "CMP-0064 (Amkor) - dicing, probing (world #2 OSAT, USA)",
+        "CMP-0065 (JCET) - dicing, probing (world #3 OSAT, China)",
+        "CMP-0066 (SMIC) - CMP, probing, dicing (China #1 foundry)",
+        "CMP-0067 (Tongfu) - dicing, probing (China #2 OSAT)",
+        "CMP-0068 (Huatian) - dicing, probing (China #3 OSAT)",
+        "CMP-0069 (Powertech) - dicing, probing (Taiwan memory OSAT)",
+        "CMP-0070 (Hua Hong) - CMP, probing (China #2 foundry)",
+        "CMP-0075 (DB HiTek) - probing, dicing, CMP (Korea #2 foundry, 200mm legacy)",
+        "CMP-0076 (HANA Micron) - probing, dicing (Korea #1 OSAT, global #8)",
+        "CMP-0077 (Nepes) - probing, dicing (Korea OSAT, FO-PLP pioneer)",
+        "CMP-0078 (SFA Semicon) - probing, dicing (Korea OSAT, Samsung backend partner)",
+        "CMP-0079 (LB Semicon) - probing, dicing (Korea OSAT, DDI specialist)"
+      ],
+      "competitors": [
+        "CMP-0002 (DISCO) - dicing (70% vs ACCRETECH 10%)",
+        "CMP-0071 (MPI Corp) - probing (Taiwan, 10% global share)",
+        "CMP-0072 (Hanmi) - packaging equipment (Korea, TC bonders)",
+        "CMP-0073 (Sidea) - probing (China, 25.7% domestic share)",
+        "CMP-0074 (Guangli/ADT) - dicing (China/Israel, world #3)",
+        "CMP-0081 (KCTech) - CMP equipment (Korea, only domestic CMP maker)",
+        "CMP-0086 (SEMES) - probing (Korea, Samsung subsidiary, SEMPRO PRIME)",
+        "CMP-0087 (SEMICS) - probing (Korea, world #3 prober, Samsung supplier)",
+        "CMP-0089 (EO Technics) - laser dicing (Korea, alternative to blade dicing)"
+      ],
+      "koreanEcosystem": [
+        "CMP-0080 (Techwing) - test handlers (Korea #1, global #1 memory handler, CubeProber)",
+        "CMP-0082 (Leeno Industrial) - probe components, test sockets (Korea #1)",
+        "CMP-0088 (WONIK IPS) - deposition equipment (Korea major equipment maker)",
+        "CMP-0100 (SurplusGLOBAL) - used equipment dealer (world #1, Accretech secondary market)"
+      ],
+      "partners": [
+        "CMP-0005 (Advantest) - die-level prober joint development for AI/HPC (Dec 2025)"
+      ]
+    }
   },
-  "notes": "Wave 3 added 34 Japanese vendors/suppliers. Deep research in Japanese including Shikiho, IR pages, Nikkei, forums. Total 62 companies, 51 Japanese."
+  "notes": "Wave 5: Korean semiconductor ecosystem deep dive. Added 14 Korean companies linked to Tokyo Seimitsu/Accretech: 5 Korean OSAT clients (HANA Micron, Nepes, SFA Semicon, LB Semicon + DB HiTek foundry), 4 Korean competitors (KCTech CMP, SEMES prober, SEMICS prober, EO Technics laser dicing), and 5 Korean ecosystem players (Techwing handlers, Leeno probes, WONIK IPS deposition, SurplusGLOBAL used equipment). Total 88 companies across 6 countries. South Korea count: 17 (from 3). Tokyo Seimitsu now has 19 identified clients and 9 competitors. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 96 companies across 7 regions."
 }

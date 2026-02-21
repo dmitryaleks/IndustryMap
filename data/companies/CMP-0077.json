@@ -1,0 +1,32 @@
+{
+  "id": "CMP-0077",
+  "companyName": "Nepes Corporation",
+  "companyNameKorean": "네패스",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "033640.KQ",
+  "description": "Korean advanced packaging and OSAT specialist. Global OSAT rank ~17. Pioneer in Fan-Out Panel Level Packaging (FO-PLP) technology - ahead of ASE in FO-PLP commercialization. Provides turnkey backend services from test to packaging. Two segments: semiconductor (packaging/test) and electronic materials. Key technologies: flip-chip bumping, FO-PLP for AI/HPC. Founded 1990, KOSDAQ listed 1999.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": 3.72,
+  "EPS": -2699,
+  "website": "https://www.nepes.co.kr/",
+  "percentOfForeignOwnership": 9.42,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 17780,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment for OSAT backend operations"
+    ],
+    "notes": "FO-PLP technology leader among Korean OSAT companies. FY2024 revenue: 464.3B KRW, operating profit 3.4B KRW (thin margin). Market cap: 410B KRW. Subsidiary Nepes Ark (330860.KQ) handles silicon components. 1-year stock return: +109.92%. Advancing in AI semiconductor packaging. As an OSAT company performing wafer probing and dicing operations, Nepes is a likely Accretech customer."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, Nepes IR, ETNews, THE ELEC",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

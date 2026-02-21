@@ -1,0 +1,38 @@
+{
+  "id": "CMP-0080",
+  "companyName": "Techwing Inc.",
+  "companyNameKorean": "테크윙",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "089030.KQ",
+  "description": "Korea's leading semiconductor test handler manufacturer. Global #1 in memory test handlers with ~70% market share. Key products: Memory/SOC Test Handlers, display inspection equipment, and CubeProber (HBM inspection equipment). Major customers: SK Hynix, Samsung Electronics. Also expanding into non-memory SoC test handlers and HBM test solutions. Founded 1980, incorporated 2002, KOSDAQ listed 2011.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": 8.39,
+  "EPS": -559,
+  "website": "https://www.techwing.co.kr/",
+  "percentOfForeignOwnership": 10.98,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 46050,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0018", "CMP-0020"],
+  "_externalRelationships": {
+    "majorClients": [
+      "SK Hynix (CMP-0020) - memory test handlers",
+      "Samsung Electronics (CMP-0018) - memory test handlers",
+      "Micron (CMP-0021) - HBM CubeProber qualification testing"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - adjacent competition in semiconductor test/probing equipment",
+      "Advantest (CMP-0005) - test equipment (complementary, handlers connect to testers)"
+    ],
+    "notes": "Market cap: 1,706.3B KRW. Global #1 test handler (70% share). CubeProber is a new wafer-level probing system for HBM inspection - directly competes with traditional wafer probers from Accretech and TEL. 2025 Q3 cumulative: revenue -9.1% YoY, operating profit -19.4%, but net profit +168.6%. HBM test equipment qualification with Micron underway. Beta 1.60 (high volatility). 52-week range: 26,050-69,050 KRW."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, THE ELEC, Investing.com, Mirae Asset Securities",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "CMP-0066",
+  "companyName": "Semiconductor Manufacturing International Corporation",
+  "companyNameJapanese": "中芯国際集成電路製造有限公司",
+  "companyNameChinese": "中芯国际",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": "0981.HK",
+  "description": "China's largest and world's third-largest semiconductor foundry. Provides IC foundry services with specialty and advanced process technologies. Capable of production down to 7nm-class. Operations in Shanghai, Beijing, Tianjin, Shenzhen, and Ningbo. Also listed on Shanghai STAR Market (688981.SS).",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.smics.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0004", "CMP-0011", "CMP-0026"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": ["ACCRETECH (CMP, probing, dicing)", "Tokyo Electron (coater/developer, etch)", "ASML (DUV lithography)", "Applied Materials", "Lam Research", "Kokusai Electric"],
+    "majorClients": ["Qualcomm", "Broadcom", "various Chinese fabless companies"],
+    "competitors": ["TSMC (CMP-0017)", "Samsung (CMP-0018)", "Hua Hong (CMP-0070)"],
+    "notes": "China's #1 foundry, overtook GlobalFoundries and UMC in 2024 to become world #3. Stock trading at HK$69.90. 52-week range: HK$37.00-93.50. ACCRETECH is a key supplier of CMP and probing equipment. Second-largest shareholder of JCET (CMP-0065)."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T20:00:00Z",
+    "dataSource": "Yahoo Finance, CNBC, company website",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T20:00:00Z"
+  }
+}

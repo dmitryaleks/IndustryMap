@@ -1,0 +1,35 @@
+{
+  "id": "CMP-0078",
+  "companyName": "SFA Semicon Co., Ltd.",
+  "companyNameKorean": "SFA반도체",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "036540.KQ",
+  "description": "Korean OSAT company specializing in memory and non-memory semiconductor packaging and testing. Global OSAT rank ~16. Parent company: SFA (54.95% stake). Expanding from commodity memory packaging into non-memory, automotive, and AI semiconductor packaging. Overseas subsidiary: SSP (Philippines). Founded as a Samsung Electronics backend outsourcing partner.",
+  "marketCapInYen": null,
+  "PER": 56.35,
+  "PBR": 2.41,
+  "EPS": 130,
+  "website": "https://www.sfasemicon.com/",
+  "percentOfForeignOwnership": 2.81,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 7310,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001"],
+  "clients": ["CMP-0018"],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment for OSAT backend"
+    ],
+    "majorClients": [
+      "Samsung Electronics (CMP-0018) - primary customer for memory packaging/test outsourcing"
+    ],
+    "notes": "Market cap: 1,202.2B KRW. 2025 Q3 cumulative revenue declined 22.3% YoY due to memory demand weakness and customer inventory adjustments. Diversifying into DDR5 and HBM packaging. Philippines subsidiary SSP handles overseas production. As an OSAT performing backend wafer testing and dicing, SFA is a likely Accretech customer."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, Investing.com, DigitalToday",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

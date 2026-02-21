@@ -1,0 +1,38 @@
+{
+  "id": "CMP-0081",
+  "companyName": "KCTech Co., Ltd.",
+  "companyNameKorean": "케이씨텍",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "281820.KS",
+  "description": "Korea's only domestic CMP (Chemical Mechanical Planarization) equipment and CMP slurry materials manufacturer. Successfully localized CMP equipment that was previously import-dependent. Products: CMP equipment (VENTUS CMP System), wet cleaning systems, display equipment (Wet Station, APP, Coater), and CMP slurry materials (ceria, silica). Spun off from KC Corp in 2017 for semiconductor/display equipment business. Listed on KOSPI.",
+  "marketCapInYen": null,
+  "PER": 18.81,
+  "PBR": 1.94,
+  "EPS": 2526,
+  "website": "https://www.kctech.com/",
+  "percentOfForeignOwnership": 13.94,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 47500,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": ["CMP-0018", "CMP-0020"],
+  "_externalRelationships": {
+    "majorClients": [
+      "Samsung Electronics (CMP-0018) - CMP equipment, slurry (new VENTUS system under qualification)",
+      "SK Hynix (CMP-0020) - CMP equipment, cleaning systems, slurry"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - direct CMP equipment competitor (ChaMP series vs VENTUS)",
+      "Applied Materials - global CMP equipment leader",
+      "Ebara Corporation (CMP-0036) - CMP equipment"
+    ],
+    "notes": "Market cap: 982.8B KRW. Korea's only domestic CMP equipment maker - directly competes with Accretech's ChaMP CMP systems. 2025 Q3 cumulative: revenue +12.7% YoY, operating profit +57.0%. FY2025 estimated revenue: 386B KRW, operating profit: 50B KRW. New VENTUS CMP system completed development, Samsung qualification testing underway - expected supply confirmation within 1 year. Proprietary ceria-based CMP slurry is highly regarded. Considering overseas manufacturing base. Key beneficiary of semiconductor equipment localization (국산화) policy."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, KCTech IR, WorldFolio, Infostockdaily, DB Financial, Pinpoint News",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "CMP-0076",
+  "companyName": "HANA Micron Inc.",
+  "companyNameKorean": "하나마이크론",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "067310.KQ",
+  "description": "Korea's largest OSAT (outsourced semiconductor assembly and test) company. Global OSAT rank #8 with $920M annual revenue (2024). Specializes in memory semiconductor packaging and testing: mobile DRAM Stack Chips, NAND packages, and silicon components. Major customers: Samsung Electronics, SK Hynix. Overseas subsidiaries: HT MICRON (Brazil), Hana Micron Vina (Vietnam). Founded 2001, KOSDAQ listed 2005. Awarded '2026 Asia Semiconductor Backend Solution Company of the Year'.",
+  "marketCapInYen": null,
+  "PER": 22.41,
+  "PBR": 5.29,
+  "EPS": 640,
+  "website": "http://www.hanamicron.com/",
+  "percentOfForeignOwnership": 15.13,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 34850,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001"],
+  "clients": ["CMP-0018", "CMP-0020"],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment for OSAT operations",
+      "Hanmi Semiconductor (CMP-0072) - TC bonders, packaging equipment"
+    ],
+    "majorClients": [
+      "Samsung Electronics (CMP-0018) - memory packaging and test",
+      "SK Hynix (CMP-0020) - memory packaging and test"
+    ],
+    "notes": "Korea #1 OSAT, global #8. 2025 Q3 cumulative: revenue +25.1% YoY, operating profit +71.3%. Vietnam subsidiary entering growth phase. Expanding into non-memory and automotive packaging. As Korea's largest OSAT performing wafer probing and dicing, HANA Micron is a key Accretech Korea customer. Market cap: 2,314.5B KRW."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, Investing.com, VentureSquare, PRESS9, SisaJournal-e",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

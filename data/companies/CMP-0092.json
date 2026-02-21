@@ -1,0 +1,36 @@
+{
+  "id": "CMP-0092",
+  "companyName": "Beijing TSD Semiconductor Equipment Co., Ltd.",
+  "companyNameJapanese": "北京特思迪半導体設備有限公司",
+  "companyNameChinese": "特思迪",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": null,
+  "description": "Chinese specialist in ultra-precision surface processing equipment for semiconductors. Core products: CMP polishing machines, wafer thinning/back-grinding machines, double-side grinding/lapping machines. Focused on compound semiconductor (SiC, GaN) substrates, wafer manufacturing, semiconductor devices, advanced packaging, and MEMS. #1 domestic market share in compound semiconductor CMP equipment. Only Chinese company with volume production of compound semiconductor-specific thinning, polishing, and CMP equipment. 170+ patents. National High-Tech Enterprise, Zhongguancun High-Tech.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.tsd-semicon.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - CMP and grinding/polishing equipment",
+      "Huahai Qingke (CMP-0088) - CMP equipment (silicon-focused)",
+      "Shuoke/烁科精微 (CMP-0091) - CMP equipment",
+      "DISCO (CMP-0002) - grinding equipment",
+      "Okamoto Machine Tool - grinding"
+    ],
+    "notes": "Private company (Beijing-based startup). Designated as a 'Chinese Potential Unicorn Enterprise'. Specializes in compound semiconductor (SiC/GaN) surface processing where ACCRETECH also competes with its polish grinders and CMP equipment. While Huahai Qingke dominates silicon CMP, TSD leads in compound semiconductor CMP domestically. Key technology differentiator: specialized for harder-to-process SiC and GaN materials. Postdoctoral research station. Competes with ACCRETECH's edge grinder and polish grinder product lines."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Company website, OFweek, industry reports, Chinese language sources",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

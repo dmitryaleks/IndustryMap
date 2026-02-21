@@ -1,0 +1,36 @@
+{
+  "id": "CMP-0090",
+  "companyName": "GigaDevice Semiconductor Inc.",
+  "companyNameJapanese": "兆易創新科技集団股份有限公司",
+  "companyNameChinese": "兆易创新",
+  "industryCode": "Semiconductors",
+  "ticker": "603986.SS",
+  "description": "Global leading fabless chip supplier. China's #1 in NOR Flash (23% global share, world #2) and 32-bit MCU (domestic leader, global #8). Core products: storage (NOR Flash, SLC NAND, DRAM accounting for 70%+ of revenue), 32-bit general-purpose MCU, smart human-machine interaction sensors, analog products. Revenue FY2024: 7.356B CNY, net profit 1.101B CNY. Planning Hong Kong dual listing. As fabless, uses foundry services (SMIC, Nexchip) - indirect ACCRETECH equipment user.",
+  "marketCapInYen": 1176000000000,
+  "PER": 51,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.gigadevice.com.cn/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceCNY": 276.17,
+  "isForexSensitive": false,
+  "suppliers": ["CMP-0066", "CMP-0083"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "SMIC (CMP-0066) - foundry partner",
+      "Nexchip (CMP-0083) - foundry partner",
+      "Other foundries for wafer manufacturing"
+    ],
+    "competitors": ["Winbond (NOR Flash)", "Macronix (NOR Flash)", "STMicroelectronics (MCU)"],
+    "notes": "Market cap ~56B CNY (~1.18T JPY). Stock price ~276 CNY (Feb 2026). 52-week range: 98.87-331.07 CNY. FY2024 revenue 7.356B CNY, net profit 1.101B CNY. NOR Flash global #2 (23% share). As a major Chinese fabless semiconductor company, GigaDevice's chips are manufactured by foundries (SMIC, Nexchip, etc.) that use ACCRETECH probing, dicing, and CMP equipment. Indirect but significant relationship with ACCRETECH through the manufacturing supply chain. Planning HK IPO for capital and global expansion."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Investing.com, SSE, company website, Tencent News, industry reports, Chinese language sources",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

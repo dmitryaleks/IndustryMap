@@ -1,0 +1,39 @@
+{
+  "id": "CMP-0082",
+  "companyName": "Leeno Industrial Inc.",
+  "companyNameKorean": "리노공업",
+  "industryCode": "Semiconductor Components",
+  "ticker": "058470.KQ",
+  "description": "Korea's leading manufacturer of semiconductor test sockets (IC Test Sockets) and probe components under the LEENO brand. Products: IC test sockets for semiconductor testing, LEENO PIN probe components, cooling lids, probe heads, and PCB for medical catheter applications. Developing next-gen: TSV probe cards, Tri-Temperature Test probes, 100GHz-compatible sockets. Customers include Qualcomm, TSMC, Samsung Electronics, NVIDIA. Founded 1997, KOSDAQ listed.",
+  "marketCapInYen": null,
+  "PER": 64.92,
+  "PBR": 11.77,
+  "EPS": 1486,
+  "website": "https://www.leeno.com/",
+  "percentOfForeignOwnership": 26.80,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 96500,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0028"],
+  "_externalRelationships": {
+    "majorClients": [
+      "TSMC (CMP-0017) - IC test sockets",
+      "Samsung Electronics (CMP-0018) - IC test sockets",
+      "NVIDIA (CMP-0028) - test sockets",
+      "Qualcomm - test sockets"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - adjacent competitor: Leeno's probe components serve the same wafer test ecosystem",
+      "Japan's probe card makers - NHK Spring (CMP-0055), Micronics Japan"
+    ],
+    "notes": "Market cap: 735.4B KRW. KOSDAQ rank ~11 by market cap. FY2025 operating profit: ~177B KRW (+42.51% YoY). 2025 Q3 cumulative: revenue +47.8%, operating profit +56.7%, net profit +49.9%. 1-year stock return: +113.25%. Leeno's test sockets and probes are used in conjunction with wafer probers (like Accretech's) - the probes physically contact the wafer during testing. Leeno is a key ecosystem player in semiconductor testing alongside prober manufacturers. Wasatch Advisors (US) holds 9.08% stake."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, Leeno IR, Wikipedia, Investing.com, Eugene Securities",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

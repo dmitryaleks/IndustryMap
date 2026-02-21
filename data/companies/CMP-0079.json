@@ -1,0 +1,32 @@
+{
+  "id": "CMP-0079",
+  "companyName": "LB Semicon Co., Ltd.",
+  "companyNameKorean": "엘비세미콘",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "061970.KQ",
+  "description": "Korean OSAT company specializing in display driver IC (DDI) and mobile semiconductor packaging and testing. Global OSAT rank ~18. High exposure to DDI and mobile segments makes it sensitive to demand volatility. Expanding into PMIC, CIS, SoC, and AI/high-performance semiconductor packaging. Targets top 10 global OSAT ranking and 1T KRW revenue. Plans to increase overseas sales from 10% to 40%.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": 0.98,
+  "EPS": -507,
+  "website": "https://www.lbsemicon.com/",
+  "percentOfForeignOwnership": 31.84,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 5150,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment for OSAT backend"
+    ],
+    "notes": "Market cap: 299.1B KRW. FY2025 revenue: ~479.8B KRW, operating loss: -39.8B KRW. High DDI exposure caused profitability challenges. 2025 Q3 cumulative revenue +3.7% YoY but operating losses widened 62.3%. Foreign ownership relatively high at 31.84%. As an OSAT performing wafer probing and dicing, LB Semicon is a likely Accretech customer."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, Investing.com, THE VC",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

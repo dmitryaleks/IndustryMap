@@ -1,0 +1,32 @@
+{
+  "id": "CMP-0067",
+  "companyName": "Tongfu Microelectronics Co., Ltd.",
+  "companyNameJapanese": "通富微電子股份有限公司",
+  "companyNameChinese": "通富微电",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "002156.SZ",
+  "description": "China's second-largest OSAT company. Specializes in IC packaging and testing with expertise in advanced packaging including flip chip, BGA, SiP, and wafer-level packaging. AMD is the largest customer (80%+ of AMD's packaging orders). FY2024 revenue: ~$3.32B.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.tfme.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": ["ACCRETECH (dicing, probing)", "DISCO (dicing)"],
+    "majorClients": ["AMD (50%+ of revenue)", "Hefei Changxin (CXMT)"],
+    "competitors": ["JCET (CMP-0065)", "Huatian (CMP-0068)", "ASE (CMP-0063)"],
+    "notes": "World #4 OSAT. Listed on Shenzhen Stock Exchange. FY2024 revenue: $3.32B (+5.6% YoY). AMD is largest customer, contributing >50% of revenue. Also is AMD's largest packaging test supplier. Chinese domestic dicing equipment from Heyan and Guangli being tested on production lines."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T20:00:00Z",
+    "dataSource": "TrendForce, SemiBay, Huxiu Pro",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T20:00:00Z"
+  }
+}

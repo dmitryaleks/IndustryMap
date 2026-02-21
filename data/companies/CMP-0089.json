@@ -1,0 +1,36 @@
+{
+  "id": "CMP-0089",
+  "companyName": "Shenyang Heyan Technology Co., Ltd.",
+  "companyNameJapanese": "瀋陽和研科技有限公司",
+  "companyNameChinese": "和研科技",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": null,
+  "description": "Chinese precision dicing machine manufacturer based in Shenyang, Liaoning. Founded 2011 by a team from China's early national dicing machine development project (40+ years experience). Products: 6-inch (DS613/DS616/DS623), 8-inch (DS820/DS830), 10-inch (DS9100), 12-inch dual-axis (DS9200), and 12-inch fully automatic (DS9260) dicing machines. DS9260 was the first domestically mass-produced wafer dicing machine in China. National High-Tech Enterprise designation.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "http://heyantech.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - direct dicing machine competitor",
+      "DISCO (CMP-0002) - global dicing leader (70% share)",
+      "Guangli/ADT (CMP-0074) - Chinese/Israeli dicing competitor",
+      "Bojie Xin/博捷芯 - Chinese dicing competitor",
+      "Shenyang Hanway/汉为科技 - Chinese dicing competitor"
+    ],
+    "notes": "Private company, not publicly listed. DS9260 fully automatic 12-inch dual-axis dicing machine features high-power opposing dual spindles with NCS and microscopes on both Z1/Z2 axes. Applications: IC, optical photonic, communications, LED packaging, QFN/DFN/BGA packaging. Pioneer of domestic dicing machine mass production in China. Part of China's semiconductor equipment domestic substitution (国产替代) wave targeting DISCO and ACCRETECH's combined 90%+ global dicing market share. Over 20 patents, member of China Semiconductor Industry Association."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Company website, AB-SM.com, industry reports, Chinese language sources",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

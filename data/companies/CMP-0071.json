@@ -1,0 +1,29 @@
+{
+  "id": "CMP-0071",
+  "companyName": "MPI Corporation",
+  "companyNameJapanese": "旺矽科技股份有限公司",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6223.TW",
+  "description": "Taiwan's leading wafer prober and semiconductor RF test solution provider. Founded 1995 in Hsinchu. Products include advanced wafer probers, probe cards, thermal systems, and engineering probe stations. Market leader in semiconductor RF testing solutions. First prober company to list on Taiwan TPEx.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.mpi.com.tw/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "competitors": ["ACCRETECH/Tokyo Seimitsu (CMP-0001)", "Tokyo Electron", "FormFactor", "Technoprobe"],
+    "notes": "~10% global prober market share (3rd after ACCRETECH 46% and TEL 27%). HQ in Hsinchu, Taiwan. Specializes in RF testing probers. Listed on Taiwan TPEx (6223.TW). Direct competitor to ACCRETECH in probing equipment segment."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T20:00:00Z",
+    "dataSource": "MPI Corporation website, Mordor Intelligence, industry reports",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T20:00:00Z"
+  }
+}

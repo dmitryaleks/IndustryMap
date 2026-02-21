@@ -1,0 +1,37 @@
+{
+  "id": "CMP-0083",
+  "companyName": "Nexchip Semiconductor Corporation",
+  "companyNameJapanese": "晶合集成電路股份有限公司",
+  "companyNameChinese": "晶合集成",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": "688249.SS",
+  "description": "China's third-largest semiconductor foundry, founded 2015 in Hefei, Anhui. Listed on Shanghai STAR Market 2023. Primarily 12-inch wafer foundry. World's leading DDIC (Display Driver IC) foundry. Product mix: DDIC 68.5%, CIS 16%, PMIC 9%, MCU 2.4%, Logic 3.8%. Technology nodes extend to 55nm with 40nm in development. Joint venture origin with Powerchip Semiconductor (Taiwan). Key customer for wafer probing, dicing, and CMP equipment.",
+  "marketCapInYen": 1677000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.nexchip.com.cn/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceCNY": 37.0,
+  "isForexSensitive": false,
+  "suppliers": ["CMP-0001"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - probing, dicing, CMP equipment for 12-inch fab",
+      "Tokyo Electron (CMP-0004) - coater/developer, etching",
+      "Applied Materials - deposition, etch",
+      "Lam Research - etch, deposition"
+    ],
+    "competitors": ["SMIC (CMP-0066)", "Hua Hong (CMP-0070)", "CanSemi (CMP-0094)"],
+    "notes": "China's #3 foundry after SMIC and Hua Hong. Market cap ~79.8B CNY (~1.68T JPY). Stock price ~37 CNY (Feb 2026). 52-week range: 17.80-41.80 CNY (+60.88% 1yr). Q1-Q3 2025 revenue: 8.13B CNY (+20% YoY). Most aggressive expander among Chinese foundries. As a 12-inch foundry, requires comprehensive ACCRETECH equipment including probers (wafer testing), dicers (wafer cutting), and CMP machines (surface planarization). JV origin with Taiwan's Powerchip gave initial technology access."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Investing.com, SSE, company website, industry reports, Chinese language sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "CMP-0093",
+  "companyName": "Yangtze Memory Technologies Co., Ltd.",
+  "companyNameJapanese": "長江存儲科技有限責任公司",
+  "companyNameChinese": "长江存储",
+  "industryCode": "Memory Semiconductors",
+  "ticker": null,
+  "description": "China's most important 3D NAND flash memory manufacturer. Founded 2016 in Wuhan, Hubei. Monthly capacity ~130K wafers approaching 150K (2025 target), aiming for 15% global NAND share by 2026. 5th-generation 3D NAND products in mass production. Shipped 232-layer TLC chips with 294-layer equivalent density via dual-stack. Proprietary Xtacking architecture for 3D NAND. First fully domestic equipment production line under trial in 2025. Estimated valuation: 160B CNY (Hurun 2025 Unicorn #21).",
+  "marketCapInYen": 3360000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.ymtc.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0088"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - CMP equipment, wafer probing, dicing (pre-sanctions)",
+      "Huahai Qingke (CMP-0088) - domestic CMP equipment (post-sanctions substitute)",
+      "NAURA (CMP-0085) - etching, deposition, cleaning",
+      "Tokyo Electron (CMP-0004) - process equipment (pre-sanctions)",
+      "Applied Materials - process equipment (pre-sanctions, now restricted)"
+    ],
+    "competitors": ["Samsung Electronics (CMP-0018) - 3D NAND", "Kioxia (CMP-0014) - 3D NAND", "SK Hynix (CMP-0020) - 3D NAND", "Micron (CMP-0021) - 3D NAND"],
+    "notes": "Estimated valuation 160B CNY (~3.36T JPY). Not yet publicly listed - A-share IPO preparation underway with CICC as advisor. Completed full stock reform Oct 2025. Phase 3 factory (Wuhan) established Sep 2025 with 20.72B CNY registered capital. On US Entity List - export controls restrict access to advanced equipment from US, Japan, Netherlands. This drives demand for domestic CMP equipment (Huahai Qingke) to replace ACCRETECH's CMP systems. YMTC was an ACCRETECH CMP customer before tightened export controls. Now pursuing first fully domestic equipment production line (trial 2025). Strategic importance: China's national champion in memory chips."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Sina Finance, TrendForce, EEFocus, Hurun, company disclosures, Chinese language sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

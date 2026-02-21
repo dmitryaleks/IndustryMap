@@ -1,0 +1,37 @@
+{
+  "id": "CMP-0084",
+  "companyName": "China Resources Microelectronics Limited",
+  "companyNameJapanese": "華潤微電子有限公司",
+  "companyNameChinese": "华润微",
+  "industryCode": "Semiconductors",
+  "ticker": "688396.SS",
+  "description": "China's leading IDM (Integrated Device Manufacturer) with full semiconductor value chain: chip design, mask fabrication, wafer manufacturing, packaging and testing. Core focus on power semiconductors (MOSFET #1 in China), smart sensors, and intelligent control. Multiple fabs: 6-inch, 8-inch, and 12-inch. Subsidiary of China Resources Holdings (state-owned conglomerate). Major buyer of wafer probing/dicing equipment for in-house manufacturing. Revenue FY2024: 10.119B CNY.",
+  "marketCapInYen": 1260000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.crmicro.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceCNY": 53.0,
+  "isForexSensitive": false,
+  "suppliers": ["CMP-0001"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - probing, dicing equipment for wafer fab and packaging lines",
+      "Tokyo Electron (CMP-0004) - process equipment",
+      "Applied Materials - deposition, etch",
+      "ASML (CMP-0026) - DUV lithography"
+    ],
+    "competitors": ["SMIC (CMP-0066) - foundry", "Hua Hong (CMP-0070) - foundry"],
+    "notes": "Market cap ~600B CNY (~1.26T JPY). Stock price ~53 CNY (Feb 2026). FY2024 revenue 10.119B CNY (first >10B milestone). Ranked #2 in China power semiconductor by Omdia 2025. As an IDM with in-house wafer fab, packaging and testing, requires comprehensive equipment including probers, dicers, and CMP systems. 12-inch high-end fab ramping 2025-2026 for automotive and industrial power devices. China Resources (华润) is a major state-owned enterprise. MOSFET business #1 in China by revenue."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Investing.com, SSE, company website, Omdia, industry reports, Chinese language sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "CMP-0100",
+  "companyName": "SurplusGLOBAL Inc.",
+  "companyNameKorean": "서플러스글로벌",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "140070.KQ",
+  "description": "World's #1 used semiconductor equipment dealer and platform. Buys, sells, consigns, and brokers 1,500+ used semiconductor equipment annually for front-end, back-end, and display processes. Since 2000, has transacted 50,000+ equipment units with 4,000+ semiconductor companies globally. Services: consignment sales, global sourcing, logistics, equipment testing, trade-in, reconfiguration, and A/S. Located in Yongin, Gyeonggi Province (21,000-pyeong semiconductor equipment cluster with 660-pyeong cleanroom). Subsidiaries in USA, China, Japan, Taiwan, Singapore. KOSDAQ listed 2017.",
+  "marketCapInYen": null,
+  "PER": 17.09,
+  "PBR": 0.40,
+  "EPS": 124,
+  "website": "https://www.surplusglobal.com/",
+  "percentOfForeignOwnership": 1.51,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 2120,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002", "CMP-0004"],
+  "clients": ["CMP-0075"],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - handles used Accretech probers, dicers, CMP equipment",
+      "DISCO (CMP-0002) - used dicing equipment",
+      "Tokyo Electron (CMP-0004) - used front-end equipment",
+      "Applied Materials - used deposition/etch equipment"
+    ],
+    "majorClients": [
+      "DB HiTek (CMP-0075) - used equipment for legacy node fabs",
+      "Various global fabs, OSAT companies, and emerging semiconductor manufacturers"
+    ],
+    "notes": "Market cap: 784B KRW. KOSDAQ listed 2017. FY2024 revenue grew 65.4% YoY. However FY2025 struggling: 9-month revenue -24.2% YoY, turned to operating loss. FY2025 EPS: -445 KRW (loss). Expanding from equipment trading to parts distribution business. World's largest semiconductor equipment cluster facility. SurplusGLOBAL is a key secondary market channel for Accretech equipment - many Korean fabs and OSAT companies acquire used Accretech probers and dicers through SurplusGLOBAL."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T22:00:00Z",
+    "dataSource": "FnGuide, SurplusGLOBAL IR, SEMI, ZDNet Korea, Newswire",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T22:00:00Z"
+  }
+}

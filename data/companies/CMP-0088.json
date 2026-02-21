@@ -1,0 +1,45 @@
+{
+  "id": "CMP-0088",
+  "companyName": "Hwatsing Technology Co., Ltd. (Huahai Qingke)",
+  "companyNameJapanese": "華海清科股份有限公司",
+  "companyNameChinese": "华海清科",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "688120.SS",
+  "description": "China's #1 CMP (Chemical Mechanical Planarization) equipment manufacturer. Founded 2013 as joint venture between Tianjin government and Tsinghua University. Products: CMP equipment (core business, >50% domestic market share for 12-inch), wafer thinning/back-grinding, dicing/scribing, edge polishing, ion implantation, wet processing equipment, wafer reclaim services, and critical consumables/maintenance. Platform strategy: equipment + services. Listed on STAR Market 2022.",
+  "marketCapInYen": 1345000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.hwatsing.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceCNY": 181.18,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": ["CMP-0066", "CMP-0070"],
+  "_externalRelationships": {
+    "majorClients": [
+      "SMIC (CMP-0066) - CMP equipment",
+      "Hua Hong (CMP-0070) - CMP equipment",
+      "YMTC (长江存储) - CMP equipment",
+      "CXMT (睿力集成/合肥长鑫) - CMP equipment",
+      "All major Chinese Tier 1 and Tier 2 fabs"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - direct CMP equipment competitor (ChaMP series)",
+      "Applied Materials - global CMP equipment leader (Reflexion/Mirra)",
+      "Ebara Corporation (CMP-0036) - CMP equipment (FREX series)",
+      "KCTech (CMP-0081) - Korean CMP equipment",
+      "NAURA (CMP-0085) - expanding into CMP",
+      "Beijing Shuoke/烁科精微 (CMP-0091) - CETC subsidiary CMP"
+    ],
+    "notes": "Market cap ~64B CNY (~1.35T JPY). Stock price ~181 CNY (Feb 2026). Domestic market share rose from 6% (2019) to 32% (2022) to >50% (2024 for 12-inch). 2025 H1 revenue: 1.95B CNY (+30.3% YoY), net profit 505M CNY (+16.8%). 2025 Q1-Q3 revenue: 3.19B CNY (+30.3%). MOST DIRECT Chinese competitor to ACCRETECH's CMP business. CMP equipment capable of 14nm logic and 128-layer 3D NAND processes. Also expanding into dicing and thinning - further overlapping with ACCRETECH product lines. Tsinghua University technology origin."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Investing.com, SSE, company website, Sina Finance, Hexun, industry reports, Chinese language sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

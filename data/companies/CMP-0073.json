@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0073",
+  "companyName": "Sidea Semiconductor Equipment (Shenzhen) Co., Ltd.",
+  "companyNameJapanese": "矽電半導体設備（深圳）股份有限公司",
+  "companyNameChinese": "矽电股份",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "301629.SZ",
+  "description": "China's largest domestic prober station manufacturer. Founded 2003 in Shenzhen. First Chinese company to achieve mass production of 12-inch wafer probe stations. Products used in IC testing, optoelectronic chips, discrete devices, and third-generation compound semiconductors. IPO on ChiNext March 2025.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": null,
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "competitors": ["ACCRETECH/Tokyo Seimitsu (CMP-0001)", "Tokyo Electron"],
+    "notes": "25.7% Chinese domestic prober market share (2023), #1 domestic manufacturer. Previously probers were monopolized by ACCRETECH (46%) and TEL (27%) globally. IPO on ChiNext (301629.SZ) March 24, 2025 at 52.28 CNY/share, first-day close +202% at 157.93 CNY. FY2022-2024 revenue: 399M/442M/546M CNY. Raised 5.45B CNY via IPO. Breaking Japanese monopoly in prober market."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T20:00:00Z",
+    "dataSource": "Sina Finance, CE.cn, Xhby.net, open-source research reports",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T20:00:00Z"
+  }
+}

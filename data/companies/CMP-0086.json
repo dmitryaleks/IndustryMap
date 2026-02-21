@@ -1,0 +1,36 @@
+{
+  "id": "CMP-0086",
+  "companyName": "Hwatsing Technology Co., Ltd.",
+  "companyNameJapanese": "蘇州華興源創科技股份有限公司",
+  "companyNameChinese": "华兴源创",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "688001.SS",
+  "description": "China's first company listed on the Shanghai STAR Market (科创板) in 2019. Leading flat panel display (FPD) inspection equipment maker with 32% AMOLED Cell/Module inspection market share in China. Expanding into semiconductor test equipment: self-developed T7600 SoC test machine comparable to Teradyne J750 series. Products: FPD inspection systems, SoC/memory test machines (ATE), BMS testers, and sorters (handler equipment). Revenue FY2024: ~1.86B CNY.",
+  "marketCapInYen": 306000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.hyctek.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceCNY": 32.79,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - adjacent competition in semiconductor test ecosystem",
+      "Advantest (CMP-0005) - SoC/memory test machines (global leader)",
+      "Teradyne - SoC test machines",
+      "Changchuan Technology (CMP-0087) - domestic semiconductor test equipment competitor"
+    ],
+    "notes": "Market cap ~14.6B CNY (~306B JPY). Stock price ~32.79 CNY (Jan 2026). Historic significance as STAR Market company #001. T7600 SoC tester broke monopoly of US/Japan makers in SOC chip testing. Key customer Samsung for test machines. 2025 Q1-Q3 revenue: 1.579B CNY (+23.7% YoY), net profit 152M CNY (swing from loss to profit). Expanding from FPD inspection (core business) into semiconductor testing as second growth engine. Not a direct competitor to ACCRETECH's probing/dicing/CMP products, but operates in adjacent semiconductor test equipment space."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Investing.com, SSE, Sina Finance, company website, industry reports, Chinese language sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

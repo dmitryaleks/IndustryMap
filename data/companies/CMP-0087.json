@@ -1,0 +1,37 @@
+{
+  "id": "CMP-0087",
+  "companyName": "Hangzhou Changchuan Technology Co., Ltd.",
+  "companyNameJapanese": "杭州長川科技股份有限公司",
+  "companyNameChinese": "长川科技",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "300604.SZ",
+  "description": "China's leading semiconductor backend test equipment manufacturer. Core products: test machines (ATE), sorters/handlers, probe stations, and AOI inspection equipment. Successfully developed fully automatic 12-inch probe station (CP12-Memory) for memory chip testing. Revenue 2025 H1: 2.167B CNY (+41.8% YoY). Directly competes with ACCRETECH in probe station segment. Listed on ChiNext 2017.",
+  "marketCapInYen": 714000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.hzcctech.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceCNY": 130.59,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - direct competitor in probe stations",
+      "Advantest (CMP-0005) - test machines (global leader)",
+      "Teradyne - test machines",
+      "Sidea/矽电 (CMP-0073) - probe stations (domestic competitor)",
+      "Hwatsing (CMP-0086) - SoC test machines"
+    ],
+    "notes": "Market cap ~34B CNY (~714B JPY). Stock price ~130.59 CNY (Feb 2026). 2025 Q1-Q3 revenue: 3.779B CNY (+49.1% YoY), net profit 865M CNY (+142.1% YoY). Raised 3.13B CNY via additional share issuance for R&D. Probe station project (2.6B CNY investment) extended to 2025 completion - directly competes with ACCRETECH's wafer probers. CP12-Memory probe station for memory chip testing is in sample testing phase. Sorter market share ~2% globally but growing rapidly via domestic substitution. National semiconductor equipment localization champion alongside NAURA."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Investing.com, SZSE, company website, Sina Finance, industry reports, Chinese language sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}
