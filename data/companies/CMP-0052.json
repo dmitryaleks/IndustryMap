@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0052",
+  "companyName": "Organo Corporation",
+  "companyNameJapanese": "オルガノ株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6368.T",
+  "description": "World leader in ultrapure water systems for semiconductor manufacturing. Nearly exclusive supplier to TSMC fabs. Tosoh group company.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.organo.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC (CMP-0017) - nearly exclusive", "TSMC Kumamoto"],
+    "notes": "Founded 1946. Stock up 5x on TSMC relationship. Water purity: 1 sugar cube impurity in Tokyo Dome."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Nikkei Business, Note.com",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

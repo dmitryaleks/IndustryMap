@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0042",
+  "companyName": "PILLAR Corporation",
+  "companyNameJapanese": "株式会社PILLAR",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6490.T",
+  "description": "Comprehensive seal manufacturer. 90% world share in semiconductor cleaning equipment fittings. Supplies mechanical seals, gaskets, and fluororesin products. Renamed from Nippon Pillar Packing in 2024.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.pillar.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0003", "CMP-0004"],
+  "_externalRelationships": {
+    "majorClients": ["SCREEN Holdings (CMP-0003)", "Semiconductor equipment manufacturers"],
+    "notes": "100 years in seal technology. 90% world share in semiconductor cleaning fittings. Rotary joints world share expanding."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Note.com, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

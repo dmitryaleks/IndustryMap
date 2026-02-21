@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0060",
+  "companyName": "Samco Inc.",
+  "companyNameJapanese": "サムコ株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6387.T",
+  "description": "Pioneer in plasma CVD equipment since 1980. Specializes in thin film deposition, dry etching, and cleaning equipment. Kyoto-based R&D-oriented company.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.samco.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["R&D facilities", "Semiconductor manufacturers"],
+    "notes": "Japan's first plasma CVD equipment 1980. Low-temperature thick film PECVD strength. Expanding overseas sales."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Company IR, Peragaru",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

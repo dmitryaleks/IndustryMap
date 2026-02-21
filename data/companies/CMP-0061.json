@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0061",
+  "companyName": "Ushio Inc.",
+  "companyNameJapanese": "ウシオ電機株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6925.T",
+  "description": "World's leading industrial lamp manufacturer. 75% global share in i-line lithography UV lamps. Supplies light sources for semiconductor exposure equipment.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.ushio.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0050", "CMP-0051"],
+  "_externalRelationships": {
+    "majorClients": ["Nikon (CMP-0050)", "Canon (CMP-0051)", "Lithography equipment makers"],
+    "notes": "75% world share in i-line UV lamps. Ultra-high pressure UV lamps 500W-35kW. Industrial Process segment."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Shikiho, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

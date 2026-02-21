@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0050",
+  "companyName": "Nikon Corporation",
+  "companyNameJapanese": "株式会社ニコン",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "7731.T",
+  "description": "Historic lithography equipment manufacturer. 5.7% share in ArF immersion (ASML 94.3%). New ASML-compatible platform targeting 2028. Strong in automotive semiconductor exposure.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.nikon.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung", "Intel"],
+    "notes": "Once dominant in lithography. New ArF platform 2028 with ASML compatibility. Targeting mature node market."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "EE Times Japan, Newswitch",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

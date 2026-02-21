@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0057",
+  "companyName": "MEC Company Ltd.",
+  "companyNameJapanese": "メック株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4971.T",
+  "description": "Specialist in etching chemicals for electronic substrates and semiconductor packages. CZ Series for copper roughening. ~95% of sales from chemical products.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.mec-co.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["IC substrate manufacturers", "FPD manufacturers"],
+    "notes": "CZ Series world standard for copper roughening. EXE Series de facto standard for COF. Osaka-based."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Double-growth.com, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

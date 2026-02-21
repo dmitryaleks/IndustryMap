@@ -1,15 +1,16 @@
 {
   "$schema": "../schema/company.schema.json",
-  "version": "1.1.0",
-  "lastUpdated": "2026-02-21T15:30:00Z",
-  "totalCompanies": 28,
+  "version": "1.2.0",
+  "lastUpdated": "2026-02-21T18:00:00Z",
+  "totalCompanies": 62,
   "waves": {
-    "wave1": {"count": 16, "status": "complete"},
-    "wave2": {"count": 12, "status": "complete"}
+    "wave1": {"count": 16, "status": "complete", "description": "Japanese seed companies"},
+    "wave2": {"count": 12, "status": "complete", "description": "Global customers/suppliers"},
+    "wave3": {"count": 34, "status": "complete", "description": "Japanese vendors/suppliers to existing companies"}
   },
   "industryBreakdown": {
-    "Semiconductor Equipment": 9,
-    "Semiconductor Materials": 7,
+    "Semiconductor Equipment": 21,
+    "Semiconductor Materials": 21,
     "Semiconductors": 4,
     "Memory Semiconductors": 3,
     "Semiconductor Foundry": 1,
@@ -19,7 +20,7 @@
     "Precision Instruments": 1
   },
   "geographyBreakdown": {
-    "Japan": 17,
+    "Japan": 51,
     "USA": 5,
     "South Korea": 2,
     "Taiwan": 1,
@@ -53,15 +54,53 @@
     {"id": "CMP-0025", "name": "SUMCO Corporation", "ticker": "3436.T", "wave": 2},
     {"id": "CMP-0026", "name": "ASML Holding N.V.", "ticker": "ASML", "wave": 2},
     {"id": "CMP-0027", "name": "Kyocera Corporation", "ticker": "6971.T", "wave": 2},
-    {"id": "CMP-0028", "name": "NVIDIA Corporation", "ticker": "NVDA", "wave": 2}
+    {"id": "CMP-0028", "name": "NVIDIA Corporation", "ticker": "NVDA", "wave": 2},
+    {"id": "CMP-0029", "name": "Naigai Tech Co., Ltd.", "ticker": "3374.T", "wave": 3},
+    {"id": "CMP-0030", "name": "Marumae Co., Ltd.", "ticker": "6264.T", "wave": 3},
+    {"id": "CMP-0031", "name": "Tocalo Co., Ltd.", "ticker": "3433.T", "wave": 3},
+    {"id": "CMP-0032", "name": "Nippon Sanso Holdings Corporation", "ticker": "4091.T", "wave": 3},
+    {"id": "CMP-0033", "name": "Tokyo Ohka Kogyo Co., Ltd.", "ticker": "4186.T", "wave": 3},
+    {"id": "CMP-0034", "name": "JSR Corporation", "ticker": "4185.T", "wave": 3},
+    {"id": "CMP-0035", "name": "Maruzen Petrochemical Co., Ltd.", "ticker": "4634.T", "wave": 3},
+    {"id": "CMP-0036", "name": "Ebara Corporation", "ticker": "6361.T", "wave": 3},
+    {"id": "CMP-0037", "name": "NGK Insulators, Ltd.", "ticker": "5333.T", "wave": 3},
+    {"id": "CMP-0038", "name": "Gun Ei Chemical Industry Co., Ltd.", "ticker": "4229.T", "wave": 3},
+    {"id": "CMP-0039", "name": "Niterra Co., Ltd.", "ticker": "5334.T", "wave": 3},
+    {"id": "CMP-0040", "name": "FUJIFILM Holdings Corporation", "ticker": "4901.T", "wave": 3},
+    {"id": "CMP-0041", "name": "Rorze Corporation", "ticker": "6323.T", "wave": 3},
+    {"id": "CMP-0042", "name": "PILLAR Corporation", "ticker": "6490.T", "wave": 3},
+    {"id": "CMP-0043", "name": "CKD Corporation", "ticker": "6407.T", "wave": 3},
+    {"id": "CMP-0044", "name": "Stella Chemifa Corporation", "ticker": "4109.T", "wave": 3},
+    {"id": "CMP-0045", "name": "Kanto Denka Kogyo Co., Ltd.", "ticker": "4047.T", "wave": 3},
+    {"id": "CMP-0046", "name": "Sumitomo Chemical Co., Ltd.", "ticker": "4005.T", "wave": 3},
+    {"id": "CMP-0047", "name": "TOPPAN Holdings Inc.", "ticker": "7911.T", "wave": 3},
+    {"id": "CMP-0048", "name": "Ibiden Co., Ltd.", "ticker": "4062.T", "wave": 3},
+    {"id": "CMP-0049", "name": "Dai Nippon Printing Co., Ltd.", "ticker": "7912.T", "wave": 3},
+    {"id": "CMP-0050", "name": "Nikon Corporation", "ticker": "7731.T", "wave": 3},
+    {"id": "CMP-0051", "name": "Canon Inc.", "ticker": "7751.T", "wave": 3},
+    {"id": "CMP-0052", "name": "Organo Corporation", "ticker": "6368.T", "wave": 3},
+    {"id": "CMP-0053", "name": "Nomura Micro Science Co., Ltd.", "ticker": "6254.T", "wave": 3},
+    {"id": "CMP-0054", "name": "Aval Data Corporation", "ticker": "6918.T", "wave": 3},
+    {"id": "CMP-0055", "name": "NHK Spring Co., Ltd.", "ticker": "5991.T", "wave": 3},
+    {"id": "CMP-0056", "name": "Daifuku Co., Ltd.", "ticker": "6383.T", "wave": 3},
+    {"id": "CMP-0057", "name": "MEC Company Ltd.", "ticker": "4971.T", "wave": 3},
+    {"id": "CMP-0058", "name": "Nagase & Co., Ltd.", "ticker": "8012.T", "wave": 3},
+    {"id": "CMP-0059", "name": "Shibaura Mechatronics Corporation", "ticker": "6590.T", "wave": 3},
+    {"id": "CMP-0060", "name": "Samco Inc.", "ticker": "6387.T", "wave": 3},
+    {"id": "CMP-0061", "name": "Ushio Inc.", "ticker": "6925.T", "wave": 3},
+    {"id": "CMP-0062", "name": "Tazmo Co., Ltd.", "ticker": "6266.T", "wave": 3}
   ],
   "keyRelationships": {
     "supplyChainCritical": [
       "CMP-0024 (Shin-Etsu) + CMP-0025 (SUMCO) -> 90% of silicon wafers",
       "CMP-0026 (ASML) -> 100% of EUV lithography",
       "CMP-0006 (Lasertec) -> 100% of EUV mask inspection",
-      "CMP-0017 (TSMC) -> 90%+ of advanced AI chips"
+      "CMP-0017 (TSMC) -> 90%+ of advanced AI chips",
+      "CMP-0033 (TOK) + CMP-0034 (JSR) -> 50% of photoresist market",
+      "CMP-0044 (Stella) -> World #1 in ultra-high-purity HF acid",
+      "CMP-0048 (Ibiden) -> 50%+ of AI server IC package substrates",
+      "CMP-0052 (Organo) -> Nearly exclusive TSMC ultrapure water supplier"
     ]
   },
-  "notes": "Wave 1 (Japanese seed companies) and Wave 2 (global customers/suppliers) complete. Supply chain from wafer to consumer now mapped."
+  "notes": "Wave 3 added 34 Japanese vendors/suppliers. Deep research in Japanese including Shikiho, IR pages, Nikkei, forums. Total 62 companies, 51 Japanese."
 }

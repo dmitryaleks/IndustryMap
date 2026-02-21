@@ -1,0 +1,31 @@
+{
+  "id": "CMP-0058",
+  "companyName": "Nagase & Co., Ltd.",
+  "companyNameJapanese": "長瀬産業株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "8012.T",
+  "description": "Major trading company specializing in chemicals and electronic materials. Subsidiary Nagase ChemteX supplies modified epoxy resins for AI server semiconductors.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.nagase.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Semiconductor assembly manufacturers", "AI server makers"],
+    "subsidiaries": ["Nagase ChemteX (epoxy resins)"],
+    "notes": "Electronic segment strong. Modified epoxy resins for advanced semiconductor packaging growing rapidly."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Kabushiki Shimbun, Company IR",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

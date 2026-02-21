@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0048",
+  "companyName": "Ibiden Co., Ltd.",
+  "companyNameJapanese": "イビデン株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4062.T",
+  "description": "World's #1 IC package substrate manufacturer with 50%+ share in AI server substrates. Founded 1912 in Gifu. Electronics segment is main profit driver.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.ibiden.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0019", "CMP-0028"],
+  "_externalRelationships": {
+    "majorClients": ["Intel (CMP-0019)", "NVIDIA (CMP-0028)", "AMD"],
+    "notes": "Near-monopoly in high-end AI server IC package substrates. Critical for semiconductor speed and efficiency."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Nikkei Froggy, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

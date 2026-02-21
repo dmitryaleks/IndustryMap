@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0034",
+  "companyName": "JSR Corporation",
+  "companyNameJapanese": "JSR株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4185.T",
+  "description": "Major photoresist manufacturer with world #1 ArF photoresist share. Top 2 in global photoresist market. Acquired by JIC (Japan Investment Corporation) in 2024.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.jsr.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC (Excellent Performance Award 2022)", "Samsung", "Intel"],
+    "notes": "Used in ~1/3 of semiconductors worldwide. Taken private by JIC in 2024. Strong in immersion lithography top coats."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Toyo Keizai, Chem-Station",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

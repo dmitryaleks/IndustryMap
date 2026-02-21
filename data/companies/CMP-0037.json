@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0037",
+  "companyName": "NGK Insulators, Ltd.",
+  "companyNameJapanese": "日本ガイシ株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "5333.T",
+  "description": "World's largest insulator manufacturer. Supplies ceramic heaters and electrostatic chucks for semiconductor manufacturing equipment using aluminum nitride (AlN) technology.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.ngk.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0004", "CMP-0003"],
+  "_externalRelationships": {
+    "majorClients": ["Tokyo Electron", "SCREEN Holdings", "Semiconductor equipment manufacturers"],
+    "notes": "Ceramic technology since 1919. Excellent corrosion resistance to halogenated gases. Low particle generation."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Note.com, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0059",
+  "companyName": "Shibaura Mechatronics Corporation",
+  "companyNameJapanese": "芝浦メカトロニクス株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6590.T",
+  "description": "World leader in single-wafer cleaning equipment for semiconductor front-end. Also produces etching, ashing, and inspection equipment. LCD equipment manufacturer.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.shibaura.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung", "Major foundries"],
+    "notes": "World #1 in post-polish single-wafer cleaning. 300mm wafer cleaning equipment. AI demand tailwind."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Asset Alive, Kabutan",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

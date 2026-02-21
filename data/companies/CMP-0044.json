@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0044",
+  "companyName": "Stella Chemifa Corporation",
+  "companyNameJapanese": "ステラケミファ株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4109.T",
+  "description": "World leader in ultra-high-purity hydrofluoric acid (12-nine purity). Critical supplier for semiconductor etching and cleaning. Holds world top share in HF acid for semiconductors.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.stella-chemifa.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019", "CMP-0020", "CMP-0021"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung", "Intel", "SK Hynix", "Micron"],
+    "notes": "Twelve-nine (99.9999999999%) purity HF. Only Stella and Morita Chemical can achieve this. Founded 1916."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "MoneyPost, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

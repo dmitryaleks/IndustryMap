@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0030",
+  "companyName": "Marumae Co., Ltd.",
+  "companyNameJapanese": "株式会社マルマエ",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6264.T",
+  "description": "Precision contract manufacturing company specializing in vacuum chambers, electrodes, and precision parts for semiconductor and FPD manufacturing equipment. Recognized as Tokyo Electron Green Partner.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.marumae.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0004"],
+  "_externalRelationships": {
+    "majorClients": ["Tokyo Electron (CMP-0004)", "NHK Spring"],
+    "notes": "E-COMPASS Green Partner certification from Tokyo Electron. Strong in small-lot, multi-variety machining."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Shared Research, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

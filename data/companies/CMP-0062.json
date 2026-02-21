@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0062",
+  "companyName": "Tazmo Co., Ltd.",
+  "companyNameJapanese": "タツモ株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6266.T",
+  "description": "Coating process equipment manufacturer. Produces coaters, developers, and lamination/peeling equipment for semiconductor and FPD manufacturing based on thin film technology.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.tazmo.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["Semiconductor manufacturers", "FPD manufacturers"],
+    "notes": "Thin film process technology core. Coater, developer, clean transport systems. FPD demand fluctuating."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "IFIS, Buffett Code",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0040",
+  "companyName": "FUJIFILM Holdings Corporation",
+  "companyNameJapanese": "富士フイルムホールディングス株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4901.T",
+  "description": "Diversified company with major semiconductor materials division. Supplies photoresist, CMP slurry (world #1 in copper CMP), process chemicals. Target 5T JPY semiconductor sales by 2030.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.fujifilm.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung", "Intel"],
+    "notes": "World #1 in copper CMP slurry. PFAS-free ArF resist developed 2025. 'Ultimate customer service' for TSMC."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "EE Times Japan, Nikkei xTech",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

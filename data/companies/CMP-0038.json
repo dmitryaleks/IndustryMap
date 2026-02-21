@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0038",
+  "companyName": "Gun Ei Chemical Industry Co., Ltd.",
+  "companyNameJapanese": "群栄化学工業株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4229.T",
+  "description": "Supplies photoresist polymers (novolac resins) for semiconductor manufacturing. Strong in phenol resin-based chemistry. Expanding production capacity for growing demand.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.gunei-chemical.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0033", "CMP-0034"],
+  "_externalRelationships": {
+    "majorClients": ["Major photoresist manufacturers"],
+    "notes": "High market share in photoresist polymers. Full wavelength lineup from i-line to EUV. New factory 2025."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Kabutan, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

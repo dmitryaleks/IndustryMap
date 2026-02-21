@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0049",
+  "companyName": "Dai Nippon Printing Co., Ltd.",
+  "companyNameJapanese": "大日本印刷株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "7912.T",
+  "description": "Major photomask manufacturer competing with TOPPAN. 300B JPY investment in photomask business 2026-28. Developing 2nm EUV and high-NA EUV photomasks.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.dnp.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0015"],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung", "Intel", "Rapidus"],
+    "notes": "EUV photomask mass production 2027. High-NA EUV basic evaluation completed 2025. Lead frames also produced."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Newswitch, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

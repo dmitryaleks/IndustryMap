@@ -1,0 +1,31 @@
+{
+  "id": "CMP-0047",
+  "companyName": "TOPPAN Holdings Inc.",
+  "companyNameJapanese": "TOPPANホールディングス株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "7911.T",
+  "description": "World-leading photomask manufacturer through subsidiary Tekscend Photomask (formerly Toppan Photomask). Joint EUV photomask R&D with IBM. Planning 2nm photomask production by 2026.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.holdings.toppan.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0015"],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung", "Intel", "Rapidus"],
+    "rdPartners": ["IBM (EUV photomask since 2024)"],
+    "notes": "Tekscend Photomask renamed Nov 2024. 2nm EUV photomask for Rapidus. High-NA EUV development."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "PR Times, Nikkei xTech",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

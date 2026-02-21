@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0031",
+  "companyName": "Tocalo Co., Ltd.",
+  "companyNameJapanese": "トーカロ株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "3433.T",
+  "description": "Japan's leading thermal spray coating company. Provides surface treatment for semiconductor manufacturing equipment parts. 27% of sales to Tokyo Electron group.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.tocalo.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0004"],
+  "_externalRelationships": {
+    "majorClients": ["Tokyo Electron (CMP-0004) - 27% of sales", "Applied Materials"],
+    "notes": "Domestic #1 in thermal spray coating. Engineering-type service rather than simple coating."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Note.com, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

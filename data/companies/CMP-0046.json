@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0046",
+  "companyName": "Sumitomo Chemical Co., Ltd.",
+  "companyNameJapanese": "住友化学株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4005.T",
+  "description": "Major chemical company with significant photoresist business. Full lineup from i-line to EUV photoresist (Sumilever brand). Targeting 1T JPY operating profit by 2030.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.sumitomo-chem.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung", "Intel"],
+    "notes": "1000B JPY semiconductor material investment. Expanding EUV resist production. Osaka plant evaluation facility 2025-26."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Dempa Digital, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0032",
+  "companyName": "Nippon Sanso Holdings Corporation",
+  "companyNameJapanese": "日本酸素ホールディングス株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4091.T",
+  "description": "Japan's largest industrial gas company, part of Mitsubishi Chemical Group. World top 3 for electronics-related gases. Supplies specialty gases and bulk gases for semiconductor manufacturing.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.nipponsanso-hd.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "_externalRelationships": {
+    "majorClients": ["TSMC", "Samsung", "Intel", "Leading semiconductor fabs"],
+    "notes": "Supplying gases for Rapidus pilot line. Developing ultra-high-purity air separation equipment for new fabs."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Kabutan, Company IR",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

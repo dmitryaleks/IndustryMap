@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0035",
+  "companyName": "Maruzen Petrochemical Co., Ltd.",
+  "companyNameJapanese": "丸善石油化学株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "4634.T",
+  "description": "World's top supplier of photoresist polymers for KrF, ArF, and EUV applications. Subsidiary of Cosmo Energy. Started manufacturing photoresist polymers in 1997.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.chemiway.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0033", "CMP-0034"],
+  "_externalRelationships": {
+    "majorClients": ["Tokyo Ohka Kogyo (CMP-0033)", "JSR (CMP-0034)", "Major photoresist manufacturers"],
+    "notes": "World #1 share in advanced photoresist polymers. Critical upstream supplier for EUV photoresist."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Company Sustainability Report",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

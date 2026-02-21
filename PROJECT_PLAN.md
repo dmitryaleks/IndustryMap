@@ -470,6 +470,41 @@ Notes:
   - Force-directed layout with draggable nodes
   - Hover highlights connected subgraph
 [SESSION END]
+
+[SESSION START]
+Date: 2026-02-21 (continued)
+Agent: Claude Code (Opus 4.5)
+Current Phase: Wave 3 - Japanese Vendor Deep Research
+Tasks Completed This Session:
+  - Deep research of Japanese suppliers to existing database companies
+  - Searched in Japanese: Shikiho reports, IR pages, Nikkei, forums
+  - Added 34 new Japanese vendor companies (CMP-0029 to CMP-0062)
+  - Total database now 62 companies, 51 Japanese
+Wave 3 Companies Added:
+  - Equipment Parts: Naigai Tech, Marumae, Tocalo, CKD, PILLAR, Aval Data
+  - Gases: Nippon Sanso, Kanto Denka
+  - Photoresist: Tokyo Ohka Kogyo, JSR, Sumitomo Chemical, Maruzen Petrochemical, Gun Ei
+  - Chemicals: Stella Chemifa (HF acid), MEC (etching)
+  - CMP/Cleaning: Ebara, Shibaura Mechatronics
+  - Ceramics: NGK Insulators, Niterra (NTK Ceratec)
+  - Ultrapure Water: Organo, Nomura Micro Science
+  - Substrates: Ibiden (world #1 AI server), Nagase
+  - Lithography: Nikon, Canon (nanoimprint), Ushio (UV lamps)
+  - Photomask: TOPPAN, DNP
+  - Transport: Rorze, Daifuku
+  - Others: Fujifilm, NHK Spring, Samco, Tazmo
+Key Findings:
+  - Tokyo Ohka Kogyo + JSR: 50% of global photoresist
+  - Stella Chemifa: Only company achieving 12-nine HF purity
+  - Ibiden: Near-monopoly in AI server IC package substrates
+  - Organo: Nearly exclusive TSMC ultrapure water supplier
+  - Naigai Tech: 80% of sales to Tokyo Electron group
+  - Daifuku: Near-monopoly in advanced node cleanroom transport
+Tasks Remaining:
+  - Update graph.json with new companies and relationships
+  - Rebuild visualization with expanded network
+  - Phase 5: Analytics
+[SESSION END]
 ```
 
 ---
@@ -483,16 +518,21 @@ Notes:
 | Phase 1: Foundation | [DONE] | 100% |
 | Phase 2: Wave 1 Data | [DONE] | 100% |
 | Phase 3: Wave 2+ Data | [DONE] | 100% |
-| Phase 4: Graph | [DONE] | 100% |
+| Phase 4: Graph | [IN_PROGRESS] | 50% (needs Wave 3 update) |
 | Phase 5: Analytics | [PENDING] | 0% |
 
-**Database Stats:** 28 companies, 5 countries, 68 relationships, full supply chain from silicon wafers to consumer products
+**Database Stats:** 62 companies, 51 Japanese, 5 countries, deep supply chain coverage
+
+**Wave Summary:**
+- Wave 1: 16 Japanese seed companies
+- Wave 2: 12 global customers/suppliers
+- Wave 3: 34 Japanese vendors (deep research in Japanese)
 
 **Graph Files:**
-- `data/graph.json` - Graph data structure with nodes, edges, and statistics
+- `data/graph.json` - Needs update with Wave 3 companies
 - `output/supply_chain.html` - Interactive D3.js visualization
 
-**Next Action:** Run analytics (concentration risk, financial correlation, industry segmentation)
+**Next Action:** Update graph with Wave 3 companies, rebuild visualization, run analytics
 
 ---
 

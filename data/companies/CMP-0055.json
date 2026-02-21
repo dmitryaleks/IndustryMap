@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0055",
+  "companyName": "NHK Spring Co., Ltd.",
+  "companyNameJapanese": "日本発条株式会社",
+  "industryCode": "Semiconductor Materials",
+  "ticker": "5991.T",
+  "description": "Major spring and precision parts manufacturer. 50% world share in HDD suspensions. Expanding semiconductor process parts using bonding technology.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.nhkspg.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [],
+  "_externalRelationships": {
+    "majorClients": ["HDD manufacturers", "Semiconductor equipment manufacturers"],
+    "notes": "Nippatus brand. 50% HDD suspension share. Semiconductor etching/deposition parts growing rapidly."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Shared Research, Company IR",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

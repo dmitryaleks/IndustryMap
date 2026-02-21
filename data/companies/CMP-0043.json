@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0043",
+  "companyName": "CKD Corporation",
+  "companyNameJapanese": "CKD株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6407.T",
+  "description": "Manufacturer of pneumatic valves, actuators, and flow control equipment for semiconductor manufacturing. Supplies fluid control units and mass flow controllers.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.ckd.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0004", "CMP-0003"],
+  "_externalRelationships": {
+    "majorClients": ["Semiconductor equipment manufacturers"],
+    "notes": "Pneumatic cylinders, valves, flow controllers. High-precision control for clean environments."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Company IR",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

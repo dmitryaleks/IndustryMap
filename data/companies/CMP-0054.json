@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0054",
+  "companyName": "Aval Data Corporation",
+  "companyNameJapanese": "アバールデータ株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6918.T",
+  "description": "Industrial electronics manufacturer. Supplies image processing modules and inspection equipment for semiconductor manufacturing. Near-infrared camera technology for defect detection.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.avaldata.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0004", "CMP-0050"],
+  "_externalRelationships": {
+    "majorClients": ["Tokyo Electron", "Nikon", "Semiconductor equipment manufacturers"],
+    "notes": "80% of sales from contract manufacturing. Sony image sensors for cameras. Non-destructive inspection."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Buffett Code, Company profile",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}

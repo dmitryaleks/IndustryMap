@@ -1,0 +1,30 @@
+{
+  "id": "CMP-0041",
+  "companyName": "Rorze Corporation",
+  "companyNameJapanese": "ローツェ株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6323.T",
+  "description": "World's top-class manufacturer of wafer transfer equipment and robots for semiconductor manufacturing. Headquarters in Fukuyama, Hiroshima. Clean-room transport systems.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.rorze.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0018", "CMP-0017"],
+  "_externalRelationships": {
+    "majorClients": ["Samsung Group", "TSMC", "Major foundries"],
+    "notes": "Dust-free transport robots critical for front-end processes. Taiwan, Korea, US are large customers."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T17:00:00Z",
+    "dataSource": "Company IR, Kabutan",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T17:00:00Z",
+    "wave": 3
+  }
+}
