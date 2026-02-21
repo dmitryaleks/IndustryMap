@@ -16,243 +16,74 @@ EVAL_FILE    = os.path.join(BASE, "evaluation_progress.json")
 COMPANY_DIR  = os.path.join(BASE, "data", "companies")
 OUT_FILE     = os.path.join(BASE, "output", "supply_chain.html")
 
-
-# ─── Edge label overrides (curated from prior work) ──────────────────────────
-EDGE_LABELS = {
-    ("CMP-0024","CMP-0017"): "silicon wafers",
-    ("CMP-0025","CMP-0017"): "silicon wafers",
-    ("CMP-0004","CMP-0017"): "coater/developers, etch, CVD",
-    ("CMP-0003","CMP-0017"): "wafer cleaning",
-    ("CMP-0007","CMP-0017"): "CMP slurry",
-    ("CMP-0013","CMP-0017"): "CMP slurry",
-    ("CMP-0015","CMP-0017"): "photomask blanks",
-    ("CMP-0017","CMP-0022"): "chip manufacturing",
-    ("CMP-0017","CMP-0028"): "chip manufacturing",
-    ("CMP-0024","CMP-0018"): "silicon wafers",
-    ("CMP-0025","CMP-0018"): "silicon wafers",
-    ("CMP-0004","CMP-0018"): "deposition equipment",
-    ("CMP-0005","CMP-0018"): "test equipment",
-    ("CMP-0006","CMP-0018"): "EUV mask inspection",
-    ("CMP-0011","CMP-0018"): "batch deposition",
-    ("CMP-0015","CMP-0018"): "photomask blanks",
-    ("CMP-0013","CMP-0018"): "CMP slurry",
-    ("CMP-0024","CMP-0019"): "silicon wafers",
-    ("CMP-0025","CMP-0019"): "silicon wafers",
-    ("CMP-0004","CMP-0019"): "deposition equipment",
-    ("CMP-0006","CMP-0019"): "EUV mask inspection",
-    ("CMP-0011","CMP-0019"): "batch deposition",
-    ("CMP-0015","CMP-0019"): "photomask blanks",
-    ("CMP-0013","CMP-0019"): "CMP slurry",
-    ("CMP-0024","CMP-0020"): "silicon wafers",
-    ("CMP-0025","CMP-0020"): "silicon wafers",
-    ("CMP-0004","CMP-0020"): "deposition equipment",
-    ("CMP-0005","CMP-0020"): "test equipment",
-    ("CMP-0011","CMP-0020"): "batch deposition",
-    ("CMP-0015","CMP-0020"): "photomask blanks",
-    ("CMP-0020","CMP-0028"): "HBM memory",
-    ("CMP-0024","CMP-0021"): "silicon wafers",
-    ("CMP-0025","CMP-0021"): "silicon wafers",
-    ("CMP-0005","CMP-0021"): "test equipment",
-    ("CMP-0011","CMP-0021"): "batch deposition",
-    ("CMP-0014","CMP-0022"): "NAND flash",
-    ("CMP-0011","CMP-0014"): "batch deposition",
-    ("CMP-0026","CMP-0017"): "EUV lithography",
-    ("CMP-0026","CMP-0018"): "EUV lithography",
-    ("CMP-0026","CMP-0019"): "EUV lithography",
-    ("CMP-0026","CMP-0020"): "EUV lithography",
-    ("CMP-0026","CMP-0021"): "EUV lithography",
-    ("CMP-0007","CMP-0019"): "CMP slurry",
-    ("CMP-0005","CMP-0017"): "test equipment",
-    ("CMP-0006","CMP-0017"): "EUV mask inspection",
-    ("CMP-0001","CMP-0002"): "dicing equipment",
-    ("CMP-0002","CMP-0001"): "dicing equipment",
-    ("CMP-0024","CMP-0025"): "silicon wafers",
-    ("CMP-0025","CMP-0024"): "silicon wafers",
-    ("CMP-0014","CMP-0023"): "Yokkaichi/Kitakami JV",
-    ("CMP-0023","CMP-0014"): "Yokkaichi/Kitakami JV",
-    ("CMP-0018","CMP-0020"): "memory",
-    ("CMP-0018","CMP-0021"): "memory",
-    ("CMP-0006","CMP-0026"): "EUV inspection + lithography",
-    ("CMP-0026","CMP-0006"): "EUV lithography + inspection",
-    ("CMP-0015","CMP-0026"): "EUV blanks + lithography",
-    ("CMP-0026","CMP-0015"): "EUV lithography + blanks",
-    ("CMP-0010","CMP-0017"): "photoresist materials",
-    ("CMP-0010","CMP-0018"): "photoresist materials",
-    ("CMP-0010","CMP-0019"): "photoresist materials",
-    ("CMP-0008","CMP-0017"): "semiconductor materials",
-    ("CMP-0008","CMP-0018"): "semiconductor materials",
-    ("CMP-0008","CMP-0019"): "semiconductor materials",
-    ("CMP-0029","CMP-0004"): "precision machining parts (80%)",
-    ("CMP-0030","CMP-0004"): "aluminum vacuum chambers",
-    ("CMP-0030","CMP-0003"): "aluminum vacuum chambers",
-    ("CMP-0031","CMP-0004"): "thermal spray coating",
-    ("CMP-0031","CMP-0003"): "thermal spray coating",
-    ("CMP-0032","CMP-0017"): "specialty gases",
-    ("CMP-0032","CMP-0018"): "specialty gases",
-    ("CMP-0032","CMP-0019"): "specialty gases",
-    ("CMP-0032","CMP-0020"): "specialty gases",
-    ("CMP-0032","CMP-0021"): "specialty gases",
-    ("CMP-0033","CMP-0017"): "photoresist (25% world)",
-    ("CMP-0033","CMP-0018"): "photoresist",
-    ("CMP-0033","CMP-0019"): "photoresist",
-    ("CMP-0034","CMP-0017"): "EUV photoresist",
-    ("CMP-0034","CMP-0018"): "EUV photoresist",
-    ("CMP-0034","CMP-0019"): "EUV photoresist",
-    ("CMP-0035","CMP-0034"): "high-purity aromatics",
-    ("CMP-0035","CMP-0033"): "high-purity aromatics",
-    ("CMP-0036","CMP-0017"): "CMP systems, vacuum pumps",
-    ("CMP-0036","CMP-0018"): "CMP systems, vacuum pumps",
-    ("CMP-0036","CMP-0019"): "CMP systems, vacuum pumps",
-    ("CMP-0037","CMP-0017"): "ceramic electrostatic chucks",
-    ("CMP-0037","CMP-0018"): "ceramic electrostatic chucks",
-    ("CMP-0038","CMP-0033"): "photosensitive resin",
-    ("CMP-0038","CMP-0034"): "photosensitive resin",
-    ("CMP-0039","CMP-0017"): "IC package substrates",
-    ("CMP-0039","CMP-0018"): "IC package substrates",
-    ("CMP-0040","CMP-0017"): "CMP slurry, photoresist",
-    ("CMP-0040","CMP-0018"): "CMP slurry, photoresist",
-    ("CMP-0041","CMP-0004"): "wafer transfer robots",
-    ("CMP-0041","CMP-0003"): "wafer transfer robots",
-    ("CMP-0041","CMP-0017"): "wafer handling systems",
-    ("CMP-0042","CMP-0004"): "mechanical seals, bellows",
-    ("CMP-0042","CMP-0003"): "mechanical seals, bellows",
-    ("CMP-0043","CMP-0004"): "pneumatic valves",
-    ("CMP-0043","CMP-0003"): "pneumatic valves",
-    ("CMP-0043","CMP-0011"): "pneumatic valves",
-    ("CMP-0044","CMP-0017"): "12-nine purity HF acid",
-    ("CMP-0044","CMP-0018"): "12-nine purity HF acid",
-    ("CMP-0044","CMP-0019"): "ultra-high purity HF",
-    ("CMP-0044","CMP-0020"): "ultra-high purity HF",
-    ("CMP-0044","CMP-0021"): "ultra-high purity HF",
-    ("CMP-0045","CMP-0017"): "specialty fluorine gases",
-    ("CMP-0045","CMP-0018"): "specialty fluorine gases",
-    ("CMP-0046","CMP-0017"): "photoresist",
-    ("CMP-0046","CMP-0018"): "photoresist",
-    ("CMP-0047","CMP-0017"): "EUV photomasks",
-    ("CMP-0047","CMP-0026"): "EUV photomask production",
-    ("CMP-0026","CMP-0047"): "EUV lithography + masks",
-    ("CMP-0048","CMP-0028"): "AI server IC substrates (50%+)",
-    ("CMP-0048","CMP-0017"): "high-end FC-BGA substrates",
-    ("CMP-0049","CMP-0026"): "nanoimprint lithography",
-    ("CMP-0049","CMP-0017"): "photomask production",
-    ("CMP-0026","CMP-0049"): "nanoimprint partnership",
-    ("CMP-0050","CMP-0017"): "i-line/KrF steppers",
-    ("CMP-0050","CMP-0018"): "lithography equipment",
-    ("CMP-0050","CMP-0026"): "lithography equipment",
-    ("CMP-0026","CMP-0050"): "lithography equipment",
-    ("CMP-0051","CMP-0017"): "i-line/KrF steppers",
-    ("CMP-0051","CMP-0018"): "lithography equipment",
-    ("CMP-0051","CMP-0019"): "nanoimprint lithography",
-    ("CMP-0051","CMP-0026"): "lithography equipment",
-    ("CMP-0026","CMP-0051"): "lithography equipment",
-    ("CMP-0052","CMP-0017"): "ultrapure water systems",
-    ("CMP-0052","CMP-0018"): "ultrapure water systems",
-    ("CMP-0053","CMP-0017"): "ultrapure water systems",
-    ("CMP-0053","CMP-0020"): "ultrapure water systems",
-    ("CMP-0054","CMP-0005"): "tester boards/probes",
-    ("CMP-0054","CMP-0018"): "test equipment components",
-    ("CMP-0055","CMP-0005"): "probe card springs",
-    ("CMP-0055","CMP-0017"): "HDD suspension (50%)",
-    ("CMP-0056","CMP-0017"): "cleanroom AMHS",
-    ("CMP-0056","CMP-0018"): "cleanroom AMHS",
-    ("CMP-0056","CMP-0019"): "cleanroom AMHS",
-    ("CMP-0057","CMP-0048"): "copper surface treatment",
-    ("CMP-0057","CMP-0017"): "PCB surface treatment",
-    ("CMP-0058","CMP-0033"): "chemical distribution",
-    ("CMP-0058","CMP-0034"): "chemical distribution",
-    ("CMP-0058","CMP-0017"): "electronic chemicals",
-    ("CMP-0059","CMP-0017"): "plasma processing equipment",
-    ("CMP-0059","CMP-0018"): "plasma processing equipment",
-    ("CMP-0060","CMP-0017"): "plasma CVD equipment",
-    ("CMP-0060","CMP-0018"): "dry etching equipment",
-    ("CMP-0061","CMP-0050"): "i-line UV lamps (75%)",
-    ("CMP-0061","CMP-0051"): "i-line UV lamps",
-    ("CMP-0062","CMP-0017"): "coater/developer equipment",
-    ("CMP-0062","CMP-0018"): "coating equipment",
-    # Wave 4
-    ("CMP-0001","CMP-0017"): "probing, dicing, CMP equipment",
-    ("CMP-0001","CMP-0018"): "probing, dicing equipment",
-    ("CMP-0001","CMP-0019"): "probing, dicing equipment",
-    ("CMP-0001","CMP-0020"): "probing, dicing equipment",
-    ("CMP-0001","CMP-0021"): "probing, dicing equipment",
-    ("CMP-0001","CMP-0014"): "probing, dicing equipment",
-    ("CMP-0001","CMP-0063"): "dicing, probing (OSAT #1)",
-    ("CMP-0001","CMP-0064"): "dicing, probing (OSAT #2)",
-    ("CMP-0001","CMP-0065"): "dicing, probing (China OSAT #1)",
-    ("CMP-0001","CMP-0066"): "CMP, probing, dicing (China foundry #1)",
-    ("CMP-0001","CMP-0067"): "dicing, probing (China OSAT #2)",
-    ("CMP-0001","CMP-0068"): "dicing, probing (China OSAT #3)",
-    ("CMP-0001","CMP-0069"): "dicing, probing (Taiwan memory OSAT)",
-    ("CMP-0001","CMP-0070"): "CMP, probing (China foundry #2)",
-    ("CMP-0002","CMP-0063"): "dicing saws, blades",
-    ("CMP-0002","CMP-0064"): "dicing saws, blades",
-    ("CMP-0002","CMP-0065"): "dicing saws, blades",
-    ("CMP-0002","CMP-0067"): "dicing saws, blades",
-    ("CMP-0002","CMP-0068"): "dicing saws, blades",
-    ("CMP-0002","CMP-0069"): "dicing saws, blades",
-    ("CMP-0004","CMP-0066"): "coater/developer, etch, CVD",
-    ("CMP-0004","CMP-0070"): "deposition equipment",
-    ("CMP-0011","CMP-0066"): "batch deposition",
-    ("CMP-0026","CMP-0066"): "DUV lithography",
-    ("CMP-0005","CMP-0063"): "test equipment",
-    ("CMP-0005","CMP-0064"): "test equipment",
-    ("CMP-0072","CMP-0020"): "TC bonders for HBM (71% share)",
-    ("CMP-0072","CMP-0021"): "TC bonders for HBM",
-    ("CMP-0072","CMP-0063"): "flip chip bonders",
-    ("CMP-0069","CMP-0021"): "memory packaging (key Micron supplier)",
-    ("CMP-0066","CMP-0065"): "SMIC is JCET 2nd largest shareholder",
-    ("CMP-0065","CMP-0066"): "JCET packaging for SMIC chips",
-    ("CMP-0001","CMP-0071"): "probing equipment",
-    ("CMP-0071","CMP-0001"): "probing equipment",
-    ("CMP-0001","CMP-0073"): "probing (China domestic)",
-    ("CMP-0073","CMP-0001"): "probing (China domestic)",
-    ("CMP-0001","CMP-0074"): "dicing equipment",
-    ("CMP-0074","CMP-0001"): "dicing equipment",
-    ("CMP-0002","CMP-0074"): "dicing equipment",
-    ("CMP-0074","CMP-0002"): "dicing equipment",
-    ("CMP-0001","CMP-0072"): "package singulation",
-    ("CMP-0072","CMP-0001"): "package singulation",
-    ("CMP-0001","CMP-0005"): "die-level prober joint dev (2025)",
-    ("CMP-0005","CMP-0001"): "die-level prober joint dev (2025)",
-    ("CMP-0063","CMP-0064"): "OSAT services",
-    ("CMP-0063","CMP-0065"): "OSAT services",
-    # Wave 5 Korean
-    ("CMP-0001","CMP-0075"): "probing, dicing (Korea foundry)",
-    ("CMP-0001","CMP-0076"): "probing, dicing (Korea OSAT #1)",
-    ("CMP-0001","CMP-0077"): "probing, dicing (Korea OSAT)",
-    ("CMP-0001","CMP-0078"): "probing, dicing (Samsung backend)",
-    ("CMP-0001","CMP-0079"): "probing, dicing (DDI specialist)",
-    ("CMP-0001","CMP-0083"): "probing, dicing (China foundry)",
-    ("CMP-0001","CMP-0084"): "probing, dicing (China IDM)",
-    ("CMP-0001","CMP-0093"): "probing, dicing (YMTC)",
-    ("CMP-0001","CMP-0094"): "probing, dicing (CanSemi)",
-    ("CMP-0001","CMP-0095"): "probing, dicing (GTA Semi)",
-    ("CMP-0076","CMP-0018"): "OSAT for Samsung",
-    ("CMP-0076","CMP-0020"): "OSAT for SK Hynix",
-    ("CMP-0078","CMP-0018"): "OSAT for Samsung",
-    ("CMP-0080","CMP-0018"): "test handlers",
-    ("CMP-0080","CMP-0020"): "test handlers",
-    ("CMP-0081","CMP-0018"): "CMP equipment (Korea only)",
-    ("CMP-0081","CMP-0020"): "CMP equipment",
-    ("CMP-0082","CMP-0017"): "probe components",
-    ("CMP-0082","CMP-0018"): "probe components, test sockets",
-    ("CMP-0082","CMP-0028"): "test sockets for AI chips",
-    ("CMP-0085","CMP-0066"): "deposition/etch equipment",
-    ("CMP-0085","CMP-0070"): "deposition/etch equipment",
-    ("CMP-0088","CMP-0066"): "CMP equipment (Huahai Qingke)",
-    ("CMP-0088","CMP-0070"): "CMP equipment",
-    ("CMP-0090","CMP-0066"): "fabless IC design client",
-    ("CMP-0090","CMP-0083"): "fabless IC design client",
-    ("CMP-0093","CMP-0088"): "CMP equipment for YMTC",
-    ("CMP-0100","CMP-0075"): "used semiconductor equipment",
-    ("CMP-0001","CMP-0002"): "dicing equipment",
-    ("CMP-0002","CMP-0001"): "dicing equipment",
+# ── critical nodes get larger radius + white stroke ──────────────────────────
+CRITICAL_IDS = {
+    "CMP-0001", "CMP-0004", "CMP-0006", "CMP-0013", "CMP-0024",
+    "CMP-0028", "CMP-0035", "CMP-0042", "CMP-0044", "CMP-0056",
+    "CMP-0003", "CMP-0005", "CMP-0007", "CMP-0017", "CMP-0029",
 }
 
-CRITICAL_IDS = {
-    "CMP-0006", "CMP-0017", "CMP-0024", "CMP-0025", "CMP-0026",
-    "CMP-0033", "CMP-0044", "CMP-0048", "CMP-0052", "CMP-0056",
-    "CMP-0061", "CMP-0001", "CMP-0072", "CMP-0015", "CMP-0004",
+# ── curated edge labels ───────────────────────────────────────────────────────
+EDGE_LABELS = {
+    ("CMP-0001","CMP-0017"): "prober customer",
+    ("CMP-0001","CMP-0018"): "prober customer",
+    ("CMP-0001","CMP-0019"): "prober customer",
+    ("CMP-0001","CMP-0020"): "prober customer",
+    ("CMP-0001","CMP-0021"): "prober customer",
+    ("CMP-0001","CMP-0022"): "CMM tools",
+    ("CMP-0001","CMP-0028"): "prober+CMM buyer",
+    ("CMP-0002","CMP-0017"): "dicing blades",
+    ("CMP-0002","CMP-0018"): "dicing blades",
+    ("CMP-0002","CMP-0019"): "dicing blades",
+    ("CMP-0003","CMP-0017"): "wafer polishing",
+    ("CMP-0003","CMP-0018"): "wafer polishing",
+    ("CMP-0004","CMP-0017"): "etch/CVD tools",
+    ("CMP-0004","CMP-0018"): "etch/CVD tools",
+    ("CMP-0004","CMP-0019"): "etch/CVD tools",
+    ("CMP-0004","CMP-0020"): "etch/CVD tools",
+    ("CMP-0004","CMP-0028"): "GPU fab tools",
+    ("CMP-0005","CMP-0017"): "test handlers",
+    ("CMP-0005","CMP-0018"): "test handlers",
+    ("CMP-0006","CMP-0017"): "mask inspection",
+    ("CMP-0006","CMP-0018"): "mask inspection",
+    ("CMP-0006","CMP-0019"): "mask inspection",
+    ("CMP-0007","CMP-0017"): "wafer cleaning",
+    ("CMP-0007","CMP-0018"): "wafer cleaning",
+    ("CMP-0008","CMP-0017"): "photoresist",
+    ("CMP-0008","CMP-0018"): "photoresist",
+    ("CMP-0009","CMP-0017"): "specialty gases",
+    ("CMP-0010","CMP-0017"): "HF etchant",
+    ("CMP-0011","CMP-0017"): "wafer substrate",
+    ("CMP-0012","CMP-0017"): "photomask blanks",
+    ("CMP-0013","CMP-0002"): "CMP slurry",
+    ("CMP-0013","CMP-0003"): "CMP slurry",
+    ("CMP-0013","CMP-0017"): "CMP slurry",
+    ("CMP-0013","CMP-0018"): "CMP slurry",
+    ("CMP-0013","CMP-0019"): "CMP slurry",
+    ("CMP-0024","CMP-0017"): "silicon wafers",
+    ("CMP-0024","CMP-0018"): "silicon wafers",
+    ("CMP-0024","CMP-0019"): "silicon wafers",
+    ("CMP-0024","CMP-0020"): "silicon wafers",
+    ("CMP-0028","CMP-0017"): "GPU design→fab",
+    ("CMP-0028","CMP-0019"): "GPU design→fab",
+    ("CMP-0044","CMP-0009"): "fluorine supply",
+    ("CMP-0044","CMP-0017"): "HF etchant",
+    ("CMP-0044","CMP-0018"): "HF etchant",
+    ("CMP-0056","CMP-0017"): "fab AMHS",
+    ("CMP-0056","CMP-0018"): "fab AMHS",
+    ("CMP-0056","CMP-0019"): "fab AMHS",
+}
+
+# ── country colour palette ────────────────────────────────────────────────────
+COUNTRY_COLORS = {
+    "Japan":       "#ef4444",
+    "USA":         "#3b82f6",
+    "South Korea": "#22c55e",
+    "Taiwan":      "#f59e0b",
+    "China":       "#f97316",
+    "Hong Kong":   "#06b6d4",
+    "Netherlands": "#8b5cf6",
+    "Unknown":     "#6b7280",
 }
 
 
@@ -267,831 +98,750 @@ def assign_wave(cid):
 
 
 def load_data():
-    with open(GRAPH_FILE, encoding="utf-8") as f:
+    with open(GRAPH_FILE, "r", encoding="utf-8") as f:
         graph = json.load(f)
-    with open(EVAL_FILE, encoding="utf-8") as f:
-        eval_prog = json.load(f)
+    with open(EVAL_FILE, "r", encoding="utf-8") as f:
+        eval_data = json.load(f)
 
-    # Company files: id -> full record
-    company_map = {}
+    # Index evaluation data by id
+    eval_map = {c["id"]: c for c in eval_data.get("companies", [])}
+
+    # Load individual company files
+    comp_map = {}
     for fp in glob.glob(os.path.join(COMPANY_DIR, "CMP-*.json")):
-        with open(fp, encoding="utf-8") as f:
+        with open(fp, "r", encoding="utf-8") as f:
             c = json.load(f)
-        company_map[c["id"]] = c
+        comp_map[c["id"]] = c
 
-    # Eval map: ticker -> eval entry, also id -> eval entry
-    eval_by_id = {c["id"]: c for c in eval_prog["companies"]}
-
-    return graph, company_map, eval_by_id, eval_prog
+    return graph, eval_map, comp_map, eval_data
 
 
-def build_node_js(graph, company_map, eval_by_id):
-    lines = []
+def score_ring_color(score):
+    if score is None:  return "#6b7280"
+    if score >= 62:    return "#f59e0b"   # gold
+    if score >= 55:    return "#22c55e"   # green
+    if score >= 45:    return "#3b82f6"   # blue
+    return "#6b7280"                       # grey
+
+
+def build_node_js(graph, eval_map, comp_map):
+    rows = []
     for n in graph["nodes"]:
         cid = n["id"]
-        c = company_map.get(cid, {})
-        ev = eval_by_id.get(cid, {})
-        rd = ev.get("researchData", {})
+        ev  = eval_map.get(cid, {})
+        cp  = comp_map.get(cid, {})
+        rd  = ev.get("researchData", {})
 
-        desc = c.get("description") or c.get("desc", "")
-        wave = assign_wave(cid)
-        critical = cid in CRITICAL_IDS
+        score  = ev.get("finalScore")
+        conf   = ev.get("confidenceLabel", "")
+        per    = rd.get("PER") or cp.get("PER")
+        fo     = rd.get("foreignOwnership_pct") or cp.get("percentOfForeignOwnership")
+        ticker = n.get("ticker") or cp.get("ticker") or ""
+        wave   = assign_wave(cid)
+        ring   = score_ring_color(score)
+        crit   = cid in CRITICAL_IDS
 
-        # Eval fields
-        final_score = ev.get("finalScore")
-        confidence  = ev.get("confidence", "")
-        per         = rd.get("PER")
-        fo_pct      = rd.get("foreignOwnership_pct")
-        thesis      = ev.get("investmentThesis", "")
-        raw         = ev.get("rawComposite")
-        scores      = ev.get("scores", {})
-        moat_score  = scores.get("B", {}).get("total")
-
-        node = {
-            "id":          cid,
-            "name":        n["name"],
-            "industry":    n["industry"],
-            "country":     n["country"],
-            "ticker":      n.get("ticker") or "",
-            "wave":        wave,
-            "critical":    critical,
-            "desc":        desc,
-            "finalScore":  final_score,
-            "confidence":  confidence,
-            "per":         per,
-            "foPct":       fo_pct,
-            "thesis":      thesis,
-            "rawScore":    raw,
-            "moatScore":   moat_score,
+        row = {
+            "id":      cid,
+            "name":    n["name"],
+            "ticker":  ticker,
+            "country": n.get("country", "Unknown"),
+            "industry":n.get("industry", ""),
+            "wave":    wave,
+            "score":   score,
+            "conf":    conf,
+            "per":     per,
+            "fo":      fo,
+            "ring":    ring,
+            "crit":    crit,
         }
-        lines.append("                " + json.dumps(node, ensure_ascii=False))
-    return ",\n".join(lines)
+        rows.append(row)
+    return json.dumps(rows, ensure_ascii=False)
 
 
 def build_edge_js(graph):
-    lines = []
+    rows = []
     for e in graph["edges"]:
-        src = e["source"]
-        tgt = e["target"]
-        typ = e.get("type", "supplier")
-        label = EDGE_LABELS.get((src, tgt), "")
-        edge = {"source": src, "target": tgt, "type": typ}
-        if label:
-            edge["label"] = label
-        lines.append("                " + json.dumps(edge, ensure_ascii=False))
-    return ",\n".join(lines)
+        key = (e["source"], e["target"])
+        rows.append({
+            "source": e["source"],
+            "target": e["target"],
+            "type":   e.get("type", "supplier"),
+            "label":  EDGE_LABELS.get(key, ""),
+        })
+    return json.dumps(rows, ensure_ascii=False)
 
 
-def score_color(score):
-    if score is None:
-        return "none"
-    if score >= 62:
-        return "#f59e0b"   # gold — top tier
-    if score >= 55:
-        return "#22c55e"   # green — strong
-    if score >= 45:
-        return "#3b82f6"   # blue — moderate
-    return "#6b7280"       # gray — weak
-
-
-def generate_html(graph, company_map, eval_by_id, eval_prog):
-    stats    = graph["statistics"]
-    total_n  = stats["totalNodes"]
-    total_e  = stats["totalEdges"]
-    edge_t   = stats["edgeTypes"]
-
-    geo = {}
+def build_detail_map(graph, eval_map, comp_map):
+    """Build per-company comprehensive detail objects for the investment card."""
+    # Build adjacency sets keyed by type
+    adj = {}  # cid -> {suppliers:[], clients:[], competitors:[], partners:[], ecosystem:[]}
     for n in graph["nodes"]:
-        geo[n["country"]] = geo.get(n["country"], 0) + 1
-    japan_count = geo.get("Japan", 0)
+        adj[n["id"]] = {"suppliers": [], "clients": [], "competitors": [],
+                        "partners": [], "ecosystem": []}
 
-    node_js = build_node_js(graph, company_map, eval_by_id)
-    edge_js = build_edge_js(graph)
+    id_to_name = {n["id"]: n["name"] for n in graph["nodes"]}
+
+    for e in graph["edges"]:
+        src, tgt, etype = e["source"], e["target"], e.get("type", "supplier")
+        lbl = EDGE_LABELS.get((src, tgt), "")
+        if etype == "supplier":
+            if tgt in adj:
+                adj[tgt]["suppliers"].append({"id": src, "name": id_to_name.get(src, src), "label": lbl})
+            if src in adj:
+                adj[src]["clients"].append({"id": tgt, "name": id_to_name.get(tgt, tgt), "label": lbl})
+        elif etype == "competitor":
+            for x, y in [(src, tgt), (tgt, src)]:
+                if x in adj:
+                    adj[x]["competitors"].append({"id": y, "name": id_to_name.get(y, y), "label": lbl})
+        elif etype == "partner":
+            for x, y in [(src, tgt), (tgt, src)]:
+                if x in adj:
+                    adj[x]["partners"].append({"id": y, "name": id_to_name.get(y, y), "label": lbl})
+        elif etype == "ecosystem":
+            for x, y in [(src, tgt), (tgt, src)]:
+                if x in adj:
+                    adj[x]["ecosystem"].append({"id": y, "name": id_to_name.get(y, y), "label": lbl})
+
+    detail = {}
+    for n in graph["nodes"]:
+        cid = n["id"]
+        ev  = eval_map.get(cid, {})
+        cp  = comp_map.get(cid, {})
+        rd  = ev.get("researchData", {})
+
+        # Score dimensions
+        dims = {}
+        for dim in ["A", "B", "C", "D", "E", "F"]:
+            dkey = f"dim{dim}"
+            d = ev.get(dkey, {})
+            dims[dim] = {
+                "score":  d.get("score"),
+                "max":    d.get("maxPoints"),
+                "label":  d.get("label", ""),
+                "subs":   d.get("subScores", {}),
+                "notes":  d.get("notes", ""),
+            }
+
+        # Financial row helper – prefer research data then company file
+        def f(key_rd, key_cp=None):
+            v = rd.get(key_rd)
+            if v is None and key_cp:
+                v = cp.get(key_cp)
+            return v
+
+        detail[cid] = {
+            "id":       cid,
+            "name":     n["name"],
+            "ticker":   n.get("ticker") or cp.get("ticker") or "",
+            "country":  n.get("country", "Unknown"),
+            "industry": n.get("industry", ""),
+            "wave":     assign_wave(cid),
+            "website":  cp.get("website", ""),
+            "description": cp.get("description", ""),
+            # Scores
+            "finalScore":        ev.get("finalScore"),
+            "rawComposite":      ev.get("rawComposite"),
+            "confidenceLabel":   ev.get("confidenceLabel", ""),
+            "confidenceMult":    ev.get("confidenceMultiplier"),
+            "researchComplete":  ev.get("researchCompleteness_pct"),
+            "dims":              dims,
+            "investmentThesis":  ev.get("investmentThesis", ""),
+            # Financials
+            "marketCapInYen":    f("marketCapInYen", "marketCapInYen"),
+            "latestPriceYen":    f("latestPriceYen", "latestPriceYen"),
+            "weekHigh52":        f("weekHigh52"),
+            "weekLow52":         f("weekLow52"),
+            "PER":               f("PER", "PER"),
+            "forwardPER":        f("forwardPER"),
+            "PBR":               f("PBR", "PBR"),
+            "EPS":               f("EPS", "EPS"),
+            "ROE":               f("ROE"),
+            "dividendYield":     f("dividendYield_pct"),
+            "revenueGrowth":     f("revenueGrowthYoY_pct"),
+            "OPM":               f("operatingMargin_pct"),
+            "foreignOwnership":  f("foreignOwnership_pct", "percentOfForeignOwnership"),
+            "chinaRevenue":      f("chinaRevenue_pct"),
+            "hasBuyback":        f("hasBuyback"),
+            "analystBuy":        f("analystRatings_buy"),
+            "analystHold":       f("analystRatings_hold"),
+            "analystSell":       f("analystRatings_sell"),
+            "forexSensitive":    f("isForexSensitive") if f("isForexSensitive") is not None else cp.get("ifForexSensitive"),
+            # Supply chain
+            "suppliers":    adj[cid]["suppliers"],
+            "clients":      adj[cid]["clients"],
+            "competitors":  adj[cid]["competitors"],
+            "partners":     adj[cid]["partners"],
+            "ecosystem":    adj[cid]["ecosystem"],
+        }
+
+    return json.dumps(detail, ensure_ascii=False)
+
+
+def generate_html(nodes_js, edges_js, detail_js, country_colors):
+    country_colors_js = json.dumps(country_colors, ensure_ascii=False)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semiconductor Supply Chain Map - {total_n} Companies</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0f;
-            color: #e0e0e0;
-            overflow: hidden;
-        }}
-        #container {{ display: flex; height: 100vh; }}
-        #sidebar {{
-            width: 340px;
-            background: #12121a;
-            padding: 20px;
-            overflow-y: auto;
-            border-right: 1px solid #2a2a3a;
-            flex-shrink: 0;
-        }}
-        #graph {{ flex: 1; position: relative; }}
-        h1 {{ font-size: 1.4rem; margin-bottom: 8px; color: #fff; }}
-        .subtitle {{ font-size: 0.85rem; color: #888; margin-bottom: 20px; }}
-        .section {{ margin-bottom: 24px; }}
-        .section-title {{
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666;
-            margin-bottom: 12px;
-        }}
-        .filter-group {{ display: flex; flex-wrap: wrap; gap: 6px; }}
-        .filter-btn {{
-            padding: 6px 12px;
-            font-size: 0.8rem;
-            border: 1px solid #3a3a4a;
-            background: transparent;
-            color: #aaa;
-            border-radius: 16px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }}
-        .filter-btn:hover {{ border-color: #5a5a6a; color: #fff; }}
-        .filter-btn.active {{ background: #2563eb; border-color: #2563eb; color: #fff; }}
-        .legend {{ display: flex; flex-direction: column; gap: 8px; }}
-        .legend-item {{ display: flex; align-items: center; gap: 10px; font-size: 0.85rem; }}
-        .legend-circle {{ width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }}
-        .legend-line {{ width: 30px; height: 3px; border-radius: 2px; flex-shrink: 0; }}
-        .stats-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }}
-        .stat-card {{ background: #1a1a24; padding: 12px; border-radius: 8px; }}
-        .stat-value {{ font-size: 1.5rem; font-weight: 600; color: #fff; }}
-        .stat-label {{ font-size: 0.75rem; color: #888; }}
-        #tooltip {{
-            position: absolute;
-            background: #1a1a24;
-            border: 1px solid #3a3a4a;
-            border-radius: 10px;
-            padding: 14px 16px;
-            font-size: 0.85rem;
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.15s;
-            max-width: 360px;
-            z-index: 1000;
-            line-height: 1.5;
-        }}
-        #tooltip.visible {{ opacity: 1; }}
-        #tooltip h3 {{ font-size: 1rem; margin-bottom: 10px; color: #fff; }}
-        #tooltip .info-row {{
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 4px;
-            gap: 12px;
-        }}
-        #tooltip .info-label {{ color: #888; white-space: nowrap; }}
-        #tooltip .info-value {{ color: #fff; text-align: right; }}
-        #tooltip .divider {{
-            border-top: 1px solid #2a2a3a;
-            margin: 10px 0 8px;
-        }}
-        #tooltip .section-label {{
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #555;
-            margin-bottom: 8px;
-        }}
-        #tooltip .score-bar-container {{
-            background: #0f0f18;
-            border-radius: 4px;
-            height: 8px;
-            margin: 6px 0 10px;
-            overflow: hidden;
-        }}
-        #tooltip .score-bar {{
-            height: 100%;
-            border-radius: 4px;
-            transition: width 0.3s;
-        }}
-        #tooltip .thesis-text {{
-            font-size: 0.78rem;
-            color: #bbb;
-            line-height: 1.55;
-            margin-top: 8px;
-            padding-top: 8px;
-            border-top: 1px solid #2a2a3a;
-            max-height: 130px;
-            overflow-y: auto;
-        }}
-        #tooltip .desc-text {{
-            margin-top: 10px;
-            padding-top: 8px;
-            border-top: 1px solid #2a2a3a;
-            font-size: 0.78rem;
-            color: #aaa;
-            line-height: 1.5;
-            max-height: 90px;
-            overflow-y: auto;
-        }}
-        #tooltip .confidence-badge {{
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-size: 0.72rem;
-            font-weight: 600;
-        }}
-        .conf-High       {{ background: #064e3b; color: #34d399; }}
-        .conf-Medium     {{ background: #1e3a5f; color: #60a5fa; }}
-        .conf-Low        {{ background: #3b1f00; color: #fb923c; }}
-        .conf-Very-Low   {{ background: #2d1b4e; color: #a78bfa; }}
-        .node {{ cursor: pointer; }}
-        .node text {{ font-size: 10px; fill: #ccc; pointer-events: none; }}
-        .link {{ fill: none; stroke-opacity: 0.3; }}
-        .link.supplier   {{ stroke: #3b82f6; }}
-        .link.competitor {{ stroke: #ef4444; }}
-        .link.partner    {{ stroke: #22c55e; }}
-        .link.ecosystem  {{ stroke: #a855f7; }}
-        .link.highlighted {{ stroke-opacity: 1 !important; stroke-width: 3px !important; }}
-        .node.dimmed circle, .node.dimmed ellipse {{ opacity: 0.15; }}
-        .node.dimmed text  {{ opacity: 0.15; }}
-        .link.dimmed       {{ stroke-opacity: 0.03 !important; }}
-        #controls {{
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 8px;
-        }}
-        .control-btn {{
-            width: 40px; height: 40px;
-            border: 1px solid #3a3a4a;
-            background: #12121a;
-            color: #aaa;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }}
-        .control-btn:hover {{ background: #1a1a24; color: #fff; }}
-        .critical-badge {{
-            background: #dc2626; color: white;
-            font-size: 0.65rem; padding: 2px 6px;
-            border-radius: 4px; margin-left: 6px;
-        }}
-        #search {{
-            width: 100%; padding: 10px 14px;
-            background: #1a1a24;
-            border: 1px solid #3a3a4a;
-            border-radius: 8px;
-            color: #fff; font-size: 0.9rem;
-            margin-bottom: 20px;
-        }}
-        #search:focus {{ outline: none; border-color: #2563eb; }}
-        #search::placeholder {{ color: #666; }}
-        .critical-scroll {{ max-height: 200px; overflow-y: auto; }}
-        .wave-badge {{ font-size: 0.65rem; padding: 2px 6px; border-radius: 4px; margin-left: 4px; }}
-        .wave-1 {{ background: #059669; color: white; }}
-        .wave-2 {{ background: #2563eb; color: white; }}
-        .wave-3 {{ background: #7c3aed; color: white; }}
-        .wave-4 {{ background: #f97316; color: white; }}
-        .wave-5 {{ background: #0891b2; color: white; }}
-        .wave-6 {{ background: #b45309; color: white; }}
-        #score-legend {{
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            font-size: 0.8rem;
-        }}
-        #score-legend .sl-row {{
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }}
-        #score-legend .sl-ring {{
-            width: 16px; height: 16px;
-            border-radius: 50%;
-            border: 2.5px solid transparent;
-            flex-shrink: 0;
-        }}
-    </style>
+<meta charset="UTF-8">
+<title>Semiconductor Supply Chain Map</title>
+<style>
+*, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+body {{ font-family: 'Segoe UI', system-ui, sans-serif; background: #0f1117; color: #e2e8f0;
+       display: flex; height: 100vh; overflow: hidden; }}
+
+/* ── Sidebar ────────────────────────────────────────────────────── */
+#sidebar {{
+  width: 270px; min-width: 270px; background: #1a1d27; border-right: 1px solid #2d3148;
+  display: flex; flex-direction: column; overflow: hidden; z-index: 20;
+}}
+#sidebar h1 {{ font-size: 13px; font-weight: 700; color: #94a3b8;
+               padding: 14px 16px 10px; border-bottom: 1px solid #2d3148;
+               text-transform: uppercase; letter-spacing: .08em; }}
+.filter-section {{ padding: 10px 14px; border-bottom: 1px solid #2d3148; }}
+.filter-section h2 {{ font-size: 11px; color: #64748b; text-transform: uppercase;
+                      letter-spacing: .07em; margin-bottom: 8px; }}
+.filter-row {{ display: flex; align-items: center; gap: 8px; margin-bottom: 5px; cursor: pointer; }}
+.filter-row input[type=checkbox] {{ accent-color: #6366f1; cursor: pointer; }}
+.filter-row label {{ font-size: 12px; color: #cbd5e1; cursor: pointer; flex: 1; }}
+.dot {{ width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }}
+.legend-score {{ display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }}
+.legend-score .ring {{ width: 14px; height: 14px; border-radius: 50%;
+                        border: 3px solid; background: transparent; flex-shrink: 0; }}
+.legend-score label {{ font-size: 12px; color: #cbd5e1; }}
+#stats {{ padding: 10px 14px; font-size: 11px; color: #64748b; margin-top: auto; }}
+#stats span {{ display: block; margin-bottom: 3px; }}
+
+/* ── Detail panel ───────────────────────────────────────────────── */
+#detail-panel {{
+  width: 0; min-width: 0; overflow: hidden;
+  background: #141720; border-right: 1px solid #2d3148;
+  transition: width 0.28s cubic-bezier(0.4,0,0.2,1);
+  display: flex; flex-direction: column; z-index: 10;
+}}
+#detail-panel.open {{ width: 440px; min-width: 440px; }}
+#dp-inner {{ width: 440px; height: 100%; overflow-y: auto; display: flex; flex-direction: column; }}
+
+/* scrollbar */
+#dp-inner::-webkit-scrollbar {{ width: 5px; }}
+#dp-inner::-webkit-scrollbar-track {{ background: #0f1117; }}
+#dp-inner::-webkit-scrollbar-thumb {{ background: #2d3148; border-radius: 3px; }}
+
+#dp-header {{
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 16px 16px 12px; border-bottom: 1px solid #2d3148;
+  position: sticky; top: 0; background: #141720; z-index: 2;
+}}
+#dp-header .title-block {{ flex: 1; min-width: 0; }}
+#dp-header h2 {{ font-size: 15px; font-weight: 700; color: #f1f5f9;
+                 white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+#dp-header .sub {{ font-size: 11px; color: #64748b; margin-top: 2px; }}
+#dp-close {{ background: none; border: none; color: #64748b; font-size: 18px;
+              cursor: pointer; padding: 0 2px; line-height: 1; flex-shrink: 0; }}
+#dp-close:hover {{ color: #e2e8f0; }}
+
+/* card sections */
+.card-section {{ padding: 14px 16px; border-bottom: 1px solid #1e2233; }}
+.card-section h3 {{ font-size: 10px; text-transform: uppercase; letter-spacing: .09em;
+                    color: #475569; margin-bottom: 10px; font-weight: 600; }}
+
+/* score bar */
+.score-bar-wrap {{ margin-bottom: 10px; }}
+.score-num {{ font-size: 28px; font-weight: 800; line-height: 1; }}
+.score-meta {{ font-size: 11px; color: #64748b; margin-top: 2px; margin-bottom: 8px; }}
+.bar-bg {{ height: 8px; background: #1e2233; border-radius: 4px; overflow: hidden; }}
+.bar-fill {{ height: 100%; border-radius: 4px; transition: width .4s; }}
+.conf-badge {{ display: inline-block; padding: 2px 8px; border-radius: 10px;
+               font-size: 10px; font-weight: 600; text-transform: uppercase;
+               letter-spacing: .06em; margin-top: 6px; }}
+.conf-high   {{ background: #14532d; color: #86efac; }}
+.conf-med    {{ background: #1e3a5f; color: #93c5fd; }}
+.conf-low    {{ background: #431407; color: #fed7aa; }}
+.conf-vlow   {{ background: #1c1917; color: #a8a29e; }}
+
+/* dim grid */
+.dim-grid {{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-top: 8px; }}
+.dim-cell {{ background: #1a1d27; border-radius: 6px; padding: 7px 8px; }}
+.dim-cell .dim-label {{ font-size: 9px; color: #64748b; text-transform: uppercase;
+                        letter-spacing: .07em; margin-bottom: 3px; }}
+.dim-cell .dim-score {{ font-size: 13px; font-weight: 700; color: #e2e8f0; }}
+.dim-cell .dim-max {{ font-size: 10px; color: #475569; }}
+
+/* thesis */
+.thesis-text {{ font-size: 12px; color: #cbd5e1; line-height: 1.65; }}
+
+/* financial table */
+.fin-table {{ width: 100%; border-collapse: collapse; }}
+.fin-table tr td {{ padding: 4px 2px; font-size: 12px; border-bottom: 1px solid #1e2233; }}
+.fin-table tr:last-child td {{ border-bottom: none; }}
+.fin-table td:first-child {{ color: #64748b; width: 54%; }}
+.fin-table td:last-child {{ color: #f1f5f9; font-weight: 600; text-align: right; }}
+
+/* sc list */
+.sc-group {{ margin-bottom: 10px; }}
+.sc-group-label {{ font-size: 10px; color: #475569; text-transform: uppercase;
+                   letter-spacing: .07em; margin-bottom: 4px; }}
+.sc-list {{ display: flex; flex-wrap: wrap; gap: 5px; }}
+.sc-chip {{ background: #1a1d27; border: 1px solid #2d3148; border-radius: 12px;
+            padding: 3px 10px; font-size: 11px; color: #94a3b8; cursor: pointer;
+            transition: background .15s, color .15s; white-space: nowrap; }}
+.sc-chip:hover {{ background: #6366f1; color: #fff; border-color: #6366f1; }}
+
+/* website link */
+.website-link {{ font-size: 12px; color: #6366f1; text-decoration: none; word-break: break-all; }}
+.website-link:hover {{ text-decoration: underline; }}
+.desc-text {{ font-size: 12px; color: #cbd5e1; line-height: 1.6; margin-top: 6px; }}
+
+/* ── Graph area ─────────────────────────────────────────────────── */
+#graph {{ flex: 1; position: relative; overflow: hidden; }}
+svg {{ width: 100%; height: 100%; }}
+
+/* tooltip */
+.tooltip {{
+  position: absolute; background: #1a1d27ee; border: 1px solid #2d3148;
+  border-radius: 8px; padding: 10px 13px; font-size: 12px; color: #e2e8f0;
+  pointer-events: none; opacity: 0; transition: opacity .15s;
+  max-width: 240px; z-index: 100;
+}}
+.tooltip .tt-name {{ font-weight: 700; font-size: 13px; margin-bottom: 4px; }}
+.tooltip .tt-row {{ display: flex; justify-content: space-between; gap: 10px; margin-bottom: 2px; }}
+.tooltip .tt-key {{ color: #64748b; }}
+.tooltip .tt-val {{ color: #f1f5f9; font-weight: 600; }}
+.tooltip .tt-score {{ font-size: 15px; font-weight: 800; margin-top: 5px; }}
+.tooltip .tt-hint {{ font-size: 10px; color: #475569; margin-top: 5px; }}
+</style>
 </head>
 <body>
-<div id="container">
-    <div id="sidebar">
-        <h1>Semiconductor Supply Chain</h1>
-        <p class="subtitle">{total_n} companies across 7 regions (Wave 6 Complete)</p>
 
-        <input type="text" id="search" placeholder="Search companies...">
+<!-- ── Sidebar ──────────────────────────────────────────────────── -->
+<div id="sidebar">
+  <h1>Semiconductor Supply Chain</h1>
 
-        <div class="section">
-            <div class="section-title">Statistics</div>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-value">{total_n}</div>
-                    <div class="stat-label">Companies</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">{total_e}</div>
-                    <div class="stat-label">Relationships</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">{japan_count}</div>
-                    <div class="stat-label">Japanese</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">{len(CRITICAL_IDS)}</div>
-                    <div class="stat-label">Critical Nodes</div>
-                </div>
-            </div>
-        </div>
+  <div class="filter-section">
+    <h2>Country</h2>
+    <div id="country-filters"></div>
+  </div>
 
-        <div class="section">
-            <div class="section-title">Filter by Country</div>
-            <div class="filter-group" id="country-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="Japan">Japan ({geo.get('Japan',0)})</button>
-                <button class="filter-btn" data-filter="China">China ({geo.get('China',0)})</button>
-                <button class="filter-btn" data-filter="South Korea">Korea ({geo.get('South Korea',0)})</button>
-                <button class="filter-btn" data-filter="USA">USA ({geo.get('USA',0)})</button>
-                <button class="filter-btn" data-filter="Taiwan">Taiwan ({geo.get('Taiwan',0)})</button>
-                <button class="filter-btn" data-filter="Hong Kong">HK ({geo.get('Hong Kong',0)})</button>
-                <button class="filter-btn" data-filter="Netherlands">NL</button>
-            </div>
-        </div>
+  <div class="filter-section">
+    <h2>Wave</h2>
+    <div id="wave-filters"></div>
+  </div>
 
-        <div class="section">
-            <div class="section-title">Filter by Industry</div>
-            <div class="filter-group" id="industry-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="Semiconductor Equipment">Equipment</button>
-                <button class="filter-btn" data-filter="Semiconductor Materials">Materials</button>
-                <button class="filter-btn" data-filter="Semiconductor Packaging/OSAT">OSAT</button>
-                <button class="filter-btn" data-filter="Semiconductor Foundry">Foundry</button>
-                <button class="filter-btn" data-filter="Semiconductors">IDM/Fabless</button>
-                <button class="filter-btn" data-filter="Memory Semiconductors">Memory</button>
-            </div>
-        </div>
+  <div class="filter-section">
+    <h2>Score ring</h2>
+    <div class="legend-score"><div class="ring" style="border-color:#f59e0b"></div><label>≥ 62 — High conviction</label></div>
+    <div class="legend-score"><div class="ring" style="border-color:#22c55e"></div><label>55–61 — Watchlist</label></div>
+    <div class="legend-score"><div class="ring" style="border-color:#3b82f6"></div><label>45–54 — Monitor</label></div>
+    <div class="legend-score"><div class="ring" style="border-color:#6b7280"></div><label>&lt; 45 / unscored</label></div>
+  </div>
 
-        <div class="section">
-            <div class="section-title">Filter by Wave</div>
-            <div class="filter-group" id="wave-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="1">W1 JP seed (16)</button>
-                <button class="filter-btn" data-filter="2">W2 Global (12)</button>
-                <button class="filter-btn" data-filter="3">W3 JP vendors (34)</button>
-                <button class="filter-btn" data-filter="4">W4 OSAT/Foundry (12)</button>
-                <button class="filter-btn" data-filter="5">W5 Korea (9)</button>
-                <button class="filter-btn" data-filter="6">W6 China (13)</button>
-            </div>
-        </div>
+  <div class="filter-section">
+    <h2>Edge type</h2>
+    <div class="filter-row"><input type="checkbox" id="e-supplier" checked><label for="e-supplier">Supplier / Customer</label></div>
+    <div class="filter-row"><input type="checkbox" id="e-competitor" checked><label for="e-competitor">Competitor</label></div>
+    <div class="filter-row"><input type="checkbox" id="e-partner" checked><label for="e-partner">Partner</label></div>
+    <div class="filter-row"><input type="checkbox" id="e-ecosystem" checked><label for="e-ecosystem">Ecosystem</label></div>
+  </div>
 
-        <div class="section">
-            <div class="section-title">Relationship Types</div>
-            <div class="legend">
-                <div class="legend-item">
-                    <div class="legend-line" style="background:#3b82f6;"></div>
-                    <span>Supplier ({edge_t.get('supplier',0)})</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-line" style="background:#ef4444;"></div>
-                    <span>Competitor ({edge_t.get('competitor',0)})</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-line" style="background:#22c55e;"></div>
-                    <span>Partner ({edge_t.get('partner',0)})</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-line" style="background:#a855f7;"></div>
-                    <span>Ecosystem ({edge_t.get('ecosystem',0)})</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Node Colors by Country</div>
-            <div class="legend">
-                <div class="legend-item"><div class="legend-circle" style="background:#ef4444;"></div><span>Japan</span></div>
-                <div class="legend-item"><div class="legend-circle" style="background:#3b82f6;"></div><span>USA</span></div>
-                <div class="legend-item"><div class="legend-circle" style="background:#22c55e;"></div><span>South Korea</span></div>
-                <div class="legend-item"><div class="legend-circle" style="background:#f59e0b;"></div><span>Taiwan</span></div>
-                <div class="legend-item"><div class="legend-circle" style="background:#f97316;"></div><span>China</span></div>
-                <div class="legend-item"><div class="legend-circle" style="background:#06b6d4;"></div><span>Hong Kong</span></div>
-                <div class="legend-item"><div class="legend-circle" style="background:#8b5cf6;"></div><span>Netherlands</span></div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Score Ring Legend</div>
-            <div id="score-legend">
-                <div class="sl-row"><div class="sl-ring" style="border-color:#f59e0b; background:#1a1a24;"></div><span>Gold — Top tier (≥62)</span></div>
-                <div class="sl-row"><div class="sl-ring" style="border-color:#22c55e; background:#1a1a24;"></div><span>Green — Strong (55-61)</span></div>
-                <div class="sl-row"><div class="sl-ring" style="border-color:#3b82f6; background:#1a1a24;"></div><span>Blue — Moderate (45-54)</span></div>
-                <div class="sl-row"><div class="sl-ring" style="border-color:#6b7280; background:#1a1a24;"></div><span>Gray — Weak (&lt;45)</span></div>
-                <div class="sl-row"><div class="sl-ring" style="border-color:transparent; background:#1a1a24;"></div><span>No ring — Not scored</span></div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Critical Supply Chain Nodes</div>
-            <div class="legend critical-scroll">
-                <div class="legend-item"><span>ASML</span><span class="critical-badge">100% EUV</span></div>
-                <div class="legend-item"><span>Lasertec</span><span class="critical-badge">100% inspection</span></div>
-                <div class="legend-item"><span>Shin-Etsu</span><span class="critical-badge">42% wafers</span></div>
-                <div class="legend-item"><span>TSMC</span><span class="critical-badge">90% AI chips</span></div>
-                <div class="legend-item"><span>Stella Chemifa</span><span class="critical-badge">HF monopoly</span></div>
-                <div class="legend-item"><span>Ibiden</span><span class="critical-badge">50% AI substrates</span></div>
-                <div class="legend-item"><span>Organo</span><span class="critical-badge">TSMC water</span></div>
-                <div class="legend-item"><span>TOK</span><span class="critical-badge">25% photoresist</span></div>
-                <div class="legend-item"><span>Daifuku</span><span class="critical-badge">cleanroom auto</span></div>
-                <div class="legend-item"><span>Ushio</span><span class="critical-badge">75% UV lamps</span></div>
-                <div class="legend-item"><span>ACCRETECH</span><span class="critical-badge">46% probers</span></div>
-                <div class="legend-item"><span>Hanmi Semi</span><span class="critical-badge">71% TC bonders</span></div>
-                <div class="legend-item"><span>HOYA</span><span class="critical-badge">EUV blanks</span></div>
-                <div class="legend-item"><span>Tokyo Electron</span><span class="critical-badge">coater/etch</span></div>
-                <div class="legend-item"><span>SUMCO</span><span class="critical-badge">20% wafers</span></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="graph">
-        <svg id="svg"></svg>
-        <div id="tooltip"></div>
-        <div id="controls">
-            <button class="control-btn" id="zoom-in">+</button>
-            <button class="control-btn" id="zoom-out">-</button>
-            <button class="control-btn" id="reset">R</button>
-        </div>
-    </div>
+  <div id="stats">
+    <span id="stat-nodes">Nodes: —</span>
+    <span id="stat-edges">Edges: —</span>
+    <span id="stat-visible">Visible: —</span>
+  </div>
 </div>
 
+<!-- ── Detail panel ──────────────────────────────────────────────── -->
+<div id="detail-panel">
+  <div id="dp-inner">
+    <div id="dp-header">
+      <div class="title-block">
+        <h2 id="dp-name">—</h2>
+        <div class="sub" id="dp-sub">—</div>
+      </div>
+      <button id="dp-close" title="Close">✕</button>
+    </div>
+    <div id="dp-body"></div>
+  </div>
+</div>
+
+<!-- ── Graph ──────────────────────────────────────────────────────── -->
+<div id="graph">
+  <svg id="svg"></svg>
+  <div class="tooltip" id="tooltip"></div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
-    const graphData = {{
-        nodes: [
-{node_js}
-        ],
-        edges: [
-{edge_js}
-        ]
-    }};
+// ── Data ────────────────────────────────────────────────────────────
+const NODES_DATA   = {nodes_js};
+const EDGES_DATA   = {edges_js};
+const DETAIL_MAP   = {detail_js};
+const COUNTRY_CLR  = {country_colors_js};
 
-    const countryColors = {{
-        "Japan":       "#ef4444",
-        "USA":         "#3b82f6",
-        "South Korea": "#22c55e",
-        "Taiwan":      "#f59e0b",
-        "China":       "#f97316",
-        "Hong Kong":   "#06b6d4",
-        "Netherlands": "#8b5cf6"
-    }};
+const WAVE_LABELS = {{1:"Wave 1 – JP seed",2:"Wave 2 – Global",3:"Wave 3 – JP vendors",
+                      4:"Wave 4 – OSAT/Foundry",5:"Wave 5 – Korea",6:"Wave 6 – China"}};
+const EDGE_CLR = {{supplier:"#334155",competitor:"#7c3aed",partner:"#0e7490",ecosystem:"#065f46"}};
 
-    const linkColors = {{
-        "supplier":   "#3b82f6",
-        "competitor": "#ef4444",
-        "partner":    "#22c55e",
-        "ecosystem":  "#a855f7"
-    }};
+// ── Build filters ────────────────────────────────────────────────────
+const countries = [...new Set(NODES_DATA.map(n=>n.country))].sort();
+const countryDiv = document.getElementById('country-filters');
+countries.forEach(c => {{
+  const div = document.createElement('div'); div.className='filter-row';
+  div.innerHTML = `<input type="checkbox" id="c-${{c}}" checked>
+    <div class="dot" style="background:${{COUNTRY_CLR[c]||'#6b7280'}}"></div>
+    <label for="c-${{c}}">${{c}}</label>`;
+  countryDiv.appendChild(div);
+}});
 
-    function scoreRingColor(score) {{
-        if (score === null || score === undefined) return null;
-        if (score >= 62) return "#f59e0b";
-        if (score >= 55) return "#22c55e";
-        if (score >= 45) return "#3b82f6";
-        return "#6b7280";
-    }}
+const waves = [...new Set(NODES_DATA.map(n=>n.wave))].sort((a,b)=>a-b);
+const waveDiv = document.getElementById('wave-filters');
+waves.forEach(w => {{
+  const div = document.createElement('div'); div.className='filter-row';
+  div.innerHTML = `<input type="checkbox" id="w-${{w}}" checked>
+    <label for="w-${{w}}">${{WAVE_LABELS[w]||'Wave '+w}}</label>`;
+  waveDiv.appendChild(div);
+}});
 
-    function scoreBarColor(score) {{
-        if (score === null || score === undefined) return "#6b7280";
-        if (score >= 62) return "#f59e0b";
-        if (score >= 55) return "#22c55e";
-        if (score >= 45) return "#60a5fa";
-        return "#6b7280";
-    }}
+// ── D3 setup ─────────────────────────────────────────────────────────
+const svg = d3.select('#svg');
+const container = document.getElementById('graph');
+let W = container.clientWidth, H = container.clientHeight;
+const g = svg.append('g');
 
-    function fmtNum(v, decimals=1) {{
-        if (v === null || v === undefined) return "—";
-        return Number(v).toFixed(decimals) + "x";
-    }}
+const zoom = d3.zoom().scaleExtent([0.05, 6])
+  .on('zoom', e => g.attr('transform', e.transform));
+svg.call(zoom);
 
-    function fmtScore(v) {{
-        if (v === null || v === undefined) return "—";
-        return Number(v).toFixed(1);
-    }}
+const edgeLayer = g.append('g').attr('class','edges');
+const nodeLayer = g.append('g').attr('class','nodes');
 
-    function fmtPct(v) {{
-        if (v === null || v === undefined) return "—";
-        return Number(v).toFixed(1) + "%";
-    }}
+// ── Simulation ────────────────────────────────────────────────────────
+const sim = d3.forceSimulation()
+  .force('link', d3.forceLink().id(d=>d.id).distance(80).strength(0.4))
+  .force('charge', d3.forceManyBody().strength(-280))
+  .force('center', d3.forceCenter(W/2, H/2))
+  .force('collision', d3.forceCollide().radius(d => (d.crit?18:12)+4));
 
-    function confClass(conf) {{
-        if (!conf) return "";
-        return "conf-" + conf.replace(/ /g, "-");
-    }}
+// ── State ─────────────────────────────────────────────────────────────
+let activeCid = null;
+let nodeById = {{}};
+let linkSel, nodeSel;
 
-    const width  = document.getElementById('graph').clientWidth;
-    const height = document.getElementById('graph').clientHeight;
+function getActiveCountries() {{
+  return new Set(countries.filter(c=>{{
+    const el = document.getElementById('c-'+c);
+    return el && el.checked;
+  }}));
+}}
+function getActiveWaves() {{
+  return new Set(waves.filter(w=>{{
+    const el = document.getElementById('w-'+w);
+    return el && el.checked;
+  }}));
+}}
+function getActiveEdgeTypes() {{
+  const types = [];
+  if (document.getElementById('e-supplier').checked) types.push('supplier');
+  if (document.getElementById('e-competitor').checked) types.push('competitor');
+  if (document.getElementById('e-partner').checked) types.push('partner');
+  if (document.getElementById('e-ecosystem').checked) types.push('ecosystem');
+  return new Set(types);
+}}
 
-    const svg = d3.select('#svg').attr('width', width).attr('height', height);
-    const g   = svg.append('g');
+function render() {{
+  const ac = getActiveCountries();
+  const aw = getActiveWaves();
+  const ae = getActiveEdgeTypes();
 
-    const zoom = d3.zoom()
-        .scaleExtent([0.15, 6])
-        .on('zoom', (event) => {{ g.attr('transform', event.transform); }});
-    svg.call(zoom);
+  const visNodes = NODES_DATA.filter(n => ac.has(n.country) && aw.has(n.wave));
+  const visIds = new Set(visNodes.map(n=>n.id));
+  const visEdges = EDGES_DATA.filter(e => visIds.has(e.source.id||e.source) && visIds.has(e.target.id||e.target) && ae.has(e.type));
 
-    svg.append('defs').selectAll('marker')
-        .data(['supplier','competitor','partner','ecosystem'])
-        .enter().append('marker')
-        .attr('id',          d => `arrow-${{d}}`)
-        .attr('viewBox',     '0 -5 10 10')
-        .attr('refX',        20)
-        .attr('refY',        0)
-        .attr('markerWidth', 5)
-        .attr('markerHeight',5)
-        .attr('orient',      'auto')
-        .append('path')
-        .attr('fill', d => linkColors[d])
-        .attr('d', 'M0,-5L10,0L0,5');
+  nodeById = {{}};
+  visNodes.forEach(n => nodeById[n.id] = n);
 
-    const simulation = d3.forceSimulation(graphData.nodes)
-        .force('link',      d3.forceLink(graphData.edges).id(d => d.id).distance(75))
-        .force('charge',    d3.forceManyBody().strength(-200))
-        .force('center',    d3.forceCenter(width / 2, height / 2))
-        .force('collision', d3.forceCollide().radius(28))
-        .force('x',         d3.forceX(width  / 2).strength(0.04))
-        .force('y',         d3.forceY(height / 2).strength(0.04));
+  document.getElementById('stat-nodes').textContent = `Nodes: ${{NODES_DATA.length}}`;
+  document.getElementById('stat-edges').textContent = `Edges: ${{EDGES_DATA.length}}`;
+  document.getElementById('stat-visible').textContent = `Visible: ${{visNodes.length}} nodes, ${{visEdges.length}} edges`;
 
-    const link = g.append('g')
-        .selectAll('line')
-        .data(graphData.edges)
-        .enter().append('line')
-        .attr('class',       d => `link ${{d.type}}`)
-        .attr('stroke',      d => linkColors[d.type])
-        .attr('stroke-width', 1)
-        .attr('marker-end',  d => `url(#arrow-${{d.type}})`);
+  // edges
+  linkSel = edgeLayer.selectAll('line').data(visEdges, d=>`${{d.source.id||d.source}}-${{d.target.id||d.target}}-${{d.type}}`);
+  linkSel.exit().remove();
+  const linkEnter = linkSel.enter().append('line')
+    .attr('stroke-width', d => d.type==='supplier'?1.2:1.5)
+    .attr('stroke-opacity', d => d.type==='supplier'?0.25:0.5)
+    .attr('stroke-dasharray', d => d.type!=='supplier'?'4,3':null);
+  linkSel = linkEnter.merge(linkSel)
+    .attr('stroke', d => EDGE_CLR[d.type]||'#334155');
 
-    const node = g.append('g')
-        .selectAll('g')
-        .data(graphData.nodes)
-        .enter().append('g')
-        .attr('class', 'node')
-        .call(d3.drag()
-            .on('start', dragstarted)
-            .on('drag',  dragged)
-            .on('end',   dragended));
+  // nodes
+  nodeSel = nodeLayer.selectAll('g.node').data(visNodes, d=>d.id);
+  nodeSel.exit().remove();
+  const nodeEnter = nodeSel.enter().append('g').attr('class','node').style('cursor','pointer');
 
-    // Score ring (outer)
-    node.append('circle')
-        .attr('r', d => (d.critical ? 14 : 10))
-        .attr('fill',         'none')
-        .attr('stroke',       d => scoreRingColor(d.finalScore) || 'none')
-        .attr('stroke-width', d => scoreRingColor(d.finalScore) ? 2.5 : 0);
+  // outer ring (score color)
+  nodeEnter.append('circle').attr('class','ring-circle');
+  // inner fill
+  nodeEnter.append('circle').attr('class','fill-circle');
+  // label
+  nodeEnter.append('text').attr('class','node-label')
+    .attr('text-anchor','middle').attr('dy','0.35em')
+    .attr('pointer-events','none').style('user-select','none');
 
-    // Main node circle
-    node.append('circle')
-        .attr('r',            d => d.critical ? 11 : 7)
-        .attr('fill',         d => countryColors[d.country] || '#888')
-        .attr('stroke',       d => d.critical ? '#fff' : 'none')
-        .attr('stroke-width', d => d.critical ? 1.5 : 0);
+  nodeSel = nodeEnter.merge(nodeSel);
 
-    node.append('text')
-        .attr('dx', 13)
-        .attr('dy', 3)
-        .text(d => d.name);
+  nodeSel.select('.ring-circle')
+    .attr('r', d => (d.crit?17:11)+2)
+    .attr('fill','transparent')
+    .attr('stroke', d => d.ring)
+    .attr('stroke-width', d => d.crit?3:2);
 
-    // ── Tooltip ──────────────────────────────────────────────────────────────
-    const tooltip = d3.select('#tooltip');
+  nodeSel.select('.fill-circle')
+    .attr('r', d => d.crit?17:11)
+    .attr('fill', d => COUNTRY_CLR[d.country]||'#6b7280')
+    .attr('stroke', d => d.id===activeCid?'#fff':'none')
+    .attr('stroke-width',3);
 
-    node.on('mouseover', function(event, d) {{
-        const suppliers = graphData.edges.filter(e =>
-            (e.target.id || e.target) === d.id && e.type === 'supplier').length;
-        const clients = graphData.edges.filter(e =>
-            (e.source.id || e.source) === d.id && e.type === 'supplier').length;
+  nodeSel.select('.node-label')
+    .attr('font-size', d => d.crit?7:6)
+    .attr('fill','#fff')
+    .attr('dy', d => (d.crit?17:11)+10)
+    .text(d => d.ticker||d.name.split(' ')[0]);
 
-        const hasScore = d.finalScore !== null && d.finalScore !== undefined;
-        const scoreBarW = hasScore ? Math.min(100, d.finalScore) : 0;
-        const ringColor = scoreRingColor(d.finalScore);
-        const barColor  = scoreBarColor(d.finalScore);
-        const confCls   = confClass(d.confidence);
+  // interactions
+  nodeSel
+    .on('mouseover', (event,d) => showTooltip(event,d))
+    .on('mousemove', (event) => moveTooltip(event))
+    .on('mouseout', hideTooltip)
+    .on('click', (event,d) => {{ event.stopPropagation(); togglePanel(d.id); }})
+    .call(d3.drag()
+      .on('start', (event,d) => {{ if(!event.active) sim.alphaTarget(.3).restart(); d.fx=d.x; d.fy=d.y; }})
+      .on('drag',  (event,d) => {{ d.fx=event.x; d.fy=event.y; }})
+      .on('end',   (event,d) => {{ if(!event.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }})
+    );
 
-        let evalHtml = '';
-        if (hasScore) {{
-            evalHtml = `
-            <div class="divider"></div>
-            <div class="section-label">Investment Score</div>
-            <div class="info-row">
-                <span class="info-label">Final Score</span>
-                <span class="info-value" style="color:${{ringColor || '#fff'}};font-weight:700;">
-                    ${{fmtScore(d.finalScore)}} / 100
-                </span>
-            </div>
-            <div class="score-bar-container">
-                <div class="score-bar" style="width:${{scoreBarW}}%;background:${{barColor}};"></div>
-            </div>
-            <div class="info-row">
-                <span class="info-label">Confidence</span>
-                <span class="info-value">
-                    <span class="confidence-badge ${{confCls}}">${{d.confidence || '—'}}</span>
-                </span>
-            </div>
-            <div class="info-row">
-                <span class="info-label">PER</span>
-                <span class="info-value">${{d.per !== null && d.per !== undefined ? Number(d.per).toFixed(1) + 'x' : '—'}}</span>
-            </div>
-            <div class="info-row">
-                <span class="info-label">Foreign Ownership</span>
-                <span class="info-value">${{fmtPct(d.foPct)}}</span>
-            </div>`;
+  svg.on('click', () => closePanel());
 
-            if (d.thesis) {{
-                evalHtml += `<div class="thesis-text">${{d.thesis}}</div>`;
-            }}
-        }}
+  sim.nodes(visNodes);
+  sim.force('link').links(visEdges);
+  sim.alpha(.8).restart();
+  sim.on('tick', ticked);
+}}
 
-        let descHtml = '';
-        if (d.desc) {{
-            descHtml = `<div class="desc-text">${{d.desc}}</div>`;
-        }}
+function ticked() {{
+  if (linkSel) linkSel
+    .attr('x1', d=>d.source.x).attr('y1', d=>d.source.y)
+    .attr('x2', d=>d.target.x).attr('y2', d=>d.target.y);
+  if (nodeSel) nodeSel
+    .attr('transform', d=>`translate(${{d.x}},${{d.y}})`);
+}}
 
-        tooltip.html(`
-            <h3>${{d.name}}${{d.critical ? ' <span style="color:#ef4444;font-size:0.75rem;">● CRITICAL</span>' : ''}}</h3>
-            <div class="info-row">
-                <span class="info-label">Ticker</span>
-                <span class="info-value">${{d.ticker || '—'}}</span>
-            </div>
-            <div class="info-row">
-                <span class="info-label">Industry</span>
-                <span class="info-value">${{d.industry}}</span>
-            </div>
-            <div class="info-row">
-                <span class="info-label">Country</span>
-                <span class="info-value">${{d.country}}</span>
-            </div>
-            <div class="info-row">
-                <span class="info-label">Wave</span>
-                <span class="info-value"><span class="wave-badge wave-${{d.wave}}">W${{d.wave}}</span></span>
-            </div>
-            <div class="info-row">
-                <span class="info-label">Suppliers / Clients</span>
-                <span class="info-value">${{suppliers}} → ${{clients}}</span>
-            </div>
-            ${{evalHtml}}
-            ${{descHtml}}
-        `)
-        .style('left', (event.pageX + 16) + 'px')
-        .style('top',  (event.pageY - 16) + 'px')
-        .classed('visible', true);
+// ── Tooltip ───────────────────────────────────────────────────────────
+const tooltip = document.getElementById('tooltip');
+function showTooltip(event, d) {{
+  const sc = d.score!=null ? `<div class="tt-score" style="color:${{d.ring}}">${{d.score.toFixed(1)}}</div>` : '';
+  const per = d.per!=null ? `<div class="tt-row"><span class="tt-key">PER</span><span class="tt-val">${{d.per.toFixed(1)}}x</span></div>` : '';
+  const fo  = d.fo!=null  ? `<div class="tt-row"><span class="tt-key">Foreign own.</span><span class="tt-val">${{d.fo.toFixed(1)}}%</span></div>` : '';
+  tooltip.innerHTML = `
+    <div class="tt-name">${{d.name}}</div>
+    <div class="tt-row"><span class="tt-key">Ticker</span><span class="tt-val">${{d.ticker||'—'}}</span></div>
+    <div class="tt-row"><span class="tt-key">Country</span><span class="tt-val">${{d.country}}</span></div>
+    ${{sc}}${{per}}${{fo}}
+    <div class="tt-hint">Click to open investment card</div>`;
+  tooltip.style.opacity = '1';
+  moveTooltip(event);
+}}
+function moveTooltip(event) {{
+  const r = container.getBoundingClientRect();
+  let x = event.clientX - r.left + 14;
+  let y = event.clientY - r.top + 14;
+  if (x + 250 > W) x -= 270;
+  tooltip.style.left = x+'px';
+  tooltip.style.top  = y+'px';
+}}
+function hideTooltip() {{ tooltip.style.opacity='0'; }}
 
-        // Highlight neighbourhood
-        const connected = new Set([d.id]);
-        graphData.edges.forEach(e => {{
-            const s = e.source.id || e.source;
-            const t = e.target.id || e.target;
-            if (s === d.id) connected.add(t);
-            if (t === d.id) connected.add(s);
-        }});
-        node.classed('dimmed', n => !connected.has(n.id));
-        link.classed('dimmed', e => {{
-            const s = e.source.id || e.source;
-            const t = e.target.id || e.target;
-            return s !== d.id && t !== d.id;
-        }});
-        link.classed('highlighted', e => {{
-            const s = e.source.id || e.source;
-            const t = e.target.id || e.target;
-            return s === d.id || t === d.id;
-        }});
-    }})
-    .on('mousemove', function(event) {{
-        tooltip
-            .style('left', (event.pageX + 16) + 'px')
-            .style('top',  (event.pageY - 16) + 'px');
-    }})
-    .on('mouseout', function() {{
-        tooltip.classed('visible', false);
-        node.classed('dimmed', false);
-        link.classed('dimmed', false);
-        link.classed('highlighted', false);
+// ── Investment card panel ─────────────────────────────────────────────
+const panel = document.getElementById('detail-panel');
+document.getElementById('dp-close').addEventListener('click', e => {{ e.stopPropagation(); closePanel(); }});
+
+function togglePanel(cid) {{
+  if (activeCid === cid) {{ closePanel(); return; }}
+  activeCid = cid;
+  populateCard(DETAIL_MAP[cid]);
+  panel.classList.add('open');
+  // highlight node
+  nodeSel && nodeSel.select('.fill-circle')
+    .attr('stroke', d => d.id===cid?'#fff':'none');
+}}
+
+function closePanel() {{
+  activeCid = null;
+  panel.classList.remove('open');
+  nodeSel && nodeSel.select('.fill-circle').attr('stroke','none');
+}}
+
+function goToNode(cid) {{
+  const nd = nodeById[cid];
+  if (!nd) return;
+  const scale = 2.2;
+  const tx = W/2 - scale*nd.x;
+  const ty = H/2 - scale*nd.y;
+  svg.transition().duration(600)
+    .call(zoom.transform, d3.zoomIdentity.translate(tx,ty).scale(scale));
+  togglePanel(cid);
+}}
+
+function fmt(v, suffix='', dp=1) {{
+  if (v==null) return '—';
+  return (+v).toFixed(dp) + suffix;
+}}
+function fmtCap(v) {{
+  if (v==null) return '—';
+  if (v>=1e12) return (v/1e12).toFixed(2)+'T ¥';
+  if (v>=1e9)  return (v/1e9).toFixed(1)+'B ¥';
+  return (v/1e6).toFixed(0)+'M ¥';
+}}
+function confClass(label) {{
+  if (!label) return '';
+  const l = label.toLowerCase();
+  if (l.includes('very low')) return 'conf-vlow';
+  if (l.includes('low'))      return 'conf-low';
+  if (l.includes('medium')||l.includes('med')) return 'conf-med';
+  if (l.includes('high'))     return 'conf-high';
+  return '';
+}}
+
+function scGroup(title, arr) {{
+  if (!arr || !arr.length) return '';
+  const chips = arr.map(x =>
+    `<span class="sc-chip" data-goto="${{x.id}}" title="${{x.label||x.name}}">${{x.name}}</span>`
+  ).join('');
+  return `<div class="sc-group">
+    <div class="sc-group-label">${{title}} (${{arr.length}})</div>
+    <div class="sc-list">${{chips}}</div>
+  </div>`;
+}}
+
+function populateCard(d) {{
+  if (!d) {{ document.getElementById('dp-body').innerHTML='<div style="padding:20px;color:#475569">No data</div>'; return; }}
+
+  document.getElementById('dp-name').textContent = d.name;
+  document.getElementById('dp-sub').textContent =
+    [d.ticker, d.country, d.industry, 'Wave '+d.wave].filter(Boolean).join(' · ');
+
+  // ── Score section ──
+  const score = d.finalScore;
+  const ringClr = score==null?'#6b7280':score>=62?'#f59e0b':score>=55?'#22c55e':score>=45?'#3b82f6':'#6b7280';
+  const pct = score==null?0:Math.min(100,score);
+  const dimNames = {{A:'Valuation/30',B:'Moat/25',C:'Growth/15',D:'Ownership/10',E:'Catalysts/10',F:'Risk/10'}};
+  let dimHtml = '<div class="dim-grid">';
+  for (const [k,lbl] of Object.entries(dimNames)) {{
+    const dim = d.dims[k]||{{}};
+    const ds = dim.score!=null ? dim.score.toFixed(1) : '—';
+    const dm = dim.max!=null ? '/'+dim.max : '';
+    dimHtml += `<div class="dim-cell">
+      <div class="dim-label">${{k}} ${{lbl.split('/')[0]}}</div>
+      <div class="dim-score">${{ds}}<span class="dim-max">${{dm}}</span></div>
+    </div>`;
+  }}
+  dimHtml += '</div>';
+
+  const confBadge = d.confidenceLabel
+    ? `<span class="conf-badge ${{confClass(d.confidenceLabel)}}">${{d.confidenceLabel}}</span>` : '';
+
+  const scoreHtml = `<div class="card-section">
+    <h3>Investment Score</h3>
+    <div class="score-bar-wrap">
+      <div class="score-num" style="color:${{ringClr}}">${{score!=null?score.toFixed(1):'—'}}</div>
+      <div class="score-meta">Raw composite: ${{d.rawComposite!=null?d.rawComposite.toFixed(1):'—'}} &nbsp;·&nbsp;
+        Confidence multiplier: ${{d.confidenceMult!=null?d.confidenceMult.toFixed(2):'—'}} &nbsp;·&nbsp;
+        Coverage: ${{d.researchComplete!=null?d.researchComplete.toFixed(0)+'%':'—'}}</div>
+      <div class="bar-bg"><div class="bar-fill" style="width:${{pct}}%;background:${{ringClr}}"></div></div>
+      ${{confBadge}}
+    </div>
+    ${{dimHtml}}
+  </div>`;
+
+  // ── Thesis ──
+  const thesisHtml = d.investmentThesis ? `<div class="card-section">
+    <h3>Investment Thesis</h3>
+    <div class="thesis-text">${{d.investmentThesis.replace(/\n/g,'<br>')}}</div>
+  </div>` : '';
+
+  // ── Financials ──
+  const rows = [
+    ['Market cap',       fmtCap(d.marketCapInYen)],
+    ['Price (¥)',        fmt(d.latestPriceYen,'',0)],
+    ['52W High/Low (¥)', d.weekHigh52!=null&&d.weekLow52!=null ? fmt(d.weekHigh52,'',0)+' / '+fmt(d.weekLow52,'',0) : '—'],
+    ['PER',              fmt(d.PER,'x')],
+    ['Forward PER',      fmt(d.forwardPER,'x')],
+    ['PBR',              fmt(d.PBR,'x')],
+    ['EPS (¥)',          fmt(d.EPS,'',2)],
+    ['ROE',              fmt(d.ROE,'%')],
+    ['Revenue growth',   fmt(d.revenueGrowth,'%')],
+    ['Op. margin',       fmt(d.OPM,'%')],
+    ['Dividend yield',   fmt(d.dividendYield,'%')],
+    ['Foreign ownership',fmt(d.foreignOwnership,'%')],
+    ['China revenue',    fmt(d.chinaRevenue,'%')],
+    ['Forex sensitive',  d.forexSensitive!=null?(d.forexSensitive?'Yes':'No'):'—'],
+    ['Buyback active',   d.hasBuyback!=null?(d.hasBuyback?'Yes':'No'):'—'],
+    ['Analyst Buy/Hold/Sell',
+      (d.analystBuy!=null||d.analystHold!=null||d.analystSell!=null)
+        ? [d.analystBuy,d.analystHold,d.analystSell].map(v=>v??'—').join(' / ')
+        : '—'],
+  ];
+  const finRows = rows.map(([k,v]) =>
+    `<tr><td>${{k}}</td><td>${{v}}</td></tr>`).join('');
+  const finHtml = `<div class="card-section">
+    <h3>Financial Data</h3>
+    <table class="fin-table">${{finRows}}</table>
+  </div>`;
+
+  // ── Supply chain position ──
+  const scHtml = `<div class="card-section">
+    <h3>Supply Chain Position</h3>
+    ${{scGroup('Suppliers', d.suppliers)}}
+    ${{scGroup('Clients', d.clients)}}
+    ${{scGroup('Competitors', d.competitors)}}
+    ${{scGroup('Partners', d.partners)}}
+    ${{scGroup('Ecosystem', d.ecosystem)}}
+  </div>`;
+
+  // ── Company profile ──
+  const websiteLink = d.website
+    ? `<a class="website-link" href="${{d.website}}" target="_blank">${{d.website}}</a>` : '';
+  const profileHtml = `<div class="card-section">
+    <h3>Company Profile</h3>
+    ${{websiteLink}}
+    <div class="desc-text">${{d.description||''}}</div>
+  </div>`;
+
+  document.getElementById('dp-body').innerHTML =
+    scoreHtml + thesisHtml + finHtml + scHtml + profileHtml;
+
+  // bind SC chip clicks
+  document.querySelectorAll('#dp-body .sc-chip[data-goto]').forEach(chip => {{
+    chip.addEventListener('click', e => {{
+      e.stopPropagation();
+      goToNode(chip.dataset.goto);
     }});
+  }});
+}}
 
-    simulation.on('tick', () => {{
-        link
-            .attr('x1', d => d.source.x)
-            .attr('y1', d => d.source.y)
-            .attr('x2', d => d.target.x)
-            .attr('y2', d => d.target.y);
-        node.attr('transform', d => `translate(${{d.x}},${{d.y}})`);
-    }});
+// ── Filter listeners ──────────────────────────────────────────────────
+document.querySelectorAll('#country-filters input, #wave-filters input, #sidebar input[type=checkbox]')
+  .forEach(el => el.addEventListener('change', render));
 
-    function dragstarted(event) {{
-        if (!event.active) simulation.alphaTarget(0.3).restart();
-        event.subject.fx = event.subject.x;
-        event.subject.fy = event.subject.y;
-    }}
-    function dragged(event) {{
-        event.subject.fx = event.x;
-        event.subject.fy = event.y;
-    }}
-    function dragended(event) {{
-        if (!event.active) simulation.alphaTarget(0);
-        event.subject.fx = null;
-        event.subject.fy = null;
-    }}
+// ── Resize ────────────────────────────────────────────────────────────
+window.addEventListener('resize', () => {{
+  W = container.clientWidth; H = container.clientHeight;
+  sim.force('center', d3.forceCenter(W/2, H/2)).alpha(.3).restart();
+}});
 
-    // ── Filters ──────────────────────────────────────────────────────────────
-    let activeCountry  = 'all';
-    let activeIndustry = 'all';
-    let activeWave     = 'all';
-
-    function applyFilters() {{
-        node.style('display', d => {{
-            const cm = activeCountry  === 'all' || d.country   === activeCountry;
-            const im = activeIndustry === 'all' || d.industry  === activeIndustry;
-            const wm = activeWave     === 'all' || d.wave      === parseInt(activeWave);
-            return (cm && im && wm) ? null : 'none';
-        }});
-        link.style('display', d => {{
-            const sn = graphData.nodes.find(n => n.id === (d.source.id || d.source));
-            const tn = graphData.nodes.find(n => n.id === (d.target.id || d.target));
-            if (!sn || !tn) return 'none';
-            const scm = activeCountry  === 'all' || sn.country  === activeCountry;
-            const sim = activeIndustry === 'all' || sn.industry === activeIndustry;
-            const swm = activeWave     === 'all' || sn.wave     === parseInt(activeWave);
-            const tcm = activeCountry  === 'all' || tn.country  === activeCountry;
-            const tim = activeIndustry === 'all' || tn.industry === activeIndustry;
-            const twm = activeWave     === 'all' || tn.wave     === parseInt(activeWave);
-            return (scm && sim && swm && tcm && tim && twm) ? null : 'none';
-        }});
-    }}
-
-    document.querySelectorAll('#country-filters .filter-btn').forEach(btn => {{
-        btn.addEventListener('click', function() {{
-            document.querySelectorAll('#country-filters .filter-btn').forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            activeCountry = this.dataset.filter;
-            applyFilters();
-        }});
-    }});
-    document.querySelectorAll('#industry-filters .filter-btn').forEach(btn => {{
-        btn.addEventListener('click', function() {{
-            document.querySelectorAll('#industry-filters .filter-btn').forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            activeIndustry = this.dataset.filter;
-            applyFilters();
-        }});
-    }});
-    document.querySelectorAll('#wave-filters .filter-btn').forEach(btn => {{
-        btn.addEventListener('click', function() {{
-            document.querySelectorAll('#wave-filters .filter-btn').forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            activeWave = this.dataset.filter;
-            applyFilters();
-        }});
-    }});
-
-    // ── Search ───────────────────────────────────────────────────────────────
-    document.getElementById('search').addEventListener('input', function(e) {{
-        const q = e.target.value.toLowerCase();
-        if (!q) {{
-            node.style('opacity', 1);
-            link.style('opacity', 1);
-            return;
-        }}
-        const hits = new Set();
-        graphData.nodes.forEach(n => {{
-            if (n.name.toLowerCase().includes(q) ||
-                (n.ticker || '').toLowerCase().includes(q) ||
-                n.country.toLowerCase().includes(q) ||
-                n.industry.toLowerCase().includes(q)) {{
-                hits.add(n.id);
-            }}
-        }});
-        node.style('opacity', d => hits.has(d.id) ? 1 : 0.1);
-        link.style('opacity', d => {{
-            const s = d.source.id || d.source;
-            const t = d.target.id || d.target;
-            return (hits.has(s) || hits.has(t)) ? 0.6 : 0.04;
-        }});
-    }});
-
-    // ── Zoom controls ────────────────────────────────────────────────────────
-    document.getElementById('zoom-in').addEventListener('click', () =>
-        svg.transition().duration(300).call(zoom.scaleBy, 1.3));
-    document.getElementById('zoom-out').addEventListener('click', () =>
-        svg.transition().duration(300).call(zoom.scaleBy, 0.77));
-    document.getElementById('reset').addEventListener('click', () =>
-        svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity));
-
-    window.addEventListener('resize', () => {{
-        const w = document.getElementById('graph').clientWidth;
-        const h = document.getElementById('graph').clientHeight;
-        svg.attr('width', w).attr('height', h);
-        simulation.force('center', d3.forceCenter(w / 2, h / 2));
-        simulation.alpha(0.3).restart();
-    }});
-
-    setTimeout(() => {{
-        svg.call(zoom.transform, d3.zoomIdentity.scale(0.6).translate(width * 0.25, height * 0.22));
-    }}, 1200);
+// ── Init ─────────────────────────────────────────────────────────────
+render();
 </script>
 </body>
 </html>"""
@@ -1100,20 +850,26 @@ def generate_html(graph, company_map, eval_by_id, eval_prog):
 
 def main():
     print("Loading data...")
-    graph, company_map, eval_by_id, eval_prog = load_data()
-    print(f"  {len(graph['nodes'])} nodes, {len(graph['edges'])} edges")
-    print(f"  {len(company_map)} company files")
-    print(f"  {len(eval_by_id)} eval entries")
+    graph, eval_map, comp_map, eval_data = load_data()
+
+    print(f"  Graph: {len(graph['nodes'])} nodes, {len(graph['edges'])} edges")
+    print(f"  Eval map: {len(eval_map)} companies")
+    print(f"  Company files: {len(comp_map)} files")
+
+    print("Building JS data...")
+    nodes_js  = build_node_js(graph, eval_map, comp_map)
+    edges_js  = build_edge_js(graph)
+    detail_js = build_detail_map(graph, eval_map, comp_map)
 
     print("Generating HTML...")
-    html = generate_html(graph, company_map, eval_by_id, eval_prog)
+    html = generate_html(nodes_js, edges_js, detail_js, COUNTRY_COLORS)
 
     os.makedirs(os.path.dirname(OUT_FILE), exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         f.write(html)
 
     size_kb = os.path.getsize(OUT_FILE) // 1024
-    print(f"Written: {OUT_FILE}  ({size_kb} KB)")
+    print(f"Written {OUT_FILE}  ({size_kb} KB)")
 
 
 if __name__ == "__main__":
