@@ -140,6 +140,8 @@ def build_node_js(graph, eval_map, comp_map):
         wave   = assign_wave(cid)
         ring   = score_ring_color(score)
         crit   = cid in CRITICAL_IDS
+        thesis = ev.get("investmentThesis", "")
+        deep   = len(thesis) > 1000
 
         row = {
             "id":      cid,
@@ -154,6 +156,7 @@ def build_node_js(graph, eval_map, comp_map):
             "fo":      fo,
             "ring":    ring,
             "crit":    crit,
+            "deep":    deep,
         }
         rows.append(row)
     return json.dumps(rows, ensure_ascii=False)
@@ -553,7 +556,7 @@ const sim = d3.forceSimulation()
   .force('center', d3.forceCenter(W/2, H/2))
   .force('x', d3.forceX(W/2).strength(0.04))
   .force('y', d3.forceY(H/2).strength(0.04))
-  .force('collision', d3.forceCollide().radius(d => (d.crit?18:12)+4));
+  .force('collision', d3.forceCollide().radius(d => (d.deep?22:(d.crit?18:12))+4));
 
 // ── State ─────────────────────────────────────────────────────────────
 let activeCid = null;
@@ -626,22 +629,23 @@ function render() {{
   nodeSel = nodeEnter.merge(nodeSel);
 
   nodeSel.select('.ring-circle')
-    .attr('r', d => (d.crit?17:11)+2)
+    .attr('r', d => (d.deep?20:(d.crit?17:11))+2)
     .attr('fill','transparent')
     .attr('stroke', d => d.ring)
-    .attr('stroke-width', d => d.crit?3:2);
+    .attr('stroke-width', d => d.deep?3.5:(d.crit?3:2));
 
   nodeSel.select('.fill-circle')
-    .attr('r', d => d.crit?17:11)
+    .attr('r', d => d.deep?20:(d.crit?17:11))
     .attr('fill', d => COUNTRY_CLR[d.country]||'#6b7280')
     .attr('stroke', d => d.id===activeCid?'#fff':'none')
     .attr('stroke-width',3);
 
   nodeSel.select('.node-label')
-    .attr('font-size', d => d.crit?7:6)
-    .attr('fill','#fff')
-    .attr('dy', d => (d.crit?17:11)+10)
-    .text(d => d.ticker||d.name.split(' ')[0]);
+    .attr('font-size', d => d.deep?8:(d.crit?7:6))
+    .attr('font-weight', d => d.deep?700:'normal')
+    .attr('fill', d => d.deep?'#f59e0b':'#fff')
+    .attr('dy', d => (d.deep?20:(d.crit?17:11))+10)
+    .text(d => d.deep?d.name:(d.ticker||d.name.split(' ')[0]));
 
   // interactions
   nodeSel
@@ -667,8 +671,8 @@ function ticked() {{
   if (linkSel) linkSel.attr('d', d => {{
     const dx = d.target.x - d.source.x, dy = d.target.y - d.source.y;
     const dist = Math.sqrt(dx*dx + dy*dy) || 1;
-    const sr = (d.source.crit ? 17 : 11) + 2;
-    const tr = (d.target.crit ? 17 : 11) + 2;
+    const sr = (d.source.deep ? 20 : d.source.crit ? 17 : 11) + 2;
+    const tr = (d.target.deep ? 20 : d.target.crit ? 17 : 11) + 2;
     const x1 = d.source.x + dx/dist * sr, y1 = d.source.y + dy/dist * sr;
     const x2 = d.target.x - dx/dist * tr, y2 = d.target.y - dy/dist * tr;
     return `M${{x1.toFixed(2)}},${{y1.toFixed(2)}}L${{x2.toFixed(2)}},${{y2.toFixed(2)}}`;
