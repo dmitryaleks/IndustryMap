@@ -284,7 +284,12 @@ def build_detail_map(graph, eval_map, comp_map):
     return json.dumps(detail, ensure_ascii=False)
 
 
-def generate_html(nodes_js, edges_js, detail_js, country_colors):
+def build_company_raw_js(comp_map):
+    """Embed full company JSON files for client-side download."""
+    return json.dumps(comp_map, ensure_ascii=False, indent=2)
+
+
+def generate_html(nodes_js, edges_js, detail_js, company_raw_js, country_colors):
     country_colors_js = json.dumps(country_colors, ensure_ascii=False)
 
     html = f"""<!DOCTYPE html>
@@ -343,6 +348,10 @@ body {{ font-family: 'Segoe UI', system-ui, sans-serif; background: #0f1117; col
 #dp-header h2 {{ font-size: 15px; font-weight: 700; color: #f1f5f9;
                  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
 #dp-header .sub {{ font-size: 11px; color: #64748b; margin-top: 2px; }}
+#dp-download {{ background: none; border: 1px solid #2d3148; color: #64748b; font-size: 11px;
+                 cursor: pointer; padding: 3px 8px; border-radius: 4px; flex-shrink: 0;
+                 font-family: inherit; transition: background .15s, color .15s, border-color .15s; }}
+#dp-download:hover {{ background: #6366f1; color: #fff; border-color: #6366f1; }}
 #dp-close {{ background: none; border: none; color: #64748b; font-size: 18px;
               cursor: pointer; padding: 0 2px; line-height: 1; flex-shrink: 0; }}
 #dp-close:hover {{ color: #e2e8f0; }}
@@ -478,6 +487,7 @@ svg {{ width: 100%; height: 100%; }}
         <h2 id="dp-name">—</h2>
         <div class="sub" id="dp-sub">—</div>
       </div>
+      <button id="dp-download" title="Download JSON">JSON</button>
       <button id="dp-close" title="Close">✕</button>
     </div>
     <div id="dp-body"></div>
@@ -493,10 +503,11 @@ svg {{ width: 100%; height: 100%; }}
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 // ── Data ────────────────────────────────────────────────────────────
-const NODES_DATA   = {nodes_js};
-const EDGES_DATA   = {edges_js};
-const DETAIL_MAP   = {detail_js};
-const COUNTRY_CLR  = {country_colors_js};
+const NODES_DATA    = {nodes_js};
+const EDGES_DATA    = {edges_js};
+const DETAIL_MAP    = {detail_js};
+const COMPANY_RAW   = {company_raw_js};
+const COUNTRY_CLR   = {country_colors_js};
 
 const WAVE_LABELS = {{1:"Wave 1 – JP seed",2:"Wave 2 – Global",3:"Wave 3 – JP vendors",
                       4:"Wave 4 – OSAT/Foundry",5:"Wave 5 – Korea",6:"Wave 6 – China"}};
@@ -758,6 +769,20 @@ function hideTooltip() {{ tooltip.style.opacity='0'; }}
 // ── Investment card panel ─────────────────────────────────────────────
 const panel = document.getElementById('detail-panel');
 document.getElementById('dp-close').addEventListener('click', e => {{ e.stopPropagation(); closePanel(); }});
+document.getElementById('dp-download').addEventListener('click', e => {{
+  e.stopPropagation();
+  if (!activeCid || !COMPANY_RAW[activeCid]) return;
+  const json = JSON.stringify(COMPANY_RAW[activeCid], null, 2);
+  const blob = new Blob([json], {{type: 'application/json'}});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url;
+  a.download = activeCid + '.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}});
 
 function togglePanel(cid) {{
   if (activeCid === cid) {{ closePanel(); return; }}
@@ -982,12 +1007,13 @@ def main():
     print(f"  Company files: {len(comp_map)} files")
 
     print("Building JS data...")
-    nodes_js  = build_node_js(graph, eval_map, comp_map)
-    edges_js  = build_edge_js(graph)
-    detail_js = build_detail_map(graph, eval_map, comp_map)
+    nodes_js        = build_node_js(graph, eval_map, comp_map)
+    edges_js        = build_edge_js(graph)
+    detail_js       = build_detail_map(graph, eval_map, comp_map)
+    company_raw_js  = build_company_raw_js(comp_map)
 
     print("Generating HTML...")
-    html = generate_html(nodes_js, edges_js, detail_js, COUNTRY_COLORS)
+    html = generate_html(nodes_js, edges_js, detail_js, company_raw_js, COUNTRY_COLORS)
 
     os.makedirs(os.path.dirname(OUT_FILE), exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
