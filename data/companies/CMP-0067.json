@@ -7,7 +7,7 @@
   "ticker": "002156.SZ",
   "description": "China's second-largest OSAT company. Specializes in IC packaging and testing with expertise in advanced packaging including flip chip, BGA, SiP, and wafer-level packaging. AMD is the largest customer (80%+ of AMD's packaging orders). FY2024 revenue: ~$3.32B.",
   "marketCapInYen": null,
-  "PER": null,
+  "PER": 80.0,
   "PBR": null,
   "EPS": null,
   "website": "https://www.tfme.com/",
@@ -15,12 +15,25 @@
   "percentOfCirculatingEquity": null,
   "latestPriceYen": null,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0001", "CMP-0002"],
+  "suppliers": [
+    "CMP-0001",
+    "CMP-0002"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorSuppliers": ["ACCRETECH (dicing, probing)", "DISCO (dicing)"],
-    "majorClients": ["AMD (50%+ of revenue)", "Hefei Changxin (CXMT)"],
-    "competitors": ["JCET (CMP-0065)", "Huatian (CMP-0068)", "ASE (CMP-0063)"],
+    "majorSuppliers": [
+      "ACCRETECH (dicing, probing)",
+      "DISCO (dicing)"
+    ],
+    "majorClients": [
+      "AMD (50%+ of revenue)",
+      "Hefei Changxin (CXMT)"
+    ],
+    "competitors": [
+      "JCET (CMP-0065)",
+      "Huatian (CMP-0068)",
+      "ASE (CMP-0063)"
+    ],
     "notes": "World #4 OSAT. Listed on Shenzhen Stock Exchange. FY2024 revenue: $3.32B (+5.6% YoY). AMD is largest customer, contributing >50% of revenue. Also is AMD's largest packaging test supplier. Chinese domestic dicing equipment from Heyan and Guangli being tested on production lines."
   },
   "_metadata": {

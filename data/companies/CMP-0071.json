@@ -5,19 +5,24 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6223.TW",
   "description": "Taiwan's leading wafer prober and semiconductor RF test solution provider. Founded 1995 in Hsinchu. Products include advanced wafer probers, probe cards, thermal systems, and engineering probe stations. Market leader in semiconductor RF testing solutions. First prober company to list on Taiwan TPEx.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 1005575000000,
+  "PER": 73.16,
   "PBR": null,
-  "EPS": null,
+  "EPS": 30.41,
   "website": "https://www.mpi.com.tw/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 13252,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "competitors": ["ACCRETECH/Tokyo Seimitsu (CMP-0001)", "Tokyo Electron", "FormFactor", "Technoprobe"],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001)",
+      "Tokyo Electron",
+      "FormFactor",
+      "Technoprobe"
+    ],
     "notes": "~10% global prober market share (3rd after ACCRETECH 46% and TEL 27%). HQ in Hsinchu, Taiwan. Specializes in RF testing probers. Listed on Taiwan TPEx (6223.TW). Direct competitor to ACCRETECH in probing equipment segment."
   },
   "_metadata": {

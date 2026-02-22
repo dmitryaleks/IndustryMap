@@ -6,20 +6,32 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "042700.KS",
   "description": "South Korea's leading semiconductor packaging equipment manufacturer. World #1 in HBM TC (Thermocompression) bonders with 71.2% global market share. Key products include TC bonders for HBM production, MSVP (Micro Saw & Vision Placement) package singulation systems, and flip chip bonders. Founded 1980.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 2033900000000,
+  "PER": 68.41,
   "PBR": null,
-  "EPS": null,
+  "EPS": 2531.86,
   "website": "https://www.hanmisemi.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 22055,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0020", "CMP-0021", "CMP-0063"],
+  "clients": [
+    "CMP-0020",
+    "CMP-0021",
+    "CMP-0063"
+  ],
   "_externalRelationships": {
-    "majorClients": ["SK Hynix (CMP-0020, TC bonders for HBM)", "Micron (CMP-0021, TC bonders)", "ASE (CMP-0063, flip chip bonders)"],
-    "competitors": ["ACCRETECH/Tokyo Seimitsu (CMP-0001, package dicing)", "DISCO (CMP-0002)", "Hanwha Semitech (TC bonders)"],
+    "majorClients": [
+      "SK Hynix (CMP-0020, TC bonders for HBM)",
+      "Micron (CMP-0021, TC bonders)",
+      "ASE (CMP-0063, flip chip bonders)"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001, package dicing)",
+      "DISCO (CMP-0002)",
+      "Hanwha Semitech (TC bonders)"
+    ],
     "notes": "FY2024 revenue: 576.7B KRW (record high). Operating margin 43.6%. 76%+ export ratio. Selected by TechInsights as only Korean company in global top 10 semiconductor equipment firms (2025). MSVP package cutting systems compete with ACCRETECH dicing in back-end packaging. Recently shipped Big Die flip chip bonders to ASE."
   },
   "_metadata": {

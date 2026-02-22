@@ -5,23 +5,50 @@
   "industryCode": "Semiconductors",
   "ticker": "005930.KS",
   "description": "World's largest memory chip manufacturer and second-largest foundry. Produces DRAM, NAND flash, and provides foundry services. Leading in HBM (High Bandwidth Memory) for AI applications. Also manufactures smartphones and displays.",
-  "marketCapInYen": null,
+  "marketCapInYen": 42104000000000,
   "marketCapUSD": 877000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "PER": 29.3,
+  "PBR": 1.14,
+  "EPS": 5900,
   "website": "https://www.samsung.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 6270,
   "latestPriceKRW": null,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0004", "CMP-0005", "CMP-0006", "CMP-0011", "CMP-0024", "CMP-0025", "CMP-0015", "CMP-0013"],
+  "suppliers": [
+    "CMP-0004",
+    "CMP-0005",
+    "CMP-0006",
+    "CMP-0011",
+    "CMP-0024",
+    "CMP-0025",
+    "CMP-0015",
+    "CMP-0013",
+    "CMP-0044"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Tesla ($16.5B AI chip deal)", "Data center operators", "Smartphone OEMs"],
-    "majorSuppliers": ["Tokyo Electron (CMP-0004)", "Advantest (CMP-0005)", "Lasertec (CMP-0006)", "Kokusai Electric (CMP-0011)", "Shin-Etsu (CMP-0024)", "SUMCO (CMP-0025)", "HOYA (CMP-0015)", "ASML (CMP-0026)"],
-    "competitors": ["SK Hynix (memory)", "TSMC (foundry)", "Micron (memory)"],
+    "majorClients": [
+      "Tesla ($16.5B AI chip deal)",
+      "Data center operators",
+      "Smartphone OEMs"
+    ],
+    "majorSuppliers": [
+      "Tokyo Electron (CMP-0004)",
+      "Advantest (CMP-0005)",
+      "Lasertec (CMP-0006)",
+      "Kokusai Electric (CMP-0011)",
+      "Shin-Etsu (CMP-0024)",
+      "SUMCO (CMP-0025)",
+      "HOYA (CMP-0015)",
+      "ASML (CMP-0026)"
+    ],
+    "competitors": [
+      "SK Hynix (memory)",
+      "TSMC (foundry)",
+      "Micron (memory)"
+    ],
     "notes": "2nm GAA production started. HBM4 nearing NVIDIA certification. Feb 2026 HBM4 mass production. World's 14th most valuable company."
   },
   "_metadata": {

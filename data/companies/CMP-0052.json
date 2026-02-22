@@ -4,27 +4,74 @@
   "companyNameJapanese": "オルガノ株式会社",
   "industryCode": "Semiconductor Equipment",
   "ticker": "6368.T",
-  "description": "World leader in ultrapure water systems for semiconductor manufacturing. Nearly exclusive supplier to TSMC fabs. Tosoh group company.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "description": "World leader in ultrapure water (UPW) systems for semiconductor manufacturing. Dominant supplier to TSMC fabs (70-80% of TSMC water treatment plants, 100% for <=10nm wafers). Tosoh group subsidiary (Tosoh owns ~44%). Also serves pharmaceutical, power, food & beverage industries. Operates ~100 semiconductor UPW plants across 8 countries. Revenue FY03/25: 163.3B JPY. FY03/26 guidance: 175B JPY. Founded 1946.",
+  "marketCapInYen": 770000000000,
+  "PER": 27.1,
+  "PBR": 5.85,
+  "EPS": 613.06,
   "website": "https://www.organo.co.jp/",
-  "percentOfForeignOwnership": null,
-  "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "percentOfForeignOwnership": 22.5,
+  "percentOfCirculatingEquity": 54.0,
+  "latestPriceYen": 16620,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0066",
+    "CMP-0070"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC (CMP-0017) - nearly exclusive", "TSMC Kumamoto"],
-    "notes": "Founded 1946. Stock up 5x on TSMC relationship. Water purity: 1 sugar cube impurity in Tokyo Dome."
+    "majorClients": [
+      "TSMC (CMP-0017) - dominant: 70-80% of TSMC water treatment plants, 100% for <=10nm nodes. TSMC = 14% of total revenue in FY03/25. Received TSMC 2024 Excellent Performance Award",
+      "TSMC JASM Kumamoto (Phase 1 operational Dec 2024, Phase 2 by end 2027) - UPW and wastewater treatment",
+      "TSMC Arizona - Organo USA opened Arizona office specifically for this project, plus seeking other US semiconductor customers",
+      "TSMC Europe (Dresden ESMC fab) - executing water treatment projects for TSMC global expansion in Europe",
+      "Rapidus (Chitose, Hokkaido) - Organo building and will own/operate water purification facility at Rapidus 2nm fab site",
+      "Major Japanese semiconductor fabs (Organo has ~100 semiconductor UPW plants, serves the full Japan semiconductor ecosystem)",
+      "Chinese semiconductor fabs (Greater China = ~30% of Organo revenue)",
+      "Taiwan semiconductor fabs beyond TSMC (Taiwan contributed JPY 27.9B revenue in FY03/25)",
+      "Pharmaceutical companies (water treatment for drug manufacturing)",
+      "Power plants (condensate polishing systems)",
+      "Food & beverage industry (sugar refineries - decolorization/desalination)"
+    ],
+    "majorSuppliers": [
+      "Tosoh Corporation (4042.T) - parent company, 44% shareholder. Tosoh is a major chemical company producing ion exchange resins (Tosoh Bioscience) and other chemical materials",
+      "DuPont (Amberlite/FilmTec) - likely supplier of RO membranes (FilmTec semiconductor-grade modules) and ion exchange resins (Amberlite series, formerly Rohm & Haas)",
+      "Toray Industries (3402.T) - major Japanese RO membrane manufacturer, likely supplier",
+      "Nitto Denko / Hydranautics (6988.T) - RO membrane supplier for water treatment",
+      "Pall Corporation (Danaher subsidiary) - ultrafiltration membranes and filters (Megaplast series) for semiconductor UPW",
+      "Note: Organo also manufactures its own ORLITE brand ion exchange resins (DS series for semiconductor-grade purification, DRY series for organic solvents)"
+    ],
+    "majorCompetitors": [
+      "Kurita Water Industries (6370.T) - Japan's largest water treatment company. Global #1 in semiconductor UPW by revenue (35-45% global share). Stronger in standardized equipment, aggressive pricing. Strong in North America and Europe",
+      "Nomura Micro Science (CMP-0053, 6254.T) - Japan specialist UPW company. 10-15% global share. Strong in Korea (Samsung main customer). First to expand to Korea then Taiwan, China, USA",
+      "Veolia (VEOEY) - French global water treatment giant. Co-dominates global UPW market with Organo. Broad industrial water treatment",
+      "Ecolab / Ovivo Electronics (ECL) - US. Ecolab acquired Ovivo's Electronics UPW business for $1.8B in Dec 2025. Ovivo Electronics generating ~$500M revenue. Now a major UPW competitor",
+      "Xylem / Evoqua (XYL) - US. Xylem acquired Evoqua for $7.5B in 2023. Semiconductor UPW systems",
+      "DuPont Water Solutions - MEGA and other UPW technologies for semiconductor",
+      "Chinese competitors: Hangzhou Ouquan, Shenzhen Jianghui Environmental Protection Technology, Shenzhen Hongsen Environmental Protection Technology - emerging domestic competitors in Chinese market",
+      "Korean/Taiwanese regional competitors (unnamed) - noted as competitive threat"
+    ],
+    "keyFacts": {
+      "marketPosition": "Top 3 globally (Kurita #1 at 35-45%, Organo #2 at 20-30%, Nomura #3 at 10-15%). Top 3 combined = 80%+ of global semiconductor UPW market",
+      "tsmcDominance": "70-80% of all TSMC water treatment plants. 100% of TSMC plants for wafers <=10nm line width",
+      "revenueBreakdown": "Japan 60%, International 40%. Greater China ~30% of total revenue. Taiwan JPY 27.9B in FY03/25",
+      "growthDrivers": "TSMC global fab expansion (Japan JASM, US Arizona, Europe Dresden), Rapidus 2nm fab, AI semiconductor investment boom",
+      "orderPipeline": "FY03/26 projected orders JPY 185B from new fab projects in Japan, US, Europe. Sales guidance revised upward to JPY 175B",
+      "projectLeadTime": "Large projects have 1.5-2 year lead time. Revenue recognized on percentage-of-completion basis",
+      "employees": 2660,
+      "subsidiariesIn8Countries": true,
+      "semiconductorUPWPlants": "~100 plants globally",
+      "waterPurity": "Semiconductor-grade UPW cannot contain impurities beyond 1 part per trillion"
+    },
+    "notes": "Founded 1946. Tosoh subsidiary (44% stake since 1955). Stock price up ~10x in 5 years. Revenue FY03/25: 163.3B JPY (+8.6% YoY). Operating profit: 31.1B JPY (+38% YoY). FY03/26 guidance: 175B JPY revenue, 27B JPY net income. Products include ORLITE ion exchange resins, D2EDI electrodeionization systems. Also does HF acid recovery, TMAH recovery, rare metal recovery, NMP solvent recycling via membrane separation. Organo USA Inc. established 2021."
   },
   "_metadata": {
     "dataCollectedAt": "2026-02-21T17:00:00Z",
-    "dataSource": "Nikkei Business, Note.com",
+    "dataSource": "Nikkei Asia, Nikkei Business, MarketScreener, StockAnalysis, Yahoo Finance, Shared Research, The Worldfolio, Investing.com, company IR, industry reports",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T17:00:00Z",
-    "wave": 3
+    "lastUpdated": "2026-02-22T12:00:00Z",
+    "wave": 3,
+    "notes": "Comprehensive update: added financial metrics, clients (TSMC dominant + Rapidus + global expansion), suppliers (Tosoh parent, membrane/resin suppliers), competitors (Kurita, Nomura Micro, Veolia, Ecolab/Ovivo, Xylem/Evoqua), market share data, revenue breakdown. Stock data as of Feb 2026."
   }
 }

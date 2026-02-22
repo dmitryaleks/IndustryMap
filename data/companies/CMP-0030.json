@@ -5,19 +5,24 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6264.T",
   "description": "Precision contract manufacturing company specializing in vacuum chambers, electrodes, and precision parts for semiconductor and FPD manufacturing equipment. Recognized as Tokyo Electron Green Partner.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 25400000000,
+  "PER": 32.22,
   "PBR": null,
-  "EPS": null,
+  "EPS": 62.16,
   "website": "https://www.marumae.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 2003,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0004"],
+  "clients": [
+    "CMP-0004"
+  ],
   "_externalRelationships": {
-    "majorClients": ["Tokyo Electron (CMP-0004)", "NHK Spring"],
+    "majorClients": [
+      "Tokyo Electron (CMP-0004)",
+      "NHK Spring"
+    ],
     "notes": "E-COMPASS Green Partner certification from Tokyo Electron. Strong in small-lot, multi-variety machining."
   },
   "_metadata": {

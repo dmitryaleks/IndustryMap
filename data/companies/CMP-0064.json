@@ -5,21 +5,36 @@
   "industryCode": "Semiconductor Packaging/OSAT",
   "ticker": "AMKR",
   "description": "World's second-largest OSAT company. Provides semiconductor packaging and test services including advanced SiP, flip chip, wire bond BGA, and wafer-level packaging. Major operations in Korea, Japan, China, Malaysia, Vietnam, Philippines, and Portugal.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 1828560000000,
+  "PER": 39.25,
+  "PBR": 1.6,
+  "EPS": 1.18,
   "website": "https://amkor.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 7823,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0001", "CMP-0002", "CMP-0004", "CMP-0005"],
+  "suppliers": [
+    "CMP-0001",
+    "CMP-0002",
+    "CMP-0004",
+    "CMP-0005"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorSuppliers": ["ACCRETECH (dicing, probing)", "DISCO (dicing)", "Advantest (testing)"],
-    "majorClients": ["Apple (21% of revenue)", "Qualcomm (20% of revenue)"],
-    "competitors": ["ASE (CMP-0063)", "JCET (CMP-0065)"],
+    "majorSuppliers": [
+      "ACCRETECH (dicing, probing)",
+      "DISCO (dicing)",
+      "Advantest (testing)"
+    ],
+    "majorClients": [
+      "Apple (21% of revenue)",
+      "Qualcomm (20% of revenue)"
+    ],
+    "competitors": [
+      "ASE (CMP-0063)",
+      "JCET (CMP-0065)"
+    ],
     "notes": "World #2 OSAT with 15.2% market share. FY2024 revenue: $6.32B. HQ in Tempe, Arizona, USA. Apple and Qualcomm together represent 41% of total sales. Record Advanced SiP revenue in 2024. New facility ramped in Vietnam."
   },
   "_metadata": {

@@ -1,0 +1,35 @@
+{
+  "id": "CMP-0107",
+  "companyName": "UTAC Group",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": null,
+  "description": "Major global OSAT company headquartered in Singapore. Services: wafer-level packaging, laminate packages, leadframe solutions, SiP integration, MEMS & sensors, power applications, wafer probing, and final testing. Serves automotive, computing, and communications markets. Production bases in Singapore, Thailand, Indonesia, and China. Owned by Wise Road Capital (Beijing). Estimated valuation ~$3B USD.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://utacgroup.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment",
+      "DISCO (CMP-0002) - dicing saws"
+    ],
+    "competitors": [
+      "ASE Technology (CMP-0063) - OSAT",
+      "Amkor Technology (CMP-0064) - OSAT"
+    ],
+    "notes": "Private (owned by Wise Road Capital, Beijing). Founded 1997 in Singapore. Foxconn reportedly bid to acquire UTAC for up to $3B in 2025. Major OSAT with wafer probing and dicing operations requiring Accretech equipment."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "UTAC corporate site, SEMI, industry research",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "CMP-0106",
+  "companyName": "GlobalFoundries Inc.",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": "GFS",
+  "description": "World's 3rd largest foundry by revenue. Two fabs in Singapore: one 200mm and one 300mm facility. 2023 $4B expansion raised Singapore capacity to ~1.5M 300mm wafers/year. Also acquired Advanced Micro Foundry (silicon photonics) in Singapore Nov 2025. Additional fabs in Dresden (Germany) and Malta, NY (USA). FY2025 revenue: $6.79B USD. Market cap ~$26B USD.",
+  "marketCapInYen": 3900000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://gf.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0004", "CMP-0026", "CMP-0044"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - CMP, probing, dicing equipment",
+      "Tokyo Electron (CMP-0004) - process equipment",
+      "ASML (CMP-0026) - DUV lithography"
+    ],
+    "competitors": [
+      "TSMC (CMP-0017) - foundry",
+      "UMC (CMP-0102) - specialty foundry",
+      "SMIC (CMP-0066) - foundry"
+    ],
+    "notes": "Owned by Mubadala Investment Company (Abu Dhabi). NASDAQ listed. Singapore is key manufacturing hub. Accretech Singapore Pte. Ltd. serves GF directly. Specialty/mature node focus."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "GlobalFoundries IR, NASDAQ, industry research",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

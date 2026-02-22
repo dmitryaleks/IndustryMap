@@ -5,19 +5,22 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6387.T",
   "description": "Pioneer in plasma CVD equipment since 1980. Specializes in thin film deposition, dry etching, and cleaning equipment. Kyoto-based R&D-oriented company.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 33700000000,
+  "PER": 19.7,
   "PBR": null,
-  "EPS": null,
+  "EPS": 211.28,
   "website": "https://www.samco.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 4170,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["R&D facilities", "Semiconductor manufacturers"],
+    "majorClients": [
+      "R&D facilities",
+      "Semiconductor manufacturers"
+    ],
     "notes": "Japan's first plasma CVD equipment 1980. Low-temperature thick film PECVD strength. Expanding overseas sales."
   },
   "_metadata": {

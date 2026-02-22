@@ -5,23 +5,42 @@
   "industryCode": "Memory Semiconductors",
   "ticker": "MU",
   "description": "Major memory chip manufacturer producing DRAM and NAND flash products. Serves data center, PC, graphics, networking, automotive, industrial, and mobile markets. Products sold under Micron and Crucial brands.",
-  "marketCapInYen": null,
+  "marketCapInYen": 17176000000000,
   "marketCapUSD": 469000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "PER": 24.6,
+  "PBR": 2.88,
+  "EPS": 4.14,
   "website": "https://www.micron.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 15499,
   "latestPriceUSD": null,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0005", "CMP-0011", "CMP-0024", "CMP-0025"],
+  "suppliers": [
+    "CMP-0005",
+    "CMP-0011",
+    "CMP-0024",
+    "CMP-0025",
+    "CMP-0044"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Data center operators", "PC OEMs", "Automotive companies"],
-    "majorSuppliers": ["Advantest (CMP-0005)", "Kokusai Electric (CMP-0011)", "Shin-Etsu (CMP-0024)", "SUMCO (CMP-0025)", "ASML (CMP-0026)"],
-    "competitors": ["Samsung Electronics (CMP-0018)", "SK Hynix (CMP-0020)"],
+    "majorClients": [
+      "Data center operators",
+      "PC OEMs",
+      "Automotive companies"
+    ],
+    "majorSuppliers": [
+      "Advantest (CMP-0005)",
+      "Kokusai Electric (CMP-0011)",
+      "Shin-Etsu (CMP-0024)",
+      "SUMCO (CMP-0025)",
+      "ASML (CMP-0026)"
+    ],
+    "competitors": [
+      "Samsung Electronics (CMP-0018)",
+      "SK Hynix (CMP-0020)"
+    ],
     "notes": "World's 21st most valuable company. Market cap +40% in 12 months. Memory supercycle beneficiary."
   },
   "_metadata": {

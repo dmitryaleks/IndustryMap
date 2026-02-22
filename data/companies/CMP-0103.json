@@ -1,0 +1,35 @@
+{
+  "id": "CMP-0103",
+  "companyName": "Vanguard International Semiconductor Corporation",
+  "companyNameChinese": "世界先進積體電路",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": "5347.TWO",
+  "description": "Taiwan specialty foundry, originally a TSMC affiliate. Foundry processes: high voltage, ultra-high voltage, BCD, SOI, discrete, logic, mixed-signal, analog, embedded memory. Focus on 200mm and 300mm legacy-node wafers (180nm-55nm). Market cap ~$5.4B USD.",
+  "marketCapInYen": 540000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.vsmc.com.tw/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - CMP, probing, dicing equipment"
+    ],
+    "competitors": [
+      "UMC (CMP-0102) - specialty foundry",
+      "DB HiTek (CMP-0075) - 200mm foundry"
+    ],
+    "notes": "TPEX listed. TSMC affiliate. Focus on mature-node specialty processes. Uses CMP equipment, probers, and dicers from Accretech. Hsinchu-based."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "VSMC IR, TPEX, industry research",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

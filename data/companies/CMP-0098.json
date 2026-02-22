@@ -1,0 +1,38 @@
+{
+  "id": "CMP-0098",
+  "companyName": "WONIK IPS Co., Ltd.",
+  "companyNameKorean": "원익IPS",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "240810.KQ",
+  "description": "Major Korean semiconductor deposition equipment maker. Products: PECVD, ALD, thermal processing equipment. Key supplier to Samsung and SK Hynix fabs. Part of Wonik Group. Competes in the same fab equipment ecosystem as Accretech but in different process steps (deposition vs probing/dicing/CMP).",
+  "marketCapInYen": null,
+  "PER": 41.96,
+  "PBR": 3.72,
+  "EPS": null,
+  "website": "https://www.wonikips.com/",
+  "percentOfForeignOwnership": 22.52,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 102800,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0018", "CMP-0020"],
+  "_externalRelationships": {
+    "majorClients": [
+      "Samsung Electronics (CMP-0018) - PECVD, ALD, thermal equipment",
+      "SK Hynix (CMP-0020) - deposition equipment"
+    ],
+    "competitors": [
+      "Tokyo Electron (CMP-0004) - deposition equipment",
+      "Kokusai Electric (CMP-0011) - batch deposition equipment",
+      "Applied Materials - CVD, PVD"
+    ],
+    "notes": "KOSDAQ listed. Market cap ~2.2-3.3T KRW. TTM revenue ~$603M. Major Korean equipment maker in deposition space. Same customer base as Accretech (Samsung, SK Hynix) but different process steps. Part of broader Korean semiconductor equipment ecosystem alongside SEMES, KCTech, Hanmi, Techwing."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "FnGuide, WONIK IPS IR, Korean financial sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

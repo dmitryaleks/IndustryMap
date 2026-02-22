@@ -1,15 +1,15 @@
 {
   "version": "4.0.0",
   "generatedAt": "2026-02-21T23:00:00Z",
-  "description": "Semiconductor supply chain graph - 96 companies, 7 regions (Wave 6: Chinese ecosystem - foundries, equipment, memory/IC)",
+  "description": "Semiconductor supply chain graph - 110 companies, 7 regions (Wave 6: Chinese ecosystem - foundries, equipment, memory/IC)",
   "statistics": {
-    "totalNodes": 96,
-    "totalEdges": 251,
+    "totalNodes": 110,
+    "totalEdges": 321,
     "edgeTypes": {
-      "supplier": 215,
-      "competitor": 22,
+      "supplier": 263,
+      "competitor": 42,
       "partner": 4,
-      "ecosystem": 10
+      "ecosystem": 12
     }
   },
   "nodes": [
@@ -774,11 +774,123 @@
       "marketCap": 651000000000
     },
     {
+      "id": "CMP-0096",
+      "name": "SEMES Co., Ltd.",
+      "industry": "Semiconductor Equipment",
+      "country": "South Korea",
+      "ticker": null,
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0097",
+      "name": "SEMICS Inc.",
+      "industry": "Semiconductor Equipment",
+      "country": "South Korea",
+      "ticker": null,
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0098",
+      "name": "WONIK IPS Co., Ltd.",
+      "industry": "Semiconductor Equipment",
+      "country": "South Korea",
+      "ticker": "240810.KQ",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0099",
+      "name": "EO Technics Co., Ltd.",
+      "industry": "Semiconductor Equipment",
+      "country": "South Korea",
+      "ticker": "039030.KQ",
+      "marketCap": null
+    },
+    {
       "id": "CMP-0100",
       "name": "SurplusGLOBAL Inc.",
       "industry": "Semiconductor Equipment",
       "country": "South Korea",
       "ticker": "140070.KQ",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0101",
+      "name": "King Yuan Electronics Co., Ltd.",
+      "industry": "Semiconductor Testing/OSAT",
+      "country": "Taiwan",
+      "ticker": "2449.TW",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0102",
+      "name": "United Microelectronics Corporation",
+      "industry": "Semiconductor Foundry",
+      "country": "Taiwan",
+      "ticker": "2303.TW",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0103",
+      "name": "Vanguard International Semiconductor Corporation",
+      "industry": "Semiconductor Foundry",
+      "country": "Taiwan",
+      "ticker": "5347.TWO",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0104",
+      "name": "Chipbond Technology Corporation",
+      "industry": "Semiconductor Packaging/OSAT",
+      "country": "Taiwan",
+      "ticker": "6147.TWO",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0105",
+      "name": "ChipMOS Technologies Inc.",
+      "industry": "Semiconductor Packaging/OSAT",
+      "country": "Taiwan",
+      "ticker": "8150.TW",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0106",
+      "name": "GlobalFoundries Inc.",
+      "industry": "Semiconductor Foundry",
+      "country": "Singapore",
+      "ticker": "GFS",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0107",
+      "name": "UTAC Holdings Ltd.",
+      "industry": "Semiconductor Packaging/OSAT",
+      "country": "Singapore",
+      "ticker": null,
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0108",
+      "name": "Inari Amertron Berhad",
+      "industry": "Semiconductor Packaging/OSAT",
+      "country": "Malaysia",
+      "ticker": "0166.KL",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0109",
+      "name": "Unisem (M) Berhad",
+      "industry": "Semiconductor Packaging/OSAT",
+      "country": "Malaysia",
+      "ticker": "5005.KL",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0110",
+      "name": "Malaysian Pacific Industries Berhad",
+      "industry": "Semiconductor Packaging/OSAT",
+      "country": "Malaysia",
+      "ticker": "3867.KL",
       "marketCap": null
     }
   ],
@@ -1968,52 +2080,62 @@
     {
       "source": "CMP-0001",
       "target": "CMP-0075",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing, CMP equipment (Korea #2 foundry)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0076",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing equipment (Korea #1 OSAT)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0077",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing equipment (Korea OSAT)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0078",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing equipment (Korea OSAT)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0079",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing equipment (Korea OSAT)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0083",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing, CMP (China #3 foundry)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0084",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing (China IDM)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0093",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "CMP, probing, dicing (China NAND, pre-sanctions)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0094",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing, CMP (Guangzhou foundry)"
     },
     {
       "source": "CMP-0001",
       "target": "CMP-0095",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "probing, dicing (Shanghai specialty foundry)"
     },
     {
       "source": "CMP-0033",
@@ -2148,22 +2270,26 @@
     {
       "source": "CMP-0080",
       "target": "CMP-0018",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "memory test handlers"
     },
     {
       "source": "CMP-0080",
       "target": "CMP-0020",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "memory test handlers"
     },
     {
       "source": "CMP-0081",
       "target": "CMP-0018",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "CMP equipment, slurry (VENTUS system)"
     },
     {
       "source": "CMP-0081",
       "target": "CMP-0020",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "CMP equipment, cleaning, slurry"
     },
     {
       "source": "CMP-0082",
@@ -2183,22 +2309,26 @@
     {
       "source": "CMP-0085",
       "target": "CMP-0066",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "etching, deposition, cleaning"
     },
     {
       "source": "CMP-0085",
       "target": "CMP-0070",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "process equipment"
     },
     {
       "source": "CMP-0088",
       "target": "CMP-0066",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "CMP equipment"
     },
     {
       "source": "CMP-0088",
       "target": "CMP-0070",
-      "type": "supplier"
+      "type": "supplier",
+      "label": "CMP equipment"
     },
     {
       "source": "CMP-0066",
@@ -2233,6 +2363,402 @@
     {
       "source": "CMP-0100",
       "target": "CMP-0075",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0101",
+      "type": "supplier",
+      "label": "probing equipment (world #1 pure-play tester)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0102",
+      "type": "supplier",
+      "label": "CMP, probing, dicing (Taiwan #2 foundry)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0103",
+      "type": "supplier",
+      "label": "CMP, probing, dicing (Taiwan specialty foundry)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0104",
+      "type": "supplier",
+      "label": "probing, dicing (Taiwan OSAT)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0105",
+      "type": "supplier",
+      "label": "probing, dicing (Taiwan OSAT)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0106",
+      "type": "supplier",
+      "label": "CMP, probing, dicing (Singapore fabs)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0107",
+      "type": "supplier",
+      "label": "probing, dicing (Singapore OSAT)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0108",
+      "type": "supplier",
+      "label": "probing, dicing (Malaysia #1 OSAT)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0109",
+      "type": "supplier",
+      "label": "probing, dicing (Malaysia OSAT)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0110",
+      "type": "supplier",
+      "label": "probing, dicing (Malaysia OSAT)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0085",
+      "type": "competitor",
+      "label": "CMP, probing equipment"
+    },
+    {
+      "source": "CMP-0085",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "CMP, probing equipment"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0087",
+      "type": "competitor",
+      "label": "probing equipment (China)"
+    },
+    {
+      "source": "CMP-0087",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "probing equipment (China)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0088",
+      "type": "competitor",
+      "label": "CMP equipment (China #1 CMP)"
+    },
+    {
+      "source": "CMP-0088",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "CMP equipment (China #1 CMP)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0089",
+      "type": "competitor",
+      "label": "dicing equipment (China)"
+    },
+    {
+      "source": "CMP-0089",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "dicing equipment (China)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0091",
+      "type": "competitor",
+      "label": "CMP, dicing equipment (China state-owned)"
+    },
+    {
+      "source": "CMP-0091",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "CMP, dicing equipment (China state-owned)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0092",
+      "type": "competitor",
+      "label": "CMP, grinding (compound semi)"
+    },
+    {
+      "source": "CMP-0092",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "CMP, grinding (compound semi)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0096",
+      "type": "competitor",
+      "label": "probing equipment (Korea Samsung captive)"
+    },
+    {
+      "source": "CMP-0096",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "probing equipment (Korea Samsung captive)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0097",
+      "type": "competitor",
+      "label": "probing equipment (Korea world #3)"
+    },
+    {
+      "source": "CMP-0097",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "probing equipment (Korea world #3)"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0099",
+      "type": "competitor",
+      "label": "dicing equipment (laser vs blade)"
+    },
+    {
+      "source": "CMP-0099",
+      "target": "CMP-0002",
+      "type": "competitor",
+      "label": "dicing equipment (laser vs blade)"
+    },
+    {
+      "source": "CMP-0001",
+      "target": "CMP-0099",
+      "type": "competitor",
+      "label": "dicing equipment (laser vs blade)"
+    },
+    {
+      "source": "CMP-0099",
+      "target": "CMP-0001",
+      "type": "competitor",
+      "label": "dicing equipment (laser vs blade)"
+    },
+    {
+      "source": "CMP-0096",
+      "target": "CMP-0018",
+      "type": "supplier",
+      "label": "probers, photo track, cleaning (Samsung captive)"
+    },
+    {
+      "source": "CMP-0097",
+      "target": "CMP-0018",
+      "type": "supplier",
+      "label": "wafer probers (15yr relationship)"
+    },
+    {
+      "source": "CMP-0097",
+      "target": "CMP-0020",
+      "type": "supplier",
+      "label": "wafer probers"
+    },
+    {
+      "source": "CMP-0098",
+      "target": "CMP-0018",
+      "type": "supplier",
+      "label": "PECVD, ALD, thermal equipment"
+    },
+    {
+      "source": "CMP-0098",
+      "target": "CMP-0020",
+      "type": "supplier",
+      "label": "deposition equipment"
+    },
+    {
+      "source": "CMP-0099",
+      "target": "CMP-0018",
+      "type": "supplier",
+      "label": "laser dicing, marking, annealing"
+    },
+    {
+      "source": "CMP-0099",
+      "target": "CMP-0020",
+      "type": "supplier",
+      "label": "laser stealth dicing for HBM"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0101",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0104",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0105",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0107",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0108",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0109",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0110",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0068",
+      "target": "CMP-0109",
+      "type": "ecosystem",
+      "label": "Huatian parent of Unisem Malaysia"
+    },
+    {
+      "source": "CMP-0109",
+      "target": "CMP-0068",
+      "type": "ecosystem",
+      "label": "Unisem subsidiary of Huatian"
+    },
+    {
+      "source": "CMP-0005",
+      "target": "CMP-0101",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0004",
+      "target": "CMP-0102",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0026",
+      "target": "CMP-0102",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0004",
+      "target": "CMP-0106",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0026",
+      "target": "CMP-0106",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0036",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0059",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0011",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0043",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0060",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0017",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0018",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0019",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0020",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0066",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0070",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0042",
+      "target": "CMP-0096",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0044",
+      "target": "CMP-0014",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0044",
+      "target": "CMP-0066",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0044",
+      "target": "CMP-0070",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0044",
+      "target": "CMP-0102",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0044",
+      "target": "CMP-0106",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0052",
+      "target": "CMP-0066",
+      "type": "supplier"
+    },
+    {
+      "source": "CMP-0052",
+      "target": "CMP-0070",
       "type": "supplier"
     }
   ]

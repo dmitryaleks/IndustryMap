@@ -5,20 +5,32 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6383.T",
   "description": "World's largest material handling system manufacturer. Near-monopoly in advanced (<7nm) semiconductor fab cleanroom transport systems (AMHS).",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 1850000000000,
+  "PER": 24.85,
+  "PBR": 4.41,
+  "EPS": 212.4,
   "website": "https://www.daifuku.com/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 52.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 5136,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung", "Intel", "Major fabs worldwide"],
-    "subsidiaries": ["Clean Factomation (Korea)", "DSA (China)"],
+    "majorClients": [
+      "TSMC",
+      "Samsung",
+      "Intel",
+      "Major fabs worldwide"
+    ],
+    "subsidiaries": [
+      "Clean Factomation (Korea)",
+      "DSA (China)"
+    ],
     "notes": "Cleanway vehicle system. Near-monopoly in advanced node AMHS. 600-1000 process steps in semiconductor fabs."
   },
   "_metadata": {

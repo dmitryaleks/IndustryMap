@@ -1,0 +1,31 @@
+{
+  "id": "CMP-0109",
+  "companyName": "Unisem (M) Berhad",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "5005.KL",
+  "description": "Malaysian OSAT subsidiary of Tianshui Huatian Technology (CMP-0068). Advanced IC packaging (wafer bump, RDL, flip chip, WLCSP), leadframe IC packages, test services (wafer probe and final testing on RF, analog, digital, mixed-signal platforms), turnkey services. Key customers: Qorvo, Skyworks, Broadcom, Elmos, Allegro, Microchip, Renesas. Market cap ~5.0B MYR.",
+  "marketCapInYen": 170000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.unisemgroup.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment",
+      "DISCO (CMP-0002) - dicing saws"
+    ],
+    "notes": "Bursa Malaysia listed. Subsidiary of Tianshui Huatian Technology (CMP-0068, China #3 OSAT). Founded 1989, HQ Ipoh, Malaysia. Wafer probing is a core test service."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Unisem IR, Bursa Malaysia, industry research",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

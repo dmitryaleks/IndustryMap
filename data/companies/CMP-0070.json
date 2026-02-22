@@ -6,21 +6,34 @@
   "industryCode": "Semiconductor Foundry",
   "ticker": "1347.HK",
   "description": "China's second-largest and world's seventh-largest pure-play foundry. Specializes in specialty technologies including embedded/standalone NVM, power discrete, analog/power management, logic, and RF. Operates 8-inch and 12-inch fabs in Shanghai and Wuxi. Also listed on Shanghai STAR Market (688347.SS).",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
+  "marketCapInYen": 3705000000000,
+  "PER": 239.0,
+  "PBR": 1.2,
   "EPS": null,
   "website": "https://www.huahonggrace.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 1948,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0001", "CMP-0004"],
+  "suppliers": [
+    "CMP-0001",
+    "CMP-0004",
+    "CMP-0044"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorSuppliers": ["ACCRETECH (CMP, probing, dicing)", "Tokyo Electron (equipment)"],
-    "majorClients": ["Chinese fabless chip designers", "automotive chip companies"],
-    "competitors": ["SMIC (CMP-0066)", "TSMC (CMP-0017)"],
+    "majorSuppliers": [
+      "ACCRETECH (CMP, probing, dicing)",
+      "Tokyo Electron (equipment)"
+    ],
+    "majorClients": [
+      "Chinese fabless chip designers",
+      "automotive chip companies"
+    ],
+    "competitors": [
+      "SMIC (CMP-0066)",
+      "TSMC (CMP-0017)"
+    ],
     "notes": "China #2 foundry. Dual-listed: HKEX (1347.HK) and Shanghai STAR (688347.SS). Specialty process focus (power, NVM, analog). Over 7,400 employees. Sales offices in Japan, Taiwan, and USA. Shanghai HQ with Wuxi fab."
   },
   "_metadata": {

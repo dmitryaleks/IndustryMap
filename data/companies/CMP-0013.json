@@ -5,19 +5,23 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4368.T",
   "description": "Manufactures and sells life science and electronic material products. Electronic materials include ultra-high purity colloidal silica and high purity organo silica sol for semiconductor CMP processes.",
-  "marketCapInYen": 143000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 220409000000,
+  "PER": 17.1,
+  "PBR": 1.6,
+  "EPS": 372.69,
   "website": "https://www.fusokk.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 5640,
+  "latestPriceYen": 6250,
   "isForexSensitive": false,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung Electronics", "Intel"],
+    "majorClients": [
+      "TSMC",
+      "Samsung Electronics",
+      "Intel"
+    ],
     "notes": "90% global market share in semiconductor CMP slurries. 50%+ of global production capacity. Proprietary ultra-high purity colloidal silica (total metal ions <1ppm)."
   },
   "_metadata": {

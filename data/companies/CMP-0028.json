@@ -5,24 +5,39 @@
   "industryCode": "Semiconductors",
   "ticker": "NVDA",
   "description": "World's leading AI chip company with 85-90% market share in AI accelerators. Designs GPUs for gaming, data centers, and AI training. Fabless - uses TSMC for manufacturing. Blackwell and upcoming Rubin architectures.",
-  "marketCapInYen": null,
+  "marketCapInYen": 518320000000000,
   "marketCapUSD": 4650000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "PER": 47.48,
+  "PBR": 37.32,
+  "EPS": 2.94,
   "website": "https://www.nvidia.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 21189,
   "latestPriceUSD": null,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0017", "CMP-0020"],
+  "suppliers": [
+    "CMP-0017",
+    "CMP-0020"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "manufacturingPartner": ["TSMC (CMP-0017)"],
-    "hbmSupplier": ["SK Hynix (CMP-0020)"],
-    "majorClients": ["Microsoft", "Amazon AWS", "Google Cloud", "CoreWeave", "Meta"],
-    "testEquipment": ["Advantest (CMP-0005)"],
+    "manufacturingPartner": [
+      "TSMC (CMP-0017)"
+    ],
+    "hbmSupplier": [
+      "SK Hynix (CMP-0020)"
+    ],
+    "majorClients": [
+      "Microsoft",
+      "Amazon AWS",
+      "Google Cloud",
+      "CoreWeave",
+      "Meta"
+    ],
+    "testEquipment": [
+      "Advantest (CMP-0005)"
+    ],
     "notes": "World's first $5T company potential. 2026 revenue ~$500B projected. Rubin chips H2 2026. 71% earnings growth expected. $500B order backlog."
   },
   "_metadata": {

@@ -6,9 +6,9 @@
   "ticker": "4004.T",
   "description": "Comprehensive chemical company providing semiconductor materials including high-purity gases, functional chemicals, epoxy encapsulants, die bonding materials, and hard disks. Formerly Showa Denko K.K.",
   "marketCapInYen": 1970000000000,
-  "PER": null,
+  "PER": 16.79,
   "PBR": null,
-  "EPS": null,
+  "EPS": 197.04,
   "website": "https://www.resonac.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
@@ -17,8 +17,13 @@
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Semiconductor manufacturers globally", "Toyota/Denso (SiC)"],
-    "consortiumPartners": ["JOINT2 consortium (12 companies)"],
+    "majorClients": [
+      "Semiconductor manufacturers globally",
+      "Toyota/Denso (SiC)"
+    ],
+    "consortiumPartners": [
+      "JOINT2 consortium (12 companies)"
+    ],
     "notes": "Global #1 semiconductor materials supplier (excl. Si wafer). #1 in SiC epitaxial wafers. Pursuing 'open innovation' for next-gen semiconductors."
   },
   "_metadata": {

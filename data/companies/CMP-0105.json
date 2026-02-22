@@ -1,0 +1,32 @@
+{
+  "id": "CMP-0105",
+  "companyName": "ChipMOS Technologies Inc.",
+  "companyNameChinese": "南茂科技",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "8150.TW",
+  "description": "Taiwan OSAT for back-end assembly and testing of memory and logic/mixed-signal semiconductors. Segments: Testing, Assembly, LCD Driver (LCDD), Bumping, Others. Services: engineering test, wafer probing, final test, multi-chip packaging, BGA, COF, wafer bumping, WLCSP. Dual-listed on TWSE and NASDAQ (IMOS). Market cap ~45B TWD.",
+  "marketCapInYen": 100000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.chipmos.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment",
+      "DISCO (CMP-0002) - dicing saws"
+    ],
+    "notes": "Hsinchu-based. Dual-listed TWSE/NASDAQ. Wafer probing and dicing are core testing/assembly services."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "ChipMOS IR, TWSE, NASDAQ, industry research",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

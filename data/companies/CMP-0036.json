@@ -5,19 +5,31 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6361.T",
   "description": "Major manufacturer of CMP (Chemical Mechanical Polishing) equipment and dry vacuum pumps for semiconductor manufacturing. World #2 in CMP equipment, #2 in dry vacuum pumps.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 2510000000000,
+  "PER": 21.31,
   "PBR": null,
-  "EPS": null,
+  "EPS": 166.2,
   "website": "https://www.ebara.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 5524,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019", "CMP-0020", "CMP-0021"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019",
+    "CMP-0020",
+    "CMP-0021"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung", "Intel", "SK Hynix", "Micron"],
+    "majorClients": [
+      "TSMC",
+      "Samsung",
+      "Intel",
+      "SK Hynix",
+      "Micron"
+    ],
     "notes": "Semiconductor segment 30%+ of total sales. World #1 target for advanced CMP. Kumamoto plant near TSMC fab."
   },
   "_metadata": {

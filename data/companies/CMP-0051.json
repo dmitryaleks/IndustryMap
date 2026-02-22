@@ -5,20 +5,29 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "7751.T",
   "description": "Semiconductor lithography equipment manufacturer. Pioneer in nanoimprint lithography (NIL) - 10x lower power than EUV. 14nm capable, targeting advanced nodes.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 4190000000000,
+  "PER": 12.76,
+  "PBR": 0.92,
+  "EPS": 367.3,
   "website": "https://global.canon/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 4685,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019"
+  ],
   "_externalRelationships": {
-    "majorClients": ["US semiconductor consortium", "Major semiconductor manufacturers"],
-    "rdPartners": ["DNP (1.4nm by 2027)"],
+    "majorClients": [
+      "US semiconductor consortium",
+      "Major semiconductor manufacturers"
+    ],
+    "rdPartners": [
+      "DNP (1.4nm by 2027)"
+    ],
     "notes": "Nanoimprint since 2004, commercialized 2023. FPA-1200NZ2C 14nm capable. Earth Environment Grand Prize 2024."
   },
   "_metadata": {

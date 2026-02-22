@@ -5,20 +5,29 @@
   "industryCode": "Semiconductor Components",
   "ticker": "6971.T",
   "description": "Japanese conglomerate manufacturing fine ceramics, semiconductor packages, crystal devices, and electronic components. Supplies ceramic packages and substrates for semiconductor industry since 1964.",
-  "marketCapInYen": 3000000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 3500000000000,
+  "PER": 27.7,
+  "PBR": 0.96,
+  "EPS": 74.45,
   "website": "https://www.kyocera.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 2583,
+  "latestPriceYen": 2656,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Semiconductor equipment manufacturers", "Semiconductor device makers"],
-    "products": ["Ceramic packages", "Organic packages", "Lead frames", "Substrate materials", "Crystal oscillators"],
+    "majorClients": [
+      "Semiconductor equipment manufacturers",
+      "Semiconductor device makers"
+    ],
+    "products": [
+      "Ceramic packages",
+      "Organic packages",
+      "Lead frames",
+      "Substrate materials",
+      "Crystal oscillators"
+    ],
     "notes": "Core Components 28% of revenue, Electronic Components 18%, Solutions 54%. Fine ceramics for semiconductor processing equipment."
   },
   "_metadata": {

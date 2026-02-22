@@ -5,19 +5,22 @@
   "industryCode": "Precision Instruments",
   "ticker": "7733.T",
   "description": "Manufactures precision machinery and instruments including medical endoscopes, surgical devices, biological/industrial microscopes, and NDT equipment. Operates through Endoscopic Solutions, Therapeutic Solutions, and Scientific Solutions segments.",
-  "marketCapInYen": 2080000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 2119000000000,
+  "PER": 22.26,
+  "PBR": 3.0,
+  "EPS": 86.39,
   "website": "https://www.olympus.co.jp/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 50.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 1975,
+  "latestPriceYen": 1923,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Hospitals", "Medical research institutions"],
+    "majorClients": [
+      "Hospitals",
+      "Medical research institutions"
+    ],
     "notes": "Primarily a medical devices company (endoscopes, surgical devices). Scientific segment includes industrial microscopes and NDT equipment. Limited direct semiconductor supply chain involvement."
   },
   "_metadata": {

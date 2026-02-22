@@ -5,22 +5,33 @@
   "industryCode": "Semiconductors",
   "ticker": "285A.T",
   "description": "Global leader in NAND flash memory and SSDs. Third-largest NAND supplier globally with 14% market share. Products include BiCS FLASH, UFS, e-MMC for consumer/industrial/automotive, and XL-FLASH storage class memory.",
-  "marketCapInYen": 5640000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 7970000000000,
+  "PER": 65.46,
+  "PBR": 1.34,
+  "EPS": 305.71,
   "website": "https://www.kioxia.com/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 51.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 21250,
+  "latestPriceYen": 20485,
   "isForexSensitive": true,
-  "suppliers": [],
+  "suppliers": ["CMP-0044"],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Apple", "Data center operators"],
-    "manufacturingPartners": ["Western Digital (Yokkaichi/Kitakami JV)"],
-    "equipmentSuppliers": ["Kokusai Electric (CMP-0011)"],
-    "competitors": ["Samsung Electronics", "SK Hynix", "Micron"],
+    "majorClients": [
+      "Apple",
+      "Data center operators"
+    ],
+    "manufacturingPartners": [
+      "Western Digital (Yokkaichi/Kitakami JV)"
+    ],
+    "equipmentSuppliers": [
+      "Kokusai Electric (CMP-0011)"
+    ],
+    "competitors": [
+      "Samsung Electronics",
+      "SK Hynix",
+      "Micron"
+    ],
     "notes": "3rd largest NAND supplier (14% share). Apple agreed to 2x price increase for 2026 Q1. JV with Western Digital for manufacturing."
   },
   "_metadata": {

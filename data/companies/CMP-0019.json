@@ -5,22 +5,41 @@
   "industryCode": "Semiconductors",
   "ticker": "INTC",
   "description": "Major IDM (Integrated Device Manufacturer) pursuing foundry transformation via IDM 2.0 strategy. Produces CPUs for PCs and servers, discrete GPUs, and offers foundry services. Targeting Intel 18A process for leadership recovery.",
-  "marketCapInYen": null,
+  "marketCapInYen": 15808000000000,
   "marketCapUSD": 234000000000,
   "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "PBR": 1.32,
+  "EPS": -0.06,
   "website": "https://www.intel.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 3665,
   "latestPriceUSD": 47,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0004", "CMP-0006", "CMP-0011", "CMP-0024", "CMP-0025", "CMP-0015", "CMP-0013"],
+  "suppliers": [
+    "CMP-0004",
+    "CMP-0006",
+    "CMP-0011",
+    "CMP-0024",
+    "CMP-0025",
+    "CMP-0015",
+    "CMP-0013",
+    "CMP-0044"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorSuppliers": ["Tokyo Electron (CMP-0004)", "Lasertec (CMP-0006 - 14 EUV units)", "Kokusai Electric (CMP-0011)", "Shin-Etsu (CMP-0024)", "SUMCO (CMP-0025)", "HOYA (CMP-0015)", "ASML (CMP-0026)"],
-    "foundryClients": ["Targeting external foundry customers"],
+    "majorSuppliers": [
+      "Tokyo Electron (CMP-0004)",
+      "Lasertec (CMP-0006 - 14 EUV units)",
+      "Kokusai Electric (CMP-0011)",
+      "Shin-Etsu (CMP-0024)",
+      "SUMCO (CMP-0025)",
+      "HOYA (CMP-0015)",
+      "ASML (CMP-0026)"
+    ],
+    "foundryClients": [
+      "Targeting external foundry customers"
+    ],
     "notes": "IDM 2.0: 'five nodes in four years'. $8.5B CHIPS Act funding. Targeting #2 foundry by 2030. Largest Lasertec EUV inspection install base (14 units)."
   },
   "_metadata": {

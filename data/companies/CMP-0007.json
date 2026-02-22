@@ -5,19 +5,22 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "5384.T",
   "description": "Manufactures and sells synthetic precision abrasives including CMP slurry for semiconductor device production, polishing materials for silicon wafers, and abrasives for hard disk drives.",
-  "marketCapInYen": null,
+  "marketCapInYen": 196200000000,
   "PER": 17.92,
-  "PBR": null,
-  "EPS": 133.98,
+  "PBR": 2.08,
+  "EPS": 127.1,
   "website": "https://www.fujimi.co.jp/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 27.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 3175,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Intel"],
+    "majorClients": [
+      "TSMC",
+      "Intel"
+    ],
     "notes": "18% market share in CMP slurry (2024). 50%+ share in polysilicon CMP for FEOL. Slurries widely adopted for 5nm/3nm processes by Taiwanese foundries."
   },
   "_metadata": {

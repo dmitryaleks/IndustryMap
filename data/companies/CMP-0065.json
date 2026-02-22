@@ -6,21 +6,36 @@
   "industryCode": "Semiconductor Packaging/OSAT",
   "ticker": "600584.SS",
   "description": "China's largest and world's third-largest OSAT company. Provides IC system integration packaging design, technology development, wafer probing, wafer-level packaging, system-level packaging, and chip testing services. Production bases in Korea, Singapore, China (Shanghai, Jiangyin, Chuzhou, Suqian).",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 1791300000000,
+  "PER": 44.35,
+  "PBR": 1.77,
+  "EPS": 0.83,
   "website": "https://www.jcetglobal.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 1001,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0001", "CMP-0002"],
+  "suppliers": [
+    "CMP-0001",
+    "CMP-0002"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorSuppliers": ["ACCRETECH (dicing, probing)", "DISCO (dicing)"],
-    "majorClients": ["Qualcomm", "Broadcom", "various Chinese chip designers"],
-    "competitors": ["ASE (CMP-0063)", "Amkor (CMP-0064)", "Tongfu (CMP-0067)", "Huatian (CMP-0068)"],
+    "majorSuppliers": [
+      "ACCRETECH (dicing, probing)",
+      "DISCO (dicing)"
+    ],
+    "majorClients": [
+      "Qualcomm",
+      "Broadcom",
+      "various Chinese chip designers"
+    ],
+    "competitors": [
+      "ASE (CMP-0063)",
+      "Amkor (CMP-0064)",
+      "Tongfu (CMP-0067)",
+      "Huatian (CMP-0068)"
+    ],
     "notes": "World #3 OSAT with 12% market share. FY2024 revenue: ~$5.0B (+19.3% YoY). Listed on Shanghai Stock Exchange (600584.SS). SMIC is second-largest shareholder. Leading in SiP and Chiplet technologies. Chinese domestic dicing/probing equipment from Heyan, Guangli, Sidea being validated on production lines."
   },
   "_metadata": {

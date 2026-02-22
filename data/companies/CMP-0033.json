@@ -5,19 +5,29 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4186.T",
   "description": "World's #1 photoresist manufacturer with 25% global share. Supplies from g-line to cutting-edge EUV photoresists. Also provides high-purity chemicals, thinners, developers.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 1110000000000,
+  "PER": 24.7,
   "PBR": null,
-  "EPS": null,
+  "EPS": 278.42,
   "website": "https://www.tok.co.jp/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 37.5,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 9237,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019", "CMP-0014"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019",
+    "CMP-0014"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung", "Intel", "Kioxia"],
+    "majorClients": [
+      "TSMC",
+      "Samsung",
+      "Intel",
+      "Kioxia"
+    ],
     "notes": "World #1 in photoresist. 80%+ of sales overseas. 25% share in EUV photoresist. Ultimate 'suriawase' with customers."
   },
   "_metadata": {

@@ -1,0 +1,31 @@
+{
+  "id": "CMP-0108",
+  "companyName": "Inari Amertron Berhad",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "0166.KL",
+  "description": "Malaysia's leading OSAT and EMS company. Services: DC and RF wafer testing, wafer back-grinding, wafer sawing (dicing), wire bonding, substrate molding, flip-chip dice tape-and-reel, automated visual inspection. Investing in SiP, flip-chip, and 2.5D packaging for AI/HPC. Key customer: Broadcom (RF filters for Apple iPhone). 11 plants across Malaysia, Philippines, China. 6,000+ employees. Market cap ~6.7B MYR.",
+  "marketCapInYen": 230000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.inari-amertron.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment",
+      "DISCO (CMP-0002) - dicing saws"
+    ],
+    "notes": "Bursa Malaysia listed. HQ Bayan Lepas, Penang. Accretech Malaysia has offices in Penang (same location). Wafer probing, wafer sawing, and back-grinding are core services."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Inari Amertron IR, Bursa Malaysia, industry research",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

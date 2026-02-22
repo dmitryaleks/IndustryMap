@@ -5,20 +5,34 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4063.T",
   "description": "World's largest silicon wafer manufacturer with 42% global market share. Also produces PVC, rare earth magnets, photoresists, photomask blanks, and synthetic quartz. Critical supplier to all major chip manufacturers.",
-  "marketCapInYen": 10300000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 9400000000000,
+  "PER": 18.88,
+  "PBR": 2.16,
+  "EPS": 255.03,
   "website": "https://www.shinetsu.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
   "latestPriceYen": 5499,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019", "CMP-0020", "CMP-0021"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019",
+    "CMP-0020",
+    "CMP-0021"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC (CMP-0017)", "Samsung (CMP-0018)", "Intel (CMP-0019)", "SK Hynix (CMP-0020)", "Micron (CMP-0021)"],
-    "competitors": ["SUMCO (CMP-0025)"],
+    "majorClients": [
+      "TSMC (CMP-0017)",
+      "Samsung (CMP-0018)",
+      "Intel (CMP-0019)",
+      "SK Hynix (CMP-0020)",
+      "Micron (CMP-0021)"
+    ],
+    "competitors": [
+      "SUMCO (CMP-0025)"
+    ],
     "notes": "42% global wafer market share. Customer-specific wafer customization is key competitive advantage. Without Shin-Etsu wafers, leading-edge yields suffer."
   },
   "_metadata": {

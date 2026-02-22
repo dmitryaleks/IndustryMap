@@ -1,0 +1,32 @@
+{
+  "id": "CMP-0104",
+  "companyName": "Chipbond Technology Corporation",
+  "companyNameChinese": "頎邦科技",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "6147.TWO",
+  "description": "Taiwan OSAT specializing in driver IC and non-driver IC packaging/testing. Services: gold/solder/copper bumping, RDL, wafer probe testing, die processing (wafer grinding/thinning, dicing, tape-and-reel), chip-on-film (COF), chip-on-glass (COG), WLCSP. Also handles compound semiconductors (SiGe, GaAs, GaN, SiC). Market cap ~47B TWD.",
+  "marketCapInYen": 110000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.chipbond.com.tw/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment",
+      "DISCO (CMP-0002) - dicing saws"
+    ],
+    "notes": "Hsinchu-based. Six factories in Taiwan plus one in Malaysia. Wafer dicing and wafer probe testing are core services, making Chipbond a buyer of both Accretech dicers and probers."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "Chipbond IR, TPEX, industry research",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

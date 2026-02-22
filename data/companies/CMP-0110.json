@@ -1,0 +1,31 @@
+{
+  "id": "CMP-0110",
+  "companyName": "Malaysian Pacific Industries Berhad",
+  "industryCode": "Semiconductor Packaging/OSAT",
+  "ticker": "3867.KL",
+  "description": "Malaysian OSAT through subsidiary Carsem (M) Sdn Bhd. Full turnkey solutions for leaded and leadless semiconductor packaging and test. Carsem has 500+ testers and handlers across 125,000 sq ft of dedicated test and wafer probe area. Operations in Ipoh (2 plants) and Suzhou, China. Part of Hong Leong Group. Market cap ~6.7B MYR.",
+  "marketCapInYen": 230000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://mpind.my/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0002"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment",
+      "DISCO (CMP-0002) - dicing saws"
+    ],
+    "notes": "Bursa Malaysia listed. Carsem subsidiary founded 1972. 500+ testers, dedicated wafer probe area. Accretech Malaysia has offices near Carsem's facilities."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "MPI IR, Carsem website, Bursa Malaysia, industry research",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

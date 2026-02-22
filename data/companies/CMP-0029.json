@@ -5,19 +5,23 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "3374.T",
   "description": "Supplies precision parts and components for semiconductor manufacturing equipment. Major supplier to Tokyo Electron with ~80% of sales dependent on TEL group. Provides maintenance, assembly services.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 7600000000,
+  "PER": 7.2,
   "PBR": null,
-  "EPS": null,
+  "EPS": 299.98,
   "website": "https://www.naigaitec.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 2160,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0004"],
+  "clients": [
+    "CMP-0004"
+  ],
   "_externalRelationships": {
-    "majorClients": ["Tokyo Electron (CMP-0004) - 80% of sales"],
+    "majorClients": [
+      "Tokyo Electron (CMP-0004) - 80% of sales"
+    ],
     "notes": "One of the oldest suppliers in Japanese semiconductor industry. Expanded from trading to maintenance and assembly."
   },
   "_metadata": {

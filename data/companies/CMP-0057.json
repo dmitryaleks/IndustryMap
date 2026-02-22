@@ -5,19 +5,22 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4971.T",
   "description": "Specialist in etching chemicals for electronic substrates and semiconductor packages. CZ Series for copper roughening. ~95% of sales from chemical products.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 129290000000,
+  "PER": 33.35,
+  "PBR": 1.6,
+  "EPS": 272.1,
   "website": "https://www.mec-co.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 6980,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["IC substrate manufacturers", "FPD manufacturers"],
+    "majorClients": [
+      "IC substrate manufacturers",
+      "FPD manufacturers"
+    ],
     "notes": "CZ Series world standard for copper roughening. EXE Series de facto standard for COF. Osaka-based."
   },
   "_metadata": {

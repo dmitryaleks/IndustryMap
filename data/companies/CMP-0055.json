@@ -5,19 +5,22 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "5991.T",
   "description": "Major spring and precision parts manufacturer. 50% world share in HDD suspensions. Expanding semiconductor process parts using bonding technology.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 634520000000,
+  "PER": 12.82,
+  "PBR": 1.24,
+  "EPS": 196.6,
   "website": "https://www.nhkspg.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 3227,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["HDD manufacturers", "Semiconductor equipment manufacturers"],
+    "majorClients": [
+      "HDD manufacturers",
+      "Semiconductor equipment manufacturers"
+    ],
     "notes": "Nippatus brand. 50% HDD suspension share. Semiconductor etching/deposition parts growing rapidly."
   },
   "_metadata": {

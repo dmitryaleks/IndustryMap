@@ -5,21 +5,29 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6146.T",
   "description": "Market leader in precision cutting, grinding, and polishing equipment for semiconductor manufacturing. Holds approximately 70% market share in slicing and dicing machines.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 8000000000000,
+  "PER": 51.18,
+  "PBR": 8.97,
+  "EPS": 1206.5,
   "website": "https://www.disco.co.jp/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 45.0,
   "percentOfCirculatingEquity": null,
   "latestPriceYen": 74070,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Foundries", "OSATs", "IDMs globally"],
-    "historicalClients": ["Texas Instruments (early adopter)"],
-    "competitors": ["Tokyo Seimitsu (CMP-0001)"],
+    "majorClients": [
+      "Foundries",
+      "OSATs",
+      "IDMs globally"
+    ],
+    "historicalClients": [
+      "Texas Instruments (early adopter)"
+    ],
+    "competitors": [
+      "Tokyo Seimitsu (CMP-0001)"
+    ],
     "notes": "70%+ market share in dicing saws and grinders. DISCO + Tokyo Seimitsu = 90% of global dicing market."
   },
   "_metadata": {

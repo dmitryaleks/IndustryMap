@@ -5,19 +5,22 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6266.T",
   "description": "Coating process equipment manufacturer. Produces coaters, developers, and lamination/peeling equipment for semiconductor and FPD manufacturing based on thin film technology.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 32310000000,
+  "PER": 7.17,
+  "PBR": 2.05,
+  "EPS": 319.66,
   "website": "https://www.tazmo.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 2536,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Semiconductor manufacturers", "FPD manufacturers"],
+    "majorClients": [
+      "Semiconductor manufacturers",
+      "FPD manufacturers"
+    ],
     "notes": "Thin film process technology core. Coater, developer, clean transport systems. FPD demand fluctuating."
   },
   "_metadata": {

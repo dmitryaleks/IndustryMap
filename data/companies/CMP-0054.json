@@ -5,19 +5,26 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6918.T",
   "description": "Industrial electronics manufacturer. Supplies image processing modules and inspection equipment for semiconductor manufacturing. Near-infrared camera technology for defect detection.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 26280000000,
+  "PER": 6.13,
+  "PBR": 1.24,
+  "EPS": 243.15,
   "website": "https://www.avaldata.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 2682,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0004", "CMP-0050"],
+  "clients": [
+    "CMP-0004",
+    "CMP-0050"
+  ],
   "_externalRelationships": {
-    "majorClients": ["Tokyo Electron", "Nikon", "Semiconductor equipment manufacturers"],
+    "majorClients": [
+      "Tokyo Electron",
+      "Nikon",
+      "Semiconductor equipment manufacturers"
+    ],
     "notes": "80% of sales from contract manufacturing. Sony image sensors for cameras. Non-destructive inspection."
   },
   "_metadata": {

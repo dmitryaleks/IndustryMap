@@ -5,21 +5,31 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "8035.T",
   "description": "Global supplier of semiconductor and flat panel display production equipment. Key products include coater/developers, etch systems, CVD equipment, and cleaning systems. One of the world's largest semiconductor equipment manufacturers.",
-  "marketCapInYen": 19200000000000,
-  "PER": 23.5,
-  "PBR": null,
-  "EPS": 1094.5,
+  "marketCapInYen": 20150000000000,
+  "PER": 29.13,
+  "PBR": 5.7,
+  "EPS": 1094.0,
   "website": "https://www.tel.co.jp/",
-  "percentOfForeignOwnership": 45.0,
+  "percentOfForeignOwnership": 59.51,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 42150,
+  "latestPriceYen": 43960,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung Electronics", "Intel", "SK Hynix"],
-    "rdPartners": ["IBM"],
-    "majorSuppliers": ["Shin-Etsu Chemical", "SUMCO"],
+    "majorClients": [
+      "TSMC",
+      "Samsung Electronics",
+      "Intel",
+      "SK Hynix"
+    ],
+    "rdPartners": [
+      "IBM"
+    ],
+    "majorSuppliers": [
+      "Shin-Etsu Chemical",
+      "SUMCO"
+    ],
     "notes": "Works with 400+ suppliers. Key clients are world's top foundries and IDMs."
   },
   "_metadata": {

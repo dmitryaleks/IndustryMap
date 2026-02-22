@@ -5,19 +5,23 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "5334.T",
   "description": "Major ceramic components manufacturer. Supplies electrostatic chucks and ceramic parts for semiconductor manufacturing equipment through subsidiary NTK Ceratec. Renamed from NGK Spark Plug in 2023.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 1120000000000,
+  "PER": 13.65,
+  "PBR": 1.55,
+  "EPS": 512.7,
   "website": "https://www.niterragroup.com/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 45.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 7730,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0004"],
+  "clients": [
+    "CMP-0004"
+  ],
   "_externalRelationships": {
-    "majorClients": ["Tokyo Electron (CMP-0004)"],
+    "majorClients": [
+      "Tokyo Electron (CMP-0004)"
+    ],
     "notes": "NTK Ceratec building new Miyagi plant for semiconductor parts (2026). Multi-layer ceramic sheet technology."
   },
   "_metadata": {

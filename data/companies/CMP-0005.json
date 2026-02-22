@@ -5,20 +5,28 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6857.T",
   "description": "Leading manufacturer of semiconductor test equipment including automatic test equipment (ATE) for logic, memory, and mixed-signal devices. Strong growth in AI-related tester demand.",
-  "marketCapInYen": 19650000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 17630000000000,
+  "PER": 56.3,
+  "PBR": 30.36,
+  "EPS": 452.34,
   "website": "https://www.advantest.com/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 50.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 26795,
+  "latestPriceYen": 25475,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Samsung Electronics", "SK Hynix", "Micron", "TSMC ecosystem"],
-    "indirectClients": ["NVIDIA", "Apple (via foundries)"],
+    "majorClients": [
+      "Samsung Electronics",
+      "SK Hynix",
+      "Micron",
+      "TSMC ecosystem"
+    ],
+    "indirectClients": [
+      "NVIDIA",
+      "Apple (via foundries)"
+    ],
     "notes": "60-70% share in memory test, 35-45% in SoC test. Deep relationships with Samsung, SK Hynix, Micron, and TSMC ecosystem."
   },
   "_metadata": {

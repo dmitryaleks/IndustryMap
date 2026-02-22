@@ -1,0 +1,36 @@
+{
+  "id": "CMP-0101",
+  "companyName": "King Yuan Electronics Co., Ltd.",
+  "companyNameChinese": "京元電子",
+  "industryCode": "Semiconductor Testing/OSAT",
+  "ticker": "2449.TW",
+  "description": "World's largest pure-play semiconductor testing company. Services: wafer probing, wafer grinding/dicing, IC final testing, burn-in testing, system-level testing. Revenue breakdown: ~43% wafer-level testing, ~50% finished IC testing, ~7% wafer grinding/dicing. Trailing 12-month revenue ~$1.02B USD. Headquartered in Hsinchu, Taiwan. Recently divested Chinese subsidiary (Suzhou) due to geopolitical tensions.",
+  "marketCapInYen": 750000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.kyec.com.tw/en",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0005"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing equipment (world #1 prober buyer)",
+      "Advantest (CMP-0005) - test equipment"
+    ],
+    "competitors": [
+      "ASE Technology (CMP-0063) - testing services",
+      "ChipMOS (CMP-0105) - testing services"
+    ],
+    "notes": "World's #1 pure-play IC testing house. Massive consumer of wafer probing equipment - one of Accretech's most important Taiwan clients. Located in Hsinchu semiconductor corridor near Accretech Taiwan Co., Ltd. Market cap ~330B TWD (~7.5T JPY)."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "KYEC IR, TWSE, APAC semiconductor industry research",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

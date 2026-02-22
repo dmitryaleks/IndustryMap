@@ -5,20 +5,25 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "7735.T",
   "description": "Develops, manufactures, and markets semiconductor production equipment including wafer cleaning systems, coaters, and direct-write exposure systems. Also produces display production and PCB-related equipment.",
-  "marketCapInYen": 1900000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 2040000000000,
+  "PER": 22.19,
+  "PBR": 3.35,
+  "EPS": 930.8,
   "website": "https://www.screen.co.jp/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 40.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 13627,
+  "latestPriceYen": 21060,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Foundries in China and North America"],
-    "rdPartners": ["imec", "IBM"],
+    "majorClients": [
+      "Foundries in China and North America"
+    ],
+    "rdPartners": [
+      "imec",
+      "IBM"
+    ],
     "notes": "#1 global market share in semiconductor cleaning (single wafer, batch, spin scrubber). Cumulative shipments exceed 15,000 units."
   },
   "_metadata": {

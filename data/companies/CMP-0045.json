@@ -5,19 +5,28 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4047.T",
   "description": "Major specialty gas manufacturer for semiconductor etching and cleaning. Produces 15+ types of fluorine-based specialty gases. Furukawa Group company.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 59400000000,
+  "PER": 25.6,
+  "PBR": 0.87,
+  "EPS": 33.4,
   "website": "https://www.kantodenka.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 1035,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung", "Intel", "Major fabs"],
+    "majorClients": [
+      "TSMC",
+      "Samsung",
+      "Intel",
+      "Major fabs"
+    ],
     "notes": "Proprietary fluorine electrolysis technology. 15+ specialty gases vs competitors' 3-4. 400B JPY investment for expansion."
   },
   "_metadata": {

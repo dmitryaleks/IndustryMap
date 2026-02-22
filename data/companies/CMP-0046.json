@@ -5,19 +5,27 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4005.T",
   "description": "Major chemical company with significant photoresist business. Full lineup from i-line to EUV photoresist (Sumilever brand). Targeting 1T JPY operating profit by 2030.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 970600000000,
+  "PER": 15.8,
+  "PBR": 0.76,
+  "EPS": 59.5,
   "website": "https://www.sumitomo-chem.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 591,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung", "Intel"],
+    "majorClients": [
+      "TSMC",
+      "Samsung",
+      "Intel"
+    ],
     "notes": "1000B JPY semiconductor material investment. Expanding EUV resist production. Osaka plant evaluation facility 2025-26."
   },
   "_metadata": {

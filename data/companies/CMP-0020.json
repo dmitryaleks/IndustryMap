@@ -5,23 +5,47 @@
   "industryCode": "Memory Semiconductors",
   "ticker": "000660.KS",
   "description": "World's second-largest memory chip manufacturer. Leader in HBM (High Bandwidth Memory) with 50%+ market share. Produces DRAM and NAND flash memory for AI, data centers, and consumer electronics.",
-  "marketCapInYen": null,
+  "marketCapInYen": 19000000000000,
   "marketCapUSD": 452000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "PER": 5.59,
+  "PBR": 2.95,
+  "EPS": 62161,
   "website": "https://www.skhynix.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 27390,
   "latestPriceKRW": 949000,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0004", "CMP-0005", "CMP-0011", "CMP-0024", "CMP-0025", "CMP-0015"],
-  "clients": ["CMP-0028"],
+  "suppliers": [
+    "CMP-0004",
+    "CMP-0005",
+    "CMP-0011",
+    "CMP-0024",
+    "CMP-0025",
+    "CMP-0015",
+    "CMP-0044"
+  ],
+  "clients": [
+    "CMP-0028"
+  ],
   "_externalRelationships": {
-    "majorClients": ["NVIDIA (HBM supplier)", "Data center operators", "AI chip makers"],
-    "majorSuppliers": ["Tokyo Electron (CMP-0004)", "Advantest (CMP-0005)", "Kokusai Electric (CMP-0011)", "Shin-Etsu (CMP-0024)", "SUMCO (CMP-0025)", "ASML (CMP-0026)"],
-    "competitors": ["Samsung Electronics (CMP-0018)", "Micron (CMP-0021)"],
+    "majorClients": [
+      "NVIDIA (HBM supplier)",
+      "Data center operators",
+      "AI chip makers"
+    ],
+    "majorSuppliers": [
+      "Tokyo Electron (CMP-0004)",
+      "Advantest (CMP-0005)",
+      "Kokusai Electric (CMP-0011)",
+      "Shin-Etsu (CMP-0024)",
+      "SUMCO (CMP-0025)",
+      "ASML (CMP-0026)"
+    ],
+    "competitors": [
+      "Samsung Electronics (CMP-0018)",
+      "Micron (CMP-0021)"
+    ],
     "notes": "50%+ HBM market share through 2026. 70% HBM4 share for NVIDIA Rubin platform. Bank of America 'Top Pick'. Market cap +311% in 1 year."
   },
   "_metadata": {

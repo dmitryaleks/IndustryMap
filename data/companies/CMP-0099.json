@@ -1,0 +1,38 @@
+{
+  "id": "CMP-0099",
+  "companyName": "EO Technics Co., Ltd.",
+  "companyNameKorean": "이오테크닉스",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "039030.KQ",
+  "description": "Korean laser technology specialist for semiconductor manufacturing. Successfully localized laser stealth dicing technology competing with DISCO's blade dicing (70%+ market share). Laser dicing has advantages for thin wafers (<200um) and HBM applications. Products: laser stealth dicing, laser markers, laser annealing, laser grooving equipment. FY2026 forecast revenue: 480B KRW (record).",
+  "marketCapInYen": null,
+  "PER": 107.11,
+  "PBR": 7.49,
+  "EPS": 3478,
+  "website": "http://www.eotechnics.com/",
+  "percentOfForeignOwnership": 22.40,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "latestPriceKRW": 372500,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": ["CMP-0018", "CMP-0020"],
+  "_externalRelationships": {
+    "majorClients": [
+      "Samsung Electronics (CMP-0018) - laser dicing, marking, annealing",
+      "SK Hynix (CMP-0020) - laser stealth dicing for HBM"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - indirect competitor: laser dicing vs blade dicing",
+      "DISCO (CMP-0002) - direct competitor: laser vs blade dicing (DISCO also offers laser)",
+      "Guangli/ADT (CMP-0074) - dicing equipment"
+    ],
+    "notes": "KOSDAQ listed. Market cap ~4,589B KRW. Stock price ~372,500 KRW. FY2026 forecast: revenue 480B KRW (record), operating profit +187.3% YoY. Laser stealth dicing is a technology shift threat to blade dicing: advantages for thin wafers (<200um), HBM stacking, and advanced packaging. Korean laser dicing localization reduces dependence on Japanese blade dicing from DISCO and Accretech. 52-week range: 120,600-380,000 KRW."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "FnGuide, EO Technics IR, Korean industry sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "CMP-0097",
+  "companyName": "SEMICS Inc.",
+  "companyNameKorean": "쎄믹스",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": null,
+  "description": "Korea's only independent wafer prober manufacturer. World's #3 wafer prober maker after Tokyo Seimitsu and TEL. Supplies Samsung Electronics for 15+ years. 240 employees, revenue 179.8B KRW (2024). Innovative 'apartment-type' stacked prober achieves 670% cleanroom efficiency improvement. Target: 2T KRW revenue by 2030.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "http://www.semics.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": ["CMP-0018", "CMP-0020"],
+  "_externalRelationships": {
+    "majorClients": [
+      "Samsung Electronics (CMP-0018) - wafer probers (15+ year relationship)",
+      "SK Hynix (CMP-0020) - wafer probers"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - direct competitor, world #1 prober (46% share)",
+      "Tokyo Electron (CMP-0004) - world #2 prober (27% share)",
+      "MPI Corporation (CMP-0071) - Taiwan prober maker (10% share)",
+      "Sidea/矽电 (CMP-0073) - Chinese prober maker"
+    ],
+    "notes": "Private company, not publicly listed. World's #3 prober maker. Revenue 179.8B KRW (2024). Apartment-type stacked prober design fits 12 probers in the footprint of 2 conventional probers, 670% cleanroom efficiency. Key domestic Korean competitor to Accretech. Target IPO possible. Relationship with Samsung spans 15+ years. Key differentiator: space efficiency innovation addresses cleanroom cost pressure."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "SEMICS corporate site, MaeilBusiness, ZDNet Korea, Korean semiconductor industry sources",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

@@ -7,7 +7,7 @@
   "ticker": "002185.SZ",
   "description": "China's third-largest OSAT company. Provides semiconductor packaging and testing services including 3D, SiP, FC, TSV, Bumping, Fan-Out, and WLP advanced packaging technologies. Diversified customer base. Strategic partnership with Yangtze Memory Technologies (YMTC). FY2024 revenue: ~$2.01B (+26% YoY).",
   "marketCapInYen": null,
-  "PER": null,
+  "PER": 60.0,
   "PBR": null,
   "EPS": null,
   "website": "https://www.huatian-tech.com/",
@@ -15,12 +15,25 @@
   "percentOfCirculatingEquity": null,
   "latestPriceYen": null,
   "isForexSensitive": false,
-  "suppliers": ["CMP-0001", "CMP-0002"],
+  "suppliers": [
+    "CMP-0001",
+    "CMP-0002"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorSuppliers": ["ACCRETECH (dicing, probing)", "DISCO (dicing)"],
-    "majorClients": ["YMTC (Yangtze Memory)", "various Chinese IC design companies"],
-    "competitors": ["JCET (CMP-0065)", "Tongfu (CMP-0067)", "ASE (CMP-0063)"],
+    "majorSuppliers": [
+      "ACCRETECH (dicing, probing)",
+      "DISCO (dicing)"
+    ],
+    "majorClients": [
+      "YMTC (Yangtze Memory)",
+      "various Chinese IC design companies"
+    ],
+    "competitors": [
+      "JCET (CMP-0065)",
+      "Tongfu (CMP-0067)",
+      "ASE (CMP-0063)"
+    ],
     "notes": "World #6 OSAT. Listed on Shenzhen Stock Exchange. FY2024 revenue: $2.01B (+26% YoY). Founded in 2003, IPO in 2007. HQ in Tianshui, Gansu Province. Relatively diversified customer base compared to peers. Chinese domestic equipment being validated on production lines for dicing and probing."
   },
   "_metadata": {

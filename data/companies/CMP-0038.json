@@ -5,19 +5,24 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4229.T",
   "description": "Supplies photoresist polymers (novolac resins) for semiconductor manufacturing. Strong in phenol resin-based chemistry. Expanding production capacity for growing demand.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 19370000000,
+  "PER": 11.4,
   "PBR": null,
-  "EPS": null,
+  "EPS": 317.0,
   "website": "https://www.gunei-chemical.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 2975,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0033", "CMP-0034"],
+  "clients": [
+    "CMP-0033",
+    "CMP-0034"
+  ],
   "_externalRelationships": {
-    "majorClients": ["Major photoresist manufacturers"],
+    "majorClients": [
+      "Major photoresist manufacturers"
+    ],
     "notes": "High market share in photoresist polymers. Full wavelength lineup from i-line to EUV. New factory 2025."
   },
   "_metadata": {

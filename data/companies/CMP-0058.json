@@ -5,20 +5,25 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "8012.T",
   "description": "Major trading company specializing in chemicals and electronic materials. Subsidiary Nagase ChemteX supplies modified epoxy resins for AI server semiconductors.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 456160000000,
+  "PER": 10.25,
+  "PBR": 1.09,
+  "EPS": 270.17,
   "website": "https://www.nagase.co.jp/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 47.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 4430,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Semiconductor assembly manufacturers", "AI server makers"],
-    "subsidiaries": ["Nagase ChemteX (epoxy resins)"],
+    "majorClients": [
+      "Semiconductor assembly manufacturers",
+      "AI server makers"
+    ],
+    "subsidiaries": [
+      "Nagase ChemteX (epoxy resins)"
+    ],
     "notes": "Electronic segment strong. Modified epoxy resins for advanced semiconductor packaging growing rapidly."
   },
   "_metadata": {

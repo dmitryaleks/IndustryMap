@@ -5,19 +5,22 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6856.T",
   "description": "Designs, manufactures, and sells analytical and measuring instruments. Semiconductor segment includes mass flow controllers, chemical concentration monitors, reticle/mask particle detection systems, and residual gas analyzers.",
-  "marketCapInYen": 842000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 842020000000,
+  "PER": 16.02,
+  "PBR": 2.6,
+  "EPS": 857.2,
   "website": "https://www.horiba.com/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 56.0,
   "percentOfCirculatingEquity": null,
   "latestPriceYen": 20240,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Semiconductor equipment manufacturers", "Foundries"],
+    "majorClients": [
+      "Semiconductor equipment manufacturers",
+      "Foundries"
+    ],
     "notes": "30%+ global market share in semiconductor mass flow controllers. Products used in deposition, etching, and other processes across the industry."
   },
   "_metadata": {

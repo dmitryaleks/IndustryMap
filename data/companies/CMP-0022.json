@@ -5,22 +5,31 @@
   "industryCode": "Consumer Electronics",
   "ticker": "AAPL",
   "description": "World's most valuable company. Designs iPhones, iPads, Macs, Apple Watch, and services. Fabless chip designer using TSMC for manufacturing. Major customer of Japanese semiconductor suppliers.",
-  "marketCapInYen": null,
+  "marketCapInYen": 589760000000000,
   "marketCapUSD": 3890000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "PER": 33.0,
+  "PBR": 42.64,
+  "EPS": 7.49,
   "website": "https://www.apple.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 38912,
   "latestPriceUSD": null,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0017", "CMP-0014"],
+  "suppliers": [
+    "CMP-0017",
+    "CMP-0014"
+  ],
   "clients": [],
   "_externalRelationships": {
-    "majorSuppliers": ["TSMC (CMP-0017 - chip manufacturing)", "Kioxia (CMP-0014 - NAND flash)"],
-    "chipDesign": ["Apple Silicon M-series chips", "A-series chips for iPhone"],
+    "majorSuppliers": [
+      "TSMC (CMP-0017 - chip manufacturing)",
+      "Kioxia (CMP-0014 - NAND flash)"
+    ],
+    "chipDesign": [
+      "Apple Silicon M-series chips",
+      "A-series chips for iPhone"
+    ],
     "notes": "Secured 50%+ of TSMC 2nm capacity for 2026. iPhone 18 and M6 chips on 2nm. Agreed to 2x price increase for Kioxia NAND (Q1 2026). 20%+ of TSMC revenue."
   },
   "_metadata": {

@@ -5,19 +5,28 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4091.T",
   "description": "Japan's largest industrial gas company, part of Mitsubishi Chemical Group. World top 3 for electronics-related gases. Supplies specialty gases and bulk gases for semiconductor manufacturing.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 2350000000000,
+  "PER": 22.2,
   "PBR": null,
-  "EPS": null,
+  "EPS": 264.38,
   "website": "https://www.nipponsanso-hd.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 5430,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung", "Intel", "Leading semiconductor fabs"],
+    "majorClients": [
+      "TSMC",
+      "Samsung",
+      "Intel",
+      "Leading semiconductor fabs"
+    ],
     "notes": "Supplying gases for Rapidus pilot line. Developing ultra-high-purity air separation equipment for new fabs."
   },
   "_metadata": {

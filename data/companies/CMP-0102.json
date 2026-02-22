@@ -1,0 +1,38 @@
+{
+  "id": "CMP-0102",
+  "companyName": "United Microelectronics Corporation",
+  "companyNameChinese": "聯華電子",
+  "industryCode": "Semiconductor Foundry",
+  "ticker": "2303.TW",
+  "description": "Taiwan's first semiconductor company (1980, spun off from ITRI). World's 3rd largest specialty foundry. Processes: high voltage, BCD, SOI, discrete, logic, mixed-signal, analog, embedded memory. 12 fabs with combined capacity >400,000 wafers/month (12-inch equivalent). Also operates fabs in Singapore and China (Xiamen). Market cap ~$26.5B USD.",
+  "marketCapInYen": 4000000000000,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.umc.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": ["CMP-0001", "CMP-0004", "CMP-0026", "CMP-0044"],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - CMP, probing, dicing equipment",
+      "Tokyo Electron (CMP-0004) - coater/developer, etch, CVD",
+      "ASML (CMP-0026) - DUV lithography"
+    ],
+    "competitors": [
+      "TSMC (CMP-0017) - foundry (market leader)",
+      "SMIC (CMP-0066) - foundry",
+      "GlobalFoundries (CMP-0106) - specialty foundry"
+    ],
+    "notes": "Dual-listed on TWSE and NYSE. Major specialty foundry - key Accretech client for CMP equipment, probers, and dicers. Fabs in Taiwan, Singapore, and China. IATF 16949 automotive quality certified. Specialty/legacy node focus makes it a stable equipment customer."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "UMC IR, TWSE, industry research",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

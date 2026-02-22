@@ -5,19 +5,21 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "4970.T",
   "description": "Manufactures and sells photosensitive materials and polymer products for semiconductors. Products include photoresists for semiconductor microfabrication, LCD materials, and electric double layer materials.",
-  "marketCapInYen": null,
+  "marketCapInYen": 49500000000,
   "PER": null,
   "PBR": null,
-  "EPS": null,
+  "EPS": -84.79,
   "website": "https://www.toyogosei.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 4635,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Semiconductor manufacturers globally"],
+    "majorClients": [
+      "Semiconductor manufacturers globally"
+    ],
     "notes": "60% market share in KrF/ArF photosensitive materials. 60-70% share in EUV photosensitive materials. Supplies PAGs and polymers for chemically amplified resists since 1997."
   },
   "_metadata": {

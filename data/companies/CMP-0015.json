@@ -5,22 +5,36 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "7741.T",
   "description": "Manufactures mask blanks and photomasks for semiconductor chip manufacturing, glass disks for HDDs, and imaging products. Life Care segment includes eyeglasses, contact lenses, and medical endoscopes.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 9610000000000,
+  "PER": 38.91,
+  "PBR": 7.96,
+  "EPS": 581.26,
   "website": "https://www.hoya.com/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 62.0,
   "percentOfCirculatingEquity": null,
   "latestPriceYen": 27385,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Intel", "Samsung", "SK Hynix"],
-    "indirectClients": ["Apple", "NVIDIA", "AMD", "Qualcomm (via foundries)"],
-    "ecosystemPartners": ["ASML"],
-    "competitors": ["AGC Inc."],
+    "majorClients": [
+      "TSMC",
+      "Intel",
+      "Samsung",
+      "SK Hynix"
+    ],
+    "indirectClients": [
+      "Apple",
+      "NVIDIA",
+      "AMD",
+      "Qualcomm (via foundries)"
+    ],
+    "ecosystemPartners": [
+      "ASML"
+    ],
+    "competitors": [
+      "AGC Inc."
+    ],
     "notes": "60%+ share in photomask blanks globally, 75%+ in EUV blanks. Only maker with both EUV and optical products. EUV blanks lock-in customers for full technology generations."
   },
   "_metadata": {

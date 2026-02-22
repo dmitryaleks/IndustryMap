@@ -5,22 +5,38 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "ASML",
   "description": "World's only manufacturer of EUV (Extreme Ultraviolet) lithography systems, essential for advanced chip production below 7nm. Also produces DUV (Deep Ultraviolet) immersion and dry lithography systems.",
-  "marketCapInYen": null,
+  "marketCapInYen": 45296000000000,
   "marketCapUSD": 562000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "PER": 38.49,
+  "PBR": 20.16,
+  "EPS": 19.74,
   "website": "https://www.asml.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 115470,
   "latestPriceUSD": null,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018", "CMP-0019", "CMP-0020", "CMP-0021"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019",
+    "CMP-0020",
+    "CMP-0021"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC (CMP-0017)", "Samsung (CMP-0018)", "Intel (CMP-0019)", "SK Hynix (CMP-0020)", "Micron (CMP-0021)"],
-    "ecosystemPartners": ["Lasertec (CMP-0006)", "HOYA (CMP-0015)", "Zeiss (optics)"],
+    "majorClients": [
+      "TSMC (CMP-0017)",
+      "Samsung (CMP-0018)",
+      "Intel (CMP-0019)",
+      "SK Hynix (CMP-0020)",
+      "Micron (CMP-0021)"
+    ],
+    "ecosystemPartners": [
+      "Lasertec (CMP-0006)",
+      "HOYA (CMP-0015)",
+      "Zeiss (optics)"
+    ],
     "notes": "EUV lithography monopoly. ASML systems require Lasertec mask inspection and HOYA mask blanks. 2026 sales outlook: €36.5B."
   },
   "_metadata": {

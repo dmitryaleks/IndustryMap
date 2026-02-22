@@ -5,19 +5,26 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6590.T",
   "description": "World leader in single-wafer cleaning equipment for semiconductor front-end. Also produces etching, ashing, and inspection equipment. LCD equipment manufacturer.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 125640000000,
+  "PER": 12.46,
+  "PBR": 1.43,
+  "EPS": 832.26,
   "website": "https://www.shibaura.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 9520,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0017", "CMP-0018"],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018"
+  ],
   "_externalRelationships": {
-    "majorClients": ["TSMC", "Samsung", "Major foundries"],
+    "majorClients": [
+      "TSMC",
+      "Samsung",
+      "Major foundries"
+    ],
     "notes": "World #1 in post-polish single-wafer cleaning. 300mm wafer cleaning equipment. AI demand tailwind."
   },
   "_metadata": {

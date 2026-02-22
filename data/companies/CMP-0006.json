@@ -5,20 +5,26 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6920.T",
   "description": "Designs, manufactures, and sells inspection and measurement equipment for semiconductors. Specializes in EUV mask inspection systems, mask blanks inspection, and metrology equipment using optical application technology.",
-  "marketCapInYen": 2800000000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 2850000000000,
+  "PER": 33.11,
+  "PBR": 12.44,
+  "EPS": 814.0,
   "website": "https://www.lasertec.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 30190,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Intel (14 units)", "TSMC (9 units)", "Samsung (3 units)"],
-    "ecosystemPartners": ["ASML"],
+    "majorClients": [
+      "Intel (14 units)",
+      "TSMC (9 units)",
+      "Samsung (3 units)"
+    ],
+    "ecosystemPartners": [
+      "ASML"
+    ],
     "notes": "Near 100% global market share in EUV mask inspection. Products co-dependent with ASML EUV lithography systems."
   },
   "_metadata": {

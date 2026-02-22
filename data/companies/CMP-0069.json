@@ -5,21 +5,34 @@
   "industryCode": "Semiconductor Packaging/OSAT",
   "ticker": "6239.TW",
   "description": "Taiwan's leading memory-focused OSAT company. Provides IC packaging services including wafer-level packing, flip chips, wire bond BGA, lead frame, SiP, and chip probing/final test services. Key supplier to Micron for memory packaging. Operations in Taiwan, Japan, Singapore, USA, Europe, and China.",
-  "marketCapInYen": null,
-  "PER": null,
+  "marketCapInYen": 772065000000,
+  "PER": 31.59,
   "PBR": null,
-  "EPS": null,
+  "EPS": 6.95,
   "website": "https://www.pti.com.tw/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 1140,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0001", "CMP-0002"],
-  "clients": ["CMP-0021"],
+  "suppliers": [
+    "CMP-0001",
+    "CMP-0002"
+  ],
+  "clients": [
+    "CMP-0021"
+  ],
   "_externalRelationships": {
-    "majorSuppliers": ["ACCRETECH (dicing, probing)", "DISCO (dicing)"],
-    "majorClients": ["Micron (CMP-0021, key supplier relationship)"],
-    "competitors": ["ASE (CMP-0063)", "JCET (CMP-0065)"],
+    "majorSuppliers": [
+      "ACCRETECH (dicing, probing)",
+      "DISCO (dicing)"
+    ],
+    "majorClients": [
+      "Micron (CMP-0021, key supplier relationship)"
+    ],
+    "competitors": [
+      "ASE (CMP-0063)",
+      "JCET (CMP-0065)"
+    ],
     "notes": "World top-5 OSAT. HQ in Hsinchu, Taiwan. Founded 1997. Key memory OSAT for Micron. Memory OSAT prices jumped 30% in 2026, led by Powertech. Major buyer of wafer probing and dicing equipment from Japanese suppliers including ACCRETECH."
   },
   "_metadata": {

@@ -5,19 +5,22 @@
   "industryCode": "Semiconductor Materials",
   "ticker": "6890.T",
   "description": "Develops, manufactures, and sells products for semiconductor and FPD manufacturing equipment including vacuum seals, quartz products, ceramics, silicon products, and wafer products. Also provides thermo-modules and magnetic fluids.",
-  "marketCapInYen": null,
-  "PER": 22.14,
+  "marketCapInYen": 285700000000,
+  "PER": 17.41,
   "PBR": null,
-  "EPS": null,
+  "EPS": 238.78,
   "website": "https://www.ferrotec.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 6320,
+  "latestPriceYen": 6110,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Semiconductor equipment manufacturers", "FPD manufacturers"],
+    "majorClients": [
+      "Semiconductor equipment manufacturers",
+      "FPD manufacturers"
+    ],
     "notes": "Supplies vacuum seals, quartz products, ceramics, silicon products for semiconductor manufacturing equipment. Replacement demand grows with increased fab production."
   },
   "_metadata": {

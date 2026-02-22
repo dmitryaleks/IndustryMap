@@ -2,7 +2,7 @@
   "$schema": "../schema/company.schema.json",
   "version": "3.0.0",
   "lastUpdated": "2026-02-21T23:00:00Z",
-  "totalCompanies": 96,
+  "totalCompanies": 110,
   "waves": {
     "wave1": {
       "count": 16,
@@ -30,29 +30,31 @@
       "description": "Korean semiconductor ecosystem - OSAT clients, equipment competitors, and ecosystem players linked to Tokyo Seimitsu/Accretech"
     },
     "wave6": {
-      "count": 13,
+      "count": 27,
       "status": "complete",
       "description": "Chinese semiconductor ecosystem - foundries, equipment makers, and memory/IC companies linked to existing supply chain nodes"
     }
   },
   "industryBreakdown": {
-    "Semiconductor Equipment": 39,
+    "Semiconductor Equipment": 43,
     "Semiconductor Materials": 26,
-    "Semiconductor Packaging/OSAT": 10,
-    "Semiconductor Foundry": 7,
+    "Semiconductor Packaging/OSAT": 16,
+    "Semiconductor Foundry": 10,
     "Semiconductors": 6,
     "Memory Semiconductors": 3,
     "Semiconductor Components": 2,
     "Precision Instruments": 1,
     "Consumer Electronics": 1,
-    "Storage/Memory": 1
+    "Storage/Memory": 1,
+    "Semiconductor Testing/OSAT": 1
   },
   "geographyBreakdown": {
     "Japan": 53,
     "China": 18,
-    "South Korea": 12,
+    "South Korea": 14,
+    "Unknown": 9,
+    "Taiwan": 7,
     "USA": 6,
-    "Taiwan": 4,
     "Hong Kong": 2,
     "Netherlands": 1
   },
@@ -628,10 +630,94 @@
       "wave": 6
     },
     {
+      "id": "CMP-0096",
+      "name": "SEMES Co., Ltd.",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0097",
+      "name": "SEMICS Inc.",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0098",
+      "name": "WONIK IPS Co., Ltd.",
+      "ticker": "240810.KQ",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0099",
+      "name": "EO Technics Co., Ltd.",
+      "ticker": "039030.KQ",
+      "wave": 6
+    },
+    {
       "id": "CMP-0100",
       "name": "SurplusGLOBAL Inc.",
       "ticker": "140070.KQ",
       "wave": 5
+    },
+    {
+      "id": "CMP-0101",
+      "name": "King Yuan Electronics Co., Ltd.",
+      "ticker": "2449.TW",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0102",
+      "name": "United Microelectronics Corporation",
+      "ticker": "2303.TW",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0103",
+      "name": "Vanguard International Semiconductor Corporation",
+      "ticker": "5347.TWO",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0104",
+      "name": "Chipbond Technology Corporation",
+      "ticker": "6147.TWO",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0105",
+      "name": "ChipMOS Technologies Inc.",
+      "ticker": "8150.TW",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0106",
+      "name": "GlobalFoundries Inc.",
+      "ticker": "GFS",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0107",
+      "name": "UTAC Group",
+      "ticker": null,
+      "wave": 6
+    },
+    {
+      "id": "CMP-0108",
+      "name": "Inari Amertron Berhad",
+      "ticker": "0166.KL",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0109",
+      "name": "Unisem (M) Berhad",
+      "ticker": "5005.KL",
+      "wave": 6
+    },
+    {
+      "id": "CMP-0110",
+      "name": "Malaysian Pacific Industries Berhad",
+      "ticker": "3867.KL",
+      "wave": 6
     }
   ],
   "keyRelationships": {
@@ -648,48 +734,84 @@
       "CMP-0072 (Hanmi) -> 71.2% of HBM TC bonders (world #1)"
     ],
     "tokyoSeimitsuSupplyChain": {
-      "clients": [
-        "CMP-0017 (TSMC) - probing, dicing, CMP",
-        "CMP-0018 (Samsung) - probing, dicing",
-        "CMP-0019 (Intel) - probing, dicing",
-        "CMP-0020 (SK Hynix) - probing, dicing",
-        "CMP-0021 (Micron) - probing, dicing",
-        "CMP-0014 (Kioxia) - probing, dicing",
-        "CMP-0063 (ASE) - dicing, probing (world #1 OSAT, Taiwan)",
-        "CMP-0064 (Amkor) - dicing, probing (world #2 OSAT, USA)",
-        "CMP-0065 (JCET) - dicing, probing (world #3 OSAT, China)",
-        "CMP-0066 (SMIC) - CMP, probing, dicing (China #1 foundry)",
-        "CMP-0067 (Tongfu) - dicing, probing (China #2 OSAT)",
-        "CMP-0068 (Huatian) - dicing, probing (China #3 OSAT)",
-        "CMP-0069 (Powertech) - dicing, probing (Taiwan memory OSAT)",
-        "CMP-0070 (Hua Hong) - CMP, probing (China #2 foundry)",
-        "CMP-0075 (DB HiTek) - probing, dicing, CMP (Korea #2 foundry, 200mm legacy)",
-        "CMP-0076 (HANA Micron) - probing, dicing (Korea #1 OSAT, global #8)",
-        "CMP-0077 (Nepes) - probing, dicing (Korea OSAT, FO-PLP pioneer)",
-        "CMP-0078 (SFA Semicon) - probing, dicing (Korea OSAT, Samsung backend partner)",
-        "CMP-0079 (LB Semicon) - probing, dicing (Korea OSAT, DDI specialist)"
-      ],
-      "competitors": [
-        "CMP-0002 (DISCO) - dicing (70% vs ACCRETECH 10%)",
-        "CMP-0071 (MPI Corp) - probing (Taiwan, 10% global share)",
-        "CMP-0072 (Hanmi) - packaging equipment (Korea, TC bonders)",
-        "CMP-0073 (Sidea) - probing (China, 25.7% domestic share)",
-        "CMP-0074 (Guangli/ADT) - dicing (China/Israel, world #3)",
-        "CMP-0081 (KCTech) - CMP equipment (Korea, only domestic CMP maker)",
-        "CMP-0086 (SEMES) - probing (Korea, Samsung subsidiary, SEMPRO PRIME)",
-        "CMP-0087 (SEMICS) - probing (Korea, world #3 prober, Samsung supplier)",
-        "CMP-0089 (EO Technics) - laser dicing (Korea, alternative to blade dicing)"
-      ],
-      "koreanEcosystem": [
-        "CMP-0080 (Techwing) - test handlers (Korea #1, global #1 memory handler, CubeProber)",
-        "CMP-0082 (Leeno Industrial) - probe components, test sockets (Korea #1)",
-        "CMP-0088 (WONIK IPS) - deposition equipment (Korea major equipment maker)",
-        "CMP-0100 (SurplusGLOBAL) - used equipment dealer (world #1, Accretech secondary market)"
-      ],
+      "clients_by_country": {
+        "Japan": [
+          "CMP-0014 (Kioxia)"
+        ],
+        "Taiwan": [
+          "CMP-0017 (TSMC)",
+          "CMP-0063 (ASE)",
+          "CMP-0069 (Powertech)",
+          "CMP-0101 (KYEC)",
+          "CMP-0102 (UMC)",
+          "CMP-0103 (VSMC)",
+          "CMP-0104 (Chipbond)",
+          "CMP-0105 (ChipMOS)"
+        ],
+        "South Korea": [
+          "CMP-0018 (Samsung)",
+          "CMP-0020 (SK Hynix)",
+          "CMP-0075 (DB HiTek)",
+          "CMP-0076 (HANA Micron)",
+          "CMP-0077 (Nepes)",
+          "CMP-0078 (SFA Semicon)",
+          "CMP-0079 (LB Semicon)"
+        ],
+        "China": [
+          "CMP-0065 (JCET)",
+          "CMP-0066 (SMIC)",
+          "CMP-0067 (Tongfu)",
+          "CMP-0068 (Huatian)",
+          "CMP-0070 (Hua Hong)",
+          "CMP-0083 (Nexchip)",
+          "CMP-0084 (CR Micro)",
+          "CMP-0093 (YMTC)",
+          "CMP-0094 (CanSemi)",
+          "CMP-0095 (GTA Semi)"
+        ],
+        "USA": [
+          "CMP-0019 (Intel)",
+          "CMP-0021 (Micron)",
+          "CMP-0064 (Amkor)"
+        ],
+        "Singapore": [
+          "CMP-0106 (GlobalFoundries)",
+          "CMP-0107 (UTAC)"
+        ],
+        "Malaysia": [
+          "CMP-0108 (Inari Amertron)",
+          "CMP-0109 (Unisem)",
+          "CMP-0110 (MPI/Carsem)"
+        ]
+      },
+      "competitors_by_product": {
+        "probing": [
+          "CMP-0071 (MPI Corp, Taiwan 10%)",
+          "CMP-0073 (Sidea, China 25.7% domestic)",
+          "CMP-0087 (Changchuan, China developing 12-inch)",
+          "CMP-0085 (NAURA, China expanding)",
+          "CMP-0096 (SEMES, Korea Samsung captive)",
+          "CMP-0097 (SEMICS, Korea world #3)"
+        ],
+        "dicing": [
+          "CMP-0002 (DISCO, Japan 70%)",
+          "CMP-0074 (Guangli/ADT, China/Israel #3)",
+          "CMP-0089 (Heyan, China domestic pioneer)",
+          "CMP-0091 (CETC, China state-owned)",
+          "CMP-0099 (EO Technics, Korea laser dicing)"
+        ],
+        "CMP": [
+          "CMP-0088 (Huahai Qingke, China >50% domestic 12-inch)",
+          "CMP-0091 (CETC/Shuoke, China state-owned)",
+          "CMP-0092 (TSD, China compound semi)",
+          "CMP-0085 (NAURA, China expanding)",
+          "CMP-0081 (KCTech, Korea VENTUS system)"
+        ]
+      },
       "partners": [
         "CMP-0005 (Advantest) - die-level prober joint development for AI/HPC (Dec 2025)"
       ]
     }
   },
-  "notes": "Wave 5: Korean semiconductor ecosystem deep dive. Added 14 Korean companies linked to Tokyo Seimitsu/Accretech: 5 Korean OSAT clients (HANA Micron, Nepes, SFA Semicon, LB Semicon + DB HiTek foundry), 4 Korean competitors (KCTech CMP, SEMES prober, SEMICS prober, EO Technics laser dicing), and 5 Korean ecosystem players (Techwing handlers, Leeno probes, WONIK IPS deposition, SurplusGLOBAL used equipment). Total 88 companies across 6 countries. South Korea count: 17 (from 3). Tokyo Seimitsu now has 19 identified clients and 9 competitors. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 96 companies across 7 regions."
+  "notes": "Wave 5: comprehensive CN/KR/APAC expansion via Chinese (Mandarin), Korean, and English language research. Added 36 companies: 13 Chinese (5 foundry/IDM clients, 1 fabless, 7 equipment competitors), 13 Korean (5 OSAT/foundry clients, 4 equipment competitors, 4 ecosystem players), 10 APAC counterparts (5 Taiwan OSATs/foundries, 2 Singapore foundry/OSAT, 3 Malaysia OSATs). Tokyo Seimitsu now has 35 identified clients across 7 countries and 15 competitors across 4 countries. Total 110 companies across 10+ countries. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions."
 }

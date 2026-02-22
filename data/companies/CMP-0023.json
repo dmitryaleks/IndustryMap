@@ -5,22 +5,27 @@
   "industryCode": "Storage/Memory",
   "ticker": "WDC",
   "description": "Major data storage company producing HDDs, SSDs, and flash memory products. Manufacturing partner with Kioxia for NAND flash. Spun off Sandisk flash memory business.",
-  "marketCapInYen": null,
+  "marketCapInYen": 14668000000000,
   "marketCapUSD": 98400000000,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "PER": 24.63,
+  "PBR": 11.96,
+  "EPS": 10.09,
   "website": "https://www.westerndigital.com/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 43399,
   "latestPriceUSD": null,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "manufacturingPartners": ["Kioxia (CMP-0014) - Yokkaichi and Kitakami JV"],
-    "majorClients": ["AI data centers", "Enterprise storage customers"],
+    "manufacturingPartners": [
+      "Kioxia (CMP-0014) - Yokkaichi and Kitakami JV"
+    ],
+    "majorClients": [
+      "AI data centers",
+      "Enterprise storage customers"
+    ],
     "notes": "Sold out 2026 HDD production capacity for AI data centers. Sold $3.17B Sandisk stake. Market cap +340% in 1 year."
   },
   "_metadata": {

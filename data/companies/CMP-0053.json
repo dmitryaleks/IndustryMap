@@ -5,19 +5,26 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6254.T",
   "description": "Ultrapure water equipment specialist since 1969. Strong in Korea market. Complete end-to-end service from design to maintenance. Water recycling technology leader.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": null,
+  "marketCapInYen": 92000000000,
+  "PER": 34.13,
+  "PBR": 2.49,
+  "EPS": 100.8,
   "website": "https://www.nomura-nms.co.jp/",
   "percentOfForeignOwnership": null,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": null,
+  "latestPriceYen": 2428,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": ["CMP-0018", "CMP-0020"],
+  "clients": [
+    "CMP-0018",
+    "CMP-0020"
+  ],
   "_externalRelationships": {
-    "majorClients": ["Samsung (CMP-0018)", "SK Hynix (CMP-0020)", "Korean semiconductor makers"],
+    "majorClients": [
+      "Samsung (CMP-0018)",
+      "SK Hynix (CMP-0020)",
+      "Korean semiconductor makers"
+    ],
     "notes": "Specialized in semiconductors. Strong overseas (Korea). Record revenues FY2025. Water recycling technology."
   },
   "_metadata": {

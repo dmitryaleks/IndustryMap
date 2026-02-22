@@ -5,20 +5,30 @@
   "industryCode": "Semiconductor Equipment",
   "ticker": "6525.T",
   "description": "Manufactures, sells, and maintains semiconductor manufacturing equipment. Main products include batch film deposition equipment for NAND and DRAM, treatment equipment for film quality improvement, and cleaning equipment.",
-  "marketCapInYen": null,
-  "PER": null,
-  "PBR": null,
-  "EPS": 37.64,
+  "marketCapInYen": 1120000000000,
+  "PER": 23.46,
+  "PBR": 6.39,
+  "EPS": 143.35,
   "website": "https://www.kokusai-electric.com/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 37.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 6243,
+  "latestPriceYen": 4516,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "majorClients": ["Samsung Electronics", "TSMC", "Micron", "Intel", "SK Hynix", "CXMT (China)"],
-    "memoryClients": ["Kioxia (CMP-0014)", "Western Digital"],
+    "majorClients": [
+      "Samsung Electronics",
+      "TSMC",
+      "Micron",
+      "Intel",
+      "SK Hynix",
+      "CXMT (China)"
+    ],
+    "memoryClients": [
+      "Kioxia (CMP-0014)",
+      "Western Digital"
+    ],
     "notes": "70% market share in batch ALD, 34% in batch CVD. TSMC is #2 customer. Serves all major 3D NAND makers."
   },
   "_metadata": {

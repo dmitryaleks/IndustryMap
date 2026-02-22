@@ -1,0 +1,37 @@
+{
+  "id": "CMP-0096",
+  "companyName": "SEMES Co., Ltd.",
+  "companyNameKorean": "세메스",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": null,
+  "description": "Korea's largest semiconductor equipment maker. Samsung Electronics subsidiary (91.5% ownership). Annual revenue >3T KRW. World TOP 10 equipment firm for 6 consecutive years. Products: front-end (cleaning, photo track, etch, deposition) and back-end (bonders, probers, test handlers). SEMPRO PRIME prober directly competes with Accretech wafer probers. Represents Samsung's strategic effort to reduce dependence on Japanese equipment makers.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.semes.com/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": ["CMP-0018"],
+  "_externalRelationships": {
+    "majorClients": [
+      "Samsung Electronics (CMP-0018) - captive equipment supplier (parent company)"
+    ],
+    "competitors": [
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001) - direct competitor: SEMPRO PRIME prober vs Accretech wafer probers",
+      "Tokyo Electron (CMP-0004) - photo track, cleaning, etch equipment",
+      "SCREEN Holdings (CMP-0003) - cleaning equipment",
+      "Hanmi Semiconductor (CMP-0072) - bonders"
+    ],
+    "notes": "Private company (Samsung subsidiary, 91.5% ownership). Revenue >3T KRW annually. SEMPRO PRIME prober is Samsung's in-house alternative to Accretech probers. As Samsung aims to localize semiconductor equipment, SEMES is the primary vehicle for reducing dependence on Japanese equipment suppliers including Accretech, TEL, and SCREEN. Strategic significance: captive Samsung equipment maker with Samsung's full backing for R&D investment."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-21T23:00:00Z",
+    "dataSource": "SEMES corporate website, Samsung Electronics AR, Korean industry sources, THE ELEC",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-21T23:00:00Z"
+  }
+}

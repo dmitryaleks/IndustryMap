@@ -7,7 +7,7 @@
   "ticker": "300480.SZ",
   "description": "Chinese semiconductor dicing saw manufacturer. Originally a coal mine safety monitoring equipment company (founded 1994). Entered semiconductor dicing via 2019 acquisition of Israel's ADT (Advanced Dicing Technologies) for $37M. One of only two companies globally (with DISCO) to manufacture both dicing saws and high-precision air-bearing spindles in-house.",
   "marketCapInYen": null,
-  "PER": null,
+  "PER": 40.0,
   "PBR": null,
   "EPS": null,
   "website": "https://www.adt-co.cn/",
@@ -18,7 +18,11 @@
   "suppliers": [],
   "clients": [],
   "_externalRelationships": {
-    "competitors": ["DISCO (CMP-0002)", "ACCRETECH/Tokyo Seimitsu (CMP-0001)", "Shenyang Heyan Technology"],
+    "competitors": [
+      "DISCO (CMP-0002)",
+      "ACCRETECH/Tokyo Seimitsu (CMP-0001)",
+      "Shenyang Heyan Technology"
+    ],
     "notes": "Listed on Shenzhen ChiNext (300480.SZ). ADT subsidiary (Israel) is world's #3 dicing saw maker. ADT dicing equipment achieves 0.1 micrometer precision control. Building semiconductor intelligent manufacturing base in Zhengzhou. Chinese domestic dicing market ~5% penetration vs DISCO 70% and ACCRETECH 10%. ~60B CNY global dicing market. Key player in China's semiconductor equipment localization drive."
   },
   "_metadata": {
