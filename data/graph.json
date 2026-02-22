@@ -2760,6 +2760,24 @@
       "source": "CMP-0052",
       "target": "CMP-0070",
       "type": "supplier"
+    },
+    {
+      "source": "CMP-0038",
+      "target": "CMP-0024",
+      "type": "supplier",
+      "label": "novolac resins for photoresist"
+    },
+    {
+      "source": "CMP-0038",
+      "target": "CMP-0040",
+      "type": "supplier",
+      "label": "novolac resins for photoresist"
+    },
+    {
+      "source": "CMP-0038",
+      "target": "CMP-0046",
+      "type": "supplier",
+      "label": "novolac resins for photoresist"
     }
   ]
 }

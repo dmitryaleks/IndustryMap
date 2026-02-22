@@ -4,32 +4,63 @@
   "companyNameJapanese": "群栄化学工業株式会社",
   "industryCode": "Semiconductor Materials",
   "ticker": "4229.T",
-  "description": "Supplies photoresist polymers (novolac resins) for semiconductor manufacturing. Strong in phenol resin-based chemistry. Expanding production capacity for growing demand.",
-  "marketCapInYen": 19370000000,
-  "PER": 11.4,
-  "PBR": null,
-  "EPS": 317.0,
+  "description": "Japan's dominant supplier of novolac-type phenol-formaldehyde resins (RESITOP brand) used as base polymers in photoresists for semiconductor manufacturing. Serves every lithography node from g-line (436nm) through i-line (365nm), KrF (248nm), and ArF (193nm), making it — by its own claim — the world's only supplier with a continuous lineup across all commercial wavelengths. Anchor customers Tokyo Ohka Kogyo and Shin-Etsu Chemical both hold equity stakes in Gun Ei, underscoring the depth of these long-term supply relationships. Beyond photoresist materials, Gun Ei is the world's sole commercial producer of phenolic resin fiber 'Kainol' (activated carbon fiber for solvent recovery and fire protection) and holds the global Milex brand for friction-material binder resins used in automotive brakes. Operates domestic factories in Gunma (HQ), Shiga, and Iwate; overseas production subsidiaries in Thailand (Thai GCI Resitop) and India. Wholly-owned subsidiary Tohoku Uloid Industrial Co., Ltd. (acquired from Mitsui Chemicals, 2014) self-produces formaldehyde, providing vertical integration in a key raw material. A ¥3.5 billion photoresist resin factory at the Gunma site is completing in FY2026, representing 30%+ additional capacity on top of a prior expansion. Medium-term plan (GCI 2030) targets ¥40B revenue and ¥4B operating profit by FY2031, from ¥30.5B / ¥2.3B in FY2025. Net cash position of ¥10.2B (22% of market cap) and PBR 0.64x represent a significant valuation cushion despite the stock's +88% gain over the past 12 months.",
+  "marketCapInYen": 45890000000,
+  "PER": 17.6,
+  "PBR": 0.64,
+  "EPS": 289.5,
   "website": "https://www.gunei-chemical.co.jp/",
-  "percentOfForeignOwnership": null,
-  "percentOfCirculatingEquity": null,
-  "latestPriceYen": 2975,
+  "percentOfForeignOwnership": 3.6,
+  "percentOfCirculatingEquity": 52.95,
+  "latestPriceYen": 5100,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [
     "CMP-0033",
-    "CMP-0034"
+    "CMP-0034",
+    "CMP-0024",
+    "CMP-0040",
+    "CMP-0046"
   ],
   "_externalRelationships": {
-    "majorClients": [
-      "Major photoresist manufacturers"
+    "confirmedClients": [
+      "Tokyo Ohka Kogyo (4186.T, CMP-0033) — anchor customer since late 1970s; holds 1.87% of Gun Ei equity; TOK's landmark OFPR-800 g-line resist (1979, global 64K DRAM standard) used Gun Ei novolac",
+      "Shin-Etsu Chemical (4063.T, CMP-0024) — photoresist business (launched 1997, Naoetsu plant, Niigata); holds 3.66% of Gun Ei equity; largest single external shareholder",
+      "JSR Corporation (4185.T, CMP-0034) — major photoresist maker; one of top-5 Japan PR companies; inferred from market structure",
+      "FUJIFILM Holdings (4901.T, CMP-0040) — photoresist division; inferred from market structure",
+      "Sumitomo Chemical (4005.T, CMP-0046) — photoresist division; inferred from market structure"
     ],
-    "notes": "High market share in photoresist polymers. Full wavelength lineup from i-line to EUV. New factory 2025."
+    "rawMaterialSuppliers": [
+      "Mitsui Chemicals (4183.T) — domestic phenol supplier; prior owner of Tohoku Uloid (sold 2014) and Milex brand (sold 2022); phenol supply at risk as Mitsui closes Ichihara plant by FY2026",
+      "Mitsubishi Chemical (4188.T) — domestic phenol supplier; sole survivor post-Mitsui Ichihara closure; joint supply arrangement with Mitsui under study (Jan 2025)",
+      "Tohoku Uloid Industrial Co., Ltd. (wholly-owned subsidiary, Iwate) — self-produced formaldehyde/formalin in multiple concentrations; 7 reaction vessels 5-30m3; acquired from Mitsui Chemicals April 2014"
+    ],
+    "keyShareholderContext": [
+      "Shin-Etsu Chemical: 3.66% (largest external) — customer cross-shareholding",
+      "Tokyo Ohka Kogyo: 1.87% — customer cross-shareholding",
+      "Gunma Bank (8334.T): 3.38% — regional main bank",
+      "Japan Master Trust Bank: 6.49% (custodial)",
+      "Treasury shares: 26.25% of total (unusually high — acquisition reserve or RSU pool)"
+    ],
+    "competitorContext": [
+      "Maruzen Petrochemical (4634.T, CMP-0035) — duopoly partner in photoresist base polymers; Maruzen leads in KrF/ArF/EUV advanced-node polymers while Gun Ei leads in g/i-line novolac",
+      "Nippon Soda (4202.T) — KrF polymer (polyhydroxystyrene) for NAND-grade resists",
+      "Toyo Gosei (4970.T, CMP-0010) — ~70% global share of photoacid generators (PAGs), complementary not competing"
+    ],
+    "subsidiaries": [
+      "Tohoku Uloid Industrial Co., Ltd. (東北ユーロイド工業) — Iwate; formaldehyde, contract chemical mfg; acquired Mitsui Chemicals 2014",
+      "Thai GCI Resitop Company Limited — Rayong, Thailand; phenolic resin production; >10% consolidated revenue contribution",
+      "GCI India — automotive phenolic resins (brake binders); capacity doubling underway",
+      "GCI America Inc. — Schaumburg, IL; Milex brake resin sales in North America; est. 2018",
+      "Kynol Inc. — global distribution of Kainol activated carbon fiber"
+    ],
+    "notes": "FY2025/03 full-year: Revenue ¥30.54B (+0.78% YoY), Operating income ¥2.29B (-16% YoY from FY2024's exceptionally strong base), Net income ¥1.92B. Q3 FY2026 (9-month): Operating income ¥2.23B (+31.4% YoY), reaching 96.8% of full-year guidance. Stock hit 10-year high of ¥5,180 on Feb 12, 2026. Net cash position ¥10.21B. Equity ratio 81.2%. Dividend ¥100/share (payout ratio ~35%). ROE 3.86% (FY2025) — suppressed by net cash. Business segments: Chemicals ~82% (Electronic Materials ~25%, Industrial ~50%, Environmental ~7%), Food ~17% (isomerized sugars), Real Estate ~1%."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T17:00:00Z",
-    "dataSource": "Kabutan, Company IR",
+    "dataCollectedAt": "2026-02-22T00:00:00Z",
+    "dataSource": "Kabutan, Minkabu, IRBank, MarketScreener, Stockopedia, Company IR (gunei-chemical.co.jp), Nikkei, Chemical Daily, Nikkan Kogyo Shimbun, SimplyWallSt",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T17:00:00Z",
+    "lastUpdated": "2026-02-22T00:00:00Z",
     "wave": 3
   }
 }
