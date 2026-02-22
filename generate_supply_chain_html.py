@@ -453,6 +453,11 @@ svg {{ width: 100%; height: 100%; }}
     <div class="filter-row"><input type="checkbox" id="e-competitor" checked><label for="e-competitor">Competitor</label></div>
     <div class="filter-row"><input type="checkbox" id="e-partner" checked><label for="e-partner">Partner</label></div>
     <div class="filter-row"><input type="checkbox" id="e-ecosystem" checked><label for="e-ecosystem">Ecosystem</label></div>
+    <div style="margin-top:8px;font-size:10px;color:#475569;line-height:1.7">
+      Hover a node to reveal direction:<br>
+      <span style="color:#22c55e;font-weight:700">&#x2192;</span> outgoing (node supplies)<br>
+      <span style="color:#f59e0b;font-weight:700">&#x2192;</span> incoming (node receives)
+    </div>
   </div>
 
   <div id="stats">
@@ -520,6 +525,18 @@ const container = document.getElementById('graph');
 let W = container.clientWidth, H = container.clientHeight;
 const g = svg.append('g');
 
+// ── Arrow markers ─────────────────────────────────────────────────────────
+const defs = svg.append('defs');
+function mkArrow(id, color, sz) {{
+  defs.append('marker')
+    .attr('id', id).attr('viewBox','0 -4 8 8').attr('refX',8).attr('refY',0)
+    .attr('markerWidth', sz||5).attr('markerHeight', sz||5).attr('orient','auto')
+    .append('path').attr('d','M0,-4L8,0L0,4').attr('fill', color);
+}}
+mkArrow('arr-supp',   '#55677e', 5);   // default supplier edge (subtle)
+mkArrow('arr-hl-out', '#22c55e', 8);   // hover: hovered node is the supplier
+mkArrow('arr-hl-in',  '#f59e0b', 8);   // hover: hovered node is the customer
+
 svg.attr('width', W).attr('height', H);
 
 const zoom = d3.zoom().scaleExtent([0.05, 6])
@@ -581,12 +598,14 @@ function render() {{
   document.getElementById('stat-visible').textContent = `Visible: ${{visNodes.length}} nodes, ${{visEdges.length}} edges`;
 
   // edges
-  linkSel = edgeLayer.selectAll('line').data(visEdges, d=>`${{d.source.id||d.source}}-${{d.target.id||d.target}}-${{d.type}}`);
+  linkSel = edgeLayer.selectAll('path.edge').data(visEdges, d=>`${{d.source.id||d.source}}-${{d.target.id||d.target}}-${{d.type}}`);
   linkSel.exit().remove();
-  const linkEnter = linkSel.enter().append('line')
-    .attr('stroke-width', d => d.type==='supplier'?1.2:1.5)
-    .attr('stroke-opacity', d => d.type==='supplier'?0.25:0.5)
-    .attr('stroke-dasharray', d => d.type!=='supplier'?'4,3':null);
+  const linkEnter = linkSel.enter().append('path').attr('class','edge')
+    .attr('fill','none')
+    .attr('stroke-width', d => d.type==='supplier'?1.5:1.5)
+    .attr('stroke-opacity', d => d.type==='supplier'?0.3:0.5)
+    .attr('stroke-dasharray', d => d.type!=='supplier'?'4,3':null)
+    .attr('marker-end', d => d.type==='supplier'?'url(#arr-supp)':null);
   linkSel = linkEnter.merge(linkSel)
     .attr('stroke', d => EDGE_CLR[d.type]||'#334155');
 
@@ -626,9 +645,9 @@ function render() {{
 
   // interactions
   nodeSel
-    .on('mouseover', (event,d) => showTooltip(event,d))
+    .on('mouseover', (event,d) => {{ showTooltip(event,d); highlightEdges(d); }})
     .on('mousemove', (event) => moveTooltip(event))
-    .on('mouseout', hideTooltip)
+    .on('mouseout', (event,d) => {{ hideTooltip(); unhighlightEdges(); }})
     .on('click', (event,d) => {{ event.stopPropagation(); togglePanel(d.id); }})
     .call(d3.drag()
       .on('start', (event,d) => {{ if(!event.active) sim.alphaTarget(.3).restart(); d.fx=d.x; d.fy=d.y; }})
@@ -645,11 +664,66 @@ function render() {{
 }}
 
 function ticked() {{
-  if (linkSel) linkSel
-    .attr('x1', d=>d.source.x).attr('y1', d=>d.source.y)
-    .attr('x2', d=>d.target.x).attr('y2', d=>d.target.y);
+  if (linkSel) linkSel.attr('d', d => {{
+    const dx = d.target.x - d.source.x, dy = d.target.y - d.source.y;
+    const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+    const sr = (d.source.crit ? 17 : 11) + 2;
+    const tr = (d.target.crit ? 17 : 11) + 2;
+    const x1 = d.source.x + dx/dist * sr, y1 = d.source.y + dy/dist * sr;
+    const x2 = d.target.x - dx/dist * tr, y2 = d.target.y - dy/dist * tr;
+    return `M${{x1.toFixed(2)}},${{y1.toFixed(2)}}L${{x2.toFixed(2)}},${{y2.toFixed(2)}}`;
+  }});
   if (nodeSel) nodeSel
     .attr('transform', d=>`translate(${{d.x}},${{d.y}})`);
+}}
+
+// ── Edge hover highlighting ──────────────────────────────────────────────
+function highlightEdges(d) {{
+  if (!linkSel) return;
+  const hid = d.id;
+  linkSel
+    .attr('stroke-opacity', e => {{
+      const sid = e.source.id||e.source, tid = e.target.id||e.target;
+      return (sid===hid||tid===hid) ? 1 : 0.04;
+    }})
+    .attr('stroke', e => {{
+      const sid = e.source.id||e.source, tid = e.target.id||e.target;
+      if (e.type==='supplier') {{
+        if (sid===hid) return '#22c55e';   // hovered node supplies to target
+        if (tid===hid) return '#f59e0b';   // source supplies to hovered node
+      }}
+      if (sid===hid||tid===hid) return EDGE_CLR[e.type]||'#334155';
+      return EDGE_CLR[e.type]||'#334155';
+    }})
+    .attr('stroke-width', e => {{
+      const sid = e.source.id||e.source, tid = e.target.id||e.target;
+      return (sid===hid||tid===hid) ? 2.5 : 1.5;
+    }})
+    .attr('marker-end', e => {{
+      if (e.type!=='supplier') return null;
+      const sid = e.source.id||e.source, tid = e.target.id||e.target;
+      if (sid===hid) return 'url(#arr-hl-out)';
+      if (tid===hid) return 'url(#arr-hl-in)';
+      return null;
+    }});
+  if (nodeSel) nodeSel.style('opacity', n => {{
+    if (n.id===hid) return 1;
+    const conn = linkSel.data().some(e => {{
+      const sid = e.source.id||e.source, tid = e.target.id||e.target;
+      return (sid===hid&&tid===n.id)||(tid===hid&&sid===n.id);
+    }});
+    return conn ? 1 : 0.2;
+  }});
+}}
+
+function unhighlightEdges() {{
+  if (!linkSel) return;
+  linkSel
+    .attr('stroke-opacity', e => e.type==='supplier'?0.3:0.5)
+    .attr('stroke', e => EDGE_CLR[e.type]||'#334155')
+    .attr('stroke-width', () => 1.5)
+    .attr('marker-end', e => e.type==='supplier'?'url(#arr-supp)':null);
+  if (nodeSel) nodeSel.style('opacity', 1);
 }}
 
 // ── Tooltip ───────────────────────────────────────────────────────────
