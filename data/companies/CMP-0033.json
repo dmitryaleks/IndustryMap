@@ -4,17 +4,20 @@
   "companyNameJapanese": "東京応化工業株式会社",
   "industryCode": "Semiconductor Materials",
   "ticker": "4186.T",
-  "description": "World's #1 photoresist manufacturer with 25% global share. Supplies from g-line to cutting-edge EUV photoresists. Also provides high-purity chemicals, thinners, developers.",
-  "marketCapInYen": 1110000000000,
-  "PER": 24.7,
-  "PBR": null,
-  "EPS": 278.42,
+  "description": "World's leading photoresist manufacturer (branded 'THMR', 'OFPR', 'TFR' series) with ~25% global share across all lithography nodes from g-line (436nm) through i-line (365nm), KrF (248nm), ArF dry/immersion (193nm), to EUV (13.5nm). Also supplies high-purity chemicals (thinners, developers, strippers, rinses), antireflection coatings, hardmask materials, adhesion promoters, directed self-assembly (DSA) materials, and thick-film resists for advanced packaging. Operates Equipment segment manufacturing semiconductor/display processing equipment. Revenue split ~100% Materials (electronic functional materials + high-purity chemicals). FY ending December. Founded 1940 in Kawasaki. ~1,996 employees. Taiwan (TSMC) is the single largest revenue source at 36% of sales, followed by China 21%, Korea 13%, and Japan domestic. 3-for-1 stock split on Jan 1, 2024. Advancing metal oxide resist (MOR) technology for EUV/High-NA EUV applications alongside JSR.",
+  "marketCapInYen": 1107000000000,
+  "PER": 33.2,
+  "PBR": 5.07,
+  "EPS": 278.03,
   "website": "https://www.tok.co.jp/",
-  "percentOfForeignOwnership": 37.5,
+  "percentOfForeignOwnership": 26.58,
   "percentOfCirculatingEquity": null,
   "latestPriceYen": 9237,
   "isForexSensitive": true,
-  "suppliers": [],
+  "suppliers": [
+    "CMP-0038",
+    "CMP-0035"
+  ],
   "clients": [
     "CMP-0017",
     "CMP-0018",
@@ -23,18 +26,185 @@
   ],
   "_externalRelationships": {
     "majorClients": [
-      "TSMC",
-      "Samsung",
-      "Intel",
-      "Kioxia"
+      "TSMC (largest customer, ~36% of revenue via Taiwan sales; TOK won TSMC supplier award; clustering near JASM Kumamoto)",
+      "Samsung Electronics (Korea; served from TOK Advanced Materials Co., Ltd. / TOKAM in Incheon/Pyeongtaek)",
+      "SK hynix (Korea; memory photoresists and packaging materials)",
+      "Intel (won Intel Preferred Quality Supplier Award 2020)",
+      "Kioxia (Japan; memory/NAND photoresists)"
     ],
-    "notes": "World #1 in photoresist. 80%+ of sales overseas. 25% share in EUV photoresist. Ultimate 'suriawase' with customers."
+    "majorSuppliers": [
+      "Gun Ei Chemical (4229.T, CMP-0038) — novolac resins for g/i-line photoresists; TOK holds 1.87% equity stake in Gun Ei; relationship since late 1970s",
+      "Maruzen Petrochemical (4634.T, CMP-0035) — advanced photoresist polymers for KrF/ArF/EUV nodes",
+      "Inpria (invested in; metal oxide resist technology for EUV)",
+      "Toyo Gosei (4970.T) — photoacid generators (PAGs) used in chemically amplified resists"
+    ],
+    "competitors": [
+      "JSR Corporation (4185.T; taken private by JIP for $6.4B; TOK's closest rival with ~91% combined global share; advancing MOR for EUV)",
+      "Shin-Etsu Chemical (4063.T) — #2-3 globally; strong in ArF immersion resists",
+      "FUJIFILM Electronic Materials (4901.T) — broad photoresist portfolio",
+      "Sumitomo Chemical (4005.T) — photoresist division",
+      "Merck / AZ Electronic Materials — acquired by Merck KGaA",
+      "DuPont — negative-tone thick-film resists",
+      "Dongjin Semichem (Korea) — growing in KrF/ArF"
+    ],
+    "financialSummary": {
+      "FY2025_ended_Dec2025": {
+        "netSales": "237.0B yen (+17.9% YoY)",
+        "operatingIncome": "47.3B yen (+43.2% YoY)",
+        "netIncome": "33.3B yen (+47.0% YoY)",
+        "operatingMargin": "~20.0%",
+        "netMargin": "~14.1%",
+        "ROE": "15.6%",
+        "equityRatio": "67.9%",
+        "totalAssets": "335.3B yen",
+        "cashAndEquivalents": "69.2B yen",
+        "dividendPerShare": "72 yen (up from 63 yen in FY2024)",
+        "note": "Record highs for both revenue and operating income. Driven by generative AI demand and FX tailwinds."
+      },
+      "FY2024_ended_Dec2024": {
+        "netSales": "200.97B yen (+23.85% YoY)",
+        "grossProfit": "73.4B yen",
+        "grossMargin": "~36.5%",
+        "operatingIncome": "~33.0B yen (+36% YoY)",
+        "netIncome": "~22.7B yen",
+        "note": "Recovery driven by semiconductor market rebound and generative AI demand."
+      },
+      "FY2023_ended_Dec2023": {
+        "netSales": "162.27B yen (-7.5% YoY)",
+        "grossProfit": "57.95B yen",
+        "grossMargin": "~35.7%",
+        "operatingIncome": "~30.4B yen",
+        "note": "Down year due to semiconductor downcycle. Still profitable."
+      },
+      "FY2022_ended_Dec2022": {
+        "netSales": "175.43B yen (+25.3% YoY)",
+        "grossProfit": "63.1B yen",
+        "note": "Peak of prior cycle."
+      },
+      "FY2026_forecast": {
+        "netSales": "~261B yen (+10.1% YoY)",
+        "netIncome": "~35B yen (+5.0% YoY)",
+        "dividendPerShare": "80 yen (planned)",
+        "note": "Continued growth expected from advanced node migration and AI chip demand."
+      }
+    },
+    "guidanceRevisions": {
+      "FY2025_Jan2026_revision": {
+        "originalNetSales": "227.0B yen",
+        "revisedNetSales": "237.0B yen (+4.4%)",
+        "originalOperatingIncome": "40.0B yen",
+        "revisedOperatingIncome": "47.3B yen (+18.3%)",
+        "originalNetIncome": "26.5B yen",
+        "revisedNetIncome": "33.0B yen (+24.5%)",
+        "reason": "Higher-than-expected generative AI demand; FX assumption revised from 135 to 150 yen/dollar"
+      }
+    },
+    "geographicRevenue_FY2025": {
+      "Taiwan": "85.6B yen (36.1%)",
+      "China": "48.6B yen (20.5%)",
+      "SouthKorea": "30.5B yen (12.9%)",
+      "Japan_and_other": "~72.3B yen (30.5%)"
+    },
+    "shareholderStructure": {
+      "totalSharesIssued": 127800000,
+      "treasuryShares": 7919000,
+      "outstandingShares": 119880103,
+      "totalShareholders": 22061,
+      "foreignOwnership": "26.58%",
+      "institutionalOwnership": "~45%",
+      "top10Shareholders": [
+        "Master Trust Bank of Japan (Trust): 14.64%",
+        "Custody Bank of Japan (Trust): 7.13%",
+        "Meiji Yasuda Life Insurance: 4.57%",
+        "HSBC Fund Services: 3.13%",
+        "MUFG Bank: 3.02%",
+        "Bank of Yokohama: 2.57%",
+        "Tokyo Ohka Foundation: 2.46%",
+        "Mitsubishi UFJ Trust & Banking: 2.39%",
+        "Mitsubishi UFJ Capital: 2.15%",
+        "Tokio Marine & Nichido Fire Insurance: 2.15%"
+      ],
+      "shareholderClassification": {
+        "JapaneseFinancialInstitutions": "39.20%",
+        "ForeignCorporationsIndividuals": "26.58%",
+        "JapaneseIndividualsOthers": "18.69%",
+        "OtherJapaneseCorporations": "13.36%",
+        "FinancialInstrumentsFirms": "2.17%"
+      }
+    },
+    "dividendHistory": {
+      "FY2024": "63 yen (DOE 4.0%, payout ratio 33.5%)",
+      "FY2023": "168 yen pre-split / 56 yen post-split equivalent (DOE 3.8%, payout ratio 53.3%)",
+      "FY2022": "160 yen pre-split (DOE 4.0%, payout ratio 32.7%)",
+      "FY2021": "156 yen pre-split (DOE 4.1%, payout ratio 36.2%)",
+      "FY2025": "72 yen",
+      "FY2026_forecast": "80 yen",
+      "policy": "DOE target of 4.0% plus flexible share buybacks"
+    },
+    "shareBuybackHistory": {
+      "FY2017": "9.999B yen",
+      "FY2021": "9.999B yen",
+      "FY2024": "5.498B yen",
+      "FY2025": "1.501B yen",
+      "latestBuyback": "Up to 2.5M shares (2.05% of total), max 7B yen"
+    },
+    "capacityExpansion": [
+      "Koriyama Plant (Fukushima, Japan): New manufacturing building, >20B yen investment, construction from Jul 2024, operations 2H 2026. Will be Japan's largest photoresist facility. Produces EUV/ArF/KrF photoresists.",
+      "Aso Kumamoto Site (Kikuchi City, Kumamoto, Japan): New site near TSMC JASM. Completed June 2024. Proximity to TSMC Kumamoto Fab 1 and Fab 2.",
+      "Pyeongtaek Plant (South Korea, via TOKAM): Second Korea site, 20B yen investment. Operations begin ~2030. Will 3-4x Korea production capacity. Serving Samsung and SK hynix.",
+      "Korea high-purity chemicals plant: Separate 12B yen investment for semiconductor chemicals.",
+      "Micro Resist Technology GmbH (Germany): Fully acquired Feb 2025. Strengthens European presence and optical/electronic materials R&D."
+    ],
+    "EUVphotoresistPosition": {
+      "productLine": "TFR-Di series (EUV photoresists)",
+      "massProductionStatus": "Approved and in use at mass production lines at leading fabs",
+      "marketShare": "~25% of EUV photoresist market (JSR est. ~30-35%, Shin-Etsu ~15-20%)",
+      "technologyDirection": "Advancing metal oxide resist (MOR) for sub-2nm / High-NA EUV; invested in Inpria (MOR pioneer)",
+      "competitiveDynamic": "TOK + JSR together ~91% of global photoresist market. Japanese firms (JSR, TOK, Shin-Etsu) supply >70% of advanced EUV-grade resists.",
+      "note": "Key battleground is 2nm node and beyond. MOR delivers higher resolution than conventional chemically amplified resists (CAR). Chinese competitors limited to i-line/KrF; cannot yet produce EUV-grade resists."
+    },
+    "keyRisks": [
+      "Customer concentration: TSMC alone is ~36% of revenue; any demand fluctuation at TSMC directly impacts TOK",
+      "JSR privatization by JIP: With deep pockets and consolidated R&D, JSR may aggressively invest in EUV/MOR, intensifying competition",
+      "Technology transition risk: If MOR displaces conventional CAR-based EUV resists faster than expected, TOK's existing CAR EUV portfolio faces obsolescence",
+      "FX sensitivity: ~80%+ overseas revenue; 150 yen/dollar assumed in FY2025; yen appreciation would compress margins",
+      "China risk: 20.5% of revenue from China; geopolitical tensions, export controls could restrict sales of advanced materials",
+      "Korea localization pressure: Samsung/SK hynix may push for domestic Korean suppliers (Dongjin Semichem) reducing reliance on Japanese imports",
+      "Capex intensity: Major simultaneous investments in Koriyama, Kumamoto, and Pyeongtaek; execution risk on timing and returns",
+      "Cyclicality: Semiconductor materials demand is cyclical; FY2023 showed -7.5% revenue decline during downturn",
+      "Valuation: P/E of 33x and P/B of 5x are elevated vs historical averages; stock up 143% over past 12 months"
+    ],
+    "growthDrivers": [
+      "EUV adoption: Every advanced logic/memory node increases EUV photoresist consumption; ASML backlog supports multi-year growth",
+      "AI chip demand: Generative AI drives demand for cutting-edge logic chips (3nm, 2nm) requiring advanced photoresists",
+      "Advanced packaging: Thick-film resists for chiplet integration, fan-out wafer-level packaging, HBM stacking",
+      "TSMC expansion: JASM Kumamoto (Fab 1 operational, Fab 2 by 2027 at 6nm); TOK positioned as local supplier",
+      "High-NA EUV: Next-generation lithography (0.55 NA) will require entirely new resist chemistries; TOK investing in R&D",
+      "Geographic expansion: Korea capacity 3-4x increase by 2030; US production aligned with CHIPS Act incentives",
+      "Product mix improvement: Shift toward high-value-added advanced materials (EUV, ArF immersion) improving margins"
+    ],
+    "valuationContext": {
+      "TOK_4186T": { "PE": 33.2, "PB": 5.07, "marketCap": "1.11T yen" },
+      "ShinEtsu_4063T": { "PE": "~17.8", "EVEBITDA": "~7.8x", "note": "Much larger diversified chemical; lower multiples" },
+      "JSR_4185T": { "note": "Taken private by JIP at ~$6.4B in 2024; no longer publicly traded" },
+      "note": "TOK trades at a premium to Shin-Etsu on P/E, reflecting its pure-play photoresist growth profile and higher growth rate. Premium appears justified by 18-20% revenue growth and 43%+ operating income growth in FY2025, but 52-week range of 2,519-9,410 yen shows significant recent re-rating."
+    },
+    "stockSplitNote": "3-for-1 stock split effective January 1, 2024. All per-share figures after this date are on post-split basis.",
+    "analystConsensus": {
+      "averageTargetPrice": "7,212.5 yen",
+      "highEstimate": "11,300 yen",
+      "lowEstimate": "6,000 yen",
+      "note": "As of Feb 2026. Wide range reflects uncertainty on cycle sustainability."
+    },
+    "notes": "TOK is the world's preeminent photoresist company and a critical chokepoint in the global semiconductor supply chain. Together with JSR, the two Japanese firms control ~91% of the global photoresist market. TOK's vertical integration strategy (from monomers to finished resists, tailored to each fab's process) creates deep customer lock-in ('suriawase'). The company was founded in 1940, has headquarters in Kawasaki, and operates plants across Japan (Koriyama, Gotemba, Utsunomiya, Aso/Kumamoto), Korea (Incheon, Pyeongtaek), Taiwan, and the US (Oregon). Recent 143% stock price appreciation in 12 months reflects the market's recognition of TOK's central role in the AI semiconductor boom. Key watchpoint: MOR technology adoption at 2nm and High-NA EUV could reshape competitive dynamics."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T17:00:00Z",
-    "dataSource": "Toyo Keizai, Company IR",
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Company IR (tok.co.jp), Yahoo Finance, TrendForce, DIGITIMES, Nasdaq, TipRanks, Globe and Mail, MarketScreener, StockAnalysis, Morningstar, CNBC, Bloomberg, DCFModeling, Mordor Intelligence, TradingView",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T17:00:00Z",
-    "wave": 3
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 3,
+    "deepResearch": true,
+    "notes": "Deep research update 2026-02-23. FY2025 record results: revenue 237.0B (+17.9%), OP 47.3B (+43.2%), OPM 20.0%. Stock up 143% over 12 months; P/E 33.2x, P/B 5.07x. Foreign ownership 26.58%. Taiwan/TSMC is 36% of revenue. Koriyama expansion (>20B yen, 2H 2026), Pyeongtaek Korea plant (20B yen, ~2030). Micro Resist Technology GmbH acquired Feb 2025. EUV photoresist ~25% global share. Active buyback program."
   }
 }

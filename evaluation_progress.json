@@ -3019,15 +3019,15 @@
       "marketCapTier": "Unknown",
       "researchStatus": "complete",
       "scoringStatus": "complete",
-      "researchCompleteness_pct": 86.7,
+      "researchCompleteness_pct": 98.0,
       "researchData": {
-        "PER": 24.7,
+        "PER": 33.2,
         "forwardPER": null,
-        "PBR": null,
-        "EPS": 278.42,
+        "PBR": 5.07,
+        "EPS": 278.03,
         "ROE": 15.6,
-        "marketCapInYen": 1110000000000,
-        "marketCapUSD": null,
+        "marketCapInYen": 1107000000000,
+        "marketCapUSD": 7100000000,
         "latestPriceYen": 9237,
         "latestPriceLocal": null,
         "localCurrency": null,
@@ -3035,18 +3035,18 @@
         "weekLow52": 2519,
         "revenueLatestFY_JPY_B": 237.0,
         "revenueGrowthYoY_pct": 17.9,
-        "operatingMargin_pct": 17.0,
+        "operatingMargin_pct": 20.0,
         "dividendYield_pct": 0.78,
-        "foreignOwnership_pct": 37.5,
+        "foreignOwnership_pct": 26.58,
         "circulatingEquity_pct": null,
         "analystBuy": 6,
         "analystHold": 0,
         "analystSell": 0,
         "analystAvgTarget_local": 7212,
         "isForexSensitive": true,
-        "chinaRevenue_pct_est": null,
-        "topCustomerRev_pct_est": null,
-        "hasBuyback": null
+        "chinaRevenue_pct_est": 20.5,
+        "topCustomerRev_pct_est": 36,
+        "hasBuyback": true
       },
       "scores": {
         "A": {
@@ -3096,11 +3096,12 @@
         }
       },
       "rawComposite": 47.8,
-      "dataCoverage_pct": 90.5,
+      "dataCoverage_pct": 98.0,
       "confidenceMultiplier": 1.0,
       "finalScore": 47.8,
       "confidence": "High",
-      "notes": ""
+      "notes": "Deep research update 2026-02-23. PER corrected to 33.2x (was 24.7x), PBR 5.07x added, foreign ownership corrected to 26.58% (was 37.5%), OPM corrected to 20.0% (was 17.0%), China revenue 20.5%. FY2025 record: revenue 237.0B, OP 47.3B (+43.2%). Stock up 143% in 12 months. Active buyback. Koriyama and Pyeongtaek capacity expansions underway. Micro Resist Technology GmbH acquired Feb 2025.",
+      "investmentThesis": "Tokyo Ohka Kogyo (TOK, 4186.T) is the world's #1 photoresist manufacturer, holding approximately 25% global market share across all lithography nodes from g-line through EUV. Together with JSR (taken private by JIP for $6.4B), the two Japanese firms control ~91% of the global photoresist market — an extraordinary duopoly in a mission-critical semiconductor material. TOK's vertical integration from monomers to finished resists, combined with deep 'suriawase' (collaborative fine-tuning) relationships with each fab, creates customer lock-in that takes 6-12 months to break through requalification.\n\nFY2025 (ending December) delivered record results: revenue 237.0B yen (+17.9% YoY), operating income 47.3B yen (+43.2%), and net income 33.3B yen (+47.0%). Operating margin expanded to ~20.0% — the highest in company history — driven by generative AI demand and favorable FX. Guidance was revised upward in January 2026 with operating income raised 18.3%. FY2026 forecasts revenue of ~261B yen (+10.1%) and dividend of 80 yen/share.\n\nGeographic revenue is heavily concentrated: Taiwan (TSMC) at 36.1%, China at 20.5%, Korea at 12.9%. TSMC alone represents the single largest customer — a significant concentration risk but also validation of TOK's quality leadership. The company is executing a massive global capacity expansion: Koriyama Plant (>20B yen, Japan's largest photoresist facility, 2H 2026), Aso Kumamoto site (near TSMC JASM, completed June 2024), Pyeongtaek Korea (20B yen, 3-4x Korean capacity by ~2030), and a separate 12B yen Korean chemicals plant.\n\nIn EUV photoresist, TOK holds ~25% market share with its TFR-Di series, behind JSR (~30-35%) and ahead of Shin-Etsu (~15-20%). The critical technology battleground is the transition from chemically amplified resists (CAR) to metal oxide resists (MOR) for sub-2nm / High-NA EUV. TOK has invested in Inpria (MOR pioneer) and is advancing its own MOR development. If MOR displaces CAR faster than expected, TOK's existing EUV portfolio faces transition risk.\n\nThe valuation is stretched: P/E of 33.2x and P/B of 5.07x represent a significant premium to the G2 Materials peer median (P/E 17.0x). The stock has rallied 143% over 12 months from a 52-week low of 2,519 to 9,237 yen. Analyst consensus target of 7,212 yen is well below the current price, and Morningstar fair value estimate is 5,435 yen. Foreign ownership at 26.58% is below the expected ~40% for a global-leadership materials company, suggesting potential institutional re-rating if the growth trajectory sustains.\n\nKey risks: TSMC customer concentration (36% of revenue), JSR's privatization enabling aggressive R&D investment, MOR technology transition uncertainty, FX sensitivity (~80%+ overseas revenue), China exposure (20.5%) under export control risk, and semiconductor cyclicality (FY2023 showed -7.5% revenue decline). Active buyback program (up to 2.5M shares / 7B yen) and DOE target of 4.0% provide shareholder return support.\n\nBottom line: TOK is a genuine chokepoint in the global semiconductor supply chain — every advanced chip requires its photoresists. The business quality is exceptional but the valuation fully reflects the AI/semiconductor boom. Score of 47.8 is constrained by the A-dimension (3.8/30) reflecting the elevated P/E premium. A more attractive entry point would emerge on a pullback toward 6,000-7,200 yen. [Confidence: High — deep research update 2026-02-23]"
     },
     {
       "id": "CMP-0034",
