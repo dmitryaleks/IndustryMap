@@ -4,15 +4,15 @@
   "companyNameJapanese": "東京精密株式会社",
   "industryCode": "Semiconductor Equipment",
   "ticker": "7729.T",
-  "description": "Manufactures semiconductor production equipment and precision measuring instruments. Core products: wafer probing machines (world #1, 46% global share), wafer dicing machines (~10% global share), CMP equipment, polish grinders, edge grinders, and precision dicing blades. Brand name: ACCRETECH. Two segments: SPE (74% of sales) and Metrology (26%). Revenue FY2025/3: 150.5B JPY. China sales ratio: 34%.",
-  "marketCapInYen": 561790000000,
-  "PER": 21.26,
-  "PBR": 2.35,
-  "EPS": 111.78,
+  "description": "Manufactures semiconductor production equipment and precision measuring instruments. Core products: wafer probing machines (world #1, 46% global share), wafer dicing machines (~10% global share, #2 behind DISCO), CMP equipment, polish grinders, edge grinders, and precision dicing blades. Brand name: ACCRETECH. Founded 1949. Two segments: SPE (~75% of sales, ~113B JPY) and Metrology (~25%, ~37B JPY). Revenue FY2025/3: 150.5B JPY (+11.8% YoY). Q3 FY2026/3 (9M): revenue 113.0B JPY (+9.5% YoY), OP 20.9B JPY (+9.7% YoY). Revised FY2026/3 guidance: revenue 165.0B JPY (+9.6%), OP 32.0B JPY (+7.7%). Mid-term plan (FY2028/3): revenue 180B JPY, OP 45B JPY, OPM 24.3%. China sales ratio: 34% (#1 market). Joint die-level prober development with Advantest (Dec 2025) for AI/HPC. Hub blade JV with Asahi Diamond Industrial (Jan 2025). Fortress balance sheet: equity ratio 73.2%, virtually debt-free. 28 subsidiaries in 18 countries. 2,767 employees.",
+  "marketCapInYen": 685600000000,
+  "PER": 31.8,
+  "PBR": 3.79,
+  "EPS": 531.0,
   "website": "https://www.accretech.com/",
-  "percentOfForeignOwnership": 50.06,
+  "percentOfForeignOwnership": 32.23,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 15820,
+  "latestPriceYen": 16895,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [
@@ -106,15 +106,57 @@
       "EO Technics (CMP-0099) - laser stealth dicing (Korea, alternative to blade dicing)"
     ],
     "partners": [
-      "Advantest (CMP-0005) - joint development of die-level prober for AI/HPC (announced Dec 2025)"
+      "Advantest (CMP-0005) - joint development of die-level prober for AI/HPC testing, addressing heat management in 2.5D/3D packaged AI chips (announced Dec 2025)",
+      "Asahi Diamond Industrial - hub blade JV for dicing consumables, mass production by FY2027 (MOU Jan 2025)",
+      "AA Diamond Technology - JV for diamond technology in semiconductor applications (May 2025)"
     ],
-    "notes": "Together with DISCO, controls 90% of global dicing market. World #1 prober maker (46% share vs TEL 27%). China is 34% of sales. 28 subsidiaries in 18 countries. Regional offices: Accretech Korea (Dongtan), Accretech Taiwan (Hsinchu), Accretech China (Shanghai + 8 offices), Accretech Singapore, Accretech Malaysia (Selangor/Penang/Melaka/JB). Wave 5 analysis: 35 total identified clients across 7 countries, 15 competitors. Chinese domestic substitution is #1 strategic risk (CMP >50% lost, probing under pressure, dicing still defensible). Korean localization via SEMES/SEMICS/KCTech is #2 risk. Export controls restrict sales to Entity List companies but accelerate domestic substitution."
+    "keyShareholderContext": [
+      "Master Trust Bank of Japan: 17.84% (custodial, largest holder)",
+      "Custody Bank of Japan: 12.16% (custodial)",
+      "State Street Bank 505001: 4.26%",
+      "JPMorgan Securities Japan: 2.89%",
+      "Precise Measurement Foundation: 2.60%",
+      "Shintaro Yano (individual): 1.69%",
+      "Mizuho Bank: 1.65% (main bank)",
+      "Nomura Asset Management: ~10.1% (beneficial owner)",
+      "Asset Management One: ~8.7% (beneficial owner)",
+      "T. Rowe Price: ~4.5% (beneficial owner)",
+      "Treasury stock: 1,505,289 shares (3.56%)"
+    ],
+    "financialSummary": {
+      "revenueFY2025": "150.5B JPY (+11.8% YoY)",
+      "OPMarginFY2025": "19.7%",
+      "netIncomeFY2025": "25.6B JPY (+32.3% YoY)",
+      "ROEPY2025": "15.5%",
+      "equityRatio": "73.2%",
+      "netCash": "35.4B JPY",
+      "debtEquity": 0.08,
+      "rdSpending": "10.4B JPY (6.9% of sales)",
+      "dividendFY2025": "253 JPY/share (payout ratio 40.1%)",
+      "dividendFY2026E": "222 JPY/share (yield ~1.3%)",
+      "orderBacklog": "87.4B JPY (as of Q3 FY2026/3)",
+      "52weekRange": "6,148 - 16,895 JPY",
+      "52weekPriceChange": "+85.8%",
+      "beta": 0.68,
+      "midTermTargetFY2028": "Revenue 180B JPY, OP 45B JPY, OPM 24.3%"
+    },
+    "geographicRevenueFY2025": {
+      "China": "51.4B JPY (34.1%)",
+      "Japan": "38.2B JPY (25.4%)",
+      "Taiwan": "17.0B JPY (11.3%)",
+      "Southeast Asia": "14.0B JPY (9.3%)",
+      "Korea": "13.5B JPY (9.0%)",
+      "Other": "16.4B JPY (10.9%)"
+    },
+    "notes": "Together with DISCO, controls 90% of global dicing market. World #1 prober maker (46% share vs TEL 27%). China is 34% of sales — largest single market. 28 subsidiaries in 18 countries. Regional offices: Accretech Korea (Dongtan), Accretech Taiwan (Hsinchu), Accretech China (Shanghai + 8 offices), Accretech Singapore, Accretech Malaysia (Selangor/Penang/Melaka/JB). Wave 5 analysis: 35 total identified clients across 7 countries, 15 competitors. Chinese domestic substitution is #1 strategic risk (CMP >50% lost, probing under pressure from Sidea 25.7% domestic share, dicing still defensible). Korean localization via SEMES/SEMICS/KCTech is #2 risk. Export controls restrict sales to Entity List companies but accelerate domestic substitution. Stock has rallied 86% over 52 weeks driven by AI enthusiasm and semi cycle recovery. Product quality issues ('defect countermeasures') weighing on FY2026/3 net income. DISCO operates at significantly higher margins (>30% vs ~20%). Total shareholders: 15,109. Shares outstanding (ex-treasury): ~40.58M."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, TradingView, Accretech IR, Nikkei, industry reports, Japanese/Chinese/Korean/English language research",
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "ACCRETECH IR (accretech.com), Yahoo Finance, Investing.com, MarketScreener, StockAnalysis, SimplyWallSt, Mordor Intelligence, SemiAnalysis, Gabelli Research, Nikkei, Chemical Daily, industry reports, Japanese/Chinese/Korean/English language research",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-22T01:00:00Z",
-    "notes": "Q3 FY2026/3 revenue: 112.97B JPY (+9.5% YoY). Full year FY2025/3 revenue: 150.5B JPY (+11.8%). 52-week range: 6,148-16,170 JPY. Brand name: ACCRETECH. Joint die-level prober development with Advantest announced Dec 2025. Wave 5: comprehensive CN/KR/APAC supply chain mapping."
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 1,
+    "deepResearch": true,
+    "notes": "Deep research update 2026-02-23. Q3 FY2026/3 (9M to Dec 2025): revenue 113.0B JPY (+9.5% YoY), OP 20.9B JPY (+9.7% YoY), NI 14.1B JPY (-21.9% YoY due to one-time items). FY2026/3 revised guidance (Feb 2026): revenue 165.0B JPY, OP 32.0B JPY, NI 21.5B JPY. Order backlog stable at 87.4B JPY. Stock at 52-week highs (~16,895 JPY), up 86% over 52 weeks. Trailing P/E expanded to ~31.8x, P/B to 3.79x. Mid-term plan FY2028/3 targets: 180B revenue, 45B OP, 24.3% OPM. Advantest JV (Dec 2025) for die-level probers for AI/HPC. Asahi Diamond JV (Jan 2025) for hub blades. Foreign ownership at 32.23% (non-individual). Dividend yield ~1.3% at current price."
   }
 }
