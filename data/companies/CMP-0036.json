@@ -4,40 +4,232 @@
   "companyNameJapanese": "株式会社荏原製作所",
   "industryCode": "Semiconductor Equipment",
   "ticker": "6361.T",
-  "description": "Major manufacturer of CMP (Chemical Mechanical Polishing) equipment and dry vacuum pumps for semiconductor manufacturing. World #2 in CMP equipment, #2 in dry vacuum pumps.",
-  "marketCapInYen": 2510000000000,
-  "PER": 21.31,
-  "PBR": null,
-  "EPS": 166.2,
+  "description": "Japan's largest pump manufacturer and a leading global supplier of semiconductor process equipment. Operates five segments: (1) Precision Machinery (~32% of revenue) — dry vacuum pumps, CMP (Chemical Mechanical Planarization) equipment, abatement systems, and plating equipment for semiconductor fabs; holds ~27% global CMP market share (#2 behind Applied Materials ~42%); (2) Building Service & Industrial (~28%) — standard pumps, chillers, blowers for buildings and factories; #1 domestic market share in Japan; (3) Energy (~24%) — Elliott-brand custom centrifugal compressors, steam turbines, cryogenic LNG pumps; >50% global market share in ethylene plant compressors; (4) Environmental Solutions (~10%) — waste incineration plants, water treatment O&M; (5) Infrastructure (~6%) — large drainage/sewage pumps for Japanese municipalities (1,000+ pump stations). Founded 1912, HQ Haneda, Ota-ku, Tokyo. ~21,000 employees, 111 group companies, 41 countries. TSE Prime Market. Conducted 5-for-1 stock split July 1, 2024. FY2025 revenue ¥958.3B (+10.6% YoY), first ¥1 trillion guidance for FY2026. Six consecutive record profit years. TSMC's most-recognized Japanese CMP supplier (9+ excellence awards).",
+  "marketCapInYen": 2600000000000,
+  "PER": 33.9,
+  "PBR": 5.06,
+  "EPS": 166.31,
   "website": "https://www.ebara.com/",
-  "percentOfForeignOwnership": null,
-  "percentOfCirculatingEquity": null,
-  "latestPriceYen": 5524,
+  "percentOfForeignOwnership": 48.56,
+  "percentOfCirculatingEquity": 87,
+  "latestPriceYen": 5638,
   "isForexSensitive": true,
   "suppliers": [],
   "clients": [
+    "CMP-0014",
     "CMP-0017",
     "CMP-0018",
     "CMP-0019",
     "CMP-0020",
     "CMP-0021",
-    "CMP-0060"
+    "CMP-0060",
+    "CMP-0066",
+    "CMP-0093"
   ],
   "_externalRelationships": {
-    "majorClients": [
-      "TSMC",
-      "Samsung",
-      "Intel",
-      "SK Hynix",
-      "Micron"
+    "majorSuppliers": [
+      "Japanese cast iron / stainless steel foundries — pump casings, impellers (no single named dominant supplier; multiple regional foundries)",
+      "Precision sheet-metal fabricators (Kyoto/Osaka/Kanto regions) — CMP equipment enclosures and structural parts; CADDi Manufacturing platform used to expand supplier base during 2022 semiconductor demand surge",
+      "EagleBurgmann (Germany/Japan JV) / John Crane — mechanical seals for pumps (TC/TC faces, Viton elastomers)",
+      "Motor suppliers (likely Nidec, Mitsubishi Electric, Toshiba) — electric motors for industrial pumps (not officially named)",
+      "PLC / sensor suppliers (likely Omron, Mitsubishi Electric, Keyence) — electronic controls for pump systems (not officially named)",
+      "Note: Long-term supply contracts cover ~30% of supply agreements. ~1,240 major suppliers (796 domestic, 444 overseas) assessed via CSR questionnaire (FY2022). Core CMP components are manufactured in-house at Fujisawa plant."
     ],
-    "notes": "Semiconductor segment 30%+ of total sales. World #1 target for advanced CMP. Kumamoto plant near TSMC fab."
+    "majorClients": {
+      "precisionMachinery_semiconductor": [
+        "TSMC (CMP-0017) — confirmed; Ebara received TSMC 'Excellent Performance in CMP Equipment' award 9+ consecutive times; most-recognized Japanese semiconductor equipment supplier at TSMC",
+        "Samsung Electronics (CMP-0018) — inferred; Ebara claims 80%+ of world's top 20 chipmakers as customers; Samsung is #1 by volume",
+        "SK Hynix (CMP-0020) — inferred from top-20 chipmaker claim",
+        "Micron Technology (CMP-0021) — inferred from top-20 chipmaker claim",
+        "Intel Corporation (CMP-0019) — inferred from top-20 chipmaker claim",
+        "Kioxia Holdings (CMP-0014) — inferred; Kioxia is Japan's major NAND fab and a primary user of CMP equipment",
+        "SMIC (CMP-0066) — China's largest foundry; China Precision Machinery revenue grew +44% YoY in FY2024, driven by Chinese fab expansion (pre/early-sanctions period)",
+        "YMTC (CMP-0093) — China's leading memory fab; recipient of Precision Machinery equipment prior to tightening of export controls; now restricted",
+        "SAMCO Inc. (CMP-0060) — Ebara vacuum pumps integrated as subsystems in SAMCO's compound semiconductor process equipment"
+      ],
+      "energy_elliott": [
+        "SATORP (Saudi Aramco / TotalEnergies JV) — 22 units (compressors, pumps, turbines) for AMIRAL petrochemical complex, Jubail, Saudi Arabia",
+        "Sempra Infrastructure / Port Arthur LNG (Texas) — cryogenic pumps, expanders, BOG compressors via Bechtel EPC",
+        "Global petrochemical operators (ExxonMobil Chemical, Shell, BASF, Dow — inferred from Elliott's >50% ethylene compressor market share; not individually named in public filings)"
+      ],
+      "infrastructure_japan": [
+        "Tokyo Metropolitan Government — flood-control pump stations",
+        "Japanese municipal governments — 1,000+ drainage pump stations nationwide",
+        ">80 waste incineration and treatment facilities operated under O&M contracts"
+      ],
+      "buildingIndustrial": [
+        "Japan National Stadium — low-GWP centrifugal chillers",
+        "Chubu Centrair International Airport — absorption chillers and cooling towers",
+        "Shibuya Station redevelopment project — chillers and HVAC systems",
+        "Commercial real estate, hospitals, factories across Japan"
+      ]
+    },
+    "segmentRevenue_FY2024": {
+      "PrecisionMachinery": "¥278.3B (32.1%) — OP ¥50.1B (+30%+ YoY)",
+      "BuildingServiceIndustrial": "¥238.1B (27.5%)",
+      "Energy": "¥210.4B (24.3%)",
+      "EnvironmentalSolutions": "¥87.4B (10.1%)",
+      "Infrastructure": "¥51.1B (5.9%)",
+      "total": "¥866.7B"
+    },
+    "financialSummary": {
+      "FY2025_ended_Dec2025": {
+        "revenue": "¥958.3B (+10.6% YoY)",
+        "operatingIncome": "¥113.8B (+16.2% YoY)",
+        "operatingMargin": "11.9%",
+        "netIncome": "¥76.6B",
+        "EPS": "¥166.31",
+        "note": "Sixth consecutive year of record profits. Reported February 13, 2026."
+      },
+      "FY2024_ended_Dec2024": {
+        "revenue": "¥866.7B (+14.1% YoY)",
+        "operatingIncome": "¥98.0B",
+        "operatingMargin": "11.3%",
+        "netIncome": "¥71.4B",
+        "EPS": "¥154.6"
+      },
+      "FY2023_ended_Dec2023": {
+        "revenue": "¥759.3B (+11.5% YoY)",
+        "operatingIncome": "¥86.0B",
+        "operatingMargin": "11.3%",
+        "netIncome": "¥60.3B",
+        "EPS": "¥130.7"
+      },
+      "FY2022_ended_Dec2022": {
+        "revenue": "¥680.9B",
+        "operatingIncome": "¥70.6B",
+        "operatingMargin": "10.4%",
+        "netIncome": "¥50.5B",
+        "EPS": "¥109.7"
+      },
+      "FY2026_guidance_issued_Feb2026": {
+        "revenue": "~¥1.02 trillion (first time exceeding ¥1T)",
+        "operatingIncome": "~¥125B",
+        "netIncome": "~¥89B",
+        "EPS": "~¥189.67",
+        "dividendPerShare": "¥66",
+        "forexAssumptions": "USD ¥145 / EUR ¥160 / RMB ¥20"
+      }
+    },
+    "dividendHistory": {
+      "FY2020": "¥12.00/share (post-split)",
+      "FY2021": "¥32.60/share",
+      "FY2022": "¥38.60/share",
+      "FY2023": "¥45.80/share",
+      "FY2024": "¥55.00 (regular) + ¥115.00 (special) = ¥147 total",
+      "FY2025": "¥59.00/share",
+      "FY2026_guidance": "¥66.00/share",
+      "fiveYearCAGR": "~38% regular dividend CAGR",
+      "note": "FY2024 special dividend was a one-time distribution. 5-for-1 stock split effective July 1, 2024; all figures post-split adjusted."
+    },
+    "geographicRevenue_FY2024": {
+      "Japan": "~34% (¥291B)",
+      "China": "~22% (¥190B) — largest overseas market; grew +44% YoY",
+      "TaiwanKoreaOtherAsia": "~19%",
+      "NorthAmerica": "~14% (¥124B)",
+      "Europe": "~6%",
+      "MiddleEast": "~6%",
+      "Other": "~4%",
+      "overseasRatio": "~66%"
+    },
+    "forexSensitivity": {
+      "verdict": "Moderately to significantly forex-sensitive",
+      "overseasRevenueRatio": "~66%",
+      "FY2024_FXcontribution": "+¥4.3B to OP from yen depreciation",
+      "FY2025_H1_FXheadwind": "-¥1.2B from yen appreciation vs. prior year",
+      "exposedCurrencies": "USD (North America, Elliott), CNY (China), EUR (Europe)",
+      "note": "A weaker yen is a tailwind; a stronger yen is a headwind. Exposure meaningful but offset by Japan-based costs."
+    },
+    "marketPositions": {
+      "CMP_equipment": "~27% global share, #2 (behind Applied Materials ~42%)",
+      "dryVacuumPumps": "Top 5 globally; >200,000 units shipped; 80%+ of world's top 20 chipmakers are customers",
+      "standardPumps_Japan": "#1 domestic share for building pumps",
+      "ethlyleneCompressors": ">50% global share via Elliott brand",
+      "drainagePumps_Japan": "Installed at 1,000+ drainage pump stations across Japan"
+    },
+    "keyAchievements": [
+      "TSMC Excellent Performance in CMP Equipment award — 9+ consecutive times (most among Japanese suppliers)",
+      "Six consecutive years of record profits (FY2020–FY2025)",
+      "Eliminated all cross-shareholdings by June 2020 (zero strategic equity in other companies)",
+      "5-for-1 stock split July 2024 to improve retail accessibility",
+      "FY2024 special dividend ¥115/share (post-split) as profit-sharing measure",
+      "FY2026: first-ever ¥1 trillion revenue milestone in guidance"
+    ],
+    "shareholderStructure": {
+      "totalSharesOutstanding": 462055735,
+      "totalShareholders": 36539,
+      "foreignOwnership": "48.56% (foreign entities 48.48% + foreign individuals 0.08%)",
+      "estimatedFreeFloat": "~87% (85–88% excluding Ichigo Trust quasi-strategic stake ~10%)",
+      "treasuryShares": 140410,
+      "top10Shareholders": [
+        "Japan Master Trust Bank (信託口): 17.36%",
+        "Ichigo Trust PTE Limited (Singapore, activist): ~10.29% (reduced to ~8.99% by Jul 2025)",
+        "Japan Custody Bank (信託口): 7.87%",
+        "Nomura Asset Management: ~5.28%",
+        "Ichigo Asset Management International: ~4.76%",
+        "BNY Mellon (various accounts): ~3.68%",
+        "State Street Bank and Trust: ~3.59%",
+        "Amova Asset Management: ~2.55%",
+        "BlackRock Fund Advisors: ~2.07%",
+        "BlackRock Japan: ~1.76%"
+      ],
+      "shareholderClassification": {
+        "ForeignEntities": "48.48%",
+        "JapaneseFinancialInstitutions": "31.92%",
+        "JapaneseFinancialProducts": "5.96%",
+        "OtherJapaneseCorporate": "2.55%",
+        "JapaneseIndividuals": "~11.0%"
+      },
+      "governanceNote": "Ichigo Trust (Singapore-based value/activist investor) is largest non-custodian holder at ~10%. Ebara holds zero cross-shareholdings in other companies as of June 2020."
+    },
+    "competitors": {
+      "CMP_equipment": [
+        "Applied Materials (AMAT) — #1 (~42% share)",
+        "Hwatsing Technology (CMP-0088) — emerging Chinese domestic alternative"
+      ],
+      "dryVacuumPumps": [
+        "Atlas Copco / Edwards Vacuum — global leader",
+        "Pfeiffer Vacuum — premium segment",
+        "Kashiyama Industries (Japan)",
+        "ULVAC (Japan)",
+        "Busch Vacuum Solutions"
+      ],
+      "compressors_turbines": [
+        "MAN Energy Solutions",
+        "Baker Hughes (Nuovo Pignone)",
+        "Siemens Energy",
+        "Mitsubishi Heavy Industries"
+      ],
+      "standardPumps": [
+        "Grundfos, Xylem, KSB, Flowserve, Wilo, Sulzer (all global)",
+        "Tsurumi Manufacturing, Torishima Pump (Japan domestic)"
+      ]
+    },
+    "keyRisks": [
+      "China exposure: ~22% of revenue from China; geopolitical tensions and export control tightening could restrict semiconductor equipment sales to Chinese fabs (SMIC, YMTC)",
+      "Semiconductor cycle: Precision Machinery (32% of revenue) is cyclical; fab capex downturns would impact this high-margin segment",
+      "Elliott compressor concentration: >50% share in ethylene makes Elliott highly exposed to petrochemical capex cycles",
+      "Forex: 66% overseas revenue; yen appreciation reduces JPY-translated profits",
+      "Competition in CMP: Applied Materials has ~42% share and superior R&D resources; may widen lead in advanced nodes",
+      "Supply chain: Precision machined parts and castings face capacity constraints during demand surges (experienced 2022)"
+    ],
+    "growthDrivers": [
+      "AI chip demand: Leading fabs (TSMC, Samsung, SK Hynix) expanding for AI accelerators — all require CMP equipment and dry vacuum pumps",
+      "China fab buildout: Domestic Chinese fab expansion driving Precision Machinery growth (+44% YoY in FY2024; subject to export control changes)",
+      "LNG infrastructure: Elliott cryogenic equipment for new LNG export projects (Port Arthur, etc.)",
+      "Semiconductor advanced packaging: TSV, HBM, chiplet processes increase CMP and vacuum pump consumption per wafer",
+      "Water treatment and environmental: Growing global demand for waste treatment O&M",
+      "Japan infrastructure renewal: Aging pump infrastructure in municipalities driving replacement orders"
+    ],
+    "notes": "Ebara is a diversified industrial leader with semiconductor equipment (Precision Machinery) as its highest-margin growth engine. The TSMC relationship is the most publicly confirmed and most strategic — nine consecutive supplier excellence awards is the strongest external validation of product quality. The Elliott Group turbomachinery business (US-based, majority acquired 2015) makes Ebara a global player in energy infrastructure as well. Strong foreign institutional ownership (48.56%) including activist Ichigo Trust (~10%) signals governance scrutiny and potential for further shareholder returns. FY2024 special dividend (¥115/share post-split) is an example of shareholder-friendly actions."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T17:00:00Z",
-    "dataSource": "Bloomberg, Company IR",
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Company IR (ebara.com), Kabutan (6361), IRBank (E01542), StockAnalysis (TYO:6361), MarketScreener, Ullet shareholder data, TSMC supplier award news (Investing.com), Turbomachinery Magazine (SATORP/Elliott contract), World Pumps (Port Arthur LNG), Diamond.jp (TSMC relationship), CADDi case study (supply chain), Ebara FY2025 earnings release (Feb 13 2026)",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T17:00:00Z",
-    "wave": 3
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 3,
+    "deepResearch": true,
+    "notes": "Deep research update 2026-02-23. FY2025 revenue ¥958.3B (+10.6%), OP ¥113.8B (+16.2%), net income ¥76.6B, EPS ¥166.31. Six consecutive record profit years. FY2026 guidance: first ¥1T revenue. Stock: ¥5,638 (+112% 1yr). PER 33.9x (trailing), PBR 5.06x. Foreign ownership 48.56% (highest among covered companies). TSMC awarded Ebara CMP excellence 9+ times. Elliott >50% global share in ethylene compressors. China is largest overseas market (~22%); grew +44% YoY for Precision Machinery. Added semiconductor fab clients: CMP-0014 (Kioxia), CMP-0066 (SMIC, pre-sanctions), CMP-0093 (YMTC, pre-sanctions)."
   }
 }
