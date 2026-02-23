@@ -1,14 +1,14 @@
 {
-  "version": "4.0.0",
-  "generatedAt": "2026-02-21T23:00:00Z",
-  "description": "Semiconductor supply chain graph - 111 companies, 7 regions (Wave 7: DISCO deep research + Hamamatsu Photonics supplier)",
+  "version": "4.1.0",
+  "generatedAt": "2026-02-23T00:00:00Z",
+  "description": "Semiconductor/specialty chemicals supply chain graph - 118 companies, 7 regions (Wave 8: Nagase deep research — 6 suppliers + 1 automotive client added)",
   "statistics": {
-    "totalNodes": 111,
-    "totalEdges": 350,
+    "totalNodes": 118,
+    "totalEdges": 362,
     "edgeTypes": {
-      "supplier": 287,
+      "supplier": 299,
       "competitor": 46,
-      "partner": 4,
+      "partner": 5,
       "ecosystem": 12
     }
   },
@@ -472,10 +472,10 @@
     {
       "id": "CMP-0058",
       "name": "Nagase",
-      "industry": "Semiconductor Materials",
+      "industry": "Specialty Chemicals Trading",
       "country": "Japan",
       "ticker": "8012.T",
-      "marketCap": null
+      "marketCap": 480630000000
     },
     {
       "id": "CMP-0059",
@@ -900,6 +900,62 @@
       "country": "Japan",
       "ticker": "6965.T",
       "marketCap": 546000000000
+    },
+    {
+      "id": "CMP-0116",
+      "name": "Asahi Kasei",
+      "industry": "Advanced Materials",
+      "country": "Japan",
+      "ticker": "3407.T",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0117",
+      "name": "Toray Industries",
+      "industry": "Advanced Materials",
+      "country": "Japan",
+      "ticker": "3402.T",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0118",
+      "name": "Mitsubishi Chemical Group",
+      "industry": "Specialty Chemicals",
+      "country": "Japan",
+      "ticker": "4188.T",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0119",
+      "name": "Tosoh",
+      "industry": "Specialty Chemicals",
+      "country": "Japan",
+      "ticker": "4042.T",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0120",
+      "name": "DIC Corporation",
+      "industry": "Specialty Chemicals",
+      "country": "Japan",
+      "ticker": "4631.T",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0121",
+      "name": "Toyobo",
+      "industry": "Advanced Materials",
+      "country": "Japan",
+      "ticker": "3101.T",
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0122",
+      "name": "DENSO",
+      "industry": "Automotive Components",
+      "country": "Japan",
+      "ticker": "6902.T",
+      "marketCap": 5500000000000
     }
   ],
   "edges": [
@@ -2942,6 +2998,72 @@
       "target": "CMP-0002",
       "type": "competitor",
       "label": "dicing equipment (China state-owned)"
+    },
+    {
+      "source": "CMP-0024",
+      "target": "CMP-0058",
+      "type": "supplier",
+      "label": "silicone materials"
+    },
+    {
+      "source": "CMP-0046",
+      "target": "CMP-0058",
+      "type": "supplier",
+      "label": "specialty chemicals, plastic raw materials"
+    },
+    {
+      "source": "CMP-0116",
+      "target": "CMP-0058",
+      "type": "supplier",
+      "label": "engineering plastics (nylon, POM, PMMA)"
+    },
+    {
+      "source": "CMP-0117",
+      "target": "CMP-0058",
+      "type": "supplier",
+      "label": "engineering plastics (PBT, PPS)"
+    },
+    {
+      "source": "CMP-0118",
+      "target": "CMP-0058",
+      "type": "supplier",
+      "label": "engineering plastics (polycarbonate, polyamide)"
+    },
+    {
+      "source": "CMP-0119",
+      "target": "CMP-0058",
+      "type": "supplier",
+      "label": "specialty chemicals, PPS resin"
+    },
+    {
+      "source": "CMP-0120",
+      "target": "CMP-0058",
+      "type": "supplier",
+      "label": "dyes, pigments, resins"
+    },
+    {
+      "source": "CMP-0121",
+      "target": "CMP-0058",
+      "type": "supplier",
+      "label": "engineering plastics, polyimide film (XENOMAX JV)"
+    },
+    {
+      "source": "CMP-0121",
+      "target": "CMP-0058",
+      "type": "partner",
+      "label": "Xenomax Japan JV — XENOMAX polyimide film"
+    },
+    {
+      "source": "CMP-0058",
+      "target": "CMP-0113",
+      "type": "supplier",
+      "label": "electronic materials, specialty chemicals"
+    },
+    {
+      "source": "CMP-0058",
+      "target": "CMP-0122",
+      "type": "supplier",
+      "label": "epoxy encapsulants for automotive ECUs"
     }
   ]
 }

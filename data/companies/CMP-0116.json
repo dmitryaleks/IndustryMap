@@ -1,0 +1,38 @@
+{
+  "id": "CMP-0116",
+  "companyName": "Asahi Kasei Corporation",
+  "companyNameJapanese": "旭化成株式会社",
+  "industryCode": "Advanced Materials",
+  "ticker": "3407.T",
+  "description": "Diversified Japanese materials conglomerate operating across three segments: Material (Leona polyamide/nylon 66, Tenac POM, Delpet PMMA, ABS, SB rubber, acrylonitrile, Hipore Li-ion battery separators, coating materials), Homes (construction/housing), and Health Care (pharmaceuticals, medical devices, diagnostics). Supplies engineering plastics (nylon, POM, PMMA) to Nagase Plastics for distribution. In July 2025, transferred its Asahi Kasei Pharma diagnostics reagents business to Nagase, which became Nagase Diagnostics Co., Ltd. Also produces electronic materials for automotive and semiconductor applications.",
+  "website": "https://www.asahi-kasei.com/",
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0058"
+  ],
+  "_externalRelationships": {
+    "nagaseRelationship": "Supplies engineering plastics (Leona nylon, Tenac POM, Delpet PMMA) to Nagase Plastics Co. for distribution to OEM customers. In July 2025, transferred diagnostics business (Asahi Kasei Pharma KK diagnostics division) to Nagase, forming Nagase Diagnostics Co., Ltd.",
+    "keyProducts": [
+      "Leona polyamide (nylon 66) — engineering plastic",
+      "Tenac POM (polyacetal/polyoxymethylene) — engineering plastic",
+      "Delpet PMMA (acrylic resin) — optical-grade engineering plastic",
+      "Hipore battery separator — Li-ion battery membrane",
+      "ABS and SB rubber — commodity plastics"
+    ],
+    "keyCustomers": [
+      "Nagase Plastics (CMP-0058) — engineering plastics distribution",
+      "Automotive OEMs — nylon parts, housing parts",
+      "Electronics makers — engineering plastic components"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Nagase Plastics supplier page, Nagase press releases (Nagase Diagnostics formation Jul 2025), Asahi Kasei IR",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as Nagase (CMP-0058) key supplier. Financial data not included pending dedicated deep research."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "CMP-0121",
+  "companyName": "Toyobo Co., Ltd.",
+  "companyNameJapanese": "東洋紡株式会社",
+  "industryCode": "Advanced Materials",
+  "ticker": "3101.T",
+  "description": "Japanese functional polymer and materials manufacturer with roots in textiles. Key segments: Films (biaxially-oriented polyester/nylon/PP films for food packaging and electronics), Functional Polymers (Vylomax polyimide varnish, Vylon polyester resin), and Life Science (HaloTag biotechnology, enzyme products). Joint venture partner with Nagase in Xenomax Japan Co., Ltd. (established 2018) to produce XENOMAX polyimide film — an ultra-stable transparent substrate used in flexible micro-displays, organic EL displays, and aerospace solar panels. Also a confirmed engineering plastics supplier to Nagase Plastics Co.",
+  "website": "https://www.toyobo-global.com/",
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0058"
+  ],
+  "_externalRelationships": {
+    "nagaseRelationship": "Joint venture partner with Nagase in Xenomax Japan Co., Ltd. (2018) — producing XENOMAX polyimide film. Also a confirmed engineering plastics supplier to Nagase Plastics Co., Ltd. The XENOMAX film is a key product of the JV leveraging both Toyobo's polyimide film technology and Nagase's distribution network.",
+    "keyProducts": [
+      "XENOMAX polyimide film (via Xenomax Japan JV with Nagase) — ultra-stable flexible substrate for displays",
+      "Vylomax polyimide varnish — substrate for flexible printed circuits",
+      "Vylon polyester resin — adhesive and coating applications",
+      "Biaxially-oriented PET/nylon films — food packaging and electronics insulation",
+      "HaloTag biotechnology tools — life science reagents"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Nagase Plastics supplier page, Nagase 2024 Annual Report (Xenomax Japan JV details), Toyobo IR website",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as Nagase (CMP-0058) JV partner (Xenomax Japan) and engineering plastics supplier. The Xenomax Japan JV relationship makes this a partner as well as supplier. Financial data not included pending dedicated deep research."
+  }
+}

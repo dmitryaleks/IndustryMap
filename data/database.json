@@ -2,7 +2,7 @@
   "$schema": "../schema/company.schema.json",
   "version": "3.0.0",
   "lastUpdated": "2026-02-23T00:00:00Z",
-  "totalCompanies": 115,
+  "totalCompanies": 122,
   "waves": {
     "wave1": {
       "count": 16,
@@ -38,6 +38,11 @@
       "count": 5,
       "status": "complete",
       "description": "SAMCO deep research (Rohm, Nichia, Murata, ADTEC) + DISCO deep research (Hamamatsu Photonics supplier)"
+    },
+    "wave8": {
+      "count": 7,
+      "status": "complete",
+      "description": "Nagase (8012.T) deep research — key suppliers (Asahi Kasei, Toray, Mitsubishi Chemical, Tosoh, DIC, Toyobo) and clients (DENSO)"
     }
   },
   "industryBreakdown": {
@@ -48,13 +53,17 @@
     "Semiconductors": 8,
     "Memory Semiconductors": 3,
     "Semiconductor Components": 3,
+    "Advanced Materials": 3,
+    "Specialty Chemicals": 3,
+    "Automotive Components": 1,
+    "Specialty Chemicals Trading": 1,
     "Precision Instruments": 1,
     "Consumer Electronics": 1,
     "Storage/Memory": 1,
     "Semiconductor Testing/OSAT": 1
   },
   "geographyBreakdown": {
-    "Japan": 58,
+    "Japan": 65,
     "China": 18,
     "South Korea": 14,
     "Unknown": 9,
@@ -753,6 +762,48 @@
       "name": "Hamamatsu Photonics K.K.",
       "ticker": "6965.T",
       "wave": 7
+    },
+    {
+      "id": "CMP-0116",
+      "name": "Asahi Kasei Corporation",
+      "ticker": "3407.T",
+      "wave": 8
+    },
+    {
+      "id": "CMP-0117",
+      "name": "Toray Industries, Inc.",
+      "ticker": "3402.T",
+      "wave": 8
+    },
+    {
+      "id": "CMP-0118",
+      "name": "Mitsubishi Chemical Group Corporation",
+      "ticker": "4188.T",
+      "wave": 8
+    },
+    {
+      "id": "CMP-0119",
+      "name": "Tosoh Corporation",
+      "ticker": "4042.T",
+      "wave": 8
+    },
+    {
+      "id": "CMP-0120",
+      "name": "DIC Corporation",
+      "ticker": "4631.T",
+      "wave": 8
+    },
+    {
+      "id": "CMP-0121",
+      "name": "Toyobo Co., Ltd.",
+      "ticker": "3101.T",
+      "wave": 8
+    },
+    {
+      "id": "CMP-0122",
+      "name": "DENSO Corporation",
+      "ticker": "6902.T",
+      "wave": 8
     }
   ],
   "keyRelationships": {
@@ -850,5 +901,5 @@
       ]
     }
   },
-  "notes": "Wave 5: comprehensive CN/KR/APAC expansion via Chinese (Mandarin), Korean, and English language research. Added 36 companies: 13 Chinese (5 foundry/IDM clients, 1 fabless, 7 equipment competitors), 13 Korean (5 OSAT/foundry clients, 4 equipment competitors, 4 ecosystem players), 10 APAC counterparts (5 Taiwan OSATs/foundries, 2 Singapore foundry/OSAT, 3 Malaysia OSATs). Tokyo Seimitsu now has 35 identified clients across 7 countries and 15 competitors across 4 countries. Total 110 companies across 10+ countries. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions. Wave 7 (2026-02-23): Deep research on SAMCO Inc. (6387.T, CMP-0060). Updated CMP-0060 with full research: market cap ¥50.7B, PER 29.5x, PBR 3.83x, EPS ¥211.28, 5,000+ systems in 36 countries, confirmed clients from securities filing (Skyworks Filter Solutions Japan, Nichia, Sony Semiconductor, Kanazawa Murata). Added 4 new companies: CMP-0111 Rohm Co. (6963.T, SiC/GaN device maker, SAMCO client), CMP-0112 Nichia Corporation (LED/laser maker, SAMCO client), CMP-0113 Murata Manufacturing (6981.T, bilateral supplier+client), CMP-0114 ADTEC Plasma Technology (RF power supplier, SAMCO equity investee). Updated supply chain links for CMP-0009/CMP-0012/CMP-0036 (added CMP-0060 to their clients). Total 114 companies."
+  "notes": "Wave 5: comprehensive CN/KR/APAC expansion via Chinese (Mandarin), Korean, and English language research. Added 36 companies: 13 Chinese (5 foundry/IDM clients, 1 fabless, 7 equipment competitors), 13 Korean (5 OSAT/foundry clients, 4 equipment competitors, 4 ecosystem players), 10 APAC counterparts (5 Taiwan OSATs/foundries, 2 Singapore foundry/OSAT, 3 Malaysia OSATs). Tokyo Seimitsu now has 35 identified clients across 7 countries and 15 competitors across 4 countries. Total 110 companies across 10+ countries. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions. Wave 7 (2026-02-23): Deep research on SAMCO Inc. (6387.T, CMP-0060). Updated CMP-0060 with full research: market cap ¥50.7B, PER 29.5x, PBR 3.83x, EPS ¥211.28, 5,000+ systems in 36 countries, confirmed clients from securities filing (Skyworks Filter Solutions Japan, Nichia, Sony Semiconductor, Kanazawa Murata). Added 4 new companies: CMP-0111 Rohm Co. (6963.T, SiC/GaN device maker, SAMCO client), CMP-0112 Nichia Corporation (LED/laser maker, SAMCO client), CMP-0113 Murata Manufacturing (6981.T, bilateral supplier+client), CMP-0114 ADTEC Plasma Technology (RF power supplier, SAMCO equity investee). Updated supply chain links for CMP-0009/CMP-0012/CMP-0036 (added CMP-0060 to their clients). Total 114 companies. Wave 8 (2026-02-23): Deep research on Nagase & Co. (8012.T, CMP-0058). Note: user queried 8102.T but correct ticker is 8012.T. Updated CMP-0058 with full research: market cap ¥480.6B, PER 17.4x, PBR 1.28x, EPS ¥230.39, Japan's largest specialty chemicals trading company (Asia #1, global #5). Added 7 new companies: CMP-0116 Asahi Kasei (3407.T, engineering plastics/nylon supplier + diagnostics business transfer), CMP-0117 Toray Industries (3402.T, PBT/PPS engineering plastics supplier), CMP-0118 Mitsubishi Chemical Group (4188.T, polycarbonate/polyamide supplier via MEP), CMP-0119 Tosoh (4042.T, PPS/specialty chemicals supplier), CMP-0120 DIC Corporation (4631.T, dyes/pigments/resins supplier), CMP-0121 Toyobo (3101.T, JV partner for XENOMAX polyimide film + plastics supplier), CMP-0122 DENSO (6902.T, automotive electronics client for epoxy encapsulants). Total 122 companies."
 }

@@ -1,0 +1,33 @@
+{
+  "id": "CMP-0120",
+  "companyName": "DIC Corporation",
+  "companyNameJapanese": "DIC株式会社",
+  "industryCode": "Specialty Chemicals",
+  "ticker": "4631.T",
+  "description": "Japan's largest printing inks manufacturer (world #2 globally). Operates across Printing Inks (offset, gravure, flexographic inks), Organic Pigments (phthalocyanine, azo, high-performance pigments), Functional Products (PPS compounds, polylactic acid, epoxy resins, liquid crystal polymers), and Coatings. Nagase distributes DIC products — dyes, pigments, and resins — to customers in paints, inks, textiles, and plastics industries. DIC's PPS compounds and specialty resins are also distributed through Nagase Plastics.",
+  "website": "https://www.dic-global.com/",
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0058"
+  ],
+  "_externalRelationships": {
+    "nagaseRelationship": "Nagase Chemical Co., Ltd. (Nagase subsidiary) distributes DIC dyes, pigments, and specialty resins to paints, inks, and plastics industries. Also distributes DIC engineering plastics through Nagase Plastics.",
+    "keyProducts": [
+      "Offset, gravure, flexographic printing inks — world #2 ink maker",
+      "Organic pigments (phthalocyanine, azo) — high-performance colorants",
+      "DICSEAL PPS compounds — engineering plastics",
+      "Liquid crystal polymer (LCP) compounds — high-frequency electronics",
+      "Epoxy resins — electronics and coatings"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Nagase Chemical Co. distribution agreements, Nagase Plastics supplier page, DIC Corporation IR",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as Nagase (CMP-0058) key supplier whose products Nagase distributes. Financial data not included pending dedicated deep research."
+  }
+}

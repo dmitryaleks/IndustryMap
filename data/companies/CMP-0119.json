@@ -1,0 +1,33 @@
+{
+  "id": "CMP-0119",
+  "companyName": "Tosoh Corporation",
+  "companyNameJapanese": "東ソー株式会社",
+  "industryCode": "Specialty Chemicals",
+  "ticker": "4042.T",
+  "description": "Japanese chemical company with three segments: Petrochemical (ethylene, vinyl chloride, polyethylene), Chlor-Alkali (caustic soda, chlorine, PVC), and Specialty (high-performance zirconia, silica, zeolites, hafnium oxide for semiconductors, PPS resin, bioscience reagents). Produces Susteel PPS (polyphenylene sulfide) resin — an engineering plastic — supplied to Nagase Plastics for distribution. Also supplies zirconia and high-purity silica used in semiconductor CMP slurries and ceramic components. Hafnium tetrachloride (HfCl4) for HfO2 high-k dielectrics in semiconductors.",
+  "website": "https://www.tosoh.com/",
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0058"
+  ],
+  "_externalRelationships": {
+    "nagaseRelationship": "Confirmed specialty chemicals supplier to Nagase Plastics Co., Ltd. Supplies Susteel PPS engineering plastics. Nagase America also distributes Tosoh specialty chemicals.",
+    "keyProducts": [
+      "Susteel PPS (polyphenylene sulfide) — engineering plastic for electronics",
+      "Zirconia (ZrO2) — functional ceramic material",
+      "Hafnium compounds — semiconductor high-k dielectric precursors",
+      "High-purity silica — semiconductor grade",
+      "Toslex zeolite — adsorbents for gas separation"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Nagase Plastics supplier page confirming Tosoh as specialty chemicals supplier, Tosoh IR, Nagase America supplier list",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as Nagase (CMP-0058) key supplier. Financial data not included pending dedicated deep research."
+  }
+}

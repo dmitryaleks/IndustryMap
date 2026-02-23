@@ -2,35 +2,179 @@
   "id": "CMP-0058",
   "companyName": "Nagase & Co., Ltd.",
   "companyNameJapanese": "長瀬産業株式会社",
-  "industryCode": "Semiconductor Materials",
+  "industryCode": "Specialty Chemicals Trading",
   "ticker": "8012.T",
-  "description": "Major trading company specializing in chemicals and electronic materials. Subsidiary Nagase ChemteX supplies modified epoxy resins for AI server semiconductors.",
-  "marketCapInYen": 456160000000,
-  "PER": 10.25,
-  "PBR": 1.09,
-  "EPS": 270.17,
+  "description": "Japan's largest specialty chemicals trading company (founded 1832), operating as a hybrid trading/manufacturing/R&D group across five segments: Electronics & Energy (formulated epoxy resins for semiconductor packaging and AI servers, photolithography materials, display chemicals), Advanced Materials & Processing (modified epoxy resins, 3D printing), Life & Healthcare (pharmaceutical APIs, cosmetic ingredients, food additives, diagnostics via Nagase Viita/Hayashibara, Prinova), Mobility (engineering plastics, EV materials), and Functional Material (paints, inks, urethane raw materials, pigments, dyes). Key manufacturing subsidiaries include Nagase ChemteX (formulated epoxy resins, photoresists), Nagase Viita (enzymes, trehalose, excipients — formerly Hayashibara), and Prinova (global food ingredient distributor). SACHEM high-purity semiconductor chemicals business in Asia (Japan, China, Korea) acquired 2025. Distributes products from 2,000+ global suppliers to 9,000+ business partners across 27 countries. Revenue FY2024: 944.96B JPY; net income 25.5B JPY; ROE 6.4%. FX-sensitive: yen weakness boosts overseas profits (Americas 187B JPY, Greater China 218B JPY). ACE 2.0 medium-term plan targets ROE ≥ 8% and PBR > 1.0x by FY2025.",
+  "marketCapInYen": 480630000000,
+  "PER": 17.4,
+  "PBR": 1.28,
+  "EPS": 230.39,
   "website": "https://www.nagase.co.jp/",
-  "percentOfForeignOwnership": 47.0,
-  "percentOfCirculatingEquity": null,
-  "latestPriceYen": 4430,
+  "percentOfForeignOwnership": 18.0,
+  "percentOfCirculatingEquity": 84.33,
+  "latestPriceYen": 4701,
   "isForexSensitive": true,
-  "suppliers": [],
-  "clients": [],
+  "suppliers": [
+    "CMP-0024",
+    "CMP-0046",
+    "CMP-0116",
+    "CMP-0117",
+    "CMP-0118",
+    "CMP-0119",
+    "CMP-0120",
+    "CMP-0121"
+  ],
+  "clients": [
+    "CMP-0113",
+    "CMP-0122"
+  ],
   "_externalRelationships": {
+    "majorSuppliers": [
+      "Shin-Etsu Chemical Co. (4063.T, CMP-0024) — silicone materials; Nagase America distributes Shin-Etsu Silicones internationally",
+      "Sumitomo Chemical Co. (4005.T, CMP-0046) — specialty chemicals, plastics raw materials",
+      "Asahi Kasei Corporation (3407.T) — resins, engineering plastics, nylon; Nagase Plastics is confirmed distributor; Asahi Kasei Pharma transferred diagnostics business to Nagase in July 2025",
+      "DIC Corporation (4631.T) — dyes, pigments, resins for paints/inks industries; Nagase distributes DIC products",
+      "Toray Industries (3402.T) — engineering plastics (PBT, PPS); confirmed Nagase Plastics supplier",
+      "Teijin Ltd. (3401.T) — engineering plastics; confirmed Nagase Plastics supplier",
+      "Tosoh Corporation (4042.T) — specialty chemicals; confirmed Nagase Plastics supplier",
+      "Mitsubishi Chemical Group (4188.T) — via Mitsubishi Engineering Plastics; confirmed Nagase Plastics supplier",
+      "Idemitsu Kosan (5019.T) — petrochemical resins; confirmed Nagase Plastics supplier",
+      "Sekisui Chemical (4204.T) — specialty chemical products; confirmed Nagase Plastics supplier",
+      "Toyobo Co. Ltd. (3101.T) — engineering plastics, films; joint venture partner (Xenomax Japan for polyimide film)",
+      "Kaneka Corporation (4118.T) — specialty chemicals, functional materials; Nagase America distributes Kaneka products",
+      "Nippon Shokubai Co. (4114.T) — specialty chemicals; Nagase America distributes Nippon Shokubai products",
+      "BASF Japan Ltd. (private) — specialty chemicals, engineering plastics; confirmed Nagase Plastics supplier",
+      "Covestro Japan (private) — polycarbonate and engineering plastics; confirmed Nagase Plastics supplier",
+      "Celanese Corporation (CE) — engineering plastics (POM, LCP); confirmed Nagase Plastics supplier",
+      "Eastman Chemical Company (EMN) — Tritan copolyester, engineering plastics; Nagase distributes globally",
+      "Polyplastics Co., Ltd. (private) — engineering plastics (POM, PBT, LCP); confirmed Nagase Plastics supplier",
+      "Nouryon (private, formerly Akzo Nobel Specialty Chemicals) — polymer chemistry; Nagase America distributes",
+      "Westlake Epoxy (private) — epoxy resins, curing agents; Nagase America signed distribution agreement Feb 2025",
+      "SACHEM Inc. (private, USA) — high-purity semiconductor chemicals (developers, stripping agents, photoresist ancillaries); Nagase acquired SACHEM's Asia business (Japan, China, Korea) for $101M in 2025"
+    ],
     "majorClients": [
-      "Semiconductor assembly manufacturers",
-      "AI server makers"
+      "Semiconductor fab operators — buy photolithography chemicals (developers, stripping agents), encapsulant epoxy resins, wet process chemicals for silicon wafer, DRAM, NAND, logic chip manufacturing",
+      "AI server and advanced packaging manufacturers — buy Nagase ChemteX formulated epoxy resins (LMC liquid molding compound) for CoWoS, HBM, and high-end server chip packages; this was the key driver of Electronics & Energy segment growth in FY2024",
+      "Display panel makers (LCD, OLED) — buy photolithography materials, siloxane optical materials, chemical management equipment for display processes; Nagase built Inkron Oy (Finland) stake for OLED and touch sensor materials (later sold to Radiant Opto-Electronics for 1.035B JPY)",
+      "Murata Manufacturing Co. (6981.T, CMP-0113) — buys electronic materials (epoxy compounds, specialty chemicals) for passive component manufacturing",
+      "Toyota Motor Corporation (7203.T) and automotive OEMs — buy engineering plastics, coatings chemicals, battery encapsulation materials via Mobility Solutions department",
+      "Paint and coatings manufacturers (Nippon Paint 4612.T, Kansai Paint 4613.T) — buy resin raw materials, pigments, dyes, solvents, urethane raw materials through Nagase Chemical Co. and Performance Chemicals department",
+      "Pharmaceutical companies (Takeda 4502.T, Daiichi Sankyo 4568.T, Astellas 4503.T) — buy APIs, pharmaceutical excipients, intermediates through Life & Healthcare Products department; Nagase Viita supplies TREHA trehalose and enzymatic excipients",
+      "Cosmetics manufacturers (Shiseido 4911.T, Kao 4452.T, Kosé 4922.T) — buy cosmetic active ingredients including AA2G (stabilized vitamin C derivative), UV filters, surfactants, emollients through Life & Healthcare department",
+      "Food and beverage manufacturers (Ajinomoto 2802.T, Asahi Group 2502.T, Kirin 2503.T) — buy food additives, functional ingredients including TREHA trehalose, SUNMALT maltose, amino acids, vitamins through Prinova and Nagase Food Ingredients",
+      "Fiber/textile dyeing companies — buy dyes, pigments, auxiliaries through Nagase Chemical Co. and Nishinihon Nagase; core historical business since 1832",
+      "Automotive electronics makers (DENSO 6902.T, Murata 6981.T) — buy epoxy encapsulants and specialty materials for in-vehicle electronics",
+      "Ink and printing companies — buy resins, pigments, dyes through Nagase Chemical and performance chemicals department"
     ],
-    "subsidiaries": [
-      "Nagase ChemteX (epoxy resins)"
+    "keySubsidiaries": [
+      "Nagase ChemteX Corporation — develops and manufactures formulated epoxy resins (DENACOL, DENATITE), photolithography materials (photoresists, developers, strippers), semiconductor LMC encapsulants. JV origin: Nagase-CIBA Ltd. 1970 with Ciba-Geigy for epoxy resin manufacturing",
+      "Nagase Viita Co., Ltd. — formerly Hayashibara Co. (acquired 2012, renamed 2024); manufactures trehalose (TREHA), maltose (SUNMALT), phospholipids, enzymes, AA2G vitamin C derivative. Net sales FY2025: 35B JPY, 788 employees",
+      "Prinova Group LLC — global distributor of food ingredients (amino acids, vitamins, sweeteners, caffeine); acquired 2019. Major North America/Europe presence; sports nutrition focus",
+      "Nagase Plastics Co., Ltd. — distributes engineering plastics from Asahi Kasei, Toray, Mitsubishi, Sumitomo, DIC, BASF Japan, Covestro, Celanese, Eastman and others",
+      "Nagase Chemical Co., Ltd. — distributes dyestuffs, industrial chemicals (paints, inks, urethane industries)",
+      "Nagase Diagnostics Co., Ltd. — diagnostic reagents, enzymes, life science materials; formed July 2025 from Asahi Kasei Pharma's diagnostics business transfer",
+      "Nagase Filter Co., Ltd. — manufactures DENAFILTER stainless steel filtration systems for film manufacturing",
+      "Nagase RooTAC Industries, Inc. — plastic product manufacturing",
+      "Xenomax Japan Co., Ltd. — joint venture with Toyobo (3101.T); manufactures XENOMAX polyimide film (ultra-stable substrate for flexible/micro displays, aerospace solar panels). Established 2018",
+      "Nagase Techno-Engineering Co., Ltd. — vacuum equipment, chemical supply systems for semiconductor/LCD manufacturing"
     ],
-    "notes": "Electronic segment strong. Modified epoxy resins for advanced semiconductor packaging growing rapidly."
+    "keyProducts": [
+      "DENACOL (epoxy resins) — Nagase ChemteX; specialty epoxy compounds for adhesives, coatings, electronics",
+      "DENATITE (formulated epoxy) — Nagase ChemteX; semiconductor encapsulants and display bonding agents",
+      "LMC (Liquid Molding Compound) — Nagase ChemteX; semiconductor wafer-level package encapsulants for AI servers and advanced packaging",
+      "Photoresists and photolithography chemicals — Nagase ChemteX; positive/negative tone resists for semiconductor and display manufacturing",
+      "Resist stripping agents — Nagase ChemteX; for semiconductor fab cleaning processes",
+      "TREHA (trehalose) — Nagase Viita; food, pharmaceutical, and cosmetic ingredient",
+      "AA2G (ascorbic acid 2-glucoside) — Nagase Viita; stabilized vitamin C derivative for cosmetics",
+      "XENOMAX (polyimide film) — Xenomax Japan JV with Toyobo; ultra-stable flexible substrate",
+      "SACHEM Envure System — high-purity semiconductor wet chemicals (acquired 2025)"
+    ],
+    "historicalKeyDistributionDeals": [
+      "Eastman Kodak (1923) — photoresists, photographic chemicals",
+      "Chemical Industry of Basel / Ciba-Geigy (pre-WWII) — chemical products; led to epoxy JV Nagase-CIBA 1970",
+      "Union Carbide (1930) — chemical products",
+      "General Electric (1968) — exclusive Japan distributor; led to GE Engineering Plastics JV 1971",
+      "Laporte PLC (2000) — pharmaceutical and agrochemical raw materials",
+      "Eastman Chemical (ongoing) — Tritan copolyester and specialty chemicals globally"
+    ],
+    "competitorContext": [
+      "Brenntag SE (BNR) — German global chemical distributor; #1 globally",
+      "IMCD N.V. (IMCD.AS) — Dutch specialty chemical distributor",
+      "Mitsubishi Chemical Group (4188.T) — competes in specialty chemicals",
+      "Mitsui Chemicals (4183.T) — Japanese chemical manufacturer and distributor"
+    ],
+    "recentCorporateActions": [
+      "Acquired SACHEM Asia semiconductor chemicals business (Japan, China, Korea) for $101M (March 2025); SACHEM Japan GK and SN Tech became subsidiaries",
+      "Acquired Asahi Kasei Pharma diagnostics business; began operations as Nagase Diagnostics Co., Ltd. (July 2025)",
+      "Share buyback: 7.5M shares repurchased, 5M shares cancelled under ACE 2.0 plan",
+      "Inkron Oy (Finland optical materials for OLED/touch sensors) sold to Radiant Opto-Electronics (Taiwan) for 1.035B JPY (June 2025)",
+      "Hayashibara Co. renamed to Nagase Viita Co., Ltd. (April 2024)",
+      "ACE 2.0 medium-term plan (FY2021-FY2025): targets ROE ≥ 8%, PBR > 1.0x, total payout ratio 100% for 2 years"
+    ],
+    "financialSummary": {
+      "FY2024_ended_Mar2025": {
+        "netSales": "944,961M JPY",
+        "operatingIncome": "39,078M JPY",
+        "netIncome": "25,521M JPY",
+        "totalAssets": "808,143M JPY",
+        "netAssets": "406,459M JPY",
+        "netAssetsPerShare": "3,679.09 JPY",
+        "EPS_diluted": "230.39 JPY",
+        "ROE": "6.4%",
+        "operatingMargin": "4.14%",
+        "dividendPerShare": "90 JPY",
+        "note": "Revenue exceeded 1 trillion JPY on consolidated basis including subsidiaries. Electronics & Energy segment grew on AI server epoxy demand. Life & Healthcare gained from Asahi Kasei diagnostics acquisition."
+      },
+      "FY2025_Q3_nine_months_Dec2025": {
+        "comprehensiveIncome": "38,390M JPY",
+        "YoY_change": "+53.9%",
+        "note": "Strong nine-month performance"
+      },
+      "segmentRevenue_FY2025E": {
+        "LifeAndHealthcare": "288B JPY",
+        "AdvancedMaterialsAndProcessing": "211B JPY",
+        "ElectronicsAndEnergy": "164B JPY",
+        "FunctionalMaterial": "155B JPY",
+        "Mobility": "134B JPY"
+      },
+      "geographicRevenue": {
+        "Japan": "278B JPY",
+        "GreaterChina": "218B JPY",
+        "Americas": "187B JPY",
+        "ASEAN_India": "~150B JPY",
+        "Europe": "~112B JPY"
+      }
+    },
+    "shareholderStructure": {
+      "totalIssuableShares": 346980000,
+      "issuedShares": 109908285,
+      "treasuryShares": 5227837,
+      "outstandingShares": 104680448,
+      "numberOfShareholders": 32254,
+      "freeFloat": "84.33%",
+      "selfOwnership_treasury": "6.31%",
+      "topShareholders": [
+        "Master Trust Bank of Japan: 12.04%",
+        "Custody Bank of Japan: 5.93%",
+        "Nagase Employee Stockholding: 3.83%",
+        "Nippon Life Insurance: 3.43%",
+        "Sumitomo Mitsui Trust Bank: 3.20%"
+      ],
+      "retailInvestors": "~53%",
+      "note": "Vanguard Group holds 3.7% (major foreign institution). Foreign ownership estimated ~18-22% based on available data; exact figure not publicly confirmed. Prior entry of 47% was likely incorrect."
+    },
+    "forexSensitivity": {
+      "isForexSensitive": true,
+      "note": "Trading company with global operations in 27 countries; revenues in USD, EUR, CNY, and other currencies. Yen weakness boosts gross profit from overseas operations. FY2023: forex impact +5B JPY gross profit, +0.9B JPY operating income. Americas (187B JPY revenue) and Greater China (218B JPY) are significant non-JPY revenue centers. Benefits from weak yen environment."
+    }
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T17:00:00Z",
-    "dataSource": "Kabushiki Shimbun, Company IR",
-    "confidenceLevel": "medium",
-    "lastUpdated": "2026-02-21T17:00:00Z",
-    "wave": 3
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Nagase IR (nagase.co.jp), Nagase Annual Report 2024, StockAnalysis, MarketScreener, SharedResearch, Nagase Plastics supplier page, NSM-NA supplier page, SACHEM press releases, Asahi Kasei press releases, Simply Wall St, MarketReportAnalytics",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 3,
+    "deepResearch": true,
+    "notes": "Note: User referenced ticker 8102.T but correct ticker is 8012.T. Nagase is Japan's largest specialty chemicals distributor (Asia #1, global #5) with 190+ year history. The company is a hybrid trading/manufacturing/R&D house — not just a pure distributor. Key growth drivers: AI server epoxy resins (Nagase ChemteX LMC products), SACHEM semiconductor chemicals acquisition, Asahi Kasei diagnostics acquisition. PBR calculated as 4701/3679.09 = 1.28x. EPS 230.39 JPY from FY2024 annual financial highlights. Market cap ~480B JPY as of Feb 2026. The correct foreign ownership figure could not be precisely confirmed; 47% in old entry appears too high for this type of mid-cap Japanese trading company."
   }
 }

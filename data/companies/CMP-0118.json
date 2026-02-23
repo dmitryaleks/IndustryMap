@@ -1,0 +1,34 @@
+{
+  "id": "CMP-0118",
+  "companyName": "Mitsubishi Chemical Group Corporation",
+  "companyNameJapanese": "三菱ケミカルグループ株式会社",
+  "industryCode": "Specialty Chemicals",
+  "ticker": "4188.T",
+  "description": "Japan's largest chemical company (formed 2023 from merger of Mitsubishi Chemical, Kureha spun-off assets, and listed entity restructuring). Operates through subsidiaries: Mitsubishi Chemical (specialty chemicals, MMA/PMMA, functional polymers), Mitsubishi Engineering-Plastics (MEP — Novarex PC, Iupilon PC, Reny PA, Xyron PPE/PA, Tribit PBT), Mitsubishi Gas Chemical, and others. Via MEP, supplies engineering plastics (polycarbonate, polyamide, PPE/PA, PBT) to Nagase Plastics Co. for distribution. Also produces semiconductor materials including high-purity chemicals, photomask blanks (via synthetic quartz), and specialty films.",
+  "website": "https://www.mitsubishichemicalgroup.com/",
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0058"
+  ],
+  "_externalRelationships": {
+    "nagaseRelationship": "Via subsidiary Mitsubishi Engineering-Plastics (MEP), confirmed supplier to Nagase Plastics Co., Ltd. for distribution of polycarbonate, polyamide, and other engineering plastics.",
+    "keyProducts": [
+      "Iupilon / Novarex PC (polycarbonate) — optical, electronics, automotive",
+      "Reny polyamide (PA) — heat-resistant engineering plastic",
+      "Xyron PPE/PA blend — super-engineering plastic",
+      "Tribit PBT — automotive and electronics",
+      "MMA/PMMA resins — optical-grade methyl methacrylate",
+      "Semiconductor materials — specialty chemicals for semiconductor processing"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Nagase Plastics supplier page confirming Mitsubishi Engineering-Plastics as supplier, Mitsubishi Chemical Group IR",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as Nagase (CMP-0058) key supplier via MEP subsidiary. Financial data not included pending dedicated deep research."
+  }
+}

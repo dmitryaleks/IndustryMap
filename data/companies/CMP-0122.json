@@ -1,0 +1,37 @@
+{
+  "id": "CMP-0122",
+  "companyName": "DENSO Corporation",
+  "companyNameJapanese": "株式会社デンソー",
+  "industryCode": "Automotive Components",
+  "ticker": "6902.T",
+  "description": "Japan's largest and world's second-largest automotive components manufacturer (~67% owned by Toyota Group). Operates across electrification (EV inverters, onboard chargers, motors), powertrain systems (fuel injectors, engine management), thermal systems (HVAC, battery cooling), mobility services (automated driving sensors, ADAS cameras, LiDAR), and electronic components (ECUs, relays, sensors). Buys specialty epoxy encapsulants and molding compounds from Nagase ChemteX (Nagase subsidiary) for protecting in-vehicle electronics and ECU modules. Also sources specialty chemical materials through Nagase's distribution network.",
+  "marketCapInYen": 5500000000000,
+  "website": "https://www.denso.com/",
+  "isForexSensitive": true,
+  "suppliers": [
+    "CMP-0058"
+  ],
+  "clients": [],
+  "_externalRelationships": {
+    "nagaseRelationship": "DENSO buys epoxy encapsulants (DENATITE formulated epoxy from Nagase ChemteX) and specialty adhesive materials from Nagase for protecting automotive ECUs, power module electronics, and in-vehicle sensor packages. Named as a Nagase automotive electronics client in Nagase corporate disclosures.",
+    "keyProducts": [
+      "Automotive ECUs and sensors — buys epoxy encapsulants for protection",
+      "EV power electronics (inverters, onboard chargers) — buys encapsulation materials",
+      "ADAS cameras and LiDAR — precision electronic assemblies",
+      "Fuel injectors and actuators — buys specialty polymer materials"
+    ],
+    "keySuppliers": [
+      "Toyota Motor (7203.T) — parent and strategic partner",
+      "Nagase & Co. (8012.T, CMP-0058) — specialty epoxy encapsulants, formulated chemicals"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Nagase CMP-0058 research: Nagase corporate disclosures listing DENSO as automotive electronics client for epoxy encapsulants; DENSO IR annual report",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as Nagase (CMP-0058) client for epoxy encapsulants for automotive ECUs. Market cap approximate as of Feb 2026. Financial data not fully researched pending dedicated deep research."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "CMP-0117",
+  "companyName": "Toray Industries, Inc.",
+  "companyNameJapanese": "東レ株式会社",
+  "industryCode": "Advanced Materials",
+  "ticker": "3402.T",
+  "description": "Japan's largest integrated manufacturer of synthetic fibers, textiles, and high-performance materials. Key segments: Fibers & Textiles, Performance Chemicals (PBT, PPS, ABS resins, films, adhesives), Carbon Fiber Composite Materials, and Environment & Engineering. Supplies PBT (polybutylene terephthalate) and PPS (polyphenylene sulfide) engineering plastics to Nagase Plastics Co. for distribution to electronic components and automotive parts makers. Also produces Lumirror PET films, Torelina PPS films, and Torayfan OPP films for electronics. Carbon fiber composites used in aerospace and automotive.",
+  "website": "https://www.toray.com/",
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0058"
+  ],
+  "_externalRelationships": {
+    "nagaseRelationship": "Confirmed supplier to Nagase Plastics Co., Ltd. — supplies PBT and PPS engineering plastics resins for distribution.",
+    "keyProducts": [
+      "Torelina PPS (polyphenylene sulfide) — heat-resistant engineering plastic for electronics connectors",
+      "Toraycon PBT (polybutylene terephthalate) — engineering plastic for automotive/electronic parts",
+      "Lumirror PET film — electronic insulation film",
+      "Torayfan OPP film — packaging and capacitor films",
+      "Carbon fiber (Torayca) — aerospace and automotive composites"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Nagase Plastics supplier page confirming Toray as engineering plastics supplier, Toray IR website",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as Nagase (CMP-0058) key supplier. Financial data not included pending dedicated deep research."
+  }
+}
