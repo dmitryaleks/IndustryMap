@@ -27,4 +27,10 @@ Sites approved for online research during data collection.
 | Wisesheets | wisesheets.io | 2026-02-23 | Financial metrics (ROE, etc.) |
 | Dividend Japan | dividendjapan.com | 2026-02-23 | Japanese dividend/stock analysis |
 | Hamamatsu Photonics | hamamatsu.com | 2026-02-23 | Company IR and product info |
-| DISCO Corporation IR | disco.co.jp | 2026-02-23 | Company investor relations |
+| Nagase & Co. IR | nagase.co.jp | 2026-02-23 | Nagase company IR, annual reports, press releases |
+| Nagase Plastics supplier page | nagase-plastics.co.jp | 2026-02-23 | Confirmed engineering plastics supplier list |
+| Nagase America (NSM-NA) supplier page | nagase.com | 2026-02-23 | North America distribution partner and supplier list |
+| SharedResearch | sharedresearch.jp | 2026-02-23 | Japanese equity deep-dive research reports |
+| SACHEM Inc. press releases | sachem.com | 2026-02-23 | Semiconductor chemicals acquisition news |
+| Asahi Kasei press releases | asahi-kasei.com | 2026-02-23 | Corporate actions, diagnostics business transfer |
+| MarketReportAnalytics | marketreportanalytics.com | 2026-02-23 | Stock price and market data |
