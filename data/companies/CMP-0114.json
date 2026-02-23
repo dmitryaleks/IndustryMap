@@ -1,0 +1,48 @@
+{
+  "id": "CMP-0114",
+  "companyName": "ADTEC Plasma Technology Co., Ltd.",
+  "companyNameJapanese": "アドテック プラズマ テクノロジー株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": null,
+  "description": "Japanese manufacturer of RF (radio frequency) power generators, plasma power supplies, and related control systems for semiconductor process equipment. Products are used as core subsystems inside plasma CVD, plasma etch, and surface treatment equipment manufactured by companies like SAMCO Inc. SAMCO holds a minor equity stake in ADTEC Plasma Technology, confirming a close and strategic supply relationship. Key components include RF plasma generators (13.56 MHz and higher frequencies), matching networks, and plasma control electronics. Supplies to semiconductor equipment OEMs rather than to fabs directly.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.adtec.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": false,
+  "suppliers": [],
+  "clients": [
+    "CMP-0060"
+  ],
+  "_externalRelationships": {
+    "majorClients": [
+      "SAMCO Inc. (6387.T, CMP-0060) — RF power supplies and plasma generators used in SAMCO's ICP-RIE, PECVD, and etch systems (SAMCO holds equity stake confirming strategic relationship)",
+      "Other Japanese semiconductor equipment OEMs requiring plasma power subsystems"
+    ],
+    "keyProducts": [
+      "RF plasma generators (13.56 MHz, 27.12 MHz, 60 MHz)",
+      "RF matching networks and auto-tuners",
+      "Plasma power supply systems for CVD and etch tools",
+      "Process control electronics for plasma equipment"
+    ],
+    "strategicHighlights": [
+      "Key subsystem supplier to SAMCO for plasma process equipment",
+      "SAMCO equity investment signals deep strategic dependence",
+      "Focus on Japanese domestic equipment OEM market",
+      "Specialized niche: RF plasma power systems for compound semiconductor equipment"
+    ],
+    "notes": "ADTEC Plasma Technology is a private company. Confirmed as a strategic supplier to SAMCO via SAMCO's equity investment disclosure in their securities filing. Limited public information available. Website: https://www.adtec.co.jp/"
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "SAMCO securities filing (有価証券報告書), SAMCO IR equity investment disclosure",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 7,
+    "notes": "Added as confirmed strategic supplier to SAMCO (CMP-0060). SAMCO holds minor equity stake in ADTEC Plasma Technology, disclosed in securities filing as an equity investee with confirmed supply relationship (RF power supplies for plasma process equipment). Private company — no financial data available."
+  }
+}

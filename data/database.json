@@ -1,8 +1,8 @@
 {
   "$schema": "../schema/company.schema.json",
   "version": "3.0.0",
-  "lastUpdated": "2026-02-21T23:00:00Z",
-  "totalCompanies": 110,
+  "lastUpdated": "2026-02-23T00:00:00Z",
+  "totalCompanies": 114,
   "waves": {
     "wave1": {
       "count": 16,
@@ -33,23 +33,28 @@
       "count": 27,
       "status": "complete",
       "description": "Chinese semiconductor ecosystem - foundries, equipment makers, and memory/IC companies linked to existing supply chain nodes"
+    },
+    "wave7": {
+      "count": 4,
+      "status": "complete",
+      "description": "SAMCO Inc. (6387.T) deep research - compound semiconductor equipment clients and suppliers: Rohm (SiC/GaN), Nichia (LED/laser), Murata Manufacturing (bilateral), ADTEC Plasma Technology (RF power supplier)"
     }
   },
   "industryBreakdown": {
-    "Semiconductor Equipment": 43,
+    "Semiconductor Equipment": 44,
     "Semiconductor Materials": 26,
     "Semiconductor Packaging/OSAT": 16,
     "Semiconductor Foundry": 10,
-    "Semiconductors": 6,
+    "Semiconductors": 8,
     "Memory Semiconductors": 3,
-    "Semiconductor Components": 2,
+    "Semiconductor Components": 3,
     "Precision Instruments": 1,
     "Consumer Electronics": 1,
     "Storage/Memory": 1,
     "Semiconductor Testing/OSAT": 1
   },
   "geographyBreakdown": {
-    "Japan": 53,
+    "Japan": 57,
     "China": 18,
     "South Korea": 14,
     "Unknown": 9,
@@ -718,6 +723,30 @@
       "name": "Malaysian Pacific Industries Berhad",
       "ticker": "3867.KL",
       "wave": 6
+    },
+    {
+      "id": "CMP-0111",
+      "name": "Rohm Co., Ltd.",
+      "ticker": "6963.T",
+      "wave": 7
+    },
+    {
+      "id": "CMP-0112",
+      "name": "Nichia Corporation",
+      "ticker": null,
+      "wave": 7
+    },
+    {
+      "id": "CMP-0113",
+      "name": "Murata Manufacturing Co., Ltd.",
+      "ticker": "6981.T",
+      "wave": 7
+    },
+    {
+      "id": "CMP-0114",
+      "name": "ADTEC Plasma Technology Co., Ltd.",
+      "ticker": null,
+      "wave": 7
     }
   ],
   "keyRelationships": {
@@ -813,5 +842,5 @@
       ]
     }
   },
-  "notes": "Wave 5: comprehensive CN/KR/APAC expansion via Chinese (Mandarin), Korean, and English language research. Added 36 companies: 13 Chinese (5 foundry/IDM clients, 1 fabless, 7 equipment competitors), 13 Korean (5 OSAT/foundry clients, 4 equipment competitors, 4 ecosystem players), 10 APAC counterparts (5 Taiwan OSATs/foundries, 2 Singapore foundry/OSAT, 3 Malaysia OSATs). Tokyo Seimitsu now has 35 identified clients across 7 countries and 15 competitors across 4 countries. Total 110 companies across 10+ countries. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions."
+  "notes": "Wave 5: comprehensive CN/KR/APAC expansion via Chinese (Mandarin), Korean, and English language research. Added 36 companies: 13 Chinese (5 foundry/IDM clients, 1 fabless, 7 equipment competitors), 13 Korean (5 OSAT/foundry clients, 4 equipment competitors, 4 ecosystem players), 10 APAC counterparts (5 Taiwan OSATs/foundries, 2 Singapore foundry/OSAT, 3 Malaysia OSATs). Tokyo Seimitsu now has 35 identified clients across 7 countries and 15 competitors across 4 countries. Total 110 companies across 10+ countries. Wave 6: Chinese semiconductor ecosystem deep dive. Added 13 Chinese companies: foundries (Nexchip, China Resources Micro, CanSemi, GTA Semi), memory (YMTC), IC design (GigaDevice), and equipment makers (NAURA, Hwatsing, Hangzhou Changchuan, Hwatsing Huahai, Shenyang Heyan, Beijing Shuoke, Beijing TSD). Total 110 companies across 7 regions. Wave 7 (2026-02-23): Deep research on SAMCO Inc. (6387.T, CMP-0060). Updated CMP-0060 with full research: market cap ¥50.7B, PER 29.5x, PBR 3.83x, EPS ¥211.28, 5,000+ systems in 36 countries, confirmed clients from securities filing (Skyworks Filter Solutions Japan, Nichia, Sony Semiconductor, Kanazawa Murata). Added 4 new companies: CMP-0111 Rohm Co. (6963.T, SiC/GaN device maker, SAMCO client), CMP-0112 Nichia Corporation (LED/laser maker, SAMCO client), CMP-0113 Murata Manufacturing (6981.T, bilateral supplier+client), CMP-0114 ADTEC Plasma Technology (RF power supplier, SAMCO equity investee). Updated supply chain links for CMP-0009/CMP-0012/CMP-0036 (added CMP-0060 to their clients). Total 114 companies."
 }

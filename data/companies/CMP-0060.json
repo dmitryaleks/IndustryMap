@@ -1,33 +1,144 @@
 {
   "id": "CMP-0060",
-  "companyName": "Samco Inc.",
+  "companyName": "SAMCO Inc.",
   "companyNameJapanese": "サムコ株式会社",
   "industryCode": "Semiconductor Equipment",
   "ticker": "6387.T",
-  "description": "Pioneer in plasma CVD equipment since 1980. Specializes in thin film deposition, dry etching, and cleaning equipment. Kyoto-based R&D-oriented company.",
-  "marketCapInYen": 33700000000,
-  "PER": 19.7,
-  "PBR": null,
+  "description": "Kyoto-based niche manufacturer of plasma process equipment for compound semiconductors and advanced devices. Product lines: (1) Deposition — PECVD, ALD/PEALD, LSCVD, DLC coating; (2) Etching — ICP-RIE, DRIE (Deep Silicon), CCP-RIE, XeF2, ALE (Atomic Layer Etching), Cryo-ICP; (3) Surface Treatment — Aqua Plasma cleaners, UV-Ozone cleaners. Key applications: GaN/SiC power devices, GaN RF (5G/6G), GaAs/InP VCSELs and laser diodes, BAW/SAW filters, MEMS, MicroLEDs, TSV/advanced packaging, quantum computing research. Over 5,000 systems deployed in 36 countries. Asset-light fablight model: all design, R&D, software, testing and sales in-house; manufacturing fully outsourced to domestic Japanese subcontractors. Overseas revenue ~38–40% of total with mid-term target of >50%. Holds equity stakes in ADTEC Plasma Technology (RF power supply supplier) and Murata Manufacturing (component supplier and equipment customer). Company name is acronym: Semiconductor And Materials COmpany. Founded 1979–1980 by Osamu Tsuji; Japan's first plasma CVD equipment (1980). TSE Prime Market.",
+  "marketCapInYen": 50700000000,
+  "PER": 29.5,
+  "PBR": 3.83,
   "EPS": 211.28,
   "website": "https://www.samco.co.jp/",
-  "percentOfForeignOwnership": null,
-  "percentOfCirculatingEquity": null,
-  "latestPriceYen": 4170,
+  "percentOfForeignOwnership": 5,
+  "percentOfCirculatingEquity": 45,
+  "latestPriceYen": 6310,
   "isForexSensitive": true,
-  "suppliers": [],
-  "clients": [],
+  "suppliers": [
+    "CMP-0009",
+    "CMP-0012",
+    "CMP-0036",
+    "CMP-0113",
+    "CMP-0114"
+  ],
+  "clients": [
+    "CMP-0111",
+    "CMP-0112",
+    "CMP-0113"
+  ],
   "_externalRelationships": {
-    "majorClients": [
-      "R&D facilities",
-      "Semiconductor manufacturers"
+    "majorSuppliers": [
+      "ADTEC Plasma Technology Co., Ltd. (CMP-0114) — RF generators and plasma power supplies; SAMCO holds minor equity stake confirming strategic supply relationship",
+      "Murata Manufacturing Co., Ltd. (6981.T, CMP-0113) — electronic components used in SAMCO equipment; SAMCO holds minor equity stake",
+      "Ferrotec Holdings Corporation (6890.T, CMP-0009) — quartz components, ceramics parts for process chambers",
+      "Horiba Ltd. / Horiba STEC (6856.T, CMP-0012) — mass flow controllers (MFCs) for gas delivery systems in CVD/etch tools",
+      "Ebara Corporation (6361.T, CMP-0036) — dry vacuum pumps integrated into process equipment",
+      "Edwards Vacuum (Atlas Copco) — vacuum pumps and turbo pumps",
+      "MKS Instruments — pressure gauges, process control instruments",
+      "Domestic precision machining subcontractors (Kyoto/Osaka region) — stainless steel and aluminum process chambers, custom machined parts",
+      "Note: securities report lists some parts with limited/sole-source suppliers; SAMCO actively pursuing dual-sourcing to reduce risk"
     ],
-    "notes": "Japan's first plasma CVD equipment 1980. Low-temperature thick film PECVD strength. Expanding overseas sales."
+    "majorClients": [
+      "Skyworks Filter Solutions Japan Co., Ltd. — BAW/SAW filter manufacturing in Osaka (explicitly named in SAMCO securities filing as production customer)",
+      "Nichia Corporation (CMP-0112) — LED and laser diode manufacturing",
+      "Sony Semiconductor Manufacturing Co., Ltd. — image sensors and compound semiconductor devices",
+      "Kanazawa Murata Manufacturing Co., Ltd. (subsidiary of Murata Mfg, CMP-0113) — BAW filter manufacturing",
+      "Rohm Co., Ltd. (6963.T, CMP-0111) — SiC power devices and GaN RF devices",
+      "RIKEN Center for Advanced Photonics — R&D systems",
+      "NICT (National Institute of Information and Communications Technology) — R&D systems",
+      "Japanese universities: Kyushu Univ., Nagoya Univ., Osaka Metropolitan Univ., Univ. of Tokyo, Hokkaido Univ., Kyoto Univ.",
+      "US universities: Penn State, Northwestern (NUFAB), Yale, MIT",
+      "European partner: OST – Eastern Switzerland University of Applied Sciences",
+      "Historical early production customers: Motorola (US), Arco Solar (US), Hitachi, Toshiba, Fujitsu"
+    ],
+    "productLines": {
+      "deposition": [
+        "PECVD (Plasma-Enhanced CVD)",
+        "ALD / PEALD (Atomic/Plasma-Enhanced ALD)",
+        "LSCVD (Liquid Source CVD)",
+        "DLC (Diamond-Like Carbon) coating systems"
+      ],
+      "etching": [
+        "ICP-RIE (Inductively Coupled Plasma RIE)",
+        "DRIE (Deep Reactive Ion Etching, Bosch process)",
+        "CCP-RIE (Capacitively Coupled Plasma RIE)",
+        "XeF2 (Xenon Difluoride) vapor etching",
+        "ALE (Atomic Layer Etching)",
+        "Cryo-ICP (cryogenic etching for deep features)"
+      ],
+      "surfaceTreatment": [
+        "Aqua Plasma cleaners",
+        "UV-Ozone cleaners",
+        "Plasma surface activation systems"
+      ]
+    },
+    "keyApplications": [
+      "SiC (Silicon Carbide) power devices — EV inverters, industrial power",
+      "GaN power devices — fast chargers, EV onboard converters",
+      "GaN RF devices — 5G/6G base stations, satellite",
+      "GaAs/InP VCSELs — 3D sensing (Face ID, LiDAR), data center interconnects",
+      "InP Laser Diodes — optical communications",
+      "BAW/SAW filters — smartphone RF front-ends (5G)",
+      "MEMS — sensors, actuators, pressure sensors",
+      "MicroLEDs — next-gen displays",
+      "TSV (Through-Silicon Via) / Advanced Packaging — chiplet integration",
+      "Quantum computing — research-grade qubit fabrication tools"
+    ],
+    "shareholderStructure": {
+      "outstandingShares": 8042881,
+      "latestPrice": "¥6,310 (Feb 20, 2026)",
+      "founder": "Osamu Tsuji (Chairman): ~21.3%",
+      "foundation": "SAMCO Science & Technology Foundation: ~12.43–12.45%",
+      "relatedEntity": "Samco Engineering Co., Ltd.: ~10.59%",
+      "top25ShareholdersTotal": "~57.95%",
+      "estimatedFreeFloat": "~40–50%",
+      "foreignOwnership": "~5–10% (institutional foreign holders ~1.19% per SEC 13F filers; IR meetings show 17/103 overseas investors Aug 2024–Jul 2025)",
+      "note": "High founder/family/foundation concentration limits liquidity"
+    },
+    "financialHighlights": {
+      "totalRevenue_recent": "~¥9.3 billion (domestic ~61.6%; overseas ~38.4%)",
+      "overseasRevenue": "¥3,586 million (38.4% of total)",
+      "businessModel": "Fablight: outsources manufacturing; retains R&D, software, inspection, and direct sales in-house",
+      "midTermStrategy": "Raise overseas sales ratio to >50%; deepen penetration in SiC/GaN power devices and 5G filter markets; third R&D facility planned",
+      "equityInvestments": [
+        "ADTEC Plasma Technology — minor stake; RF plasma power supply supplier",
+        "Murata Manufacturing (6981.T) — minor stake; component supplier and equipment customer"
+      ]
+    },
+    "competitors": [
+      "Oxford Instruments Plasma Technology (UK) — ICP-RIE and PECVD for compound semiconductors",
+      "Plasma-Therm LLC (US) — ICP-RIE, PECVD, ALD systems",
+      "SPTS Technologies (UK, part of Orbotech/KLA) — etch and deposition for compound semiconductors and MEMS",
+      "ULVAC Inc. (6728.T) — broad CVD, PVD, and dry etch equipment",
+      "Sumitomo Heavy Industries Advanced Machinery (SHI-AT, 6302.T) — plasma equipment",
+      "Lam Research (LRCX) — large-scale production etch and CVD (different scale/market focus)"
+    ],
+    "keyRisks": [
+      "Niche market concentration: compound semiconductor is smaller and more cyclical than silicon mainstream",
+      "Fablight dependency: quality and delivery depend on domestic manufacturing subcontractors",
+      "Sole-source supplier risk: some specialized parts from limited suppliers; dual-sourcing program in progress",
+      "FX sensitivity: ~38–40% overseas revenue; risk increases as overseas share grows toward >50% target",
+      "R&D customer base: universities generate low-volume, high-customization orders with limited recurring revenue",
+      "Competitive pressure from larger equipment makers (ULVAC, Lam Research, Oxford Instruments) in adjacent markets",
+      "Founder/family share concentration: ~44% held by Tsuji family/entities; limits governance and liquidity"
+    ],
+    "growthDrivers": [
+      "SiC power device boom: EV adoption driving massive SiC wafer fab buildout globally (Rohm, STMicro, Wolfspeed, Infineon)",
+      "GaN RF: 5G/6G base station and satellite infrastructure demand for GaN-on-SiC and GaN-on-Si devices",
+      "BAW/SAW filters: Smartphone 5G requires more filters per device; Murata, Qorvo, Skyworks all expanding production",
+      "Compound semiconductor renaissance: III-V materials for photonics, quantum computing, power electronics",
+      "MicroLED: Display technology shift requires mass transfer and III-V LED production at scale",
+      "Geographic expansion: Growing from Japan-centric to global; EU, US, and SEA market development"
+    ],
+    "notes": "SAMCO is Japan's pioneer in plasma CVD equipment (established 1980, Japan's first system). International website: https://www.samcointl.com. Stock 1-year return: +104% (¥3,100 → ¥6,310). Market cap doubled from ~¥33.7B (Wave 3 capture) to ~¥50.7B. High founder ownership and low foreign ownership suggest undiscovered/underfollowed stock. Growing strategically in power semiconductors (SiC/GaN) and 5G/6G filter manufacturing equipment."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T17:00:00Z",
-    "dataSource": "Company IR, Peragaru",
-    "confidenceLevel": "medium",
-    "lastUpdated": "2026-02-21T17:00:00Z",
-    "wave": 3
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Company IR (samco.co.jp, samcointl.com), StockAnalysis (TYO:6387), IRBank (E02060), Kabutan, Minkabu, MarketScreener, The Worldfolio interview, Compound Semiconductor Magazine, SEMI member directory, securities filing (有価証券報告書)",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 3,
+    "deepResearch": true,
+    "notes": "Deep research update 2026-02-23. Market cap ~¥50.7B (up from ¥33.7B at Wave 3 capture). Latest price ¥6,310 (+104% 1-year). PER 29.5x forecast, PBR 3.83x, EPS ¥211.28 TTM. Confirmed clients from securities filing: Skyworks Filter Solutions Japan, Nichia Chemical, Sony Semiconductor Mfg, Kanazawa Murata Mfg. Equity investee/suppliers: ADTEC Plasma Technology (CMP-0114), Murata Manufacturing (CMP-0113). 5,000+ systems deployed in 36 countries. Added supply chain links: suppliers CMP-0009/CMP-0012/CMP-0036/CMP-0113/CMP-0114; clients CMP-0111/CMP-0112/CMP-0113. 4 new companies added to DB: Rohm (CMP-0111), Nichia (CMP-0112), Murata Manufacturing (CMP-0113), ADTEC Plasma Technology (CMP-0114)."
   }
 }

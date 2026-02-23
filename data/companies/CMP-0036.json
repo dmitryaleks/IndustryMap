@@ -20,7 +20,8 @@
     "CMP-0018",
     "CMP-0019",
     "CMP-0020",
-    "CMP-0021"
+    "CMP-0021",
+    "CMP-0060"
   ],
   "_externalRelationships": {
     "majorClients": [

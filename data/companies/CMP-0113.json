@@ -1,0 +1,75 @@
+{
+  "id": "CMP-0113",
+  "companyName": "Murata Manufacturing Co., Ltd.",
+  "companyNameJapanese": "株式会社村田製作所",
+  "industryCode": "Semiconductor Components",
+  "ticker": "6981.T",
+  "description": "World's largest manufacturer of MLCCs (Multilayer Ceramic Capacitors) and a leading supplier of passive electronic components, wireless modules, and RF filters. Headquartered in Nagaokakyo, Kyoto. Core products: MLCCs, SAW/BAW filters for smartphone RF front-ends, inductors, EMI filters, piezoelectric components, DC-DC converters, wireless connectivity modules (Bluetooth, Wi-Fi), and MEMS sensors. BAW (Bulk Acoustic Wave) filters are critical for 5G smartphone RF front-ends — produced at Kanazawa Murata Manufacturing Co., Ltd. (金沢村田製作所) which uses SAMCO compound semiconductor process equipment for filter fabrication. Murata is also a supplier of electronic components to SAMCO for inclusion in SAMCO's semiconductor process equipment — SAMCO holds a minor equity stake in Murata confirming the strategic bilateral relationship. TSE Prime Market. World market leader in MLCCs with ~40%+ global share.",
+  "marketCapInYen": 4500000000000,
+  "PER": 20.0,
+  "PBR": 2.5,
+  "EPS": null,
+  "website": "https://www.murata.com/",
+  "percentOfForeignOwnership": 45.0,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [
+    "CMP-0060"
+  ],
+  "clients": [
+    "CMP-0060"
+  ],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "SAMCO Inc. (6387.T, CMP-0060) — compound semiconductor process equipment for BAW filter manufacturing at Kanazawa Murata (confirmed in SAMCO securities filing)",
+      "Various ceramic raw material suppliers (barium titanate, rare earth materials)",
+      "Substrate and epitaxial wafer suppliers for SAW/BAW filter production"
+    ],
+    "majorClients": [
+      "Apple Inc. (AAPL) — largest customer, MLCCs and wireless modules for iPhone/iPad (~30%+ of Murata revenue)",
+      "Samsung Electronics — MLCCs, SAW/BAW filters, modules",
+      "Huawei — MLCCs and RF components (partially restricted by export controls)",
+      "Various Android smartphone makers globally",
+      "Automotive OEMs and tier-1 suppliers — automotive-grade MLCCs",
+      "SAMCO Inc. (CMP-0060) — electronic components supplied to SAMCO for use in process equipment (bilateral relationship confirmed by SAMCO equity stake in Murata)"
+    ],
+    "keyProducts": [
+      "MLCCs (Multilayer Ceramic Capacitors) — #1 globally, ~40%+ share",
+      "BAW (Bulk Acoustic Wave) filters — 5G RF front-ends",
+      "SAW (Surface Acoustic Wave) filters — smartphone RF",
+      "Chip inductors and EMI suppression filters",
+      "DC-DC converters and power modules",
+      "Wireless LAN/Bluetooth/cellular modules",
+      "MEMS sensors (gyroscopes, accelerometers)",
+      "Piezoelectric actuators and components"
+    ],
+    "keySubsidiaries": [
+      "Kanazawa Murata Manufacturing Co., Ltd. — BAW filter production (uses SAMCO equipment)",
+      "Murata Electronics North America",
+      "Murata Electronics (Shanghai)",
+      "Multiple Asian manufacturing subsidiaries"
+    ],
+    "strategicHighlights": [
+      "World's largest MLCC manufacturer (~40% global share)",
+      "Dominant in 5G BAW filter market with FBAR/BAW technology",
+      "Apple dependency (~30%+ revenue) creates both opportunity and risk",
+      "Heavy CAPEX investment in 5G filter and automotive-grade component production",
+      "Strategic equity investments in key technology partners (e.g., SAMCO holds minor stake in Murata)"
+    ],
+    "dualRoleWithSAMCO": {
+      "asClient": "Kanazawa Murata Manufacturing uses SAMCO ICP-RIE/PECVD equipment for BAW filter (FBAR) fabrication",
+      "asSupplier": "Murata supplies electronic components used in SAMCO's semiconductor process equipment",
+      "equityRelationship": "SAMCO holds minor equity stake in Murata Manufacturing, cementing the strategic bilateral relationship"
+    },
+    "notes": "Murata has a unique bilateral relationship with SAMCO: as a client (Kanazawa plant BAW filter production) and as a supplier (electronic components). Both confirmed by SAMCO's securities report and equity stake disclosure. Financial figures (market cap, PER, PBR) are estimates — requires dedicated research for accurate current data."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "SAMCO securities filing, company website (murata.com), industry knowledge, SAMCO IR disclosures",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 7,
+    "notes": "Added as bilateral supplier/client of SAMCO (CMP-0060) during deep research of 6387.T. Kanazawa Murata Manufacturing Co. (subsidiary) is explicitly named as a SAMCO client in securities filing. SAMCO also holds equity stake in Murata. Financial data are estimates requiring dedicated research pass."
+  }
+}

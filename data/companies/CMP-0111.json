@@ -1,0 +1,60 @@
+{
+  "id": "CMP-0111",
+  "companyName": "Rohm Co., Ltd.",
+  "companyNameJapanese": "ローム株式会社",
+  "industryCode": "Semiconductors",
+  "ticker": "6963.T",
+  "description": "Kyoto-based integrated semiconductor manufacturer (IDM) specializing in discrete devices, ICs, and optoelectronics. World-class in SiC (Silicon Carbide) power devices — one of Japan's leading SiC producers with full vertical integration from SiC substrate to module. Also produces GaAs VCSELs, LED components, transistors, diodes, MOSFETs, power ICs, analog ICs, and system LSIs. SiC segment serves EV inverters, industrial motor drives, solar inverters, and on-board chargers. Acquired SiC substrate maker SiCrystal GmbH (Germany). Operates fabs in Japan (Kyoto, Shizuoka, Miyazaki, Fukuoka), Thailand, Philippines, and China. Uses SAMCO compound semiconductor process equipment (ICP-RIE, PECVD, ALE) for SiC and GaN device manufacturing. Key customer for SAMCO's SiC and GaN application equipment.",
+  "marketCapInYen": 700000000000,
+  "PER": 25.0,
+  "PBR": 1.2,
+  "EPS": null,
+  "website": "https://www.rohm.com/",
+  "percentOfForeignOwnership": 30.0,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [
+    "CMP-0060"
+  ],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "SAMCO Inc. (6387.T, CMP-0060) — compound semiconductor process equipment (ICP-RIE, PECVD for SiC/GaN)",
+      "SiCrystal GmbH (Rohm subsidiary, Germany) — SiC wafer substrates",
+      "DISCO Corporation (6146.T, CMP-0002) — SiC wafer dicing and grinding",
+      "Various wafer and epitaxy suppliers for SiC/GaAs"
+    ],
+    "majorClients": [
+      "Toyota Motor Corporation — SiC power modules for EVs (major strategic partner)",
+      "Denso — automotive power electronics",
+      "Continental AG — automotive systems",
+      "Industrial motor drive OEMs globally",
+      "Solar inverter manufacturers"
+    ],
+    "keyProducts": [
+      "SiC MOSFETs and diodes — automotive and industrial power",
+      "GaN power devices — fast chargers, server power supplies",
+      "GaAs VCSELs — 3D sensing, optical communications",
+      "Power ICs and analog ICs",
+      "LED components",
+      "Transistors, diodes, MOSFETs",
+      "System LSIs"
+    ],
+    "strategicHighlights": [
+      "Full SiC vertical integration: substrate (SiCrystal) → epitaxial wafer → device → module",
+      "Toyota alliance: major SiC supply agreement for Toyota EV platforms",
+      "Expanding SiC production capacity aggressively through 2027",
+      "SiCrystal GmbH (Nuremberg, Germany) acquired for SiC substrate security"
+    ],
+    "notes": "Rohm is headquartered in Kyoto, same city as SAMCO, and is one of the foremost Japanese IDMs for compound power semiconductors. Their SiC device manufacturing requires plasma etch and CVD equipment of the type SAMCO supplies. Market cap and financial figures are estimates; precise current data not confirmed in this research wave."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Company website (rohm.com), general industry knowledge, SAMCO client research",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 7,
+    "notes": "Added as confirmed client of SAMCO (CMP-0060) during deep research of 6387.T. Financial data (market cap, PER, PBR) are estimates — requires dedicated deep research pass for accurate figures."
+  }
+}

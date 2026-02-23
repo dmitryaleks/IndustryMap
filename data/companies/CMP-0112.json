@@ -1,0 +1,58 @@
+{
+  "id": "CMP-0112",
+  "companyName": "Nichia Corporation",
+  "companyNameJapanese": "日亜化学工業株式会社",
+  "industryCode": "Semiconductors",
+  "ticker": null,
+  "description": "World's largest LED manufacturer by revenue and a leading supplier of laser diodes. Private company headquartered in Anan, Tokushima, Japan. Famous as the birthplace of the high-brightness blue LED (invented by Shuji Nakamura, 2014 Nobel Prize in Physics). Core products: phosphor-converted white LEDs, high-power blue/green/UV LEDs, laser diodes (violet, blue, green for displays and optical storage), and optical semiconductor components. Supplies LEDs to automotive lighting, general illumination, backlighting, and specialized applications. Laser diodes used in projectors, displays, data storage, and materials processing. Vertically integrated from phosphors and epitaxial wafers to finished LED packages. Uses SAMCO compound semiconductor process equipment (ICP-RIE, PECVD) for III-N (GaN, InGaN, AlGaN) LED and laser diode fabrication.",
+  "marketCapInYen": null,
+  "PER": null,
+  "PBR": null,
+  "EPS": null,
+  "website": "https://www.nichia.co.jp/",
+  "percentOfForeignOwnership": null,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": null,
+  "isForexSensitive": true,
+  "suppliers": [
+    "CMP-0060"
+  ],
+  "clients": [],
+  "_externalRelationships": {
+    "majorSuppliers": [
+      "SAMCO Inc. (6387.T, CMP-0060) — ICP-RIE, PECVD, ALE equipment for GaN/InGaN LED and laser diode manufacturing (explicitly named in SAMCO securities filing)",
+      "Tosoh Corporation — quartz and substrate materials",
+      "Specialty gas suppliers for MOCVD/HVPE epitaxy processes",
+      "AIXTRON / Veeco — MOCVD epitaxy systems (primary process for LED wafer growth)"
+    ],
+    "majorClients": [
+      "Automotive tier-1 lighting suppliers (Koito, Stanley Electric, Valeo, Hella)",
+      "General illumination OEMs globally",
+      "Display and backlight manufacturers",
+      "Projector manufacturers (Sony, Panasonic)"
+    ],
+    "keyProducts": [
+      "White LEDs (phosphor-converted, highest lumen output in industry)",
+      "Blue/Green/UV LEDs",
+      "Violet laser diodes — Blu-ray disc, optical storage",
+      "Blue/Green laser diodes — RGB laser projectors, display",
+      "High-power LEDs for UV curing, horticulture, sterilization"
+    ],
+    "strategicHighlights": [
+      "Nobel Prize-winning blue LED technology foundation (Shuji Nakamura, 1993)",
+      "World's largest LED manufacturer — estimated revenues >¥400 billion",
+      "Privately held by Ogawa family (founders); not publicly listed",
+      "Deep vertical integration: phosphors, epitaxy, chips, packages",
+      "Key patent holder in III-N semiconductor technology"
+    ],
+    "notes": "Nichia is a confirmed production customer of SAMCO (explicitly named in SAMCO's securities filing). Private company — no public financial data. Estimated revenues ~¥400–500 billion annually based on industry reports. Critical player in global LED and laser supply chain."
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "SAMCO securities filing (有価証券報告書), company website (nichia.co.jp), industry knowledge",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 7,
+    "notes": "Added as confirmed production client of SAMCO (CMP-0060). Nichia is explicitly named in SAMCO's securities report as a customer for compound semiconductor process equipment. Private company — financial data not available."
+  }
+}

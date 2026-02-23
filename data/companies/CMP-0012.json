@@ -15,7 +15,9 @@
   "latestPriceYen": 20240,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": [],
+  "clients": [
+    "CMP-0060"
+  ],
   "_externalRelationships": {
     "majorClients": [
       "Semiconductor equipment manufacturers",
