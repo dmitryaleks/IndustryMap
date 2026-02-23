@@ -4,37 +4,218 @@
   "companyNameJapanese": "株式会社ディスコ",
   "industryCode": "Semiconductor Equipment",
   "ticker": "6146.T",
-  "description": "Market leader in precision cutting, grinding, and polishing equipment for semiconductor manufacturing. Holds approximately 70% market share in slicing and dicing machines.",
-  "marketCapInYen": 8000000000000,
-  "PER": 51.18,
-  "PBR": 8.97,
-  "EPS": 1206.5,
+  "description": "World's dominant manufacturer of precision cutting, grinding, and polishing equipment for semiconductors. ~70-80% global share in dicing saws, ~80% in grinders, and pioneered Stealth Dicing (laser-based, kerf-loss-free) technology with Hamamatsu Photonics. Core products: dicing saws (DFD/DAD series), laser saws (DFL series using Hamamatsu SD engine), surface/backside grinders (DFG/DAG series), surface planarizers, and precision processing tools (blades, wheels — consumables with razor-and-blade recurring revenue). Also manufactures dry polishers and KABRA plasma dicing systems. Revenue split: ~60% equipment, ~40% precision tools (consumables). FY ending March. FY2024 (Mar 2025): revenue 393.3B JPY (+27.9% YoY), OPM 42.4%, NI 123.9B JPY (+47.1%), ROE 27.6%. FY2025 guidance: revenue 419.0B JPY (+6.5%). China is 35.9% of net sales (#1 market). Founded 1937 in Hiroshima. ~5,256 employees. Unique 'Will' internal market system for resource allocation. 100% share of HBM wafer thinning grinders. Gohara Plant (Hiroshima): 14x capacity boost by 2035 for precision tools.",
+  "marketCapInYen": 8030000000000,
+  "PER": 61.39,
+  "PBR": 14.80,
+  "EPS": 1206.45,
   "website": "https://www.disco.co.jp/",
   "percentOfForeignOwnership": 45.0,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 74070,
+  "latestPriceYen": 74060,
   "isForexSensitive": true,
-  "suppliers": [],
-  "clients": [],
+  "suppliers": [
+    "CMP-0115"
+  ],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019",
+    "CMP-0020",
+    "CMP-0021",
+    "CMP-0014",
+    "CMP-0063",
+    "CMP-0064",
+    "CMP-0065",
+    "CMP-0066",
+    "CMP-0067",
+    "CMP-0068",
+    "CMP-0069",
+    "CMP-0070",
+    "CMP-0075",
+    "CMP-0076",
+    "CMP-0077",
+    "CMP-0078",
+    "CMP-0079",
+    "CMP-0083",
+    "CMP-0084",
+    "CMP-0093",
+    "CMP-0094",
+    "CMP-0095",
+    "CMP-0101",
+    "CMP-0102",
+    "CMP-0103",
+    "CMP-0104",
+    "CMP-0105",
+    "CMP-0106",
+    "CMP-0107",
+    "CMP-0108",
+    "CMP-0109",
+    "CMP-0110"
+  ],
   "_externalRelationships": {
     "majorClients": [
-      "Foundries",
-      "OSATs",
-      "IDMs globally"
+      "TSMC (CMP-0017) — dicing, grinding, polishing; largest customer; Kumamoto JASM proximity",
+      "Samsung Electronics (CMP-0018) — dicing saws/grinders for logic & memory fabs",
+      "Intel (CMP-0019) — dicing, grinding equipment",
+      "SK Hynix (CMP-0020) — dicing, grinding; 100% HBM wafer thinning grinders",
+      "Micron (CMP-0021) — dicing, grinding for memory",
+      "Kioxia (CMP-0014) — dicing, grinding for NAND",
+      "ASE Technology (CMP-0063) — dicing saws, blades (OSAT #1)",
+      "Amkor Technology (CMP-0064) — dicing saws, blades (OSAT #2)",
+      "JCET Group (CMP-0065) — dicing saws, blades (China OSAT #1)",
+      "SMIC (CMP-0066) — dicing saws (China foundry #1)",
+      "Tongfu Microelectronics (CMP-0067) — dicing saws, blades (China OSAT #2)",
+      "Tianshui Huatian (CMP-0068) — dicing saws, blades (China OSAT #3)",
+      "Powertech Technology (CMP-0069) — dicing saws (Taiwan memory OSAT)",
+      "Hua Hong Semiconductor (CMP-0070) — dicing saws (China foundry #2)",
+      "DB HiTek (CMP-0075) — dicing saws (Korea foundry #2)",
+      "HANA Micron (CMP-0076) — dicing saws (Korea OSAT #1)",
+      "Nepes Corporation (CMP-0077) — dicing saws (Korea OSAT)",
+      "SFA Semicon (CMP-0078) — dicing saws (Korea OSAT)",
+      "LB Semicon (CMP-0079) — dicing saws (Korea OSAT)",
+      "Nexchip (CMP-0083) — dicing saws (China foundry #3)",
+      "CR Micro (CMP-0084) — dicing saws (China IDM)",
+      "YMTC (CMP-0093) — dicing saws (China NAND, pre-sanctions)",
+      "CanSemi (CMP-0094) — dicing saws (Guangzhou foundry)",
+      "GTA Semiconductor (CMP-0095) — dicing saws (Shanghai specialty foundry)",
+      "KYEC (CMP-0101) — dicing saws (Taiwan test house)",
+      "UMC (CMP-0102) — dicing saws (Taiwan foundry #2)",
+      "VSMC/Vanguard (CMP-0103) — dicing saws (Taiwan specialty foundry)",
+      "Chipbond (CMP-0104) — dicing saws (Taiwan OSAT)",
+      "ChipMOS (CMP-0105) — dicing saws (Taiwan OSAT)",
+      "GlobalFoundries (CMP-0106) — dicing saws/grinders (world #3 foundry)",
+      "UTAC (CMP-0107) — dicing saws (Singapore OSAT)",
+      "Inari Amertron (CMP-0108) — dicing saws (Malaysia OSAT #1)",
+      "Unisem (CMP-0109) — dicing saws (Malaysia OSAT)",
+      "MPI/Carsem (CMP-0110) — dicing saws (Malaysia OSAT)"
     ],
-    "historicalClients": [
-      "Texas Instruments (early adopter)"
+    "majorSuppliers": [
+      "Hamamatsu Photonics (6965.T, CMP-0115) — Stealth Dicing (SD) engine: modularized laser + optics module for DFL laser saw series. Hamamatsu holds the SD patent portfolio; DISCO integrates the engine into its equipment platform. Deep co-development relationship.",
+      "Tomei Diamond Corporation (private) — likely supplier of synthetic diamond powder for blade/wheel manufacturing (unconfirmed)"
     ],
     "competitors": [
-      "Tokyo Seimitsu (CMP-0001)"
+      "Tokyo Seimitsu / ACCRETECH (CMP-0001) — world #2 in dicing (~10% global share vs DISCO's 70-80%); also competes in grinding/polishing",
+      "Guangli Technology / ADT (CMP-0074) — world #3 in dicing; China/Israel; growing in China domestic market",
+      "EO Technics (CMP-0099) — laser stealth dicing (Korea); alternative technology to blade dicing",
+      "Heyan Technology (CMP-0089) — first mass-produced domestic Chinese dicer; growing share in China",
+      "CETC / Shuoke Jingwei (CMP-0091) — CMP + dicing (China state-owned, CETC subsidiary)",
+      "Applied Micro (ADT subsidiary, now Guangli) — historical competitor in precision dicing",
+      "Hanmi Semiconductor (CMP-0072) — package singulation overlap"
     ],
-    "notes": "70%+ market share in dicing saws and grinders. DISCO + Tokyo Seimitsu = 90% of global dicing market."
+    "financialSummary": {
+      "FY2024_ended_Mar2025": {
+        "netSales": "393.3B JPY (+27.9% YoY)",
+        "operatingIncome": "~166.7B JPY (+42.4% OPM)",
+        "netIncome": "123.9B JPY (+47.1% YoY)",
+        "operatingMargin": "42.4%",
+        "ROE": "27.6%",
+        "EPS": "1,143 JPY",
+        "dividendPerShare": "413 JPY (payout 36.1%)",
+        "note": "Record revenue and profit; driven by AI/HBM demand and advanced packaging growth"
+      },
+      "FY2025_9M_Apr_Dec2025": {
+        "netSales": "303.8B JPY (+11.5% YoY)",
+        "operatingIncome": "126.2B JPY (+9.7% YoY)",
+        "netIncome": "92.6B JPY (+8.7% YoY)",
+        "operatingMargin": "41.5%",
+        "EPS": "854.42 JPY",
+        "note": "Continued strong demand; record-high shipments in Oct-Dec quarter"
+      },
+      "FY2025_forecast_Mar2026": {
+        "netSales": "419.0B JPY (+6.5% YoY)",
+        "operatingIncome": "172.1B JPY (+3.2% YoY)",
+        "netIncome": "126.4B JPY (+2.0% YoY)",
+        "operatingMargin": "~41.1%",
+        "EPS": "1,165.72 JPY",
+        "dividendPerShare": "437 JPY (raised from prior guidance)",
+        "note": "Guidance revised upward Jan 2026"
+      },
+      "FY2023_ended_Mar2024": {
+        "netSales": "307.5B JPY",
+        "operatingIncome": "~127.0B JPY",
+        "netIncome": "84.2B JPY",
+        "operatingMargin": "~41.3%",
+        "note": "Strong but pre-AI boom"
+      },
+      "FY2022_ended_Mar2023": {
+        "netSales": "~276.5B JPY",
+        "operatingMargin": "~39%",
+        "note": "Semiconductor downcycle impact"
+      }
+    },
+    "geographicRevenue_FY2024": {
+      "China": "35.9%",
+      "Americas": "13.1%",
+      "Japan": "12.2%",
+      "Taiwan": "11.9%",
+      "Europe": "9.7%",
+      "SouthKorea": "8.8%",
+      "OtherAsia": "8.4%"
+    },
+    "shareholderStructure": {
+      "totalSharesOutstanding": 108446529,
+      "freeFloat": "80.52%",
+      "topShareholders": [
+        "Daiichi Holdings, Inc.: 5.53%",
+        "Nomura Asset Management: 5.16%",
+        "Sekiya Hideyuki (founder family): 5.13%",
+        "Sekiya Keizo (founder family): 4.65%",
+        "BlackRock, Inc.: ~10.5% (beneficial)",
+        "Vanguard Group: ~8.2% (beneficial)",
+        "Wellington Management: ~6.7% (beneficial)",
+        "Amova Asset Management: 2.51%"
+      ],
+      "founderFamilyStake": "~9.8% combined (Sekiya family)",
+      "foreignOwnership": "~45%",
+      "institutionalOwnership": "~43.9%"
+    },
+    "dividendHistory": {
+      "FY2024": "413 JPY (payout 36.1%)",
+      "FY2023": "307 JPY (payout 39.5%)",
+      "FY2022": "305 JPY (payout 39.9%)",
+      "FY2021": "269 JPY (payout 44.0%)",
+      "FY2025_forecast": "437 JPY (raised)",
+      "policy": "Performance-linked: 25% of half-yearly NI; plus additional dividend (1/3 surplus funds) on final. Minimum guarantee: 20 JPY/year."
+    },
+    "capacityExpansion": [
+      "Gohara Plant (Kure City, Hiroshima): New precision tools factory. Three-phase construction. 218,539 m2 site. Will boost tool (blades/wheels) output capacity 14x by 2035. Announced April 2025. Consolidates production from Kure and Kuwabata Plants. Also addresses BCM (tsunami risk at current Kure Plant).",
+      "Nagano Works: Existing equipment manufacturing hub; ongoing expansion for dicing saw and grinder production.",
+      "Hiroshima Works (Kure): Current main production facility for precision tools; to be gradually consolidated into Gohara.",
+      "Global service network: 90+ countries served; local service centers expanding in Taiwan, Korea, China, Southeast Asia."
+    ],
+    "keyRisks": [
+      "Extreme valuation: TTM P/E 61.4x, P/B 14.8x — priced for perfection; any growth deceleration could cause sharp correction",
+      "China concentration: 35.9% of revenue; geopolitical tensions, export controls could restrict sales; domestic substitution accelerating (Heyan, Guangli)",
+      "Cyclicality: Despite premium positioning, semiconductor equipment demand is cyclical; FY2025 growth already decelerating to +6.5% from +27.9%",
+      "AI demand sustainability: Revenue growth heavily linked to AI/HBM buildout; any slowdown in AI capex would directly impact",
+      "Technology disruption: Laser dicing (EO Technics), plasma dicing (SPTS/others), and Chinese alternatives could erode blade dicing dominance long-term",
+      "FX sensitivity: ~88% overseas revenue; yen appreciation would compress margins",
+      "Single-segment risk: Pure-play on cutting/grinding — no diversification hedge unlike Tokyo Seimitsu (probing + metrology)",
+      "Founder family influence: Sekiya family holds ~9.8% combined; succession risk"
+    ],
+    "growthDrivers": [
+      "AI/HBM demand: 100% share in HBM wafer thinning grinders; every HBM stack requires DISCO grinding",
+      "Advanced packaging: Chiplet architectures, fan-out, 2.5D/3D packaging drive increased dicing and grinding steps per wafer",
+      "Stealth Dicing adoption: Kerf-loss-free laser dicing expanding into MEMS, memory, power devices",
+      "Consumables flywheel: ~40% of revenue from blades/wheels; installed base of 30,000+ machines globally creates annuity-like recurring revenue",
+      "Gohara Plant: 14x capacity for tools by 2035 ensures supply can meet long-term demand growth",
+      "Geographic expansion: Service network in 90+ countries; co-locating with TSMC/Samsung/Intel new fabs",
+      "KABRA plasma dicing: Next-generation dicing for ultra-thin and small chips; potential new growth vector"
+    ],
+    "valuationContext": {
+      "DISCO_6146T": { "PE": 61.39, "PB": 14.80, "fwdPE": 46.33, "marketCap": "8.03T JPY" },
+      "TokyoSeimitsu_7729T": { "PE": 31.8, "PB": 3.79, "note": "Direct competitor; much lower multiples but lower margins (20% vs 42%)" },
+      "note": "DISCO commands the highest multiples in Japanese semiconductor equipment, reflecting its near-monopoly in dicing (70-80%) and unmatched margins (42%). Premium is extreme but historically justified by consistent execution. Forward P/E of 46x with only 6.5% revenue growth suggests limited margin of safety."
+    }
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, Bloomberg, SemiAnalysis",
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "DISCO IR (disco.co.jp), Yahoo Finance, MarketScreener, StockAnalysis, Investing.com, BigGo Finance, Wisesheets, Dividend Japan",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T14:00:00Z",
-    "notes": "52-week range: 22,640-76,890 JPY. Dividend yield: 0.57%. 12 analysts rate Buy. Dominates niche for decades."
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 1,
+    "deepResearch": true,
+    "notes": "Deep research update 2026-02-23. FY2024 record results: revenue 393.3B (+27.9%), OPM 42.4%, NI 123.9B (+47.1%), ROE 27.6%. FY2025 guidance revised up: revenue 419.0B, OP 172.1B. Stock near 52-week high at 74,060 JPY; TTM P/E 61.4x, P/B 14.8x. China 35.9% of sales. Gohara Plant: 14x tool capacity by 2035. 34 identified clients across 8 countries. Hamamatsu Photonics confirmed as key supplier (SD engine). Dividend FY2025E: 437 JPY."
   }
 }

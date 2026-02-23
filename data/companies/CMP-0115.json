@@ -1,0 +1,83 @@
+{
+  "id": "CMP-0115",
+  "companyName": "Hamamatsu Photonics K.K.",
+  "companyNameJapanese": "浜松ホトニクス株式会社",
+  "industryCode": "Semiconductor Equipment",
+  "ticker": "6965.T",
+  "description": "Global leader in opto-electronics, manufacturing photomultiplier tubes (PMTs, ~90% world share), photodiodes, image sensors, infrared detectors, laser sources, and measurement systems. Over 15,000 products across 4 divisions: Electron Tube, Solid State (opto-semiconductors), Systems, and Laser Promotion. Critical semiconductor supply chain role: develops and manufactures the patented Stealth Dicing (SD) engine — a modularized laser and optics module — supplied exclusively to DISCO Corporation for its DFL laser saw series. SD technology enables kerf-loss-free, completely dry dicing of semiconductor wafers. Also supplies microfocus X-ray sources for semiconductor inspection and optical sensors for wafer inspection/lithography alignment. Products shipped to 100+ countries. R&D intensity 8.7% of sales. FY ending September. FY2024 (Sep 2024): revenue 204.0B JPY (-7.9% YoY), OPM ~15.7%, NI 25.2B JPY. Founded 1953 in Hamamatsu. ~6,601 employees.",
+  "marketCapInYen": 546000000000,
+  "PER": 43.45,
+  "PBR": 1.71,
+  "EPS": 42.90,
+  "website": "https://www.hamamatsu.com/",
+  "percentOfForeignOwnership": 29.9,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 1864,
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0002"
+  ],
+  "_externalRelationships": {
+    "majorClients": [
+      "DISCO Corporation (6146.T, CMP-0002) — Stealth Dicing (SD) engine: Hamamatsu holds SD patent portfolio and develops modularized laser+optics system exclusively for DISCO's DFL laser saw series. Deep co-development partnership.",
+      "Scientific/medical institutions worldwide (PMTs for particle physics, PET scanners, analytical instruments)",
+      "Semiconductor equipment makers (optical sensors, X-ray sources for inspection systems)",
+      "Automotive industry (LiDAR sensors, infrared detectors)"
+    ],
+    "competitors": [
+      "Thorlabs — photonic components",
+      "II-VI / Coherent — laser sources, optoelectronics",
+      "Photon Control (acquired by MKS) — optical sensors for semi equipment",
+      "OSI Optoelectronics — photodiodes",
+      "ET Enterprises — PMTs (much smaller)"
+    ],
+    "financialSummary": {
+      "FY2024_ended_Sep2024": {
+        "netSales": "204.0B JPY (-7.9% YoY)",
+        "operatingIncome": "32.1B JPY (-43.3% YoY)",
+        "netIncome": "25.2B JPY (-41.3% YoY)",
+        "operatingMargin": "~15.7%",
+        "ROE": "~8%",
+        "dividendPerShare": "38 JPY",
+        "note": "Down year; post-pandemic normalization and China demand softness"
+      },
+      "FY2023_ended_Sep2023": {
+        "netSales": "221.4B JPY",
+        "operatingIncome": "56.7B JPY",
+        "operatingMargin": "~25.6%",
+        "note": "Peak year driven by post-COVID demand and China spending"
+      },
+      "FY2026_forecast_Sep2026": {
+        "netSales": "~224B JPY",
+        "netIncome": "~14.6B JPY",
+        "note": "Recovery expected from semiconductor equipment cycle upturn"
+      }
+    },
+    "geographicRevenue": {
+      "Asia": "~30% (China ~21%)",
+      "NorthAmerica": "~26%",
+      "Japan": "~23%",
+      "Europe": "~21%"
+    },
+    "shareholderStructure": {
+      "sharesOutstanding": 292870000,
+      "freeFloat": "88.69%",
+      "foreignInvestors": "29.9%",
+      "financialInstitutions": "29.8%",
+      "treasuryShares": "9.4%",
+      "individuals": "23.3%",
+      "otherCorporations": "4.5%"
+    },
+    "notes": "Hamamatsu Photonics is a unique company — a global monopolist in photomultiplier tubes (~90% world share) with deep expertise in photon detection and laser technology. The Stealth Dicing partnership with DISCO is a critical technology chokepoint: Hamamatsu owns the IP and builds the laser engine, DISCO integrates it into production equipment. This relationship makes Hamamatsu an upstream supplier to the entire global semiconductor dicing ecosystem. The company has historically traded at premium multiples reflecting its monopoly positions and high R&D intensity (8.7% of sales). Founded by a group of Shizuoka University researchers with a mission to 'advance photonics for the betterment of society.'"
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Hamamatsu Photonics IR (hamamatsu.com), Yahoo Finance, MarketScreener, StockAnalysis, DCF Modeling, Wikipedia",
+    "confidenceLevel": "high",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 7,
+    "deepResearch": false,
+    "notes": "Added as DISCO's key supplier for Stealth Dicing laser engine. FY2024 (Sep 2024): revenue 204.0B (-7.9%), OPM 15.7%. Market cap 546B JPY; P/E 43.45x, P/B 1.71x. 90% world share in PMTs. Foreign ownership 29.9%. Near 52-week high at 1,864 JPY."
+  }
+}

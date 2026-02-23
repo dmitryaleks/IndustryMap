@@ -1,13 +1,13 @@
 {
   "version": "4.0.0",
   "generatedAt": "2026-02-21T23:00:00Z",
-  "description": "Semiconductor supply chain graph - 110 companies, 7 regions (Wave 6: Chinese ecosystem - foundries, equipment, memory/IC)",
+  "description": "Semiconductor supply chain graph - 111 companies, 7 regions (Wave 7: DISCO deep research + Hamamatsu Photonics supplier)",
   "statistics": {
-    "totalNodes": 110,
-    "totalEdges": 321,
+    "totalNodes": 111,
+    "totalEdges": 350,
     "edgeTypes": {
-      "supplier": 263,
-      "competitor": 42,
+      "supplier": 287,
+      "competitor": 46,
       "partner": 4,
       "ecosystem": 12
     }
@@ -892,6 +892,14 @@
       "country": "Malaysia",
       "ticker": "3867.KL",
       "marketCap": null
+    },
+    {
+      "id": "CMP-0115",
+      "name": "Hamamatsu Photonics",
+      "industry": "Semiconductor Equipment",
+      "country": "Japan",
+      "ticker": "6965.T",
+      "marketCap": 546000000000
     }
   ],
   "edges": [
@@ -2778,6 +2786,162 @@
       "target": "CMP-0046",
       "type": "supplier",
       "label": "novolac resins for photoresist"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0017",
+      "type": "supplier",
+      "label": "dicing saws, grinders, polishers (70% global share)"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0018",
+      "type": "supplier",
+      "label": "dicing saws, grinders"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0019",
+      "type": "supplier",
+      "label": "dicing saws, grinders"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0020",
+      "type": "supplier",
+      "label": "dicing saws, grinders (100% HBM wafer thinning)"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0021",
+      "type": "supplier",
+      "label": "dicing saws, grinders"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0014",
+      "type": "supplier",
+      "label": "dicing saws, grinders (NAND)"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0066",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0070",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0075",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0076",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0077",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0078",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0079",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0083",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0084",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0093",
+      "type": "supplier",
+      "label": "dicing saws (pre-sanctions)"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0094",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0095",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0102",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0103",
+      "type": "supplier",
+      "label": "dicing saws"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0106",
+      "type": "supplier",
+      "label": "dicing saws, grinders"
+    },
+    {
+      "source": "CMP-0115",
+      "target": "CMP-0002",
+      "type": "supplier",
+      "label": "Stealth Dicing laser engine (SD engine)"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0089",
+      "type": "competitor",
+      "label": "dicing equipment (China domestic)"
+    },
+    {
+      "source": "CMP-0089",
+      "target": "CMP-0002",
+      "type": "competitor",
+      "label": "dicing equipment (China domestic)"
+    },
+    {
+      "source": "CMP-0002",
+      "target": "CMP-0091",
+      "type": "competitor",
+      "label": "dicing equipment (China state-owned)"
+    },
+    {
+      "source": "CMP-0091",
+      "target": "CMP-0002",
+      "type": "competitor",
+      "label": "dicing equipment (China state-owned)"
     }
   ]
 }

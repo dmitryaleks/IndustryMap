@@ -2,7 +2,7 @@
   "$schema": "../schema/company.schema.json",
   "version": "3.0.0",
   "lastUpdated": "2026-02-23T00:00:00Z",
-  "totalCompanies": 114,
+  "totalCompanies": 115,
   "waves": {
     "wave1": {
       "count": 16,
@@ -35,13 +35,13 @@
       "description": "Chinese semiconductor ecosystem - foundries, equipment makers, and memory/IC companies linked to existing supply chain nodes"
     },
     "wave7": {
-      "count": 4,
+      "count": 5,
       "status": "complete",
-      "description": "SAMCO Inc. (6387.T) deep research - compound semiconductor equipment clients and suppliers: Rohm (SiC/GaN), Nichia (LED/laser), Murata Manufacturing (bilateral), ADTEC Plasma Technology (RF power supplier)"
+      "description": "SAMCO deep research (Rohm, Nichia, Murata, ADTEC) + DISCO deep research (Hamamatsu Photonics supplier)"
     }
   },
   "industryBreakdown": {
-    "Semiconductor Equipment": 44,
+    "Semiconductor Equipment": 45,
     "Semiconductor Materials": 26,
     "Semiconductor Packaging/OSAT": 16,
     "Semiconductor Foundry": 10,
@@ -54,7 +54,7 @@
     "Semiconductor Testing/OSAT": 1
   },
   "geographyBreakdown": {
-    "Japan": 57,
+    "Japan": 58,
     "China": 18,
     "South Korea": 14,
     "Unknown": 9,
@@ -747,6 +747,12 @@
       "name": "ADTEC Plasma Technology Co., Ltd.",
       "ticker": null,
       "wave": 7
+    },
+    {
+      "id": "CMP-0115",
+      "name": "Hamamatsu Photonics K.K.",
+      "ticker": "6965.T",
+      "wave": 7
     }
   ],
   "keyRelationships": {
@@ -760,7 +766,9 @@
       "CMP-0048 (Ibiden) -> 50%+ of AI server IC package substrates",
       "CMP-0052 (Organo) -> Nearly exclusive TSMC ultrapure water supplier",
       "CMP-0001 (Tokyo Seimitsu) -> 46% of wafer probers (world #1), 10% of dicing",
-      "CMP-0072 (Hanmi) -> 71.2% of HBM TC bonders (world #1)"
+      "CMP-0072 (Hanmi) -> 71.2% of HBM TC bonders (world #1)",
+      "CMP-0002 (DISCO) -> 70-80% of dicing saws, 80% of grinders, 100% of HBM wafer thinning",
+      "CMP-0115 (Hamamatsu) -> Stealth Dicing laser engine (sole SD engine supplier to DISCO)"
     ],
     "tokyoSeimitsuSupplyChain": {
       "clients_by_country": {

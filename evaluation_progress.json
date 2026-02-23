@@ -159,27 +159,27 @@
       "ticker": "6146.T",
       "industryCode": "Semiconductor Equipment",
       "peerGroup": "G1",
-      "marketCapTier": "Unknown",
+      "marketCapTier": "Mega",
       "researchStatus": "complete",
       "scoringStatus": "complete",
-      "researchCompleteness_pct": 86.7,
+      "researchCompleteness_pct": 98.0,
       "researchData": {
-        "PER": 51.18,
-        "forwardPER": null,
-        "PBR": 8.97,
-        "EPS": 1206.5,
-        "ROE": 26.5,
-        "marketCapInYen": 8000000000000,
+        "PER": 61.39,
+        "forwardPER": 46.33,
+        "PBR": 14.80,
+        "EPS": 1206.45,
+        "ROE": 27.6,
+        "marketCapInYen": 8030000000000,
         "marketCapUSD": null,
-        "latestPriceYen": 74070,
+        "latestPriceYen": 74060,
         "latestPriceLocal": null,
         "localCurrency": null,
         "weekHigh52": 76890,
         "weekLow52": 22640,
-        "revenueLatestFY_JPY_B": null,
-        "revenueGrowthYoY_pct": 12.64,
-        "operatingMargin_pct": 41.38,
-        "dividendYield_pct": 0.57,
+        "revenueLatestFY_JPY_B": 393.3,
+        "revenueGrowthYoY_pct": 27.88,
+        "operatingMargin_pct": 42.4,
+        "dividendYield_pct": 0.59,
         "foreignOwnership_pct": 45.0,
         "circulatingEquity_pct": null,
         "analystBuy": 12,
@@ -187,63 +187,64 @@
         "analystSell": 1,
         "analystAvgTarget_local": 63711,
         "isForexSensitive": true,
-        "chinaRevenue_pct_est": null,
+        "chinaRevenue_pct_est": 35.9,
         "topCustomerRev_pct_est": null,
         "hasBuyback": false
       },
       "scores": {
         "A": {
           "A1_PER_discount": 0,
-          "A2_fwdPER_discount": null,
+          "A2_fwdPER_discount": 0,
           "A3_PBR_discount": 0,
           "A4_earningsYield": 1,
-          "total": 1.2,
-          "note": "Scored 3/4 sub-dimensions; pro-rata rescaled to 30"
+          "total": 1.0,
+          "note": "All sub-dimensions scored. TTM P/E 61x and forward P/E 46x both well above peer medians. P/B 14.8x extreme. Minimal valuation appeal."
         },
         "B": {
           "B1_marketShare": 8,
           "B2_switchingCosts": 3,
           "B3_techDiff": 4,
-          "B4_chainCentrality": 3,
-          "total": 18,
-          "note": "Scored from company descriptions and graph.json"
+          "B4_chainCentrality": 4,
+          "total": 19,
+          "note": "Moat upgraded: 70-80% dicing share, 80% grinders, 100% HBM wafer thinning. Chain centrality raised to 4 with 34 identified clients across 8 countries."
         },
         "C": {
-          "C1_revenueGrowth": 3,
+          "C1_revenueGrowth": 4,
           "C2_operatingMargin": 4,
-          "C3_ROE": 3,
-          "C4_AIexposure": 3,
-          "total": 13.0,
-          "note": "All sub-dimensions scored"
+          "C3_ROE": 4,
+          "C4_AIexposure": 4,
+          "total": 15.0,
+          "note": "Revenue growth 27.9% FY2024, OPM 42.4%, ROE 27.6%. Maximum AI exposure via 100% HBM wafer thinning share."
         },
         "D": {
           "D1_foreignOwnershipGap": 1,
           "D2_floatDynamics": 1,
           "D3_priceVs52W": 0,
           "total": 2.0,
-          "note": "All sub-dimensions scored"
+          "note": "Foreign ownership already at ~45%; near 52-week high; limited re-rating catalyst from ownership."
         },
         "E": {
           "E1_analystConsensus": 1,
-          "E2_capacityExpansion": 2,
+          "E2_capacityExpansion": 3,
           "E3_policyTailwinds": 2,
-          "total": 5.0,
-          "note": "All sub-dimensions scored"
+          "total": 6.0,
+          "note": "Gohara Plant 14x capacity boost by 2035 is major expansion catalyst. Analyst consensus mixed (current price above avg target)."
         },
         "F": {
           "F1_forexSensitivity": 1,
           "F2_customerConcentration": 4,
-          "F3_geopoliticalRisk": 2,
-          "total": 7,
-          "note": "Scored from isForexSensitive, client arrays, descriptions"
+          "F3_geopoliticalRisk": 1,
+          "total": 6,
+          "note": "China 35.9% of sales creates geopolitical risk; 88% overseas revenue; diversified client base mitigates customer concentration."
         }
       },
-      "rawComposite": 46.2,
-      "dataCoverage_pct": 95.2,
+      "rawComposite": 49.0,
+      "dataCoverage_pct": 98.0,
       "confidenceMultiplier": 1.0,
-      "finalScore": 46.2,
+      "finalScore": 49.0,
       "confidence": "High",
-      "notes": ""
+      "notes": "Deep research update 2026-02-23. FY2024 record: revenue 393.3B (+27.9%), OPM 42.4%, ROE 27.6%. FY2025 guidance: 419.0B (+6.5%). TTM P/E expanded to 61.4x, P/B 14.8x — extreme valuation. China 35.9% of sales. 34 clients identified across 8 countries. Hamamatsu Photonics confirmed as SD engine supplier. Gohara Plant: 14x tool capacity by 2035. Score improved +2.8 pts driven by moat and growth upgrades, partially offset by lower valuation score.",
+      "investmentThesis": "DISCO Corporation (6146.T) is the undisputed global champion in precision cutting, grinding, and polishing of semiconductor wafers, holding ~70-80% of the dicing saw market and ~80% of the grinder market — a duopoly with Tokyo Seimitsu (10% dicing) that together controls 90% of all global dicing equipment. Crucially, DISCO holds 100% share in HBM wafer thinning grinders, making it the sole equipment supplier for one of the fastest-growing segments in semiconductors. Every HBM memory stack produced by SK Hynix, Samsung, or Micron runs through a DISCO grinder. The company also pioneered Stealth Dicing technology in partnership with Hamamatsu Photonics (6965.T), which supplies the proprietary laser engine.\n\nFinancial execution is exceptional: FY2024 delivered record revenue of 393.3B JPY (+27.9%), operating margin of 42.4%, and ROE of 27.6% — among the highest in the global semiconductor equipment industry. The razor-and-blade business model generates ~40% of revenue from precision tools (blades, wheels) with an installed base of 30,000+ machines globally, creating annuity-like recurring revenue with high margins. FY2025 guidance of 419.0B JPY (+6.5%) reflects continued AI-driven demand, though growth is decelerating from the prior year's surge.\n\nThe investment challenge is valuation. At a TTM P/E of 61.4x and P/B of 14.8x, DISCO trades at the most extreme multiples in Japanese semiconductor equipment — roughly 2x Tokyo Seimitsu's P/E (31.8x) and 4x its P/B (3.79x). The premium reflects monopoly-like market positioning and superior margins (42% vs ~20% for ACCRETECH), but leaves virtually no margin of safety. Forward P/E of 46.3x with only 6.5% revenue growth implies the market is pricing in multi-year sustained outperformance.\n\nGrowth drivers remain powerful: (1) AI/HBM buildout requiring wafer thinning for every memory stack; (2) advanced packaging proliferation (chiplets, fan-out, 2.5D/3D) increasing dicing/grinding steps per wafer; (3) Gohara Plant ramping tool capacity 14x by 2035; (4) Stealth Dicing adoption expanding into MEMS, power devices, and memory. Key risks: China at 35.9% of sales faces export control and domestic substitution pressures (Heyan, Guangli accelerating); the stock's 52-week range of 22,640-76,890 JPY (3.4x range) signals extreme volatility; founder family (Sekiya) holds ~9.8% creating succession overhang.\n\nDISCO is a best-in-class franchise deserving a place in any semiconductor portfolio, but current entry at 74,060 JPY requires conviction that AI-driven equipment demand will sustain at elevated levels for 3+ years. For patient investors, a pullback toward 50,000-60,000 JPY (more in line with analyst consensus of ~63,700 JPY) would offer a materially better risk/reward. [Confidence: High — deep research update 2026-02-23]"
     },
     {
       "id": "CMP-0003",
