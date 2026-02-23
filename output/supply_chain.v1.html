@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semiconductor Supply Chain Map - 74 Companies</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+        #sidebar {
+            width: 340px;
+            background: #12121a;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 1px solid #2a2a3a;
+        }
+        #graph {
+            flex: 1;
+            position: relative;
+        }
+        h1 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        .subtitle {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 24px;
+        }
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        .filter-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .filter-btn {
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            border: 1px solid #3a3a4a;
+            background: transparent;
+            color: #aaa;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover {
+            border-color: #5a5a6a;
+            color: #fff;
+        }
+        .filter-btn.active {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: #fff;
+        }
+        .legend {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+        }
+        .legend-circle {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+        .legend-line {
+            width: 30px;
+            height: 3px;
+            border-radius: 2px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .stat-card {
+            background: #1a1a24;
+            padding: 12px;
+            border-radius: 8px;
+        }
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .stat-label {
+            font-size: 0.75rem;
+            color: #888;
+        }
+        #tooltip {
+            position: absolute;
+            background: #1a1a24;
+            border: 1px solid #3a3a4a;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 0.85rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            max-width: 320px;
+            z-index: 1000;
+        }
+        #tooltip.visible {
+            opacity: 1;
+        }
+        #tooltip h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        #tooltip .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+        #tooltip .info-label {
+            color: #888;
+        }
+        #tooltip .info-value {
+            color: #fff;
+        }
+        .node {
+            cursor: pointer;
+        }
+        .node text {
+            font-size: 10px;
+            fill: #ccc;
+            pointer-events: none;
+        }
+        .link {
+            fill: none;
+            stroke-opacity: 0.3;
+        }
+        .link.supplier { stroke: #3b82f6; }
+        .link.competitor { stroke: #ef4444; }
+        .link.partner { stroke: #22c55e; }
+        .link.ecosystem { stroke: #a855f7; }
+        .link.highlighted {
+            stroke-opacity: 1;
+            stroke-width: 3px !important;
+        }
+        .node.dimmed circle {
+            opacity: 0.2;
+        }
+        .node.dimmed text {
+            opacity: 0.2;
+        }
+        .link.dimmed {
+            stroke-opacity: 0.03;
+        }
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+        }
+        .control-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #3a3a4a;
+            background: #12121a;
+            color: #aaa;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .control-btn:hover {
+            background: #1a1a24;
+            color: #fff;
+        }
+        .critical-badge {
+            background: #dc2626;
+            color: white;
+            font-size: 0.65rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 6px;
+        }
+        #search {
+            width: 100%;
+            padding: 10px 14px;
+            background: #1a1a24;
+            border: 1px solid #3a3a4a;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        #search:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+        #search::placeholder {
+            color: #666;
+        }
+        .critical-scroll {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .wave-badge {
+            font-size: 0.65rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 4px;
+        }
+        .wave-1 { background: #059669; color: white; }
+        .wave-2 { background: #2563eb; color: white; }
+        .wave-3 { background: #7c3aed; color: white; }
+        .wave-4 { background: #f97316; color: white; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <h1>Semiconductor Supply Chain</h1>
+            <p class="subtitle">74 companies across 7 countries (Wave 4 Complete)</p>
+
+            <input type="text" id="search" placeholder="Search companies...">
+
+            <div class="section">
+                <div class="section-title">Statistics</div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">74</div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">208</div>
+                        <div class="stat-label">Relationships</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">51</div>
+                        <div class="stat-label">Japanese</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">13</div>
+                        <div class="stat-label">Critical Nodes</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Filter by Country</div>
+                <div class="filter-group" id="country-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Japan">Japan (51)</button>
+                    <button class="filter-btn" data-filter="USA">USA (6)</button>
+                    <button class="filter-btn" data-filter="China">China (5)</button>
+                    <button class="filter-btn" data-filter="Taiwan">Taiwan (4)</button>
+                    <button class="filter-btn" data-filter="South Korea">Korea (3)</button>
+                    <button class="filter-btn" data-filter="Netherlands">Netherlands</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Filter by Industry</div>
+                <div class="filter-group" id="industry-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Semiconductor Equipment">Equipment (26)</button>
+                    <button class="filter-btn" data-filter="Semiconductor Materials">Materials (21)</button>
+                    <button class="filter-btn" data-filter="Semiconductor Packaging/OSAT">OSAT (5)</button>
+                    <button class="filter-btn" data-filter="Semiconductor Foundry">Foundry (3)</button>
+                    <button class="filter-btn" data-filter="Semiconductors">IDM/Fabless</button>
+                    <button class="filter-btn" data-filter="Memory Semiconductors">Memory</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Filter by Wave</div>
+                <div class="filter-group" id="wave-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="1">Wave 1 (16)</button>
+                    <button class="filter-btn" data-filter="2">Wave 2 (12)</button>
+                    <button class="filter-btn" data-filter="3">Wave 3 (34)</button>
+                    <button class="filter-btn" data-filter="4">Wave 4 (12)</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Relationship Types</div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-line" style="background: #3b82f6;"></div>
+                        <span>Supplier (168)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line" style="background: #ef4444;"></div>
+                        <span>Competitor (18)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line" style="background: #22c55e;"></div>
+                        <span>Partner (6)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line" style="background: #a855f7;"></div>
+                        <span>Ecosystem (16)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Node Colors by Country</div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-circle" style="background: #ef4444;"></div>
+                        <span>Japan</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-circle" style="background: #3b82f6;"></div>
+                        <span>USA</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-circle" style="background: #22c55e;"></div>
+                        <span>South Korea</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-circle" style="background: #f59e0b;"></div>
+                        <span>Taiwan</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-circle" style="background: #f97316;"></div>
+                        <span>China</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-circle" style="background: #8b5cf6;"></div>
+                        <span>Netherlands</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Critical Supply Chain Nodes</div>
+                <div class="legend critical-scroll">
+                    <div class="legend-item">
+                        <span>ASML</span><span class="critical-badge">100% EUV</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>Lasertec</span><span class="critical-badge">100% inspection</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>Shin-Etsu</span><span class="critical-badge">42% wafers</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>TSMC</span><span class="critical-badge">90% AI chips</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>Stella Chemifa</span><span class="critical-badge">HF monopoly</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>Ibiden</span><span class="critical-badge">50% AI substrates</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>Organo</span><span class="critical-badge">TSMC water</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>TOK</span><span class="critical-badge">25% photoresist</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>Daifuku</span><span class="critical-badge">cleanroom auto</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>Ushio</span><span class="critical-badge">75% UV lamps</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>ACCRETECH</span><span class="critical-badge">46% probers</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>Hanmi Semi</span><span class="critical-badge">71% TC bonders</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="graph">
+            <svg id="svg"></svg>
+            <div id="tooltip"></div>
+            <div id="controls">
+                <button class="control-btn" id="zoom-in">+</button>
+                <button class="control-btn" id="zoom-out">-</button>
+                <button class="control-btn" id="reset">R</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const graphData = {
+            nodes: [
+                {id: "CMP-0001", name: "Tokyo Seimitsu", industry: "Semiconductor Equipment", country: "Japan", ticker: "7729.T", wave: 1, critical: true, desc: "Manufactures semiconductor production equipment and precision measuring instruments. Core products: wafer probing machines (world #1, 46% global share), wafer dicing machines (~10% global share), CMP equipment, polish grinders, edge grinders, and precision dicing blades. Brand name: ACCRETECH. Two segments: SPE (74% of sales) and Metrology (26%). Revenue FY2025/3: 150.5B JPY. China sales ratio: 34%."},
+                {id: "CMP-0002", name: "DISCO", industry: "Semiconductor Equipment", country: "Japan", ticker: "6146.T", wave: 1, desc: "Market leader in precision cutting, grinding, and polishing equipment for semiconductor manufacturing. Holds approximately 70% market share in slicing and dicing machines."},
+                {id: "CMP-0003", name: "SCREEN Holdings", industry: "Semiconductor Equipment", country: "Japan", ticker: "7735.T", wave: 1, desc: "Develops, manufactures, and markets semiconductor production equipment including wafer cleaning systems, coaters, and direct-write exposure systems. Also produces display production and PCB-related equipment."},
+                {id: "CMP-0004", name: "Tokyo Electron", industry: "Semiconductor Equipment", country: "Japan", ticker: "8035.T", wave: 1, critical: true, desc: "Global supplier of semiconductor and flat panel display production equipment. Key products include coater/developers, etch systems, CVD equipment, and cleaning systems. One of the world's largest semiconductor equipment manufacturers."},
+                {id: "CMP-0005", name: "Advantest", industry: "Semiconductor Equipment", country: "Japan", ticker: "6857.T", wave: 1, desc: "Leading manufacturer of semiconductor test equipment including automatic test equipment (ATE) for logic, memory, and mixed-signal devices. Strong growth in AI-related tester demand."},
+                {id: "CMP-0006", name: "Lasertec", industry: "Semiconductor Equipment", country: "Japan", ticker: "6920.T", wave: 1, critical: true, desc: "Designs, manufactures, and sells inspection and measurement equipment for semiconductors. Specializes in EUV mask inspection systems, mask blanks inspection, and metrology equipment using optical application technology."},
+                {id: "CMP-0007", name: "Fujimi", industry: "Semiconductor Materials", country: "Japan", ticker: "5384.T", wave: 1, desc: "Manufactures and sells synthetic precision abrasives including CMP slurry for semiconductor device production, polishing materials for silicon wafers, and abrasives for hard disk drives."},
+                {id: "CMP-0008", name: "Resonac Holdings", industry: "Semiconductor Materials", country: "Japan", ticker: "4004.T", wave: 1, desc: "Comprehensive chemical company providing semiconductor materials including high-purity gases, functional chemicals, epoxy encapsulants, die bonding materials, and hard disks. Formerly Showa Denko K.K."},
+                {id: "CMP-0009", name: "Ferrotec Holdings", industry: "Semiconductor Materials", country: "Japan", ticker: "6890.T", wave: 1, desc: "Develops, manufactures, and sells products for semiconductor and FPD manufacturing equipment including vacuum seals, quartz products, ceramics, silicon products, and wafer products. Also provides thermo-modules and magnetic fluids."},
+                {id: "CMP-0010", name: "Toyo Gosei", industry: "Semiconductor Materials", country: "Japan", ticker: "4970.T", wave: 1, desc: "Manufactures and sells photosensitive materials and polymer products for semiconductors. Products include photoresists for semiconductor microfabrication, LCD materials, and electric double layer materials."},
+                {id: "CMP-0011", name: "Kokusai Electric", industry: "Semiconductor Equipment", country: "Japan", ticker: "6525.T", wave: 1, desc: "Manufactures, sells, and maintains semiconductor manufacturing equipment. Main products include batch film deposition equipment for NAND and DRAM, treatment equipment for film quality improvement, and cleaning equipment."},
+                {id: "CMP-0012", name: "Horiba", industry: "Semiconductor Equipment", country: "Japan", ticker: "6856.T", wave: 1, desc: "Designs, manufactures, and sells analytical and measuring instruments. Semiconductor segment includes mass flow controllers, chemical concentration monitors, reticle/mask particle detection systems, and residual gas analyzers."},
+                {id: "CMP-0013", name: "Fuso Chemical", industry: "Semiconductor Materials", country: "Japan", ticker: "4368.T", wave: 1, desc: "Manufactures and sells life science and electronic material products. Electronic materials include ultra-high purity colloidal silica and high purity organo silica sol for semiconductor CMP processes."},
+                {id: "CMP-0014", name: "Kioxia Holdings", industry: "Semiconductors", country: "Japan", ticker: "285A.T", wave: 1, desc: "Global leader in NAND flash memory and SSDs. Third-largest NAND supplier globally with 14% market share. Products include BiCS FLASH, UFS, e-MMC for consumer/industrial/automotive, and XL-FLASH storage class memory."},
+                {id: "CMP-0015", name: "HOYA", industry: "Semiconductor Materials", country: "Japan", ticker: "7741.T", wave: 1, critical: true, desc: "Manufactures mask blanks and photomasks for semiconductor chip manufacturing, glass disks for HDDs, and imaging products. Life Care segment includes eyeglasses, contact lenses, and medical endoscopes."},
+                {id: "CMP-0016", name: "Olympus", industry: "Precision Instruments", country: "Japan", ticker: "7733.T", wave: 1, desc: "Manufactures precision machinery and instruments including medical endoscopes, surgical devices, biological/industrial microscopes, and NDT equipment. Operates through Endoscopic Solutions, Therapeutic Solutions, and Scientific Solutions segments."},
+                {id: "CMP-0017", name: "TSMC", industry: "Semiconductor Foundry", country: "Taiwan", ticker: "2330.TW", wave: 2, critical: true, desc: "World's largest semiconductor foundry with 71% global market share and 90%+ of advanced chips for AI. Manufactures chips for Apple, NVIDIA, AMD, Qualcomm, and other fabless companies. Key products include 3nm and 2nm process nodes."},
+                {id: "CMP-0018", name: "Samsung Electronics", industry: "Semiconductors", country: "South Korea", ticker: "005930.KS", wave: 2, desc: "World's largest memory chip manufacturer and second-largest foundry. Produces DRAM, NAND flash, and provides foundry services. Leading in HBM (High Bandwidth Memory) for AI applications. Also manufactures smartphones and displays."},
+                {id: "CMP-0019", name: "Intel", industry: "Semiconductors", country: "USA", ticker: "INTC", wave: 2, desc: "Major IDM (Integrated Device Manufacturer) pursuing foundry transformation via IDM 2.0 strategy. Produces CPUs for PCs and servers, discrete GPUs, and offers foundry services. Targeting Intel 18A process for leadership recovery."},
+                {id: "CMP-0020", name: "SK Hynix", industry: "Memory Semiconductors", country: "South Korea", ticker: "000660.KS", wave: 2, desc: "World's second-largest memory chip manufacturer. Leader in HBM (High Bandwidth Memory) with 50%+ market share. Produces DRAM and NAND flash memory for AI, data centers, and consumer electronics."},
+                {id: "CMP-0021", name: "Micron", industry: "Memory Semiconductors", country: "USA", ticker: "MU", wave: 2, desc: "Major memory chip manufacturer producing DRAM and NAND flash products. Serves data center, PC, graphics, networking, automotive, industrial, and mobile markets. Products sold under Micron and Crucial brands."},
+                {id: "CMP-0022", name: "Apple", industry: "Consumer Electronics", country: "USA", ticker: "AAPL", wave: 2, desc: "World's most valuable company. Designs iPhones, iPads, Macs, Apple Watch, and services. Fabless chip designer using TSMC for manufacturing. Major customer of Japanese semiconductor suppliers."},
+                {id: "CMP-0023", name: "Western Digital", industry: "Storage/Memory", country: "USA", ticker: "WDC", wave: 2, desc: "Major data storage company producing HDDs, SSDs, and flash memory products. Manufacturing partner with Kioxia for NAND flash. Spun off Sandisk flash memory business."},
+                {id: "CMP-0024", name: "Shin-Etsu Chemical", industry: "Semiconductor Materials", country: "Japan", ticker: "4063.T", wave: 2, critical: true, desc: "World's largest silicon wafer manufacturer with 42% global market share. Also produces PVC, rare earth magnets, photoresists, photomask blanks, and synthetic quartz. Critical supplier to all major chip manufacturers."},
+                {id: "CMP-0025", name: "SUMCO", industry: "Semiconductor Materials", country: "Japan", ticker: "3436.T", wave: 2, critical: true, desc: "World's second-largest silicon wafer manufacturer with 20% global market share. Founded 1999 as JV between Mitsubishi Materials and Sumitomo Metal Industries. Supplies wafers to all major semiconductor manufacturers."},
+                {id: "CMP-0026", name: "ASML", industry: "Semiconductor Equipment", country: "Netherlands", ticker: "ASML", wave: 2, critical: true, desc: "World's only manufacturer of EUV (Extreme Ultraviolet) lithography systems, essential for advanced chip production below 7nm. Also produces DUV (Deep Ultraviolet) immersion and dry lithography systems."},
+                {id: "CMP-0027", name: "Kyocera", industry: "Semiconductor Components", country: "Japan", ticker: "6971.T", wave: 2, desc: "Japanese conglomerate manufacturing fine ceramics, semiconductor packages, crystal devices, and electronic components. Supplies ceramic packages and substrates for semiconductor industry since 1964."},
+                {id: "CMP-0028", name: "NVIDIA", industry: "Semiconductors", country: "USA", ticker: "NVDA", wave: 2, desc: "World's leading AI chip company with 85-90% market share in AI accelerators. Designs GPUs for gaming, data centers, and AI training. Fabless - uses TSMC for manufacturing. Blackwell and upcoming Rubin architectures."},
+                {id: "CMP-0029", name: "Naigai Tech", industry: "Semiconductor Equipment", country: "Japan", ticker: "3374.T", wave: 3, desc: "Supplies precision parts and components for semiconductor manufacturing equipment. Major supplier to Tokyo Electron with ~80% of sales dependent on TEL group. Provides maintenance, assembly services."},
+                {id: "CMP-0030", name: "Marumae", industry: "Semiconductor Equipment", country: "Japan", ticker: "6264.T", wave: 3, desc: "Precision contract manufacturing company specializing in vacuum chambers, electrodes, and precision parts for semiconductor and FPD manufacturing equipment. Recognized as Tokyo Electron Green Partner."},
+                {id: "CMP-0031", name: "Tocalo", industry: "Semiconductor Materials", country: "Japan", ticker: "3433.T", wave: 3, desc: "Japan's leading thermal spray coating company. Provides surface treatment for semiconductor manufacturing equipment parts. 27% of sales to Tokyo Electron group."},
+                {id: "CMP-0032", name: "Nippon Sanso", industry: "Semiconductor Materials", country: "Japan", ticker: "4091.T", wave: 3, desc: "Japan's largest industrial gas company, part of Mitsubishi Chemical Group. World top 3 for electronics-related gases. Supplies specialty gases and bulk gases for semiconductor manufacturing."},
+                {id: "CMP-0033", name: "Tokyo Ohka Kogyo", industry: "Semiconductor Materials", country: "Japan", ticker: "4186.T", wave: 3, critical: true, desc: "World's #1 photoresist manufacturer with 25% global share. Supplies from g-line to cutting-edge EUV photoresists. Also provides high-purity chemicals, thinners, developers."},
+                {id: "CMP-0034", name: "JSR", industry: "Semiconductor Materials", country: "Japan", ticker: "4185.T", wave: 3, desc: "Major photoresist manufacturer with world #1 ArF photoresist share. Top 2 in global photoresist market. Acquired by JIC (Japan Investment Corporation) in 2024."},
+                {id: "CMP-0035", name: "Maruzen Petrochemical", industry: "Semiconductor Materials", country: "Japan", ticker: "4634.T", wave: 3, desc: "World's top supplier of photoresist polymers for KrF, ArF, and EUV applications. Subsidiary of Cosmo Energy. Started manufacturing photoresist polymers in 1997."},
+                {id: "CMP-0036", name: "Ebara", industry: "Semiconductor Equipment", country: "Japan", ticker: "6361.T", wave: 3, desc: "Major manufacturer of CMP (Chemical Mechanical Polishing) equipment and dry vacuum pumps for semiconductor manufacturing. World #2 in CMP equipment, #2 in dry vacuum pumps."},
+                {id: "CMP-0037", name: "NGK Insulators", industry: "Semiconductor Materials", country: "Japan", ticker: "5333.T", wave: 3, desc: "World's largest insulator manufacturer. Supplies ceramic heaters and electrostatic chucks for semiconductor manufacturing equipment using aluminum nitride (AlN) technology."},
+                {id: "CMP-0038", name: "Gun Ei Chemical", industry: "Semiconductor Materials", country: "Japan", ticker: "4229.T", wave: 3, desc: "Supplies photoresist polymers (novolac resins) for semiconductor manufacturing. Strong in phenol resin-based chemistry. Expanding production capacity for growing demand."},
+                {id: "CMP-0039", name: "Niterra", industry: "Semiconductor Components", country: "Japan", ticker: "5334.T", wave: 3, desc: "Major ceramic components manufacturer. Supplies electrostatic chucks and ceramic parts for semiconductor manufacturing equipment through subsidiary NTK Ceratec. Renamed from NGK Spark Plug in 2023."},
+                {id: "CMP-0040", name: "FUJIFILM Holdings", industry: "Semiconductor Materials", country: "Japan", ticker: "4901.T", wave: 3, desc: "Diversified company with major semiconductor materials division. Supplies photoresist, CMP slurry (world #1 in copper CMP), process chemicals. Target 5T JPY semiconductor sales by 2030."},
+                {id: "CMP-0041", name: "Rorze", industry: "Semiconductor Equipment", country: "Japan", ticker: "6323.T", wave: 3, desc: "World's top-class manufacturer of wafer transfer equipment and robots for semiconductor manufacturing. Headquarters in Fukuyama, Hiroshima. Clean-room transport systems."},
+                {id: "CMP-0042", name: "PILLAR", industry: "Semiconductor Equipment", country: "Japan", ticker: "6490.T", wave: 3, desc: "Comprehensive seal manufacturer. 90% world share in semiconductor cleaning equipment fittings. Supplies mechanical seals, gaskets, and fluororesin products. Renamed from Nippon Pillar Packing in 2024."},
+                {id: "CMP-0043", name: "CKD", industry: "Semiconductor Equipment", country: "Japan", ticker: "6407.T", wave: 3, desc: "Manufacturer of pneumatic valves, actuators, and flow control equipment for semiconductor manufacturing. Supplies fluid control units and mass flow controllers."},
+                {id: "CMP-0044", name: "Stella Chemifa", industry: "Semiconductor Materials", country: "Japan", ticker: "4109.T", wave: 3, critical: true, desc: "World leader in ultra-high-purity hydrofluoric acid (12-nine purity). Critical supplier for semiconductor etching and cleaning. Holds world top share in HF acid for semiconductors."},
+                {id: "CMP-0045", name: "Kanto Denka Kogyo", industry: "Semiconductor Materials", country: "Japan", ticker: "4047.T", wave: 3, desc: "Major specialty gas manufacturer for semiconductor etching and cleaning. Produces 15+ types of fluorine-based specialty gases. Furukawa Group company."},
+                {id: "CMP-0046", name: "Sumitomo Chemical", industry: "Semiconductor Materials", country: "Japan", ticker: "4005.T", wave: 3, desc: "Major chemical company with significant photoresist business. Full lineup from i-line to EUV photoresist (Sumilever brand). Targeting 1T JPY operating profit by 2030."},
+                {id: "CMP-0047", name: "TOPPAN Holdings", industry: "Semiconductor Materials", country: "Japan", ticker: "7911.T", wave: 3, desc: "World-leading photomask manufacturer through subsidiary Tekscend Photomask (formerly Toppan Photomask). Joint EUV photomask R&D with IBM. Planning 2nm photomask production by 2026."},
+                {id: "CMP-0048", name: "Ibiden", industry: "Semiconductor Materials", country: "Japan", ticker: "4062.T", wave: 3, critical: true, desc: "World's #1 IC package substrate manufacturer with 50%+ share in AI server substrates. Founded 1912 in Gifu. Electronics segment is main profit driver."},
+                {id: "CMP-0049", name: "Dai Nippon Printing", industry: "Semiconductor Materials", country: "Japan", ticker: "7912.T", wave: 3, desc: "Major photomask manufacturer competing with TOPPAN. 300B JPY investment in photomask business 2026-28. Developing 2nm EUV and high-NA EUV photomasks."},
+                {id: "CMP-0050", name: "Nikon", industry: "Semiconductor Equipment", country: "Japan", ticker: "7731.T", wave: 3, desc: "Historic lithography equipment manufacturer. 5.7% share in ArF immersion (ASML 94.3%). New ASML-compatible platform targeting 2028. Strong in automotive semiconductor exposure."},
+                {id: "CMP-0051", name: "Canon", industry: "Semiconductor Equipment", country: "Japan", ticker: "7751.T", wave: 3, desc: "Semiconductor lithography equipment manufacturer. Pioneer in nanoimprint lithography (NIL) - 10x lower power than EUV. 14nm capable, targeting advanced nodes."},
+                {id: "CMP-0052", name: "Organo", industry: "Semiconductor Equipment", country: "Japan", ticker: "6368.T", wave: 3, critical: true, desc: "World leader in ultrapure water systems for semiconductor manufacturing. Nearly exclusive supplier to TSMC fabs. Tosoh group company."},
+                {id: "CMP-0053", name: "Nomura Micro Science", industry: "Semiconductor Equipment", country: "Japan", ticker: "6254.T", wave: 3, desc: "Ultrapure water equipment specialist since 1969. Strong in Korea market. Complete end-to-end service from design to maintenance. Water recycling technology leader."},
+                {id: "CMP-0054", name: "Aval Data", industry: "Semiconductor Equipment", country: "Japan", ticker: "6918.T", wave: 3, desc: "Industrial electronics manufacturer. Supplies image processing modules and inspection equipment for semiconductor manufacturing. Near-infrared camera technology for defect detection."},
+                {id: "CMP-0055", name: "NHK Spring", industry: "Semiconductor Equipment", country: "Japan", ticker: "5991.T", wave: 3, desc: "Major spring and precision parts manufacturer. 50% world share in HDD suspensions. Expanding semiconductor process parts using bonding technology."},
+                {id: "CMP-0056", name: "Daifuku", industry: "Semiconductor Equipment", country: "Japan", ticker: "6383.T", wave: 3, critical: true, desc: "World's largest material handling system manufacturer. Near-monopoly in advanced (<7nm) semiconductor fab cleanroom transport systems (AMHS)."},
+                {id: "CMP-0057", name: "MEC Company", industry: "Semiconductor Materials", country: "Japan", ticker: "4971.T", wave: 3, desc: "Specialist in etching chemicals for electronic substrates and semiconductor packages. CZ Series for copper roughening. ~95% of sales from chemical products."},
+                {id: "CMP-0058", name: "Nagase", industry: "Semiconductor Materials", country: "Japan", ticker: "8012.T", wave: 3, desc: "Major trading company specializing in chemicals and electronic materials. Subsidiary Nagase ChemteX supplies modified epoxy resins for AI server semiconductors."},
+                {id: "CMP-0059", name: "Shibaura Mechatronics", industry: "Semiconductor Equipment", country: "Japan", ticker: "6590.T", wave: 3, desc: "World leader in single-wafer cleaning equipment for semiconductor front-end. Also produces etching, ashing, and inspection equipment. LCD equipment manufacturer."},
+                {id: "CMP-0060", name: "Samco", industry: "Semiconductor Equipment", country: "Japan", ticker: "6387.T", wave: 3, desc: "Pioneer in plasma CVD equipment since 1980. Specializes in thin film deposition, dry etching, and cleaning equipment. Kyoto-based R&D-oriented company."},
+                {id: "CMP-0061", name: "Ushio", industry: "Semiconductor Equipment", country: "Japan", ticker: "6925.T", wave: 3, critical: true, desc: "World's leading industrial lamp manufacturer. 75% global share in i-line lithography UV lamps. Supplies light sources for semiconductor exposure equipment."},
+                {id: "CMP-0062", name: "Tazmo", industry: "Semiconductor Equipment", country: "Japan", ticker: "6266.T", wave: 3, desc: "Coating process equipment manufacturer. Produces coaters, developers, and lamination/peeling equipment for semiconductor and FPD manufacturing based on thin film technology."},
+                {id: "CMP-0063", name: "ASE Technology", industry: "Semiconductor Packaging/OSAT", country: "Taiwan", ticker: "3711.TW", wave: 4, desc: "World's largest OSAT (Outsourced Semiconductor Assembly and Test) company. Provides semiconductor packaging, interconnect materials, front-end engineering testing, wafer probing, and final testing services. Formed in 2018 by combining ASE Group, Siliconware Precision Industries, and Universal Scientific Industrial."},
+                {id: "CMP-0064", name: "Amkor Technology", industry: "Semiconductor Packaging/OSAT", country: "USA", ticker: "AMKR", wave: 4, desc: "World's second-largest OSAT company. Provides semiconductor packaging and test services including advanced SiP, flip chip, wire bond BGA, and wafer-level packaging. Major operations in Korea, Japan, China, Malaysia, Vietnam, Philippines, and Portugal."},
+                {id: "CMP-0065", name: "JCET Group", industry: "Semiconductor Packaging/OSAT", country: "China", ticker: "600584.SS", wave: 4, desc: "China's largest and world's third-largest OSAT company. Provides IC system integration packaging design, technology development, wafer probing, wafer-level packaging, system-level packaging, and chip testing services. Production bases in Korea, Singapore, China (Shanghai, Jiangyin, Chuzhou, Suqian)."},
+                {id: "CMP-0066", name: "SMIC", industry: "Semiconductor Foundry", country: "China", ticker: "0981.HK", wave: 4, desc: "China's largest and world's third-largest semiconductor foundry. Provides IC foundry services with specialty and advanced process technologies. Capable of production down to 7nm-class. Operations in Shanghai, Beijing, Tianjin, Shenzhen, and Ningbo. Also listed on Shanghai STAR Market (688981.SS)."},
+                {id: "CMP-0067", name: "Tongfu Micro", industry: "Semiconductor Packaging/OSAT", country: "China", ticker: "002156.SZ", wave: 4, desc: "China's second-largest OSAT company. Specializes in IC packaging and testing with expertise in advanced packaging including flip chip, BGA, SiP, and wafer-level packaging. AMD is the largest customer (80%+ of AMD's packaging orders). FY2024 revenue: ~$3.32B."},
+                {id: "CMP-0068", name: "Tianshui Huatian", industry: "Semiconductor Packaging/OSAT", country: "China", ticker: "002185.SZ", wave: 4, desc: "China's third-largest OSAT company. Provides semiconductor packaging and testing services including 3D, SiP, FC, TSV, Bumping, Fan-Out, and WLP advanced packaging technologies. Diversified customer base. Strategic partnership with Yangtze Memory Technologies (YMTC). FY2024 revenue: ~$2.01B (+26% YoY)."},
+                {id: "CMP-0069", name: "Powertech Tech", industry: "Semiconductor Packaging/OSAT", country: "Taiwan", ticker: "6239.TW", wave: 4, desc: "Taiwan's leading memory-focused OSAT company. Provides IC packaging services including wafer-level packing, flip chips, wire bond BGA, lead frame, SiP, and chip probing/final test services. Key supplier to Micron for memory packaging. Operations in Taiwan, Japan, Singapore, USA, Europe, and China."},
+                {id: "CMP-0070", name: "Hua Hong Semi", industry: "Semiconductor Foundry", country: "China", ticker: "1347.HK", wave: 4, desc: "China's second-largest and world's seventh-largest pure-play foundry. Specializes in specialty technologies including embedded/standalone NVM, power discrete, analog/power management, logic, and RF. Operates 8-inch and 12-inch fabs in Shanghai and Wuxi. Also listed on Shanghai STAR Market (688347.SS)."},
+                {id: "CMP-0071", name: "MPI Corporation", industry: "Semiconductor Equipment", country: "Taiwan", ticker: "6223.TW", wave: 4, desc: "Taiwan's leading wafer prober and semiconductor RF test solution provider. Founded 1995 in Hsinchu. Products include advanced wafer probers, probe cards, thermal systems, and engineering probe stations. Market leader in semiconductor RF testing solutions. First prober company to list on Taiwan TPEx."},
+                {id: "CMP-0072", name: "Hanmi Semi", industry: "Semiconductor Equipment", country: "South Korea", ticker: "042700.KS", wave: 4, critical: true, desc: "South Korea's leading semiconductor packaging equipment manufacturer. World #1 in HBM TC (Thermocompression) bonders with 71.2% global market share. Key products include TC bonders for HBM production, MSVP (Micro Saw & Vision Placement) package singulation systems, and flip chip bonders. Founded 1980."},
+                {id: "CMP-0073", name: "Sidea Semi", industry: "Semiconductor Equipment", country: "China", ticker: "301629.SZ", wave: 4, desc: "China's largest domestic prober station manufacturer. Founded 2003 in Shenzhen. First Chinese company to achieve mass production of 12-inch wafer probe stations. Products used in IC testing, optoelectronic chips, discrete devices, and third-generation compound semiconductors. IPO on ChiNext March 2025."},
+                {id: "CMP-0074", name: "Guangli Tech", industry: "Semiconductor Equipment", country: "China", ticker: "300480.SZ", wave: 4, desc: "Chinese semiconductor dicing saw manufacturer. Originally a coal mine safety monitoring equipment company (founded 1994). Entered semiconductor dicing via 2019 acquisition of Israel's ADT (Advanced Dicing Technologies) for $37M. One of only two companies globally (with DISCO) to manufacture both dicing saws and high-precision air-bearing spindles in-house."}
+            ],
+            edges: [
+                {source: "CMP-0024", target: "CMP-0017", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0025", target: "CMP-0017", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0004", target: "CMP-0017", type: "supplier", label: "coater/developers, etch, CVD"},
+                {source: "CMP-0003", target: "CMP-0017", type: "supplier", label: "wafer cleaning"},
+                {source: "CMP-0007", target: "CMP-0017", type: "supplier", label: "CMP slurry"},
+                {source: "CMP-0013", target: "CMP-0017", type: "supplier", label: "CMP slurry"},
+                {source: "CMP-0015", target: "CMP-0017", type: "supplier", label: "photomask blanks"},
+                {source: "CMP-0017", target: "CMP-0022", type: "supplier", label: "chip manufacturing"},
+                {source: "CMP-0017", target: "CMP-0028", type: "supplier", label: "chip manufacturing"},
+                {source: "CMP-0024", target: "CMP-0018", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0025", target: "CMP-0018", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0004", target: "CMP-0018", type: "supplier", label: "deposition equipment"},
+                {source: "CMP-0005", target: "CMP-0018", type: "supplier", label: "test equipment"},
+                {source: "CMP-0006", target: "CMP-0018", type: "supplier", label: "EUV mask inspection"},
+                {source: "CMP-0011", target: "CMP-0018", type: "supplier", label: "batch deposition"},
+                {source: "CMP-0015", target: "CMP-0018", type: "supplier", label: "photomask blanks"},
+                {source: "CMP-0013", target: "CMP-0018", type: "supplier", label: "CMP slurry"},
+                {source: "CMP-0024", target: "CMP-0019", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0025", target: "CMP-0019", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0004", target: "CMP-0019", type: "supplier", label: "deposition equipment"},
+                {source: "CMP-0006", target: "CMP-0019", type: "supplier", label: "EUV mask inspection"},
+                {source: "CMP-0011", target: "CMP-0019", type: "supplier", label: "batch deposition"},
+                {source: "CMP-0015", target: "CMP-0019", type: "supplier", label: "photomask blanks"},
+                {source: "CMP-0013", target: "CMP-0019", type: "supplier", label: "CMP slurry"},
+                {source: "CMP-0024", target: "CMP-0020", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0025", target: "CMP-0020", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0004", target: "CMP-0020", type: "supplier", label: "deposition equipment"},
+                {source: "CMP-0005", target: "CMP-0020", type: "supplier", label: "test equipment"},
+                {source: "CMP-0011", target: "CMP-0020", type: "supplier", label: "batch deposition"},
+                {source: "CMP-0015", target: "CMP-0020", type: "supplier", label: "photomask blanks"},
+                {source: "CMP-0020", target: "CMP-0028", type: "supplier", label: "HBM memory"},
+                {source: "CMP-0024", target: "CMP-0021", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0025", target: "CMP-0021", type: "supplier", label: "silicon wafers"},
+                {source: "CMP-0005", target: "CMP-0021", type: "supplier", label: "test equipment"},
+                {source: "CMP-0011", target: "CMP-0021", type: "supplier", label: "batch deposition"},
+                {source: "CMP-0014", target: "CMP-0022", type: "supplier", label: "NAND flash"},
+                {source: "CMP-0011", target: "CMP-0014", type: "supplier", label: "batch deposition"},
+                {source: "CMP-0026", target: "CMP-0017", type: "supplier", label: "EUV lithography"},
+                {source: "CMP-0026", target: "CMP-0018", type: "supplier", label: "EUV lithography"},
+                {source: "CMP-0026", target: "CMP-0019", type: "supplier", label: "EUV lithography"},
+                {source: "CMP-0026", target: "CMP-0020", type: "supplier", label: "EUV lithography"},
+                {source: "CMP-0026", target: "CMP-0021", type: "supplier", label: "EUV lithography"},
+                {source: "CMP-0007", target: "CMP-0019", type: "supplier", label: "CMP slurry"},
+                {source: "CMP-0005", target: "CMP-0017", type: "supplier", label: "test equipment"},
+                {source: "CMP-0006", target: "CMP-0017", type: "supplier", label: "EUV mask inspection"},
+                {source: "CMP-0001", target: "CMP-0002", type: "competitor", label: "dicing equipment"},
+                {source: "CMP-0002", target: "CMP-0001", type: "competitor", label: "dicing equipment"},
+                {source: "CMP-0024", target: "CMP-0025", type: "competitor", label: "silicon wafers"},
+                {source: "CMP-0025", target: "CMP-0024", type: "competitor", label: "silicon wafers"},
+                {source: "CMP-0014", target: "CMP-0023", type: "partner", label: "Yokkaichi/Kitakami JV"},
+                {source: "CMP-0023", target: "CMP-0014", type: "partner", label: "Yokkaichi/Kitakami JV"},
+                {source: "CMP-0018", target: "CMP-0020", type: "competitor", label: "memory"},
+                {source: "CMP-0018", target: "CMP-0021", type: "competitor", label: "memory"},
+                {source: "CMP-0006", target: "CMP-0026", type: "ecosystem", label: "EUV inspection + lithography"},
+                {source: "CMP-0026", target: "CMP-0006", type: "ecosystem", label: "EUV lithography + inspection"},
+                {source: "CMP-0015", target: "CMP-0026", type: "ecosystem", label: "EUV blanks + lithography"},
+                {source: "CMP-0026", target: "CMP-0015", type: "ecosystem", label: "EUV lithography + blanks"},
+                {source: "CMP-0010", target: "CMP-0017", type: "supplier", label: "photoresist materials"},
+                {source: "CMP-0010", target: "CMP-0018", type: "supplier", label: "photoresist materials"},
+                {source: "CMP-0010", target: "CMP-0019", type: "supplier", label: "photoresist materials"},
+                {source: "CMP-0008", target: "CMP-0017", type: "supplier", label: "semiconductor materials"},
+                {source: "CMP-0008", target: "CMP-0018", type: "supplier", label: "semiconductor materials"},
+                {source: "CMP-0008", target: "CMP-0019", type: "supplier", label: "semiconductor materials"},
+                {source: "CMP-0029", target: "CMP-0004", type: "supplier", label: "precision machining parts (80%)"},
+                {source: "CMP-0030", target: "CMP-0004", type: "supplier", label: "aluminum vacuum chambers"},
+                {source: "CMP-0030", target: "CMP-0003", type: "supplier", label: "aluminum vacuum chambers"},
+                {source: "CMP-0031", target: "CMP-0004", type: "supplier", label: "thermal spray coating"},
+                {source: "CMP-0031", target: "CMP-0003", type: "supplier", label: "thermal spray coating"},
+                {source: "CMP-0032", target: "CMP-0017", type: "supplier", label: "specialty gases"},
+                {source: "CMP-0032", target: "CMP-0018", type: "supplier", label: "specialty gases"},
+                {source: "CMP-0032", target: "CMP-0019", type: "supplier", label: "specialty gases"},
+                {source: "CMP-0032", target: "CMP-0020", type: "supplier", label: "specialty gases"},
+                {source: "CMP-0032", target: "CMP-0021", type: "supplier", label: "specialty gases"},
+                {source: "CMP-0033", target: "CMP-0017", type: "supplier", label: "photoresist (25% world)"},
+                {source: "CMP-0033", target: "CMP-0018", type: "supplier", label: "photoresist"},
+                {source: "CMP-0033", target: "CMP-0019", type: "supplier", label: "photoresist"},
+                {source: "CMP-0034", target: "CMP-0017", type: "supplier", label: "EUV photoresist"},
+                {source: "CMP-0034", target: "CMP-0018", type: "supplier", label: "EUV photoresist"},
+                {source: "CMP-0034", target: "CMP-0019", type: "supplier", label: "EUV photoresist"},
+                {source: "CMP-0035", target: "CMP-0034", type: "supplier", label: "high-purity aromatics"},
+                {source: "CMP-0035", target: "CMP-0033", type: "supplier", label: "high-purity aromatics"},
+                {source: "CMP-0036", target: "CMP-0017", type: "supplier", label: "CMP systems, vacuum pumps"},
+                {source: "CMP-0036", target: "CMP-0018", type: "supplier", label: "CMP systems, vacuum pumps"},
+                {source: "CMP-0036", target: "CMP-0019", type: "supplier", label: "CMP systems, vacuum pumps"},
+                {source: "CMP-0037", target: "CMP-0017", type: "supplier", label: "ceramic electrostatic chucks"},
+                {source: "CMP-0037", target: "CMP-0018", type: "supplier", label: "ceramic electrostatic chucks"},
+                {source: "CMP-0038", target: "CMP-0033", type: "supplier", label: "photosensitive resin"},
+                {source: "CMP-0038", target: "CMP-0034", type: "supplier", label: "photosensitive resin"},
+                {source: "CMP-0039", target: "CMP-0017", type: "supplier", label: "IC package substrates"},
+                {source: "CMP-0039", target: "CMP-0018", type: "supplier", label: "IC package substrates"},
+                {source: "CMP-0040", target: "CMP-0017", type: "supplier", label: "CMP slurry, photoresist"},
+                {source: "CMP-0040", target: "CMP-0018", type: "supplier", label: "CMP slurry, photoresist"},
+                {source: "CMP-0041", target: "CMP-0004", type: "supplier", label: "wafer transfer robots"},
+                {source: "CMP-0041", target: "CMP-0003", type: "supplier", label: "wafer transfer robots"},
+                {source: "CMP-0041", target: "CMP-0017", type: "supplier", label: "wafer handling systems"},
+                {source: "CMP-0042", target: "CMP-0004", type: "supplier", label: "mechanical seals, bellows"},
+                {source: "CMP-0042", target: "CMP-0003", type: "supplier", label: "mechanical seals, bellows"},
+                {source: "CMP-0043", target: "CMP-0004", type: "supplier", label: "pneumatic valves"},
+                {source: "CMP-0043", target: "CMP-0003", type: "supplier", label: "pneumatic valves"},
+                {source: "CMP-0043", target: "CMP-0011", type: "supplier", label: "pneumatic valves"},
+                {source: "CMP-0044", target: "CMP-0017", type: "supplier", label: "12-nine purity HF acid"},
+                {source: "CMP-0044", target: "CMP-0018", type: "supplier", label: "12-nine purity HF acid"},
+                {source: "CMP-0044", target: "CMP-0019", type: "supplier", label: "ultra-high purity HF"},
+                {source: "CMP-0044", target: "CMP-0020", type: "supplier", label: "ultra-high purity HF"},
+                {source: "CMP-0044", target: "CMP-0021", type: "supplier", label: "ultra-high purity HF"},
+                {source: "CMP-0045", target: "CMP-0017", type: "supplier", label: "specialty fluorine gases"},
+                {source: "CMP-0045", target: "CMP-0018", type: "supplier", label: "specialty fluorine gases"},
+                {source: "CMP-0046", target: "CMP-0017", type: "supplier", label: "photoresist"},
+                {source: "CMP-0046", target: "CMP-0018", type: "supplier", label: "photoresist"},
+                {source: "CMP-0047", target: "CMP-0017", type: "supplier", label: "EUV photomasks"},
+                {source: "CMP-0047", target: "CMP-0026", type: "ecosystem", label: "EUV photomask production"},
+                {source: "CMP-0026", target: "CMP-0047", type: "ecosystem", label: "EUV lithography + masks"},
+                {source: "CMP-0048", target: "CMP-0028", type: "supplier", label: "AI server IC substrates (50%+)"},
+                {source: "CMP-0048", target: "CMP-0017", type: "supplier", label: "high-end FC-BGA substrates"},
+                {source: "CMP-0049", target: "CMP-0026", type: "supplier", label: "nanoimprint lithography"},
+                {source: "CMP-0049", target: "CMP-0017", type: "supplier", label: "photomask production"},
+                {source: "CMP-0049", target: "CMP-0026", type: "ecosystem", label: "EUV photomask partnership"},
+                {source: "CMP-0026", target: "CMP-0049", type: "ecosystem", label: "nanoimprint partnership"},
+                {source: "CMP-0050", target: "CMP-0017", type: "supplier", label: "i-line/KrF steppers"},
+                {source: "CMP-0050", target: "CMP-0018", type: "supplier", label: "lithography equipment"},
+                {source: "CMP-0050", target: "CMP-0026", type: "competitor", label: "lithography equipment"},
+                {source: "CMP-0026", target: "CMP-0050", type: "competitor", label: "lithography equipment"},
+                {source: "CMP-0051", target: "CMP-0017", type: "supplier", label: "i-line/KrF steppers"},
+                {source: "CMP-0051", target: "CMP-0018", type: "supplier", label: "lithography equipment"},
+                {source: "CMP-0051", target: "CMP-0019", type: "supplier", label: "nanoimprint lithography"},
+                {source: "CMP-0051", target: "CMP-0026", type: "competitor", label: "lithography equipment"},
+                {source: "CMP-0026", target: "CMP-0051", type: "competitor", label: "lithography equipment"},
+                {source: "CMP-0052", target: "CMP-0017", type: "supplier", label: "ultrapure water systems"},
+                {source: "CMP-0052", target: "CMP-0018", type: "supplier", label: "ultrapure water systems"},
+                {source: "CMP-0053", target: "CMP-0017", type: "supplier", label: "ultrapure water systems"},
+                {source: "CMP-0053", target: "CMP-0020", type: "supplier", label: "ultrapure water systems"},
+                {source: "CMP-0054", target: "CMP-0005", type: "supplier", label: "tester boards/probes"},
+                {source: "CMP-0054", target: "CMP-0018", type: "supplier", label: "test equipment components"},
+                {source: "CMP-0055", target: "CMP-0005", type: "supplier", label: "probe card springs"},
+                {source: "CMP-0055", target: "CMP-0017", type: "supplier", label: "HDD suspension (50%)"},
+                {source: "CMP-0056", target: "CMP-0017", type: "supplier", label: "cleanroom AMHS"},
+                {source: "CMP-0056", target: "CMP-0018", type: "supplier", label: "cleanroom AMHS"},
+                {source: "CMP-0056", target: "CMP-0019", type: "supplier", label: "cleanroom AMHS"},
+                {source: "CMP-0057", target: "CMP-0048", type: "supplier", label: "copper surface treatment"},
+                {source: "CMP-0057", target: "CMP-0017", type: "supplier", label: "PCB surface treatment"},
+                {source: "CMP-0058", target: "CMP-0033", type: "supplier", label: "chemical distribution"},
+                {source: "CMP-0058", target: "CMP-0034", type: "supplier", label: "chemical distribution"},
+                {source: "CMP-0058", target: "CMP-0017", type: "supplier", label: "electronic chemicals"},
+                {source: "CMP-0059", target: "CMP-0017", type: "supplier", label: "plasma processing equipment"},
+                {source: "CMP-0059", target: "CMP-0018", type: "supplier", label: "plasma processing equipment"},
+                {source: "CMP-0060", target: "CMP-0017", type: "supplier", label: "plasma CVD equipment"},
+                {source: "CMP-0060", target: "CMP-0018", type: "supplier", label: "dry etching equipment"},
+                {source: "CMP-0061", target: "CMP-0050", type: "supplier", label: "i-line UV lamps (75%)"},
+                {source: "CMP-0061", target: "CMP-0051", type: "supplier", label: "i-line UV lamps"},
+                {source: "CMP-0062", target: "CMP-0017", type: "supplier", label: "coater/developer equipment"},
+                {source: "CMP-0062", target: "CMP-0018", type: "supplier", label: "coating equipment"},
+
+                // Wave 4: Tokyo Seimitsu → clients (probing/dicing/CMP equipment)
+                {source: "CMP-0001", target: "CMP-0017", type: "supplier", label: "probing, dicing, CMP equipment"},
+                {source: "CMP-0001", target: "CMP-0018", type: "supplier", label: "probing, dicing equipment"},
+                {source: "CMP-0001", target: "CMP-0019", type: "supplier", label: "probing, dicing equipment"},
+                {source: "CMP-0001", target: "CMP-0020", type: "supplier", label: "probing, dicing equipment"},
+                {source: "CMP-0001", target: "CMP-0021", type: "supplier", label: "probing, dicing equipment"},
+                {source: "CMP-0001", target: "CMP-0014", type: "supplier", label: "probing, dicing equipment"},
+                {source: "CMP-0001", target: "CMP-0063", type: "supplier", label: "dicing, probing (OSAT #1)"},
+                {source: "CMP-0001", target: "CMP-0064", type: "supplier", label: "dicing, probing (OSAT #2)"},
+                {source: "CMP-0001", target: "CMP-0065", type: "supplier", label: "dicing, probing (China OSAT #1)"},
+                {source: "CMP-0001", target: "CMP-0066", type: "supplier", label: "CMP, probing, dicing (China foundry #1)"},
+                {source: "CMP-0001", target: "CMP-0067", type: "supplier", label: "dicing, probing (China OSAT #2)"},
+                {source: "CMP-0001", target: "CMP-0068", type: "supplier", label: "dicing, probing (China OSAT #3)"},
+                {source: "CMP-0001", target: "CMP-0069", type: "supplier", label: "dicing, probing (Taiwan memory OSAT)"},
+                {source: "CMP-0001", target: "CMP-0070", type: "supplier", label: "CMP, probing (China foundry #2)"},
+
+                // DISCO → OSATs (dicing saws/blades)
+                {source: "CMP-0002", target: "CMP-0063", type: "supplier", label: "dicing saws, blades"},
+                {source: "CMP-0002", target: "CMP-0064", type: "supplier", label: "dicing saws, blades"},
+                {source: "CMP-0002", target: "CMP-0065", type: "supplier", label: "dicing saws, blades"},
+                {source: "CMP-0002", target: "CMP-0067", type: "supplier", label: "dicing saws, blades"},
+                {source: "CMP-0002", target: "CMP-0068", type: "supplier", label: "dicing saws, blades"},
+                {source: "CMP-0002", target: "CMP-0069", type: "supplier", label: "dicing saws, blades"},
+
+                // Equipment suppliers → SMIC, Hua Hong
+                {source: "CMP-0004", target: "CMP-0066", type: "supplier", label: "coater/developer, etch, CVD"},
+                {source: "CMP-0004", target: "CMP-0070", type: "supplier", label: "deposition equipment"},
+                {source: "CMP-0011", target: "CMP-0066", type: "supplier", label: "batch deposition"},
+                {source: "CMP-0026", target: "CMP-0066", type: "supplier", label: "DUV lithography"},
+                {source: "CMP-0005", target: "CMP-0063", type: "supplier", label: "test equipment"},
+                {source: "CMP-0005", target: "CMP-0064", type: "supplier", label: "test equipment"},
+
+                // Hanmi → HBM/OSAT clients
+                {source: "CMP-0072", target: "CMP-0020", type: "supplier", label: "TC bonders for HBM (71% share)"},
+                {source: "CMP-0072", target: "CMP-0021", type: "supplier", label: "TC bonders for HBM"},
+                {source: "CMP-0072", target: "CMP-0063", type: "supplier", label: "flip chip bonders"},
+
+                // Powertech → Micron
+                {source: "CMP-0069", target: "CMP-0021", type: "supplier", label: "memory packaging (key Micron supplier)"},
+
+                // SMIC ↔ JCET ecosystem
+                {source: "CMP-0066", target: "CMP-0065", type: "ecosystem", label: "SMIC is JCET 2nd largest shareholder"},
+                {source: "CMP-0065", target: "CMP-0066", type: "ecosystem", label: "JCET packaging for SMIC chips"},
+
+                // Tokyo Seimitsu competitor edges
+                {source: "CMP-0001", target: "CMP-0071", type: "competitor", label: "probing equipment"},
+                {source: "CMP-0071", target: "CMP-0001", type: "competitor", label: "probing equipment"},
+                {source: "CMP-0001", target: "CMP-0073", type: "competitor", label: "probing (China domestic)"},
+                {source: "CMP-0073", target: "CMP-0001", type: "competitor", label: "probing (China domestic)"},
+                {source: "CMP-0001", target: "CMP-0074", type: "competitor", label: "dicing equipment"},
+                {source: "CMP-0074", target: "CMP-0001", type: "competitor", label: "dicing equipment"},
+                {source: "CMP-0002", target: "CMP-0074", type: "competitor", label: "dicing equipment"},
+                {source: "CMP-0074", target: "CMP-0002", type: "competitor", label: "dicing equipment"},
+                {source: "CMP-0001", target: "CMP-0072", type: "competitor", label: "package singulation"},
+                {source: "CMP-0072", target: "CMP-0001", type: "competitor", label: "package singulation"},
+
+                // Tokyo Seimitsu ↔ Advantest partner
+                {source: "CMP-0001", target: "CMP-0005", type: "partner", label: "die-level prober joint dev (2025)"},
+                {source: "CMP-0005", target: "CMP-0001", type: "partner", label: "die-level prober joint dev (2025)"},
+
+                // OSAT competitor edges
+                {source: "CMP-0063", target: "CMP-0064", type: "competitor", label: "OSAT services"},
+                {source: "CMP-0063", target: "CMP-0065", type: "competitor", label: "OSAT services"}
+            ]
+        };
+
+        const countryColors = {
+            "Japan": "#ef4444",
+            "USA": "#3b82f6",
+            "South Korea": "#22c55e",
+            "Taiwan": "#f59e0b",
+            "Netherlands": "#8b5cf6",
+            "China": "#f97316"
+        };
+
+        const linkColors = {
+            "supplier": "#3b82f6",
+            "competitor": "#ef4444",
+            "partner": "#22c55e",
+            "ecosystem": "#a855f7"
+        };
+
+        const width = document.getElementById('graph').clientWidth;
+        const height = document.getElementById('graph').clientHeight;
+
+        const svg = d3.select('#svg')
+            .attr('width', width)
+            .attr('height', height);
+
+        const g = svg.append('g');
+
+        const zoom = d3.zoom()
+            .scaleExtent([0.2, 5])
+            .on('zoom', (event) => {
+                g.attr('transform', event.transform);
+            });
+
+        svg.call(zoom);
+
+        // Create arrow markers for directed edges
+        svg.append('defs').selectAll('marker')
+            .data(['supplier', 'competitor', 'partner', 'ecosystem'])
+            .enter().append('marker')
+            .attr('id', d => `arrow-${d}`)
+            .attr('viewBox', '0 -5 10 10')
+            .attr('refX', 20)
+            .attr('refY', 0)
+            .attr('markerWidth', 5)
+            .attr('markerHeight', 5)
+            .attr('orient', 'auto')
+            .append('path')
+            .attr('fill', d => linkColors[d])
+            .attr('d', 'M0,-5L10,0L0,5');
+
+        // Optimized simulation for 74 nodes
+        const simulation = d3.forceSimulation(graphData.nodes)
+            .force('link', d3.forceLink(graphData.edges).id(d => d.id).distance(80))
+            .force('charge', d3.forceManyBody().strength(-250))
+            .force('center', d3.forceCenter(width / 2, height / 2))
+            .force('collision', d3.forceCollide().radius(30))
+            .force('x', d3.forceX(width / 2).strength(0.05))
+            .force('y', d3.forceY(height / 2).strength(0.05));
+
+        const link = g.append('g')
+            .selectAll('line')
+            .data(graphData.edges)
+            .enter().append('line')
+            .attr('class', d => `link ${d.type}`)
+            .attr('stroke', d => linkColors[d.type])
+            .attr('stroke-width', 1)
+            .attr('marker-end', d => `url(#arrow-${d.type})`);
+
+        const node = g.append('g')
+            .selectAll('g')
+            .data(graphData.nodes)
+            .enter().append('g')
+            .attr('class', 'node')
+            .call(d3.drag()
+                .on('start', dragstarted)
+                .on('drag', dragged)
+                .on('end', dragended));
+
+        node.append('circle')
+            .attr('r', d => d.critical ? 12 : 8)
+            .attr('fill', d => countryColors[d.country])
+            .attr('stroke', d => d.critical ? '#fff' : 'none')
+            .attr('stroke-width', d => d.critical ? 2 : 0);
+
+        node.append('text')
+            .attr('dx', 12)
+            .attr('dy', 3)
+            .text(d => d.name);
+
+        const tooltip = d3.select('#tooltip');
+
+        node.on('mouseover', function(event, d) {
+            // Count connections
+            const suppliers = graphData.edges.filter(e =>
+                (e.target.id || e.target) === d.id && e.type === 'supplier'
+            ).length;
+            const clients = graphData.edges.filter(e =>
+                (e.source.id || e.source) === d.id && e.type === 'supplier'
+            ).length;
+
+            tooltip.html(`
+                <h3>${d.name}</h3>
+                <div class="info-row">
+                    <span class="info-label">Ticker</span>
+                    <span class="info-value">${d.ticker}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Industry</span>
+                    <span class="info-value">${d.industry}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Country</span>
+                    <span class="info-value">${d.country}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Wave</span>
+                    <span class="info-value">${d.wave}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Suppliers</span>
+                    <span class="info-value">${suppliers}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Clients</span>
+                    <span class="info-value">${clients}</span>
+                </div>
+                ${d.desc ? `<div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid #3a3a4a; font-size: 0.8rem; color: #bbb; line-height: 1.4;">${d.desc}</div>` : ''}
+                ${d.critical ? '<div style="margin-top: 8px; color: #ef4444; font-weight: 600;">Critical Supply Chain Node</div>' : ''}
+            `)
+            .style('left', (event.pageX + 15) + 'px')
+            .style('top', (event.pageY - 15) + 'px')
+            .classed('visible', true);
+
+            // Highlight connected nodes
+            const connected = new Set();
+            connected.add(d.id);
+            graphData.edges.forEach(e => {
+                const sourceId = e.source.id || e.source;
+                const targetId = e.target.id || e.target;
+                if (sourceId === d.id) connected.add(targetId);
+                if (targetId === d.id) connected.add(sourceId);
+            });
+
+            node.classed('dimmed', n => !connected.has(n.id));
+            link.classed('dimmed', e => {
+                const sourceId = e.source.id || e.source;
+                const targetId = e.target.id || e.target;
+                return sourceId !== d.id && targetId !== d.id;
+            });
+            link.classed('highlighted', e => {
+                const sourceId = e.source.id || e.source;
+                const targetId = e.target.id || e.target;
+                return sourceId === d.id || targetId === d.id;
+            });
+        })
+        .on('mouseout', function() {
+            tooltip.classed('visible', false);
+            node.classed('dimmed', false);
+            link.classed('dimmed', false);
+            link.classed('highlighted', false);
+        });
+
+        simulation.on('tick', () => {
+            link
+                .attr('x1', d => d.source.x)
+                .attr('y1', d => d.source.y)
+                .attr('x2', d => d.target.x)
+                .attr('y2', d => d.target.y);
+
+            node.attr('transform', d => `translate(${d.x},${d.y})`);
+        });
+
+        function dragstarted(event) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+        }
+
+        function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        }
+
+        function dragended(event) {
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+        }
+
+        // Filter functionality
+        let activeCountry = 'all';
+        let activeIndustry = 'all';
+        let activeWave = 'all';
+
+        function applyFilters() {
+            node.style('display', d => {
+                const countryMatch = activeCountry === 'all' || d.country === activeCountry;
+                const industryMatch = activeIndustry === 'all' || d.industry === activeIndustry;
+                const waveMatch = activeWave === 'all' || d.wave === parseInt(activeWave);
+                return countryMatch && industryMatch && waveMatch ? 'block' : 'none';
+            });
+
+            link.style('display', d => {
+                const sourceNode = graphData.nodes.find(n => n.id === (d.source.id || d.source));
+                const targetNode = graphData.nodes.find(n => n.id === (d.target.id || d.target));
+
+                const sourceCountryMatch = activeCountry === 'all' || sourceNode.country === activeCountry;
+                const sourceIndustryMatch = activeIndustry === 'all' || sourceNode.industry === activeIndustry;
+                const sourceWaveMatch = activeWave === 'all' || sourceNode.wave === parseInt(activeWave);
+                const targetCountryMatch = activeCountry === 'all' || targetNode.country === activeCountry;
+                const targetIndustryMatch = activeIndustry === 'all' || targetNode.industry === activeIndustry;
+                const targetWaveMatch = activeWave === 'all' || targetNode.wave === parseInt(activeWave);
+
+                return (sourceCountryMatch && sourceIndustryMatch && sourceWaveMatch &&
+                        targetCountryMatch && targetIndustryMatch && targetWaveMatch) ? 'block' : 'none';
+            });
+        }
+
+        document.querySelectorAll('#country-filters .filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('#country-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                activeCountry = this.dataset.filter;
+                applyFilters();
+            });
+        });
+
+        document.querySelectorAll('#industry-filters .filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('#industry-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                activeIndustry = this.dataset.filter;
+                applyFilters();
+            });
+        });
+
+        document.querySelectorAll('#wave-filters .filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('#wave-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                activeWave = this.dataset.filter;
+                applyFilters();
+            });
+        });
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+
+            if (query === '') {
+                node.style('opacity', 1);
+                link.style('opacity', 1);
+                return;
+            }
+
+            const matchingIds = new Set();
+            graphData.nodes.forEach(n => {
+                if (n.name.toLowerCase().includes(query) ||
+                    n.ticker.toLowerCase().includes(query) ||
+                    n.country.toLowerCase().includes(query)) {
+                    matchingIds.add(n.id);
+                }
+            });
+
+            node.style('opacity', d => matchingIds.has(d.id) ? 1 : 0.15);
+            link.style('opacity', d => {
+                const sourceId = d.source.id || d.source;
+                const targetId = d.target.id || d.target;
+                return matchingIds.has(sourceId) || matchingIds.has(targetId) ? 1 : 0.05;
+            });
+        });
+
+        // Zoom controls
+        document.getElementById('zoom-in').addEventListener('click', () => {
+            svg.transition().duration(300).call(zoom.scaleBy, 1.3);
+        });
+
+        document.getElementById('zoom-out').addEventListener('click', () => {
+            svg.transition().duration(300).call(zoom.scaleBy, 0.7);
+        });
+
+        document.getElementById('reset').addEventListener('click', () => {
+            svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+        });
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            const newWidth = document.getElementById('graph').clientWidth;
+            const newHeight = document.getElementById('graph').clientHeight;
+            svg.attr('width', newWidth).attr('height', newHeight);
+            simulation.force('center', d3.forceCenter(newWidth / 2, newHeight / 2));
+            simulation.alpha(0.3).restart();
+        });
+
+        // Initial zoom out to fit all nodes
+        setTimeout(() => {
+            svg.call(zoom.transform, d3.zoomIdentity.scale(0.7).translate(width * 0.2, height * 0.2));
+        }, 1000);
+    </script>
+</body>
+</html>
