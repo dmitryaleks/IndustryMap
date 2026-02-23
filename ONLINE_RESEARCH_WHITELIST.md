@@ -42,3 +42,13 @@ Sites approved for online research during data collection.
 | Counterpoint Research | counterpointresearch.com | 2026-02-23 | Automotive/semiconductor market research |
 | Bloomberg | bloomberg.com | 2026-02-23 | Financial news, M&A, corporate actions |
 | CNBC | cnbc.com | 2026-02-23 | Financial news, earnings, market data |
+| Dai Nippon Printing IR | global.dnp | 2026-02-23 | DNP company IR, annual reports, press releases |
+| TipRanks | tipranks.com | 2026-02-23 | Analyst ratings, earnings announcements, stock data |
+| BusinessWire | businesswire.com | 2026-02-23 | Corporate press releases and announcements |
+| PR Newswire | prnewswire.com | 2026-02-23 | Corporate press releases and announcements |
+| OLED-Info | oled-info.com | 2026-02-23 | OLED display industry news and supply chain |
+| DisplayDaily | displaydaily.com | 2026-02-23 | Display technology industry analysis |
+| Statista | statista.com | 2026-02-23 | Market statistics, segment revenue charts |
+| GuruFocus | gurufocus.com | 2026-02-23 | Financial ratios, valuation, insider transactions |
+| imec | imec.be | 2026-02-23 | Semiconductor R&D institute; EUV/process node partnerships |
+| NC Commerce | commerce.nc.gov | 2026-02-23 | North Carolina state economic development announcements |
