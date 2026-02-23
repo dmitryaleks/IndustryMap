@@ -4,18 +4,20 @@
   "companyNameJapanese": "大日本印刷株式会社",
   "industryCode": "Semiconductor Materials",
   "ticker": "7912.T",
-  "description": "Major photomask manufacturer competing with TOPPAN. 300B JPY investment in photomask business 2026-28. Developing 2nm EUV and high-NA EUV photomasks.",
-  "marketCapInYen": 1280000000000,
-  "PER": 16.5,
-  "PBR": 0.7,
-  "EPS": 179.87,
-  "website": "https://www.dnp.co.jp/",
-  "percentOfForeignOwnership": null,
+  "description": "Japan's largest printing company by revenue (~1.46 trillion JPY FY2025) and the world's leading merchant photomask manufacturer, competing directly with TOPPAN (7911.T). DNP operates three business segments: (1) Smart Communication — commercial printing, publishing, packaging design, and digital services; (2) Life & Healthcare — food/pharmaceutical packaging (world #1 in Li-ion battery pouches by volume), mobility interior materials, aseptic beverage filling, medical packaging; (3) Electronics — photomasks, OLED fine metal masks (FMM), display optical films, semiconductor lead frames, glass core substrates (TGV), nanoimprint lithography (NIL) templates, and battery packaging materials. The Electronics segment is the key value driver, contributing ~77% of total segment operating income (~58B JPY in FY2023) despite being a minority of revenue. DNP is investing 50B JPY in new EUV photomask production infrastructure including multi-beam mask writing (MBMW) tools at its Kamifukuoka plant (Saitama), targeting mass production of 2nm-node photomasks for Rapidus by FY2027. Also delivering evaluation High-NA EUV masks (beyond 2nm). In OLED, DNP is the world's dominant FMM supplier with a 5-year contract with Samsung Display and new BOE supply relationship; its Kurosaki plant (Kitakyushu, 20B JPY investment) commenced 8G large-format FMM production in May 2024, targeting full capacity by March 2028. New frontier products include: TGV glass core substrates (pilot line at Kuki Plant, Dec 2025; sample shipments early 2026; mass production FY2028), nanoimprint templates capable of 1.4nm node patterning (in partnership with Canon, targeting 2027 mass production), and co-packaged optics (CPO) components for AI datacenters (R&D lab opened in Eindhoven, Netherlands, Sep 2025). Battery pouch business generates approximately 100B JPY revenue target; a 233M USD plant is being constructed in Linwood, North Carolina (operations planned 2026) for EV battery pouches. Founded 1876 as Japan's first modern printing company. Approximately 38,000 employees.",
+  "marketCapInYen": 1340000000000,
+  "PER": 17.26,
+  "PBR": 1.2,
+  "EPS": 226.57,
+  "website": "https://www.global.dnp/",
+  "percentOfForeignOwnership": 5.67,
   "percentOfCirculatingEquity": null,
-  "latestPriceYen": 2905,
+  "latestPriceYen": 3092,
   "isForexSensitive": true,
   "suppliers": [
-    "CMP-0015"
+    "CMP-0015",
+    "CMP-0024",
+    "CMP-0127"
   ],
   "clients": [
     "CMP-0017",
@@ -24,18 +26,299 @@
   ],
   "_externalRelationships": {
     "majorClients": [
-      "TSMC",
-      "Samsung",
-      "Intel",
-      "Rapidus"
+      "TSMC (CMP-0017) — photomasks, optical films; DNP is listed in TSMC Design Center Alliance",
+      "Samsung Electronics (CMP-0018) — photomasks, OLED FMM (Samsung Display 5-year volume contract), display films",
+      "Intel (CMP-0019) — photomasks; DNP was founding member of IMS Nanofabrication multi-beam writer collaboration alongside Intel",
+      "Rapidus — photomasks for 2nm node, DNP signed as NEDO-backed subcontractor for Rapidus 2nm production (FY2027)",
+      "BOE Display — OLED fine metal masks; DNP terminated Samsung Display exclusivity and began supplying BOE",
+      "UMC — historical multi-year photomask supply and development agreement"
     ],
-    "notes": "EUV photomask mass production 2027. High-NA EUV basic evaluation completed 2025. Lead frames also produced."
+    "majorSuppliers": [
+      "HOYA Corporation (7741.T, CMP-0015) — EUV mask blanks (quartz substrates coated with Mo/Si multilayer); HOYA and AGC are the two primary qualified suppliers of EUV mask blanks globally",
+      "AGC Inc. (5201.T) — EUV mask blanks (limited qualified supplier, AGC and HOYA together control EUV blank supply); also glass substrates for TGV development",
+      "Shin-Etsu Chemical (4063.T, CMP-0024) — photomask chemicals, specialty resins",
+      "IMS Nanofabrication (ASML subsidiary) — multi-beam mask writing (MBMW) tools used in DNP's Kamifukuoka plant for advanced EUV photomask production",
+      "imec (Belgium, not listed) — joint R&D partner for EUV photomask process development at 3nm, 2nm, and High-NA EUV nodes",
+      "Photronics Inc. (PLAB, NASDAQ) — joint venture partner; Photronics DNP Mask Corporation (PDMC) in Taiwan (50/50 JV); DNP-Photronics China JV in Xiamen (Fujian Province)"
+    ],
+    "competitors": [
+      "TOPPAN Holdings Inc. (7911.T, CMP-0047) — primary domestic rival; also produces photomasks via Tekscend subsidiary, FMM, display films, packaging; very similar business profile",
+      "Photronics Inc. (PLAB, NASDAQ) — US-based pure-play photomask merchant; JV partner in Taiwan and China",
+      "Hoya Corporation (7741.T, CMP-0015) — produces photomask blanks AND finished photomasks; competes at leading edge"
+    ],
+    "financialSummary": {
+      "FY2025_ended_March2025": {
+        "netSales": "1,457,609 million JPY (+2.3% YoY)",
+        "operatingIncome": "93,600 million JPY (+24.1% YoY)",
+        "operatingMargin": "6.4%",
+        "netIncome": "110,682 million JPY",
+        "EPS": "238.9 JPY",
+        "ROE": "9.6%",
+        "dividendPerShare": "38 JPY (raised from 32 JPY prior year)",
+        "freeCashFlow": "90,908 million JPY",
+        "netDebt": "-92,988 million JPY (net cash position)",
+        "equityRatio": "~57-58%",
+        "note": "FY2025 ended March 31, 2025. Strong operating income growth driven by Electronics segment. Net income comparison affected by prior-year one-time gains."
+      },
+      "FY2026_forecast_as_of_Feb2026": {
+        "netSales": "1,515,000 million JPY",
+        "operatingIncome": "103,000 million JPY",
+        "netIncome": "100,000 million JPY",
+        "EPS": "226.57 JPY",
+        "dividendPerShare": "40 JPY (full-year forecast)",
+        "revisionDate": "2026-02-13",
+        "revisionReason": "Stronger-than-expected demand in smart communications and electronics; cost structure improvements; yen depreciation vs USD more than initially projected",
+        "previousGuidance": {
+          "netSales": "1,500,000 million JPY",
+          "operatingIncome": "94,000 million JPY",
+          "netIncome": "90,000 million JPY",
+          "EPS": "203.91 JPY"
+        }
+      },
+      "Q3_FY2026_nine_months_to_Dec2025": {
+        "netSales": "1,128,200 million JPY (+4.6% YoY)",
+        "operatingIncome": "76,300 million JPY (+21.8% YoY)",
+        "ordinaryIncome": "87,500 million JPY (+9.8% YoY)",
+        "netIncomeForecastDecline": "-9.7% for full year (vs. prior year which included cross-shareholding disposal gains)",
+        "totalAssets": "1,980,400 million JPY",
+        "equityRatio": "57.7%",
+        "note": "Nine months ended December 31, 2025. All three segments (Smart Communication, Life & Healthcare, Electronics) posted sales increases. Life & Healthcare posted sharp profit improvement in first half."
+      },
+      "segmentOperatingIncome_FY2023_approx": {
+        "Electronics": "58,100 million JPY (~77% of total)",
+        "SmartCommunication": "26,100 million JPY",
+        "LifeAndHealthcare": "13,300 million JPY (~9B first half FY2025, then jumped to 18B in H1 FY2026)",
+        "note": "FY2023 ended March 2024. Electronics is overwhelmingly the profit driver. Electronics segment CAGR since 2017 approximately +20%."
+      },
+      "FY2024_ended_March2024": {
+        "netSales": "1,424,822 million JPY",
+        "netIncome": "110,929 million JPY",
+        "EPS": "221.6 JPY",
+        "ROE": "9.8%",
+        "note": "FY2024 ended March 31, 2024."
+      }
+    },
+    "geographicRevenue": {
+      "Japan": "~76% of total (~1,080B JPY)",
+      "Overseas": "~24% (~335B JPY)",
+      "note": "Based on FY2023 data. Overseas includes Asia (Korea, Taiwan, China), Americas (North Carolina battery pouch plant under construction), and Europe (Netherlands CPO R&D lab). Japan-heavy revenue concentration is a structural characteristic of DNP's business."
+    },
+    "shareholderStructure": {
+      "totalSharesIssued_approximate": "500,000,000 (before significant buybacks from 2023-2025)",
+      "sharesOutstanding_approximate": "433,800,000",
+      "marketCap": "~1.34T JPY (as of Feb 2026 at 3,092 JPY/share)",
+      "foreignOwnershipPercent": "~5.7% (State Street Bank and Trust Company is largest known foreign holder at 5.67%; total foreign ownership likely 20-25% including other institutional)",
+      "topKnownHolders": [
+        "Japan Trustee Services Bank (custodial): 7.50%",
+        "Master Trust Bank of Japan (custodial): 7.43%",
+        "State Street Bank and Trust Company (US): 5.67%",
+        "Nippon Life Insurance Company: 3.27%"
+      ],
+      "institutionalOwnership": "~62% (as of October 2023 data)"
+    },
+    "capitalAllocationHistory": {
+      "Elliott_activism_2023": {
+        "event": "Elliott Management Corp. (US activist hedge fund) acquired ~5% stake (worth ~$300M/USD) in Dai Nippon Printing in January 2023",
+        "response": "DNP announced the largest share buyback in company history — JPY 300 billion capital return plan (equivalent to ~30% of then market cap). Plan comprised: (a) up to 100B JPY share repurchase (up to ~15% of outstanding), (b) 220B JPY from cross-shareholding disposals.",
+        "outcome": "Elliott sold most of its stake by November 2024 after the stock re-rated significantly upward. DNP achieved 233.7B JPY cumulative cross-shareholding disposals through FY2024, exceeding the 220B JPY target ahead of schedule."
+      },
+      "ongoingBuybacks2025": {
+        "authorization": "Board authorized up to 30 million shares / 50 billion JPY through March 31, 2026 (authorized May 2025)",
+        "progressThroughDec2025": "15,894,200 shares repurchased for approximately 38.1 billion JPY cumulative",
+        "Dec2025Monthly": "1,729,800 shares repurchased for approximately 4.6 billion JPY in December 2025"
+      },
+      "mediumTermTargets": {
+        "ROE_target": "10% or higher (as soon as possible)",
+        "PBR_target": "Above 1.0x (as soon as possible)",
+        "operatingIncome_target": "130 billion JPY or more (medium-term management plan)",
+        "incomeCagr": "5% or more CAGR in operating income",
+        "strategy": "Focus business areas with ROE >10%; expand electronics and high-value materials; reduce print/commodity exposure; ongoing cross-shareholding disposal"
+      }
+    },
+    "keyProducts": {
+      "photomasks": {
+        "description": "Photomasks (reticles) used in lithography for semiconductor IC manufacturing. DNP is one of four global top-tier photomask suppliers (alongside TOPPAN, Photronics, and HOYA). Operates merchant mask shops in Japan (Kamifukuoka, Saitama — main EUV facility), Taiwan (via Photronics DNP Mask Corp / PDMC, 49.99% DNP-owned JV), and China (Xiamen JV with Photronics).",
+        "technologyStatus": {
+          "3nm_EUV": "Photomask manufacturing process developed December 2023",
+          "2nm_EUV": "Full-scale development began FY2024; completion targeted FY2025; mass production at Kamifukuoka targeted FY2027",
+          "HighNA_EUV_beyond2nm": "Began supplying evaluation EUV masks compatible with High-NA tools in December 2024",
+          "MBMW_tools": "50 billion JPY investment to add 2nd and 3rd multi-beam mask writing (MBMW) tools (first MBMW installed 2016, first merchant photomask maker globally to adopt MBMW)",
+          "imec_partnership": "Joint R&D with imec (Belgium) for EUV photomask process at leading nodes",
+          "marketPosition": "Top-tier alongside TOPPAN and Photronics; market led by EUV-capable suppliers; Japanese firms (DNP, TOPPAN, HOYA) supply majority of leading-edge EUV photomasks globally"
+        }
+      },
+      "nanoimprint_templates": {
+        "description": "Nanoimprint lithography (NIL) templates for semiconductor patterning. DNP has developed since 2003. Canon produces NIL exposure tools that use DNP templates.",
+        "latestDevelopment": "December 2025: DNP demonstrated 10nm line-pattern resolution on NIL template targeting 1.4nm-class logic semiconductors — 10x lower power vs EUV",
+        "productionPlan": "Mass production targeted 2027; NIL template sales target 4 billion JPY in FY2030",
+        "note": "No foundry has yet committed to high-volume manufacturing with NIL, but Canon and DNP are positioning as complementary to EUV"
+      },
+      "OLEDfinemetalMask": {
+        "description": "Fine Metal Masks (FMM) used in OLED display manufacturing (vapor deposition process). DNP is the global dominant FMM supplier, historically in exclusive relationship with Samsung Display.",
+        "recentDevelopments": {
+          "Samsung_contract": "5-year volume contract with Samsung Display (11G mask facility commenced); DNP doubled metal mask production capacity",
+          "BOE_supply": "DNP terminated Samsung Display exclusivity and began supplying BOE Display; represents significant market expansion",
+          "Kurosaki_plant": "New large-size metal mask production line at Kurosaki plant (Kitakyushu, Fukuoka) commenced May 2024; 20 billion JPY investment; 8G glass substrate compatible; full capacity targeted March 2028",
+          "marketSize": "FMM for OLED market valued at ~$1.1B in 2024; growing at ~34% CAGR through 2031 driven by OLED smartphone, tablet, and TV adoption"
+        }
+      },
+      "glassSubstrates_TGV": {
+        "description": "TGV (Through-Glass Via) glass core substrates for next-generation semiconductor packaging (FC-BGA and advanced packaging). Replaces conventional organic resin core materials.",
+        "specifications": "Panel size 510x515mm; high flatness and rigidity; fine TGV interconnections at high density; two variants: filled-type (copper-filled TGVs) and conformal-type",
+        "timeline": {
+          "pilotLine": "Kuki Plant (Kuki City, Saitama); pilot line began phased operations December 2025",
+          "sampleShipments": "Early 2026",
+          "massProduction": "FY2028 target"
+        }
+      },
+      "batteryPouches": {
+        "description": "Flexible laminate pouches (outer casing) for lithium-ion battery cells used in EVs and consumer electronics. DNP is the world's leading supplier by volume.",
+        "revenueTarget": "~100 billion JPY annually from battery pouches (FY2025 target)",
+        "USExpansion": {
+          "location": "Linwood, North Carolina (Davidson County)",
+          "investment": "233 million USD (approximately 33B JPY)",
+          "jobs": "352 new jobs",
+          "operationsTarget": "2026",
+          "note": "DNP's first US manufacturing facility"
+        },
+        "product": "Flexible composite film shaped into bag/tray; includes safety valve function to prevent blow-out; targeting EV battery makers in North America"
+      },
+      "coPpackagedOptics": {
+        "description": "Co-packaged optics (CPO) components integrating photonics with electronics for AI datacenter applications; reduces power consumption vs conventional approaches",
+        "rdCenter": "First overseas R&D center opened September 2025 at High Tech Campus Eindhoven, Netherlands; 3-year joint research agreement with PITC and Netherlands Organization for Applied Scientific Research (TNO)",
+        "note": "Emerging business targeting AI infrastructure buildout"
+      },
+      "displayFilms": {
+        "description": "Optical and display films: retardation films, anti-reflection and anti-glare films, light control films, transparent screens, backlight components, prism sheets, light guides, color filters for LCD"
+      },
+      "packagingAndIndustrialMaterials": {
+        "description": "Food packaging (retort pouches — pioneered 1975), aseptic filling systems for PET bottles (top domestic share), pharmaceutical packaging, automotive interior decorative molded parts (via Jan 2025 acquisition of HK Holding / Hikari)"
+      }
+    },
+    "recentCorporateActions": {
+      "HKHolding_acquisition": {
+        "date": "2025-01-31",
+        "target": "HK Holding Co., Ltd. (parent of Hikari; decorative molded parts for automotive and industrial equipment)",
+        "rationale": "Expands DNP's Mobility and Industrial High-Performance Materials segment with precision molding technologies for automotive interior/exterior materials",
+        "seller": "TMCAP 2016 limited partnership (T Capital Partners)"
+      },
+      "NorthCarolina_plant": {
+        "status": "Under construction; operations planned 2026",
+        "type": "Greenfield battery pouch manufacturing plant",
+        "investment": "$233M USD",
+        "location": "Linwood, North Carolina"
+      },
+      "stockBuyback2025": {
+        "authorization": "Up to 30 million shares / 50 billion JPY through March 31, 2026",
+        "progress": "15.9M shares / 38.1B JPY cumulative through December 31, 2025"
+      },
+      "sustainabilityLinkedBond": {
+        "date": "May 2025",
+        "description": "First sustainability-linked bond issued under DNP's Sustainability-Linked Finance Framework (established October 2024; first printing-industry company to establish such a framework)"
+      },
+      "EinhoveNRDCenter": {
+        "date": "September 2025",
+        "description": "Opened first overseas R&D center at High Tech Campus Eindhoven, Netherlands; focused on co-packaged optics (CPO) for AI datacenter applications; partnership with PITC and TNO"
+      },
+      "NaDeisposals": {
+        "description": "Cross-shareholding disposal program achieved 233.7B JPY cumulative through FY2024, exceeding 220B JPY target ahead of schedule following Elliott activism"
+      },
+      "employeeStockComp": {
+        "date": "2026 announcement",
+        "description": "New stock-based compensation system for employees launching FY ending March 2027; aligns human capital investment with corporate growth"
+      }
+    },
+    "valuationComparison": {
+      "DNP_7912T": {
+        "stockPrice": "3,092 JPY (Feb 2026)",
+        "marketCap": "~1.34T JPY",
+        "PER_TTM": "17.26x",
+        "PER_forward": "14.42x (FY2026E)",
+        "PBR": "1.2x",
+        "dividendYield": "1.29%",
+        "ROE": "~9.6%",
+        "52weekRange": "1,810 - 3,218 JPY",
+        "beta": 0.31,
+        "note": "Stock up significantly from 2023 lows following Elliott-driven re-rating. Near 52-week highs."
+      },
+      "TOPPAN_7911T": {
+        "stockPrice": "~4,597 JPY (mid-Feb 2026)",
+        "marketCap": "~1.31T JPY",
+        "PER": "~16x",
+        "PBR": "~0.89x",
+        "ROE": "~5-6%",
+        "revenueFY2025E": "~1,810B JPY",
+        "operatingIncomeFY2025E": "~110B JPY",
+        "note": "Toppan has higher absolute revenue but lower ROE. DNP's Electronics segment mix (photomask + FMM + battery pouch) is generally viewed as higher quality vs Toppan's more print-heavy profile."
+      },
+      "analystConsensus": {
+        "rating": "Moderate Buy / Buy",
+        "buyRecommendations": 2,
+        "sellRecommendations": 0,
+        "averageTargetPrice12m": "2,862.5 JPY (based on older data; stock has since traded higher)",
+        "highEstimate": "3,300 JPY",
+        "lowEstimate": "2,500 JPY",
+        "note": "As of early February 2026. Stock near or above consensus target, suggesting limited near-term upside in sell-side models unless earnings upgrades follow Feb 13, 2026 guidance raise."
+      }
+    },
+    "investmentThesis": {
+      "bullCase": [
+        "EUV photomask opportunity: Mass production of 2nm photomasks for Rapidus (2027) provides entry into Japan's government-backed leading-edge semiconductor program. Only DNP and TOPPAN among domestic Japanese firms are positioned.",
+        "High-NA EUV readiness: Completing evaluation mask supply for beyond-2nm nodes positions DNP for the next lithography cycle (ASML's NXE:3800 and EXE:5200 tools).",
+        "OLED FMM dominance: Elimination of Samsung Display exclusivity and new BOE supply agreement expands addressable market; 8G large format FMM opens tablet/laptop display opportunity. FMM market growing at 34% CAGR.",
+        "TGV glass substrates: Pilot line starting Dec 2025 targets mass production FY2028; first-mover advantage in glass core substrate packaging (competing vs Intel Glass Substrate, Corning, AGC).",
+        "Battery pouch leadership: World #1 battery pouch supplier; NC plant (2026) captures USMCA/IRA-compliant North American EV supply chain. 100B JPY revenue target.",
+        "NIL templates: Canon + DNP partnership for 1.4nm-capable NIL templates; if any major foundry adopts NIL as EUV complement, significant revenue upside.",
+        "Capital return: Ongoing share buybacks (50B JPY authorized through March 2026) + dividend increases; ROE expansion target toward 10% provides near-term re-rating catalyst.",
+        "Yen tailwinds: ~24% overseas revenue; weaker yen boosts JPY-reported results. Feb 2026 guidance upgrade explicitly cited yen depreciation.",
+        "Cross-shareholding liquidation: 233B JPY in cross-shareholdings already disposed; any additional disposals improve capital efficiency and provide buyback fuel."
+      ],
+      "bearCase": [
+        "Revenue concentration in legacy print: ~76% of revenue is Japan-centric; traditional printing is a structurally declining market with digital substitution accelerating.",
+        "Low electronics segment revenue share: Despite Electronics being ~77% of profit, its absolute revenue is relatively small vs total — limited scalability in the near-term for the most profitable products.",
+        "Photomask market maturity at legacy nodes: Non-EUV photomask market (ArF, KrF, i-line) is saturating; growth depends on EUV ramp which requires massive capex.",
+        "Rapidus execution risk: Rapidus 2nm plan is Japan government-backed but commercially unproven; delays to Rapidus production start push back DNP's photomask revenue from that customer.",
+        "NIL technology adoption risk: No foundry has committed to NIL HVM; DNP and Canon's bet may not materialize at scale, resulting in sunk R&D costs.",
+        "EV battery demand uncertainty: Global EV sales growth has moderated from early expectations; North Carolina battery pouch plant represents concentrated geographic bet.",
+        "Declining Elliott pressure: Elliott exited stake in November 2024; risk that management reverts toward conservative capital allocation without external pressure.",
+        "PBR only recently above 1.0x: Structurally low-multiple printing businesses drag on overall valuation; if Electronics products fail to scale as projected, PBR could revert below 1.0x.",
+        "Geopolitical risk: US-China tensions; OLED FMM supply to BOE creates modest geopolitical risk; export controls could affect photomask sales to China if tightened."
+      ],
+      "competitiveMoat": [
+        "EUV photomask know-how: First merchant photomask maker to adopt MBMW (2016); accumulated process knowledge and defect inspection capability at sub-2nm is not easily replicated",
+        "OLED FMM monopoly: Historical exclusive supplier to Samsung Display for fine metal masks; manufacturing precision at high-NA required is a significant barrier; few global producers",
+        "Long-standing customer relationships: Decades of suriawase (collaborative engineering) relationships with major fabs (TSMC, Samsung, Intel, UMC) create high switching costs",
+        "Breadth of semiconductor materials: Unique combination of photomasks, FMM, glass substrates, NIL templates, lead frames, and battery materials under one Japanese conglomerate umbrella",
+        "Government backing: DNP is directly selected for NEDO-funded Rapidus photomask program, indicating government recognition as a national strategic supplier"
+      ],
+      "catalysts": [
+        "FY2025 full-year results (May 2026): Will show impact of Feb 2026 guidance upgrade; Electronics segment Q4 contribution to be watched",
+        "Rapidus 2nm mass production milestone (FY2027): First commercial EUV photomask delivery to Rapidus would be a major validation",
+        "TGV glass substrate customer wins (2026): Early sample shipments and any named customer adoption announcement would re-rate valuation",
+        "Additional 50B JPY buyback authorization (expected May 2026): Continued capital return is a key support for PBR recovery",
+        "BOE FMM revenue ramp (2025-2026): BOE OLED production expansion drives incremental FMM revenue",
+        "NIL template adoption announcement: Any foundry (even smaller IDM) committing to Canon NIL + DNP templates would be a surprise upside catalyst",
+        "North Carolina plant production start (2026): First US-made battery pouches; potential for additional customer announcements from North American EV makers",
+        "Cross-shareholding disposal: Any additional large disposal (generating extraordinary gains) enables accelerated buybacks"
+      ],
+      "ESG": {
+        "carbonNeutral_target": "2050",
+        "GHG_target_2030": "Reduce GHG emissions 46.2% vs FY2019 baseline (revised up to SBT 1.5 degree level in April 2024)",
+        "resourceCirculation": "Target resource circulation rate >70% of all waste by FY2030; emphasis on plastic material recycling and chemical recycling",
+        "awards": "ESG Finance Award Japan 'Environmentally Sustainable Company' for 5 consecutive years; 7th ESG Finance Award 'Thematic Prize - Circular Economy' (first time in financial sector)",
+        "sustainabilityBond": "Sustainability-Linked Bond issued May 2025; first printing-industry company to establish Sustainability-Linked Finance Framework (October 2024)",
+        "governance": "Board includes outside directors; governance reforms accelerated post-Elliott activism; stock-based compensation for employees from FY2027"
+      }
+    },
+    "notes": "DNP is best understood as a Japanese industrial conglomerate in transformation — pivoting its 150-year-old printing expertise into semiconductor materials, precision electronics, and new-energy materials. The Electronics segment (~77% of consolidated operating profit from a minority of revenue) is the true investment thesis. The company's moat in photomasks and OLED FMM is real but expensive to maintain (50B JPY capex for EUV photomask alone). Elliott's 2023 activism was a catalyst for governance reform and capital return that has permanently re-rated the stock from ~0.5x PBR to above 1.0x. Key upcoming binary events: (1) Rapidus 2nm production success (FY2027), (2) TGV glass substrate customer wins (2026), (3) NIL template foundry adoption. DNP trades at a modest discount to TOPPAN on PBR (1.2x vs 0.89x after the re-rating) but at similar or slightly lower PER, reflecting better capital allocation at DNP. Revenue ~10x larger than pure-play photomask peers (Photronics: ~$900M revenue), providing cross-selling and scale advantages but also dragging down overall margins. The shares are up approximately 70% from 52-week low (1,810 JPY) to near 52-week high (3,218 JPY) as of February 2026, mostly driven by the Electronics re-rating and continued buybacks."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T17:00:00Z",
-    "dataSource": "Newswitch, Company IR",
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "DNP IR (global.dnp), Yahoo Finance, StockAnalysis, MarketScreener, TipRanks, Bloomberg, Nikkei Asia, Digitimes, TrendForce, BusinessWire, Business Wire, PR Newswire, imec press releases, Plastics News, NC Commerce, OLED-Info, DisplayDaily, Silicon UK, Tom's Hardware, Bits & Chips, MarketScreener, Statista, DCFModeling, SWOTAnalysisExample, PitchBook, GuruFocus",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T17:00:00Z",
-    "wave": 3
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 3,
+    "deepResearch": true,
+    "notes": "Full deep research update 2026-02-23. Comprehensive rebuild of sparse CMP-0049 record. Key data points: Stock 3,092 JPY; market cap 1.34T JPY; PER 17.26x TTM / 14.42x forward; PBR 1.2x; FY2026 guidance upgraded Feb 13, 2026 to revenue 1,515B / OP 103B / NI 100B JPY; Q3 FY2026 (9M to Dec 2025) OP +21.8% YoY. Share buyback 15.9M shares / 38.1B JPY through Dec 2025. Elliott stake sold Nov 2024. HK Holding acquired Jan 2025 (automotive molding). North Carolina battery pouch plant $233M investment (ops 2026). OLED FMM: Kurosaki 8G plant May 2024; BOE supply contract. TGV glass substrate pilot line Dec 2025; sample shipments early 2026. NIL template 10nm resolution achieved, 1.4nm-capable, mass production 2027. CPO R&D lab Eindhoven Sep 2025. Rapidus 2nm photomask supply partnership; EUV 2nm mass production Kamifukuoka FY2027. 50B JPY EUV capex. Cross-shareholding disposals 233.7B JPY cumulative (target exceeded). Sustainability-Linked Bond May 2025. ESG awards 5 consecutive years."
   }
 }

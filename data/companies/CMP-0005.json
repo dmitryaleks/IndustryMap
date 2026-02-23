@@ -4,36 +4,203 @@
   "companyNameJapanese": "株式会社アドバンテスト",
   "industryCode": "Semiconductor Equipment",
   "ticker": "6857.T",
-  "description": "Leading manufacturer of semiconductor test equipment including automatic test equipment (ATE) for logic, memory, and mixed-signal devices. Strong growth in AI-related tester demand.",
-  "marketCapInYen": 17630000000000,
+  "description": "World's #1 semiconductor test equipment (ATE) maker with ~50-58% overall global share, ~60-70% in memory test, and ~35-45% in SoC test. Forms a duopoly with Teradyne (~30%) controlling ~80% of the $6-7B+ global ATE market. Core platforms: V93000 EXA Scale (high-end SoC test for AI/HPC chips), T5500 (memory test: DRAM, NAND, HBM), T2000/AiR2X (analog/mixed-signal), T7038 SLT (system-level test). Called 'the ASML of the test industry.' Holds 100% share in advanced HBM memory testing requiring extended test times and multiple insertions per die. Revenue split: ~90% Test Systems, ~10% Services. FY ending March. FY2024 (Mar 2025): revenue 779.7B JPY (+60.3% YoY), OPM 29.3%, NI 161.2B JPY, ROE 37.8%. FY2025 guidance (revised up Jan 2026): revenue 1,070.0B JPY (+37.2%), OPM 42.4%, NI 328.5B JPY. Asia is 89.4% of revenue (primarily Taiwan, Korea, China). 4-for-1 stock split Oct 2023. Founded 1954 in Tokyo. ~5,800 employees. Manufacturing in Gunma (Japan) and Malaysia.",
+  "marketCapInYen": 18650000000000,
   "PER": 56.3,
   "PBR": 30.36,
   "EPS": 452.34,
   "website": "https://www.advantest.com/",
-  "percentOfForeignOwnership": 50.0,
+  "percentOfForeignOwnership": 45.23,
   "percentOfCirculatingEquity": null,
   "latestPriceYen": 25475,
   "isForexSensitive": true,
   "suppliers": [],
-  "clients": [],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019",
+    "CMP-0020",
+    "CMP-0021",
+    "CMP-0014",
+    "CMP-0063",
+    "CMP-0064"
+  ],
   "_externalRelationships": {
     "majorClients": [
-      "Samsung Electronics",
-      "SK Hynix",
-      "Micron",
-      "TSMC ecosystem"
+      "Samsung Electronics (CMP-0018) — largest memory test customer; DRAM, NAND, HBM testers; also foundry SoC test",
+      "SK Hynix (CMP-0020) — major memory test customer; DRAM, HBM (dominant HBM tester supplier)",
+      "Micron Technology (CMP-0021) — major memory test customer; DRAM, NAND, HBM",
+      "TSMC ecosystem (CMP-0017) — SoC testers for foundry test operations; tests AI/HPC chips for NVIDIA, Apple, AMD, Qualcomm",
+      "Intel (CMP-0019) — SoC and legacy memory test",
+      "Kioxia (CMP-0014) — NAND flash memory test",
+      "ASE Technology (CMP-0063) — OSAT final test operations (world #1 OSAT)",
+      "Amkor Technology (CMP-0064) — OSAT final test operations (world #2 OSAT)"
     ],
     "indirectClients": [
-      "NVIDIA",
-      "Apple (via foundries)"
+      "NVIDIA (CMP-0028) — via TSMC/OSATs for GPU test (V93000 EXA Scale)",
+      "Apple — via TSMC for SoC test",
+      "AMD — via TSMC for CPU/GPU test",
+      "Qualcomm — via TSMC/Samsung for mobile SoC test",
+      "Broadcom — via TSMC for networking chip test",
+      "MediaTek — via TSMC for mobile SoC test"
     ],
-    "notes": "60-70% share in memory test, 35-45% in SoC test. Deep relationships with Samsung, SK Hynix, Micron, and TSMC ecosystem."
+    "majorSuppliers": [
+      "Sole-source component suppliers (not publicly disclosed; identified as key risk factor)",
+      "Aval Data (CMP-0054) — tester boards/probes",
+      "NHK Spring (CMP-0055) — probe card springs"
+    ],
+    "competitors": [
+      "Teradyne Inc. (NASDAQ: TER) — world #2 ATE maker; ~30% overall share; gaining in HBM test; neck-and-neck in SoC test at 35-45% each",
+      "Cohu Inc. (NASDAQ: COHU) — distant #3; ~5% share; focused on power/RF testing and handlers",
+      "NI / Emerson (post-acquisition) — 2025 strategic collaboration with Advantest announced for AI ecosystems",
+      "Chinese domestic ATE (early stage, growing under localization pressure)"
+    ],
+    "partners": [
+      "Tokyo Seimitsu / ACCRETECH (CMP-0001) — joint development of die-level probers for AI/HPC testing, addressing Known Good Die requirements in 2.5D/3D packaging (announced Dec 2025)"
+    ],
+    "financialSummary": {
+      "FY2024_ended_Mar2025": {
+        "netSales": "779.7B JPY (+60.3% YoY)",
+        "grossProfit": "445.1B JPY (57.1% margin)",
+        "operatingIncome": "228.2B JPY (~29.3% OPM)",
+        "netIncome": "161.2B JPY (2.6x YoY)",
+        "ROE": "~37.8%",
+        "EPS": "~218 JPY (split-adjusted)",
+        "note": "All-time record results. Driven by explosive AI/HPC-related test demand. Gross margin expanded to 57.1% from 50.6%."
+      },
+      "FY2025_9M_Apr_Dec2025": {
+        "netSales": "800.5B JPY (+46.3% YoY)",
+        "operatingIncome": "346.0B JPY (+110.8% YoY)",
+        "netIncome": "248.5B JPY (+105.0% YoY)",
+        "operatingMargin": "43.2%",
+        "grossMargin": "65.1% (Q3 standalone)",
+        "note": "Record Q3 quarter: revenue 273.8B, OPM 41.5%. AI-related demand 'exceeded internal projections.'"
+      },
+      "FY2025_forecast_Mar2026": {
+        "netSales": "1,070.0B JPY (+37.2% YoY)",
+        "operatingIncome": "454.0B JPY (+99.0% YoY)",
+        "netIncome": "328.5B JPY (+103.8% YoY)",
+        "operatingMargin": "42.4%",
+        "netMargin": "30.7%",
+        "EPS": "~452.34 JPY",
+        "note": "Guidance revised upward Jan 2026 (from 950B/374B OP). First-ever trillion-yen revenue year."
+      },
+      "FY2023_ended_Mar2024": {
+        "netSales": "486.5B JPY (-13.2% YoY)",
+        "operatingIncome": "90.6B JPY (18.6% OPM)",
+        "netIncome": "62.3B JPY",
+        "note": "Cyclical downturn year after two years of 30%+ growth."
+      },
+      "FY2022_ended_Mar2023": {
+        "netSales": "560.2B JPY (+34.4% YoY)",
+        "operatingIncome": "167.7B JPY (29.9% OPM)",
+        "netIncome": "130.4B JPY",
+        "note": "Peak of prior cycle."
+      },
+      "FY2021_ended_Mar2022": {
+        "netSales": "416.9B JPY (+33.3% YoY)",
+        "operatingIncome": "114.7B JPY (27.5% OPM)",
+        "note": "Strong semiconductor cycle year."
+      },
+      "FY2026_consensus": {
+        "netSales": "~1,250B JPY (+17-21% YoY)",
+        "EPS": "~582 JPY (+29% YoY)",
+        "note": "Management anticipates 30-40% revenue growth; analyst consensus more conservative."
+      }
+    },
+    "geographicRevenue_FY2024": {
+      "AsiaExJapan": "696.8B JPY (89.4%) — primarily Taiwan, Korea, China",
+      "Americas": "47.1B JPY (6.0%)",
+      "Europe": "20.0B JPY (2.6%)",
+      "Japan": "15.8B JPY (2.0%)",
+      "chinaEstimate": "~10-20% (not separately disclosed; lower than peers due to customer HQ locations)"
+    },
+    "shareholderStructure": {
+      "totalSharesIssued": 732000000,
+      "treasuryShares": "~5.8M (after 34.1M cancellation on Feb 6, 2026)",
+      "totalShareholders": 92878,
+      "foreignOwnership": "45.23%",
+      "financialInstitutions": "43.81%",
+      "individualsAndOthers": "5.37%",
+      "otherEntities": "5.59%",
+      "topShareholders": [
+        "Master Trust Bank of Japan (Trust): 30.34%",
+        "Custody Bank of Japan (Trust): ~12.30%",
+        "State Street Bank (custodial): ~3-5%",
+        "BlackRock, Inc.: increased stake by 5.2% in Q2 2023",
+        "Vanguard Group: increased stake by 4.8%",
+        "Wellington Management: ~4.2%",
+        "BNY Mellon (custodial): ~2-3%"
+      ],
+      "treasuryShareCancellation": "34.1M shares cancelled Feb 6, 2026 (4.46% of outstanding)"
+    },
+    "dividendHistory": {
+      "FY2024_Mar2025": "~58 JPY (est., based on interim 29 JPY)",
+      "FY2023_Mar2024": "39 JPY (payout 17.8%)",
+      "FY2022_Mar2023": "34.25 JPY (payout 40.6%)",
+      "FY2021_Mar2022": "33.75 JPY (payout 19.4%)",
+      "FY2020_Mar2021": "30 JPY (payout 26.7%)",
+      "policy": "Minimum 30 JPY/share annual. Target cumulative total return ratio 50%+ over 3 years (FY2024-FY2026) incl. buybacks.",
+      "note": "All figures post 4:1 split (Oct 2023)"
+    },
+    "shareBuybackHistory": {
+      "Oct2025": "Up to 150B JPY (~2.5% of shares outstanding)",
+      "Feb2026_cancellation": "34.1M treasury shares cancelled (4.46% of outstanding)",
+      "postCancellation_treasury": "~5.8M shares"
+    },
+    "capacityExpansion": [
+      "Target: 5,000 ATE systems by end of FY2026, potentially 7,500 within two years",
+      "Manufacturing hub: Gunma Prefecture (Japan) — primary production facility",
+      "Assembly operations: Malaysia",
+      "Significant capex to expand manufacturing capacity in line with AI-driven demand"
+    ],
+    "productPortfolio": {
+      "V93000_EXA_Scale": "High-end SoC test for AI chips, HPC, automotive. Handles high current and high-speed serial interfaces. 25th anniversary in 2024.",
+      "T5500_family": "Memory test: DRAM, NAND, HBM. Core memory platform. Dominant in HBM test.",
+      "T2000_AiR2X": "Analog/mixed-signal, power IC testing. New air-cooled version launched Dec 2025.",
+      "T7038_SLT": "System-level test for complex AI/HPC workloads.",
+      "ACS_CloudSolutions": "AI/ML-powered real-time test analytics."
+    },
+    "acquisitionHistory": [
+      "2011: Verigy — transformational; added SoC test leadership",
+      "2019: Astronics semiconductor SLT business",
+      "2020: Essai Inc.; strategic alliance with PDF Solutions",
+      "2022: CREA S.r.l. (Italy)",
+      "2023: ACE Technology Co., Ltd. (Taiwan)"
+    ],
+    "keyRisks": [
+      "Extreme valuation: PBR 30.4x, TTM P/E ~72x; priced for sustained high growth; any deceleration risks sharp correction",
+      "Customer concentration: Top 5 customers = 48% of FY2024 revenue (up from 29% in FY2023); memory makers dominate",
+      "Cyclicality: ATE is among the most cyclical sub-sectors; FY2023 showed -13.2% revenue decline after two years of 30%+ growth",
+      "AI demand sustainability: Revenue growth heavily linked to AI/HPC testing buildout; slowdown in AI capex would directly impact",
+      "Competition from Teradyne: Gaining ground in HBM test; SoC test is neck-and-neck at ~35-45% each",
+      "FX sensitivity: ~80% of sales in non-yen currencies (primarily USD); yen appreciation would compress margins",
+      "China/geopolitical: Asia is 89.4% of revenue; tightening export controls could restrict test equipment sales to China",
+      "Supply chain: Reliance on sole-source suppliers for certain components; manufacturing concentrated in Japan (natural disaster risk)"
+    ],
+    "growthDrivers": [
+      "AI/HPC testing: V93000 EXA Scale for GPU/accelerator test; SoC tester market estimated $8.5-9.5B for CY2026 (~30% YoY growth)",
+      "HBM demand: 60-70% memory test share; HBM requires 2-3x longer test times and multiple insertions vs standard DRAM",
+      "Advanced packaging: Die-level probers (JV with Tokyo Seimitsu) for Known Good Die testing in 2.5D/3D chiplet architectures",
+      "System-level test: T7038 SLT addresses growing need to test complex AI/HPC workloads at system level",
+      "Margin expansion: Q3 FY2025 gross margin reached 65.1% reflecting favorable AI product mix shift",
+      "Capacity expansion: Targeting 5,000-7,500 systems to meet multi-year AI demand wave",
+      "Buyback program: 150B JPY announced Oct 2025; 34.1M shares cancelled Feb 2026"
+    ],
+    "valuationContext": {
+      "Advantest_6857T": { "PE": 56.3, "PB": 30.36, "fwdPE_consensus": "~43.8 (FY2027/3)", "marketCap": "18.65T JPY" },
+      "Teradyne_TER": { "PE": "~35-40", "note": "Main competitor; lower multiples reflecting lower market share and slower growth" },
+      "note": "Advantest trades at the highest P/B in global semiconductor equipment. Premium reflects monopoly-like memory test position, 60%+ revenue growth in FY2024, and central role in AI testing. 52-week range of 4,703-29,250 JPY (6.2x range) shows extreme volatility."
+    },
+    "stockSplitNote": "4-for-1 stock split effective October 1, 2023. All per-share figures after this date are on post-split basis."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, TradingView, TSPA Semiconductor",
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Advantest IR (advantest.com), Yahoo Finance, MarketScreener, StockAnalysis, Investing.com, CompaniesMarketCap, SimplyWallSt, Bloomberg, CNBC, TSPA Semiconductor, Seeking Alpha",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T14:00:00Z",
-    "notes": "Record 9-month results. FY March 2026 guidance: Net sales 1.07T JPY, Operating income 454B JPY. All-time high: 29,250 JPY (Jan 29, 2026). Called 'ASML of test industry'."
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 1,
+    "deepResearch": true,
+    "notes": "Deep research update 2026-02-23. FY2024 record: revenue 779.7B (+60.3%), OPM 29.3%, NI 161.2B, ROE 37.8%. FY2025 guidance: revenue 1,070.0B (first trillion-yen year), OPM 42.4%. FY2025 9M: revenue 800.5B (+46.3%), Q3 gross margin 65.1%. Stock near all-time high 29,250 JPY (Jan 2026). P/E 56.3x, P/B 30.36x. Foreign ownership 45.23% (corrected from 50%). Top 5 customers 48% of revenue. 150B JPY buyback; 34.1M shares cancelled Feb 2026. Die-level prober JV with Tokyo Seimitsu (Dec 2025)."
   }
 }

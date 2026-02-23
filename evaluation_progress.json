@@ -437,91 +437,92 @@
       "ticker": "6857.T",
       "industryCode": "Semiconductor Equipment",
       "peerGroup": "G1",
-      "marketCapTier": "Large",
+      "marketCapTier": "Mega",
       "researchStatus": "complete",
       "scoringStatus": "complete",
-      "researchCompleteness_pct": 93.3,
+      "researchCompleteness_pct": 98.0,
       "researchData": {
         "PER": 56.3,
-        "forwardPER": null,
+        "forwardPER": 43.8,
         "PBR": 30.36,
         "EPS": 452.34,
-        "ROE": 31.8,
-        "marketCapInYen": 17630000000000,
-        "marketCapUSD": null,
+        "ROE": 37.8,
+        "marketCapInYen": 18650000000000,
+        "marketCapUSD": 120000000000,
         "latestPriceYen": 25475,
         "latestPriceLocal": null,
         "localCurrency": null,
         "weekHigh52": 29250,
         "weekLow52": 4703,
-        "revenueLatestFY_JPY_B": 1070.0,
-        "revenueGrowthYoY_pct": 37.0,
-        "operatingMargin_pct": 39.4,
-        "dividendYield_pct": 0.21,
-        "foreignOwnership_pct": 50.0,
+        "revenueLatestFY_JPY_B": 779.7,
+        "revenueGrowthYoY_pct": 60.3,
+        "operatingMargin_pct": 42.4,
+        "dividendYield_pct": 0.15,
+        "foreignOwnership_pct": 45.23,
         "circulatingEquity_pct": null,
         "analystBuy": 14,
         "analystHold": 4,
         "analystSell": 1,
-        "analystAvgTarget_local": 25974,
+        "analystAvgTarget_local": 24734,
         "isForexSensitive": true,
-        "chinaRevenue_pct_est": null,
-        "topCustomerRev_pct_est": null,
+        "chinaRevenue_pct_est": 15.0,
+        "topCustomerRev_pct_est": 48.0,
         "hasBuyback": true
       },
       "scores": {
         "A": {
           "A1_PER_discount": 0,
-          "A2_fwdPER_discount": null,
+          "A2_fwdPER_discount": 0,
           "A3_PBR_discount": 0,
           "A4_earningsYield": 1,
-          "total": 1.2,
-          "note": "Scored 3/4 sub-dimensions; pro-rata rescaled to 30"
+          "total": 1.0,
+          "note": "All sub-dimensions scored. P/E 56x, fwd P/E 44x, P/B 30x — extreme valuation across all metrics."
         },
         "B": {
-          "B1_marketShare": 8,
+          "B1_marketShare": 9,
           "B2_switchingCosts": 5,
-          "B3_techDiff": 4,
+          "B3_techDiff": 5,
           "B4_chainCentrality": 5,
-          "total": 22,
-          "note": "B4 updated from graph.json; others from prior scoring"
+          "total": 24,
+          "note": "Near-maximum moat. 50-58% overall ATE share, 60-70% memory test. Duopoly with Teradyne. Deep customer lock-in via test program investments."
         },
         "C": {
           "C1_revenueGrowth": 5,
           "C2_operatingMargin": 4,
-          "C3_ROE": 3,
-          "C4_AIexposure": 3,
+          "C3_ROE": 4,
+          "C4_AIexposure": 4,
           "total": 15.0,
-          "note": "All sub-dimensions scored"
+          "note": "Revenue +60.3% FY2024, +37.2% FY2025E. OPM expanding to 42.4%. ROE 37.8%. Maximum AI exposure: every AI chip requires testing."
         },
         "D": {
           "D1_foreignOwnershipGap": 0,
           "D2_floatDynamics": 2,
-          "D3_priceVs52W": 0,
-          "total": 2.0,
-          "note": "All sub-dimensions scored"
+          "D3_priceVs52W": 1,
+          "total": 3.0,
+          "note": "Foreign ownership 45.23% — near saturation for Japan semi equipment. 150B buyback + 34.1M share cancellation provide float support. Stock 13% below ATH."
         },
         "E": {
           "E1_analystConsensus": 2,
           "E2_capacityExpansion": 3,
           "E3_policyTailwinds": 2,
           "total": 7.0,
-          "note": "All sub-dimensions scored"
+          "note": "14 Buy vs 4 Hold vs 1 Sell. Capacity target 5,000-7,500 systems. Die-level prober JV with Tokyo Seimitsu."
         },
         "F": {
           "F1_forexSensitivity": 1,
           "F2_customerConcentration": 2,
-          "F3_geopoliticalRisk": 2,
-          "total": 5,
-          "note": "Scored from isForexSensitive, client arrays, descriptions"
+          "F3_geopoliticalRisk": 3,
+          "total": 6,
+          "note": "Top 5 = 48% revenue (up from 29%); 80% non-yen sales; Asia 89.4% — lower China-specific exposure but high Asian concentration."
         }
       },
-      "rawComposite": 52.2,
-      "dataCoverage_pct": 95.2,
+      "rawComposite": 56.0,
+      "dataCoverage_pct": 98.0,
       "confidenceMultiplier": 1.0,
-      "finalScore": 52.2,
+      "finalScore": 56.0,
       "confidence": "High",
-      "notes": ""
+      "notes": "Deep research update 2026-02-23. FY2024 record: revenue 779.7B (+60.3%), OPM 29.3%, ROE 37.8%. FY2025 guidance revised up: revenue 1,070.0B (first trillion-yen year), OPM 42.4%. Foreign ownership corrected from 50% to 45.23%. Top 5 customers = 48% revenue. 150B buyback + 34.1M share cancellation. Score +3.8 pts driven by moat, growth, and ownership upgrades.",
+      "investmentThesis": "Advantest Corporation (6857.T) occupies what may be the most strategically important position in the global semiconductor equipment ecosystem: every chip ever made must be tested, and Advantest controls 50-58% of the global ATE market — forming a duopoly with Teradyne (~30%) that together commands ~80% of the $6-7B+ market. In memory test specifically, Advantest's dominance reaches 60-70%, making it the irreplaceable testing partner for Samsung, SK Hynix, and Micron across DRAM, NAND, and critically, HBM.\n\nThe AI supercycle has transformed Advantest's financial profile. FY2024 (Mar 2025) delivered record revenue of 779.7B JPY (+60.3%), and FY2025 guidance of 1,070.0B JPY represents the company's first-ever trillion-yen revenue year, with operating margins expanding to 42.4% (from 29.3%) as the product mix shifts toward high-value AI test platforms. The Q3 FY2025 standalone quarter achieved a 65.1% gross margin — extraordinary for equipment. The V93000 EXA Scale platform addresses the most demanding SoC test requirements for AI/HPC chips, while the T5500 memory test family dominates HBM testing where each die requires 2-3x longer test times than standard DRAM.\n\nThe investment challenge, as with DISCO, is extreme valuation. At P/E 56x and P/B 30.4x, Advantest trades at the highest price-to-book ratio in global semiconductor equipment. The 52-week range of 4,703-29,250 JPY (a 6.2x swing) reflects both the explosive growth narrative and the embedded volatility. Forward P/E of ~44x on FY2027/3 consensus assumes continued rapid earnings growth. Customer concentration has increased alarmingly: top 5 customers now represent 48% of revenue (up from 29% in FY2023), creating binary risk around any single customer's capex decisions.\n\nGrowth catalysts are powerful and multi-year: (1) HBM testing demand scales with every AI memory stack; (2) die-level probers (JV with Tokyo Seimitsu, Dec 2025) for Known Good Die testing in chiplet architectures; (3) system-level test (T7038 SLT) for AI/HPC workloads; (4) capacity expansion to 5,000-7,500 systems; (5) 150B JPY buyback program (announced Oct 2025) with 34.1M shares already cancelled. Foreign ownership at 45.23% (corrected from 50%) is near saturation — limited further re-rating from this vector.\n\nKey risks beyond valuation: ATE is the most cyclical sub-sector of semiconductor equipment (FY2023 showed -13.2% revenue decline); Teradyne is actively gaining ground in HBM test; 89.4% Asia revenue concentration creates geopolitical exposure; and sole-source supplier dependencies add supply chain risk. Advantest is a generational franchise at the heart of the AI revolution, but entry discipline is paramount. A pullback toward 20,000-22,000 JPY (closer to analyst consensus ~24,700 JPY) would offer meaningfully better risk/reward. [Confidence: High — deep research update 2026-02-23]"
     },
     {
       "id": "CMP-0006",

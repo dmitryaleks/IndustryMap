@@ -1,0 +1,46 @@
+{
+  "id": "CMP-0127",
+  "companyName": "AGC Inc.",
+  "companyNameJapanese": "AGC株式会社",
+  "industryCode": "Advanced Materials",
+  "ticker": "5201.T",
+  "description": "Japan's largest and world's leading glass manufacturer (formerly Asahi Glass Co., Ltd.; rebranded AGC 2018). Operates across four segments: Architecture (flat glass for buildings), Automotive (automotive glass, adhesives), Electronics (specialty glass, display glass, synthetic quartz for semiconductors), and Chemicals (fluoropolymers, chlor-alkali, specialty chemicals). AGC and HOYA Corporation are the only two globally qualified suppliers of EUV photomask blank substrates — an extraordinary duopoly supplying the entire semiconductor industry's EUV lithography supply chain. AGC produces synthetic quartz glass substrates coated with Mo/Si multilayer absorber stacks to exacting flatness and purity tolerances required for EUV photomasks at sub-5nm nodes. Also supplies low-thermal-expansion glass (LTES) for photomask blanks at ArF/KrF nodes. Key customer for EUV blanks: Dai Nippon Printing (CMP-0049), TOPPAN Holdings (CMP-0047), HOYA Mask (CMP-0015), Photronics. Also developing glass substrates for advanced semiconductor packaging (competing in the TGV and glass core substrate space alongside DNP, Corning, and Samsung Electro-Mechanics). Fluorochemicals segment produces PTFE (Teflon AF), fluorinated etching gases, and process chemicals used in semiconductor fab cleaning and etching processes.",
+  "marketCapInYen": 900000000000,
+  "website": "https://www.agc.com/",
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0049",
+    "CMP-0047",
+    "CMP-0015"
+  ],
+  "_externalRelationships": {
+    "keyProducts": [
+      "EUV photomask blank substrates — synthetic quartz with Mo/Si multilayer; one of only two qualified global suppliers (with HOYA)",
+      "ArF/KrF photomask blank substrates — low-thermal-expansion glass (LTES)",
+      "Display glass — TFT-LCD substrates (ASAHI brand), OLED encapsulation glass",
+      "Automotive glass — laminated windshields, UV/IR-cut glass",
+      "Fluoropolymers — Fluon PTFE, ETFE, PFA; used in semiconductor fab piping and linings",
+      "Specialty fluorochemicals — semiconductor etching gases, cleaning agents",
+      "Glass substrates for advanced packaging — competing in TGV and glass core substrate space"
+    ],
+    "EUVBlankDuopoly": "AGC and HOYA are the sole globally qualified suppliers of EUV photomask blanks. This creates an extraordinary supply chain chokepoint — every EUV-node semiconductor chip worldwide depends on blanks from one of these two Japanese companies. The qualification process for EUV blanks (defect density, flatness, Mo/Si deposition uniformity) is so demanding that no other supplier has achieved commercial qualification. AGC supplies blanks to DNP, TOPPAN, HOYA Mask, and Photronics.",
+    "keyCustomers": [
+      "Dai Nippon Printing (7912.T, CMP-0049) — EUV photomask blanks",
+      "TOPPAN Holdings (7911.T, CMP-0047) — EUV photomask blanks",
+      "HOYA Corporation (7741.T, CMP-0015) — EUV photomask blanks (HOYA also self-supplies as vertically integrated)",
+      "Photronics (PLAB) — photomask blanks for merchant photomask production",
+      "Corning (GLW) — display glass competitor and market partner",
+      "Major automotive OEMs — automotive glass worldwide"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "DNP CMP-0049 deep research (AGC identified as one of two EUV photomask blank suppliers), AGC IR (agc.com), SEMI industry reports on EUV supply chain",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as DNP (CMP-0049) and TOPPAN (CMP-0047) key EUV photomask blank supplier. Market cap approximate as of Feb 2026. AGC's EUV blank business is strategically critical but a relatively small fraction of total AGC revenue. Full financial details pending dedicated deep research."
+  }
+}

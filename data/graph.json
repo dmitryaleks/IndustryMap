@@ -1,13 +1,13 @@
 {
-  "version": "4.2.0",
+  "version": "4.3.0",
   "generatedAt": "2026-02-23T00:00:00Z",
-  "description": "Semiconductor/specialty chemicals/automotive supply chain graph - 126 companies, 7 regions (Wave 8: Nagase + DENSO deep research — added 4 missing wave-7 nodes, 4 new wave-8 nodes, 11 new edges)",
+  "description": "Semiconductor/specialty chemicals/automotive supply chain graph - 127 companies, 7 regions (Wave 8: DNP deep research — added AGC node, DNP supply chain edges, TOPPAN competitor edge)",
   "statistics": {
-    "totalNodes": 126,
-    "totalEdges": 372,
+    "totalNodes": 127,
+    "totalEdges": 380,
     "edgeTypes": {
-      "supplier": 308,
-      "competitor": 46,
+      "supplier": 314,
+      "competitor": 48,
       "partner": 6,
       "ecosystem": 12
     }
@@ -403,7 +403,7 @@
       "industry": "Semiconductor Materials",
       "country": "Japan",
       "ticker": "7912.T",
-      "marketCap": null
+      "marketCap": 1340000000000
     },
     {
       "id": "CMP-0050",
@@ -1020,6 +1020,14 @@
       "country": "Japan",
       "ticker": "7267.T",
       "marketCap": 6800000000000
+    },
+    {
+      "id": "CMP-0127",
+      "name": "AGC Inc.",
+      "industry": "Advanced Materials",
+      "country": "Japan",
+      "ticker": "5201.T",
+      "marketCap": 900000000000
     }
   ],
   "edges": [
@@ -3040,6 +3048,18 @@
       "label": "Stealth Dicing laser engine (SD engine)"
     },
     {
+      "source": "CMP-0005",
+      "target": "CMP-0019",
+      "type": "supplier",
+      "label": "ATE test equipment (SoC)"
+    },
+    {
+      "source": "CMP-0005",
+      "target": "CMP-0014",
+      "type": "supplier",
+      "label": "ATE test equipment (NAND flash)"
+    },
+    {
       "source": "CMP-0002",
       "target": "CMP-0089",
       "type": "competitor",
@@ -3194,6 +3214,42 @@
       "target": "CMP-0126",
       "type": "supplier",
       "label": "HVAC, engine management, sensors"
+    },
+    {
+      "source": "CMP-0127",
+      "target": "CMP-0049",
+      "type": "supplier",
+      "label": "EUV photomask blank substrates (Mo/Si multilayer on quartz)"
+    },
+    {
+      "source": "CMP-0127",
+      "target": "CMP-0047",
+      "type": "supplier",
+      "label": "EUV photomask blank substrates"
+    },
+    {
+      "source": "CMP-0127",
+      "target": "CMP-0015",
+      "type": "supplier",
+      "label": "EUV photomask blank substrates (HOYA also self-supplies)"
+    },
+    {
+      "source": "CMP-0024",
+      "target": "CMP-0049",
+      "type": "supplier",
+      "label": "photomask chemicals, specialty resins"
+    },
+    {
+      "source": "CMP-0049",
+      "target": "CMP-0047",
+      "type": "competitor",
+      "label": "photomasks, OLED FMM, display films, packaging"
+    },
+    {
+      "source": "CMP-0047",
+      "target": "CMP-0049",
+      "type": "competitor",
+      "label": "photomasks, OLED FMM, display films, packaging"
     }
   ]
 }
