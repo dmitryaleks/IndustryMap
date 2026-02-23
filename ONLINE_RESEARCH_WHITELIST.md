@@ -34,3 +34,11 @@ Sites approved for online research during data collection.
 | SACHEM Inc. press releases | sachem.com | 2026-02-23 | Semiconductor chemicals acquisition news |
 | Asahi Kasei press releases | asahi-kasei.com | 2026-02-23 | Corporate actions, diagnostics business transfer |
 | MarketReportAnalytics | marketreportanalytics.com | 2026-02-23 | Stock price and market data |
+| DENSO Corporation IR | denso.com | 2026-02-23 | Company IR, annual reports, newsroom, press releases |
+| Toyota Motor IR / JASM press releases | global.toyota | 2026-02-23 | Toyota IR, JASM Kumamoto fab announcements |
+| Companies Market Cap | companiesmarketcap.com | 2026-02-23 | Market cap rankings and historical data |
+| Aftermarket News | aftermarketnews.com | 2026-02-23 | Automotive supplier awards and industry news |
+| Market.us | market.us | 2026-02-23 | Market size statistics and industry data |
+| Counterpoint Research | counterpointresearch.com | 2026-02-23 | Automotive/semiconductor market research |
+| Bloomberg | bloomberg.com | 2026-02-23 | Financial news, M&A, corporate actions |
+| CNBC | cnbc.com | 2026-02-23 | Financial news, earnings, market data |
