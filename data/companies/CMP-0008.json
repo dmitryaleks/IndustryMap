@@ -4,33 +4,254 @@
   "companyNameJapanese": "株式会社レゾナック・ホールディングス",
   "industryCode": "Semiconductor Materials",
   "ticker": "4004.T",
-  "description": "Comprehensive chemical company providing semiconductor materials including high-purity gases, functional chemicals, epoxy encapsulants, die bonding materials, and hard disks. Formerly Showa Denko K.K.",
-  "marketCapInYen": 1970000000000,
-  "PER": 16.79,
-  "PBR": null,
-  "EPS": 197.04,
+  "description": "Japan's leading semiconductor materials pure-play, transforming from a conglomerate chemical company (formerly Showa Denko K.K.) into a focused semiconductor materials specialist. Holds world #1 market share in five critical products: ceria CMP slurry for STI, glass-based copper clad laminate, photosensitive dry film resist, solder resist film, and die bonding film. Also world #1 in externally sold SiC epitaxial wafers (surpassing Wolfspeed). AI growth driver: Non-Conductive Film (NCF) for HBM stacking and TIM for AI accelerators growing ~30% annually. Semiconductor & Electronic Materials segment (~38% of revenue) generates ~99% of group core operating profit. Petrochemical business spun off into Kurasas Chemical subsidiary targeting partial IPO ~2026-2027.",
+  "marketCapInYen": 2008000000000,
+  "PER": 25.5,
+  "PBR": 2.81,
+  "EPS": 425.45,
   "website": "https://www.resonac.com/",
-  "percentOfForeignOwnership": null,
+  "percentOfForeignOwnership": 38.43,
   "percentOfCirculatingEquity": null,
   "latestPriceYen": 10860,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0013"],
-  "clients": [],
+  "suppliers": [
+    "CMP-0013"
+  ],
+  "clients": [
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019",
+    "CMP-0020",
+    "CMP-0021",
+    "CMP-0014",
+    "CMP-0111",
+    "CMP-0076"
+  ],
   "_externalRelationships": {
     "majorClients": [
-      "Semiconductor manufacturers globally",
-      "Toyota/Denso (SiC)"
+      "TSMC (CMP-0017) — CMP slurry (STI), photosensitive materials, specialty chemicals for advanced nodes",
+      "Samsung Electronics (CMP-0018) — CMP slurry, die bonding film, HBM insulation film (NCF)",
+      "Intel (CMP-0019) — CMP slurry, semiconductor process materials",
+      "SK Hynix (CMP-0020) — NCF (Non-Conductive Film) for HBM stacking, TIM, CMP slurry; key AI materials customer",
+      "Micron Technology (CMP-0021) — CMP slurry, semiconductor process materials",
+      "Kioxia (CMP-0014) — CMP slurry and materials for NAND flash manufacturing",
+      "Rohm Co., Ltd. (CMP-0111) — SiC epitaxial wafers for SiC power device manufacturing",
+      "HANA Micron (CMP-0076) — die bonding film and packaging materials for OSAT operations",
+      "Infineon Technologies — SiC epi-wafers for advanced device development",
+      "DENSO (CMP-0122, indirect via Rohm SiC epi→device→module) — Lexus RZ EV inverter uses Resonac SiC epi",
+      "NVIDIA (indirect via TSMC advanced packaging) — Resonac NCF for AI accelerator HBM integration"
     ],
-    "consortiumPartners": [
-      "JOINT2 consortium (12 companies)"
+    "majorSuppliers": [
+      "Fuso Chemical Co., Ltd. (CMP-0013) — ultra-high purity colloidal silica (PL-series), primary abrasive for Resonac CMP slurries; Fuso holds ~90%+ global monopoly in this sub-material"
     ],
-    "notes": "Global #1 semiconductor materials supplier (excl. Si wafer). #1 in SiC epitaxial wafers. Pursuing 'open innovation' for next-gen semiconductors."
+    "competitors": [
+      "Entegris (US) — largest overall CMP slurry supplier globally (~23% market share); long-term TSMC supply agreement",
+      "Cabot Microelectronics / CMC Materials (US) — strong in tungsten slurry",
+      "DuPont / Versum Materials (US) — oxide CMP",
+      "JSR Corporation (Japan, private since Apr 2024) — CMP slurry and photoresist; Resonac CEO publicly studying acquisition of JSR (Feb 2025)",
+      "Wolfspeed (US) — SiC epi-wafer duopoly partner/competitor",
+      "Fujimi Incorporated (CMP-0007) — polishing compounds and slurries",
+      "Panasonic (copper clad laminate)",
+      "Isola Group, Rogers Corp (copper clad laminate)"
+    ],
+    "productLines": {
+      "cmpSlurry": {
+        "description": "Ceria-based CMP slurry for Shallow Trench Isolation (STI) — world #1 by sales value. Also Cu/barrier metal polishing slurries, polysilicon CMP slurry.",
+        "marketPosition": "World #1 in ceria-based STI CMP slurry",
+        "keyRawMaterial": "Ultra-high purity colloidal silica from Fuso Chemical (CMP-0013)"
+      },
+      "copperCladLaminate": {
+        "description": "Glass-based copper clad laminate (ガラスコア基板 / copper clad) for advanced semiconductor packages",
+        "marketPosition": "World #1 by sales value"
+      },
+      "photosensitiveMaterials": {
+        "description": "Dry film resist (感光性ドライフィルム) and solder resist film (感光性ソルダーレジスト) for PCBs and semiconductor packages",
+        "marketPosition": "World #1 in dry film resist by shipment; World #1 in solder resist film by value"
+      },
+      "dieBondingFilm": {
+        "description": "Die bonding film (ダイボンディングフィルム) and Dicing Die Attach Film (DAF) — critical for chip packaging and 3D stacking",
+        "marketPosition": "World #1 by production volume and sales"
+      },
+      "ncfHbmMaterials": {
+        "description": "Non-Conductive Film (NCF / 絶縁接着フィルム) for HBM (High Bandwidth Memory) stacking — bonds multiple DRAM dies in HBM stacks without conductive bumps",
+        "growthRate": "~30% annually (CFO guidance)",
+        "customers": "SK Hynix (dominant), Samsung, Micron",
+        "investmentNote": "JPY 15B capacity expansion to 3.5-5x volume (2024 onward)"
+      },
+      "timMaterials": {
+        "description": "Thermal Interface Materials (TIM / 放熱シート) for AI accelerators — graphite-particle dispersion in flexible sheet form to manage heat in high-power GPUs/TPUs",
+        "growthRate": "~30% annually",
+        "customers": "AI accelerator manufacturers (via TSMC/Samsung packaging)"
+      },
+      "sicEpiWafer": {
+        "description": "SiC (Silicon Carbide) epitaxial wafers for power device manufacturing. Pure epi-wafer supplier (no device business) — device makers prefer Resonac as neutral supplier even vs Wolfspeed competitors",
+        "marketPosition": "World #1 in externally sold SiC epi-wafers, surpassing Wolfspeed",
+        "inchProgress": "8-inch SiC epi-wafer commercialization at final stage (quality parity with 6-inch confirmed); JPY 30B investment for 8-inch scale-up from 2027",
+        "growthTarget": "5x revenue within 5 years from 2022; 30% annual volume growth",
+        "keyCustomers": "Rohm (CMP-0111), Infineon, confirmed use in Toyota Lexus RZ EV inverter (via DENSO SiC module)"
+      },
+      "specialtyGases": {
+        "description": "High-purity specialty gases for semiconductor manufacturing (etchant gases, CVD precursors, etc.)"
+      },
+      "panelLevelPackaging": {
+        "description": "Advanced packaging materials for panel-level organic interposer (next-gen chiplets); JOINT3 consortium with 26 companies including Tokyo Electron, AGC, Applied Materials, Canon, Ebara, Synopsys",
+        "investment": "JPY 26B consortium investment through 2030",
+        "facility": "APLIC (Advanced Panel Level Interposer Center) at Shimodate Plant (Ibaraki), opening 2026"
+      }
+    },
+    "supplyChainPosition": "Ultra-critical midstream semiconductor materials provider. Located between raw chemical suppliers (Fuso Chemical for colloidal silica, specialty gas providers) and the world's leading chipmakers (TSMC, Samsung, Intel, SK Hynix, Micron, Kioxia). Products are consumables used in every advanced chip manufacturing step — CMP, photolithography, packaging. Customer switching costs are extremely high due to lengthy qualification processes (12-24 months) and yield-critical performance. No chipmaker can substitute multiple Resonac products simultaneously.",
+    "strategicTransformation": {
+      "fromConglomerate": "Formerly Showa Denko K.K. (昭和電工) — diversified chemical company covering petrochemicals, aluminum, industrial gases, semiconductors. Merged with Hitachi Chemical (日立化成) in Jan 2023 to form Resonac.",
+      "renaming": "Rebranded to 'Resonac' in January 2023 (coined from 'Resonate' + materials that resonate with society)",
+      "petrochemSpinoff": "Kurasas Chemical Co., Ltd. (クラサスケミカル) established Aug 2024; operational Jan 1, 2025. Inherits entire petrochemical business (Oita Complex ethylene/propylene/polyethylene). 100% Resonac subsidiary; targeting partial IPO ~2026-2027.",
+      "purePlayNarrative": "Post-Kurasas spinoff, ~38% of revenue will be semiconductor materials generating ~99% of operating profit. By 2030: targeting >50% of group revenue from semiconductor materials.",
+      "joint3Consortium": "27-company consortium announced Sep 2025 for panel-level advanced packaging. Membership includes Tokyo Electron, AGC, Applied Materials, Canon, Ebara, JX Metals, Synopsys, Ushio. Focus: panel-level organic interposer for chiplets. JPY 26B investment."
+    },
+    "manufacturingFootprint": {
+      "keyJapanSites": [
+        "Shimodate Plant (Ibaraki) — core semiconductor materials; JOINT3 APLIC center under construction",
+        "Chiba / Goi Plant — specialty chemicals",
+        "Kawasaki Plant (Kanagawa) — semiconductor process materials",
+        "Matsudo Plant (Chiba) — electronic materials",
+        "Oita Complex — petrochemicals (transferred to Kurasas Chemical)"
+      ],
+      "overseaPresence": "22 countries. Key overseas: Taiwan (CMP slurry production subsidiary expanded 2020), South Korea (CMP slurry production subsidiary), China, Singapore, Germany (Die bonding materials), USA.",
+      "geographies": 22
+    },
+    "financialSummary": {
+      "FY2025_IFRS_Jan_Dec": {
+        "revenue": "JPY 1,347.1B (-3.2% YoY)",
+        "coreOperatingProfit": "JPY 109.1B (+18.4% YoY)",
+        "operatingProfit": "JPY 46.7B (-47.6% YoY) — impacted by large non-recurring impairment charges on graphite electrode and chemicals businesses",
+        "netProfit": "JPY 29.0B (-60.5% YoY) — one-time impairments, NOT operational deterioration",
+        "EPS": "JPY 160.49",
+        "DPS": "JPY 65.00",
+        "semiconductorSegmentRevenue": "JPY 506.3B (+14% YoY) — record high",
+        "semiconductorSegmentCoreOP": "JPY 108.4B (+47% YoY) — ~99% of group core OP",
+        "note": "Net profit collapse is due to non-recurring impairments (graphite electrode write-down, chemicals restructuring charges), not core business weakness"
+      },
+      "FY2024_IFRS": {
+        "revenue": "JPY 1,391.5B",
+        "coreOperatingProfit": "JPY 92.1B",
+        "netProfit": "JPY 73.5B",
+        "EPS": "JPY 406.61"
+      },
+      "FY2026_guidance": {
+        "revenue": "JPY 1,310.0B (-2.7% YoY)",
+        "coreOperatingProfit": "JPY 140.0B (+28.3% YoY)",
+        "operatingProfit": "JPY 105.0B (+2.25x YoY)",
+        "netProfit": "JPY 77.0B (+2.7x YoY)",
+        "EPS": "JPY 425.45",
+        "DPS": "JPY 65.00",
+        "note": "Revenue guided lower due to continued petrochemicals weakness (Kurasas); more than offset by semiconductor materials growth. 20% EBITDA margin target."
+      },
+      "midTermTargets": {
+        "by2030": [
+          ">50% of revenue from semiconductor materials",
+          "20%+ EBITDA margin",
+          "PBR >1.0x",
+          "SiC epi-wafer 5x revenue growth from 2022 baseline"
+        ]
+      }
+    },
+    "segmentAnalysis": {
+      "semiconductorAndElectronicMaterials": {
+        "FY2025Revenue": "JPY 506.3B",
+        "FY2025CoreOP": "JPY 108.4B",
+        "operatingMargin": "~21.4%",
+        "YoYRevenueGrowth": "+14%",
+        "YoYProfitGrowth": "+47%",
+        "keyProducts": "CMP slurry, photoresist, copper clad laminate, dry film resist, die bonding film, NCF/TIM for AI/HBM, SiC epi-wafer, specialty gases",
+        "note": "Record high revenue and profit driven by AI materials (NCF, TIM, advanced packaging) and SiC epi-wafer demand"
+      },
+      "kurasasChemical": {
+        "FY2025Revenue": "~JPY 300.3B",
+        "FY2025CoreOP": "~JPY 4.7B",
+        "YoYRevenue": "-9%",
+        "note": "Petrochemical business; spin-off target ~2026-2027 IPO. Business declining due to structural oversupply in Asian petrochemicals."
+      },
+      "chemicals": {
+        "FY2025Revenue": "~JPY 174.4B",
+        "FY2025CoreOP": "~JPY -5.5B",
+        "note": "Specialty chemicals (graphite electrodes, alumina, etc.); graphite electrode suffered severe downturn (Chinese overcapacity). Impairments taken in FY2025."
+      },
+      "other": {
+        "segments": "Mobility, Innovation Enabling Materials",
+        "note": "Remaining segments with marginal profit contribution"
+      }
+    },
+    "geographicRevenue": {
+      "Japan": "~54% of total revenue",
+      "China": "~15%",
+      "AsiaExChina": "~24%",
+      "AmericasEurope": "~7%",
+      "overseasRatio": "~46%",
+      "note": "Based on 2024 structure; Kurasas spinoff will shift mix toward overseas-heavy semiconductor segment"
+    },
+    "shareholderStructure": {
+      "asOf": "June 30, 2025",
+      "totalSharesOutstanding": 184901292,
+      "foreignOwnership": "38.43%",
+      "domesticFinancialInstitutions": "36.85%",
+      "individualsAndOther": "14.50%",
+      "securitiesCompanies": "6.95%",
+      "domesticCorporations": "1.38%",
+      "treasuryStock": "1.89%",
+      "majorShareholders": [
+        "Master Trust Bank Japan (trust) — 16.47%",
+        "Massachusetts Financial Services Co. (MFS) — 7.48%",
+        "Asset Management One — 5.04%",
+        "Custody Bank of Japan (trust) — ~4.5%"
+      ]
+    },
+    "stockMetrics": {
+      "latestPrice": "JPY 10,860 (Feb 19-20, 2026)",
+      "52weekHigh": "JPY 10,945",
+      "52weekLow": "JPY 2,235",
+      "performance": "~4.9x from 52-week low — extraordinary re-rating on AI materials + Kurasas spinoff pure-play story",
+      "analystConsensus": "10 Buy, 2 Hold, 0 Sell",
+      "avgPriceTarget": "JPY 8,008 (range: JPY 3,700–13,000)",
+      "note": "Stock trading above average analyst target (~JPY 8,008), but high target of JPY 13,000 implies further upside. 36-year high reached Feb 2026 after FY2025 earnings."
+    },
+    "investmentThesis": {
+      "bullArguments": [
+        "1. FIVE world #1 products: ceria STI CMP slurry, copper clad laminate, dry film resist, solder resist film, die bonding film — near-monopoly positions in niche semiconductor materials with 12-24 month qualification barriers",
+        "2. SiC epi-wafer world #1: Pure-play supplier (no competing device business); even Wolfspeed rivals (Rohm, Infineon) prefer Resonac. Toyota Lexus RZ EV confirmed adopter. 8-inch transition 2027 at ~30% volume CAGR.",
+        "3. AI tailwind — NCF for HBM: Non-Conductive Film demand for HBM (HBM2E/3/3E/4) stacking growing ~30% annually as AI data center buildout accelerates. SK Hynix leads HBM market with 50%+ share — Resonac is the critical NCF supplier.",
+        "4. AI tailwind — TIM: Thermal Interface Materials for high-power AI accelerators (NVIDIA Blackwell/Rubin, AMD MI300X/MI350) — same ~30% growth trajectory as NCF.",
+        "5. Kurasas spinoff unlocks valuation: Petrochemical business (~300B JPY revenue, ~5B JPY profit) drags on PER/PBR multiples. Post-spinoff IPO (~2026-2027) will reveal pure semiconductor materials company with ~21% operating margins.",
+        "6. FY2026E earnings recovery 2.7x: Net profit guided JPY 77B vs JPY 29B actual FY2025 (non-recurring impairments now behind). EPS recovers from ¥160 to ¥425. Clean FY2026 earnings will reframe investor valuation.",
+        "7. JOINT3 consortium leadership: 27-company advanced packaging consortium (incl. Tokyo Electron, Applied Materials, Canon) for panel-level organic interposer positions Resonac at frontier of chiplet/heterogeneous integration — the structural future of AI chip architecture.",
+        "8. Potential JSR acquisition: CEO publicly studying deal structures for JSR acquisition (Feb 2025). JSR (#2 CMP slurry, #1 ArF photoresist) was taken private by JIC for ~JPY 1T. If acquired, would dramatically consolidate Resonac's CMP and photoresist positions.",
+        "9. Raw material security via Fuso Chemical (CMP-0013): Long-term supply relationship for ultra-high purity colloidal silica — the critical CMP slurry abrasive where Fuso holds ~90%+ global monopoly. Bilateral dependency creates stable upstream supply.",
+        "10. Structural moat: Semiconductor materials qualify for 12-24 months per fab per node. Any contamination or yield impact causes chipmaker litigation risk. Resonac's multi-decade relationships (Showa Denko heritage since 1970s) create near-permanent customer stickiness."
+      ],
+      "riskFactors": [
+        "1. Petrochemicals drag (near-term resolved): Until Kurasas IPO/separation completes, chemicals losses (-5.5B JPY core OP FY2025) and declining Kurasas profitability (-45% YoY) weigh on consolidated metrics.",
+        "2. SiC epi-wafer concentration: SiC market depends heavily on EV adoption rate. If EV growth disappoints (Chinese overcapacity, consumer hesitation), SiC demand slows. Resonac's 5x growth target requires sustained EV ramp.",
+        "3. Chinese competition in CMP slurry: Domestic Chinese players (Anji Microelectronics, CXMT suppliers) are aggressively scaling CMP slurry. Mature nodes may see Chinese substitute adoption, though Resonac's ceria STI slurry remains un-duplicated at leading-edge.",
+        "4. Customer concentration risk: ~38% of revenue from Semiconductor segment but customer base is highly concentrated in top-3 NAND/DRAM/foundry players. Any significant capex pause (2023-style inventory correction) disproportionately impacts Resonac.",
+        "5. Forex exposure: ~46% overseas revenue (USD/EUR denominated). Yen appreciation compresses JPY-reported results. FY2026 guidance assumes JPY 153/USD; every 1-yen yen strengthening impacts operating profit ~¥1-2B.",
+        "6. JSR acquisition execution risk: If JSR deal is pursued and overpriced, could destroy significant shareholder value. JSR was valued at ~JPY 1T by JIC. Integration risk from merging two large Japanese chemical companies also substantial.",
+        "7. Integration risk (Resonac itself): Showa Denko + Hitachi Chemical merger (2023) still being fully integrated. Cultural integration between two large Japanese organizations historically slower than anticipated. Integration costs ongoing through 2026."
+      ],
+      "valuationContext": {
+        "currentPER": "25.5x (FY2026E EPS ¥425.45 at ¥10,860)",
+        "currentPBR": "2.81x (BPS ¥3,861.43)",
+        "sectorComparables": "Japanese semiconductor material peers trade at 20-35x forward earnings; SUMCO (3436.T) at 1.2x PBR, Shin-Etsu (4063.T) at 3-4x PBR. Resonac's 2.81x PBR reflects transformation premium but less than pure-play silicon wafer companies.",
+        "rerating": "52-week range ¥2,235–¥10,945: extraordinary 4.9x re-rating from low. Currently near 52-week high; upside requires either Kurasas IPO/spinoff announcement or further AI materials demand acceleration.",
+        "avgAnalystTarget": "JPY 8,008 (10 Buy, 2 Hold, avg target). Stock at ¥10,860 is 35% above average target — reflects buy-side optimism exceeding sell-side models for Kurasas separation and AI cycle.",
+        "keyMonitor": "Watch semiconductor segment revenue growth pace, NCF/TIM order book, Kurasas IPO timeline, JSR deal developments."
+      }
+    },
+    "notes": "Resonac is the most comprehensive single-company bet on semiconductor materials in Japan. Former name Showa Denko K.K. (since 1939); transformed via JPY 960B acquisition of Hitachi Chemical (2020-2023). The merger created Japan's largest semiconductor materials company with near-monopoly positions across CMP, photosensitive films, die bonding, and SiC epi-wafers. The pure-play transformation (Kurasas spinoff) will reframe market perception from 'old conglomerate chemical company' to 'AI semiconductor materials pure-play' — the key catalyst for continued multiple expansion. Stock hit 36-year high in Feb 2026 after FY2025 earnings + FY2026 guidance announcement. CFO stated AI-related revenues growing 30% annually. JOINT3 consortium positions Resonac at the center of advanced packaging innovation for next 5 years."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, Bloomberg, Resonac IR",
+    "dataCollectedAt": "2026-02-23T10:00:00Z",
+    "dataSource": "Resonac IR (resonac.com), Resonac FY2025 tanshin (Feb 13, 2026), EE Times Japan, Nikkei xTech, Nikkei, Bloomberg, Indian Chemical News, IRBank (4004.T), Yahoo Finance, Investing.com, Smartkarma, Resonac Sustainability Report 2025",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T14:00:00Z",
-    "notes": "Name changed from Showa Denko K.K. in January 2023. 10 analysts rate Buy. SiC epi-wafer adopted in Toyota LEXUS RZ. Formed from Showa Denko + Hitachi Chemical merger."
+    "lastUpdated": "2026-02-23T10:00:00Z",
+    "deepResearch": true,
+    "notes": "Full deep research update 2026-02-23. Former name: Showa Denko K.K. (昭和電工). Merged with Hitachi Chemical 2023 → rebranded Resonac. FY2025 IFRS (Jan-Dec 2025): Revenue ¥1,347.1B, Core OP ¥109.1B (+18%), Net Profit ¥29.0B (impairments). Semiconductor segment: ¥506.3B (+14%), Core OP ¥108.4B (+47%). FY2026 guidance: Core OP ¥140.0B (+28%), Net ¥77.0B (+2.7x), EPS ¥425.45. Stock at ¥10,860 (36-year high range); mkt cap ~¥2.008T. Foreign ownership 38.43%. Kurasas Chemical (petrochemicals) spinning off ~2026-2027. JOINT3 consortium (27 companies) for panel-level advanced packaging announced Sep 2025. CEO studying JSR acquisition (Feb 2025). 52-week range: ¥2,235–¥10,945."
   }
 }

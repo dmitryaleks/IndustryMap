@@ -15,8 +15,14 @@
   "latestPriceYen": null,
   "latestPriceKRW": 34850,
   "isForexSensitive": true,
-  "suppliers": ["CMP-0001"],
-  "clients": ["CMP-0018", "CMP-0020"],
+  "suppliers": [
+    "CMP-0001",
+    "CMP-0008"
+  ],
+  "clients": [
+    "CMP-0018",
+    "CMP-0020"
+  ],
   "_externalRelationships": {
     "majorSuppliers": [
       "ACCRETECH/Tokyo Seimitsu (CMP-0001) - wafer probing and dicing equipment for OSAT operations",

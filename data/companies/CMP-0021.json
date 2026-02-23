@@ -21,7 +21,8 @@
     "CMP-0011",
     "CMP-0024",
     "CMP-0025",
-    "CMP-0044"
+    "CMP-0044",
+    "CMP-0008"
   ],
   "clients": [],
   "_externalRelationships": {

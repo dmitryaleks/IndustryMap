@@ -15,7 +15,8 @@
   "latestPriceYen": null,
   "isForexSensitive": true,
   "suppliers": [
-    "CMP-0060"
+    "CMP-0060",
+    "CMP-0008"
   ],
   "clients": [
     "CMP-0122"
