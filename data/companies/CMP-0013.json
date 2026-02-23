@@ -4,31 +4,235 @@
   "companyNameJapanese": "扶桑化学工業株式会社",
   "industryCode": "Semiconductor Materials",
   "ticker": "4368.T",
-  "description": "Manufactures and sells life science and electronic material products. Electronic materials include ultra-high purity colloidal silica and high purity organo silica sol for semiconductor CMP processes.",
-  "marketCapInYen": 220409000000,
-  "PER": 17.1,
-  "PBR": 1.6,
-  "EPS": 372.69,
+  "description": "Specialty chemical manufacturer with a near-monopoly (>90% global share) in ultra-high purity colloidal silica — the critical base material for CMP (Chemical Mechanical Polishing) slurries used in semiconductor wafer finishing. Operates two segments: (1) Electronic Materials & Functional Chemicals (~42% of sales, ~30% OPM) — Quartron® ultra-high purity colloidal silica for semiconductor CMP, organo silica sol, hollow silica powder (Miralica™), and PTBBA; (2) Life Science (~58% of sales, ~17% OPM) — malic acid, citric acid, gluconic acid, maleic anhydride, and food/pharmaceutical-grade organic acid derivatives. Founded 1952, HQ: Osaka. ~930 employees (consolidated). Overseas sales ~50.6% of revenue.",
+  "marketCapInYen": 326700000000,
+  "PER": 26.6,
+  "PBR": 2.87,
+  "EPS": 329.68,
   "website": "https://www.fusokk.co.jp/",
-  "percentOfForeignOwnership": null,
-  "percentOfCirculatingEquity": null,
-  "latestPriceYen": 6250,
-  "isForexSensitive": false,
+  "percentOfForeignOwnership": 15,
+  "percentOfCirculatingEquity": 75,
+  "latestPriceYen": 9200,
+  "isForexSensitive": true,
   "suppliers": [],
-  "clients": [],
+  "clients": [
+    "CMP-0007",
+    "CMP-0008",
+    "CMP-0034",
+    "CMP-0040"
+  ],
   "_externalRelationships": {
     "majorClients": [
-      "TSMC",
-      "Samsung Electronics",
-      "Intel"
+      "Fujimi Incorporated (CMP-0007, 5384.T) — leading Japanese CMP slurry maker; buys Fuso's colloidal silica as primary abrasive feedstock",
+      "Resonac Holdings Corporation (CMP-0008, 4004.T, formerly Showa Denko / Showa Denko Materials / Hitachi Chemical) — CMP slurry and polishing pads manufacturer",
+      "JSR Corporation (CMP-0034, 4185.T, taken private by JIP in 2024) — CMP slurry maker; confirmed buyer of Fuso's colloidal silica",
+      "FUJIFILM Holdings Corporation (CMP-0040, 4901.T) — FUJIFILM Electronic Materials division makes CMP slurries for logic and memory",
+      "TSMC (direct fab customer for colloidal silica in wafer finishing polishing lines)",
+      "Samsung Electronics (direct fab customer; volume purchaser of colloidal silica-based CMP inputs)",
+      "Intel (direct fab customer)"
     ],
-    "notes": "90% global market share in semiconductor CMP slurries. 50%+ of global production capacity. Proprietary ultra-high purity colloidal silica (total metal ions <1ppm)."
+    "majorSuppliers": [
+      "Qingdao Fuso Jingjia Processing Co., Ltd. (青島扶桑精製加工有限公司, est. 1994, Qingdao China) — INTERNAL GROUP SUBSIDIARY: grinds and processes metal silicon (金属ケイ素) feedstock for colloidal silica production; established 2011 metal silicon grinding capacity; serves as stable raw-material supply base",
+      "Mitsui Chemicals, Inc. (三井化学, 4183.T) — HISTORICAL SUPPLIER of maleic anhydride (無水マレイン酸), the organic acid feedstock for malic acid. In May 2014, Fuso Chemical reached basic agreement to ACQUIRE Mitsui Chemicals' maleic anhydride organic acid business; post-acquisition, Fuso now produces maleic anhydride in-house at Kyoto Plant (integrated since 1996, expanded via Mitsui acquisition 2014)",
+      "Petroleum/chemical companies (unspecified) — butane or benzene feedstock for maleic anhydride production; specific suppliers not publicly disclosed",
+      "Metal silicon suppliers in China — raw silicon metal sourced in China for Qingdao processing; specific names not publicly disclosed"
+    ],
+    "competitors": [
+      "Nissan Chemical Corporation (日産化学, 4021.T) — produces lower-purity colloidal silica for coatings and industrial applications; does not match Fuso's ultra-high purity spec for CMP",
+      "AGC Inc. (AGC, 5201.T) — broad chemicals/glass company with colloidal silica product lines, but not a primary CMP-grade competitor",
+      "Evonik Industries (Germany) — colloidal silica and fumed silica producer; different purity tier",
+      "Merck KGaA (Germany) — broad semiconductor materials including colloidal silica (lower purity)",
+      "W. R. Grace & Co. (US) — industrial colloidal silica; not semiconductor-grade ultra-high purity",
+      "Ondeo Nalco / Ecolab (US) — industrial process silica",
+      "Note: NO competitor has matched Fuso's >99.9999% purity (6N) and sub-1ppm total metal ion specification for CMP. Proprietary sol-gel manufacturing process gives Fuso an entrenched technological moat."
+    ],
+    "productLines": {
+      "electronicMaterials": [
+        "Quartron® Ultra-High Purity Colloidal Silica — sol-gel synthesized, 6N purity (99.9999%), total metal ions <1ppm; particle size control from sub-10nm to ~200nm; shapes: true spherical, cocoon-shaped, or aggregated; primary application: semiconductor wafer CMP and device-layer planarization",
+        "Quartron® Silica Nano Powder — dry nano-silica powder for high-end coatings and electronics",
+        "Miralica™ Hollow Silica Powder — hollow-structure silica for low-refractive-index coatings and optical films",
+        "4-tert-Butylbenzoic acid (PTBBA) — specialty organic compound for resin and polymer additives"
+      ],
+      "lifeScience": [
+        "Malic acid (リンゴ酸) — world #1 share; used in beverages, confectionery, pharmaceutical excipients",
+        "Citric acid (クエン酸) — food acidulant, cleaning agents, metal processing",
+        "Gluconic acid (グルコン酸) — food preservation, pharmaceutical applications",
+        "Maleic anhydride (無水マレイン酸) — industrial intermediate; business acquired from Mitsui Chemicals 2014",
+        "L-malic acid, fumaric acid, and other organic acid derivatives"
+      ]
+    },
+    "supplyChainPosition": "Fuso Chemical sits at a critical chokepoint in the semiconductor supply chain: metal silicon (raw material, sourced in China) → ultra-high purity colloidal silica (Fuso's core product) → CMP slurry (made by Fujimi, Resonac, JSR, FUJIFILM) → wafer polishing and inter-layer dielectric planarization → semiconductor chip manufacturing (TSMC, Samsung, Intel, SK hynix, Kioxia). Fuso's monopolistic position means any semiconductor fab using advanced CMP (which includes all logic nodes ≤10nm and most memory) is ultimately dependent on Fuso's colloidal silica.",
+    "manufacturingFootprint": {
+      "kyotoPlant": "Primary production site for Quartron® colloidal silica and organic acids. Integrated raw-material-to-product manufacturing established 1996. Capacity expansion completed October 2024.",
+      "kashimaPlant": "鹿島事業所, Kamisu City (神栖市), Ibaraki Prefecture. Large-scale electronic materials expansion: Phase 1 completed FY2024, Phase 2 completion scheduled July 2025. Total investment ~¥20 billion (200億円). Combined Kyoto + Kashima expansions raise electronic materials capacity to ~1.5× FY2022 baseline.",
+      "osakaHQ": "Headquarters at Koraibashi, Chuo-ku, Osaka. Tokyo office at Nihonbashi-Kobunacho, Chuo-ku, Tokyo.",
+      "kobeResearchLab": "神戸研究所 — located at KBIC (Kobe Biomedical Innovation Cluster). Life science R&D.",
+      "qingdaoChina": [
+        "青島扶桑精製加工有限公司 (Qingdao Fuso Jingjia Processing, est. 1994) — metal silicon grinding and processing",
+        "青島扶桑貿易有限公司 (Qingdao Fuso Trading) — distribution and trading",
+        "扶桑化学(青島)有限公司 (Fuso Chemical Qingdao) — manufacturing subsidiary"
+      ],
+      "internationalDivision": "Established April 2025 to consolidate overseas subsidiaries (China, Thailand, North America). Mid-term target: overseas sales >50% of total."
+    },
+    "financialSummary": {
+      "FY2026_Mar2026_Q3_cumulative": {
+        "period": "Q1-Q3 FY2026 (Apr-Dec 2025)",
+        "netSales": "57,928M yen (+10.5% YoY)",
+        "operatingIncome": "14,563M yen (+15.6% YoY)",
+        "ordinaryIncome": "15,000M yen (+14.6% YoY)",
+        "progressVsFullYearPlan": "85.6% of ¥17,600M ordinary profit plan (above 5-year average 73.8%)",
+        "note": "Record high cumulative sales for the period. Semiconductor market demand for Asia solid."
+      },
+      "FY2026_Mar2026_fullYearGuidance": {
+        "netSales": "75,500M yen (+8.6% vs FY2025)",
+        "operatingIncome": "17,500M yen (+7.8% vs FY2025)",
+        "ordinaryIncome": "17,600M yen (+6.3% vs FY2025)",
+        "netIncome": "12,200M yen",
+        "EPS": "346.04 yen",
+        "dividendPerShare": "82 yen (raised from initial 76 yen in Oct 2025 revision; up from 73 yen FY2025)",
+        "note": "Upward revision announced Oct 31, 2025; dividend increased 6 yen. Depreciation from new Kashima Phase 2 (July 2025 start) partially offsets earnings growth."
+      },
+      "FY2025_Mar2025_actual": {
+        "netSales": "69,501M yen (+17.8% YoY, record high)",
+        "operatingIncome": "16,230M yen (+46.4% YoY)",
+        "operatingMargin": "23.35%",
+        "ordinaryIncome": "16,560M yen",
+        "netIncome": "11,622M yen (+39.4% YoY)",
+        "EPS": "329.68 yen",
+        "dividendPerShare": "73 yen (up from 66 yen FY2024)",
+        "ROE": "11.68%",
+        "ROA": "8.44%",
+        "equityRatio": "73.5%",
+        "totalAssets": "141,502M yen",
+        "shareholdersEquity": "104,048M yen",
+        "BPS": "2,951.16 yen",
+        "note": "Recovery year from FY2024 downcycle. Revenue and OP both at record high. Semiconductor demand recovery particularly strong in Asia."
+      },
+      "FY2024_Mar2024_actual": {
+        "netSales": "58,970M yen (-13.8% YoY)",
+        "operatingIncome": "11,080M yen (-41.5% YoY)",
+        "operatingMargin": "18.8%",
+        "netIncome": "8,340M yen",
+        "EPS": "236.70 yen",
+        "dividendPerShare": "66 yen",
+        "note": "Semiconductor downcycle year. Electronic materials demand fell sharply."
+      },
+      "FY2023_Mar2023_actual": {
+        "netSales": "68,450M yen (+14.5% YoY)",
+        "operatingIncome": "18,930M yen (peak)",
+        "operatingMargin": "27.7%",
+        "netIncome": "14,120M yen",
+        "EPS": "400.90 yen",
+        "dividendPerShare": "60 yen",
+        "note": "Semiconductor boom peak. Record profitability. Electronic materials segment drove growth."
+      },
+      "FY2027_Mar2027_analystEstimate": {
+        "operatingIncome": "~21,400M yen",
+        "source": "SBI Securities estimate (Feb 2026); revised upward from 20,600M",
+        "note": "SBI sees double-digit revenue growth for electronic materials through FY2027 driven by AI semiconductor demand and miniaturization roadmap (2nm node adoption)."
+      }
+    },
+    "segmentAnalysis": {
+      "electronicMaterials": {
+        "salesShare": "~42% of total consolidated sales",
+        "operatingMarginApprox": "~30%",
+        "keyProduct": "Quartron® ultra-high purity colloidal silica",
+        "marketShare": ">90% global share in semiconductor-grade ultra-high purity colloidal silica for CMP slurry base material",
+        "keyTrend": "Benefiting from AI chip demand for advanced nodes (3nm, 2nm); more CMP polishing steps per device at each node shrink; new materials development for SiC power semiconductors and next-gen 2nm processes",
+        "capacityExpansion": "Kyoto Plant expansion (Oct 2024 completion) + Kashima Phase 2 (July 2025 completion) → combined 1.5× FY2022 production capacity"
+      },
+      "lifeScience": {
+        "salesShare": "~58% of total consolidated sales",
+        "operatingMarginApprox": "~17%",
+        "keyProduct": "Malic acid (world-leading share), citric acid, gluconic acid",
+        "keyTrend": "Domestic food and beverage demand stable; overseas industrial demand and European/Chinese demand remained soft through FY2024-FY2025; seeking new applications in agricultural and functional food tech",
+        "maleicAnhydride": "Produces in-house since acquisition of Mitsui Chemicals' organic acid business (2014); key intermediate for malic acid and fumaric acid"
+      }
+    },
+    "geographicRevenue": {
+      "domestic": "49.4% of consolidated revenue",
+      "asia": "33.9% (primarily China and Taiwan, via colloidal silica for TSMC, Samsung, and Chinese fabs)",
+      "northAmerica": "15.6%",
+      "europe": "1.1%",
+      "other": "0.2%"
+    },
+    "shareholderStructure": {
+      "totalSharesIssued": 35511000,
+      "treasuryShares": 254089,
+      "outstandingShares": 35256911,
+      "top5Shareholders": [
+        "寿徳堂株式会社 (Jutokudo Co., Ltd.): 15.76% — founding family/related holding company",
+        "香林扶社株式会社 (Kaorinfusha Co., Ltd.): 7.09% — related entity",
+        "Sumitomo Mitsui DS Asset Management Co., Ltd.: 5.14% — Japanese institutional",
+        "FMR LLC (Fidelity Management & Research, USA): 5.00% — foreign institutional",
+        "Goldman Sachs International: 0.82% (short position reported)"
+      ],
+      "foreignOwnershipEstimate": "~15% (confirmed: FMR LLC 5.0%; additional foreign institutional holders likely based on global semiconductor materials investor interest)",
+      "freeFloatEstimate": "~75% (founding/stable holders: Jutokudo 15.76% + Kaorinfusha 7.09% = ~23% stable; remainder freely tradeable)"
+    },
+    "midTermPlan": {
+      "planName": "FUSO VISION 2025",
+      "period": "FY2021–FY2025 (through March 2026)",
+      "positioningStatement": "Foundation-building and third pillar construction: 5 years of investing for a leap forward",
+      "keyTargets": [
+        "Overseas sales ratio: ≥50% (achieved 50.6% in FY2025)",
+        "Triple manufacturing capacity for electronic materials by end of plan period",
+        "Establish International Division (completed April 2025)"
+      ],
+      "threeStrategicPillars": [
+        "1. Meeting expanding demand: Kashima large-scale investment + Kyoto expansion → 1.5× FY2022 production capacity by July 2025",
+        "2. Sustainable growth infrastructure: High-function materials development, Osaka operations consolidation, next-gen leader development, work reform",
+        "3. New business creation: Foodtech value creation, third business pillar beyond Life Science and Electronics"
+      ],
+      "nextGenTechnology": [
+        "SiC (silicon carbide) power semiconductor polishing materials — EV megatrend demand for SiC wafer CMP",
+        "Materials for 2nm logic semiconductor nodes",
+        "High-function materials for advanced packaging and 3D integration"
+      ]
+    },
+    "investmentThesis": {
+      "summary": "Fuso Chemical is a rare, near-monopoly specialty materials company occupying an irreplaceable chokepoint in the global semiconductor supply chain. Its Quartron® ultra-high purity colloidal silica (~90%+ global market share) is the standard input for CMP slurry makers worldwide, with no viable alternative at its purity specification. The company benefits from deep moats, secular semiconductor tailwinds from AI, and a capacity expansion cycle that positions it to capture the next demand wave.",
+      "keyBullArguments": [
+        "1. NEAR-MONOPOLY MOAT: >90% global share in ultra-high purity colloidal silica for CMP. Proprietary sol-gel synthesis achieves 6N purity (99.9999%) with total metal ions <1ppm — a specification no competitor has replicated at scale. Customer qualification at chip fabs takes 2–5 years, creating extreme switching costs.",
+        "2. AI SEMICONDUCTOR MEGATREND: Each new logic node generation (5nm → 3nm → 2nm) requires more CMP polishing steps and tighter surface uniformity. AI chips (GPUs, HBMs, logic in AI servers) are manufactured at the most advanced nodes — directly increasing demand intensity for high-purity colloidal silica per wafer.",
+        "3. CAPACITY EXPANSION FOR NEXT CYCLE: Combined Kyoto (Oct 2024) + Kashima Phase 2 (July 2025) investments raise electronic materials capacity 1.5× vs FY2022. This positions Fuso to meet the next semiconductor upcycle demand without supply constraints that competitors cannot replicate.",
+        "4. SiC POWER SEMICONDUCTOR NEW MARKET: EV adoption is driving mass SiC wafer production (Rohm, Wolfspeed, Infineon, STMicro). SiC wafer CMP requires ultra-high purity polishing materials — a natural extension of Fuso's technology. This is an emerging growth avenue independent of logic semiconductor cycles.",
+        "5. DUAL BUSINESS DIVERSIFICATION: The Life Science segment (~58% of sales) generates stable, lower-volatility cash flows from malic acid and citric acid (food/pharma markets), partially buffering the cyclicality of electronic materials. Revenue did not collapse during FY2024 downturn (declined only 13.8% vs peers).",
+        "6. INTEGRATED PRODUCTION ADVANTAGE: Fuso controls the full production chain from metal silicon processing (via Qingdao subsidiary) through finished colloidal silica. This integration provides cost efficiency, quality control, and supply security that would-be competitors cannot easily replicate.",
+        "7. ANALYST CONSENSUS — BUY: SBI Securities raised target price from ¥10,000 to ¥12,000 in February 2026, maintaining Buy rating. SBI revised FY2027 OP estimate to ¥21.4B, citing double-digit electronic materials growth from AI chip demand and advanced node migration.",
+        "8. SHAREHOLDER-FRIENDLY: Dividend raised to ¥82/share (FY2026 guidance), up from ¥73 in FY2025 and ¥66 in FY2024. Consistent dividend growth trajectory.",
+        "9. STRONG BALANCE SHEET: Equity ratio 73.5–75.7%, essentially no financial leverage. Fuso can fund its ¥20B Kashima investment from operating cash flows without dilutive equity issuance.",
+        "10. NEW ALL-TIME HIGH: Stock reached ¥9,200 (Feb 2026), exceeding previous cycle peaks. Market is beginning to reprice the company's strategic value in the AI/semiconductor supply chain."
+      ],
+      "keyRisks": [
+        "1. CAPEX-DRIVEN ROE PRESSURE: The ¥20B Kashima investment (funded by ¥20B bank borrowing in FY2023) + Kyoto expansion is adding significant depreciation. ROE declined despite revenue growth; breakeven point is rising. New capacity must be absorbed by demand or margins will compress further.",
+        "2. SEMICONDUCTOR CYCLICALITY: FY2024 was a stark reminder — electronic materials OP fell 41% in one year as semiconductor inventory corrected. Despite the moat, demand is not immune to inventory cycles. Another downturn could hit FY2026 or FY2027.",
+        "3. CHINA GEOPOLITICAL RISK: ~17% of total revenue is in China (Asia 33.9% of overseas × overseas ~50%). Qingdao subsidiaries handle key raw material processing. US export controls on semiconductor materials, or China-Taiwan tensions, could disrupt both supply and demand.",
+        "4. CUSTOMER CONCENTRATION: Only ~4–5 global CMP slurry companies buy colloidal silica at scale. If one major customer (e.g., Resonac, Fujimi, JSR) is acquired or shifts sourcing strategy, the impact would be disproportionate.",
+        "5. LIFE SCIENCE HEADWINDS: The European and Chinese markets for malic acid and citric acid have been weak due to recession fears and competition from Chinese chemical producers. Industrial-use organic acid demand remains soft.",
+        "6. COMPETITIVE DISRUPTION: Large global chemicals companies (Dow, Evonik, Merck KGaA) have the R&D resources and capital to attempt entry into ultra-high purity CMP materials. A breakthrough in a competing synthesis route could threaten Fuso's moat over a 5–10 year horizon.",
+        "7. VALUATION PREMIUM: At PER 26.6× (FY2026E) and PBR 2.87×, the stock is pricing in continued strong growth. Any growth disappointment or semiconductor downcycle could result in multiple compression alongside earnings decline."
+      ],
+      "valuationContext": {
+        "currentPrice": "¥9,200 (Feb 20, 2026) — new all-time high",
+        "marketCap": "¥326.7B",
+        "PER_FY2026E": "26.6× (FY2026E EPS ¥346.04)",
+        "PER_FY2027E": "~21.5× (SBI Securities FY2027 OP-implied EPS ~¥430)",
+        "PBR": "2.87×",
+        "dividendYield": "~0.89% (FY2026 ¥82 / ¥9,200)",
+        "SBISecuritiesTarget": "¥12,000 (raised Feb 2026; Buy rating)",
+        "note": "Premium multiples reflect monopolistic market position and AI demand tailwind. Still reasonable relative to growth trajectory if double-digit revenue growth materializes through FY2027."
+      }
+    },
+    "notes": "Founded 1952 in Osaka as a malic acid producer. Entered colloidal silica in 1987, achieving near-monopoly through decades of proprietary technology development and customer lock-in. Employs ~930 (consolidated). 扶桑化学工業's Quartron® colloidal silica has been the industry standard for semiconductor CMP since the early 1990s. Company holds the unusual distinction of having world-leading market share in TWO distinct product categories: malic acid (fruit organic acid) and ultra-high purity colloidal silica for CMP. The semiconductor business carries higher margins (~30% OPM) but higher cyclicality. Life science business (~17% OPM) provides stability. The Kashima plant (Ibaraki) alongside the Kyoto Plant forms an East-West dual production base for supply resilience. Stock hit all-time high ¥9,200 in Feb 2026 (vs ¥6,250 at prior research date in Feb 2026)."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, CNBC, Bloomberg, Digitimes",
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Company IR (fusokk.co.jp), IRBank (E01056/4368), Kabutan, Minkabu, Omega Investment JP analysis, Asset Alive analysis, DIGITIMES, Bloomberg JP, Nikkei (SBI target price report), 扶桑化学工業 IR documents, FUSO VISION 2025 midterm plan, Q3 FY2026 earnings release, Emergen Research (colloidal silica market), Japanese Wikipedia",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T14:00:00Z",
-    "notes": "Founded 1952, HQ: Osaka. 930 employees. Key products: ultra-high purity colloidal silica for semiconductor polishing, organic acids for life sciences. Expanded production capacity 50% in 2022."
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 1,
+    "deepResearch": true,
+    "notes": "Deep research update 2026-02-23. Major updates from original 2026-02-21 entry: (1) Financials updated to FY2025 actuals (OP +46.4% to ¥16.2B, EPS ¥329.68) and FY2026 guidance (EPS ¥346.04, DPS ¥82); (2) Stock price updated ¥6,250 → ¥9,200 (+47%), market cap ¥220B → ¥327B; (3) PER 17.1 → 26.6, PBR 1.6 → 2.87; (4) isForexSensitive changed false → true (50.6% overseas revenue); (5) Added clients array: CMP-0007 (Fujimi), CMP-0008 (Resonac), CMP-0034 (JSR), CMP-0040 (FUJIFILM) as confirmed CMP slurry customers; (6) Full investment thesis added with 10 bull arguments and 7 risk factors; (7) Segment analysis, geographic revenue, shareholder structure, capacity expansion, FUSO VISION 2025 plan, supply chain position all documented; (8) SBI Securities target ¥12,000 (Buy, raised Feb 2026); (9) Kashima investment ¥20B (200億円), Phase 2 completion July 2025, 1.5× capacity vs FY2022."
   }
 }

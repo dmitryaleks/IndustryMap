@@ -14,7 +14,7 @@
   "percentOfCirculatingEquity": null,
   "latestPriceYen": 10860,
   "isForexSensitive": true,
-  "suppliers": [],
+  "suppliers": ["CMP-0013"],
   "clients": [],
   "_externalRelationships": {
     "majorClients": [

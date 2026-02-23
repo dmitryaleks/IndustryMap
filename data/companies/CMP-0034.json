@@ -14,7 +14,7 @@
   "percentOfCirculatingEquity": null,
   "latestPriceYen": null,
   "isForexSensitive": true,
-  "suppliers": [],
+  "suppliers": ["CMP-0013"],
   "clients": ["CMP-0017", "CMP-0018", "CMP-0019"],
   "_externalRelationships": {
     "majorClients": ["TSMC (Excellent Performance Award 2022)", "Samsung", "Intel"],
