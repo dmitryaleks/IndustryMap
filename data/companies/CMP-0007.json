@@ -4,30 +4,259 @@
   "companyNameJapanese": "株式会社フジミインコーポレーテッド",
   "industryCode": "Semiconductor Materials",
   "ticker": "5384.T",
-  "description": "Manufactures and sells synthetic precision abrasives including CMP slurry for semiconductor device production, polishing materials for silicon wafers, and abrasives for hard disk drives.",
-  "marketCapInYen": 196200000000,
-  "PER": 17.92,
-  "PBR": 2.08,
-  "EPS": 127.1,
-  "website": "https://www.fujimi.co.jp/",
+  "description": "World's leading precision abrasives manufacturer, holding ~90% global market share in both silicon wafer lapping and final polishing materials. Also holds ~58% global share in FEOL (Front-End-Of-Line) polysilicon CMP slurry for semiconductor device manufacturing. Products: (1) Silicon Wafer polishing/lapping — COMPOL® colloidal silica polishing slurry, alumina/SiC lapping compounds; (2) Semiconductor Device CMP — PLANERLITE® series for polysilicon, dielectric, and metal layer planarization; (3) Hard Disk base-plate polishing materials; (4) Thermal Spray powders — cermet and ceramic coatings for aerospace and industrial equipment; (5) Specialty polishing solutions — CLEALITE® metal CMP, DSC® SiC polishing. Founded 1950 as Japan's first domestic synthetic abrasive maker. HQ: Kiyosu, Aichi Prefecture. ~77.5% overseas revenue. Subsidiaries in Oregon (USA, near Intel fabs) and Taiwan (near TSMC).",
+  "marketCapInYen": 256300000000,
+  "PER": 25.3,
+  "PBR": 2.92,
+  "EPS": 127.09,
+  "website": "https://www.fujimiinc.co.jp/",
   "percentOfForeignOwnership": 27.0,
-  "percentOfCirculatingEquity": null,
-  "latestPriceYen": 3175,
+  "percentOfCirculatingEquity": 70,
+  "latestPriceYen": 3200,
   "isForexSensitive": true,
   "suppliers": ["CMP-0013"],
-  "clients": [],
+  "clients": [
+    "CMP-0024",
+    "CMP-0025",
+    "CMP-0017",
+    "CMP-0018",
+    "CMP-0019",
+    "CMP-0020",
+    "CMP-0014"
+  ],
   "_externalRelationships": {
     "majorClients": [
-      "TSMC",
-      "Intel"
+      "Shin-Etsu Chemical Co., Ltd. (CMP-0024, 4063.T) — via Shin-Etsu Semiconductor subsidiary; world #1 silicon wafer maker (~30% global share); buys Fujimi COMPOL polishing slurry and lapping compounds for 300mm and 200mm wafer finishing",
+      "SUMCO Corporation (CMP-0025, 3436.T) — world #2 silicon wafer maker (~27% global share); major buyer of Fujimi wafer lapping and polishing materials",
+      "TSMC (CMP-0017, 2330.TW) — world's largest foundry; uses PLANERLITE CMP slurries for advanced logic nodes; Fujimi established Taiwan subsidiary adjacent to TSMC operations",
+      "Samsung Electronics (CMP-0018, 005930.KS) — memory (DRAM/NAND) and foundry; uses Fujimi CMP slurries for multi-layer metallization and STI processes",
+      "Intel Corporation (CMP-0019, INTC) — confirmed customer; Fujimi established Oregon (USA) subsidiary adjacent to Intel fab cluster",
+      "SK Hynix Inc. (CMP-0020, 000660.KS) — DRAM and NAND flash manufacturer; uses CMP materials for memory production",
+      "Kioxia Holdings Corporation (CMP-0014, 285A.T) — NAND flash manufacturer (formerly Toshiba Memory); uses CMP slurries for 3D NAND layer planarization",
+      "Serves 1,500+ customer companies globally across semiconductor, optical, automotive, aerospace, and data storage sectors"
     ],
-    "notes": "18% market share in CMP slurry (2024). 50%+ share in polysilicon CMP for FEOL. Slurries widely adopted for 5nm/3nm processes by Taiwanese foundries."
+    "majorSuppliers": [
+      "Fuso Chemical Co., Ltd. (CMP-0013, 4368.T) — ultra-high purity colloidal silica (Quartron®); primary abrasive feedstock for Fujimi's COMPOL® silicon wafer polishing slurry; Fuso holds >90% global share in this input material",
+      "Alumina raw material suppliers (unspecified listed companies) — high-purity white alumina (WA) and brown alumina for lapping compounds; specific suppliers not publicly disclosed",
+      "Cerium oxide suppliers (unspecified) — used in specialty polishing and optical glass applications",
+      "Various specialty chemical and abrasive particle suppliers — details not publicly disclosed"
+    ],
+    "competitors": [
+      "Entegris, Inc. (ENTG, includes CMC Materials / Cabot Microelectronics acquired 2022) — US; largest CMP slurry maker by revenue; dominant in copper/cobalt/tungsten device-level CMP; weaker in wafer polishing (Fujimi's core)",
+      "Resonac Holdings Corporation (CMP-0008, 4004.T) — Japan; CMP slurry and polishing pads (Politex); strong in dielectric and metal CMP",
+      "FUJIFILM Holdings (CMP-0040, 4901.T) — Japan; Electronic Materials division; copper CMP world #1; direct competitor in device-level slurries",
+      "JSR Corporation (CMP-0034, 4185.T, taken private by JIP 2024) — Japan; CMP slurry maker for logic and memory devices",
+      "DuPont Electronics (formerly Dow Electronic Materials) — US; CMP slurries and pads",
+      "Merck KGaA / Versum Materials — Germany/US; CMP chemicals and slurries",
+      "Note: In wafer lapping/polishing (~90% share), Fujimi has NO significant competitor. Competition is more intense in device-level CMP slurry (PLANERLITE), where Entegris/CMC leads globally."
+    ],
+    "productLines": {
+      "siliconWafer": [
+        "COMPOL® — high-purity colloidal silica polishing slurry for silicon wafer final polishing (mirror-finish); ~90% global market share; uses Fuso Chemical's Quartron® as primary silica source",
+        "Lapping compounds — alumina/SiC abrasive slurries for stock removal lapping of raw silicon wafers; ~90% global market share",
+        "Cleaning solutions — post-CMP cleaning chemicals"
+      ],
+      "semiconductorDeviceCMP": [
+        "PLANERLITE® — flagship CMP slurry for semiconductor device planarization; polysilicon/poly-Si gate CMP: ~58% global share; multi-layer metal CMP: ~10% global share; ILD (inter-layer dielectric) oxide CMP",
+        "CLEALITE® — metal CMP slurries for cobalt, copper, tungsten barrier layers",
+        "DSC® — SiC (silicon carbide) substrate polishing slurry for power semiconductor wafers"
+      ],
+      "hardDisk": [
+        "Polishing compounds for aluminum substrate hard disk base plates",
+        "High-precision surface finishing slurries for magnetic recording media"
+      ],
+      "thermalSpray": [
+        "Cermet thermal spray powders (tungsten carbide-cobalt) for wear/corrosion resistance",
+        "Ceramic thermal spray powders (alumina, zirconia) for thermal barrier coatings",
+        "JIS Q 9100 certified (2011) for aerospace industry applications"
+      ],
+      "specialtyPolishing": [
+        "COMPOL EX — for sapphire, SiC, and other hard substrate polishing",
+        "Various specialty slurries for optical glass, precision ceramics, and metal components"
+      ]
+    },
+    "supplyChainPosition": "Fujimi occupies TWO distinct chokepoints in the semiconductor supply chain: (1) UPSTREAM — silicon wafer polishing: raw silicon ingots → wire-sawn wafers → lapping (Fujimi ~90%) → polishing (Fujimi ~90%) → finished mirror-finish wafers → chip manufacturing; (2) MIDSTREAM — semiconductor device CMP: chip fab (TSMC, Samsung, etc.) uses PLANERLITE slurry for polysilicon gate formation (~58% share) and inter-layer dielectric planarization (~10%). The upstream wafer polishing monopoly is especially defensible since: (a) wafer manufacturers have qualified Fujimi slurries over decades; (b) switching suppliers risks yield degradation on extremely high-value wafers; (c) there are effectively no alternative suppliers at scale.",
+    "manufacturingFootprint": {
+      "japanHQ": "Kiyosu City (清須市), Aichi Prefecture — headquarters, main manufacturing plant, and R&D center",
+      "japanExpansion": "New Japan production capacity added as part of ¥15B investment plan announced FY2024",
+      "northAmerica": "Oregon, USA — manufacturing subsidiary near Intel fab cluster in Hillsboro/Beaverton area; enables just-in-time supply to Intel and other Pacific Northwest customers",
+      "taiwan": "Taiwan — manufacturing subsidiary near TSMC fab cluster; enables close technical collaboration and rapid supply to TSMC and other Taiwan foundries",
+      "salesOffices": "Multiple overseas subsidiaries for sales in Europe and Asia"
+    },
+    "capacityExpansion": {
+      "totalInvestment": "~¥15 billion across Japan, USA, and Taiwan (announced Feb 2024, ongoing FY2024-2026)",
+      "capacityTarget": "+30% production capacity for semiconductor polishing agents",
+      "rationale": "EV (SiC power semiconductor) and generative AI (advanced logic) demand growth; geopolitical risk diversification away from single-country manufacturing",
+      "strategicImplication": "Geographic diversification aligns Fujimi with major customers' own supply chain risk concerns (TSMC nearby in Taiwan; Intel nearby in Oregon)"
+    },
+    "financialSummary": {
+      "FY2026_Mar2026_Q3_cumulative": {
+        "period": "Q1-Q3 FY2026 (Apr-Dec 2025)",
+        "netSales": "51,447M yen (+9.9% YoY)",
+        "operatingIncome": "10,497M yen (+15.9% YoY)",
+        "geographicBreakdown": {
+          "Japan": "29,415M yen (+11.1% YoY)",
+          "Asia": "14,290M yen (+14.0% YoY)",
+          "NorthAmerica": "5,893M yen (-5.3% YoY)",
+          "EuropeOther": "~1,849M yen"
+        },
+        "note": "CMP materials for advanced logic semiconductors driving Japan and Asia growth. North America softer due to Intel fab utilization adjustments."
+      },
+      "FY2026_Mar2026_fullYearGuidance": {
+        "netSales": "67,900M yen (+8.6% vs FY2025)",
+        "operatingIncome": "13,000M yen (+10.4% vs FY2025)",
+        "ordinaryIncome": "12,700M yen (+3.7% vs FY2025, upward revised Nov 2025: +4% YoY)",
+        "netIncome": "9,400M yen",
+        "EPS": "126.7 yen",
+        "dividendPerShare": "73.34 yen (unchanged vs FY2025)",
+        "note": "Guidance revised upward (Nov 5, 2025) — ordinary income revised to +4% YoY growth (from initial expectation of decline). CMP product strength offsetting HDD weakness."
+      },
+      "FY2025_Mar2025_actual": {
+        "netSales": "62,503M yen (+21.5% YoY — strong recovery from FY2024 downturn)",
+        "operatingIncome": "11,780M yen (+42.8% YoY)",
+        "operatingMargin": "18.85%",
+        "netIncome": "9,428M yen (+45.1% YoY)",
+        "EPS": "127.09 yen",
+        "dividendPerShare": "73.34 yen",
+        "ROE": "12.68%",
+        "ROA": "10.84%",
+        "equityRatio": "83.7%",
+        "BPS": "1,026.10 yen",
+        "note": "Solid recovery year. Advanced logic semiconductor demand strong. Operating margin recovery toward mid-term target of 20%+."
+      },
+      "FY2024_Mar2024_actual": {
+        "netSales": "51,423M yen (-11.9% YoY)",
+        "operatingIncome": "8,251M yen (-37.7% YoY)",
+        "operatingMargin": "16.05%",
+        "netIncome": "6,499M yen",
+        "EPS": "87.6 yen",
+        "dividendPerShare": "73.34 yen",
+        "note": "Semiconductor inventory correction year. Electronic materials demand fell sharply. Dividend maintained despite profit decline."
+      },
+      "FY2023_Mar2023_actual": {
+        "netSales": "58,394M yen (+12.9% YoY)",
+        "operatingIncome": "13,243M yen",
+        "operatingMargin": "22.7%",
+        "netIncome": "10,594M yen",
+        "EPS": "142.7 yen",
+        "dividendPerShare": "73.33 yen",
+        "note": "Semiconductor boom peak. Record revenue and profitability."
+      },
+      "FY2022_Mar2022_actual": {
+        "netSales": "51,731M yen (+24.8% YoY)",
+        "operatingIncome": "12,059M yen",
+        "netIncome": "9,156M yen",
+        "EPS": "123.5 yen",
+        "dividendPerShare": "61.67 yen"
+      }
+    },
+    "shareholderStructure": {
+      "latestPrice": "¥3,200 (Feb 20, 2026)",
+      "marketCap": "¥256.3 billion",
+      "impliedOutstandingShares": "~80.1 million",
+      "top2Shareholders": [
+        "Coma Co., Ltd. (コーマ株式会社): 15.54% — founding family–related holding company; stable anchor shareholder",
+        "Fujimi Incorporated (自己株式 treasury): 14.68% — company self-held treasury shares; significant buyback history"
+      ],
+      "foreignOwnership": "27.0% — high for a specialty materials niche player; reflects global institutional recognition of Fujimi's market position",
+      "estimatedFreeFloat": "~70% (Coma ~15.54% stable; treasury ~14.68% non-tradeable; balance freely tradeable)",
+      "note": "Stable shareholder base with low turnover. Founding family via Coma provides long-term governance stability. High foreign ownership (27%) indicates strong global institutional interest."
+    },
+    "midTermPlan": {
+      "planName": "Medium-Long Term Management Plan (中長期経営計画)",
+      "period": "FY2024–FY2029",
+      "revenueTargets": {
+        "FY2023_actual": "¥58.3B",
+        "FY2026_target": "¥77.0B",
+        "FY2029_target": "¥95.0B"
+      },
+      "profitabilityTargets": {
+        "operatingMarginTarget": "20%+",
+        "EBITDAmarginTarget": "26-27%",
+        "ROEtarget": "15%+"
+      },
+      "compositionTargets_FY2029": {
+        "newBusinessShare": "20% of total sales",
+        "nonSemiconductorShare": "25% of total sales",
+        "nonPolishingMaterialsShare": "10% of total sales"
+      },
+      "strategicTransformation": "Evolving from 'polishing materials manufacturer' to 'powder & surface company' — leveraging particle synthesis, filtration, classification, and purification technologies beyond abrasives",
+      "keyPriorities": [
+        "Expand global semiconductor supply capacity — ¥15B Japan/US/Taiwan investment for +30% capacity",
+        "Lead in next-generation power semiconductors (SiC/GaN) for EV/decarbonization",
+        "Build new business pillars: automotive exterior finishing, aerospace thermal spray, functional materials",
+        "R&D investment ~10% of revenue — far above 3.5% industry average for chemical manufacturers"
+      ]
+    },
+    "marketShareDetails": {
+      "siliconWaferLapping": "~90% global market share (alumina/SiC lapping compounds)",
+      "siliconWaferPolishing": "~90% global market share (COMPOL colloidal silica polishing slurry)",
+      "deviceCMP_polysilicon": "~58% global market share (PLANERLITE for FEOL poly-Si gate CMP)",
+      "deviceCMP_multilayerMetal": "~10% global market share (PLANERLITE for BEOL metal interconnect CMP)",
+      "overallCMPSlurryMarket": "~18% global market share (2024 estimate including all CMP applications)",
+      "patentStrength": "1,407 total patents (497 domestic, 910 international) as of March 2025; ranked #3 globally in CMP abrasive patent portfolio power (behind Hitachi Chemical/Resonac and Cabot Microelectronics)"
+    },
+    "rdProfile": {
+      "rdToSalesRatio": "~10% (vs 3.5% industry average for chemical manufacturers)",
+      "rdPersonnelShare": "~31.5% of total workforce engaged in R&D",
+      "focusAreas": [
+        "SiC substrate polishing for EV power semiconductors",
+        "Advanced node CMP (2nm logic, 3D NAND next generation)",
+        "Low-defect, high-selectivity slurry for EUV-patterned features",
+        "Thermal spray for aerospace and industrial wear resistance",
+        "New functional materials for non-semiconductor applications"
+      ]
+    },
+    "geographicRevenue": {
+      "overseasTotal": "~77.5% of consolidated revenue",
+      "japanSegment": "~57% of Q1-Q3 FY2026 consolidated (includes Japanese entity exports to overseas customers)",
+      "asiaSegment": "~28% of Q1-Q3 FY2026 (Taiwan, Korea, China — served by Asia subsidiary)",
+      "northAmericaSegment": "~11% of Q1-Q3 FY2026 (served by Oregon/North America subsidiary)",
+      "europeOther": "~4% of Q1-Q3 FY2026",
+      "note": "Japan segment revenue includes significant export component; the 77.5% overseas CUSTOMER ratio differs from the 43% non-Japan SUBSIDIARY breakdown"
+    },
+    "investmentThesis": {
+      "summary": "Fujimi Incorporated holds a near-monopoly in the most upstream and least substitutable segment of semiconductor manufacturing — silicon wafer polishing. Its ~90% global market share in both lapping and final polishing of silicon wafers creates an entrenched position that every semiconductor chip in the world depends upon. The stock offers an attractive combination of defensible market position, secular growth from AI and EV megatrends, and a clean balance sheet.",
+      "keyBullArguments": [
+        "1. UPSTREAM SILICON WAFER MONOPOLY: ~90% global market share in silicon wafer lapping and COMPOL® polishing. Every silicon chip — from budget microcontrollers to AI accelerators — starts with a wafer that was almost certainly polished using Fujimi's materials. There is NO viable alternative at scale. Customer qualification for new polishing materials takes years and risks expensive yield loss.",
+        "2. DUAL CHOKEPOINT — DEVICE CMP TOO: ~58% share in FEOL polysilicon CMP (PLANERLITE) means Fujimi also participates in the device manufacturing step. Advanced logic nodes (3nm, 2nm) require precise poly-Si gate formation — Fujimi captures this value twice (wafer + device level).",
+        "3. AI SEMICONDUCTOR DEMAND: Generative AI drives demand for the most advanced logic chips (3nm, 2nm GPUs, HBM). These require more CMP polishing steps and stricter surface quality vs older nodes. Every advanced AI chip Nvidia, AMD, Broadcom, Google, Microsoft sell ultimately starts with Fujimi-polished wafers.",
+        "4. SiC POWER SEMICONDUCTOR OPPORTUNITY: EV adoption is creating explosive demand for SiC substrates. SiC is far harder to polish than silicon, requiring specialized abrasives — an area where Fujimi is developing DSC® products. This is a new market for Fujimi's existing core competency.",
+        "5. GEOGRAPHIC DIVERSIFICATION: ¥15B Japan/US/Taiwan investment provides three-region supply redundancy. US facility near Intel, Taiwan facility near TSMC — these were positioned before the geopolitical supply chain debate became mainstream. Fujimi's geographic strategy is exactly what semiconductor customers are now demanding.",
+        "6. R&D MOAT: ~10% of revenue invested in R&D (3× industry average for chemical makers), 1,407 patents, ~31.5% of workforce in R&D. This depth of technical investment makes it nearly impossible for new entrants to replicate Fujimi's decade-scale co-development relationships with chip makers.",
+        "7. PRISTINE BALANCE SHEET: Equity ratio ~83.7% (FY2025) — essentially debt-free. The company can fund the ¥15B capex program largely from operating cash flows. No dilution risk.",
+        "8. CUSTOMER LOCK-IN VIA CO-DEVELOPMENT: Fujimi develops polishing materials in close technical partnership with each fab (wafer maker AND chip maker). The resulting process recipes are proprietary to each relationship. Switching suppliers requires re-qualification that can cost fabs months of yield risk.",
+        "9. STABLE DIVIDEND: ¥73.34/share maintained through the FY2024 downturn despite earnings falling 39%. Management has demonstrated commitment to shareholder returns even in adversity. At ¥3,200, yield is 2.29%.",
+        "10. MEDIUM-TERM REVENUE DOUBLING TARGET: Management targets ¥95B revenue by FY2029 (vs ¥62.5B FY2025), implying ~12% CAGR. Even partial achievement (¥75-80B by FY2027) would represent significant earnings power vs current guidance."
+      ],
+      "keyRisks": [
+        "1. SEMICONDUCTOR CYCLICALITY: FY2024 showed OP collapsing 37.7% in a single year (¥13.2B → ¥8.3B). Despite near-monopoly status, Fujimi is highly exposed to semiconductor inventory cycles. Memory (DRAM/NAND) cycles are particularly severe.",
+        "2. HDD MARKET SECULAR DECLINE: Hard disk polishing materials is a small but diminishing segment as SSDs continue displacing HDDs in consumer and enterprise markets.",
+        "3. EPS GROWTH STAGNATION: FY2026E EPS ¥126.7 is essentially flat vs FY2025 actual ¥127.1 — despite 10.4% OP growth — suggesting margin improvement is being offset by tax/FX/depreciation headwinds from the ¥15B capex program. True earnings leverage will come once capex intensity normalizes post-FY2026.",
+        "4. ENTEGRIS/CMC COMPETITIVE PRESSURE: The Entegris acquisition of CMC Materials created a formidable US competitor with broad CMP portfolio. While Entegris is weaker in wafer polishing (Fujimi's fortress), they are aggressively investing in advanced device CMP.",
+        "5. CHINA GEOPOLITICAL RISK: Significant Asia revenue (Taiwan, Korea, China). Any deterioration in Taiwan Strait situation would impact both TSMC-related demand and manufacturing logistics.",
+        "6. SINGLE-PRODUCT CONCENTRATION: ~80% of revenue comes from polishing/CMP materials. Business transformation toward 'powder & surface company' is still nascent. If semiconductor demand stalls, there is limited diversification buffer.",
+        "7. VALUATION: PER 25.3× on essentially flat EPS (FY2026E) means the stock is pricing in recovery. A second consecutive weak semiconductor cycle could compress multiples significantly."
+      ],
+      "valuationContext": {
+        "currentPrice": "¥3,200 (Feb 20, 2026)",
+        "marketCap": "¥256.3B",
+        "PER_FY2026E": "25.3× (EPS ¥126.7)",
+        "PBR": "2.92×",
+        "dividendYield": "2.29% (¥73.34 / ¥3,200)",
+        "analystConsensus": "Buy consensus; Ichiyoshi Securities raised rating to A (Buy) with ¥3,400 fair value; consensus cautious on FY2026 EPS given capex-driven depreciation",
+        "note": "Stock at ¥3,200 is near but below the ¥3,785 all-time high (July 2023). Trading at ~25× FY2026E earnings with flat EPS growth near-term. The investment case is FY2027-2029 earnings inflection when capex completes and semiconductor demand accelerates with AI/SiC tailwinds."
+      }
+    },
+    "notes": "Founded 1950 in Nagoya (now Kiyosu, Aichi) as Japan's first domestic precision synthetic abrasive manufacturer. Company name 'Fujimi' (富士見) means 'viewing Mt. Fuji.' The company's colloidal silica polishing technology originated from a 'casual question from a customer' in the 1960s, which evolved into the globally dominant COMPOL® product line. Over 1,500 customers in semiconductor, optical, automotive, aerospace, and general industrial sectors. The company serves the entire semiconductor ecosystem: wafer makers (Shin-Etsu, SUMCO) for upstream wafer polishing, and chip fabs (TSMC, Samsung, Intel, SK Hynix, Kioxia) for device-level CMP. This breadth of customer exposure gives Fujimi revenue exposure to both wafer output and chip production volumes simultaneously."
   },
   "_metadata": {
-    "dataCollectedAt": "2026-02-21T12:00:00Z",
-    "dataSource": "Yahoo Finance, DataInsightsMarket, DCFModeling, Nikkei",
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "Company IR (fujimiinc.co.jp), IRBank (5384), Kabutan, Nikkei Veritas, Nikkei (¥15B investment article), Handotai-gyokai.com analysis, Mon-ja.net analysis, Fujimi recruit site (numbers.html), Patent Result (CMP patent ranking), QYResearch CMP slurry market report, Mordor Intelligence CMP market report",
     "confidenceLevel": "high",
-    "lastUpdated": "2026-02-21T14:00:00Z",
-    "notes": "FY2025 revenue growth: 21.5% from advanced logic semiconductor materials. Q1 FY2026 polishing slurry sales +18.9%. Founded 1950, HQ: Kiyosu, Japan. 90%+ share in wafer polishing materials."
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 1,
+    "deepResearch": true,
+    "notes": "Deep research update 2026-02-23. Major updates from original 2026-02-21 entry: (1) Stock price ¥3,175→¥3,200, market cap ¥196.2B→¥256.3B; (2) PER 17.92→25.3, PBR 2.08→2.92; (3) Added Q1-Q3 FY2026 data: revenue ¥51,447M (+9.9%), OP ¥10,497M (+15.9%); (4) FY2025 actuals: revenue ¥62,503M (+21.5%), OP ¥11,780M (+42.8%), EPS ¥127.09; (5) FY2026 full guidance: revenue ¥67,900M, OP ¥13,000M (upward revised Nov 2025); (6) Added 7 clients: CMP-0024 (Shin-Etsu Chemical), CMP-0025 (SUMCO), CMP-0017 (TSMC), CMP-0018 (Samsung), CMP-0019 (Intel), CMP-0020 (SK Hynix), CMP-0014 (Kioxia); (7) Comprehensive investment thesis added with 10 bull arguments and 7 risk factors; (8) Market share details: wafer lapping 90%, wafer polishing 90%, device poly-Si CMP 58%, metal CMP 10%; (9) Medium-long term plan FY2029 targets added; (10) ¥15B Japan/US/Taiwan capacity expansion documented; (11) R&D profile: 10% revenue, 1,407 patents, 31.5% of staff."
   }
 }
