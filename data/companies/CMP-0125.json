@@ -1,0 +1,34 @@
+{
+  "id": "CMP-0125",
+  "companyName": "Aisin Corporation",
+  "companyNameJapanese": "株式会社アイシン",
+  "industryCode": "Automotive Components",
+  "ticker": "7259.T",
+  "description": "Japan's second-largest automotive components manufacturer and Toyota Group core member (Toyota Motor holds ~24%). Formed 2021 from merger of Aisin Seiki and Aisin AW. Produces automatic/CVT transmissions, chassis systems (brakes, suspension, steering), body systems (door/seat), and powertrain electrification components (eAxle, EV drive modules). Buys DENSO electronics for integration into transmission and chassis ECUs, body domain controllers, and EV drive control systems. DENSO sold substantially all its Aisin shares in July 2024 as part of cross-shareholding reduction. Aisin itself holds a small stake in DENSO. Key JVs include Advics (brakes, with Continental/Sumitomo) and Aisin Takaoka (castings).",
+  "marketCapInYen": 1100000000000,
+  "website": "https://www.aisin.com/",
+  "isForexSensitive": true,
+  "suppliers": [
+    "CMP-0122"
+  ],
+  "clients": [],
+  "_externalRelationships": {
+    "densoRelationship": "Aisin is a Toyota Group Tier 1 automotive supplier that integrates DENSO electronic components (ECUs, sensors, motor controllers) into its transmission, chassis, and electrification products. DENSO sold substantially all its Aisin stake (cross-shareholding reduction) in July 2024. Both companies remain strategic Toyota Group partners.",
+    "keyProducts": [
+      "Automatic/CVT/DCT transmissions — Toyota group platforms",
+      "eAxle and EV drive units — BEV electrification",
+      "Chassis: brakes (Advics JV), suspension, steering",
+      "Body: door/window/seat modules",
+      "Powertrain: engine timing systems, oil pumps"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "DENSO CMP-0122 deep research (Aisin listed as DENSO client; DENSO sold Aisin stake July 2024), Aisin Corporation IR",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as DENSO (CMP-0122) Toyota Group client. Market cap approximate as of Feb 2026. Financial details pending dedicated deep research."
+  }
+}

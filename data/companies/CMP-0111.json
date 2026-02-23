@@ -17,7 +17,9 @@
   "suppliers": [
     "CMP-0060"
   ],
-  "clients": [],
+  "clients": [
+    "CMP-0122"
+  ],
   "_externalRelationships": {
     "majorSuppliers": [
       "SAMCO Inc. (6387.T, CMP-0060) — compound semiconductor process equipment (ICP-RIE, PECVD for SiC/GaN)",

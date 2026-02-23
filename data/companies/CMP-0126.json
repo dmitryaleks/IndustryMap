@@ -1,0 +1,34 @@
+{
+  "id": "CMP-0126",
+  "companyName": "Honda Motor Co., Ltd.",
+  "companyNameJapanese": "本田技研工業株式会社",
+  "industryCode": "Automotive",
+  "ticker": "7267.T",
+  "description": "Japan's second-largest automotive manufacturer and world's largest motorcycle maker. Produces Honda and Acura brand automobiles, motorcycles, marine engines, and power equipment. Key markets: North America (~50% of auto revenue), Japan, China, Asia. Electrification strategy centers on Honda 0 Series BEV (debuting 2026) with in-house solid-state battery roadmap. Buys DENSO automotive components including HVAC systems, engine management electronics, sensors, and fuel injection systems for global vehicle production. Also developing its own EV platforms (Honda ePlate modular EV skateboard) and ADAS systems (Honda SENSING suite). Announced tentative merger with Nissan Motor (7201.T) in 2024 (under review as of Feb 2026).",
+  "marketCapInYen": 6800000000000,
+  "website": "https://www.honda.com/",
+  "isForexSensitive": true,
+  "suppliers": [
+    "CMP-0122"
+  ],
+  "clients": [],
+  "_externalRelationships": {
+    "densoRelationship": "Honda is a major non-Toyota OEM customer of DENSO. DENSO supplies A/C and thermal systems, engine management ECUs, fuel injection systems, and sensors to Honda globally. Honda is part of DENSO's ~45% non-Toyota Group revenue base.",
+    "keySuppliers": [
+      "DENSO (6902.T, CMP-0122) — HVAC, engine management, fuel injection, sensors",
+      "Keihin (merged into Hitachi Astemo) — fuel systems, carburetors (historical)",
+      "Showa (merged into Hitachi Astemo) — suspension, steering",
+      "Nissin Kogyo (merged into Hitachi Astemo) — brakes",
+      "Hitachi Astemo — post-merger Tier 1 for Honda powertrain/chassis"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "DENSO CMP-0122 deep research (Honda listed as DENSO non-Toyota OEM client for HVAC, engine mgmt, sensors), Honda Motor IR",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as DENSO (CMP-0122) major non-Toyota OEM client. Market cap approximate as of Feb 2026 (~6.8T JPY). Financial details pending dedicated deep research."
+  }
+}

@@ -4,34 +4,216 @@
   "companyNameJapanese": "株式会社デンソー",
   "industryCode": "Automotive Components",
   "ticker": "6902.T",
-  "description": "Japan's largest and world's second-largest automotive components manufacturer (~67% owned by Toyota Group). Operates across electrification (EV inverters, onboard chargers, motors), powertrain systems (fuel injectors, engine management), thermal systems (HVAC, battery cooling), mobility services (automated driving sensors, ADAS cameras, LiDAR), and electronic components (ECUs, relays, sensors). Buys specialty epoxy encapsulants and molding compounds from Nagase ChemteX (Nagase subsidiary) for protecting in-vehicle electronics and ECU modules. Also sources specialty chemical materials through Nagase's distribution network.",
-  "marketCapInYen": 5500000000000,
+  "description": "Japan's largest and world's second-largest automotive components manufacturer, headquartered in Kariya, Aichi Prefecture. Founded 1949 as a spin-off from Toyota Motor. ~67% economically aligned with Toyota Group (Toyota Motor ~20.6%, Toyota Fudosan ~4.6%, Toyota Industries ~5.4% as of latest filing). Core product segments: (1) Powertrain Systems — fuel injectors, engine management ECUs, common-rail diesel systems; (2) Thermal Systems — automotive HVAC, battery thermal management, heat exchangers, EV battery cooling; (3) Electrification Systems — EV/HEV inverters, onboard chargers (OBC), motors, DC-DC converters, SiC power modules; (4) Mobility Electronics — ADAS cameras, millimeter-wave radar, LiDAR, automated driving ECUs, body/chassis electronics; (5) Advanced Devices (in-house semiconductors) — in-vehicle sensors, custom ICs, power devices, microcontrollers (own fab in Nishio, Aichi); (6) Non-Automotive / Industrial — factory automation, agricultural robotics (via DENSO Wave/DENSO Robotics). DENSO operates 193 consolidated subsidiaries across Japan, North America, Europe, and Asia as of FY2025. Revenue FY2025 (ending March 2025): 7,161.8B JPY (record high). Toyota Group accounted for 55.1% of total FY2025 sales. Classified as a Tier 1 automotive supplier with deep vertical integration into semiconductor design (MIRISE Technologies JV with Toyota) and strategic minority stakes in onsemi (Nasdaq: ON) and ROHM (6963.T).",
+  "marketCapInYen": 5960000000000,
+  "PER": 16.09,
+  "PBR": 1.10,
+  "EPS": 145.02,
   "website": "https://www.denso.com/",
+  "percentOfForeignOwnership": 23.9,
+  "percentOfCirculatingEquity": null,
+  "latestPriceYen": 2215,
   "isForexSensitive": true,
   "suppliers": [
-    "CMP-0058"
+    "CMP-0058",
+    "CMP-0111",
+    "CMP-0017",
+    "CMP-0123"
   ],
-  "clients": [],
+  "clients": [
+    "CMP-0124",
+    "CMP-0125",
+    "CMP-0126"
+  ],
   "_externalRelationships": {
-    "nagaseRelationship": "DENSO buys epoxy encapsulants (DENATITE formulated epoxy from Nagase ChemteX) and specialty adhesive materials from Nagase for protecting automotive ECUs, power module electronics, and in-vehicle sensor packages. Named as a Nagase automotive electronics client in Nagase corporate disclosures.",
-    "keyProducts": [
-      "Automotive ECUs and sensors — buys epoxy encapsulants for protection",
-      "EV power electronics (inverters, onboard chargers) — buys encapsulation materials",
-      "ADAS cameras and LiDAR — precision electronic assemblies",
-      "Fuel injectors and actuators — buys specialty polymer materials"
+    "majorSuppliers": [
+      "Nagase & Co. (8012.T, CMP-0058) — epoxy encapsulants (DENATITE formulated epoxy from Nagase ChemteX) and specialty adhesive materials for ECU protection, power module electronics, in-vehicle sensor packages",
+      "ROHM Co., Ltd. (6963.T, CMP-0111) — SiC power semiconductors (MOSFETs, diodes) for EV inverters and OBCs; analog ICs; discrete components; strategic capital alliance announced May 2025 (DENSO to acquire ROHM shares)",
+      "Renesas Electronics Corporation (6723.T) — automotive MCUs, SoCs, power management ICs; DENSO sold ~half its Renesas stake in May 2024 (~4% sold, retained ~5%); long-term supply relationship continues",
+      "onsemi (Nasdaq: ON) — ADAS image sensors (AR0820 and HYPERLUX family), intelligent sensing for autonomous driving; DENSO announced share acquisition in onsemi in December 2024 to deepen strategic partnership",
+      "NXP Semiconductors (Nasdaq: NXPI) — automotive MCUs (S32 series), radar transceivers, secure gateway chips; received DENSO North America 2025 Quality Performance Award",
+      "Infineon Technologies (IFX.DE / XTRA:IFX) — automotive MCUs (AURIX TRICORE family), SiC power devices (CoolSiC), gate drivers; received DENSO North America 2025 Value Leader Award",
+      "STMicroelectronics (NYSE: STM) — automotive ICs, motor driver ICs; received DENSO North America 2025 Sustainability Leader Award",
+      "Vishay Intertechnology (NYSE: VSH) — passive components (resistors, capacitors, diodes); received DENSO North America 2025 Value Leader Award",
+      "Molex LLC (private, subsidiary of Koch Industries) — connectors and interconnect solutions; received DENSO North America 2025 Special Achievement Award",
+      "Celanese Corporation (NYSE: CE) — engineered materials, polymer compounds; received DENSO North America 2025 Quality Performance Award for engineering plastics supply",
+      "Asahi Kasei Plastics North America, Inc. (parent: Asahi Kasei 3407.T) — engineering plastics; received DENSO North America 2025 Value Leader Award",
+      "Toray Resin Co. (parent: Toray Industries 3402.T) — engineering resins; received DENSO North America 2025 Quality Performance Award",
+      "Washington Penn Plastic Co. (private) — compounded polymers; received DENSO North America 2025 Supplier of the Year",
+      "Ahresty Mexicana (parent: Ahresty Corporation 5852.T) — aluminum die castings; received DENSO North America 2025 Quality Performance Award",
+      "Matsuo Industries USA, Inc. (parent: Matsuo Industries, private) — precision metal parts; received DENSO North America 2025 Quality Performance Award",
+      "Swoboda Technologies (private) — precision automotive components; received DENSO North America 2025 Quality Performance Award",
+      "Hariki Precision Vietnam (private) — precision parts; received DENSO North America 2025 Quality Performance Award",
+      "Ainak Inc. (private) — specialty materials/components; received DENSO North America 2025 Value Leader Award",
+      "Sakaiya de Mexico S.A. (private) — auto parts manufacturing; received DENSO North America 2025 Value Leader Award",
+      "Nagase ChemteX Corporation (subsidiary of Nagase 8012.T, CMP-0058) — liquid epoxy encapsulant materials (LMC, underfill), specialty adhesive resins for semiconductor packaging within DENSO ECUs and power electronics",
+      "TSMC / JASM (TSMC: 2330.TW) — foundry manufacturing for custom DENSO in-house semiconductor devices; DENSO holds 5.5% stake in JASM (Japan Advanced Semiconductor Manufacturing, TSMC's Kumamoto fab subsidiary)"
     ],
-    "keySuppliers": [
-      "Toyota Motor (7203.T) — parent and strategic partner",
-      "Nagase & Co. (8012.T, CMP-0058) — specialty epoxy encapsulants, formulated chemicals"
-    ]
+    "majorClients": [
+      "Toyota Motor Corporation (7203.T) — primary customer; Toyota Group accounted for 55.1% of DENSO FY2025 total sales; covers all Toyota/Lexus vehicle platforms globally",
+      "Toyota Industries Corporation (6201.T) — Toyota Group member; material shareholder; buys DENSO components for forklift and industrial equipment applications",
+      "Aisin Corporation (7259.T) — Toyota Group Tier 1 supplier and strategic partner; buys DENSO electronics for transmission and chassis systems",
+      "Honda Motor Co., Ltd. (7267.T) — major Japanese OEM customer; DENSO supplies A/C systems, engine management, sensors",
+      "Nissan Motor Co., Ltd. (7201.T) — major Japanese OEM customer; DENSO supplies fuel systems, sensors, electronics",
+      "Mazda Motor Corporation (7261.T) — Japanese OEM customer; DENSO supplies thermal systems, powertrain electronics",
+      "Subaru Corporation (7270.T) — Japanese OEM customer (Fuji Heavy Industries); DENSO supplies HVAC and EV electronics for Subaru BRZ and EV platforms",
+      "Suzuki Motor Corporation (7269.T) — Japanese OEM customer; DENSO supplies sensors, fuel systems, A/C for small vehicle platforms",
+      "Mitsubishi Motors Corporation (7211.T) — Japanese OEM customer; DENSO supplies engine management and HVAC",
+      "Daihatsu Motor Co., Ltd. (private, wholly owned by Toyota 7203.T) — Toyota Group kei-car OEM; DENSO supplies compact vehicle electronics",
+      "Volkswagen Group (VOW3.DE) — European OEM; DENSO supplies thermal systems, climate control, and electronic components (Germany is ~10% of DENSO revenue geography)",
+      "BMW Group (BMW.DE) — European OEM; DENSO supplies HVAC, sensors, and thermal management",
+      "Stellantis N.V. (STLAM.MI) — global OEM (formerly Chrysler, Fiat, PSA); DENSO historically supplied U.S. Chrysler plants with A/C and thermal systems",
+      "General Motors Company (NYSE: GM) — U.S. OEM; DENSO supplies sensors, HVAC, and electronic components for North American plants",
+      "Ford Motor Company (NYSE: F) — U.S. OEM; DENSO supplies thermal systems, fuel management, and sensors",
+      "Volvo Cars (VOLCAR-B.ST) — European OEM; DENSO supplies thermal management and electronic systems",
+      "Fiat (via Stellantis) — DENSO historical supply relationship for HVAC and engine management in Italy/Europe"
+    ],
+    "majorSubsidiariesAndJVs": [
+      "DENSO TEN Limited (formerly Fujitsu Ten) — 51% DENSO, 35% Toyota, 14% Fujitsu; develops car navigation, AV, HMI, and connected car systems; acquired majority Nov 2017",
+      "DENSO WAVE Incorporated — ~100% DENSO; invented the QR Code in 1994; manufactures barcode readers, RFID systems, industrial robots (COBOTTA), and PLCs for factory automation",
+      "DENSO International America, Inc. — 100% DENSO; U.S. sales and engineering subsidiary (Southfield, Michigan)",
+      "DENSO Robotics (Denso Wave business) — industrial robot arm business, 6-axis collaborative robot COBOTTA",
+      "MIRISE Technologies Corporation — 51% DENSO, 49% Toyota; R&D JV for advanced in-vehicle semiconductors; focus on power electronics (SiC), sensing, and SoC; established December 2019; accelerates custom automotive chip development",
+      "Japan Advanced Semiconductor Manufacturing (JASM) — DENSO holds 5.5% equity stake (invested $350M in 2022 round); majority owned by TSMC (~86.5%), Sony Semiconductor Solutions (~6%); Toyota holds ~2%; Kumamoto Fab 1 operational 2024, Fab 2 by end-2027",
+      "DENSO (China) Investment Co., Ltd. — China holding company; manages multiple China manufacturing JVs",
+      "Tianjin Denso Electronics Co., Ltd. — China manufacturing JV",
+      "DENSO Manufacturing Tennessee, Inc. — U.S. manufacturing plant (manufacturing HVAC systems, starters, alternators)",
+      "DENSO Mexico S.A. de C.V. — Mexico manufacturing subsidiary",
+      "DENSO Manufacturing UK Ltd. — Telford, UK manufacturing for European market"
+    ],
+    "equityStakesInOtherCompanies": [
+      "Renesas Electronics (6723.T) — ~5% stake retained after May 2024 partial sale; DENSO acquired stake in 2018 to accelerate automotive SoC development",
+      "onsemi (Nasdaq: ON) — minority stake being accumulated via open-market purchases from December 2024; exact percentage not yet disclosed",
+      "ROHM Co., Ltd. (6963.T) — capital alliance announced May 2025; DENSO to acquire ROHM shares (exact stake not yet disclosed as of Feb 2026); partnership focuses on analog ICs and SiC for next-gen vehicle electrification",
+      "JASM (Japan Advanced Semiconductor Manufacturing) — 5.5% equity stake (~$350M investment)",
+      "Sold: Aisin Corporation (7259.T) shares — substantially all sold by July 2024 as part of cross-shareholding reduction",
+      "Sold: NiPPA (Nippon Piston Ring) — all shares transferred to Nippon Mirai Capital (September 2024)"
+    ],
+    "financialSummary": {
+      "FY2025_ended_Mar2025": {
+        "revenue": "7,161.8B JPY (+0.2% YoY; record high)",
+        "operatingIncome": "519.0B JPY (+36.4% YoY; record high)",
+        "netIncome": "419.1B JPY (+34.0% YoY; record high)",
+        "operatingMargin": "7.2%",
+        "netMargin": "5.9%",
+        "EPS_diluted": "145.02 JPY per share",
+        "dividendPerShare": "64 JPY (estimated TTM)",
+        "note": "Revenue grew despite lower vehicle production volumes in Asia and Japanese OEM production suspensions (Daihatsu certification scandal); growth supported by yen depreciation (FX assumption ~155 JPY/USD). Operating profit hit record from forex gains and cost management."
+      },
+      "FY2024_ended_Mar2024": {
+        "revenue": "7,144.7B JPY (+6.0% YoY)",
+        "operatingIncome": "381.8B JPY",
+        "netIncome": "312.8B JPY",
+        "EPS_diluted": "104.97 JPY",
+        "note": "Previous record high; strong vehicle sales in Japan and North America post-semiconductor supply recovery"
+      },
+      "FY2026_guidance": {
+        "revenue": "7,050.0B JPY (slightly lower due to stronger yen assumption)",
+        "operatingIncome": "675.0B JPY",
+        "operatingMargin": "9.6%",
+        "note": "Guidance reflects yen appreciation headwind and U.S. tariff risks; but structurally higher profitability from electrification mix shift and cost reduction"
+      },
+      "revenueByRegion_FY2025": {
+        "Japan": "4,216.4B JPY (+1.2%; ~58.9% of total)",
+        "Asia": "1,940.1B JPY (-2.3%; ~27.1%)",
+        "Europe": "718.7B JPY (-8.0%; ~10.0%)",
+        "Other": "119.0B JPY (+3.3%; ~1.7%)",
+        "note": "North America not broken out separately in available data; implied within Japan or grouped differently in DENSO's geographic segmentation which may use manufacturing-origin basis"
+      },
+      "revenueByCustomer_FY2025": {
+        "ToyotaGroup": "55.1% of total consolidated revenue",
+        "OtherJapaneseOEMs": "~15% (Honda, Nissan, Mazda, Subaru, Suzuki, Mitsubishi)",
+        "GlobalOEMs_EuropeUSA": "~30% (VW, BMW, Stellantis, GM, Ford, Volvo)"
+      }
+    },
+    "forexSensitivity": {
+      "isForexSensitive": true,
+      "exposureProfile": "Highly sensitive to USD/JPY and EUR/JPY. DENSO generates ~40-45% of revenue outside Japan in foreign currencies. Yen depreciation materially boosts reported revenue and operating profit when translated back to JPY. FX assumption for FY2026 guidance: 155 JPY/USD, 180 JPY/EUR (Q4 FY2025 assumption). FX was a significant tailwind to both FY2024 and FY2025 record results. A 1-yen weakening of the yen vs USD contributes approximately 4-5B JPY to operating profit (company disclosed sensitivity). With ~40% overseas revenue and Japan-based cost base, yen weakness expands margins significantly.",
+      "note": "DENSO's advanced devices (semiconductor) segment is yen-denominated as production is Japan-based; but thermal and powertrain revenues follow OEM vehicle production geographically. North America and Europe are the primary USD/EUR exposure regions."
+    },
+    "shareholderStructure": {
+      "asOf": "March 31, 2025",
+      "totalSharesIssued": "approximately 2,880-2,980 million shares (diluted basis)",
+      "treasuryShares": "~220 million shares (7.61% of total; largest-ever buyback of 450B JPY executed FY2025)",
+      "outstandingShares_diluted": "approximately 2,890 million (FY2025 basis)",
+      "majorShareholders": [
+        "Toyota Motor Corporation (7203.T): ~20.57%",
+        "DENSO Corporation Treasury Stock: ~7.61%",
+        "Toyota Industries Corporation (6201.T): ~5.42% (selling via tender offer to Toyota Fudosan in June 2025)",
+        "Toyota Fudosan Co., Ltd.: ~4.58%",
+        "Nippon Life Insurance Co.: ~2.98%",
+        "Nomura Asset Management: ~4.0%"
+      ],
+      "ownershipByCategory": {
+        "DomesticCorporations": "32.0%",
+        "ForeignCorporationsAndIndividuals": "23.9%",
+        "FinancialInstitutionsAndSecurities": "29.8%",
+        "IndividualsAndOthers": "11.1%",
+        "TreasuryStock": "3.2%"
+      },
+      "toyotaGroupCombined": "~30.6% (Toyota Motor + Toyota Fudosan + Toyota Industries as of latest)",
+      "freeFloatNote": "Free float is compressed by Toyota Group cross-holdings and treasury stock. After DENSO's record 450B JPY buyback in FY2025 and the upcoming acquisition of Toyota Industries' stake via self-tender offer (~358B JPY), treasury stock will increase further, reducing the effective float. Foreign ownership stands at 23.9% of total shares."
+    },
+    "recentCorporateActions": [
+      "May 2024: Sold ~64% of Renesas Electronics (6723.T) stake (over 4% of Renesas total shares) for ~178B JPY gain; retained ~5% stake",
+      "July 2024: Sold substantially all Aisin Corporation (7259.T) shares; part of cross-shareholding reduction program",
+      "September 2024: DENSO and ROHM agree to consider strategic semiconductor partnership; DENSO to acquire ROHM shares",
+      "October 2024: DENSO acquired IP core license from Quadric Inc. (USA) for Chimera GPNPU neural processing unit technology for in-vehicle semiconductors; co-development arrangement for automotive NPU",
+      "October 2024: DENSO announced largest-ever share buyback (up to 450B JPY for FY2025, executed from Oct 2024)",
+      "September 2024: DENSO transferred all NiPPA (Nippon Piston Ring) shares to Nippon Mirai Capital; transferred effective Sept 30, 2024",
+      "December 2024: DENSO and onsemi (Nasdaq: ON) announce strengthened partnership for ADAS/autonomous driving; DENSO to acquire onsemi shares on open market",
+      "February 2024: DENSO invested additional funds in JASM (Kumamoto Fab 2 expansion); DENSO stake adjusted to 5.5% following new investor (Toyota) joining JASM",
+      "May 2025: DENSO and ROHM Co. reach basic agreement to establish formal strategic partnership in semiconductor field; focus on analog ICs for electrification and autonomous driving; capital relationship to be strengthened",
+      "June 2025: DENSO announces plan to sell its entire stake in Toyota Industries (6201.T) via Toyota Fudosan tender offer; simultaneously launches self-tender offer to buy back Toyota Industries' 5.42% stake in DENSO (~358B JPY); expected to be DENSO's largest single share repurchase ever; cash proceeds from Toyota Industries stake sale exceed 380B JPY",
+      "November 2025: DENSO announces organizational restructuring to sharpen focus on electrification and ADAS core businesses",
+      "FY2025: Total cross-shareholding reduction of 438.5B JPY (sold all shares in 5 issues, partial sale in 2 issues); treasury stock buyback of 450B JPY (record)"
+    ],
+    "keyRisks": [
+      "Customer concentration: Toyota Group at 55.1% of revenue; DENSO is structurally dependent on Toyota's vehicle production volumes and model lineup decisions",
+      "Automotive electrification transition: While DENSO is investing heavily in EV components (inverters, OBC, battery thermal), its powertrain revenue (fuel injectors, ICE engine management) faces secular decline",
+      "China market headwinds: Japanese automaker market share declining in China to domestic NEV competitors (BYD, CATL ecosystem); DENSO's Asia revenue fell 2.3% YoY in FY2025",
+      "Forex risk: ~40-45% of revenue from overseas markets; yen strengthening would significantly compress profitability. FY2026 guidance assumes 155 JPY/USD (already stronger than FY2025 actual ~153)",
+      "U.S. tariff risk: Trump administration tariffs on auto imports could reduce North American OEM production volumes, impacting DENSO's Tennessee and Mexico plants",
+      "Semiconductor supply security: DENSO increasingly dependent on third-party automotive chip suppliers (Renesas, NXP, Infineon); chip shortages (2021-2023) exposed vulnerability. DENSO's mitigation: MIRISE JV, equity stakes in onsemi/ROHM, JASM investment",
+      "Daihatsu certification scandal (FY2024): Suspension of Daihatsu (Toyota subsidiary) operations in late 2023 impacted demand; Daihatsu resumed production in 2024 but volume recovery uncertain",
+      "Competition from vertically integrated EV players: Tesla, BYD, and other EV-native manufacturers increasingly self-source components (inverters, battery management) reducing addressable market for Tier 1 suppliers",
+      "ADAS/autonomous driving disruption: If Level 3-4 autonomy platforms shift to software-defined architecture (Mobileye, Qualcomm Snapdragon Ride), DENSO's hardware-centric sensing approach may face commoditization",
+      "Capital allocation efficiency: PBR of 1.1x remains below 1x on some metrics; TSE pressure on Japanese companies to improve ROE and capital efficiency; DENSO responding with large buybacks but structural ROE improvement requires higher margins"
+    ],
+    "growthDrivers": [
+      "Vehicle electrification: DENSO is a leading supplier of SiC-based inverter modules, onboard chargers, and battery thermal management systems for BEV/PHEV platforms (Toyota bZ series, Honda e:NITE, etc.)",
+      "ADAS and autonomous driving: Growing revenue from cameras, millimeter-wave radar, and LiDAR for Level 2/2+ driving assistance; Toyota's advanced safety packages drive attach rates",
+      "In-vehicle semiconductor strategy: MIRISE JV targeting custom SoC/MCU for Toyota next-gen vehicles; JASM partnership ensures domestic Japanese foundry supply; equity in onsemi and ROHM secures imaging and SiC supply",
+      "Thermal management for EVs: EV battery packs require sophisticated thermal management systems; DENSO's historical A/C competency translates well to EV battery cooling",
+      "Factory automation / robotics: DENSO Wave COBOTTA industrial robots and QR/barcode systems; non-automotive segment provides diversification",
+      "Geographic rebalancing: Reducing Asia concentration by growing North America (EV-related supply) and potentially increasing European OEM penetration",
+      "Cross-shareholding unwinding: 438.5B JPY freed from cross-shareholdings in FY2025; redeployed into R&D, CAPEX, and buybacks to improve ROE and EPS",
+      "Operating leverage at higher production volumes: As Japanese OEM production normalizes post-Daihatsu scandal recovery, incremental revenue has high operating leverage given fixed manufacturing cost base"
+    ],
+    "notes": "DENSO is the most important Tier 1 automotive components supplier in Japan and a central node in the Toyota Group supply chain ecosystem. Its 193-entity group spans virtually all automotive electronics and electromechanical functions — from fuel injectors to EV inverters, from engine ECUs to ADAS cameras. The company has historically been an oligopoly supplier through Toyota keiretsu relationships, but is strategically diversifying both its customer base (non-Toyota now ~45% of sales) and technology profile (semiconductor investment, ADAS, EV). The ROHM partnership and onsemi share acquisition reflect DENSO's intent to become a more integrated system-semiconductor company rather than a pure component assembler. JASM investment ensures a domestic (Japan-based) semiconductor foundry option for automotive-grade chips, reducing geopolitical supply chain risk from Taiwan-concentrated TSMC. DENSO is strongly forex-sensitive — every 1-yen move in USD/JPY impacts operating profit by approximately 4-5B JPY. With ~23.9% foreign ownership, it attracts global institutional investors but remains culturally and operationally tied to the Toyota Group.",
+    "industryContext": {
+      "globalRank": "World's 2nd largest automotive parts supplier by revenue (after Bosch); 1st in Japan",
+      "competitorPeers": [
+        "Robert Bosch GmbH (private) — Germany; global #1 automotive supplier; competes in fuel systems, ADAS, electrification",
+        "Continental AG (CON.DE) — Germany; competes in automotive electronics, tires, ADAS",
+        "Aisin Corporation (7259.T) — Japan; Toyota Group Tier 1; competes in powertrain, chassis, body systems",
+        "Magna International (MGA) — Canada/USA; global Tier 1",
+        "ZF Friedrichshafen (private) — Germany; powertrain, ADAS, driveline",
+        "BorgWarner (BWA) — USA; electrification components, turbochargers",
+        "Valeo (ISIN: FR0013176526) — France; ADAS sensors, thermal systems",
+        "TE Connectivity (TEL) — USA; connectors, sensors",
+        "Aptiv (APTV) — Ireland/USA; vehicle architecture, ADAS",
+        "Hitachi Astemo (private JV: Hitachi 6501.T + Honda 7267.T) — Japan; powertrain, chassis, ADAS"
+      ]
+    }
   },
   "_metadata": {
     "dataCollectedAt": "2026-02-23T00:00:00Z",
-    "dataSource": "Nagase CMP-0058 research: Nagase corporate disclosures listing DENSO as automotive electronics client for epoxy encapsulants; DENSO IR annual report",
-    "confidenceLevel": "medium",
+    "dataSource": "DENSO IR (denso.com), DENSO Integrated Report 2025, DENSO FY2025 year-end results press release (April 25, 2025), StockAnalysis TYO:6902, MarketScreener DENSO shareholders, companiesmarketcap.com, aftermarketnews.com DENSO 2025 Supplier Awards, DENSO newsroom (20250508 ROHM partnership, 20250603 Toyota Industries tender offer, 20241216 onsemi collaboration, 20240930 ROHM consideration), Toyota/JASM press releases, Wikipedia Denso, market.us Denso statistics, Counterpointresearch, DCFModeling 6902T, Bloomberg, CNBC",
+    "confidenceLevel": "high",
     "lastUpdated": "2026-02-23T00:00:00Z",
     "wave": 8,
-    "deepResearch": false,
-    "notes": "Added as Nagase (CMP-0058) client for epoxy encapsulants for automotive ECUs. Market cap approximate as of Feb 2026. Financial data not fully researched pending dedicated deep research."
+    "deepResearch": true,
+    "notes": "Full deep research update 2026-02-23. Previously a stub entry. FY2025 (ending Mar 2025): Revenue 7,161.8B JPY (+0.2%, record), OP 519.0B JPY (+36.4%, record), Net Income 419.1B JPY (+34.0%, record), EPS 145.02 JPY. Market cap ~5.96T JPY as of Feb 20, 2026; stock price 2,215 JPY; PER ~16.1x; PBR ~1.10x. Foreign ownership 23.9%. Toyota Group ~55.1% of revenue. Key suppliers: Nagase ChemteX (epoxy), ROHM (SiC/analog, new strategic partner), Renesas (MCU), onsemi (ADAS sensors, new equity stake), NXP/Infineon/STMicro (awarded suppliers). Key JVs: MIRISE Technologies (51% DENSO, 49% Toyota — in-vehicle semiconductor R&D), JASM (5.5% stake in TSMC Kumamoto fab), DENSO TEN (car navigation/AV). Major corporate actions FY2025: 438.5B JPY cross-shareholding reduction, 450B JPY record buyback, ROHM capital alliance (May 2025), onsemi stake acquisition (Dec 2024), Renesas partial sale (May 2024). Highly forex-sensitive — yen depreciation was key profit driver in FY2024 and FY2025."
   }
 }

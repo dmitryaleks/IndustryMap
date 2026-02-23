@@ -1,0 +1,35 @@
+{
+  "id": "CMP-0124",
+  "companyName": "Toyota Motor Corporation",
+  "companyNameJapanese": "トヨタ自動車株式会社",
+  "industryCode": "Automotive",
+  "ticker": "7203.T",
+  "description": "World's largest automotive manufacturer by global vehicle sales (10.8M units FY2024), headquartered in Toyota City, Aichi Prefecture. Operates Toyota, Lexus, Daihatsu, and Hino brands. Holds ~20.6% stake in DENSO Corporation and is DENSO's primary customer (Toyota Group accounted for 55.1% of DENSO FY2025 consolidated revenue). Founded MIRISE Technologies JV with DENSO (51% DENSO / 49% Toyota) for in-vehicle semiconductor R&D. Co-investor in JASM (TSMC Kumamoto fab) to secure domestic semiconductor supply for Toyota/DENSO vehicles. Key vehicle platforms include the bZ electrification series (BEV), Prius/RAV4 HEV/PHEV, and Lexus EV. Also holds significant stakes in Aisin (7259.T), Subaru (7270.T), Suzuki (7269.T), and Mazda (7261.T).",
+  "marketCapInYen": 32000000000000,
+  "website": "https://www.toyota-global.com/",
+  "isForexSensitive": true,
+  "suppliers": [
+    "CMP-0122"
+  ],
+  "clients": [],
+  "_externalRelationships": {
+    "densoRelationship": "Toyota is DENSO's parent company (~20.6% stake) and primary customer. Toyota Group (Toyota Motor + Toyota Industries + Toyota Fudosan + Daihatsu + Hino + Aisin) accounted for 55.1% of DENSO FY2025 total consolidated sales. Co-founder of MIRISE Technologies semiconductor R&D JV (49% Toyota). Co-investor in JASM (TSMC Kumamoto fab, ~2% stake). Toyota's next-gen bZ EV platform relies heavily on DENSO's SiC inverters, onboard chargers, and thermal management systems.",
+    "keySuppliers": [
+      "DENSO (6902.T, CMP-0122) — powertrain, thermal, electrification, ADAS electronics",
+      "Aisin (7259.T, CMP-0125) — transmissions, chassis, body systems",
+      "Toyota Industries (6201.T) — engines, compressors, forklifts (cross-holding)",
+      "Toyoda Gosei — rubber, plastics, LEDs",
+      "JTEKT — steering, bearings",
+      "Panasonic (6752.T) — EV batteries (Prime Planet Energy & Solutions JV)"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "DENSO CMP-0122 deep research (Toyota Group 55.1% of DENSO revenue, 20.6% shareholder), Toyota Motor IR, annual reports",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as DENSO (CMP-0122) primary client and parent company. Market cap approximate as of Feb 2026 (~32T JPY). Financial details pending dedicated deep research."
+  }
+}

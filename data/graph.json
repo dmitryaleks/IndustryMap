@@ -1,14 +1,14 @@
 {
-  "version": "4.1.0",
+  "version": "4.2.0",
   "generatedAt": "2026-02-23T00:00:00Z",
-  "description": "Semiconductor/specialty chemicals supply chain graph - 118 companies, 7 regions (Wave 8: Nagase deep research — 6 suppliers + 1 automotive client added)",
+  "description": "Semiconductor/specialty chemicals/automotive supply chain graph - 126 companies, 7 regions (Wave 8: Nagase + DENSO deep research — added 4 missing wave-7 nodes, 4 new wave-8 nodes, 11 new edges)",
   "statistics": {
-    "totalNodes": 118,
-    "totalEdges": 362,
+    "totalNodes": 126,
+    "totalEdges": 372,
     "edgeTypes": {
-      "supplier": 299,
+      "supplier": 308,
       "competitor": 46,
-      "partner": 5,
+      "partner": 6,
       "ecosystem": 12
     }
   },
@@ -955,7 +955,71 @@
       "industry": "Automotive Components",
       "country": "Japan",
       "ticker": "6902.T",
-      "marketCap": 5500000000000
+      "marketCap": 5960000000000
+    },
+    {
+      "id": "CMP-0111",
+      "name": "Rohm",
+      "industry": "Semiconductors",
+      "country": "Japan",
+      "ticker": "6963.T",
+      "marketCap": 700000000000
+    },
+    {
+      "id": "CMP-0112",
+      "name": "Nichia",
+      "industry": "Semiconductors",
+      "country": "Japan",
+      "ticker": null,
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0113",
+      "name": "Murata Manufacturing",
+      "industry": "Semiconductor Components",
+      "country": "Japan",
+      "ticker": "6981.T",
+      "marketCap": 4500000000000
+    },
+    {
+      "id": "CMP-0114",
+      "name": "ADTEC Plasma Technology",
+      "industry": "Semiconductor Equipment",
+      "country": "Japan",
+      "ticker": null,
+      "marketCap": null
+    },
+    {
+      "id": "CMP-0123",
+      "name": "Renesas Electronics",
+      "industry": "Semiconductors",
+      "country": "Japan",
+      "ticker": "6723.T",
+      "marketCap": 3900000000000
+    },
+    {
+      "id": "CMP-0124",
+      "name": "Toyota Motor",
+      "industry": "Automotive",
+      "country": "Japan",
+      "ticker": "7203.T",
+      "marketCap": 32000000000000
+    },
+    {
+      "id": "CMP-0125",
+      "name": "Aisin",
+      "industry": "Automotive Components",
+      "country": "Japan",
+      "ticker": "7259.T",
+      "marketCap": 1100000000000
+    },
+    {
+      "id": "CMP-0126",
+      "name": "Honda Motor",
+      "industry": "Automotive",
+      "country": "Japan",
+      "ticker": "7267.T",
+      "marketCap": 6800000000000
     }
   ],
   "edges": [
@@ -3064,6 +3128,72 @@
       "target": "CMP-0122",
       "type": "supplier",
       "label": "epoxy encapsulants for automotive ECUs"
+    },
+    {
+      "source": "CMP-0060",
+      "target": "CMP-0111",
+      "type": "supplier",
+      "label": "SiC/GaN deposition equipment (ICP-RIE, PECVD, ALE)"
+    },
+    {
+      "source": "CMP-0060",
+      "target": "CMP-0112",
+      "type": "supplier",
+      "label": "thin film deposition equipment for LED/laser manufacturing"
+    },
+    {
+      "source": "CMP-0060",
+      "target": "CMP-0113",
+      "type": "supplier",
+      "label": "thin film deposition equipment"
+    },
+    {
+      "source": "CMP-0114",
+      "target": "CMP-0060",
+      "type": "supplier",
+      "label": "RF power generators"
+    },
+    {
+      "source": "CMP-0111",
+      "target": "CMP-0122",
+      "type": "supplier",
+      "label": "SiC power semiconductors, analog ICs (strategic partner)"
+    },
+    {
+      "source": "CMP-0111",
+      "target": "CMP-0122",
+      "type": "partner",
+      "label": "semiconductor strategic capital alliance (May 2025)"
+    },
+    {
+      "source": "CMP-0017",
+      "target": "CMP-0122",
+      "type": "supplier",
+      "label": "foundry services via JASM Kumamoto (DENSO 5.5% stake)"
+    },
+    {
+      "source": "CMP-0123",
+      "target": "CMP-0122",
+      "type": "supplier",
+      "label": "automotive MCUs, SoCs, power management ICs"
+    },
+    {
+      "source": "CMP-0122",
+      "target": "CMP-0124",
+      "type": "supplier",
+      "label": "automotive components (55.1% of DENSO revenue)"
+    },
+    {
+      "source": "CMP-0122",
+      "target": "CMP-0125",
+      "type": "supplier",
+      "label": "electronic components, thermal systems"
+    },
+    {
+      "source": "CMP-0122",
+      "target": "CMP-0126",
+      "type": "supplier",
+      "label": "HVAC, engine management, sensors"
     }
   ]
 }

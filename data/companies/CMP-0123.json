@@ -1,0 +1,40 @@
+{
+  "id": "CMP-0123",
+  "companyName": "Renesas Electronics Corporation",
+  "companyNameJapanese": "ルネサスエレクトロニクス株式会社",
+  "industryCode": "Semiconductors",
+  "ticker": "6723.T",
+  "description": "Japan's largest and world's leading automotive semiconductor company, formed 2010 from NEC Electronics + Renesas Technology (Hitachi/Mitsubishi JV). Global leader in automotive MCUs (over 40% market share in 32-bit automotive MCUs), with a broad portfolio covering automotive SoCs, ADAS processors, power management ICs, and analog/mixed-signal chips. Also serves industrial, IoT, and infrastructure markets. Key product families: RH850 and R-Car automotive MCUs/SoCs, RA/RX/RL78 general microcontrollers, RAA power management ICs. DENSO was a strategic shareholder (~10% stake, gradually reduced), sold ~4%+ in May 2024 and retained ~5%; long-term supply relationship for engine ECU and body electronics MCUs continues. Acquired Intersil (2017), Integrated Device Technology (2019), and Dialog Semiconductor (2021) for broad analog/mixed-signal portfolio expansion.",
+  "marketCapInYen": 3900000000000,
+  "website": "https://www.renesas.com/",
+  "isForexSensitive": true,
+  "suppliers": [],
+  "clients": [
+    "CMP-0122"
+  ],
+  "_externalRelationships": {
+    "densoRelationship": "Long-term automotive MCU supplier to DENSO. DENSO held ~10% strategic stake from 2018 to support automotive SoC co-development; reduced to ~5% in May 2024 via open-market sale (~178B JPY proceeds). Renesas MCUs are used in DENSO engine management ECUs, body electronics, thermal management controllers, and ADAS processing.",
+    "keyProducts": [
+      "RH850 automotive MCU — powertrain, body, chassis ECUs (32-bit, ISO 26262 ASIL-D)",
+      "R-Car SoC — automotive infotainment, ADAS processing, cockpit domain controller",
+      "RA/RX/RL78 MCUs — general-purpose microcontrollers for IoT and industrial",
+      "RAA power management ICs — automotive-grade PMIC",
+      "Analog/mixed-signal (from Intersil, IDT, Dialog acquisitions) — wide portfolio"
+    ],
+    "keyCustomers": [
+      "DENSO (6902.T, CMP-0122) — automotive ECU MCUs",
+      "Toyota (7203.T) — through DENSO and direct",
+      "Bosch (private) — automotive MCUs for European market",
+      "Continental (CON.DE) — automotive MCUs"
+    ]
+  },
+  "_metadata": {
+    "dataCollectedAt": "2026-02-23T00:00:00Z",
+    "dataSource": "DENSO CMP-0122 deep research (DENSO sold Renesas stake May 2024; retained ~5%; long-term MCU supply), Renesas IR website, StockAnalysis",
+    "confidenceLevel": "medium",
+    "lastUpdated": "2026-02-23T00:00:00Z",
+    "wave": 8,
+    "deepResearch": false,
+    "notes": "Added as DENSO (CMP-0122) key semiconductor supplier. Market cap approximate. Financial details pending dedicated deep research."
+  }
+}
